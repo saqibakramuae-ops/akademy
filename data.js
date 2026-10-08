@@ -494,6 +494,136 @@ window.CURRICULUM = [
     {label:"noon Minutes decision-tree case study & questions (PDF)", file:"resources/3-3-3-noon-case-student.pdf"}
   ]
 },
-{code:"3.3.4", subtheme:"3.3", title:"Critical path analysis", business:"EST · LFT · total float", status:"soon"},
+{
+  code:"3.3.4", subtheme:"3.3", title:"Critical path analysis",
+  business:"Case studies: Coca-Cola & Tottenham Hotspur", status:"live",
+  notes:[
+    {h:"What is critical path analysis?", html:`
+      <p><b>Critical path analysis (CPA)</b> identifies the order in which activities must be completed when planning a complex project. It shows which activities can run <b>at the same time</b> and which <b>depend</b> on earlier ones, so a business can find the <b>shortest time</b> in which the project can be finished.</p>
+      <p>To build the network you need: a <b>list of activities</b>, the <b>duration</b> of each, and the <b>dependencies</b> (which activity must finish before another can start).</p>`},
+    {h:"Reading the network", html:`
+      <ul>
+        <li><b>Nodes</b> are circles that mark a point in time. Each is split into three: the <b>node number</b>, the <b>earliest start time (EST)</b> and the <b>latest finish time (LFT)</b>.</li>
+        <li><b>Activities</b> are arrows between nodes, labelled with a letter and a duration.</li>
+        <li>The <b>critical path</b> runs through the activities with <b>no float</b> — it sets the minimum project time.</li>
+      </ul>`},
+    {h:"Calculating EST, LFT and float", html:`
+      <p><b>1. Earliest start time (EST)</b> — work left to right (forward pass). A node's EST is the <b>highest</b> of (previous node's EST + activity duration).</p>
+      <p><b>2. Latest finish time (LFT)</b> — work right to left (backward pass). A node's LFT is the <b>lowest</b> of (next node's LFT − activity duration).</p>
+      <p><b>3. Total float</b> — how long an activity can be delayed without delaying the project:</p>
+      <div class="note-ex">Total float = LFT (at the activity's end node) − duration − EST (at its start node)</div>
+      <p>Critical activities have a float of <b>zero</b>.</p>`},
+    {h:"Worked network", html:`
+      <p>Four activities: A (4 days) → then B (5 days) and C (2 days) run in parallel → then D (3 days).</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 720 300" style="min-width:560px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="ahm" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"/></marker>
+          <marker id="aha" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--amber)"/></marker>
+        </defs>
+        <!-- activities -->
+        <line x1="84" y1="150" x2="222" y2="150" stroke="var(--amber)" stroke-width="3" marker-end="url(#aha)"/>
+        <path d="M274,140 Q365,86 456,140" fill="none" stroke="var(--amber)" stroke-width="3" marker-end="url(#aha)"/>
+        <path d="M274,162 Q365,224 456,162" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#ahm)"/>
+        <line x1="508" y1="150" x2="636" y2="150" stroke="var(--amber)" stroke-width="3" marker-end="url(#aha)"/>
+        <!-- nodes -->
+        <g stroke="var(--ink)" stroke-width="1.6" fill="none">
+          <circle cx="56" cy="150" r="26"/><line x1="56" y1="124" x2="56" y2="176"/><line x1="56" y1="150" x2="82" y2="150"/>
+          <circle cx="250" cy="150" r="26"/><line x1="250" y1="124" x2="250" y2="176"/><line x1="250" y1="150" x2="276" y2="150"/>
+          <circle cx="480" cy="150" r="26"/><line x1="480" y1="124" x2="480" y2="176"/><line x1="480" y1="150" x2="506" y2="150"/>
+          <circle cx="664" cy="150" r="26"/><line x1="664" y1="124" x2="664" y2="176"/><line x1="664" y1="150" x2="690" y2="150"/>
+        </g>
+        <g fill="var(--ink)" font-weight="700" font-size="13" text-anchor="middle">
+          <text x="43" y="155">1</text><text x="237" y="155">2</text><text x="467" y="155">3</text><text x="651" y="155">4</text>
+        </g>
+        <g fill="var(--ink)" font-size="11.5" text-anchor="middle">
+          <text x="69" y="142">0</text><text x="69" y="170">0</text>
+          <text x="263" y="142">4</text><text x="263" y="170">4</text>
+          <text x="493" y="142">9</text><text x="493" y="170">9</text>
+          <text x="677" y="142">12</text><text x="677" y="170">12</text>
+        </g>
+        <g font-weight="700" font-size="12.5">
+          <text x="150" y="140" fill="var(--amber-d)" text-anchor="middle">A (4)</text>
+          <text x="365" y="80" fill="var(--amber-d)" text-anchor="middle">B (5)</text>
+          <text x="365" y="246" fill="var(--muted)" text-anchor="middle">C (2) · float 3</text>
+          <text x="572" y="140" fill="var(--amber-d)" text-anchor="middle">D (3)</text>
+        </g>
+        <text x="360" y="288" fill="var(--ink)" font-size="12.5" text-anchor="middle">Critical path: A → B → D = 12 days · C can be delayed up to 3 days</text>
+      </svg>
+      </div>
+      <p><b>EST (forward):</b> node 2 = 0 + 4 = 4; node 3 = higher of (4+5) and (4+2) = <b>9</b>; node 4 = 9 + 3 = <b>12</b> days.<br>
+      <b>LFT (backward):</b> node 3 = 12 − 3 = 9; node 2 = 9 − 5 = 4.<br>
+      <b>Float on C</b> = 9 − 2 − 4 = <b>3 days</b>. A, B and D have zero float, so the <b>critical path is A → B → D</b> and the project takes <b>12 days</b>.</p>`},
+    {h:"Advantages & limitations", html:`
+      <h3>Advantages</h3>
+      <ul>
+        <li>Shows the <b>minimum time</b> to complete the project and a clear deadline.</li>
+        <li>Identifies the <b>critical activities</b> that must not slip.</li>
+        <li><b>Float</b> lets managers move staff and resources to the tasks that matter most.</li>
+        <li>Improves <b>coordination and motivation</b> — everyone sees the timeline and their role.</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Relies on <b>accurate time estimates</b> — if durations are wrong, the whole plan is wrong.</li>
+        <li>Ignores <b>resource and cost constraints</b> (labour, materials, budget).</li>
+        <li>A delay on the <b>critical path</b> delays the entire project.</li>
+        <li>Can encourage <b>rushing</b>, cutting corners on quality to hit the deadline.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Critical path analysis (CPA)", marks:2, body:`A planning technique that identifies the order and timing of the activities in a project <span class="pt">1</span>, in order to find the shortest time in which the project can be completed <span class="pt">2</span>.`},
+    {term:"Critical path", marks:2, body:`The sequence of activities that determines the shortest possible time to complete a project <span class="pt">1</span>; these activities have no float, so any delay to them delays the whole project <span class="pt">2</span>.`},
+    {term:"Earliest start time (EST)", marks:2, body:`The earliest time at which an activity can begin, given that all the activities before it are complete <span class="pt">1</span>; it is found by working forwards through the network <span class="pt">2</span>.`},
+    {term:"Latest finish time (LFT)", marks:2, body:`The latest time by which an activity must finish without delaying the whole project <span class="pt">1</span>; it is found by working backwards through the network <span class="pt">2</span>.`},
+    {term:"Total float", marks:2, body:`The amount of time a non-critical activity can be delayed without delaying the project <span class="pt">1</span>, calculated as LFT − duration − EST <span class="pt">2</span>.`},
+    {term:"Node", marks:2, body:`A circle on a network diagram marking a point in time between activities <span class="pt">1</span>; it shows the node number, the earliest start time and the latest finish time <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"A project has: A (2 months, start); B (4, after A); C (2, after B); D (3, after C); E (1, after C); F (3, after D); G (1, after F). Identify the critical path and the minimum project time.",
+     model:`Forward pass: A 0→2; B 2→6; C 6→8; D 8→11; E 8→9; F 11→14; G 14→15 <span class="pt">1</span><span class="pt">2</span>. The longest route is A→B→C→D→F→G, so the critical path is <b>A, B, C, D, F, G</b> <span class="pt">1</span> and the minimum project time is <b>15 months</b> <span class="pt">1</span>. E (notify suppliers) runs in parallel with D, is shorter, and so is not on the critical path (it has float).`,
+     fb:"Add durations along each route; the longest route is the critical path and its length is the minimum project time. Only one activity here (E) is non-critical."},
+    {marks:4, q:"On a network, an activity has a duration of 2 weeks. Its start node has an EST of 4 and its end node has an LFT of 9. Calculate the total float, and state whether the activity is critical.",
+     model:`Total float = LFT − duration − EST = 9 − 2 − 4 = <b>3 weeks</b> <span class="pt">1</span><span class="pt">2</span>. Because the float is greater than zero <span class="pt">1</span>, the activity is <b>not critical</b> — it can be delayed up to 3 weeks without delaying the project <span class="pt">1</span>.`,
+     fb:"Float = LFT − duration − EST. Any activity with zero float lies on the critical path."},
+    {marks:4, q:"A (5, start); B (3, after A); C (4, after A); D (2, after both B and C). Calculate the EST at each node and the minimum project duration.",
+     model:`A: 0→5 <span class="pt">1</span>. B: 5→8; C: 5→9 <span class="pt">1</span>. D cannot start until both B and C finish, so its EST is the higher of 8 and 9 = 9; D: 9→11 <span class="pt">1</span>. Minimum project duration = <b>11</b>, on the critical path A→C→D <span class="pt">1</span>.`,
+     fb:"Where paths merge, the EST is the HIGHEST incoming value — the project waits for the slowest route in."}
+  ],
+  caseStudy:{
+    business:"Coca-Cola & Tottenham Hotspur",
+    intro:`<p>Two CPA scenarios used in the exam questions.</p>
+      <h3>Coca-Cola — launching a new drink</h3>
+      <p>Coca-Cola is planning the launch of a new soft drink for a <b>September</b> deadline. Its network gives a critical path of <b>A → B → D → E → F → G</b> and a minimum project time of <b>32 weeks</b>. Key activities include B (recipe development, 12 weeks), E (designing the final recipe, 4 weeks) and F (distributing the final recipe, 2 weeks). Activity C has float, so it can be delayed without affecting the deadline.</p>
+      <h3>Tottenham Hotspur — building the new stadium</h3>
+      <p>Tottenham Hotspur used CPA to manage the construction of its new stadium. The completed network gives a critical path of <b>D – E – G – H – J – L</b> and a project time of <b>33</b> periods, with several non-critical activities carrying float (for example a node with an EST of 5 but an LFT of 6 has one period of float). The real stadium famously overran its planned opening date.</p>`
+  },
+  exam:[
+    {marks:4, q:"On a network diagram, an activity has a duration of 4 weeks. Its start node has an EST of 12 and its end node has an LFT of 20. Calculate the total float of the activity. (4)",
+     model:`Total float = LFT − duration − EST <span class="pt">1</span> = 20 − 4 − 12 <span class="pt">1</span> = <b>4 weeks</b> <span class="pt">1</span>. As the float is above zero, the activity is not on the critical path <span class="pt">1</span>.`,
+     fb:"2 marks for the method and substitution, 2 for the correct answer with units and a brief interpretation."},
+    {marks:12, q:"Assess the usefulness of critical path analysis to a business managing a complex project. (12)",
+     model:`<p><span class="tag t-P">POINT</span>CPA is useful because it reveals the minimum project time and the activities that control it. <span class="tag t-E">EXPLAIN</span>By finding the critical path, it shows which tasks have no float. <span class="tag t-C">CHAIN</span>This means managers can focus attention and resources on the activities that must stay on schedule, and move staff from tasks with float to critical ones; as a result the project is more likely to finish on time and on budget. <span class="tag t-J">JUDGE</span>So for coordinating a complex project it is valuable.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, CPA is only as good as its estimates. The durations are forecasts, and it ignores resource and cost constraints, so a single wrong estimate or a shortage of labour or materials can make the whole plan unreliable. It can also push teams to rush critical tasks and cut corners on quality.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> CPA is a useful planning aid, not a guarantee. <b>Why:</b> it structures the schedule and highlights the critical activities. <b>Why (develop):</b> but it depends on accurate estimates and ignores resources. <b>What (depends on):</b> its value depends on the reliability of the durations and on building in contingency for the critical path.</p>`,
+     fb:"Balanced 12-marker: developed benefits (minimum time, float, coordination), genuine limitations (estimates, resources, rushing), and a 4Ws conclusion."},
+    {marks:20, q:"Evaluate the usefulness of critical path analysis to Coca-Cola when launching a new drink. Use the network in your answer. (20)",
+     model:`<p><span class="tag t-P">BENEFIT</span>One benefit of CPA is that it shows the minimum time needed to finish the project — here 32 weeks — based on the critical path A → B → D → E → F → G. These tasks must be completed on time, as any delay will delay the whole project, whereas tasks like C have float and can be delayed without affecting the deadline. This leads to better use of staff and resources, as workers can help with more urgent tasks; therefore knowing the critical path helps Coca-Cola plan effectively, and as a result the project is more likely to meet the September launch.</p>
+     <p><span class="tag t-P">BENEFIT</span>Another benefit is that CPA motivates teams by showing the full timeline and the most important tasks, because staff can see which activities are critical, such as B (recipe development, 12 weeks), and understand their role. This means greater accountability and focus; therefore CPA helps maintain discipline and encourages collaboration, and as a result the project is more likely to stay on schedule.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, CPA carries risks because it relies on estimated durations that might not be realistic. For example, activity E (designing the final recipe, 4 weeks) may overrun due to taste-testing or regulatory issues. This leads to overconfidence in the timeline; therefore if any critical activity is delayed the whole schedule slips, and as a result the drink could miss its September launch, damaging retailer relationships.</p>
+     <p><span class="tag t-J">LIMITATION</span>Another drawback is the risk of rushing development, because staff may focus on the 32-week target and cut corners — activity F (distribute final recipe, 2 weeks) might leave too little time for quality control. This means a poorer-quality drink could reach the market; therefore CPA may encourage speed over care, and as a result brand reputation could suffer.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, CPA is valuable to Coca-Cola because it improves scheduling, coordination and deadline awareness — but only if used carefully. Success depends on how accurately time estimates are made and how well managers balance speed with quality. It is recommended Coca-Cola keeps using CPA but combines it with other tools, builds in contingency time for critical activities and does not compromise quality for speed.</p>`,
+     fb:"Mr. Akram's exemplar (Coca-Cola). Uses the critical path and specific activities, argues both sides with the house chain, and ends with a recommendation plus 'success depends on'."},
+    {marks:20, q:"Evaluate the usefulness of critical path analysis to Tottenham Hotspur when managing the construction of its new stadium. Use the network in your answer. (20)",
+     model:`<p><span class="tag t-P">BENEFIT</span>One benefit of CPA is that it shows the minimum time to build the stadium — here 33 periods on the critical path D–E–G–H–J–L — because those activities have no float, so any delay to them delays the whole build. This means Tottenham can see exactly which trades must stay on schedule to hit the opening date; therefore it can prioritise and monitor them, and as a result is more likely to open on time and start earning matchday and event income.</p>
+     <p><span class="tag t-P">BENEFIT</span>Another benefit is that float on non-critical activities allows efficient use of resources, because tasks with spare time can be delayed or have workers moved to critical trades. This means labour and equipment go where delay would be most costly; therefore the project runs more smoothly, and as a result costly overtime and idle time are reduced.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, CPA relies on accurate duration estimates, which are hard to get right on a large construction project, because weather, supply problems, planning issues or design changes can all extend activities. This means the critical path and 33-period forecast could be wrong; therefore Tottenham could still overrun, and as a result face penalty costs and lost fixtures — as happened with the stadium's real opening delays.</p>
+     <p><span class="tag t-J">LIMITATION</span>CPA also ignores resource and cost constraints and can encourage rushing, because it focuses on time rather than on whether enough skilled labour, materials or budget are available. This means quality or safety could suffer on a complex build; therefore the network must be combined with careful cost, resource and risk planning.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, CPA is highly useful to Tottenham for coordinating a complex build and protecting the opening date, but it is a planning aid, not a guarantee. Success depends on how realistic the estimates are and how much contingency is built into the critical activities. It is recommended Tottenham uses CPA alongside strong project and risk management, with buffer time on the critical path.</p>`,
+     fb:"Model answer (Tottenham stadium): uses the critical path D–E–G–H–J–L and 33-period duration, applies benefits and limitations to a construction project, and ends with a supported recommendation."}
+  ],
+  resources:[
+    {label:"Critical path analysis — lesson notes (PDF)", file:"resources/3-3-4-cpa-notes.pdf"}
+  ]
+},
 {code:"3.3.5", subtheme:"3.3", title:"Contribution", business:"Contribution as a decision tool", status:"soon"}
 ];
