@@ -312,7 +312,152 @@ window.CURRICULUM = [
     {label:"Jaguar Land Rover — 20-mark extract (PDF)", file:"resources/3-3-2-land-rover-extract.pdf"}
   ]
 },
-{code:"3.3.3", subtheme:"3.3", title:"Decision trees", business:"Expected values & probability", status:"soon"},
+{
+  code:"3.3.3", subtheme:"3.3", title:"Decision trees",
+  business:"Case studies: Center Parcs & Tata Motors", status:"live",
+  notes:[
+    {h:"What is a decision tree?", html:`
+      <p>A <b>decision tree</b> is a diagram that maps out a decision, the options available, and the possible outcomes — each with a <b>probability</b> and a <b>financial value</b>. It helps a business choose the option with the best expected financial return, while making the risks visible.</p>
+      <ul><li>It <b>structures</b> a complex decision clearly.</li><li>It <b>quantifies risk</b> using probabilities and expected values.</li></ul>`},
+    {h:"The building blocks", html:`
+      <ul>
+        <li><b>Decision node</b> — a <b>square</b>. Where the business chooses between options.</li>
+        <li><b>Chance node</b> — a <b>circle</b>. Where an uncertain outcome happens (e.g. success or failure). The probabilities on its branches must add up to <b>1</b>.</li>
+        <li><b>Branches</b> — the options (from a square) or the outcomes (from a circle).</li>
+        <li><b>End values</b> — the financial outcome at the tip of each branch.</li>
+      </ul>`},
+    {h:"How to calculate", html:`
+      <p><b>Step 1 — Expected value (EV / EMV).</b> For each option, multiply every outcome by its probability and add them up. The EV sits at the <b>chance node (circle)</b>.</p>
+      <div class="note-ex">EV = (outcome₁ × probability₁) + (outcome₂ × probability₂)</div>
+      <p><b>Step 2 — Net gain.</b> Subtract the cost of the option from its EV. The net gain sits at the <b>decision node (square)</b>.</p>
+      <div class="note-ex">Net gain = expected value − cost</div>
+      <p><b>Step 3 — Decide.</b> Choose the option with the <b>highest net gain</b>; the rejected options are crossed off with a single line.</p>`},
+    {h:"Worked example: Buy local vs Import", html:`
+      <p>A manufacturer can <b>buy local</b> (cost £5,000) or <b>import</b> (cost £4,000):</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 760 420" style="min-width:560px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <!-- branches -->
+        <line x1="58" y1="210" x2="301" y2="110" stroke="var(--muted)" stroke-width="2"/>
+        <line x1="58" y1="210" x2="301" y2="310" stroke="var(--muted)" stroke-width="2"/>
+        <!-- cross-off buy local -->
+        <line x1="120" y1="176" x2="132" y2="192" stroke="#c92a2a" stroke-width="2.5"/>
+        <line x1="128" y1="172" x2="140" y2="188" stroke="#c92a2a" stroke-width="2.5"/>
+        <!-- outcome branches: buy local -->
+        <line x1="339" y1="110" x2="560" y2="62" stroke="var(--muted)" stroke-width="1.6"/>
+        <line x1="339" y1="110" x2="560" y2="158" stroke="var(--muted)" stroke-width="1.6"/>
+        <!-- outcome branches: import -->
+        <line x1="339" y1="310" x2="560" y2="262" stroke="var(--muted)" stroke-width="1.6"/>
+        <line x1="339" y1="310" x2="560" y2="358" stroke="var(--muted)" stroke-width="1.6"/>
+        <!-- decision node -->
+        <rect x="30" y="196" width="28" height="28" rx="3" fill="none" stroke="var(--amber)" stroke-width="2.6"/>
+        <!-- chance nodes -->
+        <circle cx="320" cy="110" r="19" fill="none" stroke="var(--emerald)" stroke-width="2.4"/>
+        <circle cx="320" cy="310" r="19" fill="none" stroke="var(--emerald)" stroke-width="2.4"/>
+        <!-- labels -->
+        <text x="110" y="150" font-size="13" fill="var(--ink)" font-weight="700">Buy local</text>
+        <text x="110" y="166" font-size="11.5" fill="var(--muted)">cost £5,000</text>
+        <text x="110" y="286" font-size="13" fill="var(--ink)" font-weight="700">Import</text>
+        <text x="110" y="302" font-size="11.5" fill="var(--muted)">cost £4,000</text>
+        <text x="320" y="70" font-size="12" fill="var(--ink)" text-anchor="middle" font-weight="700">EV £10,500</text>
+        <text x="320" y="356" font-size="12" fill="var(--ink)" text-anchor="middle" font-weight="700">EV £12,500</text>
+        <text x="455" y="78" font-size="11" fill="var(--muted)">0.5</text>
+        <text x="455" y="150" font-size="11" fill="var(--muted)">0.5</text>
+        <text x="455" y="278" font-size="11" fill="var(--muted)">0.7</text>
+        <text x="455" y="350" font-size="11" fill="var(--muted)">0.3</text>
+        <text x="568" y="66" font-size="12.5" fill="var(--ink)">£15,000</text>
+        <text x="568" y="162" font-size="12.5" fill="var(--ink)">£6,000</text>
+        <text x="568" y="266" font-size="12.5" fill="var(--ink)">£20,000</text>
+        <text x="568" y="362" font-size="12.5" fill="var(--ink)">−£5,000</text>
+        <text x="150" y="124" font-size="11.5" fill="#c92a2a" font-weight="700">Net gain £5,500</text>
+        <text x="150" y="258" font-size="11.5" fill="var(--emerald)" font-weight="800">Net gain £8,500 ✓</text>
+      </svg>
+      </div>
+      <p><b>Buy local:</b> EV = (£15,000 × 0.5) + (£6,000 × 0.5) = <b>£10,500</b>; net gain = 10,500 − 5,000 = <b>£5,500</b>.<br>
+      <b>Import:</b> EV = (£20,000 × 0.7) + (−£5,000 × 0.3) = <b>£12,500</b>; net gain = 12,500 − 4,000 = <b>£8,500</b>.</p>
+      <p>The highest net gain is <b>Import (£8,500)</b>, so the business would import; buy local is crossed off.</p>`},
+    {h:"Advantages & limitations", html:`
+      <h3>Advantages</h3>
+      <ul>
+        <li><b>Considers risk</b> — probabilities let the business weigh the chance of success or failure before committing money.</li>
+        <li><b>Compares options objectively</b> — expected values give a consistent numerical basis for choosing.</li>
+        <li><b>Includes costs</b> — net gain shows whether the likely return justifies the outlay.</li>
+        <li><b>Structures complex decisions</b> — the diagram makes the options and outcomes clear to stakeholders.</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li><b>Probabilities can be unreliable</b> — they are estimates; if conditions change, the EVs mislead.</li>
+        <li><b>EV is not a guaranteed outcome</b> — it is a probability-weighted average; a one-off project with a positive EV can still make a large loss.</li>
+        <li><b>Ignores qualitative factors</b> — morale, brand and ethics are left out, so the highest-return option may still harm the business.</li>
+        <li><b>Depends on the assumptions</b> — a small change in a forecast can flip which option looks best.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Decision tree", marks:2, body:`A diagram that maps a decision, its options and the possible outcomes with their probabilities and financial values <span class="pt">1</span>, used to choose the option with the best expected financial return <span class="pt">2</span>.`},
+    {term:"Expected value (EMV)", marks:2, body:`The probability-weighted average financial outcome of an option <span class="pt">1</span>, found by multiplying each outcome by its probability and adding the results <span class="pt">2</span>.`},
+    {term:"Net gain", marks:2, body:`The expected value of an option minus the cost of taking it <span class="pt">1</span>; the option with the highest net gain is normally chosen <span class="pt">2</span>.`},
+    {term:"Chance node", marks:2, body:`A point on a decision tree, shown as a circle, where an uncertain outcome occurs <span class="pt">1</span>; the probabilities on its branches must add up to 1 <span class="pt">2</span>.`},
+    {term:"Decision node", marks:2, body:`A point on a decision tree, shown as a square, where the business chooses between options <span class="pt">1</span>; the chosen option is the one with the highest net gain <span class="pt">2</span>.`},
+    {term:"Probability", marks:2, body:`A measure of how likely an outcome is, between 0 and 1 <span class="pt">1</span>; on a chance node the probabilities of all outcomes must total 1 <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"Option A (New product) has a 60% chance of £150,000 and a 40% chance of £65,000. Option B (Modify existing) has a 70% chance of £220,000 and a 30% chance of −£25,000. Calculate the expected value of each option.",
+     model:`New product: (£150,000 × 0.6) + (£65,000 × 0.4) = 90,000 + 26,000 = <b>£116,000</b> <span class="pt">1</span><span class="pt">2</span>. Modify existing: (£220,000 × 0.7) + (−£25,000 × 0.3) = 154,000 − 7,500 = <b>£146,500</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"EV = sum of (outcome × probability). Watch the negative failure outcome for Modify (−£25,000 × 0.3 = −£7,500)."},
+    {marks:4, q:"New product costs £60,000 (EV £116,000); Modify existing costs £75,000 (EV £146,500). Calculate the net gain of each and recommend which to choose.",
+     model:`New product: £116,000 − £60,000 = <b>£56,000</b> <span class="pt">1</span>. Modify existing: £146,500 − £75,000 = <b>£71,500</b> <span class="pt">1</span>. The higher net gain is Modify existing <span class="pt">1</span>, so the business should <b>modify the existing product</b> <span class="pt">1</span>.`,
+     fb:"Net gain = EV − cost. The recommendation follows the highest net gain — here Modify (£71,500 vs £56,000)."},
+    {marks:4, q:"Launch new product: 40% chance of +£30m, 60% chance of −£8m, cost £5m. Modify existing: 80% chance of +£3m, 20% chance of +£1.5m, cost £1m. Calculate the expected value and net gain of each.",
+     model:`Launch: EV = (30 × 0.4) + (−8 × 0.6) = 12 − 4.8 = <b>£7.2m</b>; net gain = 7.2 − 5 = <b>£2.2m</b> <span class="pt">1</span><span class="pt">2</span>. Modify: EV = (3 × 0.8) + (1.5 × 0.2) = 2.4 + 0.3 = <b>£2.7m</b>; net gain = 2.7 − 1 = <b>£1.7m</b> <span class="pt">1</span><span class="pt">2</span>. Launching has the higher net gain.`,
+     fb:"Full marks for both EVs and both net gains. Launch wins on net gain (£2.2m vs £1.7m) despite its 60% chance of a loss."}
+  ],
+  caseStudy:{
+    business:"Center Parcs & Tata Motors",
+    intro:`<p>Two decision-tree scenarios used in the exam questions.</p>
+      <h3>Center Parcs — build vs takeover</h3>
+      <p>Center Parcs is deciding between <b>building a new holiday village</b> and a <b>takeover</b> of an existing operator.</p>
+      <table class="datatable">
+        <tr><th>Option</th><th>Cost</th><th>If it succeeds</th><th>If it fails</th><th>Net gain</th></tr>
+        <tr><td>Build new village</td><td>€520m</td><td>80% → revenue €780m</td><td>20% → €120m loss</td><td>+€80m</td></tr>
+        <tr><td>Takeover</td><td>€100m</td><td>70% success</td><td>30% → €70m loss</td><td>+€33m</td></tr>
+      </table>
+      <p>Building has the higher net gain (€80m vs €33m) <i>and</i> the lower failure probability (20% vs 30%).</p>
+      <h3>Tata Motors — the Nano</h3>
+      <p>Tata Motors is deciding how to revive its Nano city car. Extract F notes the Nano sold poorly in rural India (a weak dealership network) and suffered a "cheap" brand image. The two options:</p>
+      <table class="datatable">
+        <tr><th>Option</th><th>Success probability</th><th>Expected value</th></tr>
+        <tr><td>Expand the dealership network</td><td>0.4</td><td>$2.2m</td></tr>
+        <tr><td>Relaunch the Nano as a premium car</td><td>0.2</td><td>$1.4m</td></tr>
+      </table>
+      <p>The dealership option has the higher expected value <i>and</i> the higher chance of success.</p>`
+  },
+  exam:[
+    {marks:4, q:"A decision tree gives Option A an expected value of £116,000 (cost £60,000) and Option B an expected value of £146,500 (cost £75,000). Calculate the net gain of each option and recommend which the business should choose. (4)",
+     model:`Option A net gain = £116,000 − £60,000 = <b>£56,000</b> <span class="pt">1</span>. Option B net gain = £146,500 − £75,000 = <b>£71,500</b> <span class="pt">1</span>. Option B has the higher net gain <span class="pt">1</span>, so the business should choose <b>Option B</b> <span class="pt">2</span>.`,
+     fb:"2 marks for the two net-gain calculations, 2 for a recommendation justified by the higher net gain."},
+    {marks:12, q:"Assess the usefulness of decision trees as a decision-making tool for a business. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Decision trees are useful because they bring risk and cost into one clear comparison. <span class="tag t-E">EXPLAIN</span>They attach probabilities to outcomes and calculate an expected value, then subtract cost to give a net gain. <span class="tag t-C">CHAIN</span>This means managers can compare options on a consistent numerical basis and pick the highest net gain; as a result the decision is more objective and easier to justify to stakeholders than a gut-feel choice. <span class="tag t-A">APPLY</span>For a large, risky investment this structure is valuable. <span class="tag t-J">JUDGE</span>So for framing a financial decision they are effective.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, their usefulness depends on the quality of the estimates. The probabilities and outcomes are forecasts, and the expected value is only a probability-weighted average — a one-off project with a positive EV can still make a large loss if the unlikely outcome happens. They also ignore qualitative factors such as brand, morale and ethics, and a small change in an assumption can flip which option looks best.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> decision trees are a useful starting point, not a final answer. <b>Why:</b> they quantify and structure risk better than judgement alone. <b>Why (develop):</b> but they rely on uncertain estimates and miss non-financial factors. <b>What (depends on):</b> their value depends on the reliability of the data and on combining them with other appraisal methods and management judgement.</p>`,
+     fb:"Balanced 12-marker: developed benefits, a genuine limitation (EV not guaranteed / qualitative factors), and a 4Ws conclusion on what the usefulness depends on."},
+    {marks:20, q:"Evaluate whether Center Parcs should build a new holiday village or pursue a takeover. Use the decision-tree data in your answer. (20)",
+     model:`<p><span class="tag t-P">BUILD · FOR</span>Building a new village offers a net gain of €80m and a lower failure probability of 20%, because it has a higher expected monetary value and a lower chance of loss than the alternative. This means the business is more likely to achieve strong returns with less risk; therefore building is a more secure and profitable choice, and as a result could create greater long-term value for shareholders. In contrast, the takeover gives a net gain of only €33m with a higher 30% failure rate.</p>
+     <p><span class="tag t-P">USES OF DTA</span>Decision-tree analysis also helps managers understand the full range of outcomes, because it shows not only profits but risks — the 20% chance of a €120m loss if building fails, or the 30% chance of a €70m loss on the takeover. This means decision-makers can prepare for both success and failure; therefore they can set up contingency plans such as cash reserves, and as a result the business is better protected against shocks.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, decision trees can be unreliable, because the figures for success, failure and revenue are only estimates. This means the €780m revenue from the build depends on continued staycation demand; therefore external shocks — another health crisis, poor weather, supply problems or aggressive competitors — could lower actual income, and as a result the probabilities may be misleading.</p>
+     <p><span class="tag t-J">OTHER METHODS</span>Other appraisal methods such as payback should also be used, because DTA shows how much a project returns but not how quickly. This means the €100m takeover might pay back faster than the €520m build; therefore combining DTA with payback or NPV gives a fuller picture of return and liquidity.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, building a new village is the stronger option, because it offers the higher expected net gain (€80m), the lower failure risk (20%) and the highest individual return (€780m), fitting Center Parcs' strategy to expand rural locations. Success depends on managing delays, site availability and labour shortages, and on planning approvals and demand. It is therefore recommended that Center Parcs proceeds with the build but uses CPA to plan timelines and payback/NPV to confirm financial viability.</p>`,
+     fb:"Mr. Akram's exemplar (Center Parcs). Note it uses the figures, explains what DTA adds, challenges it (estimates / qualitative), brings in other methods, and ends with a recommendation plus 'success depends on'."},
+    {marks:20, q:"Evaluate whether Tata Motors should expand its dealership network or relaunch the Nano as a premium car. Use the decision-tree data in your answer. (20)",
+     model:`<p><span class="tag t-P">DEALERSHIP · FOR</span>One benefit of expanding the dealership network is that it directly tackles Tata's distribution weakness in rural India, because Extract F states the Nano's poor sales were partly due to a weak dealership network where most of the target market lives. This means rural customers could not easily view or buy the car; therefore more dealerships would boost availability and convenience, and as a result Nano sales could rise — supported by the higher expected value of $2.2m versus $1.4m.</p>
+     <p><span class="tag t-J">DEALERSHIP · AGAINST</span>However, a drawback is the time and cost of implementation, because building physical locations across a vast country is logistically and financially demanding. This means the benefits may take years to appear; therefore Tata could keep suffering weak short-term sales, and as a result face cash-flow strain while the network is built.</p>
+     <p><span class="tag t-P">RELAUNCH · FOR</span>One benefit of relaunching the Nano as a premium car is that it could fix the brand image, because Extract F notes consumers saw the Nano as "cheap" and undesirable. This means repositioning it as a stylish compact car could attract urban professionals; therefore demand and margins could rise.</p>
+     <p><span class="tag t-J">RELAUNCH · AGAINST</span>A drawback is the low 0.2 probability of success, because consumers may reject the Nano in a premium segment given its past reputation. This means even heavy advertising may not shift perceptions; therefore the relaunch could fail despite high spend, and as a result Tata could incur heavy losses and further brand damage.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, expanding the dealership network is the better option, because it has the higher expected return ($2.2m vs $1.4m) and the higher success probability (0.4 vs 0.2). While the relaunch could improve brand image, its low success chance makes it riskier. Success depends on how quickly and affordably Tata can roll out dealerships while sustaining interest in the Nano. It is recommended Tata conducts further analysis, including payback period, to minimise financial risk before deciding.</p>`,
+     fb:"Mr. Akram's exemplar (Tata Motors). Both options are argued and challenged, the EV and probability figures are used, and the conclusion recommends with 'success depends on'."}
+  ],
+  resources:[
+    {label:"Decision trees — lesson notes (PDF)", file:"resources/3-3-3-decision-trees-notes.pdf"}
+  ]
+},
 {code:"3.3.4", subtheme:"3.3", title:"Critical path analysis", business:"EST · LFT · total float", status:"soon"},
 {code:"3.3.5", subtheme:"3.3", title:"Contribution", business:"Contribution as a decision tool", status:"soon"}
 ];
