@@ -64,7 +64,26 @@ window.CURRICULUM = [
         <li>Add that average variance to the extrapolated forecast.</li>
       </ol>
       <div class="note-ex">Worked example: an extrapolated forecast of <b>£42.50m</b> with an average variance of <b>−£0.08m</b> gives an adjusted forecast of <b>£42.42m</b>.</div>
-      <p>Exam tip: this full calculation is rarely set from scratch — you're usually given most of the working and asked to finish or interpret it.</p>`}
+      <p>Exam tip: this full calculation is rarely set from scratch — you're usually given most of the working and asked to finish or interpret it.</p>`},
+  {h:"Four-quarter (centred) moving average", html:`
+      <p>Seasonal businesses smooth their data over the <b>four quarters</b> of the year. But with four (an even number) there is <b>no middle quarter</b> to plot the average against — so you <b>centre</b> it:</p>
+      <ol>
+        <li>Add four consecutive quarters → a <b>4-quarter total</b> (sits between Q2 and Q3 of the group).</li>
+        <li>Add two consecutive 4-quarter totals → an <b>8-quarter total</b>.</li>
+        <li>Divide the 8-quarter total by <b>8</b> → the <b>centred moving average</b> (the trend), now lined up with a real quarter.</li>
+        <li><b>Variation</b> = actual sales − centred average (trend).</li>
+      </ol>
+      <div class="note-ex">Example: for 2018 Q3, (2570 + 2770) ÷ 8 = <b>667.5</b>, so variation = 770 − 667.5 = <b>+102.5</b>.</div>
+      <table class="datatable">
+        <tr><th>Quarter</th><th>Sales</th><th>Centred 4-qtr avg (trend)</th><th>Variation</th></tr>
+        <tr><td>2018 Q3</td><td>770</td><td>667.50</td><td>+102.50</td></tr>
+        <tr><td>2018 Q4</td><td>900</td><td>717.50</td><td>+182.50</td></tr>
+        <tr><td>2019 Q1</td><td>600</td><td>783.75</td><td>−183.75</td></tr>
+        <tr><td>2019 Q2</td><td>700</td><td>900.00</td><td>−200.00</td></tr>
+        <tr><td>2019 Q3</td><td>1,100</td><td>975.00</td><td>+125.00</td></tr>
+        <tr><td>2019 Q4</td><td>1,500</td><td>987.50</td><td>+512.50</td></tr>
+      </table>
+      <p><b>Seasonal (cyclical) variation</b> averages the variations for the <i>same quarter</i> across years — e.g. Q3 = (+102.5 + 125) ÷ 2 = <b>+113.75</b> — showing how much each quarter typically runs above or below trend.</p>`}
   ],
   definitions:[
     {term:"Sales forecasting", marks:2, body:`Predicting a firm's future sales levels <span class="pt">1</span> using past data and market information to inform decisions such as production and staffing <span class="pt">2</span>.`},
@@ -97,7 +116,13 @@ window.CURRICULUM = [
      fb:"Each average sits against the MIDDLE year of its three. The first and last years can't have a three-period average."},
   {marks:4, q:"Using those three-period moving averages, calculate the variation (actual − moving average) for each year, then the average variation.",
      model:`2017: 16−16.00 = 0 <span class="pt">1</span>. 2018: 18−18.33 = −0.33. 2019: 21−19.33 = +1.67. 2020: 19−20.33 = −1.33. 2021: 21−21.33 = −0.33 <span class="pt">1</span>. Sum = 0 − 0.33 + 1.67 − 1.33 − 0.33 = −0.32 <span class="pt">1</span>. Average variation = −0.32 ÷ 5 = <b>−0.064</b> <span class="pt">1</span>.`,
-     fb:"Variation = actual sales − moving average. Average variation = sum of variations ÷ number of variations; here −0.064."}
+     fb:"Variation = actual sales − moving average. Average variation = sum of variations ÷ number of variations; here −0.064."},
+  {marks:4, q:"The four-quarter totals for a seasonal business are 2,570, 2,770 and 2,970. Calculate the centred four-quarter moving average and the variation for 2018 Q3 (sales 770) and 2018 Q4 (sales 900).",
+     model:`2018 Q3: centred average = (2570 + 2770) ÷ 8 = <b>667.5</b> <span class="pt">1</span>; variation = 770 − 667.5 = <b>+102.5</b> <span class="pt">1</span>. 2018 Q4: centred average = (2770 + 2970) ÷ 8 = <b>717.5</b> <span class="pt">1</span>; variation = 900 − 717.5 = <b>+182.5</b> <span class="pt">1</span>.`,
+     fb:"Centre by averaging two consecutive 4-quarter totals over 8. Variation = actual − centred trend."},
+  {marks:2, q:"The Q3 variations are +102.5 and +125.0; the Q4 variations are +182.5 and +512.5. Calculate the seasonal (cyclical) variation for Q3 and Q4.",
+     model:`Q3 = (+102.5 + 125.0) ÷ 2 = <b>+113.75</b> <span class="pt">1</span>. Q4 = (+182.5 + 512.5) ÷ 2 = <b>+347.5</b> <span class="pt">2</span>.`,
+     fb:"Seasonal variation = the average of the variations for the same quarter across years."}
   ],
   caseStudy:{
     business:"Greggs plc",
@@ -134,10 +159,18 @@ window.CURRICULUM = [
      model:`<p><span class="tag t-P">POINT</span>One limitation is that it assumes past trends will continue, because it relies on historical data. <span class="tag t-C">CHAIN</span>This leads to inaccurate predictions if unusual events — such as the sharp rise in pet ownership in 2021 — do not continue; therefore, if Pets at Home forecasts on this one-off increase it could overestimate demand, and as a result may overstock products and incur higher costs.</p>
      <p><span class="tag t-P">POINT</span>A second limitation is that external factors, such as economic changes or social trends, can make forecasts unreliable because these influences are hard to predict. <span class="tag t-C">CHAIN</span>This leads to a risk that sales fall below forecast if, for example, customers cut back during a recession; therefore forecasts based only on past data may not reflect real future conditions, and as a result decisions could be flawed and resources misallocated.</p>
      <p><span class="tag t-J">HOWEVER</span>However, one benefit is that quantitative forecasting provides clear, objective data, because it uses numerical analysis of trends over time. This leads to more informed decisions on stock, staffing and promotions, so Pets at Home can plan for predictable seasonal demand (e.g. winter pet accessories), reducing waste and improving availability. On balance, forecasting is a useful planning tool but should not be relied on alone, especially where demand is volatile or shaped by one-off events.</p>`,
-     fb:"Mr. Akram's exemplar (Pets at Home). Note the house chain — 'because → this leads to → therefore → as a result' — and the balanced 'however' before a supported judgement."}
+     fb:"Mr. Akram's exemplar (Pets at Home). Note the house chain — 'because → this leads to → therefore → as a result' — and the balanced 'however' before a supported judgement."},
+  {marks:20, q:"Evaluate whether Live the Adventure Ltd should offer winter activity holidays in Europe or expand its existing operations. Use the sales-forecasting data in your answer. (20)",
+     model:`<p><span class="tag t-P">FOR WINTER</span>One benefit of offering winter activity holidays in Europe is that it could reduce the seasonal variation Live the Adventure Ltd currently experiences, because the 2015–2017 data shows Q1 and Q4 consistently underperform Q2 and Q3 (Q4 2016 and Q1 2017 had negative variations of −13.75 and −16.25). This means the firm relies heavily on spring and summer for revenue, which leads to volatile income and underused winter staff; therefore skiing and snowboarding holidays could generate off-season income, and as a result stabilise cash flow and improve year-round staff utilisation.</p>
+     <p><span class="tag t-J">AGAINST WINTER</span>However, a drawback is the added operational complexity and cost, because winter sports need specialist instructors, costly safety equipment and facilities in remote, colder regions. This leads to higher upfront investment and unfamiliar logistics for a UK firm; therefore it may be stretched beyond its capabilities, and as a result could damage its brand and reduce profitability if the ventures underperform.</p>
+     <p><span class="tag t-P">FOR EXPANDING</span>One benefit of expanding existing operations in Shropshire and Nepal is that the current model is already working well, because the 4-quarter moving average rose steadily from 61.25 (2015 Q3) to 78.75 (2017 Q2). This is clear evidence of rising demand; therefore focusing on proven sites supports growth with less risk, and as a result brings economies of scale, stronger loyalty and more consistent returns.</p>
+     <p><span class="tag t-J">AGAINST EXPANDING</span>A drawback of expanding only within current sites is that it does not fix the winter underutilisation, because Q1 sales stay flat at £40,000–£60,000 despite overall growth. This leads to low winter activity for staff and facilities; therefore the firm suffers off-peak inefficiencies, and as a result its long-term growth could be more limited than a diversified strategy.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, although winter holidays could reduce seasonal variation, expanding existing operations is more likely to bring long-term success, because the business already has a proven model with steady growth and rising demand, making it lower-risk and more sustainable. Success depends on whether Live the Adventure Ltd can keep scaling efficiently while maintaining quality. It is recommended the business prioritises expanding current sites to build loyalty and economies of scale, while cautiously exploring winter diversification to improve year-round use later.</p>`,
+     fb:"Mr. Akram's exemplar (Live the Adventure Ltd): two options each argued and challenged, ending in a recommendation plus 'success depends on'. Note the house chain throughout."}
   ],
   resources:[
-    {label:"Lesson notes: 3-period moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-lesson-notes.pdf"}
+    {label:"Lesson notes: 3-period moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-lesson-notes.pdf"},
+    {label:"Lesson notes: 4-quarter (centred) moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-4quarter-notes.pdf"}
   ]
 },
 {
