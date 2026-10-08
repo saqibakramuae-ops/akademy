@@ -54,7 +54,17 @@ window.CURRICULUM = [
         <li>Ignores <b>qualitative factors</b> (brand, PESTLE shocks, new rivals).</li>
         <li>Only as good as the <b>quality and quantity</b> of past data.</li>
         <li>Sudden shocks (recession, pandemic) break the trend entirely.</li>
-      </ul>`}
+      </ul>`},
+  {h:"Extrapolation — and adjusting for variance", html:`
+      <p>Once you have the moving-average trend, you can <b>extrapolate</b>: draw a line of best fit through the moving-average points and extend it forward to read off a future forecast. (You won't be asked to draw the line in an exam — just to understand and use it.)</p>
+      <p>The line of best fit smooths out the real peaks and troughs, so a sharper forecast <b>adjusts for the average variance from the trend</b>:</p>
+      <ol>
+        <li>For each year, find the <b>variation</b> = actual sales − moving average.</li>
+        <li>Add the variations and divide by how many there are → the <b>average variance from trend</b>.</li>
+        <li>Add that average variance to the extrapolated forecast.</li>
+      </ol>
+      <div class="note-ex">Worked example: an extrapolated forecast of <b>£42.50m</b> with an average variance of <b>−£0.08m</b> gives an adjusted forecast of <b>£42.42m</b>.</div>
+      <p>Exam tip: this full calculation is rarely set from scratch — you're usually given most of the working and asked to finish or interpret it.</p>`}
   ],
   definitions:[
     {term:"Sales forecasting", marks:2, body:`Predicting a firm's future sales levels <span class="pt">1</span> using past data and market information to inform decisions such as production and staffing <span class="pt">2</span>.`},
@@ -81,7 +91,13 @@ window.CURRICULUM = [
      fb:"A 4-mark 'explain' wants a point developed through a chain — knowledge (mark 1) built into applied consequence (marks 3–4)."},
     {marks:4, q:"A scatter graph shows a strong positive correlation between a firm's advertising spend and its sales. Analyse what this suggests.",
      model:`As advertising spend rises, sales tend to rise with it <span class="pt">1</span>, suggesting advertising may be driving demand <span class="pt">2</span>. The firm could extrapolate the line of best fit to estimate the sales effect of a larger budget <span class="pt">3</span> — though a strong correlation does not prove advertising <i>causes</i> the sales, so the link should be treated with caution <span class="pt">4</span>.`,
-     fb:"Reward the application of 'line of best fit / extrapolation' and credit the correlation-≠-causation point — it lifts the answer into analysis."}
+     fb:"Reward the application of 'line of best fit / extrapolation' and credit the correlation-≠-causation point — it lifts the answer into analysis."},
+  {marks:4, q:"Sales (£m): 2016=14, 2017=16, 2018=18, 2019=21, 2020=19, 2021=21, 2022=24. Calculate the three-period moving average (plotted against the middle year).",
+     model:`2017 = (14+16+18)÷3 = <b>16.00</b> <span class="pt">1</span>. 2018 = (16+18+21)÷3 = <b>18.33</b> <span class="pt">1</span>. 2019 = (18+21+19)÷3 = <b>19.33</b>. 2020 = (21+19+21)÷3 = <b>20.33</b> <span class="pt">1</span>. 2021 = (19+21+24)÷3 = <b>21.33</b> <span class="pt">1</span>. (2016 and 2022 have no moving average — they are the end points.)`,
+     fb:"Each average sits against the MIDDLE year of its three. The first and last years can't have a three-period average."},
+  {marks:4, q:"Using those three-period moving averages, calculate the variation (actual − moving average) for each year, then the average variation.",
+     model:`2017: 16−16.00 = 0 <span class="pt">1</span>. 2018: 18−18.33 = −0.33. 2019: 21−19.33 = +1.67. 2020: 19−20.33 = −1.33. 2021: 21−21.33 = −0.33 <span class="pt">1</span>. Sum = 0 − 0.33 + 1.67 − 1.33 − 0.33 = −0.32 <span class="pt">1</span>. Average variation = −0.32 ÷ 5 = <b>−0.064</b> <span class="pt">1</span>.`,
+     fb:"Variation = actual sales − moving average. Average variation = sum of variations ÷ number of variations; here −0.064."}
   ],
   caseStudy:{
     business:"Greggs plc",
@@ -113,7 +129,15 @@ window.CURRICULUM = [
      <p><span class="tag t-P">P3 · ALTERNATIVE</span>A better approach may be to combine forecasting with market research and scenario planning. <span class="tag t-E">EXPLAIN</span>Primary research captures customer intentions the data cannot. <span class="tag t-C">CHAIN</span>This means Greggs can spot a shift — e.g. demand for healthier options — early; as a result it adapts its range before sales fall, turning a threat into an opportunity. <span class="tag t-A">APPLY</span>Greggs' vegan sausage roll launch came from reading changing tastes, not extrapolating old data. <span class="tag t-J">JUDGE</span>So qualitative insight strengthens the quantitative forecast.</p>
      <p><span class="tag t-P">P4 · LIMITATION OF ALTERNATIVE</span>Yet market research has its own weaknesses. <span class="tag t-E">EXPLAIN</span>It is costly, slower and can be biased. <span class="tag t-C">CHAIN</span>Surveys may be unrepresentative and what customers say they will buy differs from what they do; this means decisions built on it can also be flawed, wasting the research spend. <span class="tag t-A">APPLY</span>For a high-volume, low-margin chain like Greggs, large research budgets eat into thin margins. <span class="tag t-J">JUDGE</span>So the alternative is not a complete fix either.</p>
      <p><span class="tag t-J">P5 · CONCLUSION (4Ws)</span><b>Which:</b> Overall, quantitative forecasting is useful but most effective when combined with qualitative judgement, rather than used alone. <b>Why:</b> because the numbers plan the predictable while research and judgement handle the unpredictable. <b>Why (develop):</b> this matters because Greggs' profit depends on getting high-volume operational decisions right every single quarter. <b>What (depends on):</b> however, it depends on the stability of the market and the quality of the data — in a stable period the quantitative forecast alone may suffice, but in a volatile one the qualitative overlay becomes essential.</p>`,
-     fb:"Full 5×5: FOR → AGAINST → ALTERNATIVE → LIMITATION OF ALTERNATIVE → 4Ws. Each body paragraph is a complete PECAN chain ending in judgement. The conclusion must make a supported decision and say what it depends on."}
+     fb:"Full 5×5: FOR → AGAINST → ALTERNATIVE → LIMITATION OF ALTERNATIVE → 4Ws. Each body paragraph is a complete PECAN chain ending in judgement. The conclusion must make a supported decision and say what it depends on."},
+  {marks:12, q:"Assess the limitations of relying on quantitative sales forecasting for a business such as Pets at Home. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One limitation is that it assumes past trends will continue, because it relies on historical data. <span class="tag t-C">CHAIN</span>This leads to inaccurate predictions if unusual events — such as the sharp rise in pet ownership in 2021 — do not continue; therefore, if Pets at Home forecasts on this one-off increase it could overestimate demand, and as a result may overstock products and incur higher costs.</p>
+     <p><span class="tag t-P">POINT</span>A second limitation is that external factors, such as economic changes or social trends, can make forecasts unreliable because these influences are hard to predict. <span class="tag t-C">CHAIN</span>This leads to a risk that sales fall below forecast if, for example, customers cut back during a recession; therefore forecasts based only on past data may not reflect real future conditions, and as a result decisions could be flawed and resources misallocated.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, one benefit is that quantitative forecasting provides clear, objective data, because it uses numerical analysis of trends over time. This leads to more informed decisions on stock, staffing and promotions, so Pets at Home can plan for predictable seasonal demand (e.g. winter pet accessories), reducing waste and improving availability. On balance, forecasting is a useful planning tool but should not be relied on alone, especially where demand is volatile or shaped by one-off events.</p>`,
+     fb:"Mr. Akram's exemplar (Pets at Home). Note the house chain — 'because → this leads to → therefore → as a result' — and the balanced 'however' before a supported judgement."}
+  ],
+  resources:[
+    {label:"Lesson notes: 3-period moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-lesson-notes.pdf"}
   ]
 },
 {
