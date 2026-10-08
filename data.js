@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques","3.4":"Business ethics & CSR"};
-window.SUBTHEME_SUB = {"3.4":"Theme 3: Business decisions and strategy \u2014 how ethics and corporate social responsibility shape business decisions.","3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
-window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️"};
+window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques","3.4":"Business ethics & CSR","3.5":"Corporate influences & culture"};
+window.SUBTHEME_SUB = {"3.5":"Theme 3: Business decisions and strategy \u2014 organisational culture, Handy\u2019s types and the challenge of changing an established culture.","3.4":"Theme 3: Business decisions and strategy \u2014 how ethics and corporate social responsibility shape business decisions.","3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
+window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️","3.5.1":"🏢","3.5.2":"🗂️","3.5.3":"🔄"};
 
 window.CURRICULUM = [
 {
@@ -918,6 +918,157 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"CSR — lesson notes (PDF)", file:"resources/3-4-2-csr-notes.pdf"}
+  ]
+},
+{
+  code:"3.5.1", subtheme:"3.5", title:"Organisational culture",
+  business:"Case study: Dunelm", status:"live",
+  notes:[
+    {h:"What is organisational culture?", html:`
+      <p><b>Corporate (organisational) culture</b> is often summed up as <b>“the way we do things around here.”</b> More formally, it is the <b>shared values, beliefs and norms</b> of a business that affect every aspect of work life.</p>
+      <p>Culture is reflected in many visible ways:</p>
+      <ul>
+        <li><b>Leadership style</b> — e.g. autocratic vs laissez-faire.</li>
+        <li><b>Communication methods</b> — e.g. heavy use of Teams.</li>
+        <li><b>Organisational structure</b> — tall vs flat, centralised vs decentralised.</li>
+        <li><b>Dress code and office layout</b> — open-plan often signals a more relaxed culture.</li>
+        <li><b>Incentives, rewards, training and work–life balance.</b></li>
+      </ul>`},
+    {h:"Strong vs weak culture", html:`
+      <p><b>Strong culture</b> — shared values, high engagement and a clear identity. Staff know what the business stands for and behave consistently, which supports good service and quick, aligned decisions.</p>
+      <p><b>Weak culture</b> — lack of direction, low motivation and inconsistency. Behaviour varies from person to person and from site to site.</p>
+      <div class="note-ex">A strong culture is an asset when it fits the strategy — but it can also make a business harder to change (see 3.5.3).</div>`}
+  ],
+  definitions:[
+    {term:"Corporate (organisational) culture", marks:2, body:`The shared values, beliefs and norms of a business that affect every aspect of work life <span class="pt">1</span> — often summed up as “the way we do things around here” <span class="pt">2</span>.`},
+    {term:"Strong culture", marks:2, body:`A culture where values are widely shared and staff are highly engaged with a clear identity <span class="pt">1</span>; this produces consistent behaviour and aligned decision-making <span class="pt">2</span>.`},
+    {term:"Weak culture", marks:2, body:`A culture lacking shared direction, with low motivation and inconsistency <span class="pt">1</span>; behaviour varies between individuals and sites, which can harm performance <span class="pt">2</span>.`},
+    {term:"Values", marks:2, body:`The core principles a business stands for and expects its people to follow <span class="pt">1</span>; shared values are the foundation of a strong corporate culture <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define corporate culture.",
+     model:`Corporate culture is the shared values, beliefs and norms of a business that affect every aspect of work life <span class="pt">1</span> — in short, “the way we do things around here” <span class="pt">2</span>.`,
+     fb:"Two linked points — the formal definition plus the shorthand. The phrase alone is not enough for both marks."},
+    {marks:4, q:"Explain one way a strong corporate culture can benefit a business.",
+     model:`A strong culture means staff share the same values <span class="pt">1</span>. This is because everyone understands what the business stands for and how to behave <span class="pt">2</span>. As a result, behaviour and service are consistent and decisions are aligned <span class="pt">3</span>, improving customer experience and performance <span class="pt">4</span>.`,
+     fb:"Develop one benefit through a chain to a performance outcome."}
+  ],
+  caseStudy:{
+    business:"Dunelm",
+    intro:`<p><b>Dunelm</b>, the UK homewares retailer, is often cited for a strong, family-style culture. It <b>treats employees like family</b>, offering flexible working, mentoring and above-minimum-wage pay. Staff feel valued, which supports loyalty, lower turnover and good customer service — contributing to an operating profit of around <b>£126.9m</b>. As it has grown to <b>172 stores and ~9,000 employees</b>, the challenge is keeping that culture consistent in every store.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess how Dunelm's corporate culture contributes to its success. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One way Dunelm's culture drives success is through <b>employee motivation and loyalty</b>, because it treats staff like family with flexible working, mentoring and above-minimum-wage pay. <span class="tag t-C">CHAIN</span>This means staff feel valued and stay longer, so turnover and recruitment costs fall and teams become more experienced; as a result performance improves, supporting an operating profit of around £126.9m.</p>
+     <p><span class="tag t-P">POINT</span>It also supports <b>customer service</b>, because motivated staff help customers well. <span class="tag t-C">CHAIN</span>This means shoppers enjoy visiting, return, and recommend Dunelm — lifting sales.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, as the business grows to 172 stores and 9,000 employees, the culture is harder to keep strong everywhere, because not every manager upholds the same values. This means some staff feel less supported, so the family-style culture could fade and service become inconsistent.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> Dunelm's culture clearly contributes to success. <b>Why:</b> it improves retention, service and performance. <b>Why (develop):</b> but culture alone cannot guarantee success — product, pricing and service matter too. <b>What (depends on):</b> it depends on maintaining the culture across all 172 stores, so regular manager training and monitoring are recommended.</p>`,
+     fb:"Mr. Akram's exemplar (Dunelm). Uses the Extract figures (£126.9m, 172 stores, 9,000 staff), two benefits, a growth limitation, and a 4Ws conclusion."}
+  ],
+  resources:[
+    {label:"Organisational culture — lesson notes (PDF)", file:"resources/3-5-1-org-culture-notes.pdf"}
+  ]
+},
+{
+  code:"3.5.2", subtheme:"3.5", title:"Handy's types of culture",
+  business:"Case study: Zappos (task culture)", status:"live",
+  notes:[
+    {h:"Charles Handy's four culture types", html:`
+      <p>Charles Handy classified corporate culture into <b>four types</b>:</p>
+      <table class="datatable">
+        <tr><th>Type</th><th>In a nutshell</th><th>Typical of</th></tr>
+        <tr><td><b>Power</b></td><td>A central figure or small group makes all decisions</td><td>Small, entrepreneur-led firms</td></tr>
+        <tr><td><b>Role</b></td><td>Based on rules; power comes from your position/job title</td><td>Large bureaucracies, the civil service</td></tr>
+        <tr><td><b>Task</b></td><td>Small empowered teams; power shifts to whoever has the needed expertise</td><td>Project / matrix organisations</td></tr>
+        <tr><td><b>Person</b></td><td>Individuals see themselves as superior to the organisation</td><td>Law firms, doctors' surgeries</td></tr>
+      </table>`},
+    {h:"Power & role cultures", html:`
+      <p><b>Power culture</b> — a central figure makes the decisions. <b>Benefit:</b> fast decision-making and quick adaptation to change. <b>Drawback:</b> little chance for workers to share views or take responsibility, which can demotivate.</p>
+      <p><b>Role culture</b> — built on rules, with everyone's role set in their contract; power comes from job title. <b>Benefits:</b> clear control, easy to spot underperformers, and (with narrow spans of control) promotion opportunities. <b>Drawbacks:</b> skilled workers may dislike being controlled; more supervisors raise labour costs; a tall structure slows decisions.</p>`},
+    {h:"Task & person cultures", html:`
+      <p><b>Task culture</b> — focuses on creativity and empowering workers in small project teams (a matrix structure); power shifts to whoever has the relevant expertise. <b>Benefits:</b> highly productive and creative with the right mix; encourages intrapreneurship. <b>Drawbacks:</b> some dislike teamwork, decisions can be slow or stall, and it is harder for managers to control.</p>
+      <p><b>Person culture</b> — individuals see themselves as unique and superior to the organisation, which exists so they can work (e.g. a law firm). <b>Benefits:</b> highly creative, customer-focused and quick to adapt. <b>Drawbacks:</b> staff pursue individual goals and are hard to manage if those differ from the business.</p>`}
+  ],
+  definitions:[
+    {term:"Power culture", marks:2, body:`A culture where a central figure or small group makes all the decisions <span class="pt">1</span>; this allows fast decisions but gives other workers little say or responsibility <span class="pt">2</span>.`},
+    {term:"Role culture", marks:2, body:`A culture based on rules where power comes from a person's position in the hierarchy <span class="pt">1</span>; everyone knows their role, giving strong control but slower, taller decision-making <span class="pt">2</span>.`},
+    {term:"Task culture", marks:2, body:`A culture focused on small empowered project teams, where power shifts to whoever has the needed expertise <span class="pt">1</span>; it encourages creativity and intrapreneurship but is harder to control <span class="pt">2</span>.`},
+    {term:"Person culture", marks:2, body:`A culture where skilled individuals see themselves as superior to the organisation, which exists so they can work <span class="pt">1</span>, such as a law firm; creative but hard to manage toward shared goals <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define a role culture.",
+     model:`A role culture is based on rules, where everyone knows their set role and power comes from a person's position in the hierarchy <span class="pt">1</span>; this gives strong management control but tends to slow decision-making <span class="pt">2</span>.`,
+     fb:"Two linked points — the defining feature (rules/position) plus a consequence."},
+    {marks:4, q:"Explain one drawback of a power culture.",
+     model:`In a power culture, workers have little chance to share views or take responsibility <span class="pt">1</span>. This is because all decisions sit with a central figure <span class="pt">2</span>. As a result, many workers feel demotivated <span class="pt">3</span>, which can lower productivity and raise staff turnover <span class="pt">4</span>.`,
+     fb:"Link the concentration of power to a motivation/performance consequence."}
+  ],
+  caseStudy:{
+    business:"Zappos.com — task culture",
+    intro:`<p><b>Zappos.com</b>, the US online shoe and clothing retailer, is a well-known example of a <b>task culture</b>. It adopted <b>Holacracy</b>, a system that lets any employee form a team to tackle a business issue, and gives all employees a chance to speak in weekly meetings. Innovation is not restricted to senior leaders; teams form around tasks and expertise, which supports Zappos' fast response to the market and its strong customer-service reputation — though the lack of hierarchy can blur accountability.</p>`
+  },
+  exam:[
+    {marks:20, q:"Evaluate the benefits and drawbacks of a task culture for a business such as Zappos.com. (20)",
+     model:`<p><span class="tag t-P">BENEFIT</span>One benefit of a task culture is that it encourages teamwork and innovation across the business, because it is built on collaborative problem-solving with cross-department project teams. At Zappos this shows in Holacracy, which lets any employee form a team to tackle an issue. This means innovation is not restricted to senior leaders but becomes part of everyday decision-making; therefore Zappos can respond quickly to the market and protect its customer experience, and as a result employees feel empowered, boosting motivation and service quality.</p>
+     <p><span class="tag t-P">BENEFIT</span>Another benefit is higher employee satisfaction and lower turnover, because a task culture gives people purpose and involvement. Zappos lets all employees speak in weekly meetings, so ideas are heard regardless of position; therefore staff take ownership of their work, and as a result Zappos builds a loyal workforce, cutting recruitment costs and lifting productivity.</p>
+     <p><span class="tag t-J">DRAWBACK</span>However, a task culture can cause confusion without clear leadership, because shared power can blur accountability and slow decisions. At Zappos, Holacracy removes hierarchy but can leave responsibilities unclear; therefore in high-pressure situations decisions may be slow, and as a result mistakes or missed opportunities can follow, especially if teams disagree.</p>
+     <p><span class="tag t-J">DRAWBACK</span>Another drawback is that it does not suit everyone, because some staff prefer structure and clear direction. At Zappos employees must form teams and act proactively; therefore new staff or those from traditional backgrounds may feel overwhelmed, and as a result could disengage or underperform.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, a task culture benefits Zappos by boosting innovation, satisfaction and adaptability in a fast-changing retail market, which suits a rapidly grown, service-led business. Success depends on how well it manages the lack of hierarchy and supports staff uncomfortable with that freedom, and on team members' skills and communication. It is recommended Zappos provides additional training and structured guidance so all teams perform well.</p>`,
+     fb:"Mr. Akram's exemplar (Zappos). Two benefits and two drawbacks, each applied with the house chain, and a conclusion that decides and states what success depends on."}
+  ],
+  resources:[
+    {label:"Handy's types of corporate culture — lesson notes (PDF)", file:"resources/3-5-2-handy-notes.pdf"}
+  ]
+},
+{
+  code:"3.5.3", subtheme:"3.5", title:"Difficulties in changing culture",
+  business:"Case studies: Pure Gym & Burberry", status:"live",
+  notes:[
+    {h:"Why change culture, and why it's hard", html:`
+      <p>A business may need to change its culture after a <b>merger or takeover</b>, during <b>growth or market change</b>, or because its current culture is <b>weak</b>.</p>
+      <p>But an established culture is hard to shift because of <b>resistance to change</b>: entrenched behaviours ("the way we've always done it"), fear and job insecurity, loss of autonomy, and weak or inconsistent leadership. Cultural change can hit morale, communication and performance in the short term.</p>`},
+    {h:"Kotter & Schlesinger — six approaches to resistance", html:`
+      <ol>
+        <li><b>Education & communication</b> — explain clearly why change is needed; tackles misconceptions.</li>
+        <li><b>Participation & involvement</b> — involving people builds commitment, not just compliance.</li>
+        <li><b>Facilitation & support</b> — training, counselling, mentoring and listening ease "adjustment problems" where fear drives resistance.</li>
+        <li><b>Co-option & manipulation</b> — give resistant individuals a role in the change, or use selective information (can be seen as unethical).</li>
+        <li><b>Negotiation & bargaining</b> — offer incentives to accept change, or enhanced rewards to leave (e.g. voluntary redundancy).</li>
+        <li><b>Explicit & implicit coercion</b> — a last resort; spelling out (or implying) the consequences of resisting. Damages trust and morale.</li>
+      </ol>`}
+  ],
+  definitions:[
+    {term:"Resistance to change", marks:2, body:`The reluctance of employees to accept changes to their working culture or practices <span class="pt">1</span>, often caused by fear, loss of autonomy or entrenched habits <span class="pt">2</span>.`},
+    {term:"Cultural change", marks:2, body:`The process of altering the shared values, beliefs and norms of a business <span class="pt">1</span>, often needed after a merger, period of growth or poor performance <span class="pt">2</span>.`},
+    {term:"Education & communication (Kotter & Schlesinger)", marks:2, body:`Explaining clearly why change is needed <span class="pt">1</span>; it addresses misconceptions and is the starting point for reducing resistance to cultural change <span class="pt">2</span>.`},
+    {term:"Coercion (Kotter & Schlesinger)", marks:2, body:`Forcing change by stating or implying the negative consequences of resisting <span class="pt">1</span>; a last resort that usually damages trust and morale <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"Explain one reason employees might resist a change to their organisation's culture.",
+     model:`Employees may resist because they fear losing their job or status <span class="pt">1</span>. This is because cultural change often follows mergers or restructuring that threaten roles <span class="pt">2</span>. As a result, staff feel insecure and demotivated <span class="pt">3</span>, making them less willing to adopt new ways of working and harder to lead through the change <span class="pt">4</span>.`,
+     fb:"Reward a clear reason developed into a morale/behaviour consequence."},
+    {marks:4, q:"Explain one Kotter & Schlesinger approach a business could use to overcome resistance to cultural change.",
+     model:`The business could use education and communication <span class="pt">1</span>, clearly explaining why the change is needed <span class="pt">2</span>. As a result, misconceptions are addressed and staff understand the reasons <span class="pt">3</span>, reducing resistance and helping the change succeed <span class="pt">4</span>.`,
+     fb:"Name a specific approach and develop how it reduces resistance."}
+  ],
+  caseStudy:{
+    business:"Pure Gym & Burberry",
+    intro:`<p><b>Pure Gym</b> — founded 2009, now Britain's largest gym chain by membership. It runs a <b>low-cost, highly centralised</b> model: each site employs just <b>two staff</b> plus up to 12 self-employed trainers, with 24-hour PIN access and no contracts. In 2016 it bought <b>LA Fitness</b> (established 25+ years, 43 clubs) for £60–£80m. LA Fitness had <b>qualified teams in each gym and a decentralised</b> approach, so most sites must be rebranded and working practices changed — a major culture clash.</p>
+      <p><b>Burberry</b> — changing its established culture and brand identity (e.g. altering its iconic red, black and beige check) risks alienating loyal customers who value its heritage and British luxury image.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess whether Pure Gym is likely to overcome the difficulties of changing LA Fitness's culture following the takeover. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason Pure Gym may overcome the difficulties is that most LA Fitness staff will be made redundant, because Pure Gym's centralised model uses just two employed staff per gym plus self-employed trainers, versus LA Fitness's qualified teams. <span class="tag t-C">CHAIN</span>This means much of the resistance that usually comes from retained employees will not apply, as the workforce is largely replaced; as a result Pure Gym can impose its own systems and values from the outset without retraining or winning over resistant staff.</p>
+     <p><span class="tag t-P">POINT</span>A second reason is Pure Gym's experience, because it has rolled out its model across many UK sites. This means it likely has effective systems for managing transitions and training, so it is better prepared to handle the change smoothly.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, remaining staff may still resist, because Pure Gym's low-cost, centralised model removes the autonomy LA Fitness staff had. This means insecurity and lower morale, which could raise turnover and disrupt service and membership retention in the short term.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Pure Gym is likely to overcome the cultural difficulties, because most existing staff will not be retained, removing a main source of resistance. Success depends on how well it manages remaining staff and customers through the transition — using communication, participation and support. It is recommended Pure Gym invests in clear communication and support during integration to reduce resistance and protect service quality.</p>`,
+     fb:"Mr. Akram's exemplar (Pure Gym). Two reasons it may succeed, a genuine counter, and a conclusion that decides and names change-management strategies."},
+    {marks:4, q:"Explain one likely difficulty for Burberry when changing its established culture and brand identity.",
+     model:`One difficulty is the risk of alienating loyal customers <span class="pt">1</span>. This is because Burberry's traditional red, black and beige check has been its most recognisable trademark for over 20 years and is tied to its British luxury heritage <span class="pt">2</span>. By changing this iconic design, long-term customers who value tradition may feel disconnected <span class="pt">3</span>, so they may stop buying Burberry products, reducing sales and damaging the brand's reputation <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Burberry). A developed difficulty linking the change to a clear customer/sales consequence."}
+  ],
+  resources:[
+    {label:"Difficulties in changing culture — lesson notes (PDF)", file:"resources/3-5-3-changing-culture-notes.pdf"}
   ]
 }
 ];
