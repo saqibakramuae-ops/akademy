@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness"};
-window.SUBTHEME_SUB = {"3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔"};
+window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️"};
 
 window.CURRICULUM = [
 {
@@ -1471,6 +1471,137 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"Human resources (employee contributions) — lesson notes (PDF)", file:"resources/3-3-5-3-hr-notes.pdf"}
+  ]
+},
+{
+  code:"3.3.6.1", subtheme:"3.3.6", title:"Key factors in change",
+  business:"Case study: Nokia", status:"live",
+  notes:[
+    {h:"What shapes successful change", html:`
+      <p>When a business manages change, five factors strongly affect whether it succeeds:</p>
+      <ul>
+        <li><b>Organisational culture</b> — a flexible, innovative culture adapts; a rigid, risk-averse one resists (see <b>3.3.4.1–3.3.4.3</b>).</li>
+        <li><b>Size of the organisation</b> — large firms have more resources but are slower and more bureaucratic; small firms are nimble but may lack resources.</li>
+        <li><b>Time / speed of change</b> — rushed change breeds resistance and mistakes; change that is too slow lets rivals get ahead.</li>
+        <li><b>Managing resistance to change</b> — using approaches such as Kotter & Schlesinger's six methods (see <b>3.3.4.3</b>).</li>
+        <li><b>Transformational leadership</b> — leaders who inspire and set a clear vision can carry staff through change.</li>
+      </ul>`},
+    {h:"Transformational leadership", html:`
+      <p><b>Transformational leaders</b> drive change by setting an inspiring vision, motivating staff to buy into it, and acting as role models. They focus on the <i>future</i> and on winning hearts and minds, rather than just managing day-to-day tasks (transactional leadership).</p>
+      <p>In a period of change this matters because staff are more likely to accept disruption when they trust the leader and understand the goal — reducing resistance and keeping morale up.</p>`},
+    {h:"Case: why Nokia failed to change", html:`
+      <p><b>Nokia</b> was once the world's leading mobile-phone maker, but when smartphones (Apple's iPhone, Google's Android) transformed the market in the late 2000s it failed to adapt:</p>
+      <ul>
+        <li><b>Culture</b> — resistant to innovation and slow to make bold decisions; managers were reluctant to take risks or challenge senior leaders.</li>
+        <li><b>Speed</b> — a large, bureaucratic business, so decisions took too long to implement.</li>
+        <li><b>Leadership</b> — senior leaders underestimated how fast consumer preferences and technology were changing.</li>
+      </ul>
+      <p>Nokia shows how culture, size/speed and leadership together determine whether a business can change in time.</p>`}
+  ],
+  definitions:[
+    {term:"Managing change", marks:2, body:`The process of planning and implementing a shift in how a business operates <span class="pt">1</span>; its success depends on factors such as culture, size, the speed of change and leadership <span class="pt">2</span>.`},
+    {term:"Transformational leadership", marks:2, body:`A leadership style based on inspiring staff with a clear vision and motivating them to embrace change <span class="pt">1</span>; it helps reduce resistance because employees trust the leader and understand the goal <span class="pt">2</span>.`},
+    {term:"Resistance to change", marks:2, body:`The reluctance of employees to accept change to their working practices or culture <span class="pt">1</span>, often caused by fear, loss of autonomy or entrenched habits <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"Explain one reason the size of a business can make change harder to manage.",
+     model:`A large business is often more bureaucratic <span class="pt">1</span>. This is because decisions must pass through many layers of hierarchy before they are approved <span class="pt">2</span>. As a result, change is slow to implement <span class="pt">3</span>, so the firm may react too late to market shifts — as Nokia did with smartphones <span class="pt">4</span>.`,
+     fb:"Link size to a developed consequence (speed of decision-making), ideally applied to an example."},
+    {marks:4, q:"Explain one way transformational leadership can help a business through a period of change.",
+     model:`A transformational leader sets a clear, inspiring vision <span class="pt">1</span>. This is because they focus on motivating staff to buy into the change rather than just issuing instructions <span class="pt">2</span>. As a result, employees are more likely to trust the leader and accept disruption <span class="pt">3</span>, reducing resistance and keeping morale and productivity up during the change <span class="pt">4</span>.`,
+     fb:"Reward the link from vision/inspiration to reduced resistance and smoother change."}
+  ],
+  caseStudy:{
+    business:"Nokia — failing to adapt",
+    intro:`<p><b>Nokia</b> dominated the mobile-phone market, but the smartphone revolution exposed how its <b>culture</b> (risk-averse, slow), its <b>size/speed</b> (large and bureaucratic) and its <b>leadership</b> (underestimating the pace of change) combined to stop it adapting in time. It is the classic example of the key factors in change working <i>against</i> a business.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess the key factors that determine whether a business such as Nokia can successfully manage change. (12)",
+     model:`<p><span class="tag t-P">CULTURE</span>One key factor is organisational culture, because a flexible, innovative culture embraces change while a rigid one resists it. <span class="tag t-C">CHAIN</span>Nokia's risk-averse culture meant managers avoided bold decisions; this means it failed to respond to the iPhone, so it lost its market lead.</p>
+     <p><span class="tag t-P">SIZE / SPEED</span>A second factor is size and speed, because large firms are slower and more bureaucratic. <span class="tag t-C">CHAIN</span>Nokia's size meant decisions took too long to implement; this means rivals like Apple and Google moved faster, so Nokia fell behind.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, leadership can overcome these barriers. Transformational leaders who set a clear vision and win staff over can push even a large firm to change quickly — so culture and size are obstacles, not fixed limits, if leadership is strong.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> all the factors matter, but leadership is the pivotal one. <b>Why:</b> it shapes culture and drives the speed of response. <b>Why (develop):</b> Nokia's leaders underestimated the change, so culture and size were never overcome. <b>What (depends on):</b> success depends on leaders reading the market early and building a culture able to act on it. <i>(House-style model answer — no official mark scheme supplied.)</i></p>`,
+     fb:"Covers culture, size/speed and leadership applied to Nokia, with leadership as the decisive factor. House-style exemplar — swap in an official mark scheme if you have one."}
+  ],
+  resources:[
+    {label:"Managing change / contingency planning — lesson notes (PDF)", file:"resources/3-3-6-change-notes.pdf"}
+  ]
+},
+{
+  code:"3.3.6.2", subtheme:"3.3.6", title:"Contingency planning",
+  business:"Case studies: ASOS, Alibaba & IKEA", status:"live",
+  notes:[
+    {h:"What is contingency planning?", html:`
+      <p><b>Contingency planning</b> (also called <b>scenario planning</b>) is anticipating different business situations — emergencies or otherwise — and deciding in advance how to manage them. Businesses use risk-and-probability techniques (e.g. decision trees) to judge which scenarios are most likely and most threatening.</p>`},
+    {h:"Risk mitigation — four approaches", html:`
+      <p><b>Risk mitigation</b> is planning for disasters and finding ways to lessen their impact. A good plan weighs the impact of each risk and prioritises accordingly. Four main approaches:</p>
+      <ul>
+        <li><b>Risk acceptance</b> — (often a small firm) accepts the risk because preventing it costs more than the impact.</li>
+        <li><b>Risk avoidance</b> — move away from the risk entirely (e.g. leave a war-torn region, or stop using low-wage-country suppliers to avoid an unethical association).</li>
+        <li><b>Risk limitation</b> — accept the risk exists but act to reduce its effects (e.g. anti-virus software against a computer virus).</li>
+        <li><b>Risk transference</b> — hand the risk to someone else, e.g. outsourcing IT.</li>
+      </ul>`},
+    {h:"Key risks & business continuity", html:`
+      <p>Edexcel focuses on three key risks a continuity plan must cover:</p>
+      <ul>
+        <li><b>Natural disasters</b> — earthquakes, flooding, etc. (e.g. Japan's 2011 earthquake and tsunami).</li>
+        <li><b>IT systems failure</b> — e.g. a major outage like BA's.</li>
+        <li><b>Loss of key staff</b> — e.g. Apple losing Steve Jobs in 2011.</li>
+      </ul>
+      <p>A <b>business continuity plan</b> sets out the response to a crisis — e.g. for a virus: assess the damage, agree a prepared strategy, then notify staff/press and bring in backups — so the business keeps operating.</p>`},
+    {h:"Succession planning", html:`
+      <p><b>Succession planning</b> prepares internal candidates to step into key roles before they fall vacant, so leadership transitions smoothly. It protects the business from the <b>loss of key staff</b> and reassures employees and investors — but it can't guard against external shocks, and an internal successor may lack a founder's charisma.</p>`}
+  ],
+  definitions:[
+    {term:"Contingency planning", marks:2, body:`Anticipating possible future situations or emergencies and deciding in advance how to manage them <span class="pt">1</span>; it helps a business respond quickly and limit disruption when a crisis occurs <span class="pt">2</span>.`},
+    {term:"Risk mitigation", marks:2, body:`The process of planning for potential disasters and finding ways to lessen their negative impact <span class="pt">1</span>; a good plan prioritises risks by their likely impact <span class="pt">2</span>.`},
+    {term:"Business continuity plan", marks:2, body:`A plan setting out how a business will keep operating during and after a crisis <span class="pt">1</span>, such as an IT failure or natural disaster, so disruption to customers is minimised <span class="pt">2</span>.`},
+    {term:"Succession planning", marks:2, body:`Identifying and preparing internal candidates to take over key roles when they become vacant <span class="pt">1</span>; it ensures leadership continuity and reassures staff and investors <span class="pt">2</span>.`},
+    {term:"Risk transference", marks:2, body:`Handing a business risk to another party <span class="pt">1</span>, for example by outsourcing IT or taking out insurance, so the business is less exposed to that risk <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define contingency planning.",
+     model:`Contingency planning is anticipating possible future situations or emergencies and deciding in advance how to manage them <span class="pt">1</span>; it lets a business respond quickly and limit disruption when a crisis occurs <span class="pt">2</span>.`,
+     fb:"Two linked points — what it is and what it achieves."},
+    {marks:4, q:"Explain one of the four risk-mitigation approaches with an example.",
+     model:`<b>Risk transference</b> means handing a risk to another party <span class="pt">1</span>. This is because the business decides someone else is better placed to manage it <span class="pt">2</span>. For example, outsourcing its IT systems passes the risk of system failure to a specialist provider <span class="pt">3</span>, reducing the firm's own exposure while keeping operations running <span class="pt">4</span>.`,
+     fb:"Name one approach (acceptance/avoidance/limitation/transference), define it, and apply an example."},
+    {marks:4, q:"Explain one benefit of succession planning for a business.",
+     model:`Succession planning ensures continuity of leadership <span class="pt">1</span>. This is because an internal successor is already familiar with the company's operations and values <span class="pt">2</span>. As a result, when a key figure leaves the handover is smooth and controlled <span class="pt">3</span>, avoiding disruption and protecting staff morale and investor confidence <span class="pt">4</span>.`,
+     fb:"Link the prepared successor to a smooth-transition consequence."}
+  ],
+  caseStudy:{
+    business:"ASOS, Alibaba & IKEA",
+    intro:`<p>Three scenarios used in the exam questions.</p>
+      <h3>ASOS — warehouse fires (scenario planning)</h3>
+      <p>In May 2017 a fire at ASOS's <b>Berlin</b> warehouse damaged two million products worth <b>£6m</b>. Its contingency plan kicked in immediately and it fulfilled orders from its <b>Barnsley</b> warehouse, so the website operated as normal and the share price soon recovered. By contrast, an earlier Barnsley fire in 2014 disrupted business for three days and cost <b>£30m</b> in lost sales — showing how much a good plan helped the second time.</p>
+      <h3>Alibaba — succession (Jack Ma → Daniel Zhang)</h3>
+      <p>Alibaba prepared <b>Daniel Zhang</b>, already serving as CEO, to take over as chairman when founder <b>Jack Ma</b> stepped down — a planned, controlled leadership transition that protected investor confidence and morale.</p>
+      <h3>IKEA — contingency planning</h3>
+      <p>IKEA uses contingency planning (backup IT systems, alternative supply routes) to stay flexible through supply-chain disruption and fluctuating demand — though it still misjudged demand during the energy crisis, showing planning reduces but cannot remove risk.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess the usefulness of contingency (scenario) planning to a business such as ASOS. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is that it helps ASOS prepare for unexpected events and reduce disruption, because it can anticipate risks such as warehouse fires and prepare alternative plans. <span class="tag t-C">CHAIN</span>This means a faster, more organised response: when the Berlin warehouse was damaged in 2017, ASOS switched to fulfilling orders from Barnsley, so operations continued, revenue loss was limited and customers stayed satisfied.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is maintaining investor confidence, because quick action after a crisis signals strong management. <span class="tag t-C">CHAIN</span>This means investors are reassured the business can cope; although ASOS's share price dipped after the fire, it quickly recovered.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, contingency planning cannot eliminate all loss, because some events still cause damage even when well managed. ASOS lost £6m of stock in the Berlin fire — the plan avoided service disruption by rerouting orders but could not prevent the direct financial hit, so planning only reduces, not removes, risk.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, scenario planning is clearly useful to ASOS — it limited disruption, protected online sales and reassured investors — but should be part of a wider risk-management system, not relied on alone. Its success depends on how well ASOS identifies the most likely and most damaging risks. It is recommended ASOS keeps using it for high-impact, high-likelihood risks but combines it with insurance, flexible operations and safety measures.</p>`,
+     fb:"Mr. Akram's exemplar (ASOS). Uses the Berlin/Barnsley fires and £6m figure; two benefits, a 'reduces not removes risk' limitation, and a recommendation."},
+    {marks:12, q:"Assess the benefits of succession planning for a business such as Alibaba. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is leadership continuity, because a succession plan prepares an internal candidate already familiar with the company — Daniel Zhang, who was CEO before taking over as chairman from Jack Ma. <span class="tag t-C">CHAIN</span>This means the handover was predictable and controlled, so Alibaba kept operating effectively without denting investor confidence or staff morale.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is protecting morale, because an internal successor is more likely to continue the founder's vision. <span class="tag t-C">CHAIN</span>This means employees feel confident about the direction and are less likely to resist change, supporting a smoother transition.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, succession planning cannot eliminate external threats such as a trade war or recession, and it does not guarantee the successor will inspire the same confidence as a founder. So it must sit alongside wider risk management and ongoing leadership development.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, succession planning reduces risk for Alibaba by ensuring stable leadership transitions, but its value depends on developing successors well and combining it with broader risk strategies. It is recommended Alibaba supports succession with ongoing leadership development and performance review.</p>`,
+     fb:"Mr. Akram's exemplar (Alibaba). Jack Ma → Daniel Zhang continuity and morale benefits, with external-threat and successor-calibre limitations."},
+    {marks:12, q:"Assess the likely benefits of contingency planning for a business such as IKEA. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is greater flexibility in uncertain conditions, because contingency planning prepares IKEA for a range of scenarios. <span class="tag t-C">CHAIN</span>This means quicker responses to supply-chain disruption or demand swings — adjusting pricing, stock or sourcing — so IKEA keeps operating smoothly and avoids stockouts or overstocking.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is maintaining business continuity, because IKEA can invest in backup IT and alternative supply routes. <span class="tag t-C">CHAIN</span>This means fewer delays or shutdowns during outages or system failures, so customer satisfaction and revenue are protected and trust is maintained.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, not all outcomes can be predicted — IKEA still misjudged demand during the energy crisis — and contingency planning is costly and time-consuming, diverting resources from product development or marketing. If the risks never occur, that spend can look wasted.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, contingency planning is valuable to IKEA for flexibility, faster decisions and continuity, but it is not a guarantee of success. Its value depends on how regularly it is reviewed, how realistic the assumptions are, and whether IKEA can act on the plans quickly. It is recommended IKEA keeps investing in it for high-impact, high-likelihood risks while combining it with other strategies.</p>`,
+     fb:"Mr. Akram's exemplar (IKEA). Flexibility and continuity benefits, with unpredictability and cost as limitations, and a review-dependent judgement."}
+  ],
+  resources:[
+    {label:"Contingency planning — lesson notes (PDF)", file:"resources/3-3-6-contingency-notes.pdf"}
   ]
 }
 ];
