@@ -314,7 +314,7 @@ window.CURRICULUM = [
 },
 {
   code:"3.3.3", subtheme:"3.3", title:"Decision trees",
-  business:"Case studies: Center Parcs & Tata Motors", status:"live",
+  business:"Case studies: Center Parcs, Tata & noon (UAE)", status:"live",
   notes:[
     {h:"What is a decision tree?", html:`
       <p>A <b>decision tree</b> is a diagram that maps out a decision, the options available, and the possible outcomes — each with a <b>probability</b> and a <b>financial value</b>. It helps a business choose the option with the best expected financial return, while making the risks visible.</p>
@@ -408,7 +408,13 @@ window.CURRICULUM = [
      fb:"Net gain = EV − cost. The recommendation follows the highest net gain — here Modify (£71,500 vs £56,000)."},
     {marks:4, q:"Launch new product: 40% chance of +£30m, 60% chance of −£8m, cost £5m. Modify existing: 80% chance of +£3m, 20% chance of +£1.5m, cost £1m. Calculate the expected value and net gain of each.",
      model:`Launch: EV = (30 × 0.4) + (−8 × 0.6) = 12 − 4.8 = <b>£7.2m</b>; net gain = 7.2 − 5 = <b>£2.2m</b> <span class="pt">1</span><span class="pt">2</span>. Modify: EV = (3 × 0.8) + (1.5 × 0.2) = 2.4 + 0.3 = <b>£2.7m</b>; net gain = 2.7 − 1 = <b>£1.7m</b> <span class="pt">1</span><span class="pt">2</span>. Launching has the higher net gain.`,
-     fb:"Full marks for both EVs and both net gains. Launch wins on net gain (£2.2m vs £1.7m) despite its 60% chance of a loss."}
+     fb:"Full marks for both EVs and both net gains. Launch wins on net gain (£2.2m vs £1.7m) despite its 60% chance of a loss."},
+  {marks:4, q:"noon Option A: cost AED 85m; 0.6 chance of AED 190m, 0.4 chance of −AED 20m. Calculate its total expected value and net gain. (Option B's net gain is AED 46.5m.)",
+     model:`Expected value = (0.6 × 190) + (0.4 × −20) = 114 − 8 = <b>AED 106m</b> <span class="pt">1</span><span class="pt">2</span>. Net gain = 106 − 85 = <b>AED 21m</b> <span class="pt">1</span>. This is below Option B's AED 46.5m, so on the figures Option B is preferred <span class="pt">1</span>.`,
+     fb:"Net gain = total expected value − cost. Watch the negative weak-demand result (0.4 × −20 = −8). Full marks for AED 21m with units."},
+  {marks:4, q:"Sensitivity check: if noon's probability of strong demand for Option B falls from 0.7 to 0.3, recalculate Option B's net gain and state whether the recommendation changes.",
+     model:`New expected value = (0.3 × 125) + (0.7 × 30) = 37.5 + 21 = AED 58.5m <span class="pt">1</span>. Net gain = 58.5 − 50 = <b>AED 8.5m</b> <span class="pt">1</span>. This is now below Option A's AED 21m <span class="pt">1</span>, so the recommendation would change to Option A <span class="pt">1</span>.`,
+     fb:"Shows how sensitive the decision is to a single probability estimate — a key limitation of decision trees."}
   ],
   caseStudy:{
     business:"Center Parcs & Tata Motors",
@@ -428,7 +434,19 @@ window.CURRICULUM = [
         <tr><td>Expand the dealership network</td><td>0.4</td><td>$2.2m</td></tr>
         <tr><td>Relaunch the Nano as a premium car</td><td>0.2</td><td>$1.4m</td></tr>
       </table>
-      <p>The dealership option has the higher expected value <i>and</i> the higher chance of success.</p>`
+      <p>The dealership option has the higher expected value <i>and</i> the higher chance of success.</p>
+      <hr style="border:none;border-top:2px solid var(--line);margin:22px 0">
+      <h3>noon Minutes (UAE) — dark stores vs ADNOC hubs</h3>
+      <p><b>noon</b> is an Emirati-founded platform (launched 2017); its quick-commerce service <b>noon Minutes</b> delivers in under 15 minutes from small "dark stores." noon wants to extend the promise across the UAE. <b>Option A</b>: open more noon-owned dark stores (full control, large up-front cost, slower to build). <b>Option B</b>: place noon Minutes hubs inside <b>ADNOC</b> service stations (551 stations) — faster, wider reach, but only an MoU so far. It can also do nothing (net gain AED 0).</p>
+      <table class="datatable">
+        <tr><th></th><th>Option A: own dark stores</th><th>Option B: ADNOC hubs</th></tr>
+        <tr><td>Cost (AED m)</td><td>85</td><td>50</td></tr>
+        <tr><td>Strong demand</td><td>0.6 → 190</td><td>0.7 → 125</td></tr>
+        <tr><td>Weak demand</td><td>0.4 → (20)</td><td>0.3 → 30</td></tr>
+        <tr><td>Expected value (AED m)</td><td>106</td><td>96.5</td></tr>
+        <tr><td>Net gain (AED m)</td><td>21</td><td><b>46.5</b></td></tr>
+      </table>
+      <p>Option B has the higher net gain (AED 46.5m vs 21m), a smaller worst case (−AED 20m vs −AED 105m) and needs less capital — but below a strong-demand probability of about <b>0.43</b> the decision flips to Option A.</p>`
   },
   exam:[
     {marks:4, q:"A decision tree gives Option A an expected value of £116,000 (cost £60,000) and Option B an expected value of £146,500 (cost £75,000). Calculate the net gain of each option and recommend which the business should choose. (4)",
@@ -452,10 +470,28 @@ window.CURRICULUM = [
      <p><span class="tag t-P">RELAUNCH · FOR</span>One benefit of relaunching the Nano as a premium car is that it could fix the brand image, because Extract F notes consumers saw the Nano as "cheap" and undesirable. This means repositioning it as a stylish compact car could attract urban professionals; therefore demand and margins could rise.</p>
      <p><span class="tag t-J">RELAUNCH · AGAINST</span>A drawback is the low 0.2 probability of success, because consumers may reject the Nano in a premium segment given its past reputation. This means even heavy advertising may not shift perceptions; therefore the relaunch could fail despite high spend, and as a result Tata could incur heavy losses and further brand damage.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, expanding the dealership network is the better option, because it has the higher expected return ($2.2m vs $1.4m) and the higher success probability (0.4 vs 0.2). While the relaunch could improve brand image, its low success chance makes it riskier. Success depends on how quickly and affordably Tata can roll out dealerships while sustaining interest in the Nano. It is recommended Tata conducts further analysis, including payback period, to minimise financial risk before deciding.</p>`,
-     fb:"Mr. Akram's exemplar (Tata Motors). Both options are argued and challenged, the EV and probability figures are used, and the conclusion recommends with 'success depends on'."}
+     fb:"Mr. Akram's exemplar (Tata Motors). Both options are argued and challenged, the EV and probability figures are used, and the conclusion recommends with 'success depends on'."},
+  {marks:8, q:"Assess the limitations of using decision trees to help noon decide between Option A and Option B. (8)",
+     model:`<p><span class="tag t-P">POINT</span>A decision tree shows the options, probabilities and financial results so the net gain of each can be compared — for noon, AED 46.5m for Option B against AED 21m for Option A. <span class="tag t-J">HOWEVER</span>However, the probabilities are only managers' estimates in a fast-changing market where rivals such as Talabat and Careem can respond. <span class="tag t-C">CHAIN</span>This matters because the decision is sensitive: if the chance of strong demand for Option B fell to 0.3, its net gain would drop to AED 8.5m and Option A would become the better option.</p>
+     <p>The tree also reduces demand to just two outcomes and gives an average that neither option will actually deliver, and it ignores qualitative factors such as noon's control of the customer experience under Option A or its dependence on ADNOC under Option B. <span class="tag t-J">JUDGE</span>Overall, these limitations mean noon should not rely on the tree alone, but it remains a useful starting point if the probabilities are tested and combined with managers' judgement.</p>`,
+     fb:"8-mark 'assess limitations' still needs balance and a judgement. Reward the sensitivity point (0.3 → AED 8.5m) and qualitative factors, applied to noon."},
+  {marks:12, q:"Using the case data, assess the usefulness of decision trees to noon when deciding how to expand noon Minutes. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is that a decision tree puts a number on each option, because it combines probabilities with financial results to give a net gain: AED 46.5m for Option B and AED 21m for Option A. <span class="tag t-C">CHAIN</span>This means noon can see the ADNOC hubs are forecast to earn more than double its own dark stores; therefore managers can justify Option B with evidence rather than opinion, and as a result noon is more likely to make a profitable decision.</p>
+     <p><span class="tag t-P">POINT</span>Another benefit is that the tree shows risk as well as return, because every outcome is displayed: Option A has a 40% chance of a AED 105m loss, whereas Option B's worst case is a AED 20m loss. <span class="tag t-C">CHAIN</span>This means noon can see which option is riskier; therefore it can plan contingencies such as phasing the roll-out, and as a result is better protected if demand is low.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, decision trees depend on estimates in a fast-changing market. If the probability of strong demand for Option B fell to 0.3, its net gain would fall to AED 8.5m and Option A would be better. The tree also ignores qualitative factors — noon's dependence on an MoU with ADNOC whose terms are not final — and the timing of returns, so noon should not rely on it alone.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, decision trees are useful to noon as a starting point, because they support Option B with clear figures and show each option's risk. Their usefulness depends on how reliable the estimates are, so it is recommended noon tests the probabilities and also uses payback and NPV before the final decision.</p>`,
+     fb:"Mr. Akram's exemplar (noon). Two developed benefits using the figures, a limitation built on the sensitivity point, and a conclusion on what usefulness depends on."},
+  {marks:20, q:"Evaluate which option noon should choose to extend its 15-minute delivery promise: Option A (new noon-owned dark stores) or Option B (noon Minutes hubs in ADNOC service stations). (20)",
+     model:`<p><span class="tag t-P">FOR B</span>Option B offers a higher expected net gain of AED 46.5m against AED 21m for Option A, and a lower chance of weak demand (30% vs 40%), because its expected value of AED 96.5m is only AED 9.5m below Option A's AED 106m while it costs AED 35m less. <span class="tag t-C">CHAIN</span>This means noon earns a stronger return on each dirham with less capital at risk; therefore the ADNOC hubs are the more profitable and secure choice, and as a result noon could free up funds and reach customers sooner.</p>
+     <p><span class="tag t-P">RISK</span>The tree also shows the range of outcomes, because if demand is weak Option A loses AED 105m whereas Option B loses only AED 20m. <span class="tag t-C">CHAIN</span>This means Option A carries a 40% chance of a very large loss; therefore noon can prepare by phasing the roll-out or holding reserves, and as a result is better protected if demand disappoints.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, decision trees can be unreliable, because probabilities and results are estimates. If the probability of strong demand for Option B fell from 0.7 to 0.3, its net gain would drop to AED 8.5m and Option A would be better; a response from rivals such as Talabat or Careem could make the forecasts wrong, so AED 46.5m is a guide, not a guarantee.</p>
+     <p><span class="tag t-J">QUALITATIVE</span>The tree also ignores qualitative factors and timing. Option B depends on an MoU whose terms are not final, so noon has less control, whereas Option A gives full control of layout, stock and customer data. noon should also use payback and NPV: Option B costs AED 35m less and could open sooner, so it likely recovers its cost faster.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Option B is the stronger option, because it has a higher net gain (AED 46.5m vs 21m), a lower chance of weak demand, a far smaller worst case and a lower investment, and it could reach customers quickly through ADNOC's 551 stations. Option A is rejected because its net gain is only AED 21m, ties up AED 85m and risks a AED 105m loss. Success depends on ADNOC agreeing final terms and on strong demand staying likely (a probability above about 0.43). It is recommended noon proceeds with Option B but uses payback and NPV and re-tests the probabilities before committing.</p>`,
+     fb:"Mr. Akram's exemplar (noon): figures interpreted throughout, each side challenged with a 'however', the break-even probability (0.43) used, and a full 4Ws conclusion with recommendation."}
   ],
   resources:[
-    {label:"Decision trees — lesson notes (PDF)", file:"resources/3-3-3-decision-trees-notes.pdf"}
+    {label:"Decision trees — lesson notes (PDF)", file:"resources/3-3-3-decision-trees-notes.pdf"},
+    {label:"noon Minutes decision-tree case study & questions (PDF)", file:"resources/3-3-3-noon-case-student.pdf"}
   ]
 },
 {code:"3.3.4", subtheme:"3.3", title:"Critical path analysis", business:"EST · LFT · total float", status:"soon"},
