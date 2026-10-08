@@ -116,7 +116,114 @@ window.CURRICULUM = [
      fb:"Full 5×5: FOR → AGAINST → ALTERNATIVE → LIMITATION OF ALTERNATIVE → 4Ws. Each body paragraph is a complete PECAN chain ending in judgement. The conclusion must make a supported decision and say what it depends on."}
   ]
 },
-{code:"3.3.2", subtheme:"3.3", title:"Investment appraisal", business:"Payback · ARR · NPV", status:"soon"},
+{
+  code:"3.3.2", subtheme:"3.3", title:"Investment appraisal",
+  business:"Case study: Greggs plc — Kettering vs Derby", status:"live",
+  notes:[
+    {h:"What is investment appraisal?", html:`
+      <p>Investment appraisal is how a business judges whether a major investment — a new site, machinery, a project — is <b>worthwhile</b>, by comparing the <b>initial cost</b> with the <b>future net cash flows</b> it is expected to generate.</p>
+      <p>The spec covers three methods, each showing something different:</p>
+      <ul>
+        <li><b>Payback</b> — how quickly the cost is recovered (risk & liquidity).</li>
+        <li><b>Average rate of return (ARR)</b> — how profitable the project is (%).</li>
+        <li><b>Net present value (NPV)</b> — how much value it adds in today's money.</li>
+      </ul>`},
+    {h:"Simple payback", html:`
+      <p><b>Payback</b> is the time taken to recover the initial cost from net cash flows. Work out the <b>cumulative</b> net cash flow year by year; find the year it turns positive; then use the fraction:</p>
+      <div class="note-ex">Months into the final year = (amount still to recover ÷ that year's cash flow) × 12</div>
+      <p><b>Greggs Project A</b>: cumulative reaches −£5m by the end of Year 3, with £25m coming in Year 4 → £5m ÷ £25m × 12 = 2 months → <b>3 years 2 months</b>.</p>
+      <p><b>Use it for:</b> judging risk and liquidity — a shorter payback means cash is at risk for less time. <b>Weakness:</b> it ignores all cash after payback, ignores the time value of money, and doesn't measure profitability.</p>`},
+    {h:"Average rate of return (ARR)", html:`
+      <p><b>ARR</b> shows the average annual profit as a percentage of the initial cost:</p>
+      <div class="note-ex">ARR = ( (total net cash inflow − initial cost) ÷ project life ) ÷ initial cost × 100</div>
+      <p><b>Greggs Project B</b>: (£200m − £120m) = £80m total return ÷ 5 = £16m a year; £16m ÷ £120m × 100 = <b>13.3%</b>.</p>
+      <p><b>Use it for:</b> comparing against a target return or the firm's ROCE. <b>Weakness:</b> it's an average that ignores <i>when</i> cash arrives (the time value of money).</p>`},
+    {h:"Discounted cash flow & Net Present Value (NPV)", html:`
+      <p>A pound today is worth more than a pound in the future — the <b>time value of money</b>. <b>Discount factors</b> convert future cash into today's value:</p>
+      <div class="note-ex">Present value = net cash flow × discount factor &nbsp;&middot;&nbsp; NPV = total present value − initial cost</div>
+      <p>A <b>positive NPV</b> means the project is forecast to earn <i>more</i> than the required return, so it adds value. <b>Greggs</b>: Project A NPV = <b>+£3.41m</b>; Project B NPV = <b>+£24.41m</b>.</p>
+      <p><b>Use it for:</b> the most complete measure — it uses all cash flows and allows for timing. <b>Weakness:</b> more complex, and sensitive to the forecasts and the chosen discount rate.</p>`},
+    {h:"Which method, and limitations", html:`
+      <ul>
+        <li>Payback → <b>risk & liquidity</b>; ARR → <b>profitability</b>; NPV → <b>value added</b> (usually carries the most weight).</li>
+        <li>All three rely on <b>forecast</b> cash flows — only as good as the estimates.</li>
+        <li>They ignore <b>qualitative factors</b>: strategy, capacity, staff, risk, sustainability.</li>
+        <li>Best used <b>together</b>, alongside judgement about the wider situation.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Investment appraisal", marks:2, body:`The process a business uses to judge whether a major investment is worthwhile <span class="pt">1</span> by comparing its initial cost with the future cash flows it is expected to generate <span class="pt">2</span>.`},
+    {term:"Payback period", marks:2, body:`The length of time it takes a project to recover its initial cost from its net cash flows <span class="pt">1</span>; a shorter payback means cash is at risk for less time, reducing risk <span class="pt">2</span>.`},
+    {term:"Average rate of return (ARR)", marks:2, body:`The average annual profit of a project expressed as a percentage of its initial investment <span class="pt">1</span>, which can be compared against a target return or other projects to judge profitability <span class="pt">2</span>.`},
+    {term:"Net present value (NPV)", marks:2, body:`The total present value of a project's future cash flows minus its initial investment <span class="pt">1</span>; a positive NPV means the project is forecast to earn more than the required return, so it adds value <span class="pt">2</span>.`},
+    {term:"Discounted cash flow (DCF)", marks:2, body:`A technique that reduces future cash flows to their value today using discount factors <span class="pt">1</span>, because money received in the future is worth less than money received now <span class="pt">2</span>.`},
+    {term:"Discount factor", marks:2, body:`A number less than one used to convert a future cash flow into its present value <span class="pt">1</span>; the further in the future the cash flow, and the higher the discount rate, the smaller the factor <span class="pt">2</span>.`},
+    {term:"Time value of money", marks:2, body:`The principle that a sum of money is worth more today than the same sum in the future <span class="pt">1</span>, because today's money can be invested to earn a return or is eroded by inflation <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:3, q:"Project A (Kettering) has an initial cost of £135m and net cash flows of £50m, £45m, £35m, £25m, £20m (Years 1–5). Calculate the payback period in years and months.",
+     model:`Cumulative net cash flow: Year 1 (−85), Year 2 (−40), Year 3 (−5), Year 4 +20 <span class="pt">1</span>. So £5m is still to be recovered going into Year 4; £5m ÷ £25m × 12 = 2 months <span class="pt">1</span>. Payback = <b>3 years 2 months</b> <span class="pt">1</span>.`,
+     fb:"3 marks: cumulative flows + the fraction (£5m ÷ £25m × 12) + the answer. If no working is shown but the answer is 3 years 2 months, award full marks."},
+    {marks:2, q:"Project B (Derby) pays back in 3 years 7 months. State which project payback favours, and by how many months.",
+     model:`Payback favours <b>Project A</b> <span class="pt">1</span>, by <b>5 months</b> (3 years 2 months versus 3 years 7 months) <span class="pt">2</span>.`,
+     fb:"1 mark for identifying Project A, 1 for the correct difference of 5 months."},
+    {marks:4, q:"Explain one benefit and one drawback of using payback to appraise these projects. Refer to Greggs in your answer.",
+     model:`<b>Benefit:</b> payback is simple to calculate and focuses on how quickly cash is recovered <span class="pt">1</span>; this matters to Greggs because it spent around £300m on capital projects in 2025 and its ROCE fell from 20.3% to 16.0%, so getting cash back sooner reduces risk <span class="pt">2</span>. <b>Drawback:</b> payback ignores cash flows after the payback point <span class="pt">3</span> — Project B earns £110m in Years 4–5 against just £45m for A, so payback undervalues B <span class="pt">4</span>.`,
+     fb:"1 mark each for a benefit and a drawback (knowledge), 1 for Greggs application, 1 for development."},
+    {marks:4, q:"Project B (Derby) costs £120m and has total net cash inflows of £200m over 5 years. Calculate its Average Rate of Return (ARR) to one decimal place.",
+     model:`Total net return = £200m − £120m = £80m <span class="pt">1</span>. Average annual profit = £80m ÷ 5 = £16m <span class="pt">1</span>. ARR = £16m ÷ £120m × 100 <span class="pt">1</span> = <b>13.3%</b> <span class="pt">1</span>.`,
+     fb:"4 marks: formula + total return + average profit + answer. 13.3% = full marks; 13.33% or 13% = 3 marks."},
+    {marks:4, q:"Explain one benefit and one drawback of using ARR to appraise these projects. Refer to Greggs in your answer.",
+     model:`<b>Benefit:</b> ARR gives a single percentage that can be compared with a target return <span class="pt">1</span>; Greggs can compare Project B's 13.3% with its underlying ROCE of 16.0% to see whether it lifts or dilutes returns <span class="pt">2</span>. <b>Drawback:</b> ARR ignores the timing of cash flows and the time value of money <span class="pt">3</span> — Project A's cash flows fall over time while B's rise, which an average completely hides <span class="pt">4</span>.`,
+     fb:"1 mark each for benefit and drawback, 1 for Greggs application, 1 for development."},
+    {marks:4, q:"Using the 10% discount factors (0.909, 0.826, 0.751, 0.683, 0.621), calculate the NPV of Project A (cash flows £50m, £45m, £35m, £25m, £20m; cost £135m). Give £m to two decimal places.",
+     model:`Present values: 50×0.909 = 45.45; 45×0.826 = 37.17; 35×0.751 = 26.29; 25×0.683 = 17.08; 20×0.621 = 12.42 <span class="pt">1</span><span class="pt">2</span>. Total PV = £138.41m <span class="pt">1</span>. NPV = £138.41m − £135m = <b>+£3.41m</b> <span class="pt">1</span>.`,
+     fb:"4 marks: method + present values (allow one slip) + total PV + NPV. +£3.41m = full marks."},
+    {marks:2, q:"Project A's NPV is +£3.41m and Project B's is +£24.41m. State which project NPV favours, and explain what a positive NPV means for Greggs.",
+     model:`NPV favours <b>Project B</b> <span class="pt">1</span>. A positive NPV means the project is forecast to earn more than the 10% required return, and B adds about £21m more value in today's money than A <span class="pt">2</span>.`,
+     fb:"1 mark for Project B, 1 for a developed explanation of what a positive NPV means."}
+  ],
+  caseStudy:{
+    business:"Greggs plc — Kettering (Project A) vs Derby (Project B)",
+    intro:`<p><b>Greggs plc</b> is a UK food-to-go retailer with over 2,600 shops, aiming to grow the estate beyond 3,000. 2025 was the peak year of a multi-year investment programme, with capital expenditure of around <b>£300m</b>. Underlying <b>ROCE fell from 20.3% (2024) to 16.0% (2025)</b> because of the planned rise in capital employed, so returns on new investment matter.</p>
+    <p><b>Project A — Kettering National Distribution Centre:</b> £30m land + £105m further investment (£135m total), operational 2027. Enables around <b>900 further net new shops</b> and relieves existing distribution centres. Cash flows are <b>front-loaded</b>, falling each year.</p>
+    <p><b>Project B — Derby frozen production & logistics site:</b> around £120m of fit-out, equipment and automation, operational by end 2026. Adds production capacity, new product lines and up to <b>600 jobs</b>. Cash flows start low and <b>rise</b> as the site ramps up.</p>
+    <p class="note-ex"><b>Forecast net cash flows & 10% discount factors</b> (illustrative — invented for this exercise).</p>
+    <table class="datatable">
+      <tr><th>Year</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+      <tr><td>Project A (£m)</td><td>(135)</td><td>50</td><td>45</td><td>35</td><td>25</td><td>20</td></tr>
+      <tr><td>Project B (£m)</td><td>(120)</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td></tr>
+      <tr><td>Discount factor</td><td>1.000</td><td>0.909</td><td>0.826</td><td>0.751</td><td>0.683</td><td>0.621</td></tr>
+    </table>
+    <p class="note-ex"><b>Results summary</b> — Payback: A 3y 2m, B 3y 7m (A faster) &middot; ARR: A 5.9%, B 13.3% (B higher) &middot; NPV: A +£3.41m, B +£24.41m (B higher). Full student worksheet and extra past-paper questions are in the <b>Resources</b> tab.</p>`
+  },
+  exam:[
+    {marks:4, q:"Project A (Kettering) costs £135m and has total net cash inflows of £175m over 5 years. Calculate its Average Rate of Return (ARR) to one decimal place. (4)",
+     model:`Total net return = £175m − £135m = £40m <span class="pt">1</span>. Average annual profit = £40m ÷ 5 = £8m <span class="pt">1</span>. ARR = £8m ÷ £135m × 100 <span class="pt">1</span> = <b>5.9%</b> <span class="pt">1</span>.`,
+     fb:"4 marks: formula + total return + average profit + answer. 5.9% = full marks. Note this is well below Greggs' 16.0% ROCE."},
+    {marks:8, q:"Assess the usefulness of payback to Greggs when deciding between Project A and Project B. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Payback is useful to Greggs as a quick measure of <b>risk and liquidity</b>. <span class="tag t-E">EXPLAIN</span>It shows how long each project takes to return its initial cost. <span class="tag t-C">CHAIN</span>Project A recovers its £135m in 3 years 2 months versus 3 years 7 months for B, so A returns cash 5 months sooner; this means Greggs' money is at risk for less time, which matters while it is spending heavily (≈£300m capex in 2025) and ROCE has fallen from 20.3% to 16.0%. <span class="tag t-A">APPLY</span>With cash under pressure, faster recovery protects liquidity. <span class="tag t-J">JUDGE</span>So on payback, Project A looks the safer choice.</p>
+     <p><span class="tag t-J">HOWEVER</span><b>However</b>, payback ignores all cash flows <i>after</i> the payback point — Project B earns £110m in Years 4–5 against just £45m for A — and it ignores the time value of money, so it badly undervalues B and says nothing about profitability. The 5-month gap is small next to B's far larger total return (£80m vs £40m), so Greggs should treat payback as one input, not the deciding factor.</p>`,
+     fb:"8-mark 'assess' must be balanced even though it looks one-sided — the 'however' is essential. Reward use of the figures (3y2m vs 3y7m; £110m vs £45m) and a judgement on when payback is most/least useful."},
+    {marks:12, q:"Using NPV and ARR, assess which project Greggs should choose: Project A (Kettering) or Project B (Derby). (12)",
+     model:`<p><span class="tag t-P">POINT</span>On NPV and ARR, Project B is the stronger choice. <span class="tag t-E">EXPLAIN</span>NPV shows value added today and ARR shows profitability relative to cost. <span class="tag t-C">CHAIN</span>B's NPV is +£24.41m against A's +£3.41m (about £21m more), and its ARR is 13.3% versus 5.9%; this means B earns far more for each pound invested and is close to Greggs' ROCE of 16.0%, whereas A's 5.9% would dilute returns. <span class="tag t-A">APPLY</span>B's cash flows grow to £60m by Year 5, which NPV rewards even after discounting. <span class="tag t-J">JUDGE</span>So on both profitability measures, B wins clearly.</p>
+     <p><span class="tag t-P">POINT</span>However, B's advantage rests on uncertain, back-loaded forecasts. <span class="tag t-E">EXPLAIN</span>Both NPV and ARR depend on forecast cash flows. <span class="tag t-C">CHAIN</span>B's cash arrives later, from a new automated site, so commissioning delays could hit it; A's front-loaded cash flows are easier to forecast and it pays back 5 months sooner. <span class="tag t-A">APPLY</span>If distribution capacity is the real constraint on Greggs' growth, Kettering's strategic value may matter more than its weak NPV. <span class="tag t-J">JUDGE</span>So A remains defensible on risk and strategy.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> overall Greggs should choose Project B. <b>Why:</b> its NPV is about £21m higher and its ARR more than double A's, so it adds far more value. <b>Why (develop):</b> this matters because Greggs must invest limited capital where returns are highest while ROCE is under pressure. <b>What (depends on):</b> however, this depends on B's ramp-up going to plan — if distribution capacity is what limits new shop openings, Project A becomes the better choice.</p>`,
+     fb:"12-mark = trimmed 5×5: one developed FOR, one AGAINST/caution, then the 4Ws conclusion. Reward correct figures and a supported decision that states what it depends on."},
+    {marks:20, q:"Evaluate which investment is likely to be the most successful for Greggs: Project A (Kettering) or Project B (Derby). Use investment appraisal and other factors in your answer. (20)",
+     model:`<p><span class="tag t-P">P1 · FOR B</span>The most complete measure, NPV, clearly favours Project B. <span class="tag t-E">EXPLAIN</span>NPV uses all the cash flows, discounted to today's value. <span class="tag t-C">CHAIN</span>B's NPV of +£24.41m against A's +£3.41m means B adds roughly £21m more value; as a result it creates far more wealth from a similar outlay, which is what Greggs needs while ROCE is falling. <span class="tag t-A">APPLY</span>B's back-loaded cash flows rising to £60m are rewarded even after discounting. <span class="tag t-J">JUDGE</span>So on value added, B is the stronger project.</p>
+     <p><span class="tag t-P">P2 · FOR A</span>However, Project A has genuine merits. <span class="tag t-E">EXPLAIN</span>Its cash flows are front-loaded and recovered sooner. <span class="tag t-C">CHAIN</span>A pays back in 3 years 2 months versus 3 years 7 months, so cash is at risk for less time, and front-loaded forecasts are more reliable than B's later ones; Kettering also unlocks around 900 further shops and relieves distribution bottlenecks. <span class="tag t-A">APPLY</span>If capacity is what limits new openings, that strategic value is large. <span class="tag t-J">JUDGE</span>So A has real appeal on risk and strategy.</p>
+     <p><span class="tag t-P">P3 · LIMITATION OF A</span>But A's financial case is thin and fragile. <span class="tag t-E">EXPLAIN</span>Its NPV margin is only about 2.5% of its cost. <span class="tag t-C">CHAIN</span>A's NPV turns negative (−£10.44m) if cash flows fall 10%, and −£2.32m at a 12% discount rate, and its 5.9% ARR is below Greggs' 16.0% ROCE; B, by contrast, stays positive even if cash flows fall 15% (+£2.75m) or costs rise 15%. <span class="tag t-A">APPLY</span>So A risks destroying value if forecasts slip, while B is robust. <span class="tag t-J">JUDGE</span>A's apparent safety is therefore misleading.</p>
+     <p><span class="tag t-P">P4 · OTHER FACTORS</span>Non-financial factors also matter. <span class="tag t-E">EXPLAIN</span>Appraisal ignores strategy, jobs, sustainability and risk. <span class="tag t-C">CHAIN</span>B adds production capacity, new product lines and up to 600 jobs; A enables around 900 shops and eases distribution; both depend on automation that could be delayed, and both are designed for lower emissions. <span class="tag t-A">APPLY</span>Which matters more depends on whether capacity or production is the binding constraint on Greggs' growth. <span class="tag t-J">JUDGE</span>So the numbers are not the whole story.</p>
+     <p><span class="tag t-J">P5 · CONCLUSION (4Ws)</span><b>Which:</b> Project B, the Derby site. <b>Why stronger:</b> NPV +£24.41m vs +£3.41m and ARR 13.3% vs 5.9%, and it stays positive even if cash flows fall 15% or costs rise 15%. <b>Why reject A:</b> although payback is 5 months faster, A's NPV is thin and turns negative on a 10% shortfall, and its 5.9% ARR would dilute ROCE. <b>What it depends on:</b> B's ramp-up going to plan and secure funding for the £120m outlay — A becomes preferable only if distribution capacity is the binding constraint on new shop openings. Extra evidence needed: Greggs' true cost of capital and B's commissioning risk.</p>`,
+     fb:"Full 5×5 PECAN: FOR B → FOR A → LIMITATION OF A → OTHER FACTORS → 4Ws. Every paragraph ends on a judgement. Top band weighs the figures, challenges each side with 'however', and the conclusion states what the decision depends on. A fully reasoned case for A is also creditable."}
+  ],
+  resources:[
+    {label:"Greggs student consolidation worksheet (PDF)", file:"resources/3-3-2-greggs-student-questions.pdf"},
+    {label:"Investment appraisal — exam questions (PDF)", file:"resources/3-3-2-exam-questions.pdf"},
+    {label:"Jaguar Land Rover — 20-mark extract (PDF)", file:"resources/3-3-2-land-rover-extract.pdf"}
+  ]
+},
 {code:"3.3.3", subtheme:"3.3", title:"Decision trees", business:"Expected values & probability", status:"soon"},
 {code:"3.3.4", subtheme:"3.3", title:"Critical path analysis", business:"EST · LFT · total float", status:"soon"},
 {code:"3.3.5", subtheme:"3.3", title:"Contribution", business:"Contribution as a decision tool", status:"soon"}
