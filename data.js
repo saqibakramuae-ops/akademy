@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions"};
-window.SUBTHEME_SUB = {"3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥"};
+window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness"};
+window.SUBTHEME_SUB = {"3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔"};
 
 window.CURRICULUM = [
 {
@@ -1210,6 +1210,171 @@ window.CURRICULUM = [
     {label:"Heathrow third-runway case (PDF)", file:"resources/3-5-4-heathrow-case.pdf"},
     {label:"Commonwealth Games 20-mark question (PDF)", file:"resources/3-5-4-commonwealth-games.pdf"},
     {label:"Morrisons 20-mark question (PDF)", file:"resources/3-5-4-morrisons.pdf"}
+  ]
+},
+{
+  code:"3.3.5.1", subtheme:"3.3.5", title:"Interpretation of financial statements",
+  business:"Case study: VGL accounts", status:"live",
+  notes:[
+    {h:"Statement of comprehensive income", html:`
+      <p>The <b>statement of comprehensive income</b> (profit and loss account) shows how much a business earned and spent over a period, working down from revenue to profit:</p>
+      <ul>
+        <li><b>Sales revenue</b> − <b>cost of sales</b> = <b>gross profit</b></li>
+        <li>gross profit − <b>operating expenses</b> = <b>operating profit</b></li>
+        <li>operating profit − <b>interest</b> = <b>profit for the year (net profit)</b></li>
+      </ul>
+      <p class="note-ex">VGL example (2024): revenue £33.0m − cost of sales £16.8m = gross profit <b>£16.2m</b>; − operating expenses £4.0m = operating profit <b>£12.2m</b>; − interest £1.2m = <b>£11.0m</b> profit for the year (up from £5.2m in 2023).</p>`},
+    {h:"Statement of financial position", html:`
+      <p>The <b>statement of financial position</b> (balance sheet) is a snapshot of what the business owns and owes on one day:</p>
+      <ul>
+        <li><b>Non-current (fixed) assets</b> — kept over a year (e.g. property, machinery).</li>
+        <li><b>Current assets</b> — inventory, trade receivables, cash.</li>
+        <li><b>Current liabilities</b> — owed within a year (e.g. trade payables).</li>
+        <li><b>Net current assets (working capital)</b> = current assets − current liabilities.</li>
+        <li><b>Non-current liabilities</b> — long-term loans.</li>
+        <li><b>Net assets</b> = total assets − total liabilities, which equals <b>total equity</b> (share capital + retained profit).</li>
+      </ul>
+      <p class="note-ex">VGL (2024): non-current assets £101m; current assets £22m − current liabilities £14m = working capital <b>£8m</b>; net assets £49m = equity (£4m share capital + £45m retained profit).</p>`},
+    {h:"Who uses these statements — and their limits", html:`
+      <p>Different stakeholders read the accounts for different reasons:</p>
+      <ul>
+        <li><b>Shareholders</b> — profit, dividends and whether their investment is growing.</li>
+        <li><b>Managers</b> — performance, to guide decisions.</li>
+        <li><b>Creditors/suppliers</b> — whether the firm can pay (liquidity, working capital).</li>
+        <li><b>Employees</b> — job security and scope for pay rises.</li>
+        <li><b>Government</b> — tax due.</li>
+      </ul>
+      <p><b>Limitations:</b> they are <b>historic</b> (past, not future), a <b>snapshot</b> that can be window-dressed, ignore <b>qualitative</b> factors (brand, staff morale), and mean little without <b>comparison</b> (previous years, competitors, or ratios).</p>`}
+  ],
+  definitions:[
+    {term:"Statement of comprehensive income", marks:2, body:`A financial statement showing a business's revenue, costs and profit over a period of time <span class="pt">1</span>; it works down from sales revenue to the profit for the year <span class="pt">2</span>.`},
+    {term:"Statement of financial position", marks:2, body:`A financial statement showing a business's assets, liabilities and equity at a single point in time <span class="pt">1</span>; it shows what the business owns and owes on that day <span class="pt">2</span>.`},
+    {term:"Gross profit", marks:2, body:`Sales revenue minus the cost of sales <span class="pt">1</span>; it shows how much profit is made on trading before operating expenses are deducted <span class="pt">2</span>.`},
+    {term:"Working capital (net current assets)", marks:2, body:`Current assets minus current liabilities <span class="pt">1</span>; it shows whether a business can meet its short-term debts, a key measure of liquidity <span class="pt">2</span>.`},
+    {term:"Retained profit", marks:2, body:`Profit kept in the business rather than paid out to shareholders <span class="pt">1</span>; it is reinvested and appears within equity on the statement of financial position <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"VGL has sales revenue of £33.0m and cost of sales of £16.8m. Calculate its gross profit.",
+     model:`Gross profit = sales revenue − cost of sales = £33.0m − £16.8m <span class="pt">1</span> = <b>£16.2m</b> <span class="pt">2</span>.`,
+     fb:"Gross profit = revenue − cost of sales. One mark for method, one for the answer."},
+    {marks:4, q:"VGL has operating profit of £12.2m and interest of £1.2m. Calculate the profit for the year, and comment on performance given 2023's profit was £5.2m.",
+     model:`Profit for the year = operating profit − interest = £12.2m − £1.2m = <b>£11.0m</b> <span class="pt">1</span><span class="pt">2</span>. This is more than double the £5.2m earned in 2023 <span class="pt">3</span>, showing a strong improvement in profitability — useful to shareholders judging their returns <span class="pt">4</span>.`,
+     fb:"2 marks for the calculation, 2 for a developed interpretation (direction + what it means for a stakeholder)."},
+    {marks:4, q:"VGL has current assets of £22m and current liabilities of £14m. Calculate its working capital and explain what it shows.",
+     model:`Working capital = current assets − current liabilities = £22m − £14m = <b>£8m</b> <span class="pt">1</span><span class="pt">2</span>. A positive figure means VGL can comfortably cover its short-term debts <span class="pt">3</span>, suggesting healthy liquidity that reassures suppliers and creditors <span class="pt">4</span>.`,
+     fb:"Working capital = current assets − current liabilities; develop what a positive figure means for liquidity."}
+  ],
+  caseStudy:{
+    business:"VGL — reading the accounts",
+    intro:`<p><b>VGL's</b> accounts show a business improving strongly year on year.</p>
+      <p class="note-ex"><b>Statement of comprehensive income (£m)</b></p>
+      <table class="datatable">
+        <tr><th></th><th>2024</th><th>2023</th></tr>
+        <tr><td>Sales revenue</td><td>33.0</td><td>30.1</td></tr>
+        <tr><td>Cost of sales</td><td>16.8</td><td>19.6</td></tr>
+        <tr><td>Gross profit</td><td>16.2</td><td>10.5</td></tr>
+        <tr><td>Operating expenses</td><td>4.0</td><td>4.0</td></tr>
+        <tr><td>Operating profit</td><td>12.2</td><td>6.5</td></tr>
+        <tr><td>Interest</td><td>1.2</td><td>1.3</td></tr>
+        <tr><td><b>Profit for the year</b></td><td><b>11.0</b></td><td><b>5.2</b></td></tr>
+      </table>
+      <p class="note-ex"><b>Statement of financial position (£m)</b></p>
+      <table class="datatable">
+        <tr><th></th><th>2024</th><th>2023</th></tr>
+        <tr><td>Non-current assets</td><td>101</td><td>96</td></tr>
+        <tr><td>Current assets (inventory + receivables + cash)</td><td>22</td><td>32</td></tr>
+        <tr><td>Current liabilities</td><td>14</td><td>17</td></tr>
+        <tr><td>Working capital</td><td>8</td><td>15</td></tr>
+        <tr><td>Non-current liabilities (loans)</td><td>60</td><td>63</td></tr>
+        <tr><td>Net assets</td><td>49</td><td>48</td></tr>
+        <tr><td>Equity (share capital + retained profit)</td><td>49</td><td>48</td></tr>
+      </table>`
+  },
+  exam:[
+    {marks:12, q:"Using VGL's financial statements, assess the usefulness of these statements to VGL's stakeholders. (12)",
+     model:`<p><span class="tag t-P">POINT</span>The statements are useful because they show clear performance trends, because VGL's profit for the year rose from £5.2m to £11.0m and gross profit from £10.5m to £16.2m. <span class="tag t-C">CHAIN</span>This means shareholders can see their investment is growing and managers can judge which decisions worked; as a result both can make better-informed decisions about dividends and strategy.</p>
+     <p><span class="tag t-P">POINT</span>They also reveal financial health to creditors, because the statement of financial position shows working capital of £8m and loans falling from £63m to £60m. <span class="tag t-C">CHAIN</span>This means suppliers and lenders can see VGL can meet its short-term debts, so they are more willing to extend credit.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the statements have real limits: they are historic and a single snapshot, can be window-dressed, and ignore qualitative factors such as brand and staff morale. Working capital has actually fallen from £15m to £8m, so the figures need comparing over time and with rivals — ideally through ratio analysis — before firm conclusions are drawn.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> the statements are useful but not sufficient alone. <b>Why:</b> they show performance and financial health to every stakeholder group. <b>Why (develop):</b> but they are backward-looking and omit qualitative factors. <b>What (depends on):</b> their usefulness depends on comparing across years and competitors and combining them with ratio analysis. <i>(House-style model answer — no official mark scheme supplied for this question.)</i></p>`,
+     fb:"Uses the VGL figures (profit £5.2m→£11.0m, working capital £15m→£8m) with two benefits, a limitations paragraph, and a 4Ws conclusion. House-style exemplar — swap in an official mark scheme if you have one."}
+  ],
+  resources:[
+    {label:"Financial statements — lesson notes (PDF)", file:"resources/3-3-5-1-financial-statements-notes.pdf"}
+  ]
+},
+{
+  code:"3.3.5.2", subtheme:"3.3.5", title:"Ratio analysis",
+  business:"Profitability · liquidity · gearing · ROCE", status:"soon"
+},
+{
+  code:"3.3.5.3", subtheme:"3.3.5", title:"Human resources",
+  business:"Case study: Richer Sounds", status:"live",
+  notes:[
+    {h:"HR performance measures", html:`
+      <p>Businesses use HR data to judge how well their workforce is performing and to spot problems. The three key measures:</p>
+      <table class="datatable">
+        <tr><th>Measure</th><th>What it shows</th><th>Formula</th></tr>
+        <tr><td>Labour productivity</td><td>Output per worker</td><td>total output ÷ number of employees</td></tr>
+        <tr><td>Labour turnover</td><td>% of staff leaving in a year</td><td>(staff leaving ÷ average number employed) × 100</td></tr>
+        <tr><td>Labour retention</td><td>% of staff kept</td><td>(staff staying ÷ average number employed) × 100</td></tr>
+        <tr><td>Absenteeism (daily)</td><td>% of staff absent</td><td>(number absent ÷ total employed) × 100</td></tr>
+      </table>
+      <p>High turnover and absenteeism raise recruitment, training and cover costs and disrupt output; high productivity lowers unit costs and improves competitiveness.</p>`},
+    {h:"HR strategies to improve performance", html:`
+      <p>The spec names four strategies a business can use to raise productivity and retention and cut turnover and absenteeism:</p>
+      <ul>
+        <li><b>Financial rewards</b> — bonuses, commission, performance-related pay to motivate and retain.</li>
+        <li><b>Employee share ownership</b> — giving staff shares so they share in success and think like owners.</li>
+        <li><b>Consultation strategies</b> — involving staff in decisions so they feel heard and valued.</li>
+        <li><b>Empowerment strategies</b> — giving staff more responsibility and autonomy over their work.</li>
+      </ul>`},
+    {h:"Limitations of HR data", html:`
+      <ul>
+        <li>The figures lack <b>context</b> — a "high" turnover is normal in some sectors (e.g. retail) and alarming in others.</li>
+        <li>They show <b>short-term variation</b> that may not reflect a real trend.</li>
+        <li>Some labour turnover is <b>healthy</b> — it brings in fresh ideas and can cut costs if higher-paid staff leave.</li>
+        <li>Numbers alone don't explain <b>why</b> — they must be read alongside qualitative insight.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Labour turnover", marks:2, body:`The percentage of a workforce that leaves a business over a period, usually a year <span class="pt">1</span>, calculated as staff leaving ÷ average number employed × 100 <span class="pt">2</span>.`},
+    {term:"Labour retention", marks:2, body:`The percentage of employees a business keeps over a period <span class="pt">1</span>; high retention reduces recruitment and training costs and preserves experience <span class="pt">2</span>.`},
+    {term:"Absenteeism", marks:2, body:`The proportion of the workforce absent from work over a period <span class="pt">1</span>, calculated as the number absent ÷ total employed × 100; high absenteeism disrupts output and raises costs <span class="pt">2</span>.`},
+    {term:"Labour productivity", marks:2, body:`The output produced per employee over a period <span class="pt">1</span>, calculated as total output ÷ number of employees; higher productivity lowers unit costs <span class="pt">2</span>.`},
+    {term:"Employee share ownership", marks:2, body:`Giving employees shares in the company they work for <span class="pt">1</span>; it can boost motivation and retention because staff benefit directly from the firm's success <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"A factory employs 250 people on average and 30 leave during the year. Calculate its labour turnover.",
+     model:`Labour turnover = (staff leaving ÷ average number employed) × 100 = (30 ÷ 250) × 100 <span class="pt">1</span> = <b>12%</b> <span class="pt">2</span>.`,
+     fb:"Turnover = leavers ÷ average employed × 100."},
+    {marks:2, q:"A distribution centre employs 200 staff; on one day 8 are absent. Calculate the absenteeism rate for that day.",
+     model:`Absenteeism = (number absent ÷ total employed) × 100 = (8 ÷ 200) × 100 <span class="pt">1</span> = <b>4%</b> <span class="pt">2</span>.`,
+     fb:"Daily absenteeism = absent ÷ total employed × 100."},
+    {marks:4, q:"A clothing manufacturer produces 100,000 units a month with 50 employees. Calculate labour productivity, and explain one benefit of improving it.",
+     model:`Labour productivity = total output ÷ number of employees = 100,000 ÷ 50 = <b>2,000 units per employee</b> <span class="pt">1</span><span class="pt">2</span>. Improving it spreads fixed costs over more output <span class="pt">3</span>, lowering unit costs and making the firm more price-competitive or more profitable <span class="pt">4</span>.`,
+     fb:"Productivity = output ÷ employees; develop the unit-cost / competitiveness benefit."}
+  ],
+  caseStudy:{
+    business:"Richer Sounds",
+    intro:`<p><b>Richer Sounds</b>, the UK hi-fi and TV retailer, is known for strong staff loyalty and for moving toward <b>employee ownership</b>. Key figures from its accounts:</p>
+      <ul>
+        <li>Net profit margin <b>6.2%</b> (2018), slightly below <b>6.8%</b> (2017).</li>
+        <li>Return on capital employed (ROCE) fell from <b>52.1%</b> (2016) to <b>33.6%</b> (2018).</li>
+        <li>Profit per employee <b>£19,690</b> (2018), down from <b>£21,187</b> (2017).</li>
+        <li>Earnings per share fell from <b>210.6p</b> (2017) to <b>193.75p</b> (2018).</li>
+        <li><b>Very low staff turnover</b> — 39 employees have worked there 20+ years, some 40+.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Assess whether giving employees shares is likely to improve productivity at Richer Sounds. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One way share ownership could raise productivity is through greater employee ownership, because staff who are shareholders benefit directly from the firm's success. <span class="tag t-C">CHAIN</span>This means stronger motivation to improve performance, service and sales efficiency, so employees take more responsibility for outcomes; as a result gross and net profit margins could improve — there is scope, as net margin slipped to 6.2% from 6.8%.</p>
+     <p><span class="tag t-P">POINT</span>It could also improve how efficiently resources are used, because staff gain an interest in ROCE, which fell from 52.1% (2016) to 33.6% (2018). <span class="tag t-C">CHAIN</span>This means a more entrepreneurial mindset and less waste, so profit per employee could rise above the 2018 figure of £19,690.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the strategy may not improve retention, because Richer Sounds already has very low turnover (39 staff of 20+ years). It may also fall flat if share value drops — EPS fell from 210.6p to 193.75p — so staff could lose confidence in the scheme, meaning non-financial motivators like recognition and job satisfaction may matter more.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, employee ownership is likely to raise productivity because it links employee effort to business performance, but its success depends on being supported by non-financial motivators such as recognition, training and clear communication. It is recommended Richer Sounds continues employee ownership but strengthens it with regular updates and staff training on how shares work.</p>`,
+     fb:"Mr. Akram's exemplar (Richer Sounds). Uses the margin, ROCE, profit-per-employee and EPS figures; two benefits, a limitation on an already-loyal workforce, and a supported recommendation."}
+  ],
+  resources:[
+    {label:"Human resources (employee contributions) — lesson notes (PDF)", file:"resources/3-3-5-3-hr-notes.pdf"}
   ]
 }
 ];
