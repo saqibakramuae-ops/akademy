@@ -663,5 +663,115 @@ window.CURRICULUM = [
     {label:"Buy it Direct CPA 12-mark question (PDF)", file:"resources/3-3-4-buy-it-direct-cpa.pdf"}
   ]
 },
-{code:"3.3.5", subtheme:"3.3", title:"Contribution", business:"Contribution as a decision tool", status:"soon"}
+{
+  code:"3.3.5", subtheme:"3.3", title:"Contribution",
+  business:"Case studies: SmartSnacks, Kings Move & Snowdon Sweets", status:"live",
+  notes:[
+    {h:"What is contribution?", html:`
+      <p><b>Contribution</b> is the amount each unit sold contributes towards paying off <b>fixed costs</b>, and then towards <b>profit</b>. It focuses on the return a business makes from each unit after its variable costs are covered.</p>
+      <div class="note-ex">Contribution per unit = selling price per unit − variable cost per unit<br>Total contribution = contribution per unit × number of units sold<br>Profit = total contribution − fixed costs</div>
+      <p><b>Worked example.</b> A product sells for £30, variable cost £18, selling 15,000 units, with fixed costs of £116,000:</p>
+      <ul>
+        <li>Contribution per unit = £30 − £18 = <b>£12</b></li>
+        <li>Total contribution = £12 × 15,000 = <b>£180,000</b></li>
+        <li>Profit = £180,000 − £116,000 = <b>£64,000</b></li>
+      </ul>`},
+    {h:"Using contribution to make decisions", html:`
+      <ul>
+        <li><b>Order prioritisation</b> — with limited capacity, accept the orders that generate the <b>highest total contribution</b>.</li>
+        <li><b>Special orders</b> — a one-off order at a lower price is still worth accepting if the price is <b>above variable cost</b> (positive contribution) <i>and</i> there is genuine <b>spare capacity</b>. Beware if it displaces full-price sales or adds fixed costs.</li>
+        <li><b>Pricing</b> — contribution shows the <b>minimum price</b> a business can accept (anything above variable cost adds something towards fixed costs).</li>
+        <li><b>Product decisions</b> — whether to keep, drop or promote a product based on the contribution it earns.</li>
+      </ul>`},
+    {h:"Advantages & limitations", html:`
+      <h3>Advantages</h3>
+      <ul>
+        <li>Simple and quick to calculate.</li>
+        <li>Focuses on the <b>extra</b> each unit or order adds — useful for short-term decisions.</li>
+        <li>Identifies the <b>minimum acceptable price</b> and supports special-order and make-or-buy choices.</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Ignores <b>fixed costs</b> in the decision — accepting low-contribution work can still leave fixed costs uncovered.</li>
+        <li>Assumes there is genuine <b>spare capacity</b> and that selling price and variable cost stay constant.</li>
+        <li>Ignores <b>qualitative factors</b> — brand image, customer service, long-term relationships.</li>
+        <li>A narrow contribution per unit is <b>vulnerable</b> to small cost rises.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Contribution", marks:2, body:`The amount of sales revenue left once variable costs have been deducted <span class="pt">1</span>; it contributes towards paying fixed costs and, once those are covered, towards profit <span class="pt">2</span>.`},
+    {term:"Contribution per unit", marks:2, body:`The selling price of one unit minus its variable cost <span class="pt">1</span>; it shows how much each unit sold adds towards fixed costs and profit <span class="pt">2</span>.`},
+    {term:"Total contribution", marks:2, body:`The contribution per unit multiplied by the number of units sold <span class="pt">1</span>; subtracting fixed costs from it gives the business's profit <span class="pt">2</span>.`},
+    {term:"Variable cost", marks:2, body:`A cost that changes directly with the level of output <span class="pt">1</span>, such as raw materials; it is deducted from the selling price to find contribution <span class="pt">2</span>.`},
+    {term:"Fixed cost", marks:2, body:`A cost that does not change with the level of output in the short run <span class="pt">1</span>, such as rent; total contribution must cover it before the business makes a profit <span class="pt">2</span>.`},
+    {term:"Special order", marks:2, body:`A one-off order, often at a price below the normal selling price <span class="pt">1</span>; it is worth accepting if the price still exceeds variable cost and there is spare capacity to fulfil it <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"SmartSnacks sells a snack bar for £2.50 with variable cost £1.10. Fixed costs are £11,000 a month and it sells 10,000 units a month. Calculate the contribution per unit, the total contribution and the profit.",
+     model:`Contribution per unit = £2.50 − £1.10 = <b>£1.40</b> <span class="pt">1</span>. Total contribution = £1.40 × 10,000 = <b>£14,000</b> <span class="pt">1</span><span class="pt">2</span>. Profit = £14,000 − £11,000 = <b>£3,000</b> <span class="pt">1</span>.`,
+     fb:"Contribution per unit = price − variable cost. Profit = total contribution − fixed costs."},
+    {marks:4, q:"A product sells for £30 with a variable cost of £18. The firm sells 15,000 units and has fixed costs of £116,000. Calculate the contribution per unit, total contribution and profit.",
+     model:`Contribution per unit = £30 − £18 = <b>£12</b> <span class="pt">1</span>. Total contribution = £12 × 15,000 = <b>£180,000</b> <span class="pt">1</span><span class="pt">2</span>. Profit = £180,000 − £116,000 = <b>£64,000</b> <span class="pt">1</span>.`,
+     fb:"Three-step calculation: per-unit contribution, total contribution, then subtract fixed costs for profit."},
+    {marks:4, q:"Snowdon Sweets normally sells a pack for 50p with variable cost 30p. A publisher offers a special order at 38p per pack for one million packs. Calculate the contribution per pack and the total contribution of (a) the special order and (b) one million normal sales.",
+     model:`Special order: 38p − 30p = <b>8p</b> per pack; × 1,000,000 = <b>£80,000</b> <span class="pt">1</span><span class="pt">2</span>. Normal sales: 50p − 30p = <b>20p</b> per pack; × 1,000,000 = <b>£200,000</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"The special order earns far less per pack (8p vs 20p). If it displaces normal sales, Snowdon would sacrifice £120,000 of contribution."}
+  ],
+  caseStudy:{
+    business:"SmartSnacks, Kings Move & Snowdon Sweets",
+    intro:`<p>Four contribution scenarios used in the exam questions.</p>
+      <h3>SmartSnacks Ltd — a premium bar</h3>
+      <p>SmartSnacks sells a snack bar for £2.50 (variable cost £1.10), with fixed costs of £11,000 a month on 10,000 units. It is considering a <b>premium bar</b> at £3.50 (variable cost £1.80), expecting 3,000 extra units. Premium contribution = £1.70/unit → <b>£5,100</b> extra, all profit since fixed costs are already covered.</p>
+      <h3>Kings Move plc (KM plc) — Amazon spare-capacity order</h3>
+      <p>KM plc, a house-removals firm, is offered a contract to make 1,000 guaranteed monthly deliveries for Amazon at $2 each (variable cost $1.50), against its normal price of $5. Contribution = <b>$0.50</b> per delivery → <b>$500</b> a month from otherwise idle lorries and staff.</p>
+      <h3>Snowdon Sweets Ltd — a special order</h3>
+      <p>Snowdon normally sells a pack for 50p (variable cost 30p). A publisher offers a special order of one million packs at 38p (contribution 8p, total £80,000) as free magazine gifts. Normal sales earn 20p, so displacing them would cost £120,000 of contribution.</p>
+      <h3>Sepal / Li & Fung / Asda — contribution along a supply chain</h3>
+      <p>For one pair of jeans: Sepal earns $0.26 ($7.28 − $7.02), Li & Fung $3.75 ($11.61 − $7.28 − $0.58 shipping), and Asda $6.79 ($18.44 − $11.65) — showing how contribution per unit differs along the chain.</p>`
+  },
+  exam:[
+    {marks:4, q:"SmartSnacks is considering a premium bar selling at £3.50 with a variable cost of £1.80, expecting 3,000 extra units a month. Its existing fixed costs are already covered. Calculate the extra contribution and state the effect on profit. (4)",
+     model:`Contribution per unit = £3.50 − £1.80 = <b>£1.70</b> <span class="pt">1</span>. Extra total contribution = £1.70 × 3,000 = <b>£5,100</b> a month <span class="pt">1</span><span class="pt">2</span>. As fixed costs are already covered, the whole £5,100 is <b>extra profit</b> <span class="pt">1</span>.`,
+     fb:"When fixed costs are already covered, additional contribution flows straight through to profit."},
+    {marks:8, q:"Assess one qualitative factor KM plc should consider before accepting Amazon's delivery proposal. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One qualitative factor is whether working with Amazon could build KM plc's reputation as a reliable delivery business. Successfully completing the guaranteed 1,000 monthly deliveries would show it can serve a major business customer, which could attract other distribution contracts and reduce reliance on house removals, where demand fluctuates with the housing market. It could also develop employees' skills in parcel handling, routing and tracking, making the workforce more flexible when removal demand falls.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, accepting the proposal could worsen KM plc's existing customer-service problems. Committing lorries and staff to Amazon could leave fewer resources for house removals if the market recovers, causing delays and complaints. As customer service is central to KM plc's reputation, losing existing customers could outweigh the benefits — so suitability depends on whether KM plc can meet Amazon's requirements while maintaining service standards.</p>`,
+     fb:"8-mark 'assess one qualitative factor' — develop one factor fully, then balance it with a 'however' and a conditional judgement."},
+    {marks:12, q:"Assess whether SmartSnacks Ltd should introduce the premium snack bar. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is that the premium bar would generate extra contribution. It sells for £3.50 with £1.80 variable cost, giving £1.70 per unit; with 3,000 extra units, extra contribution is £5,100. As fixed costs of £11,000 are already covered, this £5,100 is additional profit — higher profitability without raising overheads or cutting existing sales.</p>
+     <p><span class="tag t-P">POINT</span>Another benefit is a stronger brand. A higher-quality product at £3.50 positions SmartSnacks in a more upmarket segment, attracting customers willing to pay more and raising perceived value. This differentiates it from low-cost rivals and could build loyalty and reduce price sensitivity over time.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the business may have overestimated demand. The 3,000 figure is only a forecast; if it sells only 1,000–1,500, the extra contribution falls well below £5,100, and the launch may not deliver the expected uplift.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the premium bar could be beneficial, provided the 3,000 units are truly additional. It offers a strong £1.70 margin, enhances the brand and adds no fixed costs — but success depends on avoiding a fall in existing sales. It is recommended SmartSnacks launches it if market research confirms unmet demand.</p>`,
+     fb:"Mr. Akram's exemplar (SmartSnacks). Uses the £1.70 / £5,100 figures, two benefits, a limitation on the demand estimate, and a conditional recommendation."},
+    {marks:12, q:"A business can accept Order A (contribution £10,000, fixed costs £5,000, from an existing customer) or Order B (profit £3,000, from a new customer). Assess which order it should accept. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason to choose Order A is its higher profit of £5,000 against £3,000 for Order B, because Order A's £10,000 contribution less £5,000 fixed costs leaves £5,000. This means better short-term returns; therefore it improves immediate cash flow, and as a result the business has more funds to reinvest or save.</p>
+     <p><span class="tag t-P">POINT</span>In addition, Order A is from an existing customer, which carries less risk because there is an established relationship and payment history. This means more reliable payment and continued business; therefore it strengthens loyalty and helps build consistent future revenue.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, Order B offers the chance to win a new customer and grow, possibly in a new market, who may place larger orders in future. This could open new regions or sectors and reduce dependence on a few existing clients, lowering risk if one stops ordering.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Order A is better for immediate return (£5,000 vs £3,000), lower risk and keeping a key customer. Success depends on the business's strategic priorities: if it can only choose one, it should take Order A for secure short-term gains, but if long-term expansion is the priority and resources allow, Order B could deliver greater value over time.</p>`,
+     fb:"Mr. Akram's exemplar (Order A vs B). Compares the figures, weighs short-term profit against long-term growth, and reaches a conditional recommendation."},
+    {marks:12, q:"Assess whether KM plc should accept Amazon's proposal to make 1,000 guaranteed monthly deliveries at $2 each (variable cost $1.50). (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is that KM plc could use spare capacity to generate extra contribution. Amazon's $2 price covers the $1.50 variable cost, leaving $0.50 per delivery and $500 a month from 1,000 deliveries. Otherwise idle lorries and staff would earn revenue towards existing fixed costs; if those stay unchanged, the extra contribution raises profit — so accepting a price below the usual $5 is worthwhile when the alternative is unused capacity.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is more predictable revenue. KM plc's removals income is unsteady because demand follows house purchases; a guaranteed $2,000 a month helps it plan work, schedule staff in quieter periods and forecast receipts — though this depends on Amazon paying promptly, as KM plc must fund fuel and costs first.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the contribution is narrow and could worsen existing customer-service problems. Each delivery earns only $0.50 against $3.50 at the normal price, so a $0.50 rise in variable cost would wipe out the entire $500. Committing resources to Amazon could also delay removals if demand recovers, causing complaints and lost higher-value work.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, KM plc should accept only as a carefully controlled use of genuine spare capacity. The deliveries add contribution and reduce reliance on unpredictable removals, but protecting customer service matters more than $500 a month, since reputational damage could cost more long term. KM plc should confirm full costs, payment terms and service requirements, and negotiate flexibility — or reject if they cannot be met without disruption.</p>`,
+     fb:"Mr. Akram's exemplar (KM plc). Uses the $0.50 / $500 contribution, a second benefit, a limitation (narrow margin, service), and a controlled recommendation."},
+    {marks:20, q:"Evaluate whether Snowdon Sweets should accept the publisher's special order of one million packs at 38p each (variable cost 30p). (20)",
+     model:`<p><span class="tag t-P">FOR</span>Snowdon should consider accepting, because the order generates positive contribution. The publisher offers 38p against 30p variable cost, giving 8p per pack and £80,000 across one million packs. If Snowdon has spare capacity and fixed costs stay unchanged, this improves its result versus rejecting the order, helping offset rising sugar prices and the cost of developing herbal lozenges — so it is financially attractive in the short term, provided the £80,000 is not eaten up by extra costs.</p>
+     <p><span class="tag t-J">AGAINST</span>However, the order could reduce profit if it displaces normal sales. Normal packs earn 20p (50p − 30p) against only 8p here, so displacing one million normal sales would earn £80,000 instead of £200,000 — sacrificing £120,000 of contribution and possibly delaying existing customers' orders. The decision therefore depends on genuine spare capacity and expected normal demand.</p>
+     <p><span class="tag t-P">MARKETING</span>The order could also be a marketing opportunity. One million packs as magazine gifts could introduce the herbal lozenges to health-conscious readers who may later buy at the normal 50p price, earning a higher contribution and improving the return on R&D — though only if the readers match Snowdon's target customers and become repeat buyers.</p>
+     <p><span class="tag t-J">RISK</span>Conversely, operational problems create risk. The herbal line already has wastage and low morale, and one million packs are needed within two months; meeting this could need overtime or extra materials, pushing variable cost above 30p and shrinking the £80,000. Free gifts could also weaken the luxury image, reducing willingness to pay premium prices.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Snowdon should accept only if it can use spare capacity without displacing more profitable normal sales or harming quality. The strongest reason is the £80,000 extra contribution and the new-customer exposure, but the narrow 8p margin means extra costs could erode the benefit, and displacement could cost £120,000. The directors should confirm realistic costs, capacity and packaging that protects the brand; if these cannot be met, they should negotiate a higher price, smaller quantity or longer deadline, because positive contribution alone does not prove this is the best use of resources.</p>`,
+     fb:"Mr. Akram's exemplar (Snowdon Sweets). Weighs the £80,000 contribution against £120,000 displacement and qualitative risks, with a fully conditional recommendation."},
+    {marks:20, q:"Using the figures, evaluate which business (Sepal, Li & Fung or Asda) is best protected financially, and the usefulness of contribution per pair for judging this. (20)",
+     model:`<p><span class="tag t-P">SEPAL</span>Contribution is sales revenue minus variable costs, covering fixed costs before profit. Sepal earns only $0.26 per pair ($7.28 − $7.02), so each sale adds very little towards overheads and large volumes are needed before profit — falling orders could leave fixed costs uncovered. However, a low contribution is not unsustainable if orders are consistently high and fixed costs low.</p>
+     <p><span class="tag t-J">SEPAL RISK</span>Sepal is especially vulnerable to variable-cost rises because its margin is so thin: a $0.30 cost increase would turn +$0.26 into −$0.04, so every pair sold would fail to cover its variable cost. It may need to raise productivity or prices — but raising prices depends on bargaining power, as buyers could switch supplier.</p>
+     <p><span class="tag t-P">LI & FUNG / ASDA</span>Li & Fung earns $3.75 ($11.61 − $7.28 − $0.58 shipping) and Asda the most at $6.79 ($18.44 − $11.65). Higher contribution gives a larger buffer against cost rises and, for Asda, scope to discount while staying positive — a targeted discount could lift volume and total contribution, though sales must rise enough to compensate and Asda must still cover store overheads.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, contribution per pair alone does not show which owner earns most profit, because that depends on total contribution minus fixed costs. Sepal could still profit through high volume and low fixed costs, while large retail overheads could absorb much of Asda's contribution.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Asda has the strongest contribution per pair and Sepal is most exposed to cost increases, since even a small rise could wipe out its $0.26. Asda's $6.79 is a much larger buffer. Nevertheless, a firm judgement about profit needs sales volumes and fixed-cost figures — so contribution per pair is useful for comparing margins and sensitivity to cost, but not sufficient on its own to decide which owners earn the most.</p>`,
+     fb:"Mr. Akram's exemplar (supply chain). Interprets each contribution figure, tests sensitivity, and crucially notes contribution per unit alone can't decide profit — fixed costs and volume matter."}
+  ],
+  resources:[
+    {label:"Contribution — lesson notes (PDF)", file:"resources/3-3-5-contribution-notes.pdf"}
+  ]
+}
 ];
