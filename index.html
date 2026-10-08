@@ -422,7 +422,8 @@ function goHome(){
       <div class="t">${ct.code} · ${ct.title}</div>
       <div class="s">${started?(doneCount(ct)+'/'+totalQs(ct)+' complete · '+p+'%'):(totalQs(ct)+' questions · notes, definitions &amp; model answers')}</div></div>
       <div class="cgo">${started?'Resume →':'Begin →'}</div></div>`;}
-  for(const st of Object.keys(groups).sort()){
+  for(const st of Object.keys(groups).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))){
+    groups[st].sort((a,b)=>a.code.localeCompare(b.code,undefined,{numeric:true}));
     html+=`<div class="section-head"><span class="code">${st}</span><h2>${SUBTHEME_TITLE[st]||st}</h2></div><p class="sub-sub">${SUBTHEME_SUB[st]||""}</p><div class="grid">`;
     groups[st].forEach(t=>{const ic=ICONS[t.code]||'📊';
       if(t.status==="live"){const p=pct(t);

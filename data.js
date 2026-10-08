@@ -10,13 +10,13 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques","3.4":"Business ethics & CSR","3.5":"Corporate influences & culture"};
-window.SUBTHEME_SUB = {"3.5":"Theme 3: Business decisions and strategy \u2014 organisational culture, Handy\u2019s types and the challenge of changing an established culture.","3.4":"Theme 3: Business decisions and strategy \u2014 how ethics and corporate social responsibility shape business decisions.","3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
-window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️","3.5.1":"🏢","3.5.2":"🗂️","3.5.3":"🔄","3.4.3":"🤝","3.5.4":"👥"};
+window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions"};
+window.SUBTHEME_SUB = {"3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥"};
 
 window.CURRICULUM = [
 {
-  code:"3.3.1", subtheme:"3.3", title:"Quantitative sales forecasting",
+  code:"3.3.3.1", subtheme:"3.3.3", title:"Quantitative sales forecasting",
   business:"Case study: Greggs plc", status:"live",
   notes:[
     {h:"What is quantitative sales forecasting?", html:`
@@ -205,7 +205,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.3.2", subtheme:"3.3", title:"Investment appraisal",
+  code:"3.3.3.2", subtheme:"3.3.3", title:"Investment appraisal",
   business:"Case study: Greggs plc — Kettering vs Derby", status:"live",
   notes:[
     {h:"What is investment appraisal?", html:`
@@ -313,7 +313,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.3.3", subtheme:"3.3", title:"Decision trees",
+  code:"3.3.3.3", subtheme:"3.3.3", title:"Decision trees",
   business:"Case studies: Center Parcs, Tata & noon (UAE)", status:"live",
   notes:[
     {h:"What is a decision tree?", html:`
@@ -495,7 +495,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.3.4", subtheme:"3.3", title:"Critical path analysis",
+  code:"3.3.3.4", subtheme:"3.3.3", title:"Critical path analysis",
   business:"Case studies: Coca-Cola & Tottenham Hotspur", status:"live",
   notes:[
     {h:"What is critical path analysis?", html:`
@@ -664,7 +664,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.3.5", subtheme:"3.3", title:"Contribution",
+  code:"3.3.3.5", subtheme:"3.3.3", title:"Contribution",
   business:"Case studies: SmartSnacks, Kings Move & Snowdon Sweets", status:"live",
   notes:[
     {h:"What is contribution?", html:`
@@ -775,7 +775,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.4.1", subtheme:"3.4", title:"Business ethics",
+  code:"3.3.4.5", subtheme:"3.3.4", title:"Business ethics",
   business:"Case studies: Stellantis, Tesco & Boohoo", status:"live",
   notes:[
     {h:"What are business ethics?", html:`
@@ -846,7 +846,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.4.2", subtheme:"3.4", title:"Corporate social responsibility (CSR)",
+  code:"3.3.4.6", subtheme:"3.3.4", title:"Corporate social responsibility (CSR)",
   business:"Case study: Cadbury / Mondēlez",
   status:"live",
   notes:[
@@ -921,7 +921,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.5.1", subtheme:"3.5", title:"Organisational culture",
+  code:"3.3.4.1", subtheme:"3.3.4", title:"Organisational culture",
   business:"Case study: Dunelm", status:"live",
   notes:[
     {h:"What is organisational culture?", html:`
@@ -937,7 +937,7 @@ window.CURRICULUM = [
     {h:"Strong vs weak culture", html:`
       <p><b>Strong culture</b> — shared values, high engagement and a clear identity. Staff know what the business stands for and behave consistently, which supports good service and quick, aligned decisions.</p>
       <p><b>Weak culture</b> — lack of direction, low motivation and inconsistency. Behaviour varies from person to person and from site to site.</p>
-      <div class="note-ex">A strong culture is an asset when it fits the strategy — but it can also make a business harder to change (see 3.5.3).</div>`}
+      <div class="note-ex">A strong culture is an asset when it fits the strategy — but it can also make a business harder to change (see 3.3.4.3).</div>`}
   ],
   definitions:[
     {term:"Corporate (organisational) culture", marks:2, body:`The shared values, beliefs and norms of a business that affect every aspect of work life <span class="pt">1</span> — often summed up as “the way we do things around here” <span class="pt">2</span>.`},
@@ -970,7 +970,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.5.2", subtheme:"3.5", title:"Handy's types of culture",
+  code:"3.3.4.2", subtheme:"3.3.4", title:"Handy's types of culture",
   business:"Case study: Zappos (task culture)", status:"live",
   notes:[
     {h:"Charles Handy's four culture types", html:`
@@ -1021,7 +1021,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.5.3", subtheme:"3.5", title:"Difficulties in changing culture",
+  code:"3.3.4.3", subtheme:"3.3.4", title:"Difficulties in changing culture",
   business:"Case studies: Pure Gym & Burberry", status:"live",
   notes:[
     {h:"Why change culture, and why it's hard", html:`
@@ -1072,7 +1072,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.4.3", subtheme:"3.4", title:"Trade-off between ethics & profit",
+  code:"3.3.4.7", subtheme:"3.3.4", title:"Trade-off between ethics & profit",
   business:"Case study: David Lloyd", status:"live",
   notes:[
     {h:"The ethics–profit trade-off", html:`
@@ -1125,7 +1125,7 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.5.4", subtheme:"3.5", title:"Stakeholder vs shareholder approach",
+  code:"3.3.4.4", subtheme:"3.3.4", title:"Stakeholder vs shareholder approach",
   business:"Case studies: Starbucks & Peloton", status:"live",
   notes:[
     {h:"Stakeholders vs shareholders", html:`
