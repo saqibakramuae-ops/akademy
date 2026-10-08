@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques"};
-window.SUBTHEME_SUB = {"3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
-window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗"};
+window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques","3.4":"Business ethics & CSR"};
+window.SUBTHEME_SUB = {"3.4":"Theme 3: Business decisions and strategy \u2014 how ethics and corporate social responsibility shape business decisions.","3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
+window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️"};
 
 window.CURRICULUM = [
 {
@@ -772,6 +772,152 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"Contribution — lesson notes (PDF)", file:"resources/3-3-5-contribution-notes.pdf"}
+  ]
+},
+{
+  code:"3.4.1", subtheme:"3.4", title:"Business ethics",
+  business:"Case studies: Stellantis, Tesco & Boohoo", status:"live",
+  notes:[
+    {h:"What are business ethics?", html:`
+      <p><b>Ethics</b> are moral guidelines that govern good behaviour, so behaving ethically means <b>doing what is morally right</b>. For a business this usually means adopting the <b>stakeholder approach</b> — trying to meet the objectives of groups such as employees, customers, suppliers and local communities, not only shareholders.</p>
+      <p>Ethics influence strategic decisions on sustainability, fair sourcing and the treatment of employees. Acting ethically can protect <b>reputation</b>, lift <b>employee morale</b> and strengthen <b>stakeholder relationships</b> — but it can also raise costs.</p>`},
+    {h:"The ethics vs profit trade-off", html:`
+      <p>Many ethical choices involve a <b>trade-off</b>: the ethical option often costs more in the short term, while the cheaper option may raise profit but risk harm.</p>
+      <ul>
+        <li><b>Fair sourcing</b> (e.g. Fairtrade) raises input costs but protects suppliers and brand image.</li>
+        <li><b>Fair pay and conditions</b> raise the wage bill but improve morale, productivity and retention.</li>
+        <li><b>Cutting corners</b> (underpaying workers, misleading labelling) boosts short-term profit but risks scandal, fines and lost customers.</li>
+      </ul>
+      <div class="note-ex">Key idea: unethical behaviour can look cheaper on paper, but the long-term cost to reputation and trust can far outweigh the saving.</div>`},
+    {h:"Pay and rewards, and executive pay", html:`
+      <p>Ethical questions around <b>pay and rewards</b> include paying a <b>fair wage</b>, fair conditions, and the size of <b>executive (CEO) pay</b>.</p>
+      <p>High CEO pay becomes an ethical issue when it rises sharply while ordinary employees face restructuring or limited pay rises — it can look unfair and damage morale. But supporters argue large, performance-linked packages are needed to <b>attract and retain</b> talented executives in a competitive market.</p>`},
+    {h:"Real examples", html:`
+      <ul>
+        <li><b>Tesco "fake farms":</b> marketing products under invented farm names, raising questions about honesty with customers.</li>
+        <li><b>Boohoo:</b> allegations that clothes were made by workers paid as little as 29p an hour — a supply-chain ethics issue.</li>
+        <li><b>Stellantis:</b> in April 2022 just over 52% of shareholders voted against the CEO's €19m pay package (a 17.6% rise) during a period of restructuring.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Business ethics", marks:2, body:`The moral principles and guidelines that govern how a business behaves <span class="pt">1</span>; acting ethically means doing what is morally right, such as treating stakeholders fairly, even where it is not the cheapest option <span class="pt">2</span>.`},
+    {term:"Stakeholder approach", marks:2, body:`An approach in which a business tries to meet the objectives of all its stakeholder groups — employees, customers, suppliers and the community — not only shareholders <span class="pt">1</span>; it is central to behaving ethically <span class="pt">2</span>.`},
+    {term:"Ethical trade-off", marks:2, body:`A situation where acting ethically conflicts with another objective such as profit <span class="pt">1</span>; for example, fair sourcing raises costs now but protects reputation and relationships later <span class="pt">2</span>.`},
+    {term:"Executive pay", marks:2, body:`The total reward paid to senior managers such as the CEO, often including bonuses and shares <span class="pt">1</span>; it becomes an ethical issue when large rises occur while employees face pay restraint <span class="pt">2</span>.`},
+    {term:"Fair wage", marks:2, body:`A level of pay considered reasonable for the work done and enough to live on <span class="pt">1</span>; paying it raises costs but can improve morale, productivity and retention <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define business ethics.",
+     model:`Business ethics are the moral principles that govern how a business behaves <span class="pt">1</span>; acting ethically means doing what is morally right, such as treating stakeholders fairly, even when it is not the cheapest option <span class="pt">2</span>.`,
+     fb:"Two linked points — what ethics are, and what acting ethically involves. An example alone would not earn the second mark."},
+    {marks:4, q:"Explain one way acting ethically could benefit a business.",
+     model:`Acting ethically — for example paying fair wages — can raise employee morale <span class="pt">1</span>. This is because staff feel valued and treated fairly <span class="pt">2</span>. As a result, productivity rises and labour turnover falls <span class="pt">3</span>, lowering recruitment costs and improving the quality of output <span class="pt">4</span>.`,
+     fb:"A 4-mark 'explain' wants one point developed through a chain, not several undeveloped points."},
+    {marks:4, q:"Explain one reason high CEO pay can be seen as an ethical issue.",
+     model:`High CEO pay can seem unfair when it rises while ordinary staff face pay restraint <span class="pt">1</span>. This is because employees may feel undervalued if executives are rewarded while their own conditions worsen <span class="pt">2</span>. This can damage morale and motivation <span class="pt">3</span>, raising turnover and harming the firm's reputation for fairness <span class="pt">4</span>.`,
+     fb:"Reward the link from the pay gap to a stakeholder consequence (morale, reputation)."}
+  ],
+  caseStudy:{
+    business:"Stellantis, Tesco & Boohoo",
+    intro:`<p>Three ethics scenarios used in the exam questions and discussion.</p>
+      <h3>Stellantis — executive pay</h3>
+      <p>In <b>April 2022</b>, just over <b>52% of Stellantis shareholders voted against</b> the proposed <b>€19m</b> salary for CEO Carlos Tavares — a <b>17.6% increase</b> at a time when many employees had faced restructuring and limited pay rises. However, Tavares had delivered strong results: from 2020 to 2021 revenue rose <b>213%</b>, profits <b>602%</b>, and earnings per share tripled; rival CEOs (e.g. Ford's) earned even more, raising the risk of losing him.</p>
+      <h3>Tesco — "fake farms"</h3>
+      <p>Tesco marketed products under invented farm names, raising the question of whether it was being honest with customers.</p>
+      <h3>Boohoo — supply-chain labour</h3>
+      <p>Boohoo faced allegations that clothes were made by workers paid as little as <b>29p an hour</b> — an ethics issue in how it treats and monitors its supply chain.</p>`
+  },
+  exam:[
+    {marks:8, q:"Assess two possible trade-offs a business may face between behaving ethically and maximising profit. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One trade-off is between <b>fair sourcing and cost</b>. <span class="tag t-E">EXPLAIN</span>Buying from fairly paid, sustainable suppliers (e.g. Fairtrade) usually costs more than the cheapest alternative. <span class="tag t-C">CHAIN</span>This means ethical sourcing raises variable costs and could reduce profit margins in the short term; however, it protects brand image and supplier relationships, which can lift sales among ethically minded customers and secure supply long term. <span class="tag t-J">JUDGE</span>So the trade-off is short-term cost against long-term reputation.</p>
+     <p><span class="tag t-P">POINT</span>A second trade-off is between <b>fair pay/conditions and the wage bill</b>. <span class="tag t-E">EXPLAIN</span>Paying fair wages and investing in good conditions increases costs. <span class="tag t-C">CHAIN</span>This means profit per unit may fall; however, better-treated staff tend to be more productive and loyal, cutting turnover and recruitment costs.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the balance depends on the business and its customers: a premium, values-led brand gains more from ethical choices than a price-led one, so ethics and profit are not always in conflict — over time, acting ethically can protect the profit that cutting corners would eventually destroy.</p>`,
+     fb:"8-mark 'assess' needs two developed trade-offs plus a balancing judgement — the point that ethics and profit can align over the long term lifts it to the top band."},
+    {marks:20, q:"Evaluate whether the Board of Directors should accept the shareholders' vote against the CEO's €19m pay package at Stellantis. (20)",
+     model:`<p><span class="tag t-P">ACCEPT · FOR</span>One reason to accept the vote is that shareholder interests must be prioritised, because shareholders own the company and take on the financial risk, so they expect responsible governance. In April 2022 just over 52% voted against the €19m salary. This means the Board is expected to respect their decision; therefore ignoring it could trigger falling investor confidence and share selling, and as a result Stellantis' reputation for good governance could be harmed.</p>
+     <p><span class="tag t-P">ACCEPT · FOR</span>A second reason is protecting employee morale, because the €19m included a 17.6% rise while many staff faced restructuring and limited pay rises. This means employees could feel undervalued; therefore accepting the vote to limit the pay could improve motivation and loyalty, and as a result reduce turnover and lift productivity.</p>
+     <p><span class="tag t-J">REJECT · AGAINST</span>However, one reason to reject the vote is that Tavares delivered very strong results — 2020–2021 revenue up 213%, profit up 602%, EPS tripled. This means a performance-based reward can be justified; therefore the Board may feel a higher salary is deserved to retain an effective CEO.</p>
+     <p><span class="tag t-J">REJECT · AGAINST</span>Another reason is the risk of losing him, because rival CEOs such as Ford's earn even more. This means Tavares could leave for a competitor if he feels undervalued; therefore a competitive salary could retain him and maintain leadership stability through the EV transition.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the Board should accept the shareholders' vote, because the €19m package appears excessive and damaging to stakeholder confidence, with a 17.6% rise during restructuring looking out of touch. Success depends on whether the Board can retain Tavares with a package that rewards him appropriately while addressing shareholder concerns. It is recommended the Board negotiates a revised, more clearly performance-linked package rather than simply imposing or ignoring the original.</p>`,
+     fb:"Mr. Akram's exemplar (Stellantis). Two reasons each way using the figures, then a conclusion that decides, says what it depends on, and recommends — the house structure for a 20-mark evaluation."}
+  ],
+  resources:[
+    {label:"Business ethics — lesson notes (PDF)", file:"resources/3-4-1-business-ethics-notes.pdf"}
+  ]
+},
+{
+  code:"3.4.2", subtheme:"3.4", title:"Corporate social responsibility (CSR)",
+  business:"Case study: Cadbury / Mondēlez",
+  status:"live",
+  notes:[
+    {h:"What is CSR?", html:`
+      <p><b>Corporate social responsibility (CSR)</b> means running a business in a way that is <b>ethical</b> — taking account of its <b>social, economic and environmental impact</b> and respecting human rights, rather than only chasing profit.</p>
+      <p>CSR activities can include:</p>
+      <ul>
+        <li>Working in <b>partnership with local communities</b>.</li>
+        <li>Building strong relationships with <b>employees, suppliers and customers</b>.</li>
+        <li><b>Environmental protection</b> and sustainability.</li>
+      </ul>`},
+    {h:"Social enterprises", html:`
+      <p>Some businesses exist mainly to achieve <b>social or environmental goals</b> rather than to maximise profit — these are <b>social enterprises</b>. This contrasts with a conventional firm that pursues financial goals while trying to <i>minimise</i> its negative impact on society and the environment.</p>`},
+    {h:"Advantages & limitations of CSR", html:`
+      <h3>Advantages</h3>
+      <ul>
+        <li><b>Improved brand image and customer loyalty</b> — appeals to socially conscious consumers.</li>
+        <li><b>Higher employee motivation and retention</b> — staff feel proud and valued.</li>
+        <li>Can attract investors and reduce the risk of regulation or reputational damage.</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li><b>Increased costs</b> — ethical sourcing and community projects are expensive.</li>
+        <li><b>Not all customers notice or value it</b> — many purchases are impulse buys driven by price, brand and taste.</li>
+        <li><b>Greenwashing</b> risk — overstating CSR credentials can backfire badly if exposed.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Corporate social responsibility (CSR)", marks:2, body:`The idea that a business should operate ethically and take account of its social, economic and environmental impact <span class="pt">1</span>, rather than focusing only on maximising profit for shareholders <span class="pt">2</span>.`},
+    {term:"Stakeholder", marks:2, body:`Any individual or group affected by, or with an interest in, a business <span class="pt">1</span> — such as employees, customers, suppliers and the local community — whose interests CSR aims to consider <span class="pt">2</span>.`},
+    {term:"Social enterprise", marks:2, body:`A business whose main purpose is to achieve social or environmental goals rather than to maximise profit <span class="pt">1</span>; any surplus is typically reinvested to further that social mission <span class="pt">2</span>.`},
+    {term:"Greenwashing", marks:2, body:`When a business overstates or misrepresents how environmentally or socially responsible it is <span class="pt">1</span>; if exposed, it can seriously damage trust and reputation <span class="pt">2</span>.`},
+    {term:"Fairtrade", marks:2, body:`A scheme that guarantees producers in developing countries a minimum price for their goods <span class="pt">1</span>; it raises a firm's input costs but supports suppliers and strengthens its ethical image <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define corporate social responsibility (CSR).",
+     model:`CSR is the idea that a business should operate ethically and consider its social, economic and environmental impact <span class="pt">1</span>, rather than focusing only on maximising profit for shareholders <span class="pt">2</span>.`,
+     fb:"Two linked points — what CSR is, and how it differs from pure profit maximisation."},
+    {marks:4, q:"Explain one benefit to a business of acting in a socially responsible way.",
+     model:`Acting responsibly can improve brand image and customer loyalty <span class="pt">1</span>. This is because socially conscious consumers prefer firms seen to act ethically <span class="pt">2</span>. As a result, customers may choose it over rivals <span class="pt">3</span>, increasing sales and positive word-of-mouth and supporting long-term profitability <span class="pt">4</span>.`,
+     fb:"Develop one benefit through a chain to a commercial outcome (sales, loyalty, profit)."},
+    {marks:4, q:"Explain one drawback of a business investing heavily in CSR.",
+     model:`CSR raises costs, and not all customers value it <span class="pt">1</span>. This is because many purchases are impulse buys driven by price, brand and taste rather than ethics <span class="pt">2</span>. As a result, heavy CSR spending may not change buying behaviour <span class="pt">3</span>, so the money could fail to deliver a clear commercial return and reduce profitability <span class="pt">4</span>.`,
+     fb:"Reward the link from 'customers don't always notice' to a wasted-spend / lower-profit consequence."}
+  ],
+  caseStudy:{
+    business:"Cadbury / Mondēlez International",
+    intro:`<p><b>Cadbury</b> was long associated with socially responsible behaviour, but its record is mixed — making it a classic CSR case.</p>
+      <ul>
+        <li><b>Fairtrade → Cocoa Life:</b> Cadbury had committed to Fairtrade cocoa, guaranteeing up to 200,000 farmers in Ghana and Ivory Coast a minimum of £1,600 per tonne. In November 2016 it switched to <b>Cocoa Life</b>, which does not apply the same price rules or guarantee that other ingredients (nuts, sugar, raisins) are responsibly sourced.</li>
+        <li><b>Raisins → sultanas:</b> after 90 years, the Fruit & Nut bar's raisins were replaced with cheaper sultanas "to give more variation."</li>
+        <li><b>Retirement gifts scrapped:</b> Mondēlez ended the tradition of Christmas chocolate gifts to former employees, citing the need to plug a pension deficit.</li>
+        <li><b>Health pledge:</b> Mondēlez pledged that standard single-serve bars would contain under 250 calories, responding to UK anti-obesity policy.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the likely value of corporate social responsibility to a business such as Cadbury. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One value of CSR is improved <b>brand image and customer loyalty</b>, because acting ethically — such as Cadbury's former Fairtrade commitment and support for obesity targets — appeals to socially conscious consumers. This means customers may choose Cadbury over rivals with weaker values; as a result CSR can raise sales and positive word-of-mouth, supporting long-term profitability through repeat purchases.</p>
+     <p><span class="tag t-P">POINT</span>A second value is improved <b>employee motivation and retention</b>, because traditions such as looking after staff in retirement made employees feel valued. This means productivity and commitment may rise, reducing turnover and recruitment costs.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, not all consumers notice or value CSR, because many chocolate purchases are impulse buys driven by price, brand familiarity and taste. This means heavy CSR spending might not change buying behaviour or deliver a clear commercial return, especially if the ethical credentials are not communicated at the point of sale.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, CSR can clearly benefit Cadbury — brand loyalty, morale and reputation — and is worthwhile when it matches customer values without damaging profitability. Its success depends on whether Cadbury chooses initiatives that genuinely matter to customers and employees while managing the cost. It is recommended Cadbury prioritises CSR that supports its commercial goals, such as ethical sourcing that maintains quality.</p>`,
+     fb:"Mr. Akram's exemplar (Cadbury). Two developed benefits, a genuine limitation (impulse buying), and a conclusion on what the value of CSR depends on."},
+    {marks:12, q:"Evaluate whether becoming more socially responsible is likely to benefit a consumer-facing business. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Greater social responsibility can strengthen a consumer-facing brand, because ethical and environmental action differentiates it from rivals. <span class="tag t-C">CHAIN</span>This means it can attract socially conscious customers and justify a premium price; as a result sales and loyalty can rise, and the firm is better protected from reputational and regulatory risk.</p>
+     <p><span class="tag t-P">POINT</span>It can also lift the workforce, because employees take pride in a responsible employer. <span class="tag t-C">CHAIN</span>This means higher motivation and lower turnover, cutting recruitment costs and improving service.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, CSR raises costs and its payback is uncertain, because many customers buy on price, brand and convenience, and any gap between claims and behaviour risks accusations of greenwashing that damage trust more than silence would. So the benefit is not guaranteed.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> social responsibility usually benefits the business, but only when it is genuine and well targeted. <b>Why:</b> it builds loyalty and morale that support long-term profit. <b>Why (develop):</b> but it adds cost and can backfire if overstated. <b>What (depends on):</b> the benefit depends on matching initiatives to what customers actually value and communicating them honestly.</p>`,
+     fb:"A 12-mark CSR evaluation built on the notes. Balanced, with greenwashing as the key limitation and a 4Ws conclusion."}
+  ],
+  resources:[
+    {label:"CSR — lesson notes (PDF)", file:"resources/3-4-2-csr-notes.pdf"}
   ]
 }
 ];
