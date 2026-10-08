@@ -1304,7 +1304,98 @@ window.CURRICULUM = [
 },
 {
   code:"3.3.5.2", subtheme:"3.3.5", title:"Ratio analysis",
-  business:"Profitability · liquidity · gearing · ROCE", status:"soon"
+  business:"Case study: Smith PLC", status:"live",
+  notes:[
+    {h:"What is ratio analysis?", html:`
+      <p><b>Ratio analysis</b> uses figures from the financial statements to judge a business's performance and financial health, and to make decisions (investing, lending, comparing years or rivals). The spec covers four groups: <b>profitability</b>, <b>liquidity</b>, <b>gearing</b> and <b>ROCE</b>.</p>
+      <div class="note-ex"><b>Capital employed</b> = total equity (share capital + retained profit) + non-current liabilities (long-term loans) — i.e. all the finance invested in the business. Needed for ROCE and gearing.</div>`},
+    {h:"Profitability ratios", html:`
+      <ul>
+        <li><b>Gross profit margin</b> = gross profit ÷ sales revenue × 100</li>
+        <li><b>Operating profit margin</b> = operating profit ÷ sales revenue × 100</li>
+        <li><b>Profit for the year (net) margin</b> = (operating profit − interest) ÷ sales revenue × 100</li>
+        <li><b>ROCE</b> = operating profit ÷ capital employed × 100 — how well the firm turns invested finance into profit</li>
+      </ul>
+      <p class="note-ex">VGL 2024: gross margin = 16.2 ÷ 33.0 × 100 = <b>49.1%</b>; net margin = 11.0 ÷ 33.0 × 100 = <b>33.3%</b>; ROCE = 12.2 ÷ 109 × 100 = <b>11.2%</b> (capital employed = 49 + 60).</p>`},
+    {h:"Liquidity ratios", html:`
+      <ul>
+        <li><b>Current ratio</b> = current assets ÷ current liabilities. Around <b>1.5–2</b> is usually healthy.</li>
+        <li><b>Acid test (quick) ratio</b> = (current assets − inventory) ÷ current liabilities. Strips out stock that can't be turned to cash quickly; around <b>1</b> is comfortable.</li>
+      </ul>
+      <p class="note-ex">VGL 2024: current ratio = 22 ÷ 14 = <b>1.57</b>; acid test = (22 − 14) ÷ 14 = <b>0.57</b> — showing VGL relies heavily on inventory for its liquidity.</p>`},
+    {h:"Gearing", html:`
+      <p><b>Gearing ratio</b> = non-current liabilities (long-term loans) ÷ capital employed × 100. It shows how much of the finance comes from <b>borrowing</b> rather than equity.</p>
+      <ul>
+        <li><b>Above ~50%</b> = highly geared — reliant on debt, so vulnerable to interest-rate rises, but can fund growth without diluting ownership.</li>
+        <li><b>Below ~25%</b> = low geared — lower risk but may be under-using cheap finance.</li>
+      </ul>
+      <p class="note-ex">VGL 2024: gearing = 60 ÷ 109 × 100 = <b>55.0%</b> — highly geared.</p>`},
+    {h:"Benefits & limitations of ratio analysis", html:`
+      <h3>Benefits</h3>
+      <ul><li>Turns raw figures into comparable measures (over time, against rivals, against targets).</li>
+      <li>Highlights strengths and problems (e.g. weak liquidity) to guide decisions.</li></ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Based on <b>historic</b> data — past performance, not future.</li>
+        <li>Ignores <b>qualitative</b> factors (brand, staff, market conditions).</li>
+        <li><b>Comparability</b> issues — firms use different accounting policies and operate in different sectors.</li>
+        <li>A single ratio means little — they must be read together and in context.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Gross profit margin", marks:2, body:`Gross profit as a percentage of sales revenue (gross profit ÷ revenue × 100) <span class="pt">1</span>; it shows how much profit a business makes on trading before operating costs <span class="pt">2</span>.`},
+    {term:"Return on capital employed (ROCE)", marks:2, body:`Operating profit as a percentage of capital employed (operating profit ÷ capital employed × 100) <span class="pt">1</span>; it shows how efficiently a business turns the finance invested into profit <span class="pt">2</span>.`},
+    {term:"Current ratio", marks:2, body:`Current assets divided by current liabilities <span class="pt">1</span>; it measures whether a business can meet its short-term debts, with around 1.5–2 seen as healthy <span class="pt">2</span>.`},
+    {term:"Acid test ratio", marks:2, body:`Current assets minus inventory, divided by current liabilities <span class="pt">1</span>; a stricter liquidity measure that excludes stock which cannot be turned into cash quickly <span class="pt">2</span>.`},
+    {term:"Gearing ratio", marks:2, body:`Non-current liabilities as a percentage of capital employed (long-term loans ÷ capital employed × 100) <span class="pt">1</span>; it shows how reliant a business is on borrowed finance, with over ~50% considered highly geared <span class="pt">2</span>.`},
+    {term:"Capital employed", marks:2, body:`The total finance invested in a business: total equity plus non-current liabilities <span class="pt">1</span>; it is the base used to calculate ROCE and gearing <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:4, q:"VGL has gross profit £16.2m, operating profit £12.2m, interest £1.2m and sales revenue £33.0m. Calculate its gross profit margin and net profit margin (to 1 dp).",
+     model:`Gross profit margin = 16.2 ÷ 33.0 × 100 = <b>49.1%</b> <span class="pt">1</span><span class="pt">2</span>. Net profit margin = (12.2 − 1.2) ÷ 33.0 × 100 = 11.0 ÷ 33.0 × 100 = <b>33.3%</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"Margins are always ÷ sales revenue × 100. Net margin uses profit for the year (operating profit − interest)."},
+    {marks:4, q:"VGL has operating profit £12.2m, equity £49m and long-term loans £60m. Calculate ROCE and the gearing ratio (to 1 dp).",
+     model:`Capital employed = 49 + 60 = £109m <span class="pt">1</span>. ROCE = 12.2 ÷ 109 × 100 = <b>11.2%</b> <span class="pt">2</span>. Gearing = 60 ÷ 109 × 100 = <b>55.0%</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"Both use capital employed = equity + long-term loans. ROCE uses operating profit; gearing uses the loans."},
+    {marks:4, q:"VGL has current assets £22m, inventory £14m and current liabilities £14m. Calculate the current ratio and acid test ratio, and comment.",
+     model:`Current ratio = 22 ÷ 14 = <b>1.57</b> <span class="pt">1</span>. Acid test = (22 − 14) ÷ 14 = <b>0.57</b> <span class="pt">1</span>. The current ratio looks healthy, but the acid test of 0.57 is well below 1 <span class="pt">1</span>, showing VGL depends heavily on selling inventory to cover its short-term debts — a possible liquidity risk <span class="pt">2</span>.`,
+     fb:"Acid test strips out inventory. A big gap between the two ratios flags reliance on stock."}
+  ],
+  caseStudy:{
+    business:"Smith PLC (property developer)",
+    intro:`<p><b>Smith PLC</b> is a property developer. Its ratios, calculated from its accounts for both years, show a strengthening financial position:</p>
+      <table class="datatable">
+        <tr><th>Ratio</th><th>2024</th><th>2023</th></tr>
+        <tr><td>Gross profit margin</td><td>33.66%</td><td>30.10%</td></tr>
+        <tr><td>Operating profit margin</td><td>19.20%</td><td>14.26%</td></tr>
+        <tr><td>Net profit margin</td><td>18.55%</td><td>13.75%</td></tr>
+        <tr><td>ROCE</td><td>64.60%</td><td>42.93%</td></tr>
+        <tr><td>Current ratio</td><td>1.62</td><td>1.58</td></tr>
+        <tr><td>Acid test ratio</td><td>1.19</td><td>1.08</td></tr>
+        <tr><td>Gearing</td><td>40.81%</td><td>43.20%</td></tr>
+      </table>
+      <p>Every profitability ratio has risen, liquidity is healthy and improving, and gearing has fallen — a strong, improving position. (Capital employed 2024 = £586.1m.)</p>
+      <p class="note-ex"><b>Contrast — Thomas Cook:</b> before it collapsed in 2019, its accounts showed falling profit (net profit £126m in 2018 vs £183m in 2017) and, critically, <b>current liabilities (£4,222m) far exceeding current assets (£2,113m)</b> — a current ratio of just 0.5, signalling a severe liquidity crisis.</p>`
+  },
+  exam:[
+    {marks:12, q:"Using ratio analysis, assess whether ASOS's survival plan is likely to improve its financial position. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason the plan could help is that it cuts costs significantly, because ASOS plans to stock fewer products, cut spending and reduce investment in robotic warehouses. <span class="tag t-C">CHAIN</span>This means improved cash flow and lower debt (£153m in 2022); as a result ASOS could strengthen its current ratio, which fell from 1.56 (2021) to 1.49 (2022), improving its ability to meet short-term obligations.</p>
+     <p><span class="tag t-P">POINT</span>A second reason is that it targets over-reliance on discounting, because heavy promotions cut the gross margin from 45.4% to 43.6% and turned a £128.4m profit into a £30.8m loss. <span class="tag t-C">CHAIN</span>This means focusing on more profitable lines could lift margins and return ASOS to profit.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, cutting stock variety and promotions could reduce sales and damage the brand, because it may make ASOS less attractive in a competitive fashion market where revenue barely grew (£3,910.5m to £3,936.5m). This means cost savings could be offset by falling income and weaker loyalty, so liquidity and margins might not recover.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the plan has clear financial logic given the £30.8m loss and a current ratio of 1.49, but success depends on balancing cost reduction with keeping ASOS attractive to customers. It is recommended ASOS follows the plan while continuing to invest in its most profitable products and its brand.</p>`,
+     fb:"Mr. Akram's exemplar (ASOS). Ratio-driven: uses current ratio (1.56→1.49), gross margin (45.4%→43.6%) and the £30.8m loss, with a balanced judgement."},
+    {marks:12, q:"Assess the financial performance of Kellogg's using the profitability ratios you can calculate from its income statement. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Gross profit margin is a good starting point, because it shows how efficiently revenue becomes profit after cost of sales. <span class="tag t-C">CHAIN</span>With revenue of $12,923m and cost of sales of $7,901m, gross profit is $5,022m, a margin of about 38.9% — Kellogg keeps nearly 39 cents per dollar of sales before other costs, suggesting strong demand or pricing power.</p>
+     <p><span class="tag t-P">POINT</span>Operating profit margin gives a fuller view, because it also allows for expenses. <span class="tag t-C">CHAIN</span>With operating profit of $1,946m, the operating margin is about 15.1%, so Kellogg makes ~15 cents of profit per dollar after overheads — evidence it manages costs such as marketing and R&D reasonably well.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, only one year's income statement is provided, so we cannot see whether performance is improving or declining, and with no statement of financial position we cannot assess liquidity. This means the assessment is incomplete.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Kellogg's 2017 profitability looks strong on gross and operating margins, but the analysis is limited without a second year or liquidity data. Success in judging it depends on a fuller picture. It is recommended Kellogg's performance be assessed with multi-year data and liquidity ratios such as the current and acid test ratios.</p>`,
+     fb:"Mr. Akram's exemplar (Kellogg). Calculates and interprets gross (38.9%) and operating (15.1%) margins, then rightly flags the limitation of one year / no balance sheet."}
+  ],
+  resources:[
+    {label:"Ratio analysis — lesson notes (PDF)", file:"resources/3-3-5-2-ratio-notes.pdf"},
+    {label:"Ratio helpsheet — all formulas (PDF)", file:"resources/3-3-5-2-ratio-helpsheet.pdf"},
+    {label:"Smith PLC ratio practice & accounts (PDF)", file:"resources/3-3-5-2-smith-plc.pdf"}
+  ]
 },
 {
   code:"3.3.5.3", subtheme:"3.3.5", title:"Human resources",
