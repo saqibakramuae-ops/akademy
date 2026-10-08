@@ -122,7 +122,13 @@ window.CURRICULUM = [
      fb:"Centre by averaging two consecutive 4-quarter totals over 8. Variation = actual − centred trend."},
   {marks:2, q:"The Q3 variations are +102.5 and +125.0; the Q4 variations are +182.5 and +512.5. Calculate the seasonal (cyclical) variation for Q3 and Q4.",
      model:`Q3 = (+102.5 + 125.0) ÷ 2 = <b>+113.75</b> <span class="pt">1</span>. Q4 = (+182.5 + 512.5) ÷ 2 = <b>+347.5</b> <span class="pt">2</span>.`,
-     fb:"Seasonal variation = the average of the variations for the same quarter across years."}
+     fb:"Seasonal variation = the average of the variations for the same quarter across years."},
+  {marks:4, q:"VoltRide sales (£m): 2020=8.0, 2021=9.6, 2022=11.2, 2023=13.5, 2024=12.1, 2025=14.4. Calculate the three-period moving average for 2023 and the average variation from trend for 2021–2024.",
+     model:`2023 moving average = (11.2 + 13.5 + 12.1) ÷ 3 = <b>£12.27m</b> <span class="pt">1</span>. Variations: 2021 = 0.00, 2022 = −0.23, 2023 = +1.23, 2024 = −1.23 <span class="pt">1</span>. Sum = −0.23 <span class="pt">1</span>; average variation = −0.23 ÷ 4 = <b>−£0.06m</b> <span class="pt">1</span>.`,
+     fb:"1 mark for the moving-average method, 1 for £12.27m, 1 for the variation values/total, 1 for the average of −£0.06m."},
+  {marks:4, q:"Explain one conclusion VoltRide could draw from its variation figures.",
+     model:`Sales were £1.23m <b>above</b> the trend in 2023 <span class="pt">1</span>, suggesting a year of particularly strong demand <span class="pt">2</span>. However, sales were £1.23m <b>below</b> trend in 2024 <span class="pt">3</span>, showing external changes such as higher interest rates and competitor entry can push actual sales away from the forecast — so VoltRide should treat the forecast as a guide, not a guaranteed figure <span class="pt">4</span>.`,
+     fb:"Reward a specific conclusion drawn from the actual variation figures, developed into a consequence for how VoltRide uses the forecast."}
   ],
   caseStudy:{
     business:"Greggs plc",
@@ -132,7 +138,21 @@ window.CURRICULUM = [
       <tr><th>Quarter</th><th>Y1 Q1</th><th>Y1 Q2</th><th>Y1 Q3</th><th>Y1 Q4</th><th>Y2 Q1</th><th>Y2 Q2</th><th>Y2 Q3</th><th>Y2 Q4</th></tr>
       <tr><td>Sales (£m)</td><td>320</td><td>360</td><td>380</td><td>460</td><td>340</td><td>380</td><td>400</td><td>480</td></tr>
     </table>
-    <p>Q4 is consistently the strongest quarter (festive trading); Q1 is the weakest. Sales are also drifting upward year on year.</p>`
+    <p>Q4 is consistently the strongest quarter (festive trading); Q1 is the weakest. Sales are also drifting upward year on year.</p>
+      <hr style="border:none;border-top:2px solid var(--line);margin:22px 0">
+      <h2 style="font-family:var(--serif)">Second case: VoltRide Ltd</h2>
+      <p><b>VoltRide Ltd</b> is a UK retailer of electric bikes, batteries and accessories, selling online and through two city-centre stores. Sales grew strongly to 2023, fell in 2024 (a low-price online rival entered and higher interest rates cut spending), then recovered in 2025 after new cycle lanes and a compact commuter e-bike launch. The directors are weighing a larger warehouse lease costing <b>£0.8m a year</b> for 2026.</p>
+      <p class="note-ex">Annual sales revenue, with three-period moving average and variation (variation = actual − moving average).</p>
+      <table class="datatable">
+        <tr><th>Year</th><th>Sales (£m)</th><th>3-period MA (£m)</th><th>Variation (£m)</th></tr>
+        <tr><td>2020</td><td>8.0</td><td>—</td><td>—</td></tr>
+        <tr><td>2021</td><td>9.6</td><td>9.60</td><td>0.00</td></tr>
+        <tr><td>2022</td><td>11.2</td><td>11.43</td><td>−0.23</td></tr>
+        <tr><td>2023</td><td>13.5</td><td>12.27</td><td>+1.23</td></tr>
+        <tr><td>2024</td><td>12.1</td><td>13.33</td><td>−1.23</td></tr>
+        <tr><td>2025</td><td>14.4</td><td>—</td><td>—</td></tr>
+      </table>
+      <p>A trend line gives an extrapolated 2026 forecast of <b>£15.10m</b>; adjusted for the average variation (−£0.06m) this becomes <b>£15.04m</b>.</p>`
   },
   exam:[
     {marks:4, q:"Using the data, calculate the first two four-quarter moving average figures for Greggs and state what the trend shows. (4)",
@@ -166,11 +186,22 @@ window.CURRICULUM = [
      <p><span class="tag t-P">FOR EXPANDING</span>One benefit of expanding existing operations in Shropshire and Nepal is that the current model is already working well, because the 4-quarter moving average rose steadily from 61.25 (2015 Q3) to 78.75 (2017 Q2). This is clear evidence of rising demand; therefore focusing on proven sites supports growth with less risk, and as a result brings economies of scale, stronger loyalty and more consistent returns.</p>
      <p><span class="tag t-J">AGAINST EXPANDING</span>A drawback of expanding only within current sites is that it does not fix the winter underutilisation, because Q1 sales stay flat at £40,000–£60,000 despite overall growth. This leads to low winter activity for staff and facilities; therefore the firm suffers off-peak inefficiencies, and as a result its long-term growth could be more limited than a diversified strategy.</p>
      <p><span class="tag t-J">CONCLUSION</span>In conclusion, although winter holidays could reduce seasonal variation, expanding existing operations is more likely to bring long-term success, because the business already has a proven model with steady growth and rising demand, making it lower-risk and more sustainable. Success depends on whether Live the Adventure Ltd can keep scaling efficiently while maintaining quality. It is recommended the business prioritises expanding current sites to build loyalty and economies of scale, while cautiously exploring winter diversification to improve year-round use later.</p>`,
-     fb:"Mr. Akram's exemplar (Live the Adventure Ltd): two options each argued and challenged, ending in a recommendation plus 'success depends on'. Note the house chain throughout."}
+     fb:"Mr. Akram's exemplar (Live the Adventure Ltd): two options each argued and challenged, ending in a recommendation plus 'success depends on'. Note the house chain throughout."},
+  {marks:12, q:"Assess the usefulness of quantitative sales forecasting for VoltRide Ltd. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Quantitative forecasting is useful for VoltRide's planning. <span class="tag t-E">EXPLAIN</span>Its moving-average trend is rising, which lets it estimate future sales. <span class="tag t-C">CHAIN</span>This means VoltRide can plan stock, warehouse space, delivery capacity and cash flow; the adjusted 2026 forecast of £15.04m gives a clear numerical starting point for the warehouse decision, and the near-zero average variation shows the trend fits the period reasonably well. <span class="tag t-J">JUDGE</span>So for initial planning it is valuable.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the forecast can mislead. The 2023 and 2024 variations are large (+£1.23m and −£1.23m), so the near-zero average hides big year-to-year swings; interest rates, inflation, a new low-price competitor and technology change can all break the past pattern, and only six years of data exist.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> forecasting is useful for initial, short-term planning. <b>Why:</b> it gives a numerical starting point and a reasonable trend fit. <b>Why (develop):</b> but the large variations and external volatility limit its reliability. <b>What (depends on):</b> VoltRide should combine it with current market research, competitor intelligence and cash-flow analysis before committing to the fixed £0.8m lease.</p>`,
+     fb:"VoltRide case. Balanced 12-marker: a developed benefit, a genuine limitation using the ±£1.23m variations, and a 4Ws conclusion that states what the usefulness depends on."},
+  {marks:12, q:"Evaluate whether VoltRide should use its adjusted 2026 forecast to lease a larger warehouse and increase delivery capacity. (12)",
+     model:`<p><span class="tag t-P">POINT</span>There is a case for leasing the larger warehouse. <span class="tag t-E">EXPLAIN</span>The adjusted forecast of about £15.04m suggests continued growth from £14.4m in 2025. <span class="tag t-C">CHAIN</span>Extra warehouse and delivery capacity would prevent stock shortages, improve delivery times and let VoltRide meet rising demand; this protects sales and reputation as the market grows. <span class="tag t-J">JUDGE</span>So leasing is justified if the growth holds.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the decision is risky. The 2024 fall and −£1.23m variation show demand can drop quickly; if sales come in below forecast, VoltRide still pays the fixed £0.8m lease while holding unsold stock, raising costs and straining cash flow. A flexible short-term contract or a staged increase in stock would cut that risk.</p>
+     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> lease only if current orders, consumer confidence and competitor information support the forecast. <b>Why:</b> the forecast alone is not enough given recent volatility. <b>Why (develop):</b> the £0.8m is a fixed annual cost whatever the actual sales. <b>What (depends on):</b> the decision is more justified if VoltRide can negotiate flexibility in the lease or scale capacity gradually.</p>`,
+     fb:"Links the forecast to a real decision. Credit using at least one variation figure, weighing the fixed £0.8m cost against uncertain demand, and a judgement conditional on market evidence."}
   ],
   resources:[
     {label:"Lesson notes: 3-period moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-lesson-notes.pdf"},
-    {label:"Lesson notes: 4-quarter (centred) moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-4quarter-notes.pdf"}
+    {label:"Lesson notes: 4-quarter (centred) moving average & extrapolation (PDF)", file:"resources/3-3-1-qsf-4quarter-notes.pdf"},
+    {label:"VoltRide QSF case study & questions (PDF)", file:"resources/3-3-1-voltride-case-student.pdf"}
   ]
 },
 {
