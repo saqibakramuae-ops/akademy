@@ -1475,56 +1475,80 @@ window.CURRICULUM = [
 },
 {
   code:"3.3.6.1", subtheme:"3.3.6", title:"Key factors in change",
-  business:"Case study: Nokia", status:"live",
+  business:"Case studies: Tesco & Riverton Retail", status:"live",
   notes:[
-    {h:"What shapes successful change", html:`
-      <p>When a business manages change, five factors strongly affect whether it succeeds:</p>
+    {h:"The key internal factors", html:`
+      <p>Beyond leadership, four internal factors strongly affect how well a business manages change:</p>
       <ul>
-        <li><b>Organisational culture</b> — a flexible, innovative culture adapts; a rigid, risk-averse one resists (see <b>3.3.4.1–3.3.4.3</b>).</li>
-        <li><b>Size of the organisation</b> — large firms have more resources but are slower and more bureaucratic; small firms are nimble but may lack resources.</li>
-        <li><b>Time / speed of change</b> — rushed change breeds resistance and mistakes; change that is too slow lets rivals get ahead.</li>
-        <li><b>Managing resistance to change</b> — using approaches such as Kotter & Schlesinger's six methods (see <b>3.3.4.3</b>).</li>
-        <li><b>Transformational leadership</b> — leaders who inspire and set a clear vision can carry staff through change.</li>
+        <li><b>Organisational culture</b> — a <b>strong</b> culture with shared values (e.g. Premier Inn's focus on service) helps staff embrace change; a <b>weak</b> culture, poor employer–employee relations, or long-serving staff with embedded habits breeds resistance.</li>
+        <li><b>Size of the organisation</b> — the more employees, the wider the geographical spread, and the more layers of hierarchy, the harder change is to push through. Large multinationals form "pockets of culture" that must each be handled differently, slowing decisions.</li>
+        <li><b>Time / speed of change</b> — <b>incremental</b> (gradual) change lets staff understand and take ownership; <b>step</b> (rapid) change is riskier and causes problems if not well managed.</li>
+        <li><b>Managing resistance to change</b> — identifying who will resist and why, then tailoring the change (communication, involvement, support) so the majority accept it (see Kotter & Schlesinger in <b>3.3.4.3</b>).</li>
       </ul>`},
     {h:"Transformational leadership", html:`
-      <p><b>Transformational leaders</b> drive change by setting an inspiring vision, motivating staff to buy into it, and acting as role models. They focus on the <i>future</i> and on winning hearts and minds, rather than just managing day-to-day tasks (transactional leadership).</p>
-      <p>In a period of change this matters because staff are more likely to accept disruption when they trust the leader and understand the goal — reducing resistance and keeping morale up.</p>`},
-    {h:"Case: why Nokia failed to change", html:`
-      <p><b>Nokia</b> was once the world's leading mobile-phone maker, but when smartphones (Apple's iPhone, Google's Android) transformed the market in the late 2000s it failed to adapt:</p>
+      <p>A <b>transformational leader</b> inspires and motivates staff with a clear, exciting <b>vision</b> of the future, driving innovation and change. Key characteristics: <b>vision, inspiration, individualised consideration</b> (caring about each person) and <b>intellectual stimulation</b> (encouraging new ideas). They lead by example and win hearts and minds, rather than just managing tasks.</p>
       <ul>
-        <li><b>Culture</b> — resistant to innovation and slow to make bold decisions; managers were reluctant to take risks or challenge senior leaders.</li>
-        <li><b>Speed</b> — a large, bureaucratic business, so decisions took too long to implement.</li>
-        <li><b>Leadership</b> — senior leaders underestimated how fast consumer preferences and technology were changing.</li>
+        <li><b>Steve Jobs (Apple)</b> — imparted a clear vision that excited employees, sparking the iPod and iPhone.</li>
+        <li><b>Jeff Bezos (Amazon)</b> — a visionary risk-taker behind the Kindle and Amazon's expansion.</li>
+        <li><b>Oprah Winfrey</b> — extended her brand across media, leading by example and inspiring loyalty.</li>
       </ul>
-      <p>Nokia shows how culture, size/speed and leadership together determine whether a business can change in time.</p>`}
+      <p>In a period of change, a transformational leader reduces resistance because staff trust the leader and buy into the goal.</p>`},
+    {h:"Case: Riverton Retail", html:`
+      <p><b>Riverton Retail Ltd</b> (1,200+ stores) faced falling sales and online competition, so it introduced major change — a new online platform, automated checkouts and cost-cutting. But it struggled because of a <b>weak culture</b>, poor head-office–store communication, inconsistent store management, and its <b>large size</b> and the <b>speed</b> of change, which left staff anxious and unmotivated. It shows how culture, size, speed and communication combine to make change hard.</p>`}
   ],
   definitions:[
-    {term:"Managing change", marks:2, body:`The process of planning and implementing a shift in how a business operates <span class="pt">1</span>; its success depends on factors such as culture, size, the speed of change and leadership <span class="pt">2</span>.`},
-    {term:"Transformational leadership", marks:2, body:`A leadership style based on inspiring staff with a clear vision and motivating them to embrace change <span class="pt">1</span>; it helps reduce resistance because employees trust the leader and understand the goal <span class="pt">2</span>.`},
-    {term:"Resistance to change", marks:2, body:`The reluctance of employees to accept change to their working practices or culture <span class="pt">1</span>, often caused by fear, loss of autonomy or entrenched habits <span class="pt">2</span>.`}
+    {term:"Transformational leadership", marks:2, body:`A leadership style based on inspiring staff with a clear, exciting vision and motivating them to embrace change <span class="pt">1</span>; such leaders drive innovation and reduce resistance because employees trust them and buy into the goal <span class="pt">2</span>.`},
+    {term:"Organisational culture (in change)", marks:2, body:`The shared values and norms of a business <span class="pt">1</span>; a strong, aligned culture makes change easier to implement, while a weak one increases resistance <span class="pt">2</span>.`},
+    {term:"Incremental change", marks:2, body:`Change introduced gradually in small steps <span class="pt">1</span>; it gives staff time to understand and take ownership, so it usually meets less resistance than rapid step change <span class="pt">2</span>.`},
+    {term:"Resistance to change", marks:2, body:`The reluctance of employees to accept change to their working practices or culture <span class="pt">1</span>, often driven by fear of job losses, loss of autonomy or loyalty to the old ways <span class="pt">2</span>.`}
   ],
   practice:[
-    {marks:4, q:"Explain one reason the size of a business can make change harder to manage.",
-     model:`A large business is often more bureaucratic <span class="pt">1</span>. This is because decisions must pass through many layers of hierarchy before they are approved <span class="pt">2</span>. As a result, change is slow to implement <span class="pt">3</span>, so the firm may react too late to market shifts — as Nokia did with smartphones <span class="pt">4</span>.`,
-     fb:"Link size to a developed consequence (speed of decision-making), ideally applied to an example."},
-    {marks:4, q:"Explain one way transformational leadership can help a business through a period of change.",
-     model:`A transformational leader sets a clear, inspiring vision <span class="pt">1</span>. This is because they focus on motivating staff to buy into the change rather than just issuing instructions <span class="pt">2</span>. As a result, employees are more likely to trust the leader and accept disruption <span class="pt">3</span>, reducing resistance and keeping morale and productivity up during the change <span class="pt">4</span>.`,
-     fb:"Reward the link from vision/inspiration to reduced resistance and smoother change."}
+    {marks:4, q:"Explain one way a business's size can make change more difficult to implement.",
+     model:`A large business has more employees, sites and layers of hierarchy <span class="pt">1</span>. This is because change must be communicated and coordinated across all of them <span class="pt">2</span>. As a result, "pockets of culture" form and decisions slow down <span class="pt">3</span>, so the change is harder to push through and may arrive too late — as at Riverton's 1,200 stores <span class="pt">4</span>.`,
+     fb:"Link size to coordination/communication difficulty and a slower, harder change."},
+    {marks:4, q:"Explain one characteristic of a transformational leader and how it supports change.",
+     model:`A transformational leader provides an inspiring vision <span class="pt">1</span>. This is because they focus on exciting and motivating staff about the future rather than just giving instructions <span class="pt">2</span>. As a result, employees buy into the change and trust the leader <span class="pt">3</span>, reducing resistance and keeping morale and productivity up during the transition <span class="pt">4</span>.`,
+     fb:"Name a characteristic (vision/inspiration/individualised consideration/intellectual stimulation) and link it to reduced resistance."}
   ],
   caseStudy:{
-    business:"Nokia — failing to adapt",
-    intro:`<p><b>Nokia</b> dominated the mobile-phone market, but the smartphone revolution exposed how its <b>culture</b> (risk-averse, slow), its <b>size/speed</b> (large and bureaucratic) and its <b>leadership</b> (underestimating the pace of change) combined to stop it adapting in time. It is the classic example of the key factors in change working <i>against</i> a business.</p>`
+    business:"Tesco (Dave Lewis) & Riverton Retail",
+    intro:`<p><b>Tesco — Dave Lewis's turnaround.</b> When Dave Lewis became CEO, Tesco was in crisis. He cut non-core, loss-making activities (garden centres, online streaming), refocused on core groceries, rebuilt a customer-focused culture, updated own-brand products and delivered <b>£1.6bn</b> in cost savings — taking Tesco from a <b>£6.4bn loss</b> toward an expected <b>£2bn profit</b> by 2019, with margins around 3.7%.</p>
+      <p class="note-ex"><b>Tesco financial turnaround (2017 → 2022)</b></p>
+      <table class="datatable">
+        <tr><th>Ratio</th><th>2017</th><th>2022</th></tr>
+        <tr><td>Gross profit margin</td><td>5.79%</td><td>8.92%</td></tr>
+        <tr><td>Profit for year margin</td><td>−2.18%</td><td>4.20%</td></tr>
+        <tr><td>Current ratio</td><td>0.96</td><td>1.16</td></tr>
+        <tr><td>Acid test ratio</td><td>0.72</td><td>0.90</td></tr>
+        <tr><td>Gearing</td><td>41.81%</td><td>22.98%</td></tr>
+      </table>
+      <p>However, external factors also helped: UK interest rates were historically low (2014–2019), cutting the cost of servicing Tesco's £22bn debt, and the wider retail market was recovering — so leadership may not have been the <i>only</i> reason.</p>
+      <p><b>Riverton Retail Ltd</b> (1,200 stores) shows the opposite: weak culture, poor communication, large size and rapid change left staff anxious and the transformation at risk.</p>`
   },
   exam:[
-    {marks:12, q:"Assess the key factors that determine whether a business such as Nokia can successfully manage change. (12)",
-     model:`<p><span class="tag t-P">CULTURE</span>One key factor is organisational culture, because a flexible, innovative culture embraces change while a rigid one resists it. <span class="tag t-C">CHAIN</span>Nokia's risk-averse culture meant managers avoided bold decisions; this means it failed to respond to the iPhone, so it lost its market lead.</p>
-     <p><span class="tag t-P">SIZE / SPEED</span>A second factor is size and speed, because large firms are slower and more bureaucratic. <span class="tag t-C">CHAIN</span>Nokia's size meant decisions took too long to implement; this means rivals like Apple and Google moved faster, so Nokia fell behind.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, leadership can overcome these barriers. Transformational leaders who set a clear vision and win staff over can push even a large firm to change quickly — so culture and size are obstacles, not fixed limits, if leadership is strong.</p>
-     <p><span class="tag t-J">CONCLUSION (4Ws)</span><b>Which:</b> all the factors matter, but leadership is the pivotal one. <b>Why:</b> it shapes culture and drives the speed of response. <b>Why (develop):</b> Nokia's leaders underestimated the change, so culture and size were never overcome. <b>What (depends on):</b> success depends on leaders reading the market early and building a culture able to act on it. <i>(House-style model answer — no official mark scheme supplied.)</i></p>`,
-     fb:"Covers culture, size/speed and leadership applied to Nokia, with leadership as the decisive factor. House-style exemplar — swap in an official mark scheme if you have one."}
+    {marks:20, q:"Evaluate the extent to which the transformational leadership of Dave Lewis was the main reason for Tesco's improved financial position. (20)",
+     model:`<p><span class="tag t-P">FOR · STRATEGY</span>One reason Lewis's leadership was the main factor is that he changed Tesco's strategic direction immediately, because he cut non-core, loss-making activities such as garden centres and online streaming. <span class="tag t-C">CHAIN</span>This let Tesco refocus on core groceries and allocate resources better, so costs fell and efficiency rose; <span class="tag t-A">APPLY</span>as a result margins reached 3.7% and Tesco moved from a £6.4bn loss toward an expected £2bn profit by 2019. <span class="tag t-J">JUDGE</span>So leadership had a direct financial impact.</p>
+     <p><span class="tag t-J">AGAINST · EXTERNAL</span>However, external conditions also helped, because UK interest rates fell to historic lows from 2014–2019. <span class="tag t-C">CHAIN</span>This cut the cost of servicing Tesco's £22bn debt, improving liquidity and reducing debt even without Lewis's reforms, so leadership was not the sole driver.</p>
+     <p><span class="tag t-P">FOR · CULTURE</span>Lewis also transformed Tesco's culture and product offering, because he rebuilt a customer-focused culture and updated own-brand products. <span class="tag t-C">CHAIN</span>This made staff more effective and customers more loyal just as Aldi and Lidl were gaining share; as a result customer satisfaction hit multi-year highs and Tesco achieved £1.6bn of cost savings.</p>
+     <p><span class="tag t-J">AGAINST · MARKET</span>Yet the wider retail market was also recovering in this period, so rising consumer spending would have lifted Tesco's sales regardless of who led it — making it hard to isolate leadership as the single cause.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Dave Lewis's transformational leadership was the <b>main</b> reason for Tesco's recovery — the strategic and cultural changes drove the margin improvement (PFY margin −2.18% → 4.20%) and £1.6bn savings that external factors alone cannot explain. However, low interest rates and a recovering market clearly supported it, so leadership was necessary but not sufficient. Success depended on Lewis's reforms landing <i>while</i> conditions were favourable. It is recommended any judgement credits leadership as the primary driver within a supportive external environment.</p>`,
+     fb:"Mr. Akram's exemplar (Tesco/Dave Lewis). Full 5-paragraph evaluation weighing leadership against external factors (interest rates, market recovery), using the £6.4bn→£2bn and ratio figures, ending with a supported 'main reason' judgement."},
+    {marks:12, q:"Assess the likely extent of resistance to change among employees following a new CEO's appointment, using Starbucks as an example. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Some resistance is likely because employees loved the old culture under Howard Schultz, who built a caring, people-focused environment where staff ("partners") felt valued. <span class="tag t-C">CHAIN</span>This means loyalty to Schultz could make staff wary that things will change under Laxman Narasimhan, so they may be less open to new ideas.</p>
+     <p><span class="tag t-P">POINT</span>Resistance may also come from fear for jobs, because Narasimhan came from efficiency-focused firms like PepsiCo. <span class="tag t-C">CHAIN</span>This means staff may worry about cost-cutting reducing hours or security, lowering motivation if changes aren't communicated clearly.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, resistance is likely to be <b>limited</b>, because Narasimhan has a strong track record and — crucially — showed respect for the culture by working as a barista for six months and keeping "partner-first" values. This builds trust, so many staff feel confident and even excited about the future.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, there may be short-term resistance from employees loyal to the old culture or fearful for jobs, but the extent is likely low because Narasimhan has respected Starbucks' people-first values and built trust. Success depends on continued clear communication and involving staff in the change.</p>`,
+     fb:"Mr. Akram's exemplar (Starbucks). Balances reasons for and against resistance, applied to the CEO transition, with a judgement on how much resistance is likely."},
+    {marks:12, q:"Assess the likely causes and extent of resistance to change during a major restructuring, using Disney as an example. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One cause of resistance is fear of job losses or altered roles, because restructuring often means redundancies. <span class="tag t-C">CHAIN</span>This means employees worry about security and may resist to protect their positions, lowering morale and productivity during the transition.</p>
+     <p><span class="tag t-P">POINT</span>A second cause is the speed of change, because Bob Iger wants the restructuring done quickly. <span class="tag t-C">CHAIN</span>This gives staff little time to adjust, creating uncertainty and stress, so even those who accept the change in principle may push back if it feels rushed.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, resistance may be lower because Iger communicated his plans clearly and early, including preserving Disney's core creative values, and — having been CEO for 15 years — understands the culture deeply. This builds trust, so employees feel their identity and creativity are protected and are more willing to accept change.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, resistance at Disney is likely to be significant given its size and job-security fears, but Iger's experience, clear communication and respect for the culture should reduce it. Success depends on managing the pace of change and reassuring staff throughout.</p>`,
+     fb:"Mr. Akram's exemplar (Disney). Causes of resistance (job fears, speed) weighed against mitigating factors (communication, Iger's experience), with a judgement on extent."}
   ],
   resources:[
-    {label:"Managing change / contingency planning — lesson notes (PDF)", file:"resources/3-3-6-change-notes.pdf"}
+    {label:"Key factors in change — lesson notes (PDF)", file:"resources/3-3-6-1-key-factors-notes.pdf"},
+    {label:"Transformational leadership — lesson notes (PDF)", file:"resources/3-3-6-1-transformational-leadership.pdf"}
   ]
 },
 {
