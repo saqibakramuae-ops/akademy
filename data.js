@@ -12,7 +12,7 @@
 
 window.SUBTHEME_TITLE = {"3.3":"Decision-making techniques","3.4":"Business ethics & CSR","3.5":"Corporate influences & culture"};
 window.SUBTHEME_SUB = {"3.5":"Theme 3: Business decisions and strategy \u2014 organisational culture, Handy\u2019s types and the challenge of changing an established culture.","3.4":"Theme 3: Business decisions and strategy \u2014 how ethics and corporate social responsibility shape business decisions.","3.3":"Theme 3: Business decisions and strategy — the quantitative tools used to make and justify business decisions."};
-window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️","3.5.1":"🏢","3.5.2":"🗂️","3.5.3":"🔄"};
+window.ICONS = {"3.3.1":"📈","3.3.2":"💷","3.3.3":"🌳","3.3.4":"🧭","3.3.5":"➗","3.4.1":"⚖️","3.4.2":"♻️","3.5.1":"🏢","3.5.2":"🗂️","3.5.3":"🔄","3.4.3":"🤝","3.5.4":"👥"};
 
 window.CURRICULUM = [
 {
@@ -1069,6 +1069,123 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"Difficulties in changing culture — lesson notes (PDF)", file:"resources/3-5-3-changing-culture-notes.pdf"}
+  ]
+},
+{
+  code:"3.4.3", subtheme:"3.4", title:"Trade-off between ethics & profit",
+  business:"Case study: David Lloyd", status:"live",
+  notes:[
+    {h:"The ethics–profit trade-off", html:`
+      <p>A <b>trade-off</b> arises where having more of one thing means having less of another. Behaving ethically often means <b>lower profits</b> — because it raises costs or reduces revenue — at least in the short term.</p>
+      <p>Common examples of an ethical choice and its profit trade-off:</p>
+      <table class="datatable">
+        <tr><th>Ethical decision</th><th>Trade-off with profit</th></tr>
+        <tr><td>Treat suppliers fairly</td><td>Higher input costs</td></tr>
+        <tr><td>Pay taxes in the UK</td><td>Higher tax bill than aggressive avoidance</td></tr>
+        <tr><td>Don't exploit workers</td><td>Higher wage and compliance costs</td></tr>
+        <tr><td>Limit "pester-power" product placement</td><td>Lower impulse sales</td></tr>
+        <tr><td>Pay above the living wage</td><td>Higher labour costs</td></tr>
+        <tr><td>Ethically sourced ingredients</td><td>Higher material costs</td></tr>
+      </table>
+      <div class="note-ex">Key idea: the ethical option usually costs more now, but can protect reputation, trust and revenue in the long term — so the trade-off differs over the short vs long run.</div>`},
+    {h:"When ethics and profit collide", html:`
+      <p>Some industries face sharp ethical dilemmas. In <b>health and fitness</b>, for example, firms like <b>David Lloyd</b> rely on long-term membership contracts for revenue, and staff are trusted to give honest advice:</p>
+      <ul>
+        <li><b>Contracts</b> secure revenue even when members stop attending — but members may feel trapped.</li>
+        <li><b>Personal trainers</b> should set realistic goals, not just keep a customer happy (e.g. not promising a triathlon in a month).</li>
+        <li><b>Sales incentives</b> on products like energy bars must not lead staff to overstate benefits.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Trade-off", marks:2, body:`A situation where having more of one thing means having less of another <span class="pt">1</span>; for a business, acting more ethically often means accepting lower short-term profit <span class="pt">2</span>.`},
+    {term:"Ethical dilemma", marks:2, body:`A situation where a business must choose between the more profitable option and the more ethical one <span class="pt">1</span>, such as using cheaper non-ethically-sourced materials versus fair but costlier ones <span class="pt">2</span>.`},
+    {term:"Living wage", marks:2, body:`A wage set at the level needed to meet basic living costs, usually above the legal minimum <span class="pt">1</span>; paying it is more ethical but raises labour costs and can reduce profit <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define a trade-off.",
+     model:`A trade-off is where having more of one thing means having less of another <span class="pt">1</span>; for a business, acting more ethically often means accepting lower short-term profit <span class="pt">2</span>.`,
+     fb:"Two linked points — the general definition plus the ethics/profit application."},
+    {marks:4, q:"Explain one trade-off a business may face between acting ethically and maximising profit.",
+     model:`A business that uses ethically sourced ingredients faces higher material costs <span class="pt">1</span>. This is because fair, sustainable suppliers charge more than the cheapest alternatives <span class="pt">2</span>. As a result, profit margins fall in the short term <span class="pt">3</span>, though the stronger ethical image can protect sales and reputation over the longer term <span class="pt">4</span>.`,
+     fb:"Develop one trade-off, ideally noting the short- vs long-term difference."}
+  ],
+  caseStudy:{
+    business:"David Lloyd — health & fitness clubs",
+    intro:`<p><b>David Lloyd</b> clubs rely on <b>membership contracts</b> for much of their revenue, often committing customers for months or years. Members trust staff to help them meet fitness goals, and staff are sometimes given <b>incentives</b> to promote product lines such as energy bars. This creates two ethical pressure points: whether long contracts are fair to members who stop attending, and whether sales incentives lead staff to overstate product benefits or set unrealistic goals.</p>`
+  },
+  exam:[
+    {marks:8, q:"Assess two possible trade-offs between profits and ethics for David Lloyd. Make sure your answer has application throughout. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One trade-off is between <b>revenue security and customer fairness</b> through long-term fixed contracts. <span class="tag t-E">EXPLAIN</span>Locking members into annual agreements guarantees income even if they stop attending. <span class="tag t-C">CHAIN</span>This improves financial stability and reduces the impact of seasonal drops, so David Lloyd can invest with confidence in services and equipment; however, it raises ethical concerns, as some members may feel trapped in contracts they no longer want, reducing their sense of fairness. <span class="tag t-J">JUDGE</span>So profit rises but at a cost to member goodwill.</p>
+     <p><span class="tag t-P">POINT</span>A second trade-off is between <b>secondary revenue and honesty</b> when staff promote energy bars or plans for commission. <span class="tag t-E">EXPLAIN</span>Employees may exaggerate health claims to boost sales. <span class="tag t-C">CHAIN</span>This lifts short-term profit, but customers may buy unsuitable products and feel misled, which could damage trust and the brand.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, not all members view contracts or promotions negatively — some value the structure and commitment, and well-trained, responsible staff can give honest advice while still offering extra services. So the ethics–profit trade-off can be reduced or avoided altogether where staff are guided by strong values and supported by the business.</p>`,
+     fb:"Mr. Akram's exemplar (David Lloyd). An 8-mark 'assess two trade-offs' needs both developed with application, plus a balancing 'however' that lifts it to the top band."}
+  ],
+  resources:[
+    {label:"Trade-off between ethics and profit — lesson notes (PDF)", file:"resources/3-4-3-tradeoff-notes.pdf"}
+  ]
+},
+{
+  code:"3.5.4", subtheme:"3.5", title:"Stakeholder vs shareholder approach",
+  business:"Case studies: Starbucks & Peloton", status:"live",
+  notes:[
+    {h:"Stakeholders vs shareholders", html:`
+      <p>A <b>shareholder</b> owns part of the company and wants strong returns. A <b>stakeholder</b> is anyone with an interest in the business — a much wider group:</p>
+      <ul>
+        <li><b>Internal:</b> shareholders/owners, managers, employees.</li>
+        <li><b>External:</b> customers, suppliers, government, local communities, pressure groups.</li>
+      </ul>
+      <p>Each group has different objectives — e.g. employees want fair pay and security, customers want quality and value, suppliers want prompt payment, communities want jobs with minimal harm.</p>`},
+    {h:"The two approaches", html:`
+      <p><b>Shareholder approach</b> — the business is run to <b>maximise returns for shareholders</b> (profit, dividends, share price) above other interests.</p>
+      <p><b>Stakeholder approach</b> — decisions are made in the interests of <b>all stakeholder groups</b>, balancing profit against the needs of employees, customers, suppliers and the community.</p>
+      <div class="note-ex">The two often conflict: cutting costs to lift profit (shareholders) can mean job losses or supplier pressure (other stakeholders). It is difficult for a large firm to satisfy every group at once.</div>`},
+    {h:"Conflicts between groups", html:`
+      <p>Because resources are limited, meeting one group's objectives can harm another's:</p>
+      <ul>
+        <li>Higher pay for employees vs higher dividends for shareholders.</li>
+        <li>Lower prices for customers vs higher margins for owners.</li>
+        <li>Expansion/profit vs the local community's environmental concerns.</li>
+      </ul>
+      <p>Managers must weigh these trade-offs, and the "right" balance often depends on the firm's objectives and time horizon.</p>`}
+  ],
+  definitions:[
+    {term:"Stakeholder", marks:2, body:`Any individual or group with an interest in, or affected by, a business <span class="pt">1</span> — such as employees, customers, suppliers, the community and shareholders — each with their own objectives <span class="pt">2</span>.`},
+    {term:"Shareholder", marks:2, body:`A person or institution that owns shares in a company <span class="pt">1</span>; shareholders carry financial risk and generally want strong returns through profit, dividends and a rising share price <span class="pt">2</span>.`},
+    {term:"Shareholder approach", marks:2, body:`Running a business primarily to maximise returns for its shareholders <span class="pt">1</span>, prioritising profit and share price above wider stakeholder interests <span class="pt">2</span>.`},
+    {term:"Stakeholder approach", marks:2, body:`Making business decisions in the interests of all stakeholder groups, not just owners <span class="pt">1</span>, balancing profit against the needs of employees, customers, suppliers and the community <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Explain the difference between a shareholder and a stakeholder.",
+     model:`A shareholder owns part of the company and wants strong financial returns <span class="pt">1</span>; a stakeholder is anyone with an interest in the business — employees, customers, suppliers and the community as well as shareholders <span class="pt">2</span>.`,
+     fb:"Two linked points — define each and show the stakeholder group is wider."},
+    {marks:4, q:"Explain one conflict that can arise between a business's shareholders and another stakeholder group.",
+     model:`Shareholders may want higher dividends, which pushes the firm to cut costs <span class="pt">1</span>. This is because lower costs raise profit available to distribute <span class="pt">2</span>. As a result, the business may cut jobs or press suppliers on price <span class="pt">3</span>, harming employees or suppliers even as shareholder returns rise <span class="pt">4</span>.`,
+     fb:"Reward a clear conflict developed to show the loss to the other group."}
+  ],
+  caseStudy:{
+    business:"Starbucks & Peloton",
+    intro:`<p>Two scenarios showing how a decision affects internal stakeholders differently.</p>
+      <h3>Starbucks — expanding the Pickup service</h3>
+      <p>Starbucks expanded its app-based <b>Pickup</b> service (pre-order and pay, no queue), tested in cities like Manhattan and Toronto, at a time when earnings had fallen from <b>$4,681.1m to $2,805.5m</b>. The share price rose <b>6%</b> on the news (good for shareholders and convenience-seeking customers), but the model reduces face-to-face roles — a risk to <b>employees</b> and to customers who value the traditional café experience.</p>
+      <h3>Peloton — the treadmill recall</h3>
+      <p>Peloton recalled <b>126,000 treadmills</b> over safety concerns, wiping <b>$4.1bn</b> (a 15% share-price fall) off its value; the CEO admitted it had been slow to respond to safety warnings. The share price later recovered toward $120 by late July 2021 as the firm accepted responsibility and demand stayed strong — suggesting the impact on internal stakeholders may be short-term.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess the likely impact of the treadmill recall on Peloton's internal stakeholders. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One impact on shareholders is a fall in confidence, because the recall of 126,000 treadmills wiped $4.1bn (a 15% fall) off Peloton's value and the CEO admitted the firm was slow to act. <span class="tag t-C">CHAIN</span>This means shareholders may doubt the board's decision-making and sell shares; as a result the share price could fall further, limiting Peloton's ability to raise capital.</p>
+     <p><span class="tag t-P">POINT</span>Employees could also be affected, because demand for the treadmill line may fall in the short term. <span class="tag t-C">CHAIN</span>This means staff in product development, customer service or logistics may fear job insecurity, so morale and productivity could drop.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, Peloton's share price recovered toward $120 by late July 2021, because it accepted responsibility and demand in the growing online-fitness market stayed strong. This means investor confidence returned, so the impact on internal stakeholders may be short-term rather than lasting.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, shareholders and employees were hit by lost confidence and job insecurity, but the share-price recovery and continued growth suggest the impact is likely short-term. Success depends on whether Peloton learns from the incident. It is recommended it introduces stronger quality control, safety audits and transparent communication to rebuild trust.</p>`,
+     fb:"Mr. Akram's exemplar (Peloton). Impact on two internal groups with the figures, a recovery counter-point, and a conclusion on short- vs long-term with a recommendation."},
+    {marks:12, q:"Assess the likely impact on Starbucks' internal stakeholders of expanding its Pickup service. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is improved customer convenience, because customers can pre-order and pay via the app and skip queues. <span class="tag t-C">CHAIN</span>This suits busy city customers (tested in Manhattan and Toronto), so Starbucks attracts time-conscious consumers and lifts satisfaction, strengthening loyalty and repeat purchases.</p>
+     <p><span class="tag t-P">POINT</span>It also helps shareholders, because it opens new revenue as earnings had fallen from $4,681.1m to $2,805.5m. <span class="tag t-C">CHAIN</span>This means investors may see a growth opportunity; as a result the share price rose 6% on the announcement, signalling stronger confidence.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the model threatens employees and traditional customers, because less face-to-face service means fewer staff hours and a loss of the friendly in-store experience. This means staff may feel insecure (raising turnover and training costs) and some loyal customers may feel Starbucks has become too transactional, hurting its brand.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the expansion has mixed effects: clear gains for convenience-seeking customers and shareholders, but risks for employees and café-loving customers. Success depends on whether Starbucks can balance digital innovation with service quality and staff morale — so a measured roll-out that protects the in-store experience is recommended.</p>`,
+     fb:"Mr. Akram's exemplar (Starbucks). Weighs gains for shareholders/customers against losses for employees/traditional customers, with the figures and a balanced conclusion."}
+  ],
+  resources:[
+    {label:"Stakeholder vs shareholder approach — lesson notes (PDF)", file:"resources/3-5-4-stakeholder-notes.pdf"}
   ]
 }
 ];
