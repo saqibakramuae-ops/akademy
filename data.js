@@ -1877,7 +1877,14 @@ window.CURRICULUM = [
      <p><span class="tag t-P">DIFFERENTIATION FOCUS</span>An alternative is <b>differentiation focus</b> — targeting niches with specific needs such as elite training gear, military performance clothing or collegiate/youth athletic programmes. <span class="tag t-C">CHAIN</span>Serving loyal segments with tailored innovation lets Under Armour charge higher prices and face less direct competition from the giants. <span class="tag t-A">APPLY</span>Dominating collegiate sportswear or professional training kits, where function beats fashion, builds a strong reputation within specialist markets. <span class="tag t-J">JUDGE</span>So focus reduces the head-on battle with Nike and Adidas.</p>
      <p><span class="tag t-J">LIMITATION</span>But a narrow focus caps the size of the prize — niche markets are smaller, so growth may be limited, and heavy reliance on a few segments is risky if their demand falls.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, Under Armour should lead with differentiation around its proven performance innovation, but apply it through a focus on defensible niches rather than competing broadly against far larger rivals. Success depends on sustaining genuine product innovation and resisting brand dilution; a disciplined, focused differentiation strategy is therefore recommended over trying to out-market Nike and Adidas across the mass market.</p>`,
-     fb:"Mr. Akram's exemplar (Under Armour, 20). Full 5×5 PECAN evaluation of two Porter strategies, each challenged (including 'stuck in the middle'), ending in a focused-differentiation recommendation."}
+     fb:"Mr. Akram's exemplar (Under Armour, 20). Full 5×5 PECAN evaluation of two Porter strategies, each challenged (including 'stuck in the middle'), ending in a focused-differentiation recommendation."},
+    {marks:20, q:"Evaluate whether SHEIN should continue to rely on a cost-leadership strategy under Porter's Strategic Matrix. (20)",
+     model:`<p><span class="tag t-P">COST LEADERSHIP</span>One argument for continuing is that cost leadership is the core of SHEIN's model — a global, online-only fast-fashion brand selling at very low prices. <span class="tag t-E">EXPLAIN</span>Operating online-only avoids store costs, and an agile, data-driven supply chain lets it produce in high volume cheaply. <span class="tag t-C">CHAIN</span>This keeps prices below rivals and, powered by social media, drives huge demand among price-sensitive Gen Z shoppers. <span class="tag t-A">APPLY</span>Against Zara and H&M, SHEIN wins clearly on price and speed to trend. <span class="tag t-J">JUDGE</span>So cost leadership is what built its competitive advantage.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, competing only on cost is increasingly risky, because SHEIN faces growing pressure over ethics, quality and sustainability and holds the lowest sustainability rating of the three. As regulators and consumers turn against throwaway fashion, a pure low-cost image could become a liability and invite legal or reputational damage.</p>
+     <p><span class="tag t-P">DIFFERENTIATION SHIFT</span>An alternative is to move towards differentiation by investing in sustainability, quality and faster, more reliable delivery. <span class="tag t-C">CHAIN</span>This could protect SHEIN from ethical criticism, justify slightly higher prices and build longer-term loyalty rather than one-off bargain purchases. <span class="tag t-A">APPLY</span>It would also close the gap on Zara/H&M, whose delivery and ethics currently score better. <span class="tag t-J">JUDGE</span>So some differentiation reduces SHEIN's biggest strategic risk.</p>
+     <p><span class="tag t-J">LIMITATION</span>But abandoning low cost is dangerous: SHEIN's entire appeal and scale rest on rock-bottom prices, and raising costs to improve sustainability could push away the price-driven Gen Z customers it depends on — risking being "stuck in the middle".</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, SHEIN should keep cost leadership as its foundation but gradually layer in targeted sustainability and quality improvements, rather than a full switch. Success depends on protecting its price advantage while defusing ethical and regulatory threats; a phased "cost leadership plus visible sustainability gains" approach is therefore recommended over competing on price alone.</p>`,
+     fb:"Mr. Akram's exemplar (SHEIN, 20). Full 5×5 PECAN evaluation of staying cost-leader vs shifting toward differentiation, using the Zara/H&M and sustainability-rating evidence, ending in a phased recommendation."}
   ],
   resources:[
     {label:"Porter's Strategic Matrix — lesson notes (PDF)", file:"resources/3-3-1-2-porters-strategic-matrix.pdf"},
@@ -1886,7 +1893,110 @@ window.CURRICULUM = [
     {label:"Portfolio analysis / Boston Matrix — lesson notes (PDF)", file:"resources/3-3-1-2-boston-matrix.pdf"}
   ]
 },
-{code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis", business:"Strengths · weaknesses · opportunities · threats", status:"soon"},
+{
+  code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis",
+  business:"Case studies: a local Chinese restaurant, Bluebells B&B & Amazon", status:"live",
+  notes:[
+    {h:"What is SWOT analysis?", html:`
+      <p><b>SWOT analysis</b> is a strategic-planning tool that helps a business identify its <b>S</b>trengths, <b>W</b>eaknesses, <b>O</b>pportunities and <b>T</b>hreats before choosing a strategy. It splits into two halves:</p>
+      <ul>
+        <li><b>Strengths &amp; Weaknesses — internal</b> factors the business can control.</li>
+        <li><b>Opportunities &amp; Threats — external</b> factors it cannot control (often found using <b>PESTLE</b>).</li>
+      </ul>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 300" style="min-width:420px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)">HELPFUL</text>
+        <text x="385" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)">HARMFUL</text>
+        <text x="18" y="100" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)" transform="rotate(-90 18 100)">INTERNAL</text>
+        <text x="18" y="225" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)" transform="rotate(-90 18 225)">EXTERNAL</text>
+        <rect x="40" y="30" width="230" height="120" rx="8" fill="rgba(15,163,127,.14)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="280" y="30" width="230" height="120" rx="8" fill="rgba(201,42,42,.12)" stroke="#c92a2a" stroke-width="2"/>
+        <rect x="40" y="162" width="230" height="120" rx="8" fill="rgba(15,163,127,.14)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="280" y="162" width="230" height="120" rx="8" fill="rgba(201,42,42,.12)" stroke="#c92a2a" stroke-width="2"/>
+        <text x="155" y="78" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">Strengths</text>
+        <text x="155" y="100" text-anchor="middle" font-size="10.5" fill="var(--muted)">strong brand, loyal</text>
+        <text x="155" y="116" text-anchor="middle" font-size="10.5" fill="var(--muted)">customers, finances</text>
+        <text x="395" y="78" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">Weaknesses</text>
+        <text x="395" y="100" text-anchor="middle" font-size="10.5" fill="var(--muted)">high debt, weak brand,</text>
+        <text x="395" y="116" text-anchor="middle" font-size="10.5" fill="var(--muted)">poor supply chain</text>
+        <text x="155" y="210" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">Opportunities</text>
+        <text x="155" y="232" text-anchor="middle" font-size="10.5" fill="var(--muted)">new markets, tariff</text>
+        <text x="155" y="248" text-anchor="middle" font-size="10.5" fill="var(--muted)">cuts, new tech</text>
+        <text x="395" y="210" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">Threats</text>
+        <text x="395" y="232" text-anchor="middle" font-size="10.5" fill="var(--muted)">rising costs, new</text>
+        <text x="395" y="248" text-anchor="middle" font-size="10.5" fill="var(--muted)">rivals, tight labour</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Strengths</b> (internal) — what the firm excels at: a strong brand, loyal customers, a healthy financial position, a skilled workforce, unique technology.</li>
+        <li><b>Weaknesses</b> (internal) — what holds it back: a weak brand, high labour turnover, high debt, a poor supply chain, lack of capital.</li>
+        <li><b>Opportunities</b> (external) — favourable outside factors: e.g. a country cutting tariffs lets a car maker export into a new market, lifting sales and share.</li>
+        <li><b>Threats</b> (external) — harmful outside factors: e.g. a drought threatens a wheat producer; rising material costs, more competition, tight labour supply.</li>
+      </ul>`},
+    {h:"Worked example — a local Chinese restaurant", html:`
+      <p>A restaurant sets the SMART objective: <b>increase profits by 20% by 31 Dec 2025</b>. It is weighing four strategies: (1) spend more on promotion, (2) raise menu prices, (3) switch to cheaper suppliers, (4) cut the workforce. A SWOT helps it choose.</p>
+      <table class="datatable">
+        <tr><th>Strengths</th><th>Weaknesses</th></tr>
+        <tr><td>Good high-street location; strong finances; reputation for high-quality food.</td><td>Only 50% capacity Mon–Thu; limited promotion; already at 100% capacity Fri–Sun.</td></tr>
+        <tr><th>Opportunities</th><th>Threats</th></tr>
+        <tr><td>The only other Chinese restaurant in the area is closing.</td><td>Many other restaurants on the high street (fish & chips, Mexican, Indian).</td></tr>
+      </table>
+      <p>Reading the SWOT: with spare midweek capacity, a closing rival and a quality reputation but weak promotion, <b>investing in promotion (strategy 1)</b> looks strongest — it fills quiet midweek tables and captures the closing rival's customers. Raising prices or cutting quality/staff risks the restaurant's core strength (its reputation), so those are rejected.</p>`},
+    {h:"Using SWOT — and its limits", html:`
+      <p>SWOT turns scattered information into a structure managers can act on, linking <b>internal capability</b> to <b>external change</b> so strategic and tactical decisions are evidence-based. Good practice is to <b>match</b> strengths to opportunities and plan to defend against threats.</p>
+      <p>But it has real limits:</p>
+      <ul>
+        <li>It is only a <b>snapshot</b> — the environment keeps changing, so it dates quickly.</li>
+        <li>It can be <b>subjective</b>, relying on opinion rather than hard data, and may just produce long unranked lists.</li>
+        <li><b>Small businesses</b> often struggle to use it well — limited time, expertise and market data mean owners rely on personal judgement rather than objective evidence.</li>
+      </ul>
+      <p>So SWOT is best used <b>regularly</b> and <b>alongside other tools</b> (e.g. PESTLE for the external side), not on its own.</p>`}
+  ],
+  definitions:[
+    {term:"SWOT analysis", marks:2, body:`A strategic-planning tool that identifies a business's internal strengths and weaknesses and its external opportunities and threats <span class="pt">1</span>; it is used to inform strategy and decision-making <span class="pt">2</span>.`},
+    {term:"Strength (SWOT)", marks:2, body:`An internal factor a business does well that sets it apart from rivals <span class="pt">1</span>, such as a strong brand or loyal customer base, which it can build on <span class="pt">2</span>.`},
+    {term:"Weakness (SWOT)", marks:2, body:`An internal factor that stops a business performing at its best <span class="pt">1</span>, such as high debt or a weak supply chain, which it needs to improve to stay competitive <span class="pt">2</span>.`},
+    {term:"Opportunity (SWOT)", marks:2, body:`A favourable external factor a business could exploit <span class="pt">1</span>, such as a new market opening up or a change in technology, giving it a potential advantage <span class="pt">2</span>.`},
+    {term:"Threat (SWOT)", marks:2, body:`An unfavourable external factor that could harm a business <span class="pt">1</span>, such as rising costs or new competition, which it must plan to defend against <span class="pt">2</span>.`},
+    {term:"Internal factor", marks:2, body:`A factor within a business's own control <span class="pt">1</span>, such as its finances, staff or brand; these make up the strengths and weaknesses of a SWOT <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"State what each letter of SWOT stands for.",
+     model:`<b>S</b>trengths, <b>W</b>eaknesses, <b>O</b>pportunities, <b>T</b>hreats <span class="pt">1</span> — strengths and weaknesses are internal, opportunities and threats are external <span class="pt">2</span>.`,
+     fb:"All four letters expanded, plus the internal/external split."},
+    {marks:4, q:"Explain one benefit to a small restaurant of carrying out a SWOT analysis.",
+     model:`One benefit is making a better strategic choice <span class="pt">1</span>. This is because SWOT structures what the business knows about itself and its market <span class="pt">2</span>. As a result, the restaurant can match a strength (e.g. spare midweek capacity and a good reputation) to an opportunity (a rival closing) <span class="pt">3</span>, so it picks a strategy — such as investing in promotion — that is most likely to hit its profit objective <span class="pt">4</span>.`,
+     fb:"Link SWOT's structure to matching a strength to an opportunity and a better decision."},
+    {marks:4, q:"Sports Direct is reviewing its position in the sportswear market. Identify one strength and one threat it might list in a SWOT analysis, and justify each.",
+     model:`A <b>strength</b> is its large scale and buying power as the UK's biggest sports retailer <span class="pt">1</span>, which lets it stock a wide range cheaply and undercut rivals on price <span class="pt">2</span>. A <b>threat</b> is growing online competition from specialist and brand-direct sellers <span class="pt">3</span>, which could pull price-sensitive and brand-loyal customers away from its stores and squeeze margins <span class="pt">4</span>.`,
+     fb:"One internal strength and one external threat, each developed (not just listed) to the two-point standard."}
+  ],
+  caseStudy:{
+    business:"A local Chinese restaurant, Bluebells B&B & Amazon",
+    intro:`<p>Businesses used in the SWOT exam questions.</p>
+      <ul>
+        <li><b>Local Chinese restaurant:</b> weighing four strategies to raise profit 20% — a classic SWOT decision (see the worked example above).</li>
+        <li><b>Bluebells B&amp;B (Keswick):</b> a small, owner-managed guesthouse run by Les and Liz since 2006, with consistent 5-star TripAdvisor reviews and a busy May–Sep season — but limited business expertise, and facing online platforms like Booking.com.</li>
+        <li><b>Amazon:</b> a huge, complex global business — useful for discussing both the <b>advantages</b> of SWOT (structure, strategic focus) and its <b>limits</b> (too big and fast-changing for one snapshot to capture).</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Assess the usefulness of a SWOT analysis to a small business such as a local Chinese restaurant. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is clearer strategic choices, because SWOT sets internal strengths and weaknesses against external opportunities and threats. <span class="tag t-C">CHAIN</span>The restaurant can see it has spare midweek capacity and a strong reputation (strengths) while a rival is closing (opportunity), so it can justify investing in promotion rather than guessing — making its 20% profit target more achievable.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is avoiding damaging options, because SWOT exposes what a strategy would risk. <span class="tag t-C">CHAIN</span>Raising prices or cutting food quality threatens the restaurant's core strength — its reputation — so SWOT helps it reject those and protect long-term custom.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, SWOT is less useful for a small business because it is only a subjective snapshot. With limited time, data and expertise, the owners may rely on personal opinion and unranked lists, and the analysis dates quickly as the high street changes — so it should be used regularly and alongside PESTLE, not alone.</p>`,
+     fb:"Mr. Akram's exemplar. Two uses applied to the restaurant, balanced by the subjectivity/snapshot limitation that hits small firms hardest."},
+    {marks:12, q:"Assess the usefulness of SWOT analysis to the owners of a small B&B such as Bluebells. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One use is building on clear strengths, because Bluebells has an excellent reputation and consistent 5-star TripAdvisor reviews since 2006. <span class="tag t-C">CHAIN</span>Customers value trusted, high-quality accommodation, so this drives repeat business and word of mouth in the busy May–September season — letting Les and Liz attract visitors without heavy advertising spend and keep occupancy and revenue high.</p>
+     <p><span class="tag t-P">POINT</span>A second use is spotting opportunities, such as online travel platforms like Booking.com. <span class="tag t-C">CHAIN</span>These widen Bluebells' reach beyond its usual market, so the owners could attract tourists who'd never have found the B&B and boost bookings in quieter months like March and October.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, a weakness of SWOT here is the owners' limited business expertise, because as a small owner-managed B&B they may lack training in strategic planning. This risks an analysis built on personal opinion rather than market evidence, so they could misjudge competition from other Keswick guesthouses or miss shifts in customer behaviour — leading to poorly prioritised decisions.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, SWOT is useful for Bluebells, especially when used regularly to review strengths, weaknesses, opportunities and threats. But its success depends on Les and Liz gathering accurate information and acting on it — so combining SWOT with a PESTLE analysis (economic tourism trends, online reviews and booking tech) would give a fuller, more objective picture and support long-term success.</p>`,
+     fb:"Mr. Akram's exemplar (Bluebells). Two uses applied (reputation strength, Booking.com opportunity), the expertise weakness as the limitation, and a 'combine with PESTLE' conclusion."}
+  ],
+  resources:[
+    {label:"SWOT analysis — lesson notes (PDF)", file:"resources/3-3-1-3-swot-notes.pdf"}
+  ]
+},
 {
   code:"3.3.1.4", subtheme:"3.3.1", title:"Impact of external influences",
   business:"Case studies: Burberry (China), Toyota, easyJet & Bramwell Brown", status:"live",
