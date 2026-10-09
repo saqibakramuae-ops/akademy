@@ -1710,19 +1710,45 @@ window.CURRICULUM = [
 },
 {
   code:"3.3.1.2", subtheme:"3.3.1", title:"Theories of corporate strategy",
-  business:"Case studies: McDonald's, Lush, Five Guys & Coca-Cola", status:"live",
+  business:"Case studies: McDonald's, Lush, Five Guys, Coca-Cola, Under Armour & Detox",
+ status:"live",
   notes:[
     {h:"Strategic vs tactical decisions", html:`
       <p><b>Strategic decisions</b> are major, long-term choices made by senior management that set the direction of the whole business (e.g. entering a new market, a major product launch). They are costly and hard to reverse.</p>
       <p><b>Tactical decisions</b> are shorter-term, smaller choices (often by middle management) that put the strategy into action (e.g. a seasonal promotion). They are easier and cheaper to reverse.</p>`},
-    {h:"Porter's Strategic Matrix", html:`
-      <p>Michael Porter argued a business needs a clear <b>competitive strategy</b>, choosing its source of advantage (cost vs differentiation) and its scope (broad market vs narrow niche):</p>
-      <table class="datatable">
-        <tr><th></th><th>Low cost</th><th>Differentiation</th></tr>
-        <tr><td><b>Broad market</b></td><td>Cost leadership (e.g. a supermarket cutting prices to undercut rivals)</td><td>Differentiation (a distinctive product sold widely)</td></tr>
-        <tr><td><b>Narrow (niche)</b></td><td>Cost focus</td><td>Differentiation focus (e.g. a boutique roaster selling rare beans to connoisseurs)</td></tr>
-      </table>
-      <p>Porter warned against being "stuck in the middle" — a business with no clear strategy. (<b>Ansoff's Matrix</b> — market penetration, market development, product development, diversification — is the other key framework — see below.)</p>`},,
+    {h:"Porter's Strategic Matrix (generic strategies)", html:`
+      <p>In 1979 Michael Porter argued a business needs a clear <b>competitive strategy</b> to gain a competitive advantage. It must choose its <b>source of advantage</b> (lower cost vs differentiation) and its <b>scope</b> (a broad/mass market vs a narrow niche) — giving four generic strategies:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 300" style="min-width:420px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <text x="260" y="18" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)">COMPETITIVE ADVANTAGE</text>
+        <text x="180" y="38" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Lower cost</text>
+        <text x="392" y="38" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Differentiation</text>
+        <text x="18" y="150" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)" transform="rotate(-90 18 150)">SCOPE</text>
+        <text x="50" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Broad</text>
+        <text x="50" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Narrow</text>
+        <rect x="80" y="48" width="200" height="112" rx="6" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="290" y="48" width="205" height="112" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)" stroke-width="2"/>
+        <rect x="80" y="170" width="200" height="112" rx="6" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="290" y="170" width="205" height="112" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)" stroke-width="2"/>
+        <text x="180" y="98" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Cost</text>
+        <text x="180" y="116" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">leadership</text>
+        <text x="180" y="138" text-anchor="middle" font-size="10" fill="var(--muted)">Ryanair · Walmart · Amazon</text>
+        <text x="392" y="98" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Differentiation</text>
+        <text x="392" y="120" text-anchor="middle" font-size="10" fill="var(--muted)">Apple · Mercedes · Nike</text>
+        <text x="180" y="218" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Cost focus</text>
+        <text x="180" y="240" text-anchor="middle" font-size="10" fill="var(--muted)">budget gym · resort excursions</text>
+        <text x="392" y="212" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Differentiation</text>
+        <text x="392" y="230" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">focus</text>
+        <text x="392" y="250" text-anchor="middle" font-size="10" fill="var(--muted)">Rolex · Aston Martin · Tyrrells</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Cost leadership</b> — making products for a <b>broad (mass) market at the lowest cost</b>, so the firm can win on price while protecting margins. E.g. Ryanair, Walmart, Amazon.</li>
+        <li><b>Differentiation</b> — a <b>unique product in a broad market</b> whose USP adds value, so the firm can charge a premium rather than compete on price. E.g. Apple, Mercedes, Nike.</li>
+        <li><b>Cost focus</b> — serving a <b>narrow segment/niche at low cost</b>. E.g. a local budget gym, a low-cost excursion company in a holiday resort.</li>
+        <li><b>Differentiation focus</b> — a <b>unique product for a narrow niche</b>, with a USP that adds value within that segment. E.g. Rolex and Aston Martin (luxury), Tyrrells (premium crisps).</li>
+      </ul>
+      <p>Porter warned against being <b>"stuck in the middle"</b> — a firm with no clear strategy, neither the cheapest nor distinctive enough, which fails to attract a defined customer base and loses competitiveness. (<b>Ansoff's Matrix</b> — penetration, market development, product development, diversification — is the other key framework, below.)</p>`},
     {h:"Ansoff's Matrix", html:`
       <p><b>Ansoff's Matrix</b> plots growth strategies against two axes — products (existing vs new) and markets (existing vs new) — giving four options of rising risk:</p>
       <div style="overflow-x:auto">
@@ -1753,7 +1779,7 @@ window.CURRICULUM = [
         <li><b>Market development</b> — existing products into new markets. E.g. Burberry expanding abroad; Aldi moving into online grocery.</li>
         <li><b>Product development</b> — new products into existing markets. E.g. Samsung's new phones; Tesla's Cybertruck.</li>
         <li><b>Diversification</b> — new products into new markets (highest risk). E.g. Virgin entering unrelated industries.</li>
-      </ul>`},,
+      </ul>`},
     {h:"Portfolio analysis — the Boston Matrix", html:`
       <p><b>Portfolio analysis</b> uses the <b>Boston (BCG) Matrix</b> to assess a firm's range of products on two axes — market growth and relative market share:</p>
       <div style="overflow-x:auto">
@@ -1798,7 +1824,10 @@ window.CURRICULUM = [
     {term:"Strategic decision", marks:2, body:`A major, long-term decision made by senior management that sets the direction of the whole business <span class="pt">1</span>; it is costly and difficult to reverse <span class="pt">2</span>.`},
     {term:"Tactical decision", marks:2, body:`A shorter-term, smaller-scale decision that puts a strategy into action <span class="pt">1</span>; it is usually easier and cheaper to reverse than a strategic decision <span class="pt">2</span>.`},
     {term:"Cost leadership (Porter)", marks:2, body:`A strategy of becoming the lowest-cost producer in a broad market <span class="pt">1</span>, allowing a business to compete on price while protecting its margins <span class="pt">2</span>.`},
-    {term:"Differentiation (Porter)", marks:2, body:`A strategy of offering a distinctive product that stands out from rivals <span class="pt">1</span>, allowing a business to attract customers and often charge a premium rather than compete on price <span class="pt">2</span>.`},
+    {term:"Differentiation (Porter)", marks:2, body:`A strategy of offering a distinctive product that stands out from rivals in a broad market <span class="pt">1</span>, allowing a business to attract customers and often charge a premium rather than compete on price <span class="pt">2</span>.`},
+    {term:"Cost focus (Porter)", marks:2, body:`A strategy of being the lowest-cost producer within a narrow market segment or niche <span class="pt">1</span>, gaining advantage by serving that niche more cheaply than broad-market rivals <span class="pt">2</span>.`},
+    {term:"Differentiation focus (Porter)", marks:2, body:`A strategy of offering a distinctive product to a narrow niche segment <span class="pt">1</span>, where the USP adds value and allows a premium price within that segment, e.g. Rolex <span class="pt">2</span>.`},
+    {term:"Stuck in the middle", marks:2, body:`Where a business fails to commit clearly to either cost leadership or differentiation <span class="pt">1</span>, so it has no clear competitive advantage and struggles to attract a defined customer base <span class="pt">2</span>.`},
     {term:"Market penetration", marks:2, body:`A growth strategy of selling more existing products into existing markets <span class="pt">1</span>; it is the lowest-risk option because the business already knows both the product and the market <span class="pt">2</span>.`},
     {term:"Market development", marks:2, body:`A growth strategy of selling existing products into new markets <span class="pt">1</span>, such as a new country or customer segment; riskier than penetration because the market is unfamiliar <span class="pt">2</span>.`},
     {term:"Product development", marks:2, body:`A growth strategy of launching new products into existing markets <span class="pt">1</span>; it uses the firm's known customer base but carries the risk and cost of developing new products <span class="pt">2</span>.`},
@@ -1813,63 +1842,54 @@ window.CURRICULUM = [
      fb:"Two linked points contrasting scale, timescale and reversibility."},
     {marks:4, q:"A supermarket chain lowers prices across all regions to undercut competitors. Identify the Porter strategy and explain one resource implication.",
      model:`This is a <b>cost-leadership</b> strategy (low cost, broad market) <span class="pt">1</span>. To sustain the lower prices it must cut costs elsewhere — a financial-resource effect <span class="pt">2</span>: tighter budgeting and investment in efficiency (e.g. automation) <span class="pt">3</span>, so margins are protected even as prices fall <span class="pt">4</span>.`,
-     fb:"Identify cost leadership, then link it to a resource (financial/physical) consequence."}
+     fb:"Identify cost leadership, then link it to a resource (financial/physical) consequence."},
+    {marks:4, q:"Explain, using Porter's Strategic Matrix, how a luxury watchmaker such as Rolex gains a competitive advantage.",
+     model:`Rolex uses a <b>differentiation focus</b> strategy — a unique product aimed at a narrow, premium niche <span class="pt">1</span>. This is because its watches carry a strong USP of craftsmanship, status and exclusivity <span class="pt">2</span>. As a result it can charge very high premium prices to loyal luxury buyers <span class="pt">3</span>, gaining an advantage rivals cannot easily copy and avoiding price competition with mass-market brands <span class="pt">4</span>.`,
+     fb:"Name the quadrant (differentiation focus) and link the USP/niche to premium pricing."}
   ],
   caseStudy:{
-    business:"McDonald's, Lush, Five Guys & Coca-Cola",
-    intro:`<p>Four decisions and how they hit a firm's resources.</p>
+    business:"McDonald's, Lush, Five Guys, Coca-Cola, Under Armour & Detox",
+    intro:`<p>Decisions and how they hit a firm's resources and competitive strategy.</p>
       <ul>
         <li><b>McDonald's — plant-based launch (physical):</b> the PLT burger needs separate grills, fridges and utensils to avoid contamination, so capital spend and kitchen-layout changes rise — though its existing vegan infrastructure in Germany/Sweden softens the cost.</li>
         <li><b>Lush — quitting social media (financial):</b> closing its accounts gave up 10.6m followers, risking a ~£10m short-term sales loss and higher-cost marketing alternatives — but may deepen ethical brand loyalty long term.</li>
         <li><b>Five Guys — no timers/machines (human):</b> staff judge food by sight, aroma and texture, needing more skilled, well-trained employees, so recruitment and training costs rise.</li>
         <li><b>Coca-Cola — "Spiced" launch:</b> developed in just seven weeks to catch the bold-flavour trend and appeal to Gen Z — showing innovation, but risking alienating classic-taste loyalists and diluting the brand.</li>
+        <li><b>Under Armour — Porter's strategies:</b> cutting jobs, closing stores and shortening delivery times points to <b>cost leadership</b>, yet its Recovery range (infrared technology) shows <b>differentiation</b> — the risk is being "stuck in the middle" against Nike and Adidas.</li>
+        <li><b>Detox Clothes — declining footfall:</b> a West-London designer brand weighing three options — discounting (cost leadership), expanding specialist lines (differentiation) or staying with unique women's fashion (differentiation focus).</li>
       </ul>`
   },
   exam:[
-    {marks:8, q:"Assess the likely effect on McDonald's physical resources of launching plant-based products such as the PLT burger. (8)",
-     model:`<p><span class="tag t-P">POINT</span>One effect is increased equipment costs, because plant-based items need separate grills, fridges and utensils to avoid contamination with meat. <span class="tag t-C">CHAIN</span>This means additional or specialised equipment across many restaurants, so McDonald's faces significant capital expenditure — raising short-term costs before any sales are made.</p>
-     <p><span class="tag t-P">POINT</span>A second effect is on kitchen layout and space, because existing kitchens may lack room for new prep stations. <span class="tag t-C">CHAIN</span>This could mean building work and temporary closures, adding further cost and disruption.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, these challenges may be reduced because McDonald's already offers vegan products in Germany and Sweden, so it owns suitable equipment and proven layouts to replicate. This means the cost of adapting physical resources may be far lower than expected, letting it roll out more cost-effectively than smaller rivals.</p>`,
-     fb:"Mr. Akram's exemplar (McDonald's). Two physical-resource effects plus a mitigating 'however' — the balance lifts it to the top band."},
-    {marks:8, q:"Assess the likely effect on Lush's financial resources of its decision to stop using social media. (8)",
-     model:`<p><span class="tag t-P">POINT</span>One effect is a likely drop in sales, because Lush closed its Facebook, Instagram, TikTok and Snapchat accounts, giving up 10.6m followers. <span class="tag t-C">CHAIN</span>This makes it harder to promote products and reach customers, so awareness and engagement fall, reducing sales revenue and pressuring Lush's finances (a ~£10m short-term loss).</p>
-     <p><span class="tag t-P">POINT</span>A second effect is higher marketing costs, because social media is a low-cost channel. <span class="tag t-C">CHAIN</span>Without it, Lush must spend more on in-store promotions or print, raising the cost per customer reached.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, the decision could support long-term loyalty and reduce reputational risk, because it acted on ethical concerns about social media's impact on teenage girls — a key market. This protects its brand values and may attract loyal, ethically minded buyers, supporting stable or growing revenue despite the short-term hit.</p>`,
-     fb:"Mr. Akram's exemplar (Lush). Financial-resource effects (sales, marketing cost) balanced against long-term brand benefit."},
-    {marks:12, q:"Assess the advantages and disadvantages to Coca-Cola of launching a new product such as Coca-Cola Spiced. (12)",
-     model:`<p><span class="tag t-P">ADVANTAGE</span>One advantage is appealing to younger consumers, because Spiced matches the trend for bold, unusual flavours. <span class="tag t-C">CHAIN</span>This makes Coca-Cola look modern and in tune with Gen Z and Millennial tastes, so it can grow its customer base and protect market share from rivals.</p>
-     <p><span class="tag t-P">ADVANTAGE</span>A second advantage is showing innovation and speed, because the flavour was developed in just seven weeks. <span class="tag t-C">CHAIN</span>This earns positive media attention and signals that Coca-Cola listens and adapts, building trust and loyalty and helping it keep its market lead.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, the spicy flavour may not appeal to all, because it differs from the classic taste, risking alienating loyal or older customers — so the money spent developing and marketing it may not pay back. Launching too many flavours could also dilute the brand, weakening Coca-Cola's identity over time.</p>
-     <p><span class="tag t-J">CONCLUSION</span>Overall, launching Spiced is a bold, strategic move that keeps Coca-Cola competitive and relevant, and its scale and marketing reduce the risk. But success depends on whether the flavour genuinely attracts new customers without alienating the core, so a limited-edition approach that protects the classic brand is sensible.</p>`,
-     fb:"Mr. Akram's exemplar (Coca-Cola Spiced). Two advantages and two disadvantages of a strategic launch decision, with a balanced conclusion."}  ,{marks:12, q:"Assess Aldi's use of Ansoff's Matrix growth strategies (opening more stores and moving online). (12)",
-     model:`<p><span class="tag t-P">PENETRATION</span>One reason Aldi opens more stores is to boost sales through <b>market penetration</b>, because more stores put its low-cost products within reach of new customers. <span class="tag t-C">CHAIN</span>This means more shoppers buy everyday essentials and own-brand products, so Aldi grows UK market share against Tesco and Sainsbury's and reinvests the revenue into yet more stores.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, opening 400 stores needs huge capital investment (premises, stock, 5,000 jobs), raising fixed costs and risk — if demand weakens, some stores underperform, so even penetration is risky at scale.</p>
-     <p><span class="tag t-P">MARKET DEVELOPMENT</span>Moving online is <b>market development</b> — existing products through a new channel — reaching convenience-focused customers as online grocery doubled from 3% to 6%. <span class="tag t-C">CHAIN</span>This could win urban professionals and families who can't visit stores, keeping Aldi competitive.</p>
-     <p><span class="tag t-J">CONCLUSION</span>However, online conflicts with Aldi's low-cost model, which relies on in-store simplicity and bulk buying; warehousing and delivery costs could undermine its "top quality at low prices" promise. Overall, penetration fits Aldi best; it should expand online cautiously so it does not erode its cost advantage.</p>`,
-     fb:"Mr. Akram's exemplar (Aldi). Identifies penetration and market development with the figures, balances each, and judges which fits Aldi's model."},
-  {marks:20, q:"Evaluate the growth options available to Tesla using Ansoff's Matrix (market penetration vs product development). (20)",
-     model:`<p><span class="tag t-P">PENETRATION</span>One option is <b>market penetration</b> of the electric-car market — selling more Model 3 and Model Y within the current market. <span class="tag t-C">CHAIN</span>This is relatively low risk as Tesla leads BEV sales (21% global share in 2021; Model 3 the first EV to pass 1m units), so building on brand strength and loyalty could lift sales. <span class="tag t-A">APPLY</span>It also drives economies of scale — Tesla made 1.37m vehicles in 2022 (+47%) — raising capacity utilisation and margins. <span class="tag t-J">JUDGE</span>So penetration is a solid base.</p>
-     <p><span class="tag t-J">LIMITATION</span>However, the EV market is saturating as Ford and Volkswagen enter, so growth by selling the same models may need price cuts or heavier marketing, and a demand slowdown would stall it.</p>
-     <p><span class="tag t-P">PRODUCT DEVELOPMENT</span>An alternative is <b>product development</b> — launching new EVs such as the Cybertruck. <span class="tag t-C">CHAIN</span>The electric-truck market is forecast to grow from 101,499 units (2022) to over 1m by 2030 ($3.86bn), so early-mover advantage could build a strong position before rivals crowd in, and it fits Tesla's innovative culture. <span class="tag t-J">JUDGE</span>So product development offers higher growth potential.</p>
-     <p><span class="tag t-J">LIMITATION</span>But new products are riskier and costly — development, tooling and uncertain demand — and could divert resources from the proven core range.</p>
-     <p><span class="tag t-J">CONCLUSION</span>Overall, Tesla should pursue both: penetration to defend its lucrative core while product development opens the fast-growing truck segment. Success depends on funding innovation without over-stretching, and on how fast rivals catch up — so a staged approach, protecting the core while scaling the Cybertruck, is recommended.</p>`,
-     fb:"Mr. Akram's exemplar (Tesla). Full evaluation of two Ansoff options with the extract figures, each challenged, ending in a 'both, staged' recommendation."}  ,{marks:12, q:"Assess the usefulness of portfolio (Boston Matrix) analysis to a business such as Pets at Home. (12)",
-     model:`<p><span class="tag t-P">POINT</span>One benefit is identifying star products to prioritise, because pet accessories have a high 45% market share in a fast-growing market (forecast +£0.9bn by 2022). <span class="tag t-C">CHAIN</span>This means they are likely to generate strong returns, so directing investment there reinforces Pets at Home's lead in the fastest-growing segment and supports long-term profit.</p>
-     <p><span class="tag t-P">POINT</span>A second benefit is flagging dog products for review, because pet grooming holds just 1% share and fell 29.2%. <span class="tag t-C">CHAIN</span>This signals it may not be worth further investment while the rest of the market grows, so Pets at Home can act to avoid further losses.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, the matrix can mislead, because it judges products only on share and growth. Grooming may still aid cash flow and drive loyalty and cross-selling (customers who groom also buy food and accessories), so cutting a "dog" could reduce satisfaction and brand value.</p>
-     <p><span class="tag t-J">CONCLUSION</span>Overall, portfolio analysis helps Pets at Home target investment and review weak products with a simple, structured, data-driven method. But its usefulness depends on using it alongside wider tools such as the product life cycle, because share and growth alone don't capture a product's full strategic value.</p>`,
-     fb:"Mr. Akram's exemplar (Pets at Home). Uses the 45% star and 1%/-29.2% dog figures; benefits plus the key limitation that the matrix ignores links between products."}
+    {marks:8, q:"Using Porter's Strategic Matrix, assess how cost leadership could help Under Armour compete with rivals such as Nike and Adidas. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One way is operating more efficiently, because Under Armour is cutting costs by removing jobs, closing underperforming stores and shortening delivery times. <span class="tag t-C">CHAIN</span>This reduces expenses and improves margins, so it can keep prices low and appeal to cost-conscious consumers — becoming more price-competitive against larger rivals like Nike and Adidas and potentially winning market share.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is resilience in a downturn, because customers cut spending on premium sportswear in tough times. <span class="tag t-C">CHAIN</span>Lower-priced brands are more likely to retain those customers, so cost leadership helps Under Armour stay profitable when demand is weak.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, relying only on cost leadership could be risky, because Under Armour's advantage comes partly from differentiation — e.g. its Recovery range with infrared technology that customers will pay more for. Competing on price against giants with far greater economies of scale may leave it "stuck in the middle", so in the long term combining cost efficiency with differentiation is more likely to keep it competitive.</p>`,
+     fb:"Mr. Akram's exemplar (Under Armour, 8). Two cost-leadership benefits with application, balanced by a 'stuck in the middle' limitation — the balance lifts it to the top band."},
+    {marks:12, q:"Assess how Porter's Strategic Matrix could help Detox Clothes choose between its three options (discounting, more specialist products, or focusing on unique women's fashion). (12)",
+     model:`<p><span class="tag t-P">COST LEADERSHIP</span>Option 1, discounting, is a <b>cost-leadership</b> move, because lower prices could attract a broader, cost-conscious customer base. <span class="tag t-C">CHAIN</span>This may boost volume sales in the short term and help Detox compete with high-street brands facing the same declining footfall in West London. <span class="tag t-J">HOWEVER</span>However, designer fashion relies on image and exclusivity, so cutting prices could damage perceived value and the ability to charge premiums later — risky long term.</p>
+     <p><span class="tag t-P">DIFFERENTIATION</span>Option 2, expanding specialist lines, reflects a <b>differentiation</b> strategy — unique or limited-edition women's clothing customers can't find elsewhere. <span class="tag t-C">CHAIN</span>This reinforces premium positioning, supports higher prices and builds loyalty, though it needs more investment in design, marketing and supply chains and risks the new designs not appealing.</p>
+     <p><span class="tag t-P">DIFFERENTIATION FOCUS</span>Option 3, staying with unique women's fashion, is a <b>differentiation focus</b> on a niche. <span class="tag t-C">CHAIN</span>It fits Detox's original vision and core customers, building expertise and a strong identity — but could limit growth if the niche is too small or tastes shift.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Porter's matrix is a useful tool because it maps clear strategic routes back to competitive advantage. But the right choice depends on Detox's resources and brand: discounting conflicts with a designer identity, so a differentiation or focus route is likely to protect long-term value better than competing on price.</p>`,
+     fb:"Mr. Akram's exemplar (Detox, 12). Maps the three options onto cost leadership / differentiation / differentiation focus, balances each, and judges which fits a designer brand."},
+    {marks:20, q:"Evaluate the strategies Under Armour could use, under Porter's Strategic Matrix, to gain a competitive advantage (differentiation vs differentiation focus). (20)",
+     model:`<p><span class="tag t-P">DIFFERENTIATION</span>One strategy is <b>differentiation</b>, as Under Armour already positions itself as a high-performance brand built on innovation such as compression wear and moisture-wicking fabrics. <span class="tag t-E">EXPLAIN</span>By developing smart textiles and connected fitness apps it can justify premium pricing and attract serious athletes who prioritise quality. <span class="tag t-C">CHAIN</span>This could also support global growth through region-specific products (e.g. breathable fabrics for warmer climates) and partnerships with elite athletes that reinforce exclusivity. <span class="tag t-A">APPLY</span>That strengthens brand appeal in new markets while reducing price sensitivity. <span class="tag t-J">JUDGE</span>So differentiation plays to Under Armour's core identity.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, differentiation is costly: competing with Nike and Adidas requires heavy, sustained investment in innovation and marketing, and Under Armour lacks their economies of scale. If consumers don't see enough added value it could end up "stuck in the middle" — too expensive to win on price, not distinct enough to win on uniqueness. Past moves into broad lifestyle fashion diluted the brand, showing the danger of overstretching.</p>
+     <p><span class="tag t-P">DIFFERENTIATION FOCUS</span>An alternative is <b>differentiation focus</b> — targeting niches with specific needs such as elite training gear, military performance clothing or collegiate/youth athletic programmes. <span class="tag t-C">CHAIN</span>Serving loyal segments with tailored innovation lets Under Armour charge higher prices and face less direct competition from the giants. <span class="tag t-A">APPLY</span>Dominating collegiate sportswear or professional training kits, where function beats fashion, builds a strong reputation within specialist markets. <span class="tag t-J">JUDGE</span>So focus reduces the head-on battle with Nike and Adidas.</p>
+     <p><span class="tag t-J">LIMITATION</span>But a narrow focus caps the size of the prize — niche markets are smaller, so growth may be limited, and heavy reliance on a few segments is risky if their demand falls.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Under Armour should lead with differentiation around its proven performance innovation, but apply it through a focus on defensible niches rather than competing broadly against far larger rivals. Success depends on sustaining genuine product innovation and resisting brand dilution; a disciplined, focused differentiation strategy is therefore recommended over trying to out-market Nike and Adidas across the mass market.</p>`,
+     fb:"Mr. Akram's exemplar (Under Armour, 20). Full 5×5 PECAN evaluation of two Porter strategies, each challenged (including 'stuck in the middle'), ending in a focused-differentiation recommendation."}
   ],
   resources:[
+    {label:"Porter's Strategic Matrix — lesson notes (PDF)", file:"resources/3-3-1-2-porters-strategic-matrix.pdf"},
     {label:"Effect of strategic & tactical decisions on resources — lesson notes (PDF)", file:"resources/3-3-1-2-strategic-tactical-resources.pdf"},
-    {label:"Ansoff\u2019s Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-ansoff-matrix.pdf"},
-    {label:"Portfolio analysis / Boston Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-boston-matrix.pdf"}
+    {label:"Ansoff’s Matrix — lesson notes (PDF)", file:"resources/3-3-1-2-ansoff-matrix.pdf"},
+    {label:"Portfolio analysis / Boston Matrix — lesson notes (PDF)", file:"resources/3-3-1-2-boston-matrix.pdf"}
   ]
 },
 {code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis", business:"Strengths · weaknesses · opportunities · threats", status:"soon"},
 {
   code:"3.3.1.4", subtheme:"3.3.1", title:"Impact of external influences",
-  business:"Case studies: Burberry (China) & Toyota", status:"live",
+  business:"Case studies: Burberry (China), Toyota, easyJet & Bramwell Brown", status:"live",
   notes:[
     {h:"PESTLE analysis", html:`
       <p>The <b>opportunities and threats</b> in a SWOT come from the <b>external environment</b>. <b>PESTLE</b> is a framework for breaking that environment down:</p>
@@ -1883,37 +1903,79 @@ window.CURRICULUM = [
       </ul>
       <p>A business uses PESTLE to anticipate change and adapt its strategy, but factors interact and some matter far more to one firm than another.</p>`},
     {h:"The changing competitive environment & Porter's five forces", html:`
-      <p>The competitive environment shifts as new rivals, technologies and global players arrive. <b>Porter's five forces</b> judge how attractive (profitable) an industry is:</p>
+      <p>The competitive environment shifts as new rivals, technologies and global players arrive. Michael Porter identified <b>five forces</b> that together determine the nature of competition — and so how profitable (attractive) an industry is. A business uses the model to <b>assess a new market</b> (e.g. before market development or diversification) or to <b>monitor an existing one</b> and devise strategies to compete or protect its position.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 360" style="min-width:440px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="ff-arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/>
+          </marker>
+        </defs>
+        <rect x="170" y="150" width="180" height="70" rx="8" fill="rgba(201,42,42,.14)" stroke="#c92a2a" stroke-width="2.5"/>
+        <text x="260" y="180" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Competitive</text>
+        <text x="260" y="198" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">rivalry</text>
+        <rect x="160" y="18" width="200" height="60" rx="8" fill="rgba(27,79,214,.10)" stroke="#1b4fd6" stroke-width="2"/>
+        <text x="260" y="44" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Threat of</text>
+        <text x="260" y="62" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">new entrants</text>
+        <rect x="160" y="292" width="200" height="60" rx="8" fill="rgba(27,79,214,.10)" stroke="#1b4fd6" stroke-width="2"/>
+        <text x="260" y="318" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Threat of</text>
+        <text x="260" y="336" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">substitutes</text>
+        <rect x="8" y="150" width="140" height="70" rx="8" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <text x="78" y="178" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">Bargaining</text>
+        <text x="78" y="194" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">power of</text>
+        <text x="78" y="210" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">suppliers</text>
+        <rect x="372" y="150" width="140" height="70" rx="8" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <text x="442" y="178" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">Bargaining</text>
+        <text x="442" y="194" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">power of</text>
+        <text x="442" y="210" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">buyers</text>
+        <line x1="260" y1="78" x2="260" y2="148" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ff-arr)"/>
+        <line x1="260" y1="290" x2="260" y2="222" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ff-arr)"/>
+        <line x1="148" y1="185" x2="168" y2="185" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ff-arr)"/>
+        <line x1="372" y1="185" x2="352" y2="185" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ff-arr)"/>
+      </svg>
+      </div>
       <ul>
-        <li><b>Competitive rivalry</b> — how fierce competition between existing firms is.</li>
-        <li><b>Threat of new entrants</b> — how easily new competitors can enter.</li>
-        <li><b>Threat of substitutes</b> — alternative products that meet the same need.</li>
-        <li><b>Bargaining power of buyers</b> — how much customers can push prices down.</li>
-        <li><b>Bargaining power of suppliers</b> — how much suppliers can push input prices up.</li>
+        <li><b>Threat of new entrants</b> — existing firms are stronger where <b>barriers to entry</b> are high (brand strength, economies of scale, distribution, high start-up cost). Low barriers → high threat, and vice versa.</li>
+        <li><b>Bargaining power of suppliers</b> — powerful suppliers raise input prices and squeeze industry profit. Power is high when there are few suppliers, the input is unique/essential or switching is costly (e.g. De Beers in diamonds).</li>
+        <li><b>Bargaining power of buyers</b> — powerful buyers push prices down or demand more for the same price. The big UK supermarkets have huge power over suppliers because they buy in vast volume and can switch supplier easily.</li>
+        <li><b>Threat of substitutes</b> — a substitute meets the <b>same need</b> a different way (a bus vs a train). Many credible substitutes cap the price a firm can charge and reduce profit.</li>
+        <li><b>Competitive rivalry</b> — the central force; intense rivalry forces firms into costly strategies (price cuts, heavy marketing) that lower profits.</li>
       </ul>
-      <p>Strong forces squeeze profit; weak forces make an industry more attractive. Firms use this to choose which markets to enter and how to compete.</p>`}
+      <p><b>Strong forces squeeze profit; weak forces make an industry attractive.</b> Firms use this to choose which markets to enter and how to compete — though in a very niche or differentiated market some forces (e.g. rivalry) matter far less than others.</p>`}
   ],
   definitions:[
     {term:"PESTLE analysis", marks:2, body:`A framework for analysing the external environment under six headings — political, economic, social, technological, legal and environmental <span class="pt">1</span>; it helps a business spot the opportunities and threats that shape its strategy <span class="pt">2</span>.`},
     {term:"External environment", marks:2, body:`The factors outside a business's control that affect it <span class="pt">1</span>, such as the economy, technology and the law; these generate the opportunities and threats in a SWOT analysis <span class="pt">2</span>.`},
     {term:"Porter's five forces", marks:2, body:`A model assessing the competitiveness and profitability of an industry <span class="pt">1</span> through rivalry, new entrants, substitutes, and the bargaining power of buyers and suppliers <span class="pt">2</span>.`},
-    {term:"Competitive environment", marks:2, body:`The nature and intensity of competition a business faces <span class="pt">1</span>; it changes as new rivals, technologies and global players enter the market <span class="pt">2</span>.`}
+    {term:"Competitive environment", marks:2, body:`The nature and intensity of competition a business faces <span class="pt">1</span>; it changes as new rivals, technologies and global players enter the market <span class="pt">2</span>.`},
+    {term:"Barriers to entry", marks:2, body:`Obstacles that make it hard for new firms to enter a market <span class="pt">1</span>, such as strong existing brands, economies of scale or high start-up costs; high barriers lower the threat of new entrants <span class="pt">2</span>.`},
+    {term:"Substitute product", marks:2, body:`A different product that meets the same customer need <span class="pt">1</span>, e.g. a bus instead of a train; many credible substitutes limit the price a firm can charge and reduce its profit <span class="pt">2</span>.`}
   ],
   practice:[
     {marks:2, q:"State what each letter of PESTLE stands for.",
      model:`<b>P</b>olitical, <b>E</b>conomic, <b>S</b>ocial, <b>T</b>echnological, <b>L</b>egal, <b>E</b>nvironmental <span class="pt">1</span> — the six categories of external factors a business analyses <span class="pt">2</span>.`,
      fb:"All six letters correctly expanded."},
+    {marks:2, q:"State the five forces in Porter's five forces model.",
+     model:`Competitive rivalry; the threat of new entrants; the threat of substitutes; the bargaining power of buyers; and the bargaining power of suppliers <span class="pt">1</span> — together they determine how competitive and profitable an industry is <span class="pt">2</span>.`,
+     fb:"All five forces named."},
     {marks:4, q:"Explain one way the external economic environment could affect a car manufacturer such as Toyota.",
      model:`Falling petrol prices reduce the cost of running a petrol car <span class="pt">1</span>. This is because cheaper fuel makes petrol models more attractive to price-sensitive buyers <span class="pt">2</span>. As a result, demand may shift from expensive electric/hybrid cars towards petrol models <span class="pt">3</span>, so Toyota may need to adjust its product mix and could see higher use of its petrol-model capacity <span class="pt">4</span>.`,
-     fb:"Link an economic factor to a developed demand/strategy consequence."}
+     fb:"Link an economic factor to a developed demand/strategy consequence."},
+    {marks:4, q:"Explain one reason the bargaining power of buyers is high in the budget-airline market.",
+     model:`Buyer power is high because customers can easily compare fares online and switch between airlines <span class="pt">1</span>. This is because flights are a near-identical service and price-sensitive travellers have low switching costs <span class="pt">2</span>. As a result, carriers like easyJet are pressured to keep fares low and add perks <span class="pt">3</span>, which squeezes profit margins because they cannot raise prices without losing customers to rivals like Ryanair <span class="pt">4</span>.`,
+     fb:"Link easy price comparison / low switching costs to downward pressure on margins."}
   ],
   caseStudy:{
-    business:"Burberry (China) & Toyota",
-    intro:`<p>Two external-environment scenarios used in the exam questions.</p>
+    business:"Burberry (China), Toyota, easyJet & Bramwell Brown",
+    intro:`<p>External-environment and competitive-force scenarios used in the exam questions.</p>
       <h3>Burberry — technology in China</h3>
       <p>In China, <b>80% of online purchases</b> are made via smartphone or tablet. Burberry's <b>mobile app</b> (in 33 countries) and integration with <b>WeChat</b> (booking appointments with sales staff) let it fit local consumer habits — a technological opportunity — though political/economic risks (e.g. restrictions on foreign firms) could limit it.</p>
       <h3>Toyota — economic factors</h3>
       <p>UK petrol prices fell from <b>£1.42 to £1.34</b> per litre, which could lift demand for petrol models made at Toyota's Burnaston plant — but with <b>77.2%</b> of UK-made cars exported (49.1% to the EU), domestic price changes affect only a small share of sales.</p>
+      <h3>easyJet — competitive forces</h3>
+      <p>Customers compare fares online and switch between Ryanair, Wizz Air and British Airways, so <b>buyer power</b> is strong; <b>94%</b> of customers worry about the environmental impact of flying; and jet fuel (<b>~⅓ of operating costs</b>) is volatile — above <b>$120/barrel</b> in 2014, below <b>$20</b> in 2020 — so <b>supplier power</b> matters too.</p>
+      <h3>Bramwell Brown — a niche maker</h3>
+      <p>Bramwell Brown makes mechanical weather clocks from <b>150 parts</b> sourced globally (Germany, Yorkshire), using job production with limited editions of <b>250 clocks</b> per design — a highly differentiated, IP-protected niche where some five forces apply more than others.</p>
       <p class="note-ex">A rich local source on external influences — the <b>Emirates</b> source booklet and questions — is in the downloads.</p>`
   },
   exam:[
@@ -1928,9 +1990,22 @@ window.CURRICULUM = [
      <p><span class="tag t-P">POINT</span>However, it could slow demand for Toyota's hybrids and EVs, because running costs become less of a concern. <span class="tag t-C">CHAIN</span>This could delay the green transition and pressure Toyota's long-term sustainability plans, forcing a change in product mix and marketing.</p>
      <p><span class="tag t-J">HOWEVER</span>However, the impact may be limited, because 77.2% of UK-made cars are exported (49.1% to the EU), so UK petrol prices touch only a small share of sales — and other factors (EU environmental rules, exchange rates) may matter more.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, falling UK petrol prices create short-term opportunities to sell more petrol models, but because most output is exported and Toyota is committed to hybrids, the overall impact is likely modest unless the trend spreads to export markets.</p>`,
-     fb:"Mr. Akram's exemplar (Toyota). Uses the price and export figures; opportunity, a hybrid/EV downside, and an 'impact is limited because exports' judgement."}
+     fb:"Mr. Akram's exemplar (Toyota). Uses the price and export figures; opportunity, a hybrid/EV downside, and an 'impact is limited because exports' judgement."},
+    {marks:12, q:"Assess which external influence (bargaining power of buyers or suppliers) is most significant for easyJet. (12)",
+     model:`<p><span class="tag t-P">POINT</span>The bargaining power of buyers is a major influence, because customers can easily compare fares online and switch to Ryanair, Wizz Air or British Airways. <span class="tag t-C">CHAIN</span>Demand drops when prices rise, so easyJet faces intense pressure to offer low fares, flexible booking and extras — it introduced easyJet holidays, full refunds and a best-price guarantee to retain customers, even where that trims margins.</p>
+     <p><span class="tag t-P">POINT</span>Buyer power also now includes values: 94% of customers are concerned about the environmental impact of flying. <span class="tag t-C">CHAIN</span>This pressures easyJet to invest in cleaner technology (electric/hydrogen aircraft) and balance affordability with sustainability — a costly, long-term challenge.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, supplier power is also serious, because jet fuel is about one-third of operating costs and is highly volatile (above $120/barrel in 2014, below $20 in 2020), and easyJet has little control over it. When fuel prices rise it must absorb the cost or raise fares — both hurt profitability.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the bargaining power of buyers is the most significant external influence, because it shapes pricing, product choices, customer service and environmental strategy all at once. Supplier (fuel) power is a real risk, but easyJet can hedge fuel and improve efficiency, whereas it cannot escape price-sensitive, switchable customers — so managing buyer power should stay its priority.</p>`,
+     fb:"Mr. Akram's exemplar (easyJet). Buyer power (price comparison + 94% environmental concern) weighed against volatile fuel supplier power, concluding buyer power dominates because it can't be hedged away."},
+    {marks:12, q:"Evaluate the usefulness of Porter's five forces model to a niche business such as Bramwell Brown. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One use is assessing the threat of substitutes, because the model prompts Bramwell Brown to ask whether digital weather devices could replace its mechanical weather clocks. <span class="tag t-C">CHAIN</span>This highlights the need to stress its uniqueness and craftsmanship in marketing, building loyalty that protects it from substitutes.</p>
+     <p><span class="tag t-P">POINT</span>A second use is supplier power, because its clocks use 150 parts sourced globally (Germany, Yorkshire). <span class="tag t-C">CHAIN</span>It is reliant on suppliers for quality parts and exposed to shortages or price rises, so the model helps it assess and manage that dependence.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the model is less useful on competitive rivalry, because Bramwell Brown's product is highly differentiated and hand-assembled by job production, with limited editions of 250 clocks per design. It does not compete on mass-market terms, so Porter's focus on intense rivalry — and the threat of new entrants — adds little insight for such a niche, low-volume, IP-protected product.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Porter's five forces is useful for Bramwell Brown mainly on supplier power and substitutes, which stay relevant even in a niche. But its usefulness is partial: because output is low and products are protected and distinctive, rivalry and new entrants matter little, so the model should be used selectively alongside other tools.</p>`,
+     fb:"Mr. Akram's exemplar (Bramwell Brown). Applies substitutes and supplier power to the niche, then judges rivalry/new-entrants add little — a balanced 'useful but partial' evaluation."}
   ],
   resources:[
+    {label:"Porter's five forces — lesson notes (PDF)", file:"resources/3-3-1-4-porters-five-forces.pdf"},
     {label:"PESTLE analysis — lesson notes (PDF)", file:"resources/3-3-1-4-pestle-notes.pdf"},
     {label:"Emirates — external influences source booklet (PDF)", file:"resources/3-3-1-4-emirates-source.pdf"},
     {label:"Emirates — exam questions (PDF)", file:"resources/3-3-1-4-emirates-questions.pdf"}
