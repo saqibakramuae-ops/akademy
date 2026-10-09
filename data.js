@@ -12,7 +12,7 @@
 
 window.SUBTHEME_TITLE = {"3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
 window.SUBTHEME_SUB = {"3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.ICONS = {"3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 
 window.CURRICULUM = [
 {
@@ -2464,6 +2464,91 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"Horizontal/vertical integration & conglomerates — lesson notes (PDF)", file:"resources/3-3-2-4-integration-notes.pdf"}
+  ]
+},
+{
+  code:"3.3.2.5", subtheme:"3.3.2", title:"Problems that can arise from growth",
+  business:"Case studies: EasyJet, Emily's business, Microsoft–Nokia & Tesla–Grohmann", status:"live",
+  notes:[
+    {h:"Diseconomies of scale", html:`
+      <p>Growing bigger does not always cut costs — sometimes a business gets <b>too big</b>. <b>Diseconomies of scale</b> occur when output grows too fast and the <b>cost per unit rises</b> (the upward arm of the U-shaped cost curve in 3.3.2.1). As a budget airline like <b>EasyJet</b> expanded rapidly it risked:</p>
+      <ul>
+        <li><b>Co-ordination &amp; control</b> — more routes, aircraft, sites and staff are harder to manage, so mistakes and inefficiency rise.</li>
+        <li><b>Communication problems</b> — more layers and people mean messages are slower and more easily distorted.</li>
+        <li><b>Motivation</b> — workers can feel like a small cog in a huge firm, lowering morale and productivity.</li>
+      </ul>
+      <p>Each of these pushes <b>unit costs up</b>, undoing the cost advantage growth was meant to deliver.</p>`},
+    {h:"Internal communication problems", html:`
+      <p>Communication breakdown is one of the clearest symptoms of a firm growing too large or too fast. When <b>Microsoft took over Nokia's handset division</b>, absorbing around <b>32,000 new employees</b> across new industries and locations, co-ordinating tasks, sharing updates and aligning decisions became far harder.</p>
+      <p>The result can be <b>confusion, duplicated effort and slower product development</b> — all of which raise average costs and can let more focused rivals move faster.</p>`},
+    {h:"Overtrading", html:`
+      <p><b>Overtrading</b> is where a business <b>expands too quickly without the finance to support it</b>. It is a problem of <b>working capital and cash flow</b> — running out of cash — and can happen <b>even when the business is profitable</b>. Without suitable finance, overtrading can cause business failure.</p>
+      <p><b>Worked example — Emily's business:</b> turnover £200k, profit £18k, £25k overdraft. She wins a £40k-a-month contract (paid 75 days after delivery) and orders all her supplies at once:</p>
+      <ul>
+        <li><b>Months 1–2:</b> deliveries go well; she raises her overdraft.</li>
+        <li><b>Month 3:</b> overdraft at the limit; unpaid suppliers start calling.</li>
+        <li><b>Month 4:</b> she can't pay suppliers; some stop delivering and threaten legal action.</li>
+        <li><b>Months 5–6:</b> over the overdraft limit, suppliers sue, the bank stops paying cheques, a customer payment is late — and the business collapses.</li>
+      </ul>
+      <p>Emily was <b>profitable</b> but ran out of <b>cash</b>. Overtrading is most likely when a firm grows sales rapidly, gives customers long credit, pays suppliers quickly, and holds too little working capital.</p>`},
+    {h:"Managing the problems of growth", html:`
+      <p>Businesses can reduce these risks by:</p>
+      <ul>
+        <li><b>Controlled, staged growth</b> — expanding at a pace management and cash flow can support.</li>
+        <li><b>Delegation &amp; decentralisation</b> — pushing decisions down to keep the firm responsive.</li>
+        <li><b>Better communication systems</b> — clear structures and technology to keep information flowing.</li>
+        <li><b>Securing finance first</b> — arranging enough working capital and funding before expanding, and negotiating supplier/customer payment terms to protect cash flow.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Diseconomies of scale", marks:2, body:`Rising average unit costs that occur when a business grows too large or too fast to manage efficiently <span class="pt">1</span>, caused by communication, co-ordination and motivation problems <span class="pt">2</span>.`},
+    {term:"Overtrading", marks:2, body:`When a business expands too quickly without enough finance to support it <span class="pt">1</span>, causing cash-flow problems that can lead to failure even when the business is profitable <span class="pt">2</span>.`},
+    {term:"Working capital", marks:2, body:`The day-to-day finance a business has to meet its short-term debts <span class="pt">1</span>, calculated as current assets minus current liabilities; too little can trigger overtrading <span class="pt">2</span>.`},
+    {term:"Internal communication problem", marks:2, body:`A breakdown in sharing information within a growing business <span class="pt">1</span>, as extra layers and staff slow and distort messages, causing confusion and higher costs <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'diseconomies of scale'.",
+     model:`Diseconomies of scale occur when a business grows too fast or too large to manage efficiently <span class="pt">1</span>, so its average cost per unit rises rather than falls <span class="pt">2</span>.`,
+     fb:"Links over-rapid/over-large growth to rising unit cost — the opposite of economies of scale."},
+    {marks:2, q:"Define the term 'overtrading'.",
+     model:`Overtrading is when a business expands too quickly without the finance to support it <span class="pt">1</span>, causing cash-flow problems that can lead to failure even if it is profitable <span class="pt">2</span>.`,
+     fb:"Rapid expansion + insufficient finance, with the cash-flow/failure consequence."},
+    {marks:4, q:"Explain one reason diseconomies of scale might affect Microsoft after taking over Nokia's handset division.",
+     model:`One reason is poor communication <span class="pt">1</span>. This is because Microsoft is absorbing around 32,000 new Nokia employees across new industries and locations, making it harder to co-ordinate tasks and align decisions <span class="pt">2</span>. As a result, confusion or duplicated effort may arise <span class="pt">3</span>, slowing product development and pushing average costs up rather than down <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Microsoft/Nokia). Links the 32,000-employee scale to a communication breakdown and higher unit costs."}
+  ],
+  caseStudy:{
+    business:"EasyJet, Emily's business, Microsoft–Nokia & Tesla–Grohmann",
+    intro:`<p>Where growth creates problems.</p>
+      <ul>
+        <li><b>EasyJet:</b> rapid expansion risked co-ordination, communication and motivation problems that raise unit costs.</li>
+        <li><b>Emily's business:</b> a profitable firm that collapsed through overtrading — a £40k/month contract paid 75 days in arrears drained its cash.</li>
+        <li><b>Microsoft–Nokia:</b> absorbing ~32,000 employees created clear communication diseconomies.</li>
+        <li><b>Tesla–Grohmann (2016):</b> Tesla bought automation supplier Grohmann Engineering (backward vertical integration) to hit its Model 3 target of 500,000 vehicles (from ~84,000). It gained ~700 specialist engineers and technology for ~$109.5m cash (plus a $25.8m incentive) — but founder Klaus Grohmann left, staff (paid 25–30% below the industry rate) feared for pay and jobs, and key customers BMW, Daimler and Bosch were at risk.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the extent to which the problems of rapid growth may have been managed by Tended Ltd. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Tended managed the financial problems of rapid growth fairly well, because although it ran out of cash on a few occasions it secured £50,000 from Enterprise Loans. <span class="tag t-C">CHAIN</span>This let it keep developing the Tended Protect device, create jobs and fulfil initial orders, so the impact of cash-flow shortages was reduced and the business could keep growing.</p>
+     <p><span class="tag t-P">POINT</span>It also managed operational problems well, because staff worked as a team, put in long hours and kept innovating despite development issues. <span class="tag t-C">CHAIN</span>Problems were fixed and the firm stayed agile, so it overcame development delays and continued to expand.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the problems may not have been fully managed, because the business ran out of cash several times and faced development issues taking months to resolve. This points to weak growth planning and forecasting, so Tended could have faced a serious threat to survival had the finance not been secured.</p>`,
+     fb:"Mr. Akram's exemplar (Tended Ltd). Financial and operational problems judged as 'managed, but not fully' — the balance and 'depended on securing finance' judgement lift it."},
+    {marks:12, q:"Discuss the likely problems Tesla may experience following its takeover of Grohmann Engineering. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One problem is leadership and cultural conflict, because founder Klaus Grohmann left after a strategic disagreement over whether to prioritise Tesla or existing customers. <span class="tag t-C">CHAIN</span>Losing his leadership and unsettling 700 employees could cut motivation and productivity or prompt skilled engineers to quit, delaying Model 3 production machinery and making the 500,000-vehicle target harder to hit. <span class="tag t-J">HOWEVER</span>However, the founder's exit might let Tesla impose its strategy faster, with remaining managers focused fully on Tesla projects.</p>
+     <p><span class="tag t-P">POINT</span>A second problem is employee costs and industrial relations, because pay was reportedly 25–30% below the industry agreement. <span class="tag t-C">CHAIN</span>Tesla had to offer pay rises, share options and job guarantees to avoid industrial action; this raises operating costs and erodes the savings the takeover was meant to bring, and any strike could delay machinery and lost sales. <span class="tag t-J">HOWEVER</span>However, better pay and security could lift motivation and help retain the specialist engineers Tesla needs.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the most serious problem is likely the risk of losing specialist employees and disrupting automation projects, because Tesla's production target depends on Grohmann's expertise. The financial and customer risks matter, but they are more manageable if the takeover genuinely speeds up production — so success depends on Tesla retaining and motivating the engineers it has bought.</p>`,
+     fb:"Mr. Akram's exemplar (Tesla/Grohmann, 12). Two problems each with a counter, and a judgement that the people/expertise risk is the most serious."},
+    {marks:20, q:"Evaluate whether Tesla should have grown its automation capability through the takeover of Grohmann Engineering rather than through organic growth. (20)",
+     model:`<p><span class="tag t-P">TAKEOVER — SPEED</span>The takeover gave Tesla immediate access to an established automation business. <span class="tag t-E">EXPLAIN</span>Grohmann already had ~700 specialist employees and automation technology. <span class="tag t-C">CHAIN</span>Tesla needed to lift output from ~84,000 to 500,000 vehicles fast, and building that expertise organically would need years of recruitment, training and research. <span class="tag t-A">APPLY</span>So the deal shortened the time to develop Model 3 production systems. <span class="tag t-J">JUDGE</span>Speed was the takeover's biggest advantage.</p>
+     <p><span class="tag t-P">TAKEOVER — CONTROL</span>It also gave greater control, because Grohmann had split its resources between Tesla and rivals like BMW and Daimler. <span class="tag t-C">CHAIN</span>Owning it (backward vertical integration) let Tesla prioritise its own machinery and protect the technology from competitors. <span class="tag t-J">JUDGE</span>So control over a critical input improved.</p>
+     <p><span class="tag t-J">ORGANIC — FINANCE</span>However, organic growth would have eased cash-flow pressure, because the deal cost ~$109.5m cash plus a $25.8m incentive while Tesla was already planning ~$2bn of capex (incl. the Nevada Gigafactory). Avoiding it would leave more finance for factory expansion and cut borrowing — though building the capability in-house would still cost heavily and could eventually exceed the purchase price.</p>
+     <p><span class="tag t-J">ORGANIC — INTEGRATION</span>Organic growth would also avoid integration problems, because Tesla could hire people who accepted its culture from the start, sidestepping the leadership clash and pay disputes that followed the takeover — but that could take years, risking the Model 3 targets and lost sales.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the takeover was probably the right strategy because Tesla faced an urgent production target and Grohmann already had the people and technology it needed — speed organic growth could not match. But success depended on retaining Grohmann's engineers, resolving pay concerns and converting the technology into higher output. Had the deadline been less pressing, organic growth would have been the less risky, more controlled route.</p>`,
+     fb:"Mr. Akram's exemplar (Tesla/Grohmann, 20). Full 5×5 PECAN comparing takeover vs organic on speed, control, finance and integration, concluding the takeover fits Tesla's urgent target."}
+  ],
+  resources:[
+    {label:"Problems that can arise from growth — lesson notes (PDF)", file:"resources/3-3-2-5-problems-of-growth-notes.pdf"},
+    {label:"Tesla & Grohmann Engineering — case study & questions (PDF)", file:"resources/3-3-2-5-tesla-grohmann-case.pdf"}
   ]
 }
 ];
