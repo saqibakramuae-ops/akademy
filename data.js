@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3.1":"Business objectives & strategy","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
-window.SUBTHEME_SUB = {"3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.SUBTHEME_TITLE = {"3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83d\udd17","3.3.2.3":"\ud83c\udfd7\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 
 window.CURRICULUM = [
 {
@@ -2119,6 +2119,206 @@ window.CURRICULUM = [
     {label:"PESTLE analysis — lesson notes (PDF)", file:"resources/3-3-1-4-pestle-notes.pdf"},
     {label:"Emirates — external influences source booklet (PDF)", file:"resources/3-3-1-4-emirates-source.pdf"},
     {label:"Emirates — exam questions (PDF)", file:"resources/3-3-1-4-emirates-questions.pdf"}
+  ]
+},
+{
+  code:"3.3.2.1", subtheme:"3.3.2", title:"Growth objectives & economies of scale",
+  business:"Case studies: Volkswagen, Dubai Silicon Oasis & Brompton Bikes", status:"live",
+  notes:[
+    {h:"Why businesses grow — organic vs inorganic", html:`
+      <p>Businesses such as Starbucks constantly seek to <b>grow</b> to win <b>lower unit costs</b> (economies of scale), greater <b>market power</b> over customers and suppliers, more <b>market share and brand recognition</b>, higher <b>profit</b>, and long-term <b>competitive advantage</b> and survival.</p>
+      <ul>
+        <li><b>Organic (internal) growth</b> — growing from the firm's own operations: more stores, new products, more customers. Slower but lower-risk and easier to control.</li>
+        <li><b>Inorganic (external) growth</b> — growing through <b>mergers and takeovers</b>. Faster, but costlier and riskier (culture clashes, integration problems).</li>
+      </ul>`},
+    {h:"Economies of scale", html:`
+      <p><b>Internal economies of scale</b> are the cost advantages a business enjoys as it increases the scale of its operations: as output rises, the <b>cost per unit (average cost) falls</b>. Lower unit costs let a firm either <b>cut prices and sell more at the same margin</b>, or <b>keep prices and earn more profit per unit</b> — both make it more competitive.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 290" style="min-width:420px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="60" y1="40" x2="60" y2="240" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="60" y1="240" x2="490" y2="240" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="20" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)" transform="rotate(-90 20 140)">Unit cost</text>
+        <text x="275" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)">Output (scale)</text>
+        <path d="M90,80 Q275,300 460,90" fill="none" stroke="var(--amber)" stroke-width="3"/>
+        <line x1="275" y1="193" x2="275" y2="240" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 3"/>
+        <text x="275" y="256" text-anchor="middle" font-size="9.5" fill="var(--muted)">min. efficient scale</text>
+        <text x="150" y="150" text-anchor="middle" font-size="11" font-weight="800" fill="var(--emerald)">Economies</text>
+        <text x="150" y="165" text-anchor="middle" font-size="11" font-weight="800" fill="var(--emerald)">of scale ↓</text>
+        <text x="400" y="150" text-anchor="middle" font-size="11" font-weight="800" fill="#c92a2a">Diseconomies</text>
+        <text x="400" y="165" text-anchor="middle" font-size="11" font-weight="800" fill="#c92a2a">of scale ↑</text>
+      </svg>
+      </div>
+      <p>The <b>VW Group</b> — the world's largest car maker, with twelve brands (VW, Audi, SEAT, ŠKODA, Porsche, Lamborghini, Bentley, Bugatti, Ducati, MAN, Scania, VW Commercial) — gains big cost advantages over smaller rivals through internal economies:</p>
+      <ul>
+        <li><b>Purchasing (bulk-buying)</b> — buying components in huge volume secures big discounts per unit.</li>
+        <li><b>Production (technical)</b> — large, specialised plant and robotics spread cost over far more cars.</li>
+        <li><b>Financial</b> — large firms borrow more cheaply and on better terms.</li>
+        <li><b>Marketing</b> — the cost of a campaign is spread across millions of units.</li>
+        <li><b>Managerial</b> — it can afford specialist managers (finance, IT, marketing) who raise efficiency.</li>
+      </ul>`},
+    {h:"External economies of scale", html:`
+      <p><b>External economies of scale</b> are lower unit costs that come from <b>factors outside the firm</b> — the whole industry growing, or firms <b>clustering</b> geographically. A strong UAE example is <b>Dubai Silicon Oasis</b>, home to more than <b>900 start-ups from 72 countries</b>, many working on blockchain and AI:</p>
+      <ul>
+        <li><b>Expertise</b> — a local pool of skilled labour and specialist knowledge to recruit from.</li>
+        <li><b>Co-operation</b> — nearby firms share ideas, suppliers and infrastructure.</li>
+        <li><b>Support services</b> — specialist suppliers, finance and services grow up around the cluster.</li>
+      </ul>`},
+    {h:"Diseconomies of scale", html:`
+      <p>Growth is not always cheaper. If a business grows <b>too big or too fast</b>, unit costs can start to <b>rise</b> again — <b>diseconomies of scale</b>:</p>
+      <ul>
+        <li><b>Communication</b> — more layers and staff make messages slower and easier to distort.</li>
+        <li><b>Co-ordination &amp; control</b> — harder to manage many sites/people; confusion over responsibilities.</li>
+        <li><b>Motivation</b> — workers can feel like a small cog, lowering morale and productivity.</li>
+      </ul>
+      <p>This is why the long-run average cost curve is U-shaped — the firm should aim for its <b>minimum efficient scale</b>, not just maximum size.</p>`}
+  ],
+  definitions:[
+    {term:"Economies of scale", marks:2, body:`The cost advantages a business gains as it grows and output rises <span class="pt">1</span>, so that the average cost per unit falls <span class="pt">2</span>.`},
+    {term:"Internal economies of scale", marks:2, body:`Falling unit costs that come from a business increasing the scale of its own operations <span class="pt">1</span>, such as bulk-buying, technical or managerial economies <span class="pt">2</span>.`},
+    {term:"External economies of scale", marks:2, body:`Falling unit costs that come from factors outside the firm <span class="pt">1</span>, such as the industry growing or firms clustering together geographically <span class="pt">2</span>.`},
+    {term:"Diseconomies of scale", marks:2, body:`Rising average unit costs that occur when a business grows too large to manage efficiently <span class="pt">1</span>, caused by communication, co-ordination and motivation problems <span class="pt">2</span>.`},
+    {term:"Organic growth", marks:2, body:`Growth generated from a business's own internal operations <span class="pt">1</span>, such as opening more outlets or launching new products, rather than through acquisition <span class="pt">2</span>.`},
+    {term:"Inorganic growth", marks:2, body:`Growth achieved externally through mergers and takeovers <span class="pt">1</span>; it is faster than organic growth but carries higher cost and risk <span class="pt">2</span>.`},
+    {term:"Purchasing economies", marks:2, body:`A fall in unit cost from buying inputs in large quantities <span class="pt">1</span>, because suppliers give bulk-buying discounts to large purchasers <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'economies of scale'.",
+     model:`Economies of scale are the cost advantages a business gains as it grows and output increases <span class="pt">1</span>, so that the average cost per unit falls <span class="pt">2</span>.`,
+     fb:"Links growth/rising output to a fall in unit (average) cost — two developed points, not an example."},
+    {marks:2, q:"Distinguish between organic and inorganic growth.",
+     model:`Organic growth comes from a firm's own operations, such as opening new stores or launching products <span class="pt">1</span>; inorganic growth comes externally through mergers and takeovers, which is faster but riskier <span class="pt">2</span>.`,
+     fb:"Two contrasting points — internal expansion vs growth by acquisition."},
+    {marks:4, q:"Explain one internal economy of scale a large car manufacturer such as VW could benefit from.",
+     model:`VW benefits from purchasing (bulk-buying) economies <span class="pt">1</span>. This is because ordering components in huge volumes lets it negotiate large per-unit discounts <span class="pt">2</span>. As a result, the cost of each car falls <span class="pt">3</span>, so VW can either price below smaller rivals or keep prices and earn a higher margin, strengthening its competitiveness <span class="pt">4</span>.`,
+     fb:"Name a specific internal economy and develop the unit-cost consequence."}
+  ],
+  caseStudy:{
+    business:"Volkswagen, Dubai Silicon Oasis & Brompton Bikes",
+    intro:`<p>Growth and scale in real businesses.</p>
+      <ul>
+        <li><b>Volkswagen</b> — the world's largest car maker (twelve brands); its scale delivers purchasing, technical, financial, marketing and managerial economies that smaller rivals cannot match.</li>
+        <li><b>Dubai Silicon Oasis</b> — 900+ start-ups from 72 countries clustered together, giving external economies (shared expertise, co-operation and support services) in blockchain and AI.</li>
+        <li><b>Brompton Bikes</b> — raising capacity from 80,000 to 200,000 bikes a year at a new factory and hiring 650 staff: a chance for internal economies, but also a risk of diseconomies if growth outruns management.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Assess the likely impact on Brompton Bikes of expanding production capacity at its new factory. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One impact is internal economies of scale, because the new factory lifts capacity from 80,000 to 200,000 bikes a year. <span class="tag t-C">CHAIN</span>Spreading fixed costs (rent, equipment, overheads) across far more units lowers the average cost per bike, so Brompton can either cut prices to compete or hold prices and widen margins — strengthening its position in the UK and growing global market for eco-friendly transport.</p>
+     <p><span class="tag t-P">POINT</span>A second impact is managerial economies, because Brompton is hiring 650 staff including marketing, IT and social-media specialists. <span class="tag t-C">CHAIN</span>These roles smaller firms can't afford raise efficiency, brand visibility and customer engagement, so productivity and responsiveness to market trends improve.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, there is a risk of diseconomies of scale if the firm grows faster than it can manage. A sharp rise in staff and output can cause poor communication, slow decisions, unclear responsibilities and lower morale — pushing unit costs up instead of down, eroding the cost advantage and making it harder to compete with lower-cost rivals.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, expansion should cut unit costs and support Brompton's growth, but the benefit depends on managing the scale-up well. It is recommended Brompton grows in controlled stages and invests in management systems so it captures economies without triggering diseconomies.</p>`,
+     fb:"Mr. Akram's exemplar (Brompton Bikes). Internal + managerial economies with the 80k→200k and 650-staff figures, balanced by a diseconomies risk and a 'manage the scale-up' conclusion."},
+    {marks:8, q:"Assess the benefits to a discount supermarket such as Aldi of achieving economies of scale. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is purchasing economies, because buying stock in vast volumes secures large per-unit discounts. <span class="tag t-C">CHAIN</span>This lowers Aldi's unit costs, so it can sustain very low shelf prices and still protect margins — central to its cost-leadership model against Tesco and Sainsbury's.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is technical and distribution economies, because large, efficient warehouses and a streamlined range spread costs over huge throughput. <span class="tag t-C">CHAIN</span>This keeps operating cost per item low, reinforcing the price advantage that drives footfall and market share.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the benefit has limits, because beyond a point rapid expansion can bring diseconomies — co-ordination and communication problems across many stores can raise costs. So economies of scale help most when growth is well managed and the simple, low-cost model is preserved.</p>`,
+     fb:"Mr. Akram's exemplar (Aldi). Two economies linked to cost leadership, balanced by a diseconomies caveat — house-style model answer."}
+  ],
+  resources:[
+    {label:"Growth objectives & economies of scale — lesson notes (PDF)", file:"resources/3-3-2-1-economies-of-scale-notes.pdf"}
+  ]
+},
+{code:"3.3.2.2", subtheme:"3.3.2", title:"Organic & inorganic growth", business:"Mergers, takeovers & methods of growth", status:"soon"},
+{
+  code:"3.3.2.3", subtheme:"3.3.2", title:"Integration & conglomerates",
+  business:"Case studies: Ferrero (Oltan & Thorntons), Heineken & GlobalReach", status:"live",
+  notes:[
+    {h:"Integration through mergers & takeovers", html:`
+      <p>Inorganic growth happens through <b>mergers</b> (two firms agree to join) and <b>takeovers/acquisitions</b> (one firm buys control of another). The type of <b>integration</b> depends on where the two firms sit — the same stage of production or different stages, the same market or an unrelated one.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 250" style="min-width:440px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="int-arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/></marker>
+        </defs>
+        <rect x="20" y="70" width="130" height="56" rx="8" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <text x="85" y="94" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Suppliers</text>
+        <text x="85" y="112" text-anchor="middle" font-size="9.5" fill="var(--muted)">raw materials</text>
+        <rect x="195" y="70" width="130" height="56" rx="8" fill="rgba(245,166,35,.16)" stroke="var(--amber)" stroke-width="2.5"/>
+        <text x="260" y="94" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Manufacturer</text>
+        <text x="260" y="112" text-anchor="middle" font-size="9.5" fill="var(--muted)">our business</text>
+        <rect x="370" y="70" width="130" height="56" rx="8" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <text x="435" y="94" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Retailers</text>
+        <text x="435" y="112" text-anchor="middle" font-size="9.5" fill="var(--muted)">distribution</text>
+        <line x1="195" y1="98" x2="152" y2="98" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#int-arr)"/>
+        <line x1="325" y1="98" x2="368" y2="98" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#int-arr)"/>
+        <text x="172" y="58" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--muted)">backward</text>
+        <text x="348" y="58" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--muted)">forward</text>
+        <text x="260" y="40" text-anchor="middle" font-size="10.5" font-weight="800" fill="var(--ink)">VERTICAL integration</text>
+        <rect x="195" y="168" width="130" height="50" rx="8" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-dasharray="5 3"/>
+        <text x="260" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)">Rival manufacturer</text>
+        <text x="260" y="206" text-anchor="middle" font-size="9.5" fill="var(--muted)">same stage &amp; market</text>
+        <line x1="260" y1="126" x2="260" y2="166" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#int-arr)"/>
+        <text x="330" y="150" text-anchor="start" font-size="9.5" font-weight="700" fill="var(--muted)">HORIZONTAL</text>
+      </svg>
+      </div>`},
+    {h:"Horizontal integration", html:`
+      <p><b>Horizontal integration</b> — joining with a firm at the <b>same stage of production in the same market</b> (e.g. the mobile operators T-Mobile and Orange merging to form <b>EE</b>).</p>
+      <ul>
+        <li><b>Benefits:</b> bigger market share, reduced competition, economies of scale, and access to the rival's customers and expertise.</li>
+        <li><b>Drawbacks:</b> may be blocked by competition regulators; culture clashes; diseconomies if the combined firm is hard to manage.</li>
+      </ul>`},
+    {h:"Vertical integration", html:`
+      <p><b>Vertical integration</b> — joining with a firm at a <b>different stage</b> of the same supply chain. Think of brewing: production → distribution → retail.</p>
+      <ul>
+        <li><b>Backward vertical</b> — buying a <b>supplier</b> (e.g. a car maker buying its tyre supplier; Nescafé acquiring coffee growers). Secures supply, quality and better margins.</li>
+        <li><b>Forward vertical</b> — buying a <b>distributor/retailer</b> (e.g. a coffee-bean producer buying a chain of coffee shops to sell its own beans). Secures routes to market and captures retail profit.</li>
+      </ul>
+      <p><b>Drawbacks:</b> the firm may lack expertise in the new stage, integration is costly, and it can reduce flexibility. <b>Heineken</b> has used both vertical and horizontal integration to control supply and expand.</p>`},
+    {h:"Conglomerate integration", html:`
+      <p>A <b>conglomerate</b> is formed when <b>two unrelated businesses</b> integrate.</p>
+      <ul>
+        <li><b>Advantages:</b> diversification spreads risk — if one market slumps, another can balance it, giving more stable overall profit.</li>
+        <li><b>Disadvantages:</b> no expertise in the new industry, management attention is split, and the firm can be distracted from its core business, causing inefficiency.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Merger", marks:2, body:`When two businesses agree to join together to form a single new business <span class="pt">1</span>, usually to gain scale, market share or synergy <span class="pt">2</span>.`},
+    {term:"Takeover (acquisition)", marks:2, body:`When one business buys a controlling stake in another <span class="pt">1</span>, so the acquiring firm gains control, often to grow quickly or enter a new market <span class="pt">2</span>.`},
+    {term:"Horizontal integration", marks:2, body:`When a business merges with or acquires another at the same stage of production in the same market <span class="pt">1</span>, increasing market share and reducing competition <span class="pt">2</span>.`},
+    {term:"Vertical integration", marks:2, body:`When a business merges with or acquires a firm at a different stage of its supply chain <span class="pt">1</span> — a supplier (backward) or a distributor (forward) <span class="pt">2</span>.`},
+    {term:"Backward vertical integration", marks:2, body:`When a business acquires one of its suppliers <span class="pt">1</span>, giving it greater control over the cost, quality and reliability of its inputs <span class="pt">2</span>.`},
+    {term:"Forward vertical integration", marks:2, body:`When a business acquires a firm further along its supply chain, such as a distributor or retailer <span class="pt">1</span>, securing its route to market and capturing retail profit <span class="pt">2</span>.`},
+    {term:"Conglomerate", marks:2, body:`A business formed by the integration of two unrelated businesses in different industries <span class="pt">1</span>; it diversifies operations to spread risk <span class="pt">2</span>.`},
+    {term:"Synergy", marks:2, body:`The idea that two combined businesses are worth more than the sum of their parts <span class="pt">1</span>, because merging cuts costs or boosts revenue beyond what each could achieve alone <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define 'horizontal integration'.",
+     model:`Horizontal integration is when a business merges with or acquires another firm at the same stage of production in the same market <span class="pt">1</span>, increasing its market share and reducing competition <span class="pt">2</span>.`,
+     fb:"Same stage + same market, plus the market-share/competition consequence."},
+    {marks:2, q:"Distinguish between backward and forward vertical integration.",
+     model:`Backward vertical integration is acquiring a supplier to control inputs <span class="pt">1</span>; forward vertical integration is acquiring a distributor or retailer to control the route to market <span class="pt">2</span>.`,
+     fb:"Two contrasting points — upstream (supplier) vs downstream (distributor)."},
+    {marks:4, q:"Explain one benefit to Nescafé of backward vertical integration with coffee growers.",
+     model:`It gives Nescafé greater control over its supply of coffee beans <span class="pt">1</span>. This is because owning the growers secures a reliable source and removes dependence on third parties <span class="pt">2</span>. As a result, Nescafé is less exposed to price spikes or shortages <span class="pt">3</span>, so it can protect its production costs and profit margins over the long term <span class="pt">4</span>.`,
+     fb:"Link owning the supplier to secure supply and protected margins."}
+  ],
+  caseStudy:{
+    business:"Ferrero (Oltan & Thorntons), Heineken & GlobalReach",
+    intro:`<p>Integration decisions in real and applied cases.</p>
+      <ul>
+        <li><b>Ferrero — Oltan Group (2014):</b> Ferrero (global revenue £8bn+) bought the world's largest hazelnut processor (Turkey, £600m turnover) — <b>backward vertical integration</b> securing a key commodity for Nutella, Kinder Bueno and Ferrero Rocher.</li>
+        <li><b>Ferrero — Thorntons (2015):</b> bought the struggling British chocolate maker for £112m to enter the £6bn UK market — a British brand already losing sales and closing stores.</li>
+        <li><b>Heineken:</b> has used both vertical and horizontal integration to control supply and expand share.</li>
+        <li><b>GlobalReach Inc. &amp; FunTime Games:</b> a construction/pharma/renewables conglomerate acquiring a video-game developer — diversification vs the risk of entering a market where it has no expertise.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Discuss whether GlobalReach Inc.'s decision to acquire FunTime Games (a conglomerate takeover) is likely to be beneficial. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is diversification, because FunTime operates in video games — unrelated to GlobalReach's construction, pharmaceuticals and renewable energy. <span class="tag t-C">CHAIN</span>This reduces reliance on any one sector, so if one industry underperforms, FunTime's success can offset the losses — making GlobalReach more financially stable and reducing overall business risk.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is access to a high-growth, profitable market, because demand for mobile and online gaming has risen sharply. <span class="tag t-C">CHAIN</span>FunTime could generate strong future revenues and reach a younger, tech-savvy audience, improving GlobalReach's long-term financial performance and brand appeal.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, GlobalReach has no experience in gaming, which needs different skills, leadership and culture. This means it may struggle with creative and design decisions in a fast-moving market, risking poor performance, internal clashes and wasted investment — a classic conglomerate danger of being distracted from the core business.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the acquisition could help GlobalReach diversify and grow if managed carefully, because it opens a high-growth sector and spreads risk. Success depends on balancing control with autonomy and protecting its existing units — so it is recommended GlobalReach proceeds cautiously, invests in gaming expertise and keeps its core operations stable.</p>`,
+     fb:"Mr. Akram's exemplar (GlobalReach/FunTime). Conglomerate diversification + high-growth market balanced against the no-expertise risk, with a 'proceed with caution' conclusion."},
+    {marks:20, q:"Using the data on Ferrero, evaluate the takeovers of the Oltan Group and Thorntons, and recommend which is most likely to have improved Ferrero's profits. (20)",
+     model:`<p><span class="tag t-P">OLTAN — ADVANTAGE</span>Taking over the Oltan Group gave Ferrero more control over its supply chain, because hazelnuts are central to Nutella, Kinder Bueno and Ferrero Rocher. <span class="tag t-E">EXPLAIN</span>Acquiring the world's largest hazelnut processor secures a reliable source. <span class="tag t-C">CHAIN</span>This reduces the risk of price spikes or shortages from third-party suppliers. <span class="tag t-A">APPLY</span>So Ferrero can lower and stabilise production costs. <span class="tag t-J">JUDGE</span>This backward vertical integration directly protects long-term margins.</p>
+     <p><span class="tag t-J">OLTAN — LIMITATION</span>However, Ferrero may lack expertise in agricultural processing, as Oltan was a family nut-harvesting and export business. Managing operations outside confectionery could bring inefficiency, so some expected cost savings might not materialise.</p>
+     <p><span class="tag t-P">THORNTONS — ADVANTAGE</span>Buying Thorntons gave Ferrero a ready-made UK retail presence, because Thorntons already had stores and supermarket listings. <span class="tag t-C">CHAIN</span>This let Ferrero raise visibility fast in the £6bn UK chocolate market without building a brand from scratch. <span class="tag t-J">JUDGE</span>So UK share and revenue could rise in the short term.</p>
+     <p><span class="tag t-J">THORNTONS — LIMITATION</span>However, Thorntons was already underperforming — losing sales and closing stores — so Ferrero took on a business needing major, costly restructuring, delaying or reducing any profit gain in a saturated market.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the Oltan acquisition was the better decision for profits, because it secures a key raw material and cuts long-term costs across Ferrero's biggest products, whereas Thorntons is a failing brand in a competitive market with no guaranteed turnaround. Success of the Oltan deal depends on managing agricultural operations and smooth integration; it is recommended Ferrero maximises the Oltan value and limits further investment in Thorntons unless UK performance clearly improves.</p>`,
+     fb:"Mr. Akram's exemplar (Ferrero, 20). Full 5×5 PECAN comparing a backward-vertical deal (Oltan) with a forward/retail deal (Thorntons), each challenged, recommending Oltan on profit grounds."}
+  ],
+  resources:[
+    {label:"Horizontal/vertical integration & conglomerates — lesson notes (PDF)", file:"resources/3-3-2-3-integration-notes.pdf"}
   ]
 }
 ];
