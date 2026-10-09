@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
-window.SUBTHEME_SUB = {"3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️"};
+window.SUBTHEME_TITLE = {"3.3.1":"Business objectives & strategy","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 
 window.CURRICULUM = [
 {
@@ -1627,5 +1627,156 @@ window.CURRICULUM = [
   resources:[
     {label:"Contingency planning — lesson notes (PDF)", file:"resources/3-3-6-contingency-notes.pdf"}
   ]
-}
+},
+{
+  code:"3.3.1.1", subtheme:"3.3.1", title:"Corporate objectives & mission",
+  business:"Case studies: Lego, Patagonia & Morrisons", status:"live",
+  notes:[
+    {h:"Mission → objectives → strategy", html:`
+      <p>A business sets its direction through a hierarchy:</p>
+      <ul>
+        <li><b>Mission statement</b> — a brief written statement of the <b>purpose</b> of the business; it guides actions, spells out the overall goal and gives a sense of direction for all levels of management.</li>
+        <li><b>Corporate (strategic) objectives</b> — the clearly defined, business-wide targets the mission is broken down into.</li>
+        <li><b>Functional objectives</b> — department targets (marketing, HR, operations, finance) that flow from the corporate objectives.</li>
+        <li><b>Strategies</b> — the plans devised to achieve those targets.</li>
+      </ul>`},
+    {h:"SMART objectives", html:`
+      <p>Good corporate objectives are <b>SMART</b>:</p>
+      <ul>
+        <li><b>S</b>pecific — aimed at what the business does (e.g. a hotel filling 60% of beds in October).</li>
+        <li><b>M</b>easurable — a value can be attached (e.g. £10,000 of sales this half-year).</li>
+        <li><b>A</b>greed / attainable — by all those involved.</li>
+        <li><b>R</b>ealistic — challenging but achievable with the resources available.</li>
+        <li><b>T</b>ime-specific — has a deadline.</li>
+      </ul>
+      <div class="note-ex"><b>Lego</b> set five corporate objectives: zero product recalls, a top-10 firm for employee safety, support learning for 101 million children by 2022, 100% renewable energy by 2023, and a zero-waste mindset — clear, measurable, time-bound targets flowing from its mission to "inspire and develop the builders of tomorrow."</div>`},
+    {h:"Appraising mission statements", html:`
+      <h3>Benefits</h3>
+      <ul>
+        <li>Gives the business a clear sense of <b>direction</b> and helps guide decisions.</li>
+        <li>Can <b>motivate employees</b> who share its values and feel proud of the purpose.</li>
+        <li>Helps build a <b>brand image</b> and attract customers who share those values (e.g. ethics, sustainability).</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Can be <b>vague PR</b> — fine words with no real action behind them.</li>
+        <li>Not all customers or staff value or even read it.</li>
+        <li>If the business is seen to <b>break</b> its stated values, it can backfire and damage trust.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Mission statement", marks:2, body:`A brief written statement of the overall purpose of a business <span class="pt">1</span>; it guides decision-making and gives the organisation a clear sense of direction <span class="pt">2</span>.`},
+    {term:"Corporate objective", marks:2, body:`A clearly defined, business-wide target that the mission is broken down into <span class="pt">1</span>; functional (departmental) objectives and strategies then flow from it <span class="pt">2</span>.`},
+    {term:"Functional objective", marks:2, body:`A target set for a particular department, such as marketing or finance <span class="pt">1</span>; it is derived from the corporate objectives so that each function supports the wider goal <span class="pt">2</span>.`},
+    {term:"SMART objective", marks:2, body:`An objective that is Specific, Measurable, Agreed, Realistic and Time-specific <span class="pt">1</span>; setting objectives this way makes success clear to measure and more likely to be achieved <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define a mission statement.",
+     model:`A mission statement is a brief written statement of the overall purpose of a business <span class="pt">1</span>; it guides decision-making and gives the organisation a clear sense of direction <span class="pt">2</span>.`,
+     fb:"Two linked points — what it is and what it does."},
+    {marks:4, q:"Lego set an objective to 'support learning for 101 million children by 2022'. Explain how this meets the SMART criteria.",
+     model:`The objective is <b>specific</b> (supporting children's learning) and <b>measurable</b> (101 million) <span class="pt">1</span><span class="pt">2</span>. It is <b>time-specific</b> (by 2022) <span class="pt">3</span>, and — given Lego's global scale and resources — realistic and agreed across the business, making progress easy to track <span class="pt">4</span>.`,
+     fb:"Link the objective to at least three SMART elements with the figures/date."},
+    {marks:4, q:"Explain one benefit to a business of breaking its mission down into corporate and functional objectives.",
+     model:`It gives every department a clear target to work towards <span class="pt">1</span>. This is because functional objectives flow from the corporate objectives, which flow from the mission <span class="pt">2</span>. As a result, all parts of the business pull in the same direction <span class="pt">3</span>, improving coordination and the chance of achieving the overall goal <span class="pt">4</span>.`,
+     fb:"Reward the link from the objectives hierarchy to coordination/alignment."}
+  ],
+  caseStudy:{
+    business:"Lego, Patagonia & Morrisons",
+    intro:`<p>Three mission/objectives scenarios used in the exam questions.</p>
+      <h3>Lego</h3>
+      <p>Mission: <b>"inspire and develop the builders of tomorrow."</b> Five SMART corporate objectives (zero recalls, top-10 employee safety, learning for 101m children by 2022, 100% renewable energy by 2023, zero waste). A later review found zero recalls, high employee satisfaction, millions educated (short of 101m), and sharply lower waste — strong but not total success.</p>
+      <h3>Patagonia</h3>
+      <p>Mission: <b>"to save our home planet."</b> It pays fair wages to 75,000+ factory workers and ensures environmental responsibility across 67 factories, farms and mills — a mission that motivates staff and attracts ethically minded customers, but may raise costs and prices.</p>
+      <h3>Morrisons</h3>
+      <p>Mission highlights being <b>human, ethical and ecological</b> and "one team" — differentiating it from price-focused rivals Aldi and Lidl by presenting a values-driven supermarket.</p>`
+  },
+  exam:[
+    {marks:4, q:"Explain one benefit to Morrisons of having a mission statement. (4)",
+     model:`Morrisons' mission can help create a strong brand image <span class="pt">1</span>. This is because it highlights values such as being human, ethical and ecological and being "one team" <span class="pt">2</span>. This appeals to customers who care about sustainability and responsible business <span class="pt">3</span>, so Morrisons differentiates itself from price-focused rivals like Aldi and Lidl and attracts ethically conscious shoppers <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Morrisons). Note the Year-2 rule: mark 1 is for identifying a benefit, not a definition. Two developed points with application."},
+    {marks:12, q:"Assess the likely importance of its mission statement to a business such as Patagonia. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason the mission is important is that it motivates employees, because Patagonia's purpose — "to save our home planet" — shows a deep commitment to environmental and ethical values. <span class="tag t-C">CHAIN</span>This means staff feel proud to work for a company that matches their beliefs, especially as it pays fair wages to 75,000+ workers; as a result motivation and retention rise, giving a more loyal, productive workforce.</p>
+     <p><span class="tag t-P">POINT</span>A second reason is that it attracts loyal, ethical customers, because many consumers choose brands that share their values. <span class="tag t-C">CHAIN</span>Patagonia's actions across 67 factories, farms and mills reinforce its image, so customers may pay more for its products.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, not all customers value the mission, because some focus on price over ethics. Its commitment to fair labour and the environment raises production costs, so its prices may be too high for price-sensitive markets, slowing growth where cost matters most.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Patagonia's mission is likely to be highly important — motivating staff and attracting ethical customers for a clear competitive edge. However, success depends on enough consumers paying premium prices and on Patagonia continuing to deliver on its promises. It is recommended Patagonia keeps its ethical focus but considers more affordable lines to widen its appeal without diluting its values.</p>`,
+     fb:"Mr. Akram's exemplar (Patagonia). Two developed benefits, a price/ethics limitation, and a conclusion that states what the importance depends on."}
+  ],
+  resources:[
+    {label:"Corporate objectives — knowledge recall (PDF)", file:"resources/3-3-1-1-corporate-objectives.pdf"},
+    {label:"Mission statements — lesson notes (PDF)", file:"resources/3-3-1-1-mission-statements.pdf"}
+  ]
+},
+{
+  code:"3.3.1.2", subtheme:"3.3.1", title:"Theories of corporate strategy",
+  business:"Case studies: McDonald's, Lush, Five Guys & Coca-Cola", status:"live",
+  notes:[
+    {h:"Strategic vs tactical decisions", html:`
+      <p><b>Strategic decisions</b> are major, long-term choices made by senior management that set the direction of the whole business (e.g. entering a new market, a major product launch). They are costly and hard to reverse.</p>
+      <p><b>Tactical decisions</b> are shorter-term, smaller choices (often by middle management) that put the strategy into action (e.g. a seasonal promotion). They are easier and cheaper to reverse.</p>`},
+    {h:"Porter's Strategic Matrix", html:`
+      <p>Michael Porter argued a business needs a clear <b>competitive strategy</b>, choosing its source of advantage (cost vs differentiation) and its scope (broad market vs narrow niche):</p>
+      <table class="datatable">
+        <tr><th></th><th>Low cost</th><th>Differentiation</th></tr>
+        <tr><td><b>Broad market</b></td><td>Cost leadership (e.g. a supermarket cutting prices to undercut rivals)</td><td>Differentiation (a distinctive product sold widely)</td></tr>
+        <tr><td><b>Narrow (niche)</b></td><td>Cost focus</td><td>Differentiation focus (e.g. a boutique roaster selling rare beans to connoisseurs)</td></tr>
+      </table>
+      <p>Porter warned against being "stuck in the middle" — a business with no clear strategy. (<b>Ansoff's Matrix</b> — market penetration, market development, product development, diversification — is the other key framework; dedicated notes to follow.)</p>`},
+    {h:"Effect on human, physical & financial resources", html:`
+      <p>Strategic and tactical decisions ripple through a firm's three resource types:</p>
+      <ul>
+        <li><b>Human resources</b> — staffing, recruitment, training and skills (e.g. needing more skilled chefs).</li>
+        <li><b>Physical resources</b> — equipment, facilities, space and technology (e.g. new grills or kitchen layouts).</li>
+        <li><b>Financial resources</b> — budgeting, investment and cash flow (e.g. higher marketing or capital spend).</li>
+      </ul>
+      <p>A major decision usually affects all three at once, so managers must balance them — a product launch may need new equipment (physical), trained staff (human) and upfront investment (financial) before any sales are made.</p>`}
+  ],
+  definitions:[
+    {term:"Strategic decision", marks:2, body:`A major, long-term decision made by senior management that sets the direction of the whole business <span class="pt">1</span>; it is costly and difficult to reverse <span class="pt">2</span>.`},
+    {term:"Tactical decision", marks:2, body:`A shorter-term, smaller-scale decision that puts a strategy into action <span class="pt">1</span>; it is usually easier and cheaper to reverse than a strategic decision <span class="pt">2</span>.`},
+    {term:"Cost leadership (Porter)", marks:2, body:`A strategy of becoming the lowest-cost producer in a broad market <span class="pt">1</span>, allowing a business to compete on price while protecting its margins <span class="pt">2</span>.`},
+    {term:"Differentiation (Porter)", marks:2, body:`A strategy of offering a distinctive product that stands out from rivals <span class="pt">1</span>, allowing a business to attract customers and often charge a premium rather than compete on price <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Distinguish between a strategic and a tactical decision.",
+     model:`A strategic decision is a major, long-term choice by senior management that sets the whole firm's direction and is hard to reverse <span class="pt">1</span>; a tactical decision is a shorter-term, smaller choice that implements the strategy and is easier to reverse <span class="pt">2</span>.`,
+     fb:"Two linked points contrasting scale, timescale and reversibility."},
+    {marks:4, q:"A supermarket chain lowers prices across all regions to undercut competitors. Identify the Porter strategy and explain one resource implication.",
+     model:`This is a <b>cost-leadership</b> strategy (low cost, broad market) <span class="pt">1</span>. To sustain the lower prices it must cut costs elsewhere — a financial-resource effect <span class="pt">2</span>: tighter budgeting and investment in efficiency (e.g. automation) <span class="pt">3</span>, so margins are protected even as prices fall <span class="pt">4</span>.`,
+     fb:"Identify cost leadership, then link it to a resource (financial/physical) consequence."}
+  ],
+  caseStudy:{
+    business:"McDonald's, Lush, Five Guys & Coca-Cola",
+    intro:`<p>Four decisions and how they hit a firm's resources.</p>
+      <ul>
+        <li><b>McDonald's — plant-based launch (physical):</b> the PLT burger needs separate grills, fridges and utensils to avoid contamination, so capital spend and kitchen-layout changes rise — though its existing vegan infrastructure in Germany/Sweden softens the cost.</li>
+        <li><b>Lush — quitting social media (financial):</b> closing its accounts gave up 10.6m followers, risking a ~£10m short-term sales loss and higher-cost marketing alternatives — but may deepen ethical brand loyalty long term.</li>
+        <li><b>Five Guys — no timers/machines (human):</b> staff judge food by sight, aroma and texture, needing more skilled, well-trained employees, so recruitment and training costs rise.</li>
+        <li><b>Coca-Cola — "Spiced" launch:</b> developed in just seven weeks to catch the bold-flavour trend and appeal to Gen Z — showing innovation, but risking alienating classic-taste loyalists and diluting the brand.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Assess the likely effect on McDonald's physical resources of launching plant-based products such as the PLT burger. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One effect is increased equipment costs, because plant-based items need separate grills, fridges and utensils to avoid contamination with meat. <span class="tag t-C">CHAIN</span>This means additional or specialised equipment across many restaurants, so McDonald's faces significant capital expenditure — raising short-term costs before any sales are made.</p>
+     <p><span class="tag t-P">POINT</span>A second effect is on kitchen layout and space, because existing kitchens may lack room for new prep stations. <span class="tag t-C">CHAIN</span>This could mean building work and temporary closures, adding further cost and disruption.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, these challenges may be reduced because McDonald's already offers vegan products in Germany and Sweden, so it owns suitable equipment and proven layouts to replicate. This means the cost of adapting physical resources may be far lower than expected, letting it roll out more cost-effectively than smaller rivals.</p>`,
+     fb:"Mr. Akram's exemplar (McDonald's). Two physical-resource effects plus a mitigating 'however' — the balance lifts it to the top band."},
+    {marks:8, q:"Assess the likely effect on Lush's financial resources of its decision to stop using social media. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One effect is a likely drop in sales, because Lush closed its Facebook, Instagram, TikTok and Snapchat accounts, giving up 10.6m followers. <span class="tag t-C">CHAIN</span>This makes it harder to promote products and reach customers, so awareness and engagement fall, reducing sales revenue and pressuring Lush's finances (a ~£10m short-term loss).</p>
+     <p><span class="tag t-P">POINT</span>A second effect is higher marketing costs, because social media is a low-cost channel. <span class="tag t-C">CHAIN</span>Without it, Lush must spend more on in-store promotions or print, raising the cost per customer reached.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the decision could support long-term loyalty and reduce reputational risk, because it acted on ethical concerns about social media's impact on teenage girls — a key market. This protects its brand values and may attract loyal, ethically minded buyers, supporting stable or growing revenue despite the short-term hit.</p>`,
+     fb:"Mr. Akram's exemplar (Lush). Financial-resource effects (sales, marketing cost) balanced against long-term brand benefit."},
+    {marks:12, q:"Assess the advantages and disadvantages to Coca-Cola of launching a new product such as Coca-Cola Spiced. (12)",
+     model:`<p><span class="tag t-P">ADVANTAGE</span>One advantage is appealing to younger consumers, because Spiced matches the trend for bold, unusual flavours. <span class="tag t-C">CHAIN</span>This makes Coca-Cola look modern and in tune with Gen Z and Millennial tastes, so it can grow its customer base and protect market share from rivals.</p>
+     <p><span class="tag t-P">ADVANTAGE</span>A second advantage is showing innovation and speed, because the flavour was developed in just seven weeks. <span class="tag t-C">CHAIN</span>This earns positive media attention and signals that Coca-Cola listens and adapts, building trust and loyalty and helping it keep its market lead.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the spicy flavour may not appeal to all, because it differs from the classic taste, risking alienating loyal or older customers — so the money spent developing and marketing it may not pay back. Launching too many flavours could also dilute the brand, weakening Coca-Cola's identity over time.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, launching Spiced is a bold, strategic move that keeps Coca-Cola competitive and relevant, and its scale and marketing reduce the risk. But success depends on whether the flavour genuinely attracts new customers without alienating the core, so a limited-edition approach that protects the classic brand is sensible.</p>`,
+     fb:"Mr. Akram's exemplar (Coca-Cola Spiced). Two advantages and two disadvantages of a strategic launch decision, with a balanced conclusion."}
+  ],
+  resources:[
+    {label:"Effect of strategic & tactical decisions on resources — lesson notes (PDF)", file:"resources/3-3-1-2-strategic-tactical-resources.pdf"}
+  ]
+},
+{code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis", business:"Strengths · weaknesses · opportunities · threats", status:"soon"},
+{code:"3.3.1.4", subtheme:"3.3.1", title:"Impact of external influences", business:"PESTLE · competitive environment · Porter's five forces", status:"soon"}
 ];
