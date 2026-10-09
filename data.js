@@ -12,7 +12,7 @@
 
 window.SUBTHEME_TITLE = {"3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
 window.SUBTHEME_SUB = {"3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83d\udd17","3.3.2.3":"\ud83c\udfd7\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.ICONS = {"3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 
 window.CURRICULUM = [
 {
@@ -2219,7 +2219,80 @@ window.CURRICULUM = [
   ]
 },
 {
-  code:"3.3.2.2", subtheme:"3.3.2", title:"Mergers & takeovers",
+  code:"3.3.2.2", subtheme:"3.3.2", title:"Organic growth",
+  business:"Case studies: Spotify, Mumtaz Food Group & Five Guys", status:"live",
+  notes:[
+    {h:"What is organic growth?", html:`
+      <p><b>Organic (internal) growth</b> is growth a business achieves by increasing output and sales <b>using its own resources</b> — <b>not</b> through mergers or takeovers. It is the opposite of inorganic growth.</p>
+      <p>Common <b>methods</b> of growing organically:</p>
+      <ul>
+        <li><b>Increasing output</b> — producing and selling more to existing and new customers.</li>
+        <li><b>Opening new locations</b> — more stores, branches or factories (e.g. Five Guys opening new outlets).</li>
+        <li><b>Expanding the product range</b> — developing new products or features for existing customers.</li>
+        <li><b>Entering new markets</b> — new regions or countries through the firm's own expansion.</li>
+        <li><b>Franchising</b> — growing the brand through franchisees without buying other firms.</li>
+      </ul>`},
+    {h:"Organic growth in action", html:`
+      <ul>
+        <li><b>Spotify</b> grew organically to <b>299m monthly users</b> and <b>138m premium subscribers</b> (≈30% market share) by developing its own features and expanding its customer base — not by acquiring rivals.</li>
+        <li><b>Mumtaz Food Group</b> (Bradford) grew from a 1979 takeaway to three restaurants and ready-meal factories using only <b>internal finance</b>, launching new ranges (e.g. Halal baby food) and opening a second factory to meet 15–20% annual growth.</li>
+        <li><b>Five Guys</b> expands by opening new branches and keeping tight control of its simple, consistent model.</li>
+      </ul>`},
+    {h:"Advantages & disadvantages", html:`
+      <table class="datatable">
+        <tr><th>Advantages</th><th>Disadvantages</th></tr>
+        <tr><td>Lower risk than mergers/takeovers; easier to manage and control; owners keep control and avoid outside investors; no clash of corporate cultures; funded from the firm's own resources; steady, sustainable expansion that protects brand and quality.</td><td>Slower than inorganic growth; limited by the firm's own resources and retained profit; can hit market saturation; rivals growing by acquisition may seize new markets or technologies faster.</td></tr>
+      </table>
+      <p>So organic growth suits firms that value <b>control, culture and brand quality</b>, while inorganic growth suits those needing to <b>scale fast</b>. Many firms do both.</p>`}
+  ],
+  definitions:[
+    {term:"Organic growth", marks:2, body:`Growth generated from a business's own internal operations <span class="pt">1</span>, such as increasing output, opening new outlets or launching new products, rather than through mergers or takeovers <span class="pt">2</span>.`},
+    {term:"Inorganic growth", marks:2, body:`Growth achieved externally through mergers and takeovers <span class="pt">1</span>; it is faster than organic growth but carries higher cost and risk <span class="pt">2</span>.`},
+    {term:"Market saturation", marks:2, body:`The point where a market has little room left for growth because most potential customers already buy the product <span class="pt">1</span>, making further organic growth from that market difficult <span class="pt">2</span>.`},
+    {term:"Product development", marks:2, body:`Launching new or improved products to existing customers <span class="pt">1</span>; it is a common method of organic growth that uses the firm's known market <span class="pt">2</span>.`},
+    {term:"Franchising", marks:2, body:`Growing a brand by letting franchisees run their own outlets under the business's name and system <span class="pt">1</span>, allowing organic expansion without the cost of owning every outlet <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'organic growth'.",
+     model:`Organic growth is growth achieved from a business's own internal operations, such as increasing output or opening new outlets <span class="pt">1</span>, rather than through mergers or takeovers <span class="pt">2</span>.`,
+     fb:"Internal expansion from own resources, explicitly contrasted with mergers/takeovers."},
+    {marks:4, q:"Morrisons is reviewing how to grow. Identify one method of organic growth and one method of inorganic growth it could use, and briefly justify each.",
+     model:`<b>Organic:</b> opening more of its own stores or online delivery <span class="pt">1</span>, which grows sales using Morrisons' own resources while keeping full control <span class="pt">2</span>. <b>Inorganic:</b> taking over a smaller rival or convenience chain <span class="pt">3</span>, which adds market share and new locations far more quickly than building them from scratch <span class="pt">4</span>.`,
+     fb:"One internal and one external method, each with a developed justification."},
+    {marks:4, q:"Explain one advantage to a family-owned firm such as Mumtaz of growing organically.",
+     model:`Organic growth lets the Akbar family keep full control <span class="pt">1</span>. This is because it avoids bringing in external investors or merging with another firm <span class="pt">2</span>. As a result, the family can make independent decisions in line with its values, like launching Halal baby food <span class="pt">3</span>, protecting brand identity and quality and building long-term customer trust <span class="pt">4</span>.`,
+     fb:"Link organic growth to retained control and protected brand/values."}
+  ],
+  caseStudy:{
+    business:"Spotify, Mumtaz Food Group & Five Guys",
+    intro:`<p>Businesses that have grown mainly from within.</p>
+      <ul>
+        <li><b>Spotify:</b> 299m monthly users, 138m premium subscribers, ~30% share — built by product development and customer growth, staying independent and avoiding culture clashes, but reporting a €167m operating loss in Q2 2020 on €1.89bn revenue.</li>
+        <li><b>Mumtaz Food Group:</b> a family-run Bradford food producer (sales ~£25m) growing 15–20% a year in ready meals, sold under its own premium brand in 40+ countries, funded by internal finance.</li>
+        <li><b>Five Guys:</b> grows by opening new outlets while protecting a simple, consistent, quality-led model.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Assess whether expanding by organic growth was the right decision for Mumtaz. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason it was right is that organic growth lets Mumtaz retain full control, because it is a family-run private limited company owned by the Akbars since 1979. <span class="tag t-C">CHAIN</span>This means it can make independent decisions — launching Halal baby food, opening a second factory — without pressure from outside investors, keeping the business aligned with its values and protecting brand identity, quality and customer trust.</p>
+     <p><span class="tag t-P">POINT</span>A second reason is that organic growth supports brand building and premium positioning, because Mumtaz sells under its own name rather than making supermarket own-label. <span class="tag t-C">CHAIN</span>This builds a brand recognised in 40+ countries with 15–20% ready-meal growth, giving time to invest in its reputation.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, organic growth can be slow and limit expansion, because Mumtaz has stayed within Asian food since 1979 and avoided external finance or mergers. This risks missing faster-growing sectors (e.g. plant-based or international ready meals) where rivals using inorganic growth can enter and scale more quickly — so Mumtaz could lose ground despite a strong brand.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, organic growth has suited Mumtaz by protecting family control, brand identity and premium positioning. But success depends on whether it can grow fast enough globally — so it is recommended Mumtaz keeps its organic core while exploring limited external funding or partnerships in key regions like Asia to accelerate expansion.</p>`,
+     fb:"Mr. Akram's exemplar (Mumtaz). Control + brand-building advantages balanced against the speed/limits of organic growth, with a 'keep organic, add selective funding' conclusion."},
+    {marks:20, q:"Evaluate whether Spotify should continue to grow organically rather than through mergers and takeovers. (20)",
+     model:`<p><span class="tag t-P">ORGANIC — STRENGTH</span>One argument for staying organic is that it builds on a proven model. <span class="tag t-E">EXPLAIN</span>Spotify reached 299m monthly users and 138m premium subscribers with ~30% share by developing its own features. <span class="tag t-C">CHAIN</span>Continuing organically avoids the disruption and culture clashes of takeovers. <span class="tag t-A">APPLY</span>So Spotify stays focused on innovation and user experience. <span class="tag t-J">JUDGE</span>This protects quality and brand identity.</p>
+     <p><span class="tag t-P">ORGANIC — STRENGTH</span>A second benefit is cultural continuity, because growing its own features and customer base means staff keep working within a familiar culture. <span class="tag t-C">CHAIN</span>Less conflict, resistance and communication breakdown supports morale and productivity, and consistent long-term performance.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, relying only on organic growth may cap expansion, because Spotify already leads at 30% while Apple Music and Amazon Music grow fast. It may not win users as quickly as rivals using acquisitions, risking lost ground and stagnation.</p>
+     <p><span class="tag t-J">LIMITATION</span>There is also a financial constraint: a €167m operating loss in Q2 2020 (on €1.89bn revenue) means limited retained profit to reinvest, so major expansion may need external finance and investor pressure for faster returns — making selective acquisitions attractive.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, organic growth has built Spotify's brand, user base and innovation while keeping it independent and in control, so it should remain the core strategy. But because the market moves fast and rivals can scale through deals, success depends on growing quickly enough — so it is recommended Spotify stays mainly organic but adds selective inorganic moves (acquiring start-ups or forming alliances) to access new technology and emerging markets faster.</p>`,
+     fb:"Mr. Akram's exemplar (Spotify, 20). Full 5×5 PECAN — two organic strengths vs expansion-speed and financial limits — concluding 'mainly organic plus selective inorganic', with the user/subscriber and loss figures applied."}
+  ],
+  resources:[
+    {label:"Organic growth — lesson notes (PDF)", file:"resources/3-3-2-2-organic-growth-notes.pdf"}
+  ]
+},
+{
+  code:"3.3.2.3", subtheme:"3.3.2", title:"Mergers & takeovers",
   business:"Case studies: Kraft–Cadbury, Disney, AG Barr–Funkin & LVMH–Tiffany", status:"live",
   notes:[
     {h:"Inorganic growth — mergers vs takeovers", html:`
@@ -2288,11 +2361,11 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (LVMH/Tiffany). Two financial risks (price, slow growth) weighed against the strong-brand reward, concluding the risk is low — with the figures applied throughout."}
   ],
   resources:[
-    {label:"Mergers & takeovers — lesson notes (PDF)", file:"resources/3-3-2-2-mergers-takeovers-notes.pdf"}
+    {label:"Mergers & takeovers — lesson notes (PDF)", file:"resources/3-3-2-3-mergers-takeovers-notes.pdf"}
   ]
 },
 {
-  code:"3.3.2.3", subtheme:"3.3.2", title:"Integration & conglomerates",
+  code:"3.3.2.4", subtheme:"3.3.2", title:"Integration & conglomerates",
   business:"Case studies: Ferrero (Oltan & Thorntons), Heineken & GlobalReach", status:"live",
   notes:[
     {h:"Integration through mergers & takeovers", html:`
@@ -2390,7 +2463,7 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Ferrero, 20). Full 5×5 PECAN comparing a backward-vertical deal (Oltan) with a forward/retail deal (Thorntons), each challenged, recommending Oltan on profit grounds."}
   ],
   resources:[
-    {label:"Horizontal/vertical integration & conglomerates — lesson notes (PDF)", file:"resources/3-3-2-3-integration-notes.pdf"}
+    {label:"Horizontal/vertical integration & conglomerates — lesson notes (PDF)", file:"resources/3-3-2-4-integration-notes.pdf"}
   ]
 }
 ];
