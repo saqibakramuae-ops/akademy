@@ -1704,7 +1704,8 @@ window.CURRICULUM = [
   ],
   resources:[
     {label:"Corporate objectives — knowledge recall (PDF)", file:"resources/3-3-1-1-corporate-objectives.pdf"},
-    {label:"Mission statements — lesson notes (PDF)", file:"resources/3-3-1-1-mission-statements.pdf"}
+    {label:"Mission statements — lesson notes (PDF)", file:"resources/3-3-1-1-mission-statements.pdf"},
+    {label:"Unilever \u2014 Growth Action Plan source booklet (PDF)", file:"resources/3-3-1-1-unilever-source.pdf"}
   ]
 },
 {
@@ -1721,7 +1722,38 @@ window.CURRICULUM = [
         <tr><td><b>Broad market</b></td><td>Cost leadership (e.g. a supermarket cutting prices to undercut rivals)</td><td>Differentiation (a distinctive product sold widely)</td></tr>
         <tr><td><b>Narrow (niche)</b></td><td>Cost focus</td><td>Differentiation focus (e.g. a boutique roaster selling rare beans to connoisseurs)</td></tr>
       </table>
-      <p>Porter warned against being "stuck in the middle" — a business with no clear strategy. (<b>Ansoff's Matrix</b> — market penetration, market development, product development, diversification — is the other key framework; dedicated notes to follow.)</p>`},
+      <p>Porter warned against being "stuck in the middle" — a business with no clear strategy. (<b>Ansoff's Matrix</b> — market penetration, market development, product development, diversification — is the other key framework — see below.)</p>`},,
+    {h:"Ansoff's Matrix", html:`
+      <p><b>Ansoff's Matrix</b> plots growth strategies against two axes — products (existing vs new) and markets (existing vs new) — giving four options of rising risk:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 300" style="min-width:420px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <text x="260" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)">PRODUCTS</text>
+        <text x="150" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Existing</text>
+        <text x="380" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">New</text>
+        <text x="20" y="110" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)" transform="rotate(-90 20 150)">MARKETS</text>
+        <text x="50" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Existing</text>
+        <text x="50" y="225" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">New</text>
+        <rect x="80" y="50" width="200" height="110" rx="6" fill="rgba(15,163,127,.12)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="290" y="50" width="200" height="110" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)" stroke-width="2"/>
+        <rect x="80" y="170" width="200" height="110" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)" stroke-width="2"/>
+        <rect x="290" y="170" width="200" height="110" rx="6" fill="rgba(201,42,42,.12)" stroke="#c92a2a" stroke-width="2"/>
+        <text x="180" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Market</text>
+        <text x="180" y="118" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">penetration</text>
+        <text x="180" y="138" text-anchor="middle" font-size="10.5" fill="var(--muted)">lowest risk</text>
+        <text x="390" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Product</text>
+        <text x="390" y="118" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">development</text>
+        <text x="180" y="220" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Market</text>
+        <text x="180" y="238" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">development</text>
+        <text x="390" y="220" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Diversification</text>
+        <text x="390" y="238" text-anchor="middle" font-size="10.5" fill="var(--muted)">highest risk</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Market penetration</b> — existing products into existing markets (lowest risk). E.g. Carrefour driving more sales from current stores; Aldi opening more UK stores.</li>
+        <li><b>Market development</b> — existing products into new markets. E.g. Burberry expanding abroad; Aldi moving into online grocery.</li>
+        <li><b>Product development</b> — new products into existing markets. E.g. Samsung's new phones; Tesla's Cybertruck.</li>
+        <li><b>Diversification</b> — new products into new markets (highest risk). E.g. Virgin entering unrelated industries.</li>
+      </ul>`},
     {h:"Effect on human, physical & financial resources", html:`
       <p>Strategic and tactical decisions ripple through a firm's three resource types:</p>
       <ul>
@@ -1735,7 +1767,11 @@ window.CURRICULUM = [
     {term:"Strategic decision", marks:2, body:`A major, long-term decision made by senior management that sets the direction of the whole business <span class="pt">1</span>; it is costly and difficult to reverse <span class="pt">2</span>.`},
     {term:"Tactical decision", marks:2, body:`A shorter-term, smaller-scale decision that puts a strategy into action <span class="pt">1</span>; it is usually easier and cheaper to reverse than a strategic decision <span class="pt">2</span>.`},
     {term:"Cost leadership (Porter)", marks:2, body:`A strategy of becoming the lowest-cost producer in a broad market <span class="pt">1</span>, allowing a business to compete on price while protecting its margins <span class="pt">2</span>.`},
-    {term:"Differentiation (Porter)", marks:2, body:`A strategy of offering a distinctive product that stands out from rivals <span class="pt">1</span>, allowing a business to attract customers and often charge a premium rather than compete on price <span class="pt">2</span>.`}
+    {term:"Differentiation (Porter)", marks:2, body:`A strategy of offering a distinctive product that stands out from rivals <span class="pt">1</span>, allowing a business to attract customers and often charge a premium rather than compete on price <span class="pt">2</span>.`},
+    {term:"Market penetration", marks:2, body:`A growth strategy of selling more existing products into existing markets <span class="pt">1</span>; it is the lowest-risk option because the business already knows both the product and the market <span class="pt">2</span>.`},
+    {term:"Market development", marks:2, body:`A growth strategy of selling existing products into new markets <span class="pt">1</span>, such as a new country or customer segment; riskier than penetration because the market is unfamiliar <span class="pt">2</span>.`},
+    {term:"Product development", marks:2, body:`A growth strategy of launching new products into existing markets <span class="pt">1</span>; it uses the firm's known customer base but carries the risk and cost of developing new products <span class="pt">2</span>.`},
+    {term:"Diversification", marks:2, body:`A growth strategy of selling new products in new markets <span class="pt">1</span>; it is the highest-risk Ansoff option because both the product and the market are unfamiliar <span class="pt">2</span>.`}
   ],
   practice:[
     {marks:2, q:"Distinguish between a strategic and a tactical decision.",
@@ -1771,10 +1807,23 @@ window.CURRICULUM = [
      <p><span class="tag t-P">ADVANTAGE</span>A second advantage is showing innovation and speed, because the flavour was developed in just seven weeks. <span class="tag t-C">CHAIN</span>This earns positive media attention and signals that Coca-Cola listens and adapts, building trust and loyalty and helping it keep its market lead.</p>
      <p><span class="tag t-J">HOWEVER</span>However, the spicy flavour may not appeal to all, because it differs from the classic taste, risking alienating loyal or older customers — so the money spent developing and marketing it may not pay back. Launching too many flavours could also dilute the brand, weakening Coca-Cola's identity over time.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, launching Spiced is a bold, strategic move that keeps Coca-Cola competitive and relevant, and its scale and marketing reduce the risk. But success depends on whether the flavour genuinely attracts new customers without alienating the core, so a limited-edition approach that protects the classic brand is sensible.</p>`,
-     fb:"Mr. Akram's exemplar (Coca-Cola Spiced). Two advantages and two disadvantages of a strategic launch decision, with a balanced conclusion."}
+     fb:"Mr. Akram's exemplar (Coca-Cola Spiced). Two advantages and two disadvantages of a strategic launch decision, with a balanced conclusion."}  ,{marks:12, q:"Assess Aldi's use of Ansoff's Matrix growth strategies (opening more stores and moving online). (12)",
+     model:`<p><span class="tag t-P">PENETRATION</span>One reason Aldi opens more stores is to boost sales through <b>market penetration</b>, because more stores put its low-cost products within reach of new customers. <span class="tag t-C">CHAIN</span>This means more shoppers buy everyday essentials and own-brand products, so Aldi grows UK market share against Tesco and Sainsbury's and reinvests the revenue into yet more stores.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, opening 400 stores needs huge capital investment (premises, stock, 5,000 jobs), raising fixed costs and risk — if demand weakens, some stores underperform, so even penetration is risky at scale.</p>
+     <p><span class="tag t-P">MARKET DEVELOPMENT</span>Moving online is <b>market development</b> — existing products through a new channel — reaching convenience-focused customers as online grocery doubled from 3% to 6%. <span class="tag t-C">CHAIN</span>This could win urban professionals and families who can't visit stores, keeping Aldi competitive.</p>
+     <p><span class="tag t-J">CONCLUSION</span>However, online conflicts with Aldi's low-cost model, which relies on in-store simplicity and bulk buying; warehousing and delivery costs could undermine its "top quality at low prices" promise. Overall, penetration fits Aldi best; it should expand online cautiously so it does not erode its cost advantage.</p>`,
+     fb:"Mr. Akram's exemplar (Aldi). Identifies penetration and market development with the figures, balances each, and judges which fits Aldi's model."},
+  {marks:20, q:"Evaluate the growth options available to Tesla using Ansoff's Matrix (market penetration vs product development). (20)",
+     model:`<p><span class="tag t-P">PENETRATION</span>One option is <b>market penetration</b> of the electric-car market — selling more Model 3 and Model Y within the current market. <span class="tag t-C">CHAIN</span>This is relatively low risk as Tesla leads BEV sales (21% global share in 2021; Model 3 the first EV to pass 1m units), so building on brand strength and loyalty could lift sales. <span class="tag t-A">APPLY</span>It also drives economies of scale — Tesla made 1.37m vehicles in 2022 (+47%) — raising capacity utilisation and margins. <span class="tag t-J">JUDGE</span>So penetration is a solid base.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, the EV market is saturating as Ford and Volkswagen enter, so growth by selling the same models may need price cuts or heavier marketing, and a demand slowdown would stall it.</p>
+     <p><span class="tag t-P">PRODUCT DEVELOPMENT</span>An alternative is <b>product development</b> — launching new EVs such as the Cybertruck. <span class="tag t-C">CHAIN</span>The electric-truck market is forecast to grow from 101,499 units (2022) to over 1m by 2030 ($3.86bn), so early-mover advantage could build a strong position before rivals crowd in, and it fits Tesla's innovative culture. <span class="tag t-J">JUDGE</span>So product development offers higher growth potential.</p>
+     <p><span class="tag t-J">LIMITATION</span>But new products are riskier and costly — development, tooling and uncertain demand — and could divert resources from the proven core range.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Tesla should pursue both: penetration to defend its lucrative core while product development opens the fast-growing truck segment. Success depends on funding innovation without over-stretching, and on how fast rivals catch up — so a staged approach, protecting the core while scaling the Cybertruck, is recommended.</p>`,
+     fb:"Mr. Akram's exemplar (Tesla). Full evaluation of two Ansoff options with the extract figures, each challenged, ending in a 'both, staged' recommendation."}
   ],
   resources:[
-    {label:"Effect of strategic & tactical decisions on resources — lesson notes (PDF)", file:"resources/3-3-1-2-strategic-tactical-resources.pdf"}
+    {label:"Effect of strategic & tactical decisions on resources — lesson notes (PDF)", file:"resources/3-3-1-2-strategic-tactical-resources.pdf"},
+    {label:"Ansoff\u2019s Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-ansoff-matrix.pdf"}
   ]
 },
 {code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis", business:"Strengths · weaknesses · opportunities · threats", status:"soon"},
