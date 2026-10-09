@@ -239,6 +239,36 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .pecan .pk .pkl{font-size:11px;font-weight:800;letter-spacing:.4px;margin-bottom:4px}
 .pecan .pk p{margin:0;font-size:12.5px;color:var(--muted)}
 
+/* ---------- Exam papers ---------- */
+.papers-hero{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;border-radius:18px;padding:22px 24px;margin-bottom:20px;box-shadow:var(--shadow)}
+.papers-hero .eyebrow{color:var(--amber);font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.papers-hero h1{margin:6px 0 8px;font-size:25px;font-family:var(--serif);font-weight:700}
+.papers-hero p{color:#c3d0e0;font-size:13.5px;margin:0;max-width:640px}
+.ppr-cta{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--emerald);
+  border-radius:16px;padding:16px 20px;margin-bottom:24px;box-shadow:var(--shadow);cursor:pointer;transition:transform .14s,box-shadow .14s}
+.ppr-cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(15,42,74,.16)}
+.ppr-cta .ci{font-size:30px;flex:none}
+.ppr-cta .ct{flex:1;min-width:0}
+.ppr-cta .ct .k{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--emerald);text-transform:uppercase}
+.ppr-cta .ct .t{font-weight:800;font-size:17px;margin-top:3px;color:var(--ink)}
+.ppr-cta .ct .s{font-size:13px;color:var(--muted);margin-top:2px}
+.ppr-cta .cgo{background:var(--navy);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700;font-size:14px;flex:none}
+.ppr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-bottom:8px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.pcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amber)}
+.pcard .plabel{font-weight:800;font-size:16px;color:var(--ink)}
+.pcard .pcode{font-size:11.5px;color:var(--muted);font-weight:700;margin:2px 0 11px}
+.pdl{display:flex;flex-direction:column;gap:8px}
+.pdl a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;
+  font-weight:700;font-size:13.5px;color:var(--ink);transition:border-color .14s,background .14s}
+.pdl a:hover{border-color:var(--amber);background:var(--chip)}
+.pdl a .pic{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex:none}
+.pdl a.qu .pic{background:var(--navy)}
+.pdl a.ms .pic{background:var(--emerald)}
+.pdl a.er .pic{background:var(--amber-d)}
+.pdl a .pgo{margin-left:auto;font-size:12px;color:var(--amber-d);font-weight:700}
+.pdl .pmissing{opacity:.5;font-size:12.5px;color:var(--muted);padding:8px 12px;border:1px dashed var(--line);border-radius:10px}
+
 /* search overlay */
 .overlay{position:fixed;inset:0;background:rgba(10,22,38,.55);z-index:60;display:none;align-items:flex-start;justify-content:center;padding:14vh 16px 16px}
 .overlay.show{display:flex}
@@ -294,6 +324,7 @@ footer img{height:46px;opacity:.9}
   <div class="hdr-actions">
     <button class="hbtn icon" onclick="openSearch()" title="Search">&#128269;</button>
     <button class="hbtn" onclick="goHome()">&#8962; Home</button>
+    <button class="hbtn" onclick="openPapers()">&#128196; Exam papers</button>
     <button class="hbtn icon" onclick="toggleTheme()" id="themeBtn" title="Theme">&#9790;</button>
     <button class="hbtn" onclick="logout()">Sign out</button>
   </div>
@@ -325,6 +356,7 @@ footer img{height:46px;opacity:.9}
 <!-- BOTTOM NAV (mobile) -->
 <nav class="botnav hidden" id="botnav">
   <button onclick="goHome()"><span class="bi">&#8962;</span>Home</button>
+  <button onclick="openPapers()"><span class="bi">&#128196;</span>Papers</button>
   <button onclick="openSearch()"><span class="bi">&#128269;</span>Search</button>
   <button onclick="toggleTheme()" id="botTheme"><span class="bi">&#9790;</span>Theme</button>
   <button onclick="logout()"><span class="bi">&#9211;</span>Sign out</button>
@@ -422,6 +454,11 @@ function goHome(){
       <div class="t">${ct.code} · ${ct.title}</div>
       <div class="s">${started?(doneCount(ct)+'/'+totalQs(ct)+' complete · '+p+'%'):(totalQs(ct)+' questions · notes, definitions &amp; model answers')}</div></div>
       <div class="cgo">${started?'Resume →':'Begin →'}</div></div>`;}
+  html+=`<div class="ppr-cta" onclick="openPapers()"><div class="ci">📄</div>
+    <div class="ct"><div class="k">Unit 3 · past papers</div>
+    <div class="t">Exam papers, mark schemes &amp; examiner reports</div>
+    <div class="s">Every WBS13 series by year — question papers with their mark schemes and reports to download.</div></div>
+    <div class="cgo">Open →</div></div>`;
   for(const st of Object.keys(groups).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))){
     groups[st].sort((a,b)=>a.code.localeCompare(b.code,undefined,{numeric:true}));
     html+=`<div class="section-head"><span class="code">${st}</span><h2>${SUBTHEME_TITLE[st]||st}</h2></div><p class="sub-sub">${SUBTHEME_SUB[st]||""}</p><div class="grid">`;
@@ -447,6 +484,36 @@ function goHome(){
     <div class="pk"><div class="pkl" style="color:#7b2fd6">APPLY</div><p>Anchor to the business.</p></div>
     <div class="pk"><div class="pkl" style="color:#c92a2a">NOW JUDGE</div><p>Conclude how effective.</p></div></div></div>`;
   document.getElementById("appView").innerHTML=html;window.scrollTo(0,0);
+}
+
+function openPapers(){
+  closeSearch();
+  const P=(window.PAPERS||[]),B=(window.PAPERS_BANK||{});
+  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › Exam papers</div>
+  <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit 3 (WBS13)</div>
+    <h1>Exam papers</h1>
+    <p>Past question papers with their mark schemes and examiner reports, organised by year and series. Tap any item to open or download it. Use these for timed practice, then mark your work against the official scheme.</p></div>`;
+  if(B.questions||B.ms){
+    h+=`<div class="section-head"><span class="code">20</span><h2>20-mark question bank</h2></div>
+    <p class="sub-sub">A compiled set of Unit 3 20-mark questions with its mark scheme.</p><div class="ppr-grid">
+      <div class="pcard"><div class="plabel">Unit 3 · 20-mark questions</div><div class="pcode">Compiled question bank</div><div class="pdl">`;
+    h+= B.questions?`<a class="qu" href="${B.questions}" target="_blank" rel="noopener"><span class="pic">Q</span>Question bank<span class="pgo">Open →</span></a>`:``;
+    h+= B.ms?`<a class="ms" href="${B.ms}" target="_blank" rel="noopener"><span class="pic">M</span>Mark scheme<span class="pgo">Open →</span></a>`:``;
+    h+=`</div></div></div>`;
+  }
+  const years=[...P].sort((a,b)=>b.year.localeCompare(a.year,undefined,{numeric:true}));
+  years.forEach(y=>{
+    h+=`<div class="section-head"><span class="code">${y.year}</span><h2>${y.year} series</h2></div><div class="ppr-grid">`;
+    y.series.forEach(se=>{
+      h+=`<div class="pcard"><div class="plabel">${se.label} ${y.year}</div><div class="pcode">${se.paper||'WBS13/01'}</div><div class="pdl">`;
+      h+= se.qu?`<a class="qu" href="${se.qu}" target="_blank" rel="noopener"><span class="pic">Q</span>Question paper<span class="pgo">Open →</span></a>`:``;
+      h+= se.ms?`<a class="ms" href="${se.ms}" target="_blank" rel="noopener"><span class="pic">M</span>Mark scheme<span class="pgo">Open →</span></a>`:`<div class="pmissing">Mark scheme not yet available</div>`;
+      h+= se.er?`<a class="er" href="${se.er}" target="_blank" rel="noopener"><span class="pic">R</span>Examiner report<span class="pgo">Open →</span></a>`:`<div class="pmissing">Examiner report not yet available</div>`;
+      h+=`</div></div>`;
+    });
+    h+=`</div>`;
+  });
+  document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
 }
 
 function openTopic(code){
