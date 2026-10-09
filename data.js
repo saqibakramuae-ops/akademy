@@ -2218,7 +2218,79 @@ window.CURRICULUM = [
     {label:"Growth objectives & economies of scale — lesson notes (PDF)", file:"resources/3-3-2-1-economies-of-scale-notes.pdf"}
   ]
 },
-{code:"3.3.2.2", subtheme:"3.3.2", title:"Organic & inorganic growth", business:"Mergers, takeovers & methods of growth", status:"soon"},
+{
+  code:"3.3.2.2", subtheme:"3.3.2", title:"Mergers & takeovers",
+  business:"Case studies: Kraft–Cadbury, Disney, AG Barr–Funkin & LVMH–Tiffany", status:"live",
+  notes:[
+    {h:"Inorganic growth — mergers vs takeovers", html:`
+      <p><b>Inorganic (external) growth</b> happens when one business joins with another through a <b>merger</b> or a <b>takeover</b>, achieved through integration. It is faster than organic growth but costlier and riskier.</p>
+      <ul>
+        <li><b>Merger</b> — two firms <b>agree</b> to join together to form a single new business. Recent examples: British Airways + Iberia → <b>IAG</b> (2010); Glaxo Wellcome + SmithKline Beecham → <b>GSK</b> (2000); Dixons + Carphone Warehouse → <b>Dixons Carphone</b> (2014); Heinz + Kraft → <b>Kraft Heinz</b> (2015).</li>
+        <li><b>Takeover (acquisition)</b> — one firm <b>buys a controlling stake</b> in another. The buyer gains control, usually to grow fast or enter a new market.</li>
+      </ul>`},
+    {h:"Takeovers — the Disney example", html:`
+      <p>Walt Disney grew from a 1923 cartoon studio into a media giant largely by <b>acquisition</b>. Since 1990 it has spent around <b>$114bn</b> on 12 major takeovers to strengthen its content and reach:</p>
+      <ul>
+        <li><b>Pixar</b> (2006), <b>Marvel</b> (2009), <b>Lucasfilm / Star Wars</b> (2012) and <b>21st Century Fox</b> (2019) — plus Miramax, Capital Cities/ABC, Maker Studios and BAMTech.</li>
+      </ul>
+      <p>Each deal bought Disney ready-made brands, audiences and intellectual property far faster than building them organically.</p>`},
+    {h:"Hostile takeovers — Kraft & Cadbury", html:`
+      <p>A <b>hostile takeover</b> is where one company buys another <b>despite objections from the target's board</b> — the opposite of a friendly takeover where both sides agree.</p>
+      <p>In September 2009 Kraft Foods announced it wanted to buy Britain's <b>Cadbury</b>. Its $16.3bn offer was rejected by chair Sir Roger Carr, who assembled a hostile-defence team calling it "unattractive, unwanted and undervalued"; even the UK government (Lord Mandelson) opposed a low offer. Kraft raised its bid to about <b>$19.6bn</b> and the takeover completed in March 2010. Other notable hostile deals: AOL–Time Warner and Sanofi-Aventis–Genzyme.</p>`},
+    {h:"Reasons, financial risks & rewards", html:`
+      <p>Firms merge or take over for <b>synergy</b> (the combined firm worth more than the parts), faster <b>growth</b> and market share, <b>cost savings</b> and economies of scale, and quick <b>entry to new markets</b>.</p>
+      <table class="datatable">
+        <tr><th>Financial rewards</th><th>Financial risks</th></tr>
+        <tr><td>Rapid growth and higher market share; synergy and cost savings; reduced competition; new markets and revenue streams.</td><td>High purchase price may take years to recoup; culture clashes and integration problems; diseconomies of scale; overpaying; promised synergies may not appear.</td></tr>
+      </table>`}
+  ],
+  definitions:[
+    {term:"Inorganic growth", marks:2, body:`Growth achieved externally when one business joins another through a merger or takeover <span class="pt">1</span>; it is faster than organic growth but carries higher cost and risk <span class="pt">2</span>.`},
+    {term:"Merger", marks:2, body:`When two businesses agree to join together to form a single new business <span class="pt">1</span>, usually to gain scale, market share or synergy <span class="pt">2</span>.`},
+    {term:"Takeover (acquisition)", marks:2, body:`When one business buys a controlling stake in another <span class="pt">1</span>, gaining control in order to grow quickly or enter a new market <span class="pt">2</span>.`},
+    {term:"Hostile takeover", marks:2, body:`A takeover carried out despite objections from the target company's board of directors <span class="pt">1</span>, the opposite of a friendly takeover where both sides agree <span class="pt">2</span>.`},
+    {term:"Synergy", marks:2, body:`The idea that two combined businesses are worth more than the sum of their parts <span class="pt">1</span>, because merging cuts costs or raises revenue beyond what each could achieve alone <span class="pt">2</span>.`},
+    {term:"Friendly takeover", marks:2, body:`A takeover in which the target company's board agrees to the deal and co-operates with the buyer <span class="pt">1</span>, making integration smoother than a hostile takeover <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Distinguish between a merger and a takeover.",
+     model:`A merger is when two businesses agree to join to form a single new business <span class="pt">1</span>; a takeover is when one business buys a controlling stake in another, gaining control over it <span class="pt">2</span>.`,
+     fb:"Two contrasting points — mutual agreement vs one firm acquiring control."},
+    {marks:2, q:"Define the term 'hostile takeover'.",
+     model:`A hostile takeover is when one company buys another despite objections from the target's board of directors <span class="pt">1</span>, rather than with the board's agreement as in a friendly takeover <span class="pt">2</span>.`,
+     fb:"Against the board's wishes, contrasted with a friendly deal."},
+    {marks:4, q:"Explain one reason a soft-drinks firm such as AG Barr might grow by takeover rather than organically.",
+     model:`A takeover lets AG Barr enter a new market quickly <span class="pt">1</span>. This is because buying an established brand like Funkin gives instant access to the cocktail-mixer market and its customers <span class="pt">2</span>. As a result, AG Barr avoids the slow, uncertain process of building a new brand from scratch <span class="pt">3</span>, so it can diversify and start earning revenue in the new market far sooner <span class="pt">4</span>.`,
+     fb:"Link takeover to speed of market entry and an established customer base."}
+  ],
+  caseStudy:{
+    business:"Kraft–Cadbury, Disney, AG Barr–Funkin & LVMH–Tiffany",
+    intro:`<p>Mergers and takeovers in the real world.</p>
+      <ul>
+        <li><b>Kraft–Cadbury (2010):</b> a famous <b>hostile takeover</b> — Kraft's rejected $16.3bn bid was raised to ~$19.6bn and completed despite the Cadbury board's and UK government's objections.</li>
+        <li><b>Disney:</b> grew by serial acquisition — Pixar, Marvel, Lucasfilm and 21st Century Fox — buying brands and audiences rather than building them.</li>
+        <li><b>AG Barr–Funkin (2015):</b> the IrnBru maker bought cocktail-mixer brand Funkin for up to £21m (£16.5m cash + £4.5m on targets) to diversify into a new, growing market using its own distribution network.</li>
+        <li><b>LVMH–Tiffany (2021):</b> LVMH paid <b>$15.8bn</b> for Tiffany &amp; Co. — a high price, but a strong global luxury brand (value up from under $5bn in 2018 to over $7bn in 2021; the US is 26% of LVMH revenue).</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Assess the likely effects for AG Barr of taking over Funkin, the cocktail-mixer business. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One effect is diversification into a new, growing market, because Funkin operates in cocktail mixers — different from AG Barr's soft-drinks core. <span class="tag t-C">CHAIN</span>AG Barr is no longer solely dependent on IrnBru, so it spreads risk across consumer tastes; if soft-drink demand falls, Funkin revenue can cushion it, giving greater long-term financial stability.</p>
+     <p><span class="tag t-P">POINT</span>A second effect is economies of scale, because AG Barr plans to sell Funkin through its existing distribution network. <span class="tag t-C">CHAIN</span>Using infrastructure it already owns means Funkin mixers are transported more cheaply, so average costs fall and profit margins improve.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, AG Barr lacks experience in the premium, fast-changing cocktail-mixer market, which needs different marketing and consumer insight. This means it may struggle to innovate or promote Funkin effectively, so the £21m investment could underperform and expected sales growth may not materialise.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, taking over Funkin is a promising strategic move, letting AG Barr diversify and use existing assets to enter a growing market. But success depends on how well it adapts to the cocktail-mixer segment — so it is recommended AG Barr invests in specialist marketing and consumer insight; if it does, the deal should grow revenues and earn a return.</p>`,
+     fb:"Mr. Akram's exemplar (AG Barr/Funkin). Diversification + distribution economies balanced against the lack-of-experience risk, with a 'build specialist capability' conclusion."},
+    {marks:12, q:"Assess the financial risks and rewards to LVMH of its takeover of Tiffany & Co. (12)",
+     model:`<p><span class="tag t-P">RISK</span>One financial risk is the high purchase price of $15.8bn, because such a large outlay needs Tiffany to generate significant revenue to justify it. <span class="tag t-C">CHAIN</span>If sales growth is weak it could take many years to recoup, squeezing profitability in any luxury downturn and limiting investment elsewhere or shareholder returns.</p>
+     <p><span class="tag t-P">RISK</span>A second concern is modest growth so far, because the Watches & Jewellery division rose only from €10,581m (2022) to €10,902m (2023) — just €321m. <span class="tag t-C">CHAIN</span>This means the acquisition hasn't yet delivered a strong revenue uplift, so the payback may take longer than hoped.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the risk is reduced by Tiffany's strong global brand, which grew in value from under $5bn (2018) to over $7bn (2021). With a loyal customer base and a strong US presence (26% of LVMH revenue), LVMH is buying a proven, revenue-generating brand, not an unknown — so the chance of outright failure is low.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, despite the high cost and slow early growth, the financial risk to LVMH is relatively low and the deal is more likely to strengthen than harm it. Success depends on LVMH managing the brand, stimulating demand and keeping premium standards — so it is recommended LVMH invests in Tiffany's brand development and monitors performance closely.</p>`,
+     fb:"Mr. Akram's exemplar (LVMH/Tiffany). Two financial risks (price, slow growth) weighed against the strong-brand reward, concluding the risk is low — with the figures applied throughout."}
+  ],
+  resources:[
+    {label:"Mergers & takeovers — lesson notes (PDF)", file:"resources/3-3-2-2-mergers-takeovers-notes.pdf"}
+  ]
+},
 {
   code:"3.3.2.3", subtheme:"3.3.2", title:"Integration & conglomerates",
   business:"Case studies: Ferrero (Oltan & Thorntons), Heineken & GlobalReach", status:"live",
