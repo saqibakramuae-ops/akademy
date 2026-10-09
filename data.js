@@ -1753,7 +1753,38 @@ window.CURRICULUM = [
         <li><b>Market development</b> — existing products into new markets. E.g. Burberry expanding abroad; Aldi moving into online grocery.</li>
         <li><b>Product development</b> — new products into existing markets. E.g. Samsung's new phones; Tesla's Cybertruck.</li>
         <li><b>Diversification</b> — new products into new markets (highest risk). E.g. Virgin entering unrelated industries.</li>
-      </ul>`},
+      </ul>`},,
+    {h:"Portfolio analysis — the Boston Matrix", html:`
+      <p><b>Portfolio analysis</b> uses the <b>Boston (BCG) Matrix</b> to assess a firm's range of products on two axes — market growth and relative market share:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 300" style="min-width:420px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <text x="260" y="18" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)">MARKET SHARE</text>
+        <text x="150" y="36" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">High</text>
+        <text x="385" y="36" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Low</text>
+        <text x="18" y="150" text-anchor="middle" font-size="12" font-weight="800" fill="var(--muted)" transform="rotate(-90 18 150)">MARKET GROWTH</text>
+        <text x="48" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">High</text>
+        <text x="48" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Low</text>
+        <rect x="75" y="46" width="205" height="112" rx="6" fill="rgba(245,166,35,.14)" stroke="var(--amber)" stroke-width="2"/>
+        <rect x="290" y="46" width="205" height="112" rx="6" fill="rgba(27,79,214,.12)" stroke="#1b4fd6" stroke-width="2"/>
+        <rect x="75" y="168" width="205" height="112" rx="6" fill="rgba(15,163,127,.14)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="290" y="168" width="205" height="112" rx="6" fill="rgba(201,42,42,.12)" stroke="#c92a2a" stroke-width="2"/>
+        <text x="177" y="98" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">★ Star</text>
+        <text x="177" y="120" text-anchor="middle" font-size="10.5" fill="var(--muted)">high growth, high share — invest</text>
+        <text x="392" y="98" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">? Question mark</text>
+        <text x="392" y="120" text-anchor="middle" font-size="10.5" fill="var(--muted)">high growth, low share — decide</text>
+        <text x="177" y="220" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">🐄 Cash cow</text>
+        <text x="177" y="242" text-anchor="middle" font-size="10.5" fill="var(--muted)">low growth, high share — harvest</text>
+        <text x="392" y="220" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">🐕 Dog</text>
+        <text x="392" y="242" text-anchor="middle" font-size="10.5" fill="var(--muted)">low growth, low share — divest</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Stars</b> — high growth, high share; need heavy investment, later become cash cows.</li>
+        <li><b>Cash cows</b> — low growth, high share; mature, profitable, fund the stars.</li>
+        <li><b>Question marks</b> — high growth, low share; potential but need investment — back them or drop them.</li>
+        <li><b>Dogs</b> — low growth, low share; rarely worth investing in, usually sold or closed.</li>
+      </ul>
+      <p>The aim is a <b>balanced portfolio</b> — cash cows funding stars and selected question marks — guiding invest / hold / harvest / divest decisions. But it judges products only on share and growth, ignoring links between products (e.g. a "dog" service that drives loyalty), so use it alongside other tools.</p>`},
     {h:"Effect on human, physical & financial resources", html:`
       <p>Strategic and tactical decisions ripple through a firm's three resource types:</p>
       <ul>
@@ -1771,7 +1802,10 @@ window.CURRICULUM = [
     {term:"Market penetration", marks:2, body:`A growth strategy of selling more existing products into existing markets <span class="pt">1</span>; it is the lowest-risk option because the business already knows both the product and the market <span class="pt">2</span>.`},
     {term:"Market development", marks:2, body:`A growth strategy of selling existing products into new markets <span class="pt">1</span>, such as a new country or customer segment; riskier than penetration because the market is unfamiliar <span class="pt">2</span>.`},
     {term:"Product development", marks:2, body:`A growth strategy of launching new products into existing markets <span class="pt">1</span>; it uses the firm's known customer base but carries the risk and cost of developing new products <span class="pt">2</span>.`},
-    {term:"Diversification", marks:2, body:`A growth strategy of selling new products in new markets <span class="pt">1</span>; it is the highest-risk Ansoff option because both the product and the market are unfamiliar <span class="pt">2</span>.`}
+    {term:"Diversification", marks:2, body:`A growth strategy of selling new products in new markets <span class="pt">1</span>; it is the highest-risk Ansoff option because both the product and the market are unfamiliar <span class="pt">2</span>.`},
+    {term:"Portfolio analysis", marks:2, body:`Assessing the range of products a business sells, using the Boston Matrix <span class="pt">1</span>, to decide where to invest, hold, harvest or divest across the portfolio <span class="pt">2</span>.`},
+    {term:"Cash cow", marks:2, body:`A product with high market share in a low-growth market <span class="pt">1</span>; it is mature and profitable with little need for investment, generating cash to fund stars <span class="pt">2</span>.`},
+    {term:"Star (Boston Matrix)", marks:2, body:`A product with high market share in a high-growth market <span class="pt">1</span>; it needs heavy investment to sustain growth and should later become a cash cow <span class="pt">2</span>.`}
   ],
   practice:[
     {marks:2, q:"Distinguish between a strategic and a tactical decision.",
@@ -1819,13 +1853,87 @@ window.CURRICULUM = [
      <p><span class="tag t-P">PRODUCT DEVELOPMENT</span>An alternative is <b>product development</b> — launching new EVs such as the Cybertruck. <span class="tag t-C">CHAIN</span>The electric-truck market is forecast to grow from 101,499 units (2022) to over 1m by 2030 ($3.86bn), so early-mover advantage could build a strong position before rivals crowd in, and it fits Tesla's innovative culture. <span class="tag t-J">JUDGE</span>So product development offers higher growth potential.</p>
      <p><span class="tag t-J">LIMITATION</span>But new products are riskier and costly — development, tooling and uncertain demand — and could divert resources from the proven core range.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, Tesla should pursue both: penetration to defend its lucrative core while product development opens the fast-growing truck segment. Success depends on funding innovation without over-stretching, and on how fast rivals catch up — so a staged approach, protecting the core while scaling the Cybertruck, is recommended.</p>`,
-     fb:"Mr. Akram's exemplar (Tesla). Full evaluation of two Ansoff options with the extract figures, each challenged, ending in a 'both, staged' recommendation."}
+     fb:"Mr. Akram's exemplar (Tesla). Full evaluation of two Ansoff options with the extract figures, each challenged, ending in a 'both, staged' recommendation."}  ,{marks:12, q:"Assess the usefulness of portfolio (Boston Matrix) analysis to a business such as Pets at Home. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is identifying star products to prioritise, because pet accessories have a high 45% market share in a fast-growing market (forecast +£0.9bn by 2022). <span class="tag t-C">CHAIN</span>This means they are likely to generate strong returns, so directing investment there reinforces Pets at Home's lead in the fastest-growing segment and supports long-term profit.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is flagging dog products for review, because pet grooming holds just 1% share and fell 29.2%. <span class="tag t-C">CHAIN</span>This signals it may not be worth further investment while the rest of the market grows, so Pets at Home can act to avoid further losses.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the matrix can mislead, because it judges products only on share and growth. Grooming may still aid cash flow and drive loyalty and cross-selling (customers who groom also buy food and accessories), so cutting a "dog" could reduce satisfaction and brand value.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, portfolio analysis helps Pets at Home target investment and review weak products with a simple, structured, data-driven method. But its usefulness depends on using it alongside wider tools such as the product life cycle, because share and growth alone don't capture a product's full strategic value.</p>`,
+     fb:"Mr. Akram's exemplar (Pets at Home). Uses the 45% star and 1%/-29.2% dog figures; benefits plus the key limitation that the matrix ignores links between products."}
   ],
   resources:[
     {label:"Effect of strategic & tactical decisions on resources — lesson notes (PDF)", file:"resources/3-3-1-2-strategic-tactical-resources.pdf"},
-    {label:"Ansoff\u2019s Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-ansoff-matrix.pdf"}
+    {label:"Ansoff\u2019s Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-ansoff-matrix.pdf"},
+    {label:"Portfolio analysis / Boston Matrix \u2014 lesson notes (PDF)", file:"resources/3-3-1-2-boston-matrix.pdf"}
   ]
 },
 {code:"3.3.1.3", subtheme:"3.3.1", title:"SWOT analysis", business:"Strengths · weaknesses · opportunities · threats", status:"soon"},
-{code:"3.3.1.4", subtheme:"3.3.1", title:"Impact of external influences", business:"PESTLE · competitive environment · Porter's five forces", status:"soon"}
+{
+  code:"3.3.1.4", subtheme:"3.3.1", title:"Impact of external influences",
+  business:"Case studies: Burberry (China) & Toyota", status:"live",
+  notes:[
+    {h:"PESTLE analysis", html:`
+      <p>The <b>opportunities and threats</b> in a SWOT come from the <b>external environment</b>. <b>PESTLE</b> is a framework for breaking that environment down:</p>
+      <ul>
+        <li><b>P</b>olitical — government policy, stability, trade policy (e.g. restrictions on foreign firms).</li>
+        <li><b>E</b>conomic — interest rates, inflation, exchange rates, growth, incomes (e.g. falling petrol prices).</li>
+        <li><b>S</b>ocial — demographics, tastes, lifestyles, ethics.</li>
+        <li><b>T</b>echnological — new tech, e-commerce, automation (e.g. mobile commerce, WeChat).</li>
+        <li><b>L</b>egal — employment, consumer, health & safety and environmental law.</li>
+        <li><b>E</b>nvironmental — climate, sustainability pressure, resource scarcity.</li>
+      </ul>
+      <p>A business uses PESTLE to anticipate change and adapt its strategy, but factors interact and some matter far more to one firm than another.</p>`},
+    {h:"The changing competitive environment & Porter's five forces", html:`
+      <p>The competitive environment shifts as new rivals, technologies and global players arrive. <b>Porter's five forces</b> judge how attractive (profitable) an industry is:</p>
+      <ul>
+        <li><b>Competitive rivalry</b> — how fierce competition between existing firms is.</li>
+        <li><b>Threat of new entrants</b> — how easily new competitors can enter.</li>
+        <li><b>Threat of substitutes</b> — alternative products that meet the same need.</li>
+        <li><b>Bargaining power of buyers</b> — how much customers can push prices down.</li>
+        <li><b>Bargaining power of suppliers</b> — how much suppliers can push input prices up.</li>
+      </ul>
+      <p>Strong forces squeeze profit; weak forces make an industry more attractive. Firms use this to choose which markets to enter and how to compete.</p>`}
+  ],
+  definitions:[
+    {term:"PESTLE analysis", marks:2, body:`A framework for analysing the external environment under six headings — political, economic, social, technological, legal and environmental <span class="pt">1</span>; it helps a business spot the opportunities and threats that shape its strategy <span class="pt">2</span>.`},
+    {term:"External environment", marks:2, body:`The factors outside a business's control that affect it <span class="pt">1</span>, such as the economy, technology and the law; these generate the opportunities and threats in a SWOT analysis <span class="pt">2</span>.`},
+    {term:"Porter's five forces", marks:2, body:`A model assessing the competitiveness and profitability of an industry <span class="pt">1</span> through rivalry, new entrants, substitutes, and the bargaining power of buyers and suppliers <span class="pt">2</span>.`},
+    {term:"Competitive environment", marks:2, body:`The nature and intensity of competition a business faces <span class="pt">1</span>; it changes as new rivals, technologies and global players enter the market <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"State what each letter of PESTLE stands for.",
+     model:`<b>P</b>olitical, <b>E</b>conomic, <b>S</b>ocial, <b>T</b>echnological, <b>L</b>egal, <b>E</b>nvironmental <span class="pt">1</span> — the six categories of external factors a business analyses <span class="pt">2</span>.`,
+     fb:"All six letters correctly expanded."},
+    {marks:4, q:"Explain one way the external economic environment could affect a car manufacturer such as Toyota.",
+     model:`Falling petrol prices reduce the cost of running a petrol car <span class="pt">1</span>. This is because cheaper fuel makes petrol models more attractive to price-sensitive buyers <span class="pt">2</span>. As a result, demand may shift from expensive electric/hybrid cars towards petrol models <span class="pt">3</span>, so Toyota may need to adjust its product mix and could see higher use of its petrol-model capacity <span class="pt">4</span>.`,
+     fb:"Link an economic factor to a developed demand/strategy consequence."}
+  ],
+  caseStudy:{
+    business:"Burberry (China) & Toyota",
+    intro:`<p>Two external-environment scenarios used in the exam questions.</p>
+      <h3>Burberry — technology in China</h3>
+      <p>In China, <b>80% of online purchases</b> are made via smartphone or tablet. Burberry's <b>mobile app</b> (in 33 countries) and integration with <b>WeChat</b> (booking appointments with sales staff) let it fit local consumer habits — a technological opportunity — though political/economic risks (e.g. restrictions on foreign firms) could limit it.</p>
+      <h3>Toyota — economic factors</h3>
+      <p>UK petrol prices fell from <b>£1.42 to £1.34</b> per litre, which could lift demand for petrol models made at Toyota's Burnaston plant — but with <b>77.2%</b> of UK-made cars exported (49.1% to the EU), domestic price changes affect only a small share of sales.</p>
+      <p class="note-ex">A rich local source on external influences — the <b>Emirates</b> source booklet and questions — is in the downloads.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess how the external technological environment could support Burberry's growth in China. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One way technology supports growth is through mobile commerce, because 80% of online purchases in China are made on smartphones or tablets. <span class="tag t-C">CHAIN</span>Burberry's app (already in 33 countries) lets Chinese customers browse and buy directly, raising convenience and potentially sales, helping it grow market presence.</p>
+     <p><span class="tag t-P">POINT</span>A second opportunity is integration with WeChat, China's biggest social platform, because customers can book appointments with sales staff through it. <span class="tag t-C">CHAIN</span>This adapts to local habits and offers a personalised digital experience, giving Burberry an edge over luxury rivals that don't.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, technology alone may not guarantee growth, because other external factors can matter more. If the Chinese government restricts foreign firms, Burberry's digital options could be limited — so political risk could blunt the benefit of its technology investment.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the technological environment offers strong opportunities — mobile and WeChat fit Chinese habits and boost convenience and loyalty — but success depends on adapting to local regulation and political/economic risk. It is recommended Burberry strengthens its digital presence while monitoring government policy.</p>`,
+     fb:"Mr. Akram's exemplar (Burberry China). Two technological opportunities with the 80%/WeChat evidence, a political-risk limitation, and a conclusion on what success depends on."},
+    {marks:12, q:"Assess the likely impact on Toyota of falling petrol prices in the UK. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One impact is higher demand for petrol cars, because cheaper fuel (£1.42 → £1.34/litre) cuts running costs. <span class="tag t-C">CHAIN</span>Price-sensitive buyers may choose petrol over pricier electric/hybrid models, so Toyota's petrol models at Burnaston could see higher sales and capacity use.</p>
+     <p><span class="tag t-P">POINT</span>However, it could slow demand for Toyota's hybrids and EVs, because running costs become less of a concern. <span class="tag t-C">CHAIN</span>This could delay the green transition and pressure Toyota's long-term sustainability plans, forcing a change in product mix and marketing.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the impact may be limited, because 77.2% of UK-made cars are exported (49.1% to the EU), so UK petrol prices touch only a small share of sales — and other factors (EU environmental rules, exchange rates) may matter more.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, falling UK petrol prices create short-term opportunities to sell more petrol models, but because most output is exported and Toyota is committed to hybrids, the overall impact is likely modest unless the trend spreads to export markets.</p>`,
+     fb:"Mr. Akram's exemplar (Toyota). Uses the price and export figures; opportunity, a hybrid/EV downside, and an 'impact is limited because exports' judgement."}
+  ],
+  resources:[
+    {label:"PESTLE analysis — lesson notes (PDF)", file:"resources/3-3-1-4-pestle-notes.pdf"},
+    {label:"Emirates — external influences source booklet (PDF)", file:"resources/3-3-1-4-emirates-source.pdf"},
+    {label:"Emirates — exam questions (PDF)", file:"resources/3-3-1-4-emirates-questions.pdf"}
+  ]
+}
 ];
