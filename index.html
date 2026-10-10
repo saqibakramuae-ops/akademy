@@ -444,13 +444,19 @@ function continueTopic(){let last=null;try{last=localStorage.getItem('akademy_la
 function ring(p){const r=18,c=2*Math.PI*r,off=c*(1-p/100);
   return `<div class="ring"><svg width="46" height="46"><circle cx="23" cy="23" r="${r}" stroke="var(--line)" stroke-width="5" fill="none"/><circle cx="23" cy="23" r="${r}" stroke="var(--emerald)" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}"/></svg><span class="pct">${p}%</span></div>`;}
 
+function unitTopics(uid){return CURRICULUM.filter(t=>String(t.subtheme).split('.')[0]===uid);}
+function unitLiveTopics(uid){return unitTopics(uid).filter(t=>t.status==='live');}
+function unitStats(uid){let tot=0,dn=0;unitLiveTopics(uid).forEach(t=>{tot+=totalQs(t);dn+=doneCount(t);});
+  return{tot:tot,dn:dn,pct:tot?Math.round(dn/tot*100):0,live:unitLiveTopics(uid).length,topics:unitTopics(uid).length};}
+function defaultUnit(){if(window._unit)return window._unit;
+  const u=(window.UNITS||[]).find(u=>unitLiveTopics(u.id).length);return u?u.id:"3";}
+
 function goHome(){
-  closeSearch();const ov=overall();
-  const groups={};CURRICULUM.forEach(t=>{(groups[t.subtheme]=groups[t.subtheme]||[]).push(t);});
+  closeSearch();window._unit=null;const ov=overall();
   let html=`<div class="home-hero"><div class="scene">${SCENE}</div><div class="hero-veil"></div>
     <div class="hero-inner"><img class="hero-crest" src="assets/logo.png" alt="Akademy">
       <div class="hero-text"><div class="eyebrow">Welcome back</div><h1>Hello, ${firstName()} 👋</h1>
-      <p>Your exam-focused revision for Pearson Edexcel A-Level Business &amp; Economics. Read the notes, master the definitions, then test yourself with real exam-style questions and model answers.</p></div></div>
+      <p>Your exam-focused revision for Pearson Edexcel International A-Level Business. Pick a unit below, then work through the notes, definitions and real exam-style questions with model answers.</p></div></div>
     <div class="hero-stats">
       <div class="hstat"><div class="n">${ov.live}</div><div class="l">Topics available</div></div>
       <div class="hstat"><div class="n">${ov.tot}</div><div class="l">Practice &amp; exam Qs</div></div>
@@ -458,35 +464,24 @@ function goHome(){
       <div class="hstat"><div class="n">${ov.pct}<span class="u">%</span></div><div class="l">Overall progress</div></div>
     </div></div>`;
   const ct=continueTopic();
-  if(ct){const p=pct(ct),started=p>0;
+  if(ct){const p=pct(ct),started=p>0,cu=String(ct.subtheme).split('.')[0];
     html+=`<div class="continue" onclick="openTopic('${ct.code}')"><div class="ci">${ICONS[ct.code]||'📊'}</div>
       <div class="ct"><div class="k">${started?'Continue where you left off':'Start here'}</div>
       <div class="t">${ct.code} · ${ct.title}</div>
-      <div class="s">${started?(doneCount(ct)+'/'+totalQs(ct)+' complete · '+p+'%'):(totalQs(ct)+' questions · notes, definitions &amp; model answers')}</div></div>
+      <div class="s">Unit ${cu} · ${started?(doneCount(ct)+'/'+totalQs(ct)+' complete · '+p+'%'):(totalQs(ct)+' questions · notes, definitions &amp; model answers')}</div></div>
       <div class="cgo">${started?'Resume →':'Begin →'}</div></div>`;}
-  html+=`<div class="ppr-cta" onclick="openPapers()"><div class="ci">📄</div>
-    <div class="ct"><div class="k">Unit 3 · past papers</div>
-    <div class="t">Exam papers, mark schemes &amp; examiner reports</div>
-    <div class="s">Every WBS13 series by year — question papers with their mark schemes and reports to download.</div></div>
-    <div class="cgo">Open →</div></div>`;
-  html+=`<div class="ppr-cta rev-cta" onclick="openRevision()"><div class="ci">🎓</div>
-    <div class="ct"><div class="k" style="color:var(--amber-d)">Unit 3 · revision</div>
-    <div class="t">Revision summaries, mind maps &amp; practice packs</div>
-    <div class="s">One-page summaries, quick-fire questions, mixed practice and exam-pattern guides for every section.</div></div>
-    <div class="cgo">Open →</div></div>`;
-  for(const st of Object.keys(groups).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))){
-    groups[st].sort((a,b)=>a.code.localeCompare(b.code,undefined,{numeric:true}));
-    html+=`<div class="section-head"><span class="code">${st}</span><h2>${SUBTHEME_TITLE[st]||st}</h2></div><p class="sub-sub">${SUBTHEME_SUB[st]||""}</p><div class="grid">`;
-    groups[st].forEach(t=>{const ic=ICONS[t.code]||'📊';
-      if(t.status==="live"){const p=pct(t);
-        html+=`<div class="tile live" onclick="openTopic('${t.code}')"><div class="thead"><div class="tcode">${t.code}</div><div class="ticon">${ic}</div></div>
-          <h3>${t.title}</h3><div class="biz">${t.business||""}</div><div class="tbar"><i style="width:${p}%"></i></div>
-          <div class="foot"><span class="qcount">${totalQs(t)} questions</span>${ring(p)}</div></div>`;
-      }else{
-        html+=`<div class="tile soon"><div class="thead"><div class="tcode">${t.code}</div><div class="ticon" style="opacity:.4">${ic}</div></div>
-          <h3>${t.title}</h3><div class="biz">${t.business||""}</div><div class="foot"><span class="qcount">&nbsp;</span><span class="soon-tag">Coming soon</span></div></div>`;}
-    });
-    html+=`</div>`;}
+  html+=`<div class="section-head"><span class="code">IAL</span><h2>Your courses</h2></div>
+    <p class="sub-sub">Pearson Edexcel International Advanced Level Business (YBS11). Choose a unit to begin.</p><div class="grid">`;
+  (window.UNITS||[]).forEach(u=>{const st=unitStats(u.id),live=st.live>0;
+    if(live){
+      html+=`<div class="tile live" onclick="openUnit('${u.id}')"><div class="thead"><div class="tcode">Unit ${u.id} · ${u.paper}</div><div class="ticon">${u.icon}</div></div>
+        <h3>${u.title}</h3><div class="biz">${u.sub}</div><div class="tbar"><i style="width:${st.pct}%"></i></div>
+        <div class="foot"><span class="qcount">${st.live} topics</span>${ring(st.pct)}</div></div>`;
+    }else{
+      html+=`<div class="tile soon"><div class="thead"><div class="tcode">Unit ${u.id} · ${u.paper}</div><div class="ticon" style="opacity:.4">${u.icon}</div></div>
+        <h3>${u.title}</h3><div class="biz">${u.sub}</div><div class="foot"><span class="qcount">&nbsp;</span><span class="soon-tag">Coming soon</span></div></div>`;}
+  });
+  html+=`</div>`;
   html+=`<div class="band"><h3>How to use Akademy</h3><p class="sub">Four steps to top-band answers.</p><div class="steps">
     <div class="step"><div class="sn">1</div><h4>Read the notes</h4><p>Work through the spec content, broken down clearly.</p></div>
     <div class="step"><div class="sn">2</div><h4>Learn the definitions</h4><p>Every key term with a two-point model answer.</p></div>
@@ -501,16 +496,59 @@ function goHome(){
   document.getElementById("appView").innerHTML=html;window.scrollTo(0,0);
 }
 
-function openRevision(){
-  closeSearch();
-  const R=(window.REVISION||{unit:[],sections:[]});
-  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › Revision</div>
-  <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit 3 revision</div>
+function openUnit(uid){
+  closeSearch();window._unit=uid;
+  const u=(window.UNITS||[]).find(x=>x.id===uid);if(!u)return goHome();
+  const st=unitStats(uid);
+  const groups={};unitTopics(uid).forEach(t=>{(groups[t.subtheme]=groups[t.subtheme]||[]).push(t);});
+  let html=`<div class="crumbs"><span onclick="goHome()">Home</span> › Unit ${u.id} · ${u.title}</div>
+    <div class="topic-hero"><div class="tcode">Unit ${u.id} · ${u.paper} · ${u.qual}</div><h1>${u.title}</h1>
+    <div class="meta">${st.live} topics · ${st.dn}/${st.tot} questions complete</div>
+    <div class="bar"><i style="width:${st.pct}%"></i></div></div>`;
+  html+=`<div class="ppr-cta" onclick="openPapers('${uid}')"><div class="ci">📄</div>
+    <div class="ct"><div class="k">Unit ${u.id} · past papers</div>
+    <div class="t">Exam papers, mark schemes &amp; examiner reports</div>
+    <div class="s">${u.paper} series by year — question papers with mark schemes and examiner reports.</div></div>
+    <div class="cgo">Open →</div></div>`;
+  html+=`<div class="ppr-cta rev-cta" onclick="openRevision('${uid}')"><div class="ci">🎓</div>
+    <div class="ct"><div class="k" style="color:var(--amber-d)">Unit ${u.id} · revision</div>
+    <div class="t">Revision summaries, mind maps &amp; practice packs</div>
+    <div class="s">One-page summaries, quick-fire questions, mixed practice and exam-pattern guides.</div></div>
+    <div class="cgo">Open →</div></div>`;
+  if(!Object.keys(groups).length){
+    html+=`<div class="card"><p style="color:var(--muted);margin:0">Topics for this unit are being added.</p></div>`;
+  }
+  for(const stc of Object.keys(groups).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))){
+    groups[stc].sort((a,b)=>a.code.localeCompare(b.code,undefined,{numeric:true}));
+    html+=`<div class="section-head"><span class="code">${stc}</span><h2>${SUBTHEME_TITLE[stc]||stc}</h2></div><p class="sub-sub">${SUBTHEME_SUB[stc]||""}</p><div class="grid">`;
+    groups[stc].forEach(t=>{const ic=ICONS[t.code]||'📊';
+      if(t.status==="live"){const p=pct(t);
+        html+=`<div class="tile live" onclick="openTopic('${t.code}')"><div class="thead"><div class="tcode">${t.code}</div><div class="ticon">${ic}</div></div>
+          <h3>${t.title}</h3><div class="biz">${t.business||""}</div><div class="tbar"><i style="width:${p}%"></i></div>
+          <div class="foot"><span class="qcount">${totalQs(t)} questions</span>${ring(p)}</div></div>`;
+      }else{
+        html+=`<div class="tile soon"><div class="thead"><div class="tcode">${t.code}</div><div class="ticon" style="opacity:.4">${ic}</div></div>
+          <h3>${t.title}</h3><div class="biz">${t.business||""}</div><div class="foot"><span class="qcount">&nbsp;</span><span class="soon-tag">Coming soon</span></div></div>`;}
+    });
+    html+=`</div>`;}
+  document.getElementById("appView").innerHTML=html;window.scrollTo(0,0);
+}
+
+function openRevision(unit){
+  closeSearch();unit=unit||defaultUnit();window._unit=unit;
+  const u=(window.UNITS||[]).find(x=>x.id===unit)||{id:unit,title:"",paper:""};
+  const R=((window.REVISION_BY_UNIT||{})[unit])||null;
+  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › <span onclick="openUnit('${unit}')">Unit ${unit}</span> › Revision</div>
+  <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit ${unit} revision</div>
     <h1>Revision</h1>
-    <p>Everything you need to revise Unit 3: one-page summaries, quick-fire question packs, mixed-topic practice and exam-pattern guides for each section, plus full revision notes and mind maps for the whole unit. Tap any item to open or download it.</p></div>`;
+    <p>Everything you need to revise Unit ${unit} — ${u.title}: one-page summaries, quick-fire question packs, mixed-topic practice and exam-pattern guides for each section, plus full revision notes and mind maps. Tap any item to open or download it.</p></div>`;
+  if(!R||((!R.unit||!R.unit.length)&&(!R.sections||!R.sections.some(s=>s.docs&&s.docs.length)))){
+    h+=`<div class="card"><p style="color:var(--muted);margin:0">Revision material for this unit will be added here soon.</p></div>`;
+    document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);return;
+  }
   if(R.unit&&R.unit.length){
-    h+=`<div class="section-head"><span class="code">U3</span><h2>Whole-unit revision</h2></div>
-    <p class="sub-sub">Big-picture notes and mind maps covering all of Theme 3.</p><div class="rev-unit-grid">`;
+    h+=`<div class="section-head"><span class="code">U${unit}</span><h2>Whole-unit revision</h2></div>
+    <p class="sub-sub">Big-picture notes and mind maps covering the whole unit.</p><div class="rev-unit-grid">`;
     R.unit.forEach(u=>{h+=`<a class="rev-doc" href="${u.file}" target="_blank" rel="noopener"><span class="ri">${u.icon||'📘'}</span><span class="rt">${u.label}</span><span class="rd">Open →</span></a>`;});
     h+=`</div>`;
   }
@@ -524,17 +562,23 @@ function openRevision(){
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
 }
 
-function openPapers(){
-  closeSearch();
-  const P=(window.PAPERS||[]),B=(window.PAPERS_BANK||{});
-  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › Exam papers</div>
-  <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit 3 (WBS13)</div>
+function openPapers(unit){
+  closeSearch();unit=unit||defaultUnit();window._unit=unit;
+  const u=(window.UNITS||[]).find(x=>x.id===unit)||{id:unit,paper:"",title:""};
+  const P=((window.PAPERS_BY_UNIT||{})[unit])||[];
+  const B=((window.PAPERS_BANK_BY_UNIT||{})[unit])||{};
+  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › <span onclick="openUnit('${unit}')">Unit ${unit}</span> › Exam papers</div>
+  <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit ${unit} (${u.paper})</div>
     <h1>Exam papers</h1>
     <p>Past question papers with their mark schemes and examiner reports, organised by year and series. Tap any item to open or download it. Use these for timed practice, then mark your work against the official scheme.</p></div>`;
+  if(!P.length && !(B.questions||B.ms)){
+    h+=`<div class="card"><p style="color:var(--muted);margin:0">Exam papers for this unit will be added here soon.</p></div>`;
+    document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);return;
+  }
   if(B.questions||B.ms){
     h+=`<div class="section-head"><span class="code">20</span><h2>20-mark question bank</h2></div>
-    <p class="sub-sub">A compiled set of Unit 3 20-mark questions with its mark scheme.</p><div class="ppr-grid">
-      <div class="pcard"><div class="plabel">Unit 3 · 20-mark questions</div><div class="pcode">Compiled question bank</div><div class="pdl">`;
+    <p class="sub-sub">A compiled set of Unit ${unit} 20-mark questions with its mark scheme.</p><div class="ppr-grid">
+      <div class="pcard"><div class="plabel">Unit ${unit} · 20-mark questions</div><div class="pcode">Compiled question bank</div><div class="pdl">`;
     h+= B.questions?`<a class="qu" href="${B.questions}" target="_blank" rel="noopener"><span class="pic">Q</span>Question bank<span class="pgo">Open →</span></a>`:``;
     h+= B.ms?`<a class="ms" href="${B.ms}" target="_blank" rel="noopener"><span class="pic">M</span>Mark scheme<span class="pgo">Open →</span></a>`:``;
     h+=`</div></div></div>`;
@@ -543,7 +587,7 @@ function openPapers(){
   years.forEach(y=>{
     h+=`<div class="section-head"><span class="code">${y.year}</span><h2>${y.year} series</h2></div><div class="ppr-grid">`;
     y.series.forEach(se=>{
-      h+=`<div class="pcard"><div class="plabel">${se.label} ${y.year}</div><div class="pcode">${se.paper||'WBS13/01'}</div><div class="pdl">`;
+      h+=`<div class="pcard"><div class="plabel">${se.label} ${y.year}</div><div class="pcode">${se.paper||u.paper}</div><div class="pdl">`;
       h+= se.qu?`<a class="qu" href="${se.qu}" target="_blank" rel="noopener"><span class="pic">Q</span>Question paper<span class="pgo">Open →</span></a>`:``;
       h+= se.ms?`<a class="ms" href="${se.ms}" target="_blank" rel="noopener"><span class="pic">M</span>Mark scheme<span class="pgo">Open →</span></a>`:`<div class="pmissing">Mark scheme not yet available</div>`;
       h+= se.er?`<a class="er" href="${se.er}" target="_blank" rel="noopener"><span class="pic">R</span>Examiner report<span class="pgo">Open →</span></a>`:`<div class="pmissing">Examiner report not yet available</div>`;
@@ -556,7 +600,8 @@ function openPapers(){
 
 function openTopic(code){
   closeSearch();const t=CURRICULUM.find(x=>x.code===code);if(!t)return;const tp=topicProg(code);
-  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › ${t.subtheme} ${SUBTHEME_TITLE[t.subtheme]||''} › ${t.code}</div>
+  const uid=String(t.subtheme).split('.')[0];window._unit=uid;
+  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › <span onclick="openUnit('${uid}')">Unit ${uid}</span> › ${t.subtheme} ${SUBTHEME_TITLE[t.subtheme]||''} › ${t.code}</div>
   <div class="topic-hero"><div class="tcode">${t.code}</div><h1>${t.title}</h1>
   <div class="meta">${t.business||""} · ${doneCount(t)}/${totalQs(t)} questions complete</div>
   <div class="bar"><i id="heroBar" style="width:${pct(t)}%"></i></div></div>
