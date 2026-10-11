@@ -2565,8 +2565,22 @@ window.CURRICULUM = [
 },
 {
   code:"1.3.1.1", subtheme:"1.3.1", title:"The market",
-  business:"Case studies: Ocado, Oppo, Aston Martin & the airline market", status:"live",
+  business:"Case studies: Coca-Cola, Primark, Lehman's, Ocado, Oppo & Spotify", status:"live",
   notes:[
+    {h:"Mass & niche markets", html:`
+      <p>A <b>market</b> is where buyers and sellers meet to trade. Businesses choose the <b>scope</b> of the market they serve:</p>
+      <ul>
+        <li><b>Mass market</b> — selling a standardised product to a very large, broad audience (e.g. Coca-Cola). <b>Pros:</b> high sales volume, economies of scale, strong brand awareness. <b>Cons:</b> intense competition, pressure to keep prices and margins low, harder to stand out.</li>
+        <li><b>Niche market</b> — serving a small, specific segment with particular needs (e.g. Ferrari; Lehman's handmade, non-electrical goods). <b>Pros:</b> less competition, premium prices, strong loyalty. <b>Cons:</b> limited sales volume, higher risk if tastes shift, vulnerable if a big firm enters.</li>
+      </ul>`},
+    {h:"Market size, share & growth", html:`
+      <p>Three key measures let a business judge a market and its position in it:</p>
+      <ul>
+        <li><b>Market size</b> — the total sales in a market, measured by <b>value</b> (average selling price × quantity sold) or <b>volume</b> (total quantity sold). Value suits a luxury maker; volume suits a high-turnover product.</li>
+        <li><b>Market share</b> — a firm's sales as a percentage of the whole market: <b>(firm's sales ÷ total market sales) × 100</b>. E.g. 100,000 units out of 500,000 = <b>20%</b>.</li>
+        <li><b>Market growth</b> — how fast the market is expanding: <b>((New − Old) ÷ Old) × 100</b>. E.g. sporting clothing rising from £1.2bn (2010) to £2.9bn (2020) = <b>+141.7%</b>.</li>
+      </ul>
+      <p>Rising share in a growing market is the strongest position; a steady share of a shrinking market is a warning sign.</p>`},
     {h:"Adding value", html:`
       <p><b>Added value</b> is the difference between the <b>price a customer pays</b> and the <b>cost of the inputs</b> (bought-in materials and components) used to make the product or service. The more value a business adds, the more it can charge and the better it competes.</p>
       <p>Businesses add value in many ways:</p>
@@ -2593,25 +2607,48 @@ window.CURRICULUM = [
         <li><b>Direct competition</b> — two or more businesses offer the <b>same</b> product for the same market (e.g. Nike vs Adidas).</li>
         <li><b>Indirect competition (substitutes)</b> — businesses offer <b>different</b> products that meet the <b>same need</b> (e.g. Eurotunnel vs British Airways for London–Paris travel).</li>
       </ul>
-      <p>The <b>degree of competition</b> strongly influences a firm's strategy — intense rivalry (like sportswear) pushes firms to innovate, differentiate or cut prices, while small independents (e.g. corner shops facing supermarket convenience stores) must find niches or service advantages to survive.</p>
-      <p><b>Impact on customers</b> is mixed: more competition usually means <b>lower prices, more choice and better quality/service</b>, but it can also cause confusion, aggressive marketing, or — if weaker firms exit — less choice later. Markets that change rapidly like this are <b>dynamic markets</b>, and businesses must keep adapting to survive.</p>`}
+      <p>The <b>degree of competition</b> strongly influences strategy — intense rivalry (like sportswear) pushes firms to innovate, differentiate or cut prices, while small independents (e.g. corner shops facing supermarket convenience stores) must find niches or service advantages. For customers, more competition usually means <b>lower prices, more choice and better quality</b>, but can bring confusion, aggressive marketing, or less choice later if weaker firms exit.</p>
+      <p><b>Dynamic markets</b> change rapidly as tastes, technology and competition shift. <b>Online retailing</b> is a classic example — over half of purchases are now made online, with "clicks" (online-only) and "bricks and clicks" retailers (e.g. Argos, Next, H&M selling in-store and online). <b>Music streaming</b> (e.g. Spotify) is another. Firms must keep adapting their products and channels to survive.</p>`},
+    {h:"Risk & uncertainty", html:`
+      <p>Business decisions involve both risk and uncertainty — and the difference matters:</p>
+      <ul>
+        <li><b>Risk</b> is something an entrepreneur can <b>plan for</b>: the probabilities of outcomes can be estimated, the entrepreneur controls how much risk to take, and strategies can reduce it (e.g. "£100,000 profit if we hit X sales, £20,000 loss if we don't").</li>
+        <li><b>Uncertainty</b> is caused by <b>unexpected external factors outside the entrepreneur's control</b> — competitor behaviour, natural disasters, pandemics (e.g. COVID), economic, cultural or political change. The outcomes can't be accurately estimated, so strategies can only be devised once the change has happened.</li>
+      </ul>
+      <p>Managers reduce risk through research, planning, forecasting, diversification and contingency planning — but uncertainty can only be managed, never removed.</p>`}
   ],
   definitions:[
+    {term:"Mass market", marks:2, body:`A large, broad market where a business sells a standardised product to as many customers as possible <span class="pt">1</span>; it offers high volume and economies of scale but intense competition and low margins <span class="pt">2</span>.`},
+    {term:"Niche market", marks:2, body:`A small, specific segment of a market with particular needs <span class="pt">1</span>; it faces less competition and can charge premium prices, but has limited sales volume <span class="pt">2</span>.`},
+    {term:"Market size", marks:2, body:`The total sales in a market, measured by value (price × quantity) or volume (quantity sold) <span class="pt">1</span>; it shows how large the opportunity is and whether a market is worth entering <span class="pt">2</span>.`},
+    {term:"Market share", marks:2, body:`A firm's sales as a percentage of total market sales <span class="pt">1</span>, calculated as (firm's sales ÷ total market sales) × 100; a higher share signals a stronger competitive position <span class="pt">2</span>.`},
+    {term:"Market growth", marks:2, body:`The percentage change in the size of a market over a period <span class="pt">1</span>, calculated as ((new − old) ÷ old) × 100; a growing market offers more opportunity for sales <span class="pt">2</span>.`},
     {term:"Added value", marks:2, body:`The difference between the price a customer pays and the cost of the inputs used to make a product or service <span class="pt">1</span>; a business adds it through branding, design, quality, convenience or service, letting it charge more and compete <span class="pt">2</span>.`},
     {term:"Product differentiation", marks:2, body:`Making a product stand out from competitors through a distinctive characteristic <span class="pt">1</span>; this builds brand loyalty and can support higher prices, sales and growth <span class="pt">2</span>.`},
     {term:"Unique selling point (USP)", marks:2, body:`A feature that makes a product distinct from its rivals and hard to copy <span class="pt">1</span>; it gives customers a clear reason to choose it rather than competing on price alone <span class="pt">2</span>.`},
     {term:"Direct competition", marks:2, body:`When two or more businesses offer the same product for the same market <span class="pt">1</span>, such as Nike and Adidas competing for the same customers <span class="pt">2</span>.`},
     {term:"Indirect competition", marks:2, body:`When businesses offer different products that satisfy the same customer need <span class="pt">1</span>, such as the Eurotunnel train versus a flight for London–Paris travel; also called substitutes <span class="pt">2</span>.`},
-    {term:"Dynamic market", marks:2, body:`A market that changes rapidly as tastes, technology and competition shift <span class="pt">1</span>, forcing businesses to keep adapting their products and strategies to survive <span class="pt">2</span>.`}
+    {term:"Dynamic market", marks:2, body:`A market that changes rapidly as tastes, technology and competition shift <span class="pt">1</span>, forcing businesses to keep adapting their products and strategies to survive <span class="pt">2</span>.`},
+    {term:"Risk", marks:2, body:`A situation where the probabilities of outcomes can be estimated and planned for <span class="pt">1</span>; the entrepreneur controls how much risk to take and can use strategies to reduce it <span class="pt">2</span>.`},
+    {term:"Uncertainty", marks:2, body:`A situation caused by unexpected external factors outside the entrepreneur's control, such as a pandemic or competitor action <span class="pt">1</span>; the outcomes cannot be accurately predicted, so they can only be managed once they occur <span class="pt">2</span>.`}
   ],
   practice:[
     {marks:2, q:"Define the term 'added value'.",
      model:`Added value is the difference between the price a customer pays and the cost of the inputs used to make the product <span class="pt">1</span>; businesses raise it through branding, design, quality or convenience so they can charge more and compete <span class="pt">2</span>.`,
      fb:"Price-minus-input-cost, plus how a firm adds it — two developed points, not just an example."},
-    {marks:2, q:"Distinguish between direct and indirect competition.",
-     model:`Direct competition is when firms offer the same product for the same market (e.g. Nike and Adidas) <span class="pt">1</span>; indirect competition is when firms offer different products that meet the same need, such as a train versus a flight <span class="pt">2</span>.`,
-     fb:"Two contrasting points — same product vs different products meeting the same need."},
-    {marks:4, q:"Explain one way a change in consumer tastes could affect a business operating in a dynamic market.",
+    {marks:2, q:"Distinguish between a mass market and a niche market.",
+     model:`A mass market sells a standardised product to a large, broad audience (e.g. Coca-Cola) <span class="pt">1</span>; a niche market serves a small, specific segment with particular needs (e.g. Ferrari), facing less competition but lower volume <span class="pt">2</span>.`,
+     fb:"Two contrasting points — broad/standardised vs small/specific."},
+    {marks:2, q:"A business sells 120,000 units in a market where total sales are 800,000 units. Calculate its market share.",
+     model:`Market share = (firm's sales ÷ total market sales) × 100 <span class="pt">1</span> = (120,000 ÷ 800,000) × 100 = <b>15%</b> <span class="pt">2</span>.`,
+     fb:"Correct formula and a correctly computed percentage."},
+    {marks:4, q:"A market was worth £1.2bn in 2010 and £2.9bn in 2020. Calculate the market growth over the period and briefly interpret it.",
+     model:`Market growth = ((new − old) ÷ old) × 100 <span class="pt">1</span> = ((2.9 − 1.2) ÷ 1.2) × 100 = <b>+141.7%</b> <span class="pt">2</span>. This is very rapid growth <span class="pt">3</span>, signalling a strong opportunity but likely attracting new entrants and intensifying competition <span class="pt">4</span>.`,
+     fb:"Formula, correct figure (~141.7%), and a short interpretation of what it means."},
+    {marks:2, q:"Define the term 'uncertainty' in a business context.",
+     model:`Uncertainty is caused by unexpected external factors outside a business's control, such as a pandemic or competitor action <span class="pt">1</span>; the outcomes cannot be accurately estimated, so they can only be managed once they occur <span class="pt">2</span>.`,
+     fb:"External/unpredictable, contrasted implicitly with plannable risk."},
+    {marks:4, q:"Explain one way changing consumer tastes could affect a business operating in a dynamic market.",
      model:`A shift towards healthier eating reduces demand for high-sugar products <span class="pt">1</span>. This is because health-conscious consumers switch to lower-calorie alternatives <span class="pt">2</span>. As a result, a traditional ice-cream maker could lose sales and market share <span class="pt">3</span>, so it must reformulate or launch healthier lines to stay competitive in a fast-changing market <span class="pt">4</span>.`,
      fb:"Link a taste change to a demand effect and a developed business consequence."},
     {marks:4, q:"Explain how Aston Martin uses product differentiation to gain a competitive advantage. (4)",
@@ -2619,16 +2656,26 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Aston Martin). A specific differentiating feature linked to a competitive-advantage consequence."}
   ],
   caseStudy:{
-    business:"Ocado, Oppo, Aston Martin & the airline market",
+    business:"Coca-Cola, Primark, Lehman's, Ocado, Oppo & Spotify",
     intro:`<p>Real businesses used in the exam questions.</p>
       <ul>
-        <li><b>Ocado</b> — an online supermarket that adds value through convenience and personalised service (app ordering, flexible slots, named-driver reminder texts); weekly orders grew from 120,000 (2012) to 230,000 (2016) and revenue from £680m to £1,258m.</li>
-        <li><b>Oppo</b> — a healthier ice-cream brand differentiating on a lower-calorie recipe (fresh milk, coconut oil, stevia); expanded from trials to over 1,600 stores.</li>
-        <li><b>Aston Martin</b> — differentiates its luxury cars on design and durability to stand out from Bentley and Rolls-Royce.</li>
-        <li><b>The airline market</b> — intense competition (e.g. easyJet, Ryanair, BA) and its mixed effects on customers.</li>
+        <li><b>Coca-Cola</b> — a classic <b>mass-market</b> business selling a standardised product worldwide.</li>
+        <li><b>Primark</b> — a mass-market fashion retailer facing intense competition (Next, M&amp;S) and thin margins, with no online sales.</li>
+        <li><b>Lehman's</b> — a <b>niche</b> seller of handmade, non-electrical goods (wooden toys, oil lamps) charging premium prices.</li>
+        <li><b>Ocado</b> — adds value through convenience; weekly orders grew from 120,000 (2012) to 230,000 (2016), revenue £680m → £1,258m.</li>
+        <li><b>Oppo</b> — differentiates on a healthier, lower-calorie recipe; grew to 1,600+ stores.</li>
+        <li><b>Spotify</b> — operating in the fast-changing, <b>dynamic</b> music-streaming market.</li>
       </ul>`
   },
   exam:[
+    {marks:6, q:"Assess the difficulties Primark might face from operating in a mass market. (6)",
+     model:`<p><span class="tag t-P">POINT</span>One difficulty is high competition, because the mass market has many large fashion retailers such as Next and M&amp;S. <span class="tag t-C">CHAIN</span>This forces Primark to keep differentiating through price and fast fashion to retain market share, so it faces constant pressure to innovate while still keeping prices low.</p>
+     <p><span class="tag t-P">POINT</span>A second difficulty is low profit margins, because Primark sells at very low prices to appeal to a wide audience and does not sell online, limiting its sales channels. <span class="tag t-C">CHAIN</span>It must keep costs very low (e.g. little advertising) to stay profitable, so it may struggle to respond to changing consumer behaviour or invest in long-term growth.</p>`,
+     fb:"Mr. Akram's exemplar (Primark). Two mass-market difficulties — competition and thin margins/no online — each developed to a business consequence."},
+    {marks:6, q:"Analyse two possible benefits to a niche business such as Lehman's of selling to a niche market. (6)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is higher prices, because Lehman's sells unique, handmade, low-tech products not widely available elsewhere. <span class="tag t-C">CHAIN</span>With less competition in the niche and customers valuing traditional items like wooden toys and oil lamps, Lehman's can charge premium prices and protect higher profit margins.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is strong brand loyalty, because many products are made locally by long-serving skilled workers, so customers see the brand as trustworthy and authentic. <span class="tag t-C">CHAIN</span>This drives repeat purchases and positive word of mouth, giving Lehman's a steady customer base and supporting long-term stability and growth.</p>`,
+     fb:"Mr. Akram's exemplar (Lehman's). Two niche benefits — premium pricing and loyalty — each developed; strong application to the handmade product."},
     {marks:8, q:"Assess how successfully Ocado has added value to its grocery service. (8)",
      model:`<p><span class="tag t-P">POINT</span>Ocado has added value through convenience and personalised service, because it lets customers shop online with flexible delivery slots and reminder texts naming the driver. <span class="tag t-C">CHAIN</span>This creates a more customer-friendly experience than traditional supermarkets, so Ocado stands out in a competitive market; weekly orders grew from 120,000 (2012) to 230,000 (2016) and revenue from £680m to £1,258m, building strong brand loyalty.</p>
      <p><span class="tag t-J">HOWEVER</span>However, these extra services raise Ocado's operating costs, because colour-coded bag packing, delivery accuracy and in-house technology need major financial and human resources. This means that, even though customers value the service, Ocado could struggle to protect profit margins if prices can't rise enough to cover the costs.</p>
@@ -2639,15 +2686,16 @@ window.CURRICULUM = [
      <p><span class="tag t-J">HOWEVER</span>However, setting the right price is also very important, because Oppo competes with large global brands that can offer lower prices and wide promotions. If Oppo's prices are much higher, price-sensitive customers may still pick cheaper alternatives, making it hard to turn interest into repeat sales.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, differentiation is the most important factor in Oppo's success, because its unique health positioning gives a strong competitive edge. But success depends on continuing to innovate while keeping pricing competitive — so it is recommended Oppo combines health-driven innovation with competitive pricing to widen its market and secure long-term growth.</p>`,
      fb:"Mr. Akram's exemplar (Oppo, 10). Differentiation benefit with the recipe/1,600-stores evidence, balanced against pricing, concluding differentiation matters most but depends on price."},
-    {marks:8, q:"Assess how competition in the airline market may affect customers. (8)",
-     model:`<p><span class="tag t-P">POINT</span>One effect is lower prices and more choice, because carriers like easyJet, Ryanair and BA compete hard for the same passengers. <span class="tag t-C">CHAIN</span>To win custom they cut fares, add routes and offer extras, so customers get cheaper flights and more options — raising consumer welfare.</p>
-     <p><span class="tag t-P">POINT</span>Competition can also drive better quality and service, because airlines differentiate on reliability, comfort and add-ons. <span class="tag t-C">CHAIN</span>This pushes firms to improve the flying experience to retain customers.</p>
-     <p><span class="tag t-J">HOWEVER</span>However, intense competition has downsides for customers, because cost-cutting can mean hidden charges, cramped seating or poorer service, and confusing pricing. If weaker airlines are forced out, choice may fall and prices rise again later.</p>
-     <p><span class="tag t-J">CONCLUSION</span>Overall, competition mostly benefits airline customers through lower prices and more choice, but the gains depend on it staying genuine — if the market consolidates, those benefits could weaken.</p>`,
-     fb:"Mr. Akram's exemplar (airline market). Price/choice and quality benefits balanced against cost-cutting downsides and possible consolidation."}
+    {marks:10, q:"Assess the consequences to a business such as Spotify of operating in a dynamic market. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One positive consequence is the chance to grow fast, because a dynamic market like music streaming constantly offers new customers and ways to consume. <span class="tag t-C">CHAIN</span>Spotify can keep adding features (playlists, podcasts) and reach new segments, so it can expand its subscriber base and revenue quickly.</p>
+     <p><span class="tag t-P">POINT</span>A second positive is that innovation builds competitive advantage, because adapting faster than rivals keeps Spotify relevant. <span class="tag t-C">CHAIN</span>Continuous product development strengthens customer loyalty and brand image in a market where tastes shift quickly.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, a dynamic market also raises costs and risk, because Spotify must invest heavily and constantly in technology and content to keep up, and new rivals (Apple Music, Amazon Music) can erode its lead. Failing to adapt could quickly make it obsolete.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, operating in a dynamic market offers Spotify strong growth but demands relentless, costly innovation — so success depends on funding continual development without sacrificing profitability.</p>`,
+     fb:"Mr. Akram's exemplar (Spotify). Growth and innovation upsides balanced against the cost/risk of constant change, with a funding-dependent judgement."}
   ],
   resources:[
-    {label:"The market (adding value, differentiation & competition) — lesson notes (PDF)", file:"resources/1-3-1-1-the-market-notes.pdf"}
+    {label:"The market (mass/niche, size & share, competition, risk) — lesson notes (PDF)", file:"resources/1-3-1-1-the-market-notes.pdf"},
+    {label:"Market size, share & growth — calculation practice (PDF)", file:"resources/1-3-1-1-market-calcs-practice.pdf"}
   ]
 },
 {
