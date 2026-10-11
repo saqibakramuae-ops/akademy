@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
-window.SUBTHEME_SUB = {"1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","1.3.2":"The market (demand & supply)","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"1.3.2":"Unit 1: Marketing and people \u2014 demand, supply and how they interact to set market price, plus price and income elasticity of demand.","1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"1.3.2.1":"\ud83d\udcc9","1.3.2.2":"\ud83d\udcc8","1.3.2.3":"\u2696\ufe0f","1.3.2.4":"\ud83d\udcb9","1.3.2.5":"\ud83d\udcb0","1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 window.PAPERS = [{"year": "2020", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-jan-qu.pdf", "ms": "resources/papers/wbs13-2020-jan-ms.pdf", "er": "resources/papers/wbs13-2020-jan-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-oct-qu.pdf", "ms": "resources/papers/wbs13-2020-oct-ms.pdf", "er": "resources/papers/wbs13-2020-oct-er.pdf"}]}, {"year": "2021", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jan-qu.pdf", "ms": "resources/papers/wbs13-2021-jan-ms.pdf", "er": "resources/papers/wbs13-2021-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jun-qu.pdf", "ms": "resources/papers/wbs13-2021-jun-ms.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-oct-qu.pdf", "ms": "resources/papers/wbs13-2021-oct-ms.pdf", "er": "resources/papers/wbs13-2021-oct-er.pdf"}]}, {"year": "2022", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jan-qu.pdf", "ms": "resources/papers/wbs13-2022-jan-ms.pdf", "er": "resources/papers/wbs13-2022-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jun-qu.pdf", "ms": "resources/papers/wbs13-2022-jun-ms.pdf", "er": "resources/papers/wbs13-2022-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-oct-qu.pdf", "ms": "resources/papers/wbs13-2022-oct-ms.pdf", "er": "resources/papers/wbs13-2022-oct-er.pdf"}]}, {"year": "2023", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jan-qu.pdf", "ms": "resources/papers/wbs13-2023-jan-ms.pdf", "er": "resources/papers/wbs13-2023-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jun-qu.pdf", "ms": "resources/papers/wbs13-2023-jun-ms.pdf", "er": "resources/papers/wbs13-2023-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-oct-qu.pdf", "ms": "resources/papers/wbs13-2023-oct-ms.pdf", "er": "resources/papers/wbs13-2023-oct-er.pdf"}]}, {"year": "2024", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jan-qu.pdf", "ms": "resources/papers/wbs13-2024-jan-ms.pdf", "er": "resources/papers/wbs13-2024-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jun-qu.pdf", "ms": "resources/papers/wbs13-2024-jun-ms.pdf", "er": "resources/papers/wbs13-2024-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-oct-qu.pdf", "ms": "resources/papers/wbs13-2024-oct-ms.pdf", "er": "resources/papers/wbs13-2024-oct-er.pdf"}]}, {"year": "2025", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jan-qu.pdf", "ms": "resources/papers/wbs13-2025-jan-ms.pdf", "er": "resources/papers/wbs13-2025-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jun-qu.pdf", "ms": "resources/papers/wbs13-2025-jun-ms.pdf", "er": "resources/papers/wbs13-2025-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-oct-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-ms.pdf", "er": "resources/papers/wbs13-2025-oct-er.pdf"}, {"label": "October (Paper A)", "paper": "WBS13/01A", "qu": "resources/papers/wbs13-2025-oct-a-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-a-ms.pdf", "er": "resources/papers/wbs13-2025-oct-a-er.pdf"}]}];
 window.PAPERS_BANK = {"questions": "resources/papers/wbs13-20mark-questions.pdf", "ms": "resources/papers/wbs13-20mark-markscheme.pdf"};
 window.REVISION = {"unit": [{"label": "Theme 3 — full revision notes", "icon": "📘", "file": "resources/revision/rev-unit3-theme3-notes.pdf"}, {"label": "Unit 3 — mind maps", "icon": "🧠", "file": "resources/revision/rev-unit3-mind-maps.pdf"}], "sections": [{"code": "3.3.1", "title": "Business objectives & strategy", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-1-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-1-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-1-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-1-exam-patterns.pdf"}]}, {"code": "3.3.2", "title": "Business growth", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-2-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-2-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-2-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-2-exam-patterns.pdf"}]}, {"code": "3.3.3", "title": "Decision-making techniques", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-3-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-3-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-3-exam-patterns.pdf"}, {"label": "Rapid-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-rapid-fire.pdf"}]}, {"code": "3.3.4", "title": "Influences on business decisions", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-4-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-4-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-4-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-4-exam-patterns.pdf"}]}, {"code": "3.3.5", "title": "Assessing competitiveness", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-5-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-5-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-5-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-5-exam-patterns.pdf"}]}, {"code": "3.3.6", "title": "Managing change", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-6-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-6-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-6-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-6-exam-patterns.pdf"}]}]};
@@ -2931,5 +2931,226 @@ window.CURRICULUM = [
   resources:[
     {label:"Market positioning, mapping & segmentation — lesson notes (PDF)", file:"resources/1-3-1-3-market-positioning-notes.pdf"}
   ]
-}
+},
+{
+  code:"1.3.2.1", subtheme:"1.3.2", title:"Demand",
+  business:"Case studies: Ape Snacks & Ocado", status:"live",
+  notes:[
+    {h:"What is demand?", html:`
+      <p>A <b>market</b> is any place where buyers and sellers meet to trade. The <b>market price</b> depends on <b>demand</b> and <b>supply</b>. <b>Demand</b> is the quantity of a product customers are willing to buy at a given price.</p>
+      <p>The <b>demand curve</b> slopes downward: as price falls, quantity demanded rises. A change in <b>price only</b> causes a <b>movement along</b> the curve (e.g. price £50 → 30 units; price £100 → 25 units). A change in any <b>non-price factor</b> causes the whole curve to <b>shift</b>.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 340 250" style="min-width:300px;width:100%;max-width:420px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="50" y1="20" x2="50" y2="215" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="50" y1="215" x2="320" y2="215" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="30" y="120" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)" transform="rotate(-90 30 120)">Price</text>
+        <text x="185" y="238" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)">Quantity</text>
+        <line x1="70" y1="40" x2="250" y2="200" stroke="var(--navy)" stroke-width="2.5"/>
+        <text x="256" y="200" font-size="11" font-weight="800" fill="var(--navy)">D1</text>
+        <line x1="130" y1="40" x2="310" y2="200" stroke="var(--emerald)" stroke-width="2.5" stroke-dasharray="6 4"/>
+        <text x="300" y="196" font-size="11" font-weight="800" fill="var(--emerald)">D2</text>
+        <path d="M175,70 q40,0 55,8" fill="none" stroke="var(--amber)" stroke-width="2" marker-end="url(#akar)"/>
+        <defs><marker id="akar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8 z" fill="var(--amber)"/></marker></defs>
+        <text x="186" y="60" font-size="10" fill="var(--amber-d)">increase in demand</text>
+      </svg>
+      </div>
+      <p>An <b>increase in demand</b> shifts the curve right (D1→D2); a <b>decrease</b> shifts it left.</p>`},
+    {h:"What shifts the demand curve?", html:`
+      <ul>
+        <li><b>Consumer incomes</b> — for a <b>normal good</b>, higher income raises demand; for a <b>luxury good</b> demand rises more than proportionally; for an <b>inferior good</b> higher income <i>reduces</i> demand.</li>
+        <li><b>Tastes, fashion &amp; preferences</b> — e.g. the surge in demand for healthy products and smoothies.</li>
+        <li><b>Advertising &amp; branding</b> — persuasive advertising raises demand and builds loyalty.</li>
+        <li><b>Demographics</b> — population size/structure, e.g. an ageing population lifting demand for healthcare and holidays.</li>
+        <li><b>Seasonality</b> — e.g. a UK holiday park busy in summer, quiet in winter.</li>
+        <li><b>External shocks</b> — surprise events (e.g. a pandemic) causing sudden rises or falls.</li>
+        <li><b>Substitutes &amp; complements</b> — a substitute replaces another good (fresh vs instant coffee); complements are bought together (lamb &amp; mint sauce), so a change in the price of one shifts demand for the other.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Demand", marks:2, body:`The quantity of a product or service that customers are willing and able to buy at a given price <span class="pt">1</span>; it rises as price falls, shown by a downward-sloping demand curve <span class="pt">2</span>.`},
+    {term:"Shift in demand", marks:2, body:`A movement of the whole demand curve caused by a non-price factor such as income or tastes <span class="pt">1</span>; a right shift is an increase and a left shift a decrease in demand, unlike a movement along the curve caused by price <span class="pt">2</span>.`},
+    {term:"Normal good", marks:2, body:`A good for which demand rises as consumer incomes rise <span class="pt">1</span>, and falls when incomes fall — the usual relationship for most products <span class="pt">2</span>.`},
+    {term:"Inferior good", marks:2, body:`A good for which demand falls as consumer incomes rise <span class="pt">1</span>, because customers switch to higher-quality alternatives they can now afford <span class="pt">2</span>.`},
+    {term:"Substitute good", marks:2, body:`A product that can replace another to meet the same need <span class="pt">1</span>; if the price of one rises, demand for its substitute tends to rise (e.g. fresh vs instant coffee) <span class="pt">2</span>.`},
+    {term:"Complementary good", marks:2, body:`A product bought together with another, in joint demand <span class="pt">1</span>; if demand for one rises so does the other (e.g. lamb and mint sauce) <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'demand'.",
+     model:`Demand is the quantity of a product customers are willing and able to buy at a given price <span class="pt">1</span>; it increases as price falls, shown by a downward-sloping demand curve <span class="pt">2</span>.`,
+     fb:"Quantity willing/able to buy at a price, plus the price relationship."},
+    {marks:2, q:"Distinguish between a substitute good and a complementary good.",
+     model:`A substitute replaces another good to meet the same need, so a rise in one's price raises demand for the other (fresh vs instant coffee) <span class="pt">1</span>; complements are bought together, so a rise in demand for one raises demand for the other (lamb and mint sauce) <span class="pt">2</span>.`,
+     fb:"Two contrasting points — replacement vs joint demand, each with an example."},
+    {marks:4, q:"Explain the difference between a movement along and a shift in the demand curve.",
+     model:`A movement along the demand curve is caused only by a change in the product's own price <span class="pt">1</span>, changing the quantity demanded (e.g. a price rise reduces quantity demanded) <span class="pt">2</span>. A shift of the whole curve is caused by a non-price factor such as income or tastes <span class="pt">3</span>, changing demand at every price — right for an increase, left for a decrease <span class="pt">4</span>.`,
+     fb:"Price → movement; non-price factor → shift, each developed."},
+    {marks:4, q:"Explain one way changing consumer preferences have affected demand for Ocado.",
+     model:`Changing preferences towards online grocery shopping increased demand for Ocado <span class="pt">1</span>. This is because more customers now prefer ordering online to visiting stores <span class="pt">2</span>. As Extract D shows, average weekly orders rose from 120,000 (2012) to 230,000 (2016) — a 92% rise <span class="pt">3</span>, lifting revenue from £680m to £1,258m and boosting growth <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Ocado). Links a preference shift to the order/revenue figures."}
+  ],
+  caseStudy:{
+    business:"Ape Snacks & Ocado",
+    intro:`<p>Businesses used in the demand questions.</p>
+      <ul>
+        <li><b>Ape Snacks</b> — a health-focused coconut-snack brand in a market where global coconut demand rose 500%; demand is shaped by celebrity endorsement, trends and new competition.</li>
+        <li><b>Ocado</b> — online grocer whose demand rose with the shift to online shopping (120,000 → 230,000 weekly orders, 2012–16).</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the factors that could increase or decrease demand for Ape Snacks. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One factor that could increase demand is celebrity endorsement, because celebrities shape preferences in health-conscious markets. <span class="tag t-C">CHAIN</span>If a popular athlete is seen eating coconut-based snacks, public interest and trust rise, so more consumers associate Ape Snacks with a healthy, trendy lifestyle and try the product. <span class="tag t-J">HOWEVER</span>However, not everyone is swayed by endorsements — some dislike coconut or avoid trend-driven products — so the boost may be short-lived unless taste, quality and price deliver.</p>
+     <p><span class="tag t-P">POINT</span>A factor that could decrease demand is rising competition, because a 500% rise in global coconut demand has attracted new entrants with similar or cheaper products. <span class="tag t-C">CHAIN</span>More options make it easier for customers to switch, so without continued innovation or a clear USP, Ape Snacks' share could fall. <span class="tag t-J">HOWEVER</span>However, its early-mover, ethical, health-focused brand may have built loyalty that makes customers harder for rivals to win.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, demand for Ape Snacks is most influenced by tastes and competition. Endorsements and trends can lift demand quickly, but sustaining it depends on protecting its USP and brand loyalty as the market grows.</p>`,
+     fb:"Mr. Akram's exemplar (Ape Snacks, 10). An increasing factor (endorsement) and a decreasing factor (competition), each with a counter, and a tastes/competition judgement."}
+  ],
+  resources:[
+    {label:"Theory of demand — lesson notes (PDF)", file:"resources/1-3-2-1-demand-notes.pdf"}
+  ]
+},
+{
+  code:"1.3.2.2", subtheme:"1.3.2", title:"Supply",
+  business:"Case studies: Beaverbrooks & the car market", status:"live",
+  notes:[
+    {h:"What is supply?", html:`
+      <p><b>Supply</b> is the quantity of a product that suppliers are willing to offer for sale at a given price. The <b>supply curve</b> slopes <b>upward</b>: as price rises, firms are willing to supply more because higher prices mean higher potential profit.</p>
+      <p>As with demand, a change in the product's own <b>price</b> causes a <b>movement along</b> the supply curve, while a change in a non-price factor causes the whole curve to <b>shift</b>.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 340 250" style="min-width:300px;width:100%;max-width:420px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="50" y1="20" x2="50" y2="215" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="50" y1="215" x2="320" y2="215" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="30" y="120" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)" transform="rotate(-90 30 120)">Price</text>
+        <text x="185" y="238" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)">Quantity</text>
+        <line x1="70" y1="200" x2="250" y2="40" stroke="var(--navy)" stroke-width="2.5"/>
+        <text x="252" y="44" font-size="11" font-weight="800" fill="var(--navy)">S1</text>
+        <line x1="130" y1="200" x2="310" y2="40" stroke="var(--emerald)" stroke-width="2.5" stroke-dasharray="6 4"/>
+        <text x="300" y="52" font-size="11" font-weight="800" fill="var(--emerald)">S2</text>
+        <path d="M150,130 q45,-6 70,-2" fill="none" stroke="var(--amber)" stroke-width="2" marker-end="url(#akar2)"/>
+        <defs><marker id="akar2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8 z" fill="var(--amber)"/></marker></defs>
+        <text x="150" y="122" font-size="10" fill="var(--amber-d)">increase in supply</text>
+      </svg>
+      </div>
+      <p>An <b>increase in supply</b> shifts the curve right (S1→S2); a <b>decrease</b> shifts it left.</p>`},
+    {h:"What shifts the supply curve?", html:`
+      <ul>
+        <li><b>Costs of production</b> — higher input costs (e.g. raw materials, wages) make supplying dearer, so supply falls (shift left); cheaper inputs raise supply (shift right).</li>
+        <li><b>New technology</b> — makes firms more efficient and lowers unit costs, raising supply.</li>
+        <li><b>Indirect taxes</b> — a tax on goods (e.g. VAT, customs duty) raises production cost, so supply falls.</li>
+        <li><b>Subsidies</b> — government payments make producing cheaper, so supply rises; withdrawing a subsidy reduces supply.</li>
+        <li><b>External shocks</b> — events like COVID, poor weather, disasters or conflict can sharply cut supply.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Supply", marks:2, body:`The quantity of a product that suppliers are willing to offer for sale at a given price <span class="pt">1</span>; it rises as price rises, shown by an upward-sloping supply curve <span class="pt">2</span>.`},
+    {term:"Shift in supply", marks:2, body:`A movement of the whole supply curve caused by a non-price factor such as costs, technology or taxes <span class="pt">1</span>; a right shift is an increase and a left shift a decrease in supply <span class="pt">2</span>.`},
+    {term:"Indirect tax", marks:2, body:`A tax placed on goods and services, such as VAT or customs duty <span class="pt">1</span>; it raises the cost of production, reducing the quantity firms are willing to supply <span class="pt">2</span>.`},
+    {term:"Subsidy", marks:2, body:`A payment from government to producers to encourage output <span class="pt">1</span>; it lowers production costs, increasing the quantity supplied <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'supply'.",
+     model:`Supply is the quantity of a product suppliers are willing to offer for sale at a given price <span class="pt">1</span>; it rises as price rises, shown by an upward-sloping supply curve <span class="pt">2</span>.`,
+     fb:"Quantity offered at a price, plus the upward price relationship."},
+    {marks:4, q:"Explain how a government subsidy to electric-car producers would affect the supply of electric cars.",
+     model:`A subsidy lowers producers' costs <span class="pt">1</span>. This is because the government payment reduces the cost of producing each electric car <span class="pt">2</span>. As a result, higher profit margins encourage firms to make more <span class="pt">3</span>, so the supply of electric cars increases and the supply curve shifts right <span class="pt">4</span>.`,
+     fb:"Link the subsidy to lower cost, higher margin and a rightward supply shift."},
+    {marks:4, q:"Explain how an increase in indirect taxes would affect the supply of a product.",
+     model:`An increase in indirect tax raises the cost of supplying the product <span class="pt">1</span>. This is because the firm must pay more per unit sold <span class="pt">2</span>. As a result, less profit can be made at each price <span class="pt">3</span>, so firms reduce output and the supply curve shifts left <span class="pt">4</span>.`,
+     fb:"Tax → higher cost → lower output → leftward shift."}
+  ],
+  caseStudy:{
+    business:"Beaverbrooks & the car market",
+    intro:`<p>Businesses used in the supply questions.</p>
+      <ul>
+        <li><b>Beaverbrooks</b> — a UK jeweller whose silver-jewellery supply is affected by the price of silver and by new production technology.</li>
+        <li><b>The car market</b> — supply shifts from steel/rubber price changes, indirect-tax changes, subsidies for EVs, and new factory robotics.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Assess two factors that could affect the supply of Beaverbrooks' silver jewellery. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One factor is the price of silver, the main input. <span class="tag t-C">CHAIN</span>If global silver prices rise (higher demand or less mining), Beaverbrooks' production costs rise, so it may cut the quantity it produces and see thinner margins — reducing supply. <span class="tag t-J">HOWEVER</span>However, if it holds a large silver inventory, it can keep producing without buying at higher prices, giving a temporary buffer that protects supply.</p>
+     <p><span class="tag t-P">POINT</span>A second factor is new production technology, such as automation or 3D printing. <span class="tag t-C">CHAIN</span>This raises speed and efficiency and cuts reliance on skilled labour, so Beaverbrooks could produce more at a lower unit cost — increasing supply. <span class="tag t-J">HOWEVER</span>However, the high upfront cost of such technology may be unaffordable, delaying modernisation and limiting any rise in supply.</p>`,
+     fb:"Mr. Akram's exemplar (Beaverbrooks, 8). Input price (silver) and technology, each developed and balanced with a counter."}
+  ],
+  resources:[
+    {label:"Theory of supply — lesson notes (PDF)", file:"resources/1-3-2-2-supply-notes.pdf"}
+  ]
+},
+{
+  code:"1.3.2.3", subtheme:"1.3.2", title:"Markets (demand & supply)",
+  business:"Case studies: Sony, the car market & interactive equilibrium", status:"live",
+  notes:[
+    {h:"Market equilibrium", html:`
+      <p>Demand and supply can be shown on one diagram. <b>Market equilibrium</b> is the point where the demand and supply curves cross — the <b>equilibrium price</b> and <b>equilibrium quantity</b>. At this price, buyers can buy exactly what they want and sellers sell exactly what they want, so there is no shortage or surplus.</p>
+      <p>Above the equilibrium price there is <b>excess supply</b> (a surplus), pushing price down; below it there is <b>excess demand</b> (a shortage), pushing price up. Any change in demand or supply creates a <b>new equilibrium</b>.</p>`},
+    {h:"Try it — interactive equilibrium", html:`
+      <p>Drag the sliders to <b>shift demand or supply</b> and watch the equilibrium price and quantity change.</p>
+      <div class="ds-interactive">
+      <svg id="akDSsvg" viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+        <line x1="55" y1="20" x2="55" y2="250" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="55" y1="250" x2="335" y2="250" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="30" y="135" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)" transform="rotate(-90 30 135)">Price</text>
+        <text x="195" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="var(--muted)">Quantity</text>
+        <line id="akEgx" x1="192.5" y1="115" x2="192.5" y2="250" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 3"/>
+        <line id="akEgy" x1="55" y1="115" x2="192.5" y2="115" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 3"/>
+        <line id="akD" x1="55" y1="25" x2="330" y2="205" stroke="var(--navy)" stroke-width="2.5"/>
+        <line id="akS" x1="55" y1="205" x2="330" y2="25" stroke="var(--emerald)" stroke-width="2.5"/>
+        <circle id="akE" cx="192.5" cy="115" r="5.5" fill="var(--amber)" stroke="#fff" stroke-width="1.5"/>
+        <text x="322" y="214" font-size="11" font-weight="800" fill="var(--navy)">D</text>
+        <text x="322" y="34" font-size="11" font-weight="800" fill="var(--emerald)">S</text>
+      </svg>
+      <div class="ds-controls">
+        <label><span>Shift demand</span><input type="range" id="akDS_d" min="-30" max="30" value="0" step="1" oninput="akDS()"></label>
+        <label><span>Shift supply</span><input type="range" id="akDS_s" min="-30" max="30" value="0" step="1" oninput="akDS()"></label>
+        <div id="akDSout">Equilibrium price ≈ <b>60</b> &middot; quantity ≈ <b>50</b></div>
+        <button class="ds-reset" onclick="akDSreset()">Reset</button>
+      </div>
+      </div>`},
+    {h:"Shifts and the new equilibrium", html:`
+      <table class="datatable">
+        <tr><th>Change</th><th>Equilibrium price</th><th>Equilibrium quantity</th></tr>
+        <tr><td>Demand rises (shift right)</td><td>Up</td><td>Up</td></tr>
+        <tr><td>Demand falls (shift left)</td><td>Down</td><td>Down</td></tr>
+        <tr><td>Supply rises (shift right)</td><td>Down</td><td>Up</td></tr>
+        <tr><td>Supply falls (shift left)</td><td>Up</td><td>Down</td></tr>
+      </table>
+      <p>Worked scenarios: a Sony console promotion (demand right → higher price &amp; quantity); a new Hilton opening near a Marriott (demand for Marriott left); a fall in steel costs for car makers (supply right → lower price, higher quantity); a government report on vaping risks (demand for e-cigarettes left); EV subsidies (supply right); new factory robotics (supply right); UAE unemployment hitting luxury holidays (demand left).</p>`}
+  ],
+  definitions:[
+    {term:"Market equilibrium", marks:2, body:`The point where the demand and supply curves cross, so quantity demanded equals quantity supplied <span class="pt">1</span>; there is no shortage or surplus at this price <span class="pt">2</span>.`},
+    {term:"Equilibrium price", marks:2, body:`The market price at which demand equals supply <span class="pt">1</span>; at this price buyers buy exactly what they want and sellers sell exactly what they want <span class="pt">2</span>.`},
+    {term:"Excess demand (shortage)", marks:2, body:`When price is below equilibrium so quantity demanded exceeds quantity supplied <span class="pt">1</span>; the shortage pushes the price upward towards equilibrium <span class="pt">2</span>.`},
+    {term:"Excess supply (surplus)", marks:2, body:`When price is above equilibrium so quantity supplied exceeds quantity demanded <span class="pt">1</span>; the surplus pushes the price downward towards equilibrium <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'market equilibrium'.",
+     model:`Market equilibrium is the point where the demand and supply curves cross, so quantity demanded equals quantity supplied <span class="pt">1</span>; at this equilibrium price there is no shortage or surplus <span class="pt">2</span>.`,
+     fb:"Where D=S, no shortage/surplus — two developed points."},
+    {marks:4, q:"Analyse the effect on the market for Sony games consoles of a successful promotional campaign.",
+     model:`A successful campaign increases demand, shifting the demand curve right <span class="pt">1</span>. This is because advertising raises consumers' desire to buy at every price <span class="pt">2</span>. As a result, at the old price there is excess demand, pushing the price up <span class="pt">3</span>, so the new equilibrium has both a higher price and a higher quantity of consoles traded <span class="pt">4</span>.`,
+     fb:"Demand shifts right → higher equilibrium price and quantity, clearly chained."},
+    {marks:4, q:"Analyse the effect on the market for cars of a fall in the cost of steel.",
+     model:`A fall in steel costs lowers production costs, increasing supply and shifting the supply curve right <span class="pt">1</span>. This is because cars become cheaper to make, so firms supply more at each price <span class="pt">2</span>. As a result, there is downward pressure on price <span class="pt">3</span>, so the new equilibrium has a lower price and a higher quantity of cars sold <span class="pt">4</span>.`,
+     fb:"Lower input cost → supply right → lower price, higher quantity."}
+  ],
+  caseStudy:{
+    business:"Sony, the car market & market scenarios",
+    intro:`<p>Scenarios used to practise demand/supply diagrams:</p>
+      <ul>
+        <li><b>Demand shifts:</b> Sony console promotion (right); a new Hilton near a Marriott (Marriott demand left); a government vaping-risk report (e-cigarettes left); UAE unemployment (luxury holidays left).</li>
+        <li><b>Supply shifts:</b> falling steel/rubber costs for cars (right); EV producer subsidies (right); new Nissan factory robotics (right).</li>
+      </ul>
+      <p class="note-ex">Use the interactive diagram above to test each scenario — shift the right curve and read off the new equilibrium.</p>`
+  },
+  exam:[
+    {marks:8, q:"A gym chain sees a sudden surge in demand for memberships. Analyse the likely effect on the market, using a demand and supply diagram. (8)",
+     model:`<p><span class="tag t-P">POINT</span>The surge increases demand, shifting the demand curve to the right. <span class="tag t-C">CHAIN</span>At the original price there is now excess demand (a shortage), because more people want memberships than are available, so price is pushed up and the market moves to a new equilibrium with a higher price and higher quantity of memberships.</p>
+     <p><span class="tag t-P">POINT</span>In the short run supply is hard to expand, because gyms have fixed space and equipment. <span class="tag t-C">CHAIN</span>So most of the adjustment shows up as a higher price rather than much extra quantity, raising revenue per member but risking some customers being priced out.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the effect depends on how long the surge lasts and whether gyms can add capacity. If it is seasonal (e.g. a January spike), investing in more space is risky; if demand is sustained, expanding capacity shifts supply right and moderates the price rise.</p>`,
+     fb:"Mr. Akram's exemplar (gym surge). Demand-right analysis plus fixed short-run supply, judged on how lasting the surge is."}
+  ],
+  resources:[
+    {label:"Interaction of demand & supply (equilibrium) — lesson notes (PDF)", file:"resources/1-3-2-3-equilibrium-notes.pdf"}
+  ]
+},
+{code:"1.3.2.4", subtheme:"1.3.2", title:"Price elasticity of demand (PED)", business:"Elastic vs inelastic demand & pricing", status:"soon"},
+{code:"1.3.2.5", subtheme:"1.3.2", title:"Income elasticity of demand (YED)", business:"Normal, luxury & inferior goods", status:"soon"}
 ];

@@ -218,6 +218,16 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .datatable th,.datatable td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap}
 .datatable th{background:var(--chip);font-weight:700}
 
+/* interactive supply & demand diagram */
+.ds-interactive{background:var(--chip);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.ds-interactive svg{display:block;width:100%;height:auto;max-width:460px;margin:0 auto}
+.ds-controls{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.ds-controls label{font-size:13px;font-weight:700;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.ds-controls label span{flex:none;width:118px}
+.ds-controls input[type=range]{flex:1;accent-color:var(--amber);height:26px}
+#akDSout{font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 12px;text-align:center}
+.ds-reset{align-self:flex-start;background:var(--chip);border:1px solid var(--line);color:var(--ink);padding:7px 12px;border-radius:8px;font-weight:700;font-size:12.5px}
+
 /* resources */
 .reslist{display:flex;flex-direction:column;gap:10px}
 .resitem{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;background:var(--card);transition:border-color .14s}
@@ -441,6 +451,22 @@ function overall(){let tot=0,dn=0;const L=liveTopics();L.forEach(t=>{tot+=totalQ
 function firstName(){let s=((USER||'').split('@')[0].split(/[._\-0-9]/)[0])||'there';return s.charAt(0).toUpperCase()+s.slice(1);}
 function continueTopic(){let last=null;try{last=localStorage.getItem('akademy_last_'+USER);}catch(e){}const L=liveTopics();if(last){const t=L.find(x=>x.code===last);if(t)return t;}let best=null,bp=-1;L.forEach(t=>{const p=pct(t);if(p>bp){bp=p;best=t;}});return best||L[0]||null;}
 
+function akDS(){
+  var svg=document.getElementById('akDSsvg');if(!svg)return;
+  var de=document.getElementById('akDS_d'),se=document.getElementById('akDS_s');
+  var ds=de?+de.value:0, ss=se?+se.value:0;
+  var X=function(q){return 55+q*2.75;}, Y=function(p){return 250-Math.max(0,Math.min(112,p))*2.25;};
+  function L(id,x1,y1,x2,y2){var e=document.getElementById(id);if(e){e.setAttribute('x1',x1);e.setAttribute('y1',y1);e.setAttribute('x2',x2);e.setAttribute('y2',y2);}}
+  L('akD',X(0),Y(100+ds),X(100),Y(20+ds));
+  L('akS',X(0),Y(20+ss),X(100),Y(100+ss));
+  var q=(80+ds-ss)/1.6; q=Math.max(0,Math.min(100,q)); var p=20+ss+0.8*q;
+  var dot=document.getElementById('akE');if(dot){dot.setAttribute('cx',X(q));dot.setAttribute('cy',Y(p));}
+  L('akEgx',X(q),Y(p),X(q),250); L('akEgy',55,Y(p),X(q),Y(p));
+  var out=document.getElementById('akDSout');
+  if(out)out.innerHTML='Equilibrium price ≈ <b>'+Math.round(p)+'</b> &middot; quantity ≈ <b>'+Math.round(q)+'</b>';
+}
+function akDSreset(){var d=document.getElementById('akDS_d'),s=document.getElementById('akDS_s');if(d)d.value=0;if(s)s.value=0;akDS();}
+
 function ring(p){const r=18,c=2*Math.PI*r,off=c*(1-p/100);
   return `<div class="ring"><svg width="46" height="46"><circle cx="23" cy="23" r="${r}" stroke="var(--line)" stroke-width="5" fill="none"/><circle cx="23" cy="23" r="${r}" stroke="var(--emerald)" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}"/></svg><span class="pct">${p}%</span></div>`;}
 
@@ -624,6 +650,7 @@ function openTopic(code){
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
   h+=`</div></div>`;
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);window._topic=code;
+  if(window.akDS)akDS();
   try{localStorage.setItem('akademy_last_'+USER,code);}catch(e){}
 }
 
