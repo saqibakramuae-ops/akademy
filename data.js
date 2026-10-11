@@ -2691,7 +2691,14 @@ window.CURRICULUM = [
      <p><span class="tag t-P">POINT</span>A second positive is that innovation builds competitive advantage, because adapting faster than rivals keeps Spotify relevant. <span class="tag t-C">CHAIN</span>Continuous product development strengthens customer loyalty and brand image in a market where tastes shift quickly.</p>
      <p><span class="tag t-J">HOWEVER</span>However, a dynamic market also raises costs and risk, because Spotify must invest heavily and constantly in technology and content to keep up, and new rivals (Apple Music, Amazon Music) can erode its lead. Failing to adapt could quickly make it obsolete.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, operating in a dynamic market offers Spotify strong growth but demands relentless, costly innovation — so success depends on funding continual development without sacrificing profitability.</p>`,
-     fb:"Mr. Akram's exemplar (Spotify). Growth and innovation upsides balanced against the cost/risk of constant change, with a funding-dependent judgement."}
+     fb:"Mr. Akram's exemplar (Spotify). Growth and innovation upsides balanced against the cost/risk of constant change, with a funding-dependent judgement."},
+{marks:20, q:"Evaluate whether operating in a dynamic market will prove successful for Shoe2U, a 3D-printed custom-shoe business. (20)",
+     model:`<p><span class="tag t-P">POINT</span>One reason it could succeed is that Shoe2U fits fast-changing consumer tastes, because a dynamic footwear market constantly chases the latest trends. <span class="tag t-E">EXPLAIN</span>Shoe2U uses apps and 3D-printing technology to let customers design their own shoes. <span class="tag t-C">CHAIN</span>This differentiation gives a clear USP that mass rivals lack, so it can charge a little above competitors and appeal to trend-driven buyers. <span class="tag t-J">JUDGE</span>So the dynamic market plays to Shoe2U's uniqueness.</p>
+     <p><span class="tag t-P">POINT</span>A second strength is the sheer size of the market, worth around £6bn. <span class="tag t-C">CHAIN</span>Even a small niche within such a large market could generate enough revenue for Shoe2U to survive and grow, and its market research suggests the product will appeal. <span class="tag t-J">JUDGE</span>So there is genuine room to establish itself.</p>
+     <p><span class="tag t-J">LIMITATION</span>However, a fashion market usually relies on top designers producing the latest styles, which sits awkwardly with letting customers design shoes — unless only the basic shape is customised. The market research is also unconvincing given its small sample size, so demand is uncertain.</p>
+     <p><span class="tag t-J">LIMITATION</span>Competition is a bigger threat: once 3D-printing becomes widespread, large high-street retailers could add in-store shoe-scanning, creating intense, direct competition. As an unknown brand with a limited promotional budget and low barriers to entry online, Shoe2U may struggle to build awareness.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the dynamic market offers Shoe2U real opportunity through its customisation USP, but success depends on protecting that USP before rivals copy it and on building brand awareness on a small budget. It is recommended Shoe2U focuses on a defensible niche and invests in marketing early, because without awareness and a protected USP the intense competition of a dynamic market could overwhelm it.</p>`,
+     fb:"Mr. Akram's exemplar (Shoe2U, 20). Customisation USP and market size weighed against demand uncertainty and fast-arriving competition, concluding success depends on protecting the USP and building awareness."}
   ],
   resources:[
     {label:"The market (mass/niche, size & share, competition, risk) — lesson notes (PDF)", file:"resources/1-3-1-1-the-market-notes.pdf"},
@@ -2796,5 +2803,104 @@ window.CURRICULUM = [
     {label:"Market research, data types & sampling — lesson notes (PDF)", file:"resources/1-3-1-2-market-research-notes.pdf"}
   ]
 },
-{code:"1.3.1.3", subtheme:"1.3.1", title:"Market positioning", business:"Market mapping, segmentation & USP", status:"soon"}
+{
+  code:"1.3.1.3", subtheme:"1.3.1", title:"Market positioning",
+  business:"Case studies: Ferrari, Wizz Air, Emirates, Rolex & global chocolate", status:"live",
+  notes:[
+    {h:"Market positioning", html:`
+      <p><b>Market positioning</b> is the process of establishing the <b>image or identity</b> of a brand or product so that consumers perceive it in a certain way relative to rivals. It answers "what does this brand stand for in the customer's mind?"</p>
+      <ul>
+        <li><b>Ferrari</b> is positioned as an expensive, exclusive luxury car maker.</li>
+        <li><b>Wizz Air</b> is positioned as a low-cost, low-frills airline.</li>
+      </ul>
+      <p>Clear positioning differentiates a business, guides its marketing mix and helps it attract and keep the right customers.</p>`},
+    {h:"Market mapping (perceptual maps)", html:`
+      <p>A <b>market map</b> (perceptual map) plots competitors and their products on a graph using two chosen criteria (e.g. price and quality). It shows who the competition is and helps <b>spot a gap in the market</b>.</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 440 320" style="min-width:380px;width:100%;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="60" y1="30" x2="60" y2="270" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="60" y1="150" x2="410" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)">HIGH PRICE</text>
+        <text x="60" y="288" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)">LOW PRICE</text>
+        <text x="95" y="145" text-anchor="start" font-size="11" font-weight="800" fill="var(--muted)">LOW QUALITY</text>
+        <text x="405" y="145" text-anchor="end" font-size="11" font-weight="800" fill="var(--muted)">HIGH QUALITY</text>
+        <circle cx="140" cy="90" r="7" fill="#c92a2a"/><text x="140" y="78" text-anchor="middle" font-size="9.5" fill="var(--ink)">Overpriced</text>
+        <circle cx="350" cy="70" r="7" fill="var(--emerald)"/><text x="350" y="58" text-anchor="middle" font-size="9.5" fill="var(--ink)">Premium</text>
+        <circle cx="150" cy="215" r="7" fill="var(--amber)"/><text x="150" y="233" text-anchor="middle" font-size="9.5" fill="var(--ink)">Budget</text>
+        <circle cx="350" cy="220" r="9" fill="none" stroke="#1b4fd6" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="350" y="245" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1b4fd6">Gap? (value)</text>
+      </svg>
+      </div>
+      <p>The firm chooses the criteria — price vs quality, necessity vs luxury, lo-tech vs high-tech, and so on. <b>Benefits:</b> reveals gaps/opportunities and shows how crowded a position is. <b>Drawbacks:</b> it's a snapshot, based on perception not fact, and a "gap" may exist because there's no demand there.</p>`},
+    {h:"Market segmentation", html:`
+      <p><b>Market segmentation</b> is dividing a market into groups of customers with similar characteristics, so products and marketing can be <b>targeted</b>. Common bases:</p>
+      <ul>
+        <li><b>Demographic</b> — age, gender, income, family (e.g. toys by age).</li>
+        <li><b>Geographic</b> — region or country (e.g. McDonald's tailoring menus locally).</li>
+        <li><b>Psychographic</b> — lifestyle, values, personality (e.g. Coca-Cola's lifestyle branding).</li>
+        <li><b>Behavioural</b> — usage, loyalty, occasion (e.g. Nike targeting committed athletes).</li>
+      </ul>
+      <p><b>Advantages:</b> tailored products and promotions, higher sales, less wasted marketing, and spotting new segments. <b>Drawbacks:</b> research and multiple product lines are costly, segments can be too small, and focusing narrowly may miss the wider market.</p>`},
+    {h:"Product vs market orientation", html:`
+      <ul>
+        <li><b>Product orientation</b> — the business leads with the <b>product's design, quality or performance</b>, confident it will sell without much market research (e.g. Apple iPhones, Gillette razors, Rolex). Drives innovation and strong USPs, but risks making something customers don't want.</li>
+        <li><b>Market orientation</b> — the business <b>reacts to what customers want</b>, basing decisions on market research into needs and wants. Most successful firms are market-orientated: it lowers the risk of failure, though it can make a firm reactive and less radically innovative.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Market positioning", marks:2, body:`The process of establishing the image or identity of a brand so consumers perceive it in a certain way relative to rivals <span class="pt">1</span>; it differentiates the business and guides its marketing <span class="pt">2</span>.`},
+    {term:"Market mapping", marks:2, body:`Plotting competitors and their products on a graph using two criteria such as price and quality <span class="pt">1</span>; it helps a business see the competition and spot a gap in the market <span class="pt">2</span>.`},
+    {term:"Market segmentation", marks:2, body:`Dividing a market into groups of customers with similar characteristics <span class="pt">1</span>, so a business can target each group with suitable products and marketing <span class="pt">2</span>.`},
+    {term:"Market segment", marks:2, body:`A group of customers within a market who share similar needs or characteristics <span class="pt">1</span>, such as an age group or income band, that a business can target <span class="pt">2</span>.`},
+    {term:"Product orientation", marks:2, body:`An approach that prioritises the product's design, quality or performance, confident it will sell <span class="pt">1</span>; it drives innovation but risks ignoring what customers actually want <span class="pt">2</span>.`},
+    {term:"Market orientation", marks:2, body:`An approach where decisions are based on market research into customer needs and wants <span class="pt">1</span>; it reduces the risk of failure but can make a business reactive rather than innovative <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'market positioning'.",
+     model:`Market positioning is establishing the image or identity of a brand so customers perceive it in a certain way relative to rivals <span class="pt">1</span>, such as Ferrari as a luxury brand; this differentiates the business and guides its marketing <span class="pt">2</span>.`,
+     fb:"Image/identity in the customer's mind, plus its purpose — two developed points."},
+    {marks:2, q:"Distinguish between product orientation and market orientation.",
+     model:`Product orientation leads with the product's design and quality, confident it will sell (e.g. Apple) <span class="pt">1</span>; market orientation bases decisions on market research into what customers want, reducing the risk of failure <span class="pt">2</span>.`,
+     fb:"Product-led vs customer/research-led — two contrasting points."},
+    {marks:4, q:"Explain how product orientation suits a business such as Rolex.",
+     model:`Product orientation means Rolex focuses on designing and producing a high-quality product before considering customer needs <span class="pt">1</span>. This fits Rolex because it emphasises craftsmanship and precision — each watch is made by skilled Swiss engineers to founder Hans Wilsdorf's quality standards <span class="pt">2</span>. As a result, Rolex builds a global reputation for luxury and quality <span class="pt">3</span>, so customers buy for the brand and craftsmanship, driving strong sales and premium prices <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Rolex). Links product-led focus on quality/craftsmanship to brand reputation and premium sales."},
+    {marks:4, q:"Explain one way a fast-food business such as McDonald's could use market segmentation.",
+     model:`McDonald's can use geographic segmentation, tailoring its menu to each region <span class="pt">1</span>. This is because tastes and dietary rules differ by country, so it offers local items (e.g. different menus in different markets) <span class="pt">2</span>. As a result, products match local preferences <span class="pt">3</span>, increasing relevance, customer satisfaction and sales in each market <span class="pt">4</span>.`,
+     fb:"Name a segmentation base and link it to tailored products and higher sales."}
+  ],
+  caseStudy:{
+    business:"Ferrari, Wizz Air, Emirates, Rolex & global chocolate",
+    intro:`<p>Businesses used in the positioning questions.</p>
+      <ul>
+        <li><b>Ferrari &amp; Wizz Air</b> — opposite positions: exclusive luxury vs low-cost, low-frills.</li>
+        <li><b>Emirates</b> — a premium airline whose positioning underpins its success.</li>
+        <li><b>Rolex</b> — product-orientated, leading on craftsmanship and quality.</li>
+        <li><b>Global chocolate market</b> — heavily segmented (age, income, occasion, lifestyle) by large and small manufacturers.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the likely importance of its market positioning to the success of a business such as Emirates. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One reason positioning is important is that it differentiates Emirates as a premium airline, because it is known for superior service, modern aircraft and in-flight experience. <span class="tag t-C">CHAIN</span>This makes travellers perceive Emirates as higher quality than budget rivals, so it can charge premium fares and attract loyal, less price-sensitive customers — supporting revenue and brand strength.</p>
+     <p><span class="tag t-P">POINT</span>Positioning also guides its whole marketing mix, because a premium image shapes pricing, sponsorships and advertising. <span class="tag t-C">CHAIN</span>Consistency across these reinforces the brand, helping Emirates stand out in a crowded global market and win repeat custom.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, positioning alone doesn't guarantee success, because a premium image is costly to maintain (new aircraft, service standards) and vulnerable to recessions or fuel-price shocks when customers trade down. Operational reliability and cost control may matter just as much.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, market positioning is very important to Emirates because it underpins its premium pricing and loyalty, but its success depends on consistently delivering the quality the position promises while managing costs — so positioning works only alongside strong operations.</p>`,
+     fb:"Mr. Akram's exemplar (Emirates). Premium differentiation and marketing-mix consistency balanced against the cost/vulnerability of a premium position."},
+    {marks:10, q:"Assess the benefits to a large chocolate manufacturer of using market segmentation. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is tailored products and promotions, because segmenting by age, income or occasion lets the firm design different bars and campaigns for each group. <span class="tag t-C">CHAIN</span>Marketing is more relevant and less wasted, so conversion and sales rise across multiple segments rather than relying on one product for everyone.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is spotting and filling gaps, because segmentation reveals under-served groups (e.g. healthier or premium gifting segments). <span class="tag t-C">CHAIN</span>Launching targeted products there wins new customers and can command higher prices, growing market share.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, segmentation is costly, because research and running many product lines and campaigns raise expenses, and some segments may be too small to be profitable. A large firm risks spreading itself too thin versus a focused rival.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, segmentation benefits a large chocolate manufacturer by lifting sales and reach, but its value depends on each segment being big enough to justify the cost — so it should target the most profitable segments rather than all of them.</p>`,
+     fb:"Mr. Akram's exemplar (chocolate). Tailored marketing and gap-filling benefits balanced against cost and small-segment risk."},
+    {marks:10, q:"Assess whether a product-orientated approach is the best strategy for a technology business such as Apple. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One strength is innovation and strong USPs, because a product-orientated firm leads with cutting-edge design rather than following research. <span class="tag t-C">CHAIN</span>Apple can create products customers didn't know they wanted (e.g. category-defining devices), building a premium brand and loyal following that supports high prices and margins.</p>
+     <p><span class="tag t-P">POINT</span>It also enables first-mover advantage, because launching ahead of rivals sets the standard. <span class="tag t-C">CHAIN</span>This strengthens brand leadership and lets Apple capture the market before competitors respond.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, product orientation is risky, because without market research the firm may misjudge demand and invest heavily in products that flop. A market-orientated approach lowers this risk by grounding decisions in customer needs — and most successful firms blend both.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, product orientation suits Apple because innovation is its core advantage, but it is best combined with market insight to avoid costly misses — so a largely product-led approach, informed by customer feedback, is strongest.</p>`,
+     fb:"Mr. Akram's exemplar (Apple). Innovation/first-mover strengths of product orientation balanced against its risk, concluding a blend works best."}
+  ],
+  resources:[
+    {label:"Market positioning, mapping & segmentation — lesson notes (PDF)", file:"resources/1-3-1-3-market-positioning-notes.pdf"}
+  ]
+}
 ];
