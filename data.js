@@ -3270,7 +3270,9 @@ window.CURRICULUM = [
      fb:"Correct %ΔQd, YED = +1.67, classified normal/luxury."},
     {marks:4, q:"Demand for bus travel falls from 12,000 to 9,000 after incomes rise 10%. Calculate YED and classify the good.",
      model:`%ΔQd = (9,000−12,000)/12,000 × 100 = −25% <span class="pt">1</span>. YED = −25 ÷ 10 = <b>−2.5</b> <span class="pt">2</span>. YED is negative, so bus travel is an <b>inferior good</b> <span class="pt">3</span> — as incomes rise, people switch to cars or taxis, cutting demand <span class="pt">4</span>.`,
-     fb:"Correct negative %ΔQd, YED = −2.5, classified inferior."}
+     fb:"Correct negative %ΔQd, YED = −2.5, classified inferior."}  ,{marks:4, q:"Approved Food, a budget discount-food retailer, saw demand rise from 2,000 to 3,500 orders when average incomes fell 2.2%. Calculate the YED and interpret it.",
+     model:`%ΔQd = (3,500−2,000)/2,000 × 100 = +75% <span class="pt">1</span>. YED = 75 ÷ −2.2 = <b>−34.09</b> <span class="pt">2</span>. The strongly negative value means it is an <b>inferior good</b> <span class="pt">3</span> whose demand is extremely sensitive to income — a 1% fall in income raises demand by about 34%, so Approved Food is very recession-proof and should plan extra stock and deliveries when incomes fall <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Approved Food). %ΔQd +75%, YED −34.09, interpreted as a strongly inferior, recession-proof good."}
   ],
   caseStudy:{
     business:"iPads, trainers & bus travel",
