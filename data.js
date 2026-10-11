@@ -3997,5 +3997,83 @@ window.CURRICULUM = [
     {label:"Financial &amp; non-financial methods — lesson notes (PDF)", file:"resources/1-3-4-4-motivation-methods-notes.pdf"}
   ]
 },
-{code:"1.3.4.5", subtheme:"1.3.4", title:"Leadership", business:"Leadership styles & their influence", status:"soon"}
+{
+  code:"1.3.4.5", subtheme:"1.3.4", title:"Leadership",
+  business:"Case studies: Alibaba, Disney & a growing start-up",
+  status:"live",
+  notes:[
+    {h:"Management vs leadership", html:`
+      <p>The two overlap but differ:</p>
+      <ul>
+        <li><b>Leadership</b> — inspiring people: setting a vision, motivating and guiding, focused on the <b>future</b>, using influence, driving change and taking risks.</li>
+        <li><b>Management</b> — organising work: planning and controlling to get tasks done, focused on the <b>present</b>, using authority and rules, seeking stability.</li>
+      </ul>
+      <p>A leader exercises authority through a <b>leadership style</b> — the way the functions of leadership are carried out.</p>`},
+    {h:"The four leadership styles", html:`
+      <ul>
+        <li><b>Autocratic (authoritarian)</b> — leaders make all decisions and delegate little; communication is top-down with no feedback. Fast in a crisis, but can demotivate.</li>
+        <li><b>Paternalistic</b> — still largely autocratic, but the leader acts in workers' best interests, like a caring "father figure" (e.g. <b>Jack Ma</b> at Alibaba). Builds loyalty, but staff still have little say.</li>
+        <li><b>Democratic</b> — the leader consults the workforce before deciding. Raises motivation and draws on staff ideas, but is slower.</li>
+        <li><b>Laissez-faire</b> — managers leave staff to get on with the job with little interference. Suits skilled, creative teams, but risks a lack of direction.</li>
+      </ul>
+      <p>The best style <b>depends on the situation</b> — the task, the staff and how fast decisions are needed. Many firms use a <b>hybrid</b>, varying style by department.</p>`},
+    {h:"Moving from entrepreneur to leader", html:`
+      <p>As a start-up grows, the founder must shift from <b>entrepreneur</b> (doing everything, making every decision) to <b>leader</b> (setting direction and getting work done through others). Common difficulties:</p>
+      <ul>
+        <li><b>Delegation</b> — an owner used to running everything may struggle to hand over control, slowing decisions and creating a bottleneck.</li>
+        <li><b>Changing leadership style</b> — the early autocratic approach may no longer suit a larger team that expects more say, risking low morale and turnover.</li>
+        <li><b>New skills &amp; responsibilities</b> — leading needs vision, communication and people-management rather than hands-on doing.</li>
+      </ul>
+      <p>These are easier to overcome in a <b>small team</b>, where the founder can delegate routine tasks while keeping major decisions, and where a founder who is open to change can adapt their style gradually.</p>`}
+  ],
+  definitions:[
+    {term:"Leadership", marks:2, body:`The act of inspiring and guiding people towards a shared vision <span class="pt">1</span>; unlike management, it focuses on the future and uses influence and motivation rather than authority and rules <span class="pt">2</span>.`},
+    {term:"Autocratic leadership", marks:2, body:`A style where the leader makes all decisions and delegates little, with top-down communication <span class="pt">1</span>; it allows fast decisions but can demotivate staff who have no say <span class="pt">2</span>.`},
+    {term:"Paternalistic leadership", marks:2, body:`A largely top-down style where the leader makes decisions they believe are in employees' best interests, like a father figure <span class="pt">1</span>; it builds loyalty and trust but still gives staff little real input <span class="pt">2</span>.`},
+    {term:"Democratic leadership", marks:2, body:`A style where the leader consults the workforce before making decisions <span class="pt">1</span>; it raises motivation and uses staff ideas but can slow decision-making <span class="pt">2</span>.`},
+    {term:"Laissez-faire leadership", marks:2, body:`A style where managers leave employees to make their own decisions with little interference <span class="pt">1</span>; it suits skilled, creative staff but risks a lack of direction and coordination <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'autocratic leadership'.",
+     model:`Autocratic leadership is a style where the leader makes all the decisions and delegates little, with top-down communication <span class="pt">1</span>; it allows fast decisions but can demotivate staff who have no say <span class="pt">2</span>.`,
+     fb:"All-decisions/top-down plus the speed-vs-motivation trade-off — two developed points."},
+    {marks:2, q:"Define the term 'democratic leadership'.",
+     model:`Democratic leadership is a style where the leader consults the workforce before making decisions <span class="pt">1</span>; it raises motivation and draws on staff ideas but can slow decision-making <span class="pt">2</span>.`,
+     fb:"Consults-before-deciding plus the motivation-vs-speed trade-off."},
+    {marks:4, q:"Explain one difficulty an entrepreneur may face when becoming the leader of a growing business.",
+     model:`One difficulty is delegation <span class="pt">1</span>. This is because an entrepreneur is used to making every decision themselves <span class="pt">2</span>. As a result, they may struggle to hand over control as the team grows <span class="pt">3</span>, creating a bottleneck that slows decisions and reduces efficiency <span class="pt">4</span>.`,
+     fb:"Names the difficulty (delegation), explains the habit behind it and chains to the bottleneck effect."}
+  ],
+  caseStudy:{
+    business:"Alibaba, Disney & a growing start-up",
+    intro:`<p>Businesses used in the leadership questions.</p>
+      <ul>
+        <li><b>Alibaba (Jack Ma)</b> — a <b>paternalistic</b> leader who said it was his job to keep his team happy so they could keep customers happy, in a fast-moving tech sector.</li>
+        <li><b>Disney World</b> — weighing a <b>paternalistic</b> vs <b>democratic</b> style to keep staff and customers satisfied at its theme parks.</li>
+        <li><b>A growing start-up</b> — e.g. Ryan's 18-person digital-marketing firm, where the founder must move from entrepreneur to leader.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the potential of a paternalistic style of leadership for a business such as the Alibaba Group. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of a paternalistic style at Alibaba is improved employee motivation and loyalty. <span class="tag t-C">CHAIN</span>Because decisions are made with employees' best interests in mind, staff feel valued and supported — Jack Ma's leadership focused on looking after employees while taking responsibility for the firm's success. <span class="tag t-A">APPLY</span>Workers feel more secure and respected, raising morale and productivity, so turnover falls, cutting recruitment costs and supporting long-term performance — important for a global company where staff satisfaction drives service quality and innovation.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, paternalistic leadership can limit innovation if decision-making is too centralised. <span class="tag t-C">CHAIN</span>If key decisions rest with one person, staff may feel their ideas are unheard and lack autonomy, so entrepreneurial, skilled workers become demotivated. <span class="tag t-A">APPLY</span>They may leave for firms offering more independence, reducing Alibaba's ability to attract and retain top talent and risking missed innovation in a fast-changing tech industry.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, paternalistic leadership can be effective for Alibaba in building trust, motivation and a strong culture during growth; but to stay competitive the style should evolve to include more staff input. Success depends on balancing employee support with empowerment — it is recommended Alibaba keeps the core of paternalism while introducing more collaborative practices to drive innovation and retain talent.</p>`,
+     fb:"Mr. Akram's exemplar (Alibaba, 10 — top band). Benefit (loyalty/retention) and drawback (limited innovation) applied to Jack Ma and tech, with a balanced 'evolve the style' judgement."},
+    {marks:10, q:"Assess the difficulties the founder of a growing business (e.g. Ryan's 18-person firm) may face in developing from an entrepreneur to a leader. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One difficulty is delegating tasks to others. <span class="tag t-C">CHAIN</span>Ryan is used to running the business himself and making all key decisions, so he may struggle to hand over control as it grows — trying to stay involved in everything could slow things down and reduce efficiency.</p>
+     <p><span class="tag t-P">POINT</span>A second difficulty is changing his leadership style. <span class="tag t-C">CHAIN</span>Entrepreneurs often start out autocratic, but as the team expands staff expect more freedom and input, so failing to adapt risks lower morale, higher turnover and increased recruitment costs.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, these may not be as serious as they appear. <span class="tag t-A">APPLY</span>With only 18 staff, the team is small enough to manage directly, so Ryan may only need to delegate routine tasks while keeping major decisions and building trust gradually. He also appears open to change — the business has already adapted its services (e.g. updating SEO on customer feedback) — which suggests he will adapt his leadership style too. <span class="tag t-J">CONCLUSION</span>Overall, the difficulties are real but manageable given the firm's size and Ryan's willingness to adapt.</p>`,
+     fb:"Mr. Akram's exemplar (entrepreneur→leader, 10). Two difficulties with developed chains, balanced by why the small team and an adaptable founder soften them."},
+    {marks:20, q:"Disney World is considering a paternalistic or a democratic management style to raise customer satisfaction at its theme parks. Evaluate these two options and recommend which would be better. (20)",
+     model:`<p><span class="tag t-P">POINT</span>One advantage of a <b>paternalistic</b> style is that it builds loyalty and a caring culture. <span class="tag t-C">CHAIN</span>Disney cast members who feel looked after are more motivated and stay longer, so the park keeps experienced, well-trained staff. <span class="tag t-A">APPLY</span>In a theme park where friendly, knowledgeable staff directly shape the guest experience, this supports consistent, high customer satisfaction.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, paternalism concentrates decisions at the top. <span class="tag t-C">CHAIN</span>Front-line staff who spot guest problems may lack the authority to fix them quickly, so issues escalate and satisfaction dips at the very moment it matters.</p>
+     <p><span class="tag t-P">POINT</span>One advantage of a <b>democratic</b> style is that it empowers and motivates staff by valuing their input. <span class="tag t-A">APPLY</span>Cast members dealing with guests every day have the best ideas for improving the experience, and consulting them both improves service and makes them feel valued. <span class="tag t-J">HOWEVER</span>However, democratic decision-making is slower and, across a huge workforce, consulting widely on every issue is impractical and could produce inconsistent service between teams.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, for customer satisfaction a largely <b>democratic</b> style is likely better at Disney, because empowered, motivated front-line staff can respond to guests quickly and personally. I have rejected a purely paternalistic style because it risks slow problem-solving at the point of service. Success will depend on training and clear service standards so that empowerment does not become inconsistency — so it is recommended Disney empowers staff within a strong framework, keeping the supportive, caring elements of paternalism.</p>`,
+     fb:"Model answer (Disney, 20). Paternalistic vs democratic each with a benefit and drawback, applied to front-line guest service, with a justified recommendation and rejection."}
+  ],
+  resources:[
+    {label:"Leadership styles — lesson notes (PDF)", file:"resources/1-3-4-5-leadership-styles-notes.pdf"},
+    {label:"Entrepreneur to leader — lesson notes (PDF)", file:"resources/1-3-4-5-entrepreneur-to-leader-notes.pdf"}
+  ]
+}
 ];
