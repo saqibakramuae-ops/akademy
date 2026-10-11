@@ -4418,8 +4418,140 @@ window.CURRICULUM = [
     {label:"Entrepreneurial motives &amp; characteristics — notes (PDF)", file:"resources/1-3-5-2-motives-characteristics-notes.pdf"}
   ]
 },
-{code:"1.3.5.3", subtheme:"1.3.5", title:"Business objectives", business:"Survival, profit, growth, market share & social aims", status:"soon"},
+{
+  code:"1.3.5.3", subtheme:"1.3.5", title:"Business objectives",
+  business:"Case studies: Primark & Little Dessert Shop",
+  status:"live",
+  notes:[
+    {h:"Corporate objectives & SMART", html:`
+      <p><b>Corporate (strategic) objectives</b> are the clearly-defined targets a business sets itself; strategies are then the plans devised to achieve them. Setting objectives helps a business because it:</p>
+      <ul>
+        <li><b>Increases motivation</b> — staff and managers have clear targets to work towards.</li>
+        <li><b>Makes decision-making easier</b> and quicker, as choices can be judged against the targets.</li>
+        <li><b>Lets managers measure performance</b> against the objectives and adjust activities if needed.</li>
+      </ul>
+      <p>The most effective objectives are <b>SMART</b>: <b>S</b>pecific, <b>M</b>easurable, <b>A</b>chievable, <b>R</b>ealistic and <b>T</b>ime-bound.</p>`},
+    {h:"Financial objectives", html:`
+      <ul>
+        <li><b>Survival</b> — staying in business; the first priority for a new or struggling firm (e.g. Sarah's new sandwich shop among established rivals).</li>
+        <li><b>Profit maximisation</b> — making the greatest possible profit, often to satisfy shareholders (e.g. Titan Electronics, a dominant firm delivering higher returns each year).</li>
+        <li><b>Sales / revenue maximisation</b> — growing total sales, sometimes ahead of profit.</li>
+        <li><b>Market share</b> — the proportion of total market sales a firm holds; pursued through lower prices, advertising and sponsorship (e.g. Swift Shoes undercutting rivals).</li>
+        <li><b>Cost efficiency</b> — minimising costs per unit to protect margins and prices.</li>
+        <li><b>Profit satisficing</b> — making <i>enough</i> profit while pursuing other goals (e.g. Emma keeping her yoga studio small for work-life balance).</li>
+      </ul>`},
+    {h:"Non-financial objectives", html:`
+      <ul>
+        <li><b>Social objectives</b> — goals that benefit society, such as sourcing locally, eco-friendly packaging or donating to the community (e.g. GreenBite Café). They can build loyalty and a USP but may raise costs.</li>
+        <li><b>Employee welfare</b> — looking after staff wellbeing, which can raise motivation and retention but adds cost.</li>
+        <li><b>Ethical sourcing</b> — buying materials and labour that meet ethical standards (e.g. Primark's supplier Code of Conduct), protecting reputation but potentially raising costs.</li>
+      </ul>
+      <p>Firms often pursue <b>several objectives at once</b>, and these can conflict — chasing profit can clash with social or ethical aims, so priorities must be balanced.</p>`}
+  ],
+  definitions:[
+    {term:"Corporate objective", marks:2, body:`A clearly-defined, measurable target that a business sets for itself to achieve <span class="pt">1</span>; it guides strategy, motivates staff and lets performance be measured <span class="pt">2</span>.`},
+    {term:"SMART objectives", marks:2, body:`Objectives that are Specific, Measurable, Achievable, Realistic and Time-bound <span class="pt">1</span>; making targets SMART means progress can be tracked and the objective is realistic to reach <span class="pt">2</span>.`},
+    {term:"Survival (as an objective)", marks:2, body:`An objective focused simply on keeping the business trading <span class="pt">1</span>; it is usually the first priority for a new or struggling firm before it aims for profit or growth <span class="pt">2</span>.`},
+    {term:"Market share", marks:2, body:`The proportion of total sales in a market that one business holds, usually shown as a percentage <span class="pt">1</span>; a higher share can bring greater influence and economies of scale <span class="pt">2</span>.`},
+    {term:"Social objectives", marks:2, body:`Business goals that aim to benefit society, such as protecting the environment or supporting the community <span class="pt">1</span>; they can build customer loyalty and a USP but may raise costs <span class="pt">2</span>.`},
+    {term:"Employee welfare", marks:2, body:`An objective of looking after the wellbeing and working conditions of staff <span class="pt">1</span>; it can raise motivation and retention but adds to costs <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'corporate objective'.",
+     model:`A corporate objective is a clearly-defined, measurable target a business sets for itself to achieve <span class="pt">1</span>; it guides strategy and lets the business measure its performance <span class="pt">2</span>.`,
+     fb:"Defined target plus the guide-strategy/measure-performance point — two developed points."},
+    {marks:2, q:"Define the term 'market share'.",
+     model:`Market share is the proportion of total sales in a market held by one business, usually shown as a percentage <span class="pt">1</span>; a higher share can bring greater influence and economies of scale <span class="pt">2</span>.`,
+     fb:"Proportion-of-market-sales plus the influence/scale benefit."},
+    {marks:4, q:"Explain one benefit to a business of setting clear objectives.",
+     model:`One benefit is higher motivation <span class="pt">1</span>. This is because staff and managers have clear targets to work towards <span class="pt">2</span>. As a result, effort is focused and decision-making is easier <span class="pt">3</span>, and managers can measure performance against the targets and adjust where needed <span class="pt">4</span>.`,
+     fb:"Names a benefit (motivation), explains the clear-targets mechanism and chains to focus and performance measurement."}
+  ],
+  caseStudy:{
+    business:"Primark & Little Dessert Shop",
+    intro:`<p>Businesses used in the objectives questions.</p>
+      <ul>
+        <li><b>Primark</b> — a low-price fast-fashion retailer sourcing from 31 countries, which has made <b>ethical sourcing</b> an objective (a supplier Code of Conduct, 100+ monitoring staff) after past criticism of working conditions.</li>
+        <li><b>Little Dessert Shop</b> — a start-up weighing <b>profit</b> as a main objective against quality and customer service.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the importance to Primark of having ethical sourcing as a business objective. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Ethical sourcing is important to Primark because it protects its brand reputation in a competitive clothing market. <span class="tag t-A">APPLY</span>Primark has faced criticism over supply-chain conditions, including child labour and unsafe factories, so adopting ethical sourcing — a supplier Code of Conduct and spot checks — shows it is responding to public concern. <span class="tag t-C">CHAIN</span>This can raise consumer trust and loyalty, especially among ethically-aware younger shoppers, helping Primark protect or grow market share and reducing the risk of boycotts or bad publicity.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, ethical sourcing can also raise operating costs. <span class="tag t-A">APPLY</span>Primark must employ over 100 staff to monitor and audit suppliers across 31 countries, and may pass some cost on through higher prices. <span class="tag t-C">CHAIN</span>This could conflict with its cost-leadership strategy of low-priced fashion, so some price-sensitive customers might switch to cheaper rivals — meaning ethical sourcing must be balanced against keeping prices low and volumes high.</p>`,
+     fb:"Mr. Akram's exemplar (Primark, 8). Reputation benefit vs cost/cost-leadership conflict, applied with real supply-chain detail."},
+    {marks:10, q:"Assess the importance of profit as a main objective for a start-up such as Little Dessert Shop. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of making profit the main objective for Little Dessert Shop is that it gives the owner a clear financial focus. <span class="tag t-C">CHAIN</span>They will aim to keep costs low and boost sales through popular desserts and promotions, so the business is more likely to cover its costs and reinvest. <span class="tag t-A">APPLY</span>A steady profit in year one could fund a second branch or better equipment, supporting long-term growth.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, focusing too much on profit may cause short-term thinking, such as cutting corners or neglecting service. <span class="tag t-A">APPLY</span>In a service business like Little Dessert Shop, where customer loyalty is key, using cheaper ingredients to save money could bring poor reviews and reduce repeat sales. <span class="tag t-C">CHAIN</span>So while profit matters, it must be balanced with quality and customer value.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, profit is an important objective because it funds survival and growth for a new business, but for a start-up relying on reputation and repeat custom, success depends on balancing profit with quality and service — so profit should be the focus without sacrificing the customer experience.</p>`,
+     fb:"Mr. Akram's exemplar (Little Dessert Shop, 10). Profit as a focus for growth vs the risk of short-term corner-cutting, with a balanced judgement."}
+  ],
+  resources:[
+    {label:"Corporate objectives — lesson notes (PDF)", file:"resources/1-3-5-3-corporate-objectives-notes.pdf"}
+  ]
+},
 {code:"1.3.5.4", subtheme:"1.3.5", title:"Forms of business", business:"Sole trader, partnership, private & public limited company", status:"soon"},
-{code:"1.3.5.5", subtheme:"1.3.5", title:"Business choices", business:"Opportunity cost & trade-offs", status:"soon"},
+{
+  code:"1.3.5.5", subtheme:"1.3.5", title:"Business choices",
+  business:"Case studies: Ape Snacks, Bambrew & Farmhopping",
+  status:"live",
+  notes:[
+    {h:"Opportunity cost", html:`
+      <p>Business resources are <b>scarce</b>, so firms must choose between alternatives — and every choice has a cost. <b>Opportunity cost</b> is the value of the <b>next best alternative given up</b> when a decision is made.</p>
+      <p><b>Example:</b> a business with £50m can build a new factory <i>or</i> invest in product development. If it builds the factory, the opportunity cost is the product development it sacrificed. A zoo choosing a new lion attraction over a penguin one gives up the visitors the penguins would have drawn.</p>
+      <p>The concept improves <b>decision-making</b>: by assessing each option's financial implications, a firm can pick the better one and knowingly sacrifice the rest. But it is only reliable if the information used — ideally detailed market research — is accurate.</p>`},
+    {h:"Trade-offs", html:`
+      <p>A <b>trade-off</b> occurs when two objectives cannot be fully achieved at once, so having more of one means having less of another.</p>
+      <ul>
+        <li><b>Ethics vs profit</b> — acting more ethically (fair wages, sustainable materials) often raises costs and cuts profit, at least in the short term.</li>
+        <li><b>Growth vs profit</b> — expanding fast can mean lower short-term profit as money is reinvested.</li>
+        <li><b>Price vs quality</b> — cheaper inputs lift margins but can lower quality.</li>
+      </ul>
+      <p>A trade-off is not always as sharp as it looks: an ethical or social stance can become a <b>USP</b> that attracts loyal customers, so behaving ethically may raise demand and <b>long-term</b> profit rather than reduce it.</p>`}
+  ],
+  definitions:[
+    {term:"Opportunity cost", marks:2, body:`The value of the next best alternative given up when a choice is made <span class="pt">1</span>; it matters because business resources are scarce, so choosing one option means sacrificing another <span class="pt">2</span>.`},
+    {term:"Trade-off", marks:2, body:`A situation where two objectives cannot both be fully achieved, so gaining more of one means accepting less of another <span class="pt">1</span>; it is a compromise, such as higher ethics for lower short-term profit <span class="pt">2</span>.`},
+    {term:"Scarcity", marks:2, body:`When resources are limited relative to the wants they could satisfy <span class="pt">1</span>; scarcity forces businesses to make choices and therefore incur opportunity costs <span class="pt">2</span>.`},
+    {term:"Ethical objective", marks:2, body:`A goal of operating in a morally responsible way, such as fair wages or sustainable sourcing <span class="pt">1</span>; it can raise costs in the short term but build reputation and loyalty over time <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'opportunity cost'.",
+     model:`Opportunity cost is the value of the next best alternative given up when a choice is made <span class="pt">1</span>; because resources are scarce, choosing one option means sacrificing another <span class="pt">2</span>.`,
+     fb:"Next-best-alternative-forgone plus the scarcity point — two developed points."},
+    {marks:2, q:"Define the term 'trade-off'.",
+     model:`A trade-off is where two objectives cannot both be fully achieved, so gaining more of one means accepting less of another <span class="pt">1</span>; for example, being more ethical can mean lower short-term profit <span class="pt">2</span>.`,
+     fb:"Can't-have-both compromise plus a concrete example."},
+    {marks:4, q:"Explain one trade-off a business may face when choosing to act more ethically.",
+     model:`Acting more ethically often raises costs <span class="pt">1</span>. This is because fair wages and sustainable materials usually cost more than cheaper alternatives <span class="pt">2</span>. As a result, profit margins may fall in the short term <span class="pt">3</span>, so the business trades some immediate profit for a stronger ethical reputation <span class="pt">4</span>.`,
+     fb:"Identifies the ethics-vs-profit trade-off, explains the cost mechanism and chains to the margin sacrifice."}
+  ],
+  caseStudy:{
+    business:"Ape Snacks, Bambrew & Farmhopping",
+    intro:`<p>Businesses used in the business-choices questions.</p>
+      <ul>
+        <li><b>Ape Snacks</b> — founder Zack chose to start the business over finishing university, so the opportunity cost was his degree and alternative career.</li>
+        <li><b>Bambrew</b> — a sustainable-packaging firm facing a possible <b>ethics-vs-profit trade-off</b> (fair wages, biodegradable materials vs higher costs).</li>
+        <li><b>Farmhopping</b> — an online marketplace whose farmers share its environmental social objectives, weighing those against profit.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:6, q:"Explain the opportunity cost to Zack of setting up Ape Snacks. (6)",
+     model:`<p><span class="tag t-P">POINT</span>Opportunity cost is the benefit given up when choosing one option over another. <span class="tag t-A">APPLY</span>In Zack's case, choosing to set up Ape Snacks meant the opportunity cost was the benefits of continuing his university education. <span class="tag t-C">CHAIN</span>This could have included earning a degree, gaining qualifications and improving his future career prospects in a more traditional job. <span class="tag t-A">APPLY</span>By focusing on starting the business, he gave up the potential income and experiences completing his studies might have brought — so the opportunity cost of launching Ape Snacks was the value of the opportunities he sacrificed by dropping out.</p>`,
+     fb:"Mr. Akram's exemplar (Ape Snacks, 6). Defines opportunity cost and applies it precisely to Zack's university sacrifice with a developed chain."},
+    {marks:8, q:"Discuss whether there is likely to be a trade-off between an ethical stance and profit for Bambrew. (8)",
+     model:`<p><span class="tag t-P">POINT</span>There is likely to be a trade-off between ethics and profit. <span class="tag t-A">APPLY</span>Bambrew pays fair wages to local communities and avoids cheap chemicals, using natural biodegradable materials, which raises production costs and makes its products dearer than plastic alternatives. <span class="tag t-C">CHAIN</span>This lowers profit margins, and some price-sensitive customers may switch to cheaper, less ethical options, so Bambrew could lose sales and find it harder to compete on price.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the trade-off can be questioned if ethics become part of Bambrew's competitive advantage. <span class="tag t-A">APPLY</span>Many environmentally-aware consumers prefer ethical, sustainable products even at a higher price. <span class="tag t-C">CHAIN</span>This can raise demand and build brand loyalty, so its fair treatment of workers and eco-friendly production enhance reputation and attract new customers — meaning ethical behaviour could improve long-term profitability rather than harm it.</p>`,
+     fb:"Mr. Akram's exemplar (Bambrew, 8). Trade-off (higher cost/lower margin) vs the case that ethics is a USP raising long-term profit, applied throughout."},
+    {marks:10, q:"Assess whether there is a trade-off between social objectives and profit for farmers selling through Farmhopping. (10)",
+     model:`<p><span class="tag t-P">POINT</span>There is a potential trade-off between social objectives and profit. <span class="tag t-A">APPLY</span>Farmhopping's social objective is to be environmentally friendly, which its farmers must share — using recyclable packaging, avoiding pesticides and treating animals well. <span class="tag t-C">CHAIN</span>These practices push up farmers' costs, so they may have to charge higher prices, which could reduce demand and profitability if customers buy cheaper goods from supermarkets instead.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, there may not be a trade-off, because behaving ethically can attract customers. <span class="tag t-A">APPLY</span>Shoppers who share these values are likely to support the small farms on Farmhopping, and the social objectives create a USP that differentiates them from other retailers. <span class="tag t-C">CHAIN</span>This can raise demand and sales, and caring for the environment and avoiding chemicals may improve the farmland and farmers' income over the longer term.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, whether there is a trade-off depends on the market: if consumers are socially aware and willing to pay for environmental values, social objectives and profit can go together; but if price dominates buying decisions in the industry, the higher costs of farming ethically will reduce profit — so the outcome rests on customer attitudes and how far price drives demand.</p>`,
+     fb:"Model answer (Farmhopping, 10), built on the exam board's indicative content. Trade-off (higher costs) vs no-trade-off (USP, loyalty, long-term land benefits), judged on whether consumers value ethics over price."}
+  ],
+  resources:[
+    {label:"Business choices (opportunity cost &amp; trade-offs) — notes (PDF)", file:"resources/1-3-5-5-business-choices-notes.pdf"}
+  ]
+},
 {code:"1.3.5.6", subtheme:"1.3.5", title:"Moving from entrepreneur to leader", business:"See also Leadership (1.3.4.5)", status:"soon"}
 ];
