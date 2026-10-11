@@ -3899,7 +3899,92 @@ window.CURRICULUM = [
     {label:"Employer/employee relationships — lesson notes (PDF)", file:"resources/1-3-4-1-employer-employee-notes.pdf"}
   ]
 },
-{code:"1.3.4.2", subtheme:"1.3.4", title:"Recruitment, selection & training", business:"Recruitment, selection and training methods", status:"soon"},
+{
+  code:"1.3.4.2", subtheme:"1.3.4", title:"Recruitment, selection & training",
+  business:"Case studies: PureNet, Tesla & Disney",
+  status:"live",
+  notes:[
+    {h:"The recruitment & selection process", html:`
+      <p><b>Recruitment</b> is the process of finding and hiring the right people for a job. It usually follows these stages:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 540 92" style="min-width:500px;width:100%;max-width:620px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="8.5" font-weight="700" text-anchor="middle" fill="var(--ink)">
+          <rect x="4" y="30" width="86" height="30" rx="6" fill="rgba(15,42,74,.08)" stroke="var(--navy)"/><text x="47" y="42">Identify</text><text x="47" y="53">vacancy</text>
+          <rect x="112" y="30" width="86" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="155" y="42">Job description</text><text x="155" y="53">&amp; person spec</text>
+          <rect x="220" y="30" width="86" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="263" y="48">Advertise</text>
+          <rect x="328" y="30" width="86" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="371" y="48">Shortlist</text>
+          <rect x="436" y="30" width="100" height="30" rx="6" fill="rgba(15,157,88,.12)" stroke="var(--emerald)"/><text x="486" y="42">Interview</text><text x="486" y="53">&amp; select</text>
+        </g>
+        <g stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ra)">
+          <line x1="90" y1="45" x2="110" y2="45"/><line x1="198" y1="45" x2="218" y2="45"/><line x1="306" y1="45" x2="326" y2="45"/><line x1="414" y1="45" x2="434" y2="45"/>
+        </g>
+        <defs><marker id="ra" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"/></marker></defs>
+      </svg>
+      </div>
+      <p>The <b>job description</b> lists the duties of the role; the <b>person specification</b> lists the skills and qualities the ideal candidate needs. A business then recruits <b>internally</b> or <b>externally</b>:</p>
+      <ul>
+        <li><b>Internal recruitment</b> — filling a vacancy from existing staff. Cheaper, faster, motivating (promotion), and the candidate is known — but limits new ideas and creates another vacancy to fill.</li>
+        <li><b>External recruitment</b> — hiring from outside. Brings a larger pool, fresh ideas and new skills — but is more expensive, slower and the candidate's real track record is harder to know.</li>
+      </ul>
+      <p>Recruitment, selection and training all cost money (advertising, agencies, management time, induction), so getting the choice right matters — a poor hire is expensive to replace.</p>`},
+    {h:"Training", html:`
+      <p><b>Training</b> develops employees' skills. The three main types are:</p>
+      <ul>
+        <li><b>Induction training</b> — given to new staff to introduce the business, its people, procedures and health &amp; safety, so they settle in quickly.</li>
+        <li><b>On-the-job training</b> — learning while doing the real role, usually from experienced colleagues (e.g. hotel and theme-park service roles). Cheap and practical, but can pass on bad habits and distract the trainer.</li>
+        <li><b>Off-the-job training</b> — learning away from the workplace, e.g. a college course or external specialist. Better for complex or specialist skills, but costs more and the worker is away from the job.</li>
+      </ul>
+      <p>Training raises productivity, quality, motivation and retention, but it is a <b>cost</b>: replacing and retraining staff can run to thousands per worker, so firms weigh training spend against the benefit of a more skilled, loyal workforce.</p>`}
+  ],
+  definitions:[
+    {term:"Recruitment", marks:2, body:`The process of finding and hiring the right people to fill a job vacancy <span class="pt">1</span>; it involves defining the role, attracting applicants and selecting the best candidate <span class="pt">2</span>.`},
+    {term:"Internal recruitment", marks:2, body:`Filling a vacancy with someone already employed by the business <span class="pt">1</span>; it is cheaper and quicker and the candidate is known, but limits the inflow of new ideas <span class="pt">2</span>.`},
+    {term:"External recruitment", marks:2, body:`Filling a vacancy with a candidate from outside the business <span class="pt">1</span>; it brings a wider pool and fresh skills but is more expensive and the candidate's track record is less certain <span class="pt">2</span>.`},
+    {term:"Induction training", marks:2, body:`Training given to new employees to introduce the business, its procedures and people <span class="pt">1</span>; it helps new staff settle in and become productive more quickly <span class="pt">2</span>.`},
+    {term:"On-the-job training", marks:2, body:`Training carried out in the workplace while doing the actual job, often from experienced colleagues <span class="pt">1</span>; it is cheap and practical but can pass on bad habits <span class="pt">2</span>.`},
+    {term:"Off-the-job training", marks:2, body:`Training away from the workplace, such as a college course or external specialist <span class="pt">1</span>; it suits complex or specialist skills but costs more and takes the worker off the job <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'internal recruitment'.",
+     model:`Internal recruitment is filling a vacancy with someone already employed by the business <span class="pt">1</span>; it is cheaper and quicker and the candidate is known, but limits the inflow of new ideas <span class="pt">2</span>.`,
+     fb:"Hiring from within plus the cheaper/known vs fewer-new-ideas trade-off — two developed points."},
+    {marks:2, q:"Define the term 'induction training'.",
+     model:`Induction training is training given to new employees to introduce the business, its procedures and people <span class="pt">1</span>; it helps them settle in and become productive more quickly <span class="pt">2</span>.`,
+     fb:"For new starters introducing the business, plus the settle-in benefit."},
+    {marks:4, q:"Explain one benefit to a business of using internal recruitment.",
+     model:`Internal recruitment is cheaper and faster than hiring externally <span class="pt">1</span>. This is because there is no need to pay for advertising or agencies and the candidate is already known <span class="pt">2</span>. As a result, the vacancy is filled quickly with less risk <span class="pt">3</span>, and the chance of promotion can motivate existing staff <span class="pt">4</span>.`,
+     fb:"Names the benefit (cheaper/faster), explains why and chains to speed plus the motivation effect."}
+  ],
+  caseStudy:{
+    business:"PureNet, Tesla & Disney",
+    intro:`<p>Businesses used in the recruitment and training questions.</p>
+      <ul>
+        <li><b>PureNet</b> — a 43-person York e-commerce specialist with ambitious expansion plans, weighing <b>external recruitment</b> to bring in skills quickly.</li>
+        <li><b>Tesla</b> — a fast-growing, innovative car and energy firm recruiting globally (e.g. a charging-specialist role in Tokyo), using both internal and external recruitment.</li>
+        <li><b>Walt Disney</b> — relies heavily on <b>on-the-job training</b> for service roles across its global hotels and theme parks.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the likely impact on a business such as PureNet of using an external recruitment process when employing new staff. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of external recruitment is that it introduces new skills and fresh perspectives. <span class="tag t-C">CHAIN</span>New employees may have experience with advanced tools or have worked for successful competitors, bringing those insights to PureNet and generating more innovative ideas and better service — important in the fast-moving digital sector. <span class="tag t-A">APPLY</span>PureNet could therefore keep a strong competitive edge while expanding, offering better support to both its B2B and B2C clients. It may also lower training costs, as external candidates may already have the web-development skills needed.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, external recruitment may be more costly than promoting from within. <span class="tag t-C">CHAIN</span>PureNet must pay for advertising, agencies and application reviews, which take time and money — a real pressure for a small firm of only 43 employees. This could reduce the money available for other areas such as marketing its website-design service or innovation, limiting sustainable growth.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, external recruitment is likely to help PureNet in the short term by quickly closing skills gaps and bringing in talent. Success depends on how well it manages the process and balances new and existing staff — so it is recommended PureNet combines external recruitment with internal staff development to keep motivation and loyalty while still bringing in the fresh talent it needs to grow.</p>`,
+     fb:"Mr. Akram's exemplar (PureNet, 10). External-recruitment benefit (skills/innovation) vs cost drawback, applied to a 43-person e-commerce firm, with a blended recommendation."},
+    {marks:8, q:"Discuss the reasons why a business such as Tesla may use internal recruitment. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One reason Tesla may recruit internally is that existing staff already understand its fast-paced, innovative culture. <span class="tag t-C">CHAIN</span>Promoting someone who knows Tesla's values and ways of working means less induction and a lower risk of a poor cultural fit, so they become productive quickly. <span class="tag t-A">APPLY</span>For a demanding, mission-driven firm like Tesla, this helps maintain momentum on complex projects such as its charging programme.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, internal recruitment has limits. <span class="tag t-C">CHAIN</span>It restricts the inflow of new ideas and skills, which a cutting-edge engineering firm relies on, and filling one post from within simply creates another vacancy. <span class="tag t-A">APPLY</span>For highly specialist roles — like the electrical-engineering expertise in the Tokyo charging role — Tesla may have no suitable internal candidate and must recruit externally. Overall, internal recruitment suits Tesla for roles where cultural fit and speed matter most, but it will still need external hiring for specialist and fast-growth needs.</p>`,
+     fb:"Model answer (Tesla, 8). Two reasons for internal recruitment (culture fit, speed/cost) balanced against its limits for specialist roles, applied to Tesla."},
+    {marks:10, q:"Discuss the use of on-the-job training for a business such as Walt Disney. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One advantage of on-the-job training at Disney is that staff develop skills while doing their actual role. <span class="tag t-C">CHAIN</span>They are trained in the real environment by experienced colleagues, using real equipment and interacting with guests, so staff in housekeeping, hotels and food &amp; beverage gain practical customer-service experience without classroom sessions. <span class="tag t-A">APPLY</span>This trains people quickly and cheaply while keeping service running — and it is cheaper than external courses, letting Disney train staff globally in Paris or Shanghai without excessive cost.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, on-the-job training can be unreliable if trainers lack proper training themselves, passing on bad habits and causing inconsistent performance in roles needing high standards — which could dent guest satisfaction and the brand. <span class="tag t-C">CHAIN</span>Off-the-job training may be better for specialist skills in engineering, marketing or finance, where classroom or online learning gives deeper theory without workplace distractions.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, on-the-job training works well in Disney's practical, service-focused departments, offering cost-effective training and consistent service — but success depends on the quality of trainers. For technical or academic skills a blend is better, so it is recommended Disney adopts a <b>blended approach</b> combining on- and off-the-job training across its diverse global workforce.</p>`,
+     fb:"Mr. Akram's exemplar (Disney, 10). On-the-job strengths (practical, cheap, global) vs reliability limits, with a blended-approach judgement."}
+  ],
+  resources:[
+    {label:"Recruitment &amp; selection — lesson notes (PDF)", file:"resources/1-3-4-2-recruitment-notes.pdf"},
+    {label:"Training — lesson notes (PDF)", file:"resources/1-3-4-2-training-notes.pdf"}
+  ]
+},
 {
   code:"1.3.4.3", subtheme:"1.3.4", title:"Organisational design",
   business:"Case studies: Waterstones, Morley's, Nintendo & Tata",
