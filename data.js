@@ -3604,7 +3604,95 @@ window.CURRICULUM = [
     {label:"Branding — lesson notes (PDF)", file:"resources/1-3-3-3-branding-notes.pdf"}
   ]
 },
-{code:"1.3.3.4", subtheme:"1.3.3", title:"Pricing strategies", business:"Skimming, penetration, cost-plus & competitive", status:"soon"},
+{
+  code:"1.3.3.4", subtheme:"1.3.3", title:"Pricing strategies",
+  business:"Case studies: Pfizer, Ryanair & UK supermarkets", status:"live",
+  notes:[
+    {h:"The main pricing strategies", html:`
+      <p><b>Price</b> is the element of the marketing mix that directly earns revenue. The main strategies are:</p>
+      <ul>
+        <li><b>Cost-plus pricing</b> — add a fixed profit mark-up to the unit cost (e.g. Tata Motors). Simple and guarantees a margin, but ignores what customers and competitors are doing.</li>
+        <li><b>Price skimming</b> — launch a new product at a <b>high price</b>, then lower it over time (e.g. Microsoft, Apple). Recovers R&amp;D costs quickly from early adopters, but only works with a strong USP and few rivals.</li>
+        <li><b>Penetration pricing</b> — launch at a <b>low price</b> to win market share fast, then raise it (e.g. Disney+). Builds a customer base quickly, but means low margins at first.</li>
+        <li><b>Competitive pricing</b> — set prices in line with or just below rivals (e.g. supermarkets). Keeps the firm attractive in a mature market, but limits margins and can spark price wars.</li>
+        <li><b>Psychological pricing</b> — prices set to <i>feel</i> lower (£9.99 not £10; e.g. Huawei, Apple). Encourages purchases, but looks gimmicky for premium brands.</li>
+        <li><b>Predatory pricing</b> — set prices very low to drive rivals out, then raise them. Effective but <b>illegal</b> in many markets.</li>
+      </ul>
+      <p><b>Skimming vs penetration</b> take opposite paths over a product's life:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 420 240" style="min-width:360px;width:100%;max-width:480px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="50" y1="20" x2="50" y2="200" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="50" y1="200" x2="395" y2="200" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="14" y="110" font-size="11" font-weight="700" fill="var(--muted)" transform="rotate(-90 14 110)" text-anchor="middle">Price</text>
+        <text x="222" y="228" font-size="11" font-weight="700" fill="var(--muted)" text-anchor="middle">Time since launch</text>
+        <!-- skimming: high then falling -->
+        <polyline points="60,40 150,55 240,95 330,130 385,145" fill="none" stroke="var(--amber)" stroke-width="2.6"/>
+        <text x="150" y="44" font-size="10" font-weight="800" fill="var(--amber)">Skimming</text>
+        <!-- penetration: low then rising to settle -->
+        <polyline points="60,180 150,150 240,125 330,118 385,116" fill="none" stroke="var(--navy)" stroke-width="2.6"/>
+        <text x="150" y="172" font-size="10" font-weight="800" fill="var(--navy)">Penetration</text>
+      </svg>
+      </div>`},
+    {h:"Factors in the choice & social trends", html:`
+      <p>Which strategy fits depends on several <b>factors</b>:</p>
+      <ul>
+        <li><b>USPs / differentiation</b> — a strong USP allows skimming or premium pricing.</li>
+        <li><b>Price elasticity of demand</b> — inelastic demand lets a firm charge more without losing many sales.</li>
+        <li><b>Level of competition</b> — crowded markets push firms towards competitive pricing.</li>
+        <li><b>Strength of brand</b> — a powerful brand supports premium prices.</li>
+        <li><b>Stage of the product life cycle</b> — skimming/penetration at launch, competitive pricing at maturity.</li>
+        <li><b>Costs &amp; the need for profit</b> — price must cover costs over time.</li>
+      </ul>
+      <p><b>Social and technological trends</b> have squeezed pricing:</p>
+      <ul>
+        <li><b>Online selling</b> lets customers compare and buy anywhere, forcing prices down and increasing transparency.</li>
+        <li><b>Price comparison sites</b> make it easy to switch to the cheapest supplier, so firms must price keenly or compete on non-price factors like delivery speed and loyalty schemes.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Cost-plus pricing", marks:2, body:`Setting price by adding a fixed profit mark-up to the unit cost of a product <span class="pt">1</span>; it guarantees a margin and is simple to apply but ignores competitors' prices and what customers will pay <span class="pt">2</span>.`},
+    {term:"Price skimming", marks:2, body:`Charging a high price for a new product at launch, then lowering it over time <span class="pt">1</span>; it recovers development costs quickly from early adopters but relies on a strong USP and few competitors <span class="pt">2</span>.`},
+    {term:"Penetration pricing", marks:2, body:`Launching a product at a deliberately low price to win market share quickly <span class="pt">1</span>; it attracts price-sensitive customers fast but means low profit margins at first <span class="pt">2</span>.`},
+    {term:"Competitive pricing", marks:2, body:`Setting prices in line with, or just below, those of main rivals <span class="pt">1</span>; it keeps the firm attractive in a mature market but limits margins and can trigger price wars <span class="pt">2</span>.`},
+    {term:"Psychological pricing", marks:2, body:`Setting a price that makes a product feel cheaper than it is, such as £9.99 rather than £10 <span class="pt">1</span>; it nudges customers to buy but can look gimmicky for a premium brand <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'penetration pricing'.",
+     model:`Penetration pricing launches a product at a deliberately low price to win market share quickly <span class="pt">1</span>; it attracts price-sensitive customers fast but means low margins until prices are later raised <span class="pt">2</span>.`,
+     fb:"Mechanism (low launch price for share) plus the margin trade-off — two developed points."},
+    {marks:2, q:"Define the term 'price skimming'.",
+     model:`Price skimming charges a high price for a new product at launch and lowers it over time <span class="pt">1</span>; it recovers development costs quickly from early adopters while competition is limited <span class="pt">2</span>.`,
+     fb:"High launch price falling over time, plus the cost-recovery purpose."},
+    {marks:4, q:"Explain how Pfizer could benefit from using a price skimming strategy. (4)",
+     model:`Price skimming means charging a high price for a new product at launch, then lowering it over time <span class="pt">1</span>. Pfizer could use this for a new drug gained through the Allergan merger, such as a new Alzheimer's treatment, charging a premium to customers willing to pay for early access <span class="pt">2</span>. This is because there are few or no competitors initially, so demand is relatively inelastic <span class="pt">3</span>. As a result, Pfizer recovers its high research and development costs faster — vital in the pharmaceutical industry <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Pfizer, 4). Definition (1) + two extract-linked application points (Allergan, new drug) + a developed chain to R&D recovery."}
+  ],
+  caseStudy:{
+    business:"Pfizer, Ryanair & UK supermarkets",
+    intro:`<p>Businesses used in the pricing questions.</p>
+      <ul>
+        <li><b>Pfizer</b> — merged with Allergan ($160bn, 2015), gaining drugs like Botox and the Alzheimer's drug Namenda; uses <b>skimming</b> to recover R&amp;D costs.</li>
+        <li><b>Ryanair &amp; Air Europa</b> — 2017 partnership opening long-haul routes from Madrid to the Americas, competing with Iberia and Vueling; choosing between <b>competitive</b> and <b>penetration</b> pricing.</li>
+        <li><b>UK supermarkets</b> — Tesco, Asda, Sainsbury's and Morrisons face discounters Aldi and Lidl, price comparison sites and demand for one-hour delivery.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:12, q:"Assess how changing social trends are likely to affect pricing decisions for UK supermarkets. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One likely impact is increased pressure to adapt operations and services. <span class="tag t-C">CHAIN</span>Consumers shop more frequently for fresh groceries and increasingly use online services for convenience, so supermarkets must invest in delivery infrastructure and digital platforms. <span class="tag t-A">APPLY</span>Major chains like Tesco have introduced one-hour delivery to stay competitive, meaning firms that fail to adapt could lose customers to more responsive rivals.</p>
+     <p><span class="tag t-P">POINT</span>A second influence is growing competition from discounters like Aldi and Lidl. <span class="tag t-C">CHAIN</span>Their lower prices attract price-sensitive shoppers, forcing Tesco, Asda, Sainsbury's and Morrisons to review pricing and rely less on brand loyalty — and price comparison sites make switching even easier. <span class="tag t-A">APPLY</span>Traditional supermarkets may lose market share unless they offer better value.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, some supermarkets can hold loyalty through non-price factors — one-hour delivery, a wider range and loyalty schemes add value beyond low prices, so firms that invest in convenience may keep customers even at slightly higher prices. <span class="tag t-J">CONCLUSION</span>In conclusion, UK supermarkets must respond to shifting behaviour and rising competition; success depends on balancing low prices with high service levels, so it is recommended they invest in faster delivery, digital platforms and loyalty-building to protect their market position.</p>`,
+     fb:"Mr. Akram's exemplar (supermarkets, 12). Two applied impacts (online/delivery, discounters & comparison sites) balanced by non-price differentiation, with a judged recommendation."},
+    {marks:20, q:"For long-haul flights to the Americas, Ryanair and Air Europa could use competitive pricing or penetration pricing. Evaluate these two strategies and recommend which should be used to maximise profit. (20)",
+     model:`<p><span class="tag t-P">POINT</span>Penetration pricing launches a service at a low price to attract customers and gain market share quickly. <span class="tag t-A">APPLY</span>This could benefit Ryanair and Air Europa as they break into the competitive long-haul market to the Americas: offering much cheaper fares than Iberia and Vueling could attract price-sensitive passengers who do not normally book long-haul. <span class="tag t-C">CHAIN</span>The partnership could fill planes quickly and build brand awareness, then later raise prices once loyalty and market share have grown, leading to long-term profitability.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, low prices may not cover the high fixed costs of long-haul flights — fuel, airport charges, in-flight services. <span class="tag t-C">CHAIN</span>The partnership might suffer short-term losses or very slim margins, and if competitors also cut prices it could trigger a damaging price war; customers won on price alone may not stay loyal when prices rise.</p>
+     <p><span class="tag t-P">POINT</span>In contrast, competitive pricing sets fares similar to rivals to stay attractive while keeping sustainable margins. <span class="tag t-C">CHAIN</span>Ryanair and Air Europa could match rivals' fares while still covering operating costs, growing steadily without compromising financial stability. <span class="tag t-J">HOWEVER</span>However, matching prices may not persuade customers to switch from established brands like Iberia, so growth could be slow and gaining market share could take much longer.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, penetration pricing may be more effective in the short term for rapid market entry, but success depends on whether customers stay loyal once prices rise; competitive pricing is safer financially but grows more slowly. The best choice depends on how much financial risk the partnership will take and how important fast entry is. It is recommended that a combined approach — starting with penetration pricing, then shifting to competitive pricing — offers the best balance of growth and sustainability, supported by Ryanair's 130-million-customer digital reach and Air Europa's long-haul expertise.</p>`,
+     fb:"Mr. Akram's exemplar (Ryanair, 20). Both strategies developed with a benefit and a drawback, applied to the extract, and a justified combined recommendation."}
+  ],
+  resources:[
+    {label:"Pricing strategies — lesson notes (PDF)", file:"resources/1-3-3-4-pricing-notes.pdf"}
+  ]
+},
 {
   code:"1.3.3.5", subtheme:"1.3.3", title:"Distribution (place)",
   business:"Case studies: MAC, Nike & Ocado", status:"live",
