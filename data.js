@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","1.3.2":"The market (demand & supply)","1.3.3":"Marketing mix and strategy","1.3.4":"Managing people","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
-window.SUBTHEME_SUB = {"1.3.4":"Unit 1: Marketing and people \u2014 approaches to staffing (staff as asset or cost), the flexible workforce and contracts, and employer/employee relationships including collective bargaining.","1.3.3":"Unit 1: Marketing and people \u2014 marketing objectives and strategy, product and service design, promotion and branding, pricing strategies and distribution.","1.3.2":"Unit 1: Marketing and people \u2014 demand, supply and how they interact to set market price, plus price and income elasticity of demand.","1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"1.3.3.1":"\ud83e\udded","1.3.3.2":"\ud83c\udfa8","1.3.3.3":"\ud83d\udce3","1.3.3.4":"\ud83c\udff7\ufe0f","1.3.3.5":"\ud83d\ude9a","1.3.2.1":"\ud83d\udcc9","1.3.2.2":"\ud83d\udcc8","1.3.2.3":"\u2696\ufe0f","1.3.2.4":"\ud83d\udcb9","1.3.2.5":"\ud83d\udcb0","1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","1.3.4.1":"\ud83d\udc65","1.3.4.2":"\ud83d\udccb","1.3.4.3":"\ud83c\udfe2","1.3.4.4":"\ud83d\ude80","1.3.4.5":"\ud83d\udc54","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","1.3.2":"The market (demand & supply)","1.3.3":"Marketing mix and strategy","1.3.4":"Managing people","1.3.5":"Entrepreneurs and leaders","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"1.3.5":"Unit 1: Marketing and people \u2014 the role of the entrepreneur (including intrapreneurship and barriers), entrepreneurial motives and characteristics, business objectives, forms of business and business choices.","1.3.4":"Unit 1: Marketing and people \u2014 approaches to staffing (staff as asset or cost), the flexible workforce and contracts, and employer/employee relationships including collective bargaining.","1.3.3":"Unit 1: Marketing and people \u2014 marketing objectives and strategy, product and service design, promotion and branding, pricing strategies and distribution.","1.3.2":"Unit 1: Marketing and people \u2014 demand, supply and how they interact to set market price, plus price and income elasticity of demand.","1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"1.3.3.1":"\ud83e\udded","1.3.3.2":"\ud83c\udfa8","1.3.3.3":"\ud83d\udce3","1.3.3.4":"\ud83c\udff7\ufe0f","1.3.3.5":"\ud83d\ude9a","1.3.2.1":"\ud83d\udcc9","1.3.2.2":"\ud83d\udcc8","1.3.2.3":"\u2696\ufe0f","1.3.2.4":"\ud83d\udcb9","1.3.2.5":"\ud83d\udcb0","1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","1.3.4.1":"\ud83d\udc65","1.3.4.2":"\ud83d\udccb","1.3.4.3":"\ud83c\udfe2","1.3.4.4":"\ud83d\ude80","1.3.4.5":"\ud83d\udc54","1.3.5.1":"\ud83d\udca1","1.3.5.2":"\ud83e\udde0","1.3.5.3":"\ud83c\udfc1","1.3.5.4":"\ud83c\udfdb\ufe0f","1.3.5.5":"\ud83d\udd00","1.3.5.6":"\ud83e\uddd7","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 window.PAPERS = [{"year": "2020", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-jan-qu.pdf", "ms": "resources/papers/wbs13-2020-jan-ms.pdf", "er": "resources/papers/wbs13-2020-jan-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-oct-qu.pdf", "ms": "resources/papers/wbs13-2020-oct-ms.pdf", "er": "resources/papers/wbs13-2020-oct-er.pdf"}]}, {"year": "2021", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jan-qu.pdf", "ms": "resources/papers/wbs13-2021-jan-ms.pdf", "er": "resources/papers/wbs13-2021-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jun-qu.pdf", "ms": "resources/papers/wbs13-2021-jun-ms.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-oct-qu.pdf", "ms": "resources/papers/wbs13-2021-oct-ms.pdf", "er": "resources/papers/wbs13-2021-oct-er.pdf"}]}, {"year": "2022", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jan-qu.pdf", "ms": "resources/papers/wbs13-2022-jan-ms.pdf", "er": "resources/papers/wbs13-2022-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jun-qu.pdf", "ms": "resources/papers/wbs13-2022-jun-ms.pdf", "er": "resources/papers/wbs13-2022-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-oct-qu.pdf", "ms": "resources/papers/wbs13-2022-oct-ms.pdf", "er": "resources/papers/wbs13-2022-oct-er.pdf"}]}, {"year": "2023", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jan-qu.pdf", "ms": "resources/papers/wbs13-2023-jan-ms.pdf", "er": "resources/papers/wbs13-2023-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jun-qu.pdf", "ms": "resources/papers/wbs13-2023-jun-ms.pdf", "er": "resources/papers/wbs13-2023-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-oct-qu.pdf", "ms": "resources/papers/wbs13-2023-oct-ms.pdf", "er": "resources/papers/wbs13-2023-oct-er.pdf"}]}, {"year": "2024", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jan-qu.pdf", "ms": "resources/papers/wbs13-2024-jan-ms.pdf", "er": "resources/papers/wbs13-2024-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jun-qu.pdf", "ms": "resources/papers/wbs13-2024-jun-ms.pdf", "er": "resources/papers/wbs13-2024-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-oct-qu.pdf", "ms": "resources/papers/wbs13-2024-oct-ms.pdf", "er": "resources/papers/wbs13-2024-oct-er.pdf"}]}, {"year": "2025", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jan-qu.pdf", "ms": "resources/papers/wbs13-2025-jan-ms.pdf", "er": "resources/papers/wbs13-2025-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jun-qu.pdf", "ms": "resources/papers/wbs13-2025-jun-ms.pdf", "er": "resources/papers/wbs13-2025-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-oct-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-ms.pdf", "er": "resources/papers/wbs13-2025-oct-er.pdf"}, {"label": "October (Paper A)", "paper": "WBS13/01A", "qu": "resources/papers/wbs13-2025-oct-a-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-a-ms.pdf", "er": "resources/papers/wbs13-2025-oct-a-er.pdf"}]}];
 window.PAPERS_BANK = {"questions": "resources/papers/wbs13-20mark-questions.pdf", "ms": "resources/papers/wbs13-20mark-markscheme.pdf"};
 window.REVISION = {"unit": [{"label": "Theme 3 — full revision notes", "icon": "📘", "file": "resources/revision/rev-unit3-theme3-notes.pdf"}, {"label": "Unit 3 — mind maps", "icon": "🧠", "file": "resources/revision/rev-unit3-mind-maps.pdf"}], "sections": [{"code": "3.3.1", "title": "Business objectives & strategy", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-1-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-1-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-1-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-1-exam-patterns.pdf"}]}, {"code": "3.3.2", "title": "Business growth", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-2-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-2-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-2-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-2-exam-patterns.pdf"}]}, {"code": "3.3.3", "title": "Decision-making techniques", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-3-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-3-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-3-exam-patterns.pdf"}, {"label": "Rapid-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-rapid-fire.pdf"}]}, {"code": "3.3.4", "title": "Influences on business decisions", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-4-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-4-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-4-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-4-exam-patterns.pdf"}]}, {"code": "3.3.5", "title": "Assessing competitiveness", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-5-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-5-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-5-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-5-exam-patterns.pdf"}]}, {"code": "3.3.6", "title": "Managing change", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-6-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-6-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-6-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-6-exam-patterns.pdf"}]}]};
@@ -4272,5 +4272,154 @@ window.CURRICULUM = [
     {label:"Leadership styles — lesson notes (PDF)", file:"resources/1-3-4-5-leadership-styles-notes.pdf"},
     {label:"Entrepreneur to leader — lesson notes (PDF)", file:"resources/1-3-4-5-entrepreneur-to-leader-notes.pdf"}
   ]
-}
+},
+{
+  code:"1.3.5.1", subtheme:"1.3.5", title:"Role of an entrepreneur",
+  business:"Case studies: Sony PlayStation, Google & Little Dessert Shop",
+  status:"live",
+  notes:[
+    {h:"What an entrepreneur does", html:`
+      <p>An <b>entrepreneur</b> sets up and runs a business, taking on financial risk in the hope of profit. Their key roles are:</p>
+      <ul>
+        <li><b>Creating and setting up the business</b> — spotting a gap or opportunity and turning an idea into a working firm.</li>
+        <li><b>Running and expanding it</b> — making the day-to-day and strategic decisions (product, price, location, marketing) and driving growth.</li>
+        <li><b>Innovating</b> — developing new products, processes or ways of doing things to stay competitive.</li>
+        <li><b>Bearing risk and uncertainty</b> — the entrepreneur is responsible for success or failure and may risk their own money.</li>
+      </ul>`},
+    {h:"Intrapreneurship", html:`
+      <p><b>Intrapreneurship</b> is employees <i>within an existing business</i> using entrepreneurial skills — spotting opportunities and taking risks — to create new products or ventures. The <b>intrapreneur</b> innovates without risking their own money, because the company provides the investment.</p>
+      <ul>
+        <li><b>Gmail</b> came out of Google's "20% time" policy, which lets staff spend time on their own projects.</li>
+        <li><b>The Sony PlayStation</b> began when junior Sony engineer <b>Ken Kutaragi</b> tinkered with his daughter's Nintendo. Backed by CEO Norio Ohga against most of senior management, Sony invested <b>$2.5bn</b>; the PlayStation went on to take over <b>70% of the console market</b> and provide <b>40% of Sony's operating profit</b> by 1998.</li>
+      </ul>
+      <p>Intrapreneurship brings innovation, new revenue and a more creative culture — but large bets on unproven ideas (like Sony's $2.5bn) carry big financial risk and can cause internal conflict if managers resist change.</p>`},
+    {h:"Barriers to entrepreneurship", html:`
+      <p>Many new businesses fail. Common <b>barriers</b> include:</p>
+      <ul>
+        <li><b>A poor business idea</b> — no real gap in the market or demand.</li>
+        <li><b>Lack of finance</b> — difficulty raising start-up capital or managing cash flow.</li>
+        <li><b>Lack of skills or experience</b> — weak management, financial or marketing know-how.</li>
+        <li><b>Strong competition</b> — established rivals with brand loyalty and economies of scale.</li>
+        <li><b>Legal and regulatory barriers</b> — licences, red tape and compliance costs.</li>
+        <li><b>Fear of failure and risk</b> — which can stop people starting at all.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Entrepreneur", marks:2, body:`A person who sets up and runs a business, taking on financial risk in the hope of making a profit <span class="pt">1</span>; they organise the other factors of production and make the key business decisions <span class="pt">2</span>.`},
+    {term:"Intrapreneurship", marks:2, body:`When employees within an existing business use entrepreneurial skills to develop new products or ventures <span class="pt">1</span>; the business provides the investment, so the intrapreneur innovates without risking their own money <span class="pt">2</span>.`},
+    {term:"Intrapreneur", marks:2, body:`An employee within a business who takes risks and innovates to solve problems or create new opportunities <span class="pt">1</span>; they bring entrepreneurial behaviour into an established organisation <span class="pt">2</span>.`},
+    {term:"Barriers to entrepreneurship", marks:2, body:`The obstacles that make it hard to start or succeed in business, such as lack of finance, skills or a poor idea <span class="pt">1</span>; they are a key reason many new businesses fail <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'entrepreneur'.",
+     model:`An entrepreneur is a person who sets up and runs a business, taking on financial risk in the hope of profit <span class="pt">1</span>; they organise the factors of production and make the key decisions <span class="pt">2</span>.`,
+     fb:"Sets up/takes risk for profit plus the organising-and-deciding role — two developed points."},
+    {marks:2, q:"Define the term 'intrapreneurship'.",
+     model:`Intrapreneurship is when employees within an existing business use entrepreneurial skills to develop new products or ventures <span class="pt">1</span>; the firm provides the investment, so they innovate without risking their own money <span class="pt">2</span>.`,
+     fb:"Entrepreneurial behaviour inside a firm plus the firm-bears-the-risk point."},
+    {marks:4, q:"Explain one barrier that may cause a new business to fail.",
+     model:`One barrier is a lack of finance <span class="pt">1</span>. This is because new businesses often struggle to raise enough start-up capital or manage cash flow <span class="pt">2</span>. As a result, they may be unable to cover costs such as stock, rent and wages before sales build up <span class="pt">3</span>, forcing the business to close even if the idea was sound <span class="pt">4</span>.`,
+     fb:"Names a barrier (finance), explains why and chains to cash-flow failure."}
+  ],
+  caseStudy:{
+    business:"Sony, Google & Little Dessert Shop",
+    intro:`<p>Businesses used in the role-of-the-entrepreneur questions.</p>
+      <ul>
+        <li><b>Sony PlayStation</b> — Ken Kutaragi's <b>intrapreneurial</b> venture, backed with $2.5bn, now ~70% of the console market.</li>
+        <li><b>Google</b> — its "20% time" policy let an intrapreneur create <b>Gmail</b>.</li>
+        <li><b>Live Well Ltd</b> — a health-tech firm relying on intrapreneurship to keep its app innovative.</li>
+        <li><b>Little Dessert Shop</b> — a start-up where the entrepreneur makes all the key decisions and bears the risk.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Assess the role of the entrepreneur in a start-up such as Little Dessert Shop. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One key role of the entrepreneur is decision-making — choosing the product range, pricing, location and marketing. <span class="tag t-A">APPLY</span>At Little Dessert Shop the entrepreneur might open in a busy retail area to attract footfall and offer creative dessert combinations to stand out. <span class="tag t-C">CHAIN</span>This lets the business respond quickly to changing tastes or local trends — seasonal items, limited-time offers — driving demand and loyalty, giving a competitive edge in a fast-moving food market.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, entrepreneurs also bear significant personal and financial risk. <span class="tag t-C">CHAIN</span>They are fully responsible for success or failure: if Little Dessert Shop invests heavily in décor or equipment and fails to attract enough customers, the entrepreneur faces cash-flow problems or personal loss. <span class="tag t-A">APPLY</span>The long hours managing staff, suppliers and service can also cause burnout and poor decisions over time, which may harm performance or limit growth.</p>`,
+     fb:"Mr. Akram's exemplar (Little Dessert Shop, 8). Decision-making role vs risk/pressure, applied throughout, no conclusion needed for 8 marks."},
+    {marks:10, q:"Assess the importance of intrapreneurship to the success of a business such as Sony. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One reason intrapreneurship is important to Sony is that it can lead to highly profitable innovation that transforms the company. <span class="tag t-A">APPLY</span>Ken Kutaragi's idea for a CD-ROM gaming system became the PlayStation; though gaming was not Sony's core business, his entrepreneurial persistence let Sony enter a fast-growing market. <span class="tag t-C">CHAIN</span>The PlayStation went on to dominate gaming, providing 40% of Sony's operating profit by 1998 — showing that giving employees freedom to explore ideas internally can create major commercial success and a more innovative culture.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, intrapreneurship carries real risk, especially when it needs large investment in unproven ideas. <span class="tag t-A">APPLY</span>Sony invested $2.5bn in the PlayStation — a venture many executives opposed; had it failed, Sony faced huge losses and reputational damage. <span class="tag t-C">CHAIN</span>Intrapreneurship can also cause internal conflict as traditional managers resist new ideas, slowing decisions and creating tension.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, intrapreneurship was critical to Sony's success through the PlayStation, enabling innovation from within and new revenue streams. However, the benefits depend heavily on the firm's willingness to invest, support creative staff and manage risk — so intrapreneurship is very important but must be carefully led.</p>`,
+     fb:"Model answer (Sony, 10). Intrapreneurship benefit (transformative innovation) vs risk ($2.5bn bet, internal conflict), applied to the PlayStation, with a conditional judgement."}
+  ],
+  resources:[
+    {label:"Intrapreneurship &amp; barriers to entrepreneurship — notes (PDF)", file:"resources/1-3-5-1-intrapreneurship-notes.pdf"}
+  ]
+},
+{
+  code:"1.3.5.2", subtheme:"1.3.5", title:"Entrepreneurial motives & characteristics",
+  business:"Case studies: Richard Mille, Approved Food & Elon Musk",
+  status:"live",
+  notes:[
+    {h:"Characteristics & skills of entrepreneurs", html:`
+      <p>Successful entrepreneurs tend to share certain <b>characteristics</b>:</p>
+      <ul>
+        <li><b>Risk-taking</b> — willing to make decisions with uncertain outcomes (e.g. <b>Richard Mille</b> invests heavily in "risky" advanced materials and precision mechanics that must be perfect "or go in the bin").</li>
+        <li><b>Innovation &amp; creativity</b> — generating new ideas and products that stand out.</li>
+        <li><b>Determination &amp; perseverance</b> — pushing on through setbacks (e.g. <b>Elon Musk</b> persisting through early SpaceX and Tesla near-failures).</li>
+        <li><b>Self-confidence and decisiveness</b> — backing their own judgement.</li>
+      </ul>
+      <p>They also need <b>skills</b> — financial, communication, organisation and leadership. Success is rarely down to the entrepreneur alone: experience, a strong team, finance and market conditions all matter too.</p>`},
+    {h:"Motives for starting a business", html:`
+      <p>Entrepreneurs start businesses for <b>financial</b> and <b>non-financial</b> reasons:</p>
+      <ul>
+        <li><b>Financial motives</b> — profit, a higher income than employment, and building personal wealth.</li>
+        <li><b>Non-financial motives</b> — independence ("being your own boss"), pursuing a passion, a better work-life balance, or a social/ethical aim (e.g. reducing food waste).</li>
+      </ul>
+      <p>A key distinction in how profit is pursued:</p>
+      <ul>
+        <li><b>Profit maximisation</b> — making the greatest possible profit, reinvesting to grow (vital for a low-margin, high-volume firm like <b>Approved Food</b>).</li>
+        <li><b>Profit satisficing</b> — making <i>enough</i> profit to be comfortable while pursuing other goals such as lifestyle, family time or ethics.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Risk-taking", marks:2, body:`When an entrepreneur makes decisions with uncertain outcomes, often involving financial or reputational consequences <span class="pt">1</span>; it is a core entrepreneurial trait that drives innovation but can lead to losses <span class="pt">2</span>.`},
+    {term:"Profit maximisation", marks:2, body:`Running a business to make the greatest possible profit <span class="pt">1</span>; the profit can be reinvested to grow, but chasing it too hard can conflict with other objectives like reputation <span class="pt">2</span>.`},
+    {term:"Profit satisficing", marks:2, body:`Aiming for enough profit to be satisfactory rather than the maximum possible <span class="pt">1</span>; it lets the owner pursue other goals such as work-life balance or ethical aims <span class="pt">2</span>.`},
+    {term:"Financial motive", marks:2, body:`A money-based reason for starting a business, such as profit, higher income or building wealth <span class="pt">1</span>; it shapes decisions towards keeping costs low and revenue high <span class="pt">2</span>.`},
+    {term:"Non-financial motive", marks:2, body:`A non-money reason for starting a business, such as independence, passion, work-life balance or a social aim <span class="pt">1</span>; it influences the objectives and values the business is run by <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'profit maximisation'.",
+     model:`Profit maximisation is running a business to make the greatest possible profit <span class="pt">1</span>; the profit can then be reinvested to grow the business <span class="pt">2</span>.`,
+     fb:"Greatest-possible-profit plus the reinvestment point — two developed points."},
+    {marks:2, q:"Define the term 'profit satisficing'.",
+     model:`Profit satisficing is aiming for enough profit to be satisfactory rather than the maximum possible <span class="pt">1</span>; it lets the owner pursue other goals such as work-life balance <span class="pt">2</span>.`,
+     fb:"Enough-not-maximum profit plus the other-goals point."},
+    {marks:4, q:"Explain one non-financial motive for starting a business.",
+     model:`One non-financial motive is independence <span class="pt">1</span>. This is because many people want to be their own boss rather than work for someone else <span class="pt">2</span>. As a result, they set up a business to control their own decisions and working life <span class="pt">3</span>, which can increase their job satisfaction and drive to succeed <span class="pt">4</span>.`,
+     fb:"Names a non-financial motive (independence), explains it and chains to satisfaction/drive."}
+  ],
+  caseStudy:{
+    business:"Richard Mille, Approved Food & Little Dessert Shop",
+    intro:`<p>Businesses used in the motives-and-characteristics questions.</p>
+      <ul>
+        <li><b>Richard Mille</b> — luxury watchmaker whose success rests on <b>risk-taking</b> and innovation (advanced materials, celebrity partners like Rafael Nadal, premium prices).</li>
+        <li><b>Approved Food</b> — the UK's largest online retailer of food near its use-by date; a low-margin business where <b>profit maximisation</b> funds growth, balanced against its food-waste-reduction mission.</li>
+        <li><b>Little Dessert Shop</b> — a start-up whose owner shows creativity and is driven by both profit and independence.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:6, q:"Explain one characteristic and one motive of the entrepreneur behind a start-up such as Little Dessert Shop. (6)",
+     model:`<p><span class="tag t-P">POINT</span>One characteristic of a successful entrepreneur is <b>creativity</b>. <span class="tag t-C">CHAIN</span>This allows them to develop unique dessert ideas or new flavours that attract customers and stand out from competitors. <span class="tag t-A">APPLY</span>This leads to increased customer interest and higher sales, supporting the objective of growth through brand recognition and repeat custom.</p>
+     <p><span class="tag t-P">POINT</span>A common <b>motive</b> for starting a business is <b>profit</b>. <span class="tag t-C">CHAIN</span>The owner of Little Dessert Shop may want to earn more than in a regular job, especially after investing personal savings. <span class="tag t-A">APPLY</span>This leads them to make careful financial decisions to keep costs low and revenue high, helping achieve long-term stability and the ability to open more branches.</p>`,
+     fb:"Mr. Akram's exemplar (Little Dessert Shop, 6). One characteristic (creativity) and one motive (profit), each explained and applied."},
+    {marks:8, q:"Discuss the importance of profit maximisation to a business such as Approved Food. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Profit maximisation is important to Approved Food because it lets the business reinvest and grow. <span class="tag t-C">CHAIN</span>As a low-margin retailer it needs high sales volumes to stay competitive, and more profit per order can be reinvested in warehouse space, delivery systems and marketing. <span class="tag t-A">APPLY</span>This supports its expansion as the UK's largest online retailer of food near its use-by date and helps it maintain 60–70% savings for customers through lower costs per order.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, profit maximisation may not always be the most important goal, especially where it conflicts with other objectives. <span class="tag t-A">APPLY</span>Approved Food is also driven by ethical aims — reducing food waste and offering savings — so raising prices or cutting quality to chase profit could lose the value-conscious customers attracted to its mission. <span class="tag t-C">CHAIN</span>A focus on short-term profit could therefore damage long-term reputation, suggesting profit must be balanced with social and ethical values.</p>`,
+     fb:"Mr. Akram's exemplar (Approved Food, 8). Profit maximisation for reinvestment vs conflict with the ethical mission, applied throughout."},
+    {marks:10, q:"Assess the importance of risk-taking within Richard Mille's business. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One reason risk-taking is important to Richard Mille is that it drives constant innovation and product uniqueness. <span class="tag t-A">APPLY</span>Mr Mille calls his watches "risky work", using advanced materials and precision mechanics that must be perfect or "go in the bin" — heavy R&D investment with no guaranteed return, producing standout products worn by elite athletes like Rafael Nadal. <span class="tag t-C">CHAIN</span>Without this bold approach RM would not stand out in the luxury market; risk-taking builds its identity as the most innovative brand, letting it command premium prices from niche high-end buyers.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, risk-taking alone is not enough. <span class="tag t-C">CHAIN</span>If high-risk designs fail to meet expectations, RM could lose reputation or waste costs on rejected products — serious given its small production runs and perfectionist standards. <span class="tag t-A">APPLY</span>Mille's experience at Seiko and as a CEO gave him the business knowledge and leadership to balance risk with sound decisions.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, risk-taking has been essential in making RM bold and innovative — through unique materials, celebrity partnerships and perfectionist standards. But it succeeds because it is combined with strategic thinking, leadership experience and a strong brand vision, showing risk must be managed, not random, to be truly effective.</p>`,
+     fb:"Mr. Akram's exemplar (Richard Mille, 10). Risk-taking as the source of innovation/premium pricing, balanced by the need to manage it with experience and strategy."}
+  ],
+  resources:[
+    {label:"Entrepreneurial motives &amp; characteristics — notes (PDF)", file:"resources/1-3-5-2-motives-characteristics-notes.pdf"}
+  ]
+},
+{code:"1.3.5.3", subtheme:"1.3.5", title:"Business objectives", business:"Survival, profit, growth, market share & social aims", status:"soon"},
+{code:"1.3.5.4", subtheme:"1.3.5", title:"Forms of business", business:"Sole trader, partnership, private & public limited company", status:"soon"},
+{code:"1.3.5.5", subtheme:"1.3.5", title:"Business choices", business:"Opportunity cost & trade-offs", status:"soon"},
+{code:"1.3.5.6", subtheme:"1.3.5", title:"Moving from entrepreneur to leader", business:"See also Leadership (1.3.4.5)", status:"soon"}
 ];
