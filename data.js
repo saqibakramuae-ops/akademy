@@ -2650,6 +2650,103 @@ window.CURRICULUM = [
     {label:"The market (adding value, differentiation & competition) — lesson notes (PDF)", file:"resources/1-3-1-1-the-market-notes.pdf"}
   ]
 },
-{code:"1.3.1.2", subtheme:"1.3.1", title:"Market research", business:"Primary & secondary research, quantitative & qualitative", status:"soon"},
+{
+  code:"1.3.1.2", subtheme:"1.3.1", title:"Market research",
+  business:"Case studies: McDonald's, Superdry, Nando's (China) & Innocent", status:"live",
+  notes:[
+    {h:"Purpose & types of market research", html:`
+      <p><b>Market research</b> is the collection and analysis of data and information to inform a business about its market — identifying customer needs, estimating demand and understanding consumer behaviour before committing resources.</p>
+      <ul>
+        <li><b>Primary (field) research</b> — collecting <b>first-hand, original data</b> that did not exist before, straight from the market.</li>
+        <li><b>Secondary (desk) research</b> — gathering <b>existing data</b> that has already been produced, from <b>internal</b> sources (sales records, loyalty data) or <b>external</b> sources (reports, government data).</li>
+      </ul>`},
+    {h:"Methods of research", html:`
+      <table class="datatable">
+        <tr><th>Primary (field)</th><th>Secondary (desk)</th></tr>
+        <tr><td>Surveys &amp; questionnaires</td><td>Internet &amp; databases</td></tr>
+        <tr><td>Focus groups &amp; interviews</td><td>Market &amp; industry reports</td></tr>
+        <tr><td>Observation</td><td>Government reports</td></tr>
+        <tr><td>Test marketing &amp; product trials</td><td>Newspapers &amp; social media</td></tr>
+      </table>
+      <p><b>Primary</b> is tailored and up to date but costly and slow; <b>secondary</b> is cheap and quick but may be out of date or not specific to the business. Firms often use both — e.g. McDonald's uses surveys and focus groups alongside industry reports.</p>`},
+    {h:"Quantitative vs qualitative data", html:`
+      <ul>
+        <li><b>Quantitative</b> research collects <b>numerical</b> data — the <b>who, where, how much, how many, how often</b>. It measures trends, demand and behaviour (e.g. survey statistics).</li>
+        <li><b>Qualitative</b> research explores <b>opinions, reasons and motivations</b> — the <b>why, would, how</b>. It gives depth of understanding (e.g. focus-group discussion).</li>
+      </ul>
+      <p>Quantitative data is easy to measure and compare but lacks the "why"; qualitative data is rich and insightful but harder to analyse and more subjective. Strong research usually blends both.</p>`},
+    {h:"Sampling", html:`
+      <p>Rather than ask the whole target market (expensive and slow), a business questions a smaller <b>sample</b> chosen to represent it:</p>
+      <ul>
+        <li><b>Random sampling</b> — everyone has an equal chance of selection (e.g. a computer picks names from a database). Cheap and quick, but may not be representative and needs a full customer list.</li>
+        <li><b>Stratified sampling</b> — the market is split into sub-groups (age, gender, income, location) and a <b>random</b> sample is taken from each, sized in proportion (e.g. 70 males : 30 females if sales are 70% male).</li>
+        <li><b>Quota sampling</b> — like stratified, but researchers use <b>convenience</b> within each sub-group (asking anyone who fits the profile, e.g. in a shopping mall).</li>
+      </ul>
+      <p><b>Sampling bias</b> happens when the chosen sample doesn't represent the target market — from the wrong participants or too small a sample. Quota and stratified sampling reduce this risk; sample size must be chosen carefully.</p>`},
+    {h:"Using ICT to support research", html:`
+      <ul>
+        <li><b>Loyalty-card programmes</b> — customers share data (age, location, preferences) stored on a database in return for personalised offers, letting a firm link purchases to identities and understand buyer behaviour.</li>
+        <li><b>Social media</b> — a low-cost way to engage target customers, test ideas and get instant feedback on products and campaigns.</li>
+      </ul>
+      <p>ICT makes research faster, cheaper and more detailed, but raises data-accuracy and privacy considerations.</p>`}
+  ],
+  definitions:[
+    {term:"Market research", marks:2, body:`The collection and analysis of data about a market <span class="pt">1</span>; it helps a business identify customer needs, estimate demand and reduce the risk of its decisions <span class="pt">2</span>.`},
+    {term:"Primary research", marks:2, body:`The collection of first-hand, original data straight from the market, e.g. surveys or focus groups <span class="pt">1</span>; it is specific and up to date but costly and time-consuming <span class="pt">2</span>.`},
+    {term:"Secondary research", marks:2, body:`Gathering data that already exists, from internal or external sources such as reports and databases <span class="pt">1</span>; it is cheap and quick but may be out of date or not specific to the business <span class="pt">2</span>.`},
+    {term:"Quantitative data", marks:2, body:`Numerical data that answers how much, how many or how often <span class="pt">1</span>; it lets a business measure trends and demand but does not explain the reasons behind them <span class="pt">2</span>.`},
+    {term:"Qualitative data", marks:2, body:`Descriptive, opinion-based data about what people think and why <span class="pt">1</span>; it gives depth of insight into motivations but is subjective and harder to analyse <span class="pt">2</span>.`},
+    {term:"Sampling", marks:2, body:`Questioning a smaller group chosen to represent the whole target market <span class="pt">1</span>; it saves the time and cost of surveying everyone, provided the sample is representative <span class="pt">2</span>.`},
+    {term:"Random sampling", marks:2, body:`A sample in which every member of the target market has an equal chance of being selected <span class="pt">1</span>; it is quick and cheap but may not be fully representative <span class="pt">2</span>.`},
+    {term:"Stratified sampling", marks:2, body:`Dividing the target market into sub-groups and taking a random sample from each in proportion to its size <span class="pt">1</span>; this makes the sample more representative and reduces bias <span class="pt">2</span>.`},
+    {term:"Quota sampling", marks:2, body:`Like stratified sampling but using convenience selection within each sub-group — asking anyone who fits the profile <span class="pt">1</span>; it is faster and cheaper but less random and more open to bias <span class="pt">2</span>.`},
+    {term:"Sampling bias", marks:2, body:`When the views of the chosen sample do not accurately represent the target market <span class="pt">1</span>, caused by the wrong participants or too small a sample, making the results unreliable <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'market research'.",
+     model:`Market research is the collection and analysis of data about a market <span class="pt">1</span>; it helps a business identify customer needs and estimate demand, reducing the risk of its decisions <span class="pt">2</span>.`,
+     fb:"Collection/analysis of market data plus its purpose — two developed points."},
+    {marks:2, q:"Distinguish between primary and secondary market research.",
+     model:`Primary research collects new first-hand data straight from the market, such as a survey <span class="pt">1</span>; secondary research uses data that already exists, such as reports or databases <span class="pt">2</span>.`,
+     fb:"First-hand/original vs existing/already-produced — two contrasting points."},
+    {marks:4, q:"Explain one limitation of relying on secondary market research.",
+     model:`One limitation is that the data may be out of date <span class="pt">1</span>. For example, extract data showing 63.2% of US coffee consumers were aged 40–59 was from 2016, so habits may have since changed <span class="pt">2</span>. This means the business could target the wrong group <span class="pt">3</span>, leading to poor decisions and missed opportunities in the current market <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar. Out-of-date data linked, with the coffee evidence, to a poor-targeting consequence."},
+    {marks:4, q:"Explain one benefit to a hotel chain such as Yotel of using primary research.",
+     model:`Primary research gives Yotel data specific to its own guests <span class="pt">1</span>. This is because surveys and interviews ask Yotel's actual and target customers directly, rather than relying on general data <span class="pt">2</span>. As a result, Yotel learns exactly what its guests value — e.g. tech-enabled, compact rooms <span class="pt">3</span>, so it can tailor its service and reduce the risk of investing in features customers don't want <span class="pt">4</span>.`,
+     fb:"Link first-hand, business-specific data to a tailored decision and reduced risk."}
+  ],
+  caseStudy:{
+    business:"McDonald's, Superdry, Nando's (China) & Innocent",
+    intro:`<p>Businesses used in the market-research questions.</p>
+      <ul>
+        <li><b>McDonald's</b> — uses a mix of primary methods (surveys, focus groups) and secondary sources (industry and government reports) to understand its market.</li>
+        <li><b>Superdry</b> — weighing primary research methods to understand its specific fashion customers.</li>
+        <li><b>Nando's (China)</b> — used random sampling of chefs, owners and managers to research food preferences before expanding across a large, diverse country.</li>
+        <li><b>Innocent</b> — using test marketing to trial drinks with real customers before a full national launch.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:6, q:"Assess the benefits to Superdry of using primary research to understand its customers. (6)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit is data specific to Superdry's own customers, because primary methods like surveys and focus groups ask its actual target market directly. <span class="tag t-C">CHAIN</span>This gives up-to-date, relevant insight into what Superdry shoppers want (styles, price points), so it can design ranges that fit demand and avoid wasting money on products that won't sell.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, primary research is costly and slow, and a small sample may not represent all Superdry customers. So the benefit depends on using a large enough, well-chosen sample — otherwise the findings could mislead rather than guide decisions.</p>`,
+     fb:"Mr. Akram's exemplar (Superdry). Specific, up-to-date data benefit balanced by cost/sample-size limitation."},
+    {marks:10, q:"Assess the value to Innocent of using test marketing before a full product launch. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One value is reducing launch risk, because test marketing trials the product with real customers in a limited area first. <span class="tag t-C">CHAIN</span>Innocent gets genuine feedback on taste, price and packaging, so it can refine the drink before a national rollout — avoiding the heavy cost of a full launch that flops.</p>
+     <p><span class="tag t-P">POINT</span>A second value is better forecasting, because actual trial sales indicate likely demand. <span class="tag t-C">CHAIN</span>This helps Innocent plan production and distribution more accurately, protecting cash flow and supplier relationships.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, test marketing has drawbacks: it is costly and slow, the test area may not represent the whole market, and it warns competitors who can copy the idea before the full launch.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, test marketing is valuable for Innocent because it lowers the risk of an expensive failure, but its worth depends on choosing a representative test area and acting quickly before rivals respond.</p>`,
+     fb:"Mr. Akram's exemplar (Innocent). Risk-reduction and forecasting benefits balanced against cost, representativeness and tipping off competitors."},
+    {marks:12, q:"Assess the use of random sampling in Nando's market research when entering China. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One disadvantage is that random sampling may not reflect China's diversity, because even with equal selection chances the sample could miss key groups like rural chefs or specific dietary traditions. <span class="tag t-C">CHAIN</span>This means the results could lack insight into important regional preferences, so Nando's might make menu decisions that don't appeal everywhere, leading to under-performing store launches and weaker brand recognition in some regions.</p>
+     <p><span class="tag t-P">POINT</span>A second disadvantage is the high cost and time of random sampling across such a large, diverse country, because Nando's had to survey a wide mix of owners, chefs and managers. <span class="tag t-C">CHAIN</span>This needs a big budget and planning, so delays could slow decisions and rollout — letting competitors enter first.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, random sampling did reduce bias and improve reliability, because every chef or manager had an equal chance of inclusion. This gave a fairer, more balanced picture of Chinese food habits, so Nando's could base menu and marketing choices on a wide range of insights.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, random sampling showed a strong effort to understand the market, but its success depends on how well it was managed and whether the sample truly reflected all key groups. In such a complex market it may not be enough alone — so it is recommended Nando's combines it with stratified or quota sampling to ensure every key segment is represented.</p>`,
+     fb:"Mr. Akram's exemplar (Nando's, 12). Two disadvantages (representativeness, cost/time) balanced by the bias-reduction advantage, concluding 'combine with stratified/quota'."}
+  ],
+  resources:[
+    {label:"Market research, data types & sampling — lesson notes (PDF)", file:"resources/1-3-1-2-market-research-notes.pdf"}
+  ]
+},
 {code:"1.3.1.3", subtheme:"1.3.1", title:"Market positioning", business:"Market mapping, segmentation & USP", status:"soon"}
 ];
