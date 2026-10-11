@@ -3866,6 +3866,101 @@ window.CURRICULUM = [
 },
 {code:"1.3.4.2", subtheme:"1.3.4", title:"Recruitment, selection & training", business:"Recruitment, selection and training methods", status:"soon"},
 {code:"1.3.4.3", subtheme:"1.3.4", title:"Organisational design", business:"Structures, spans of control & delegation", status:"soon"},
-{code:"1.3.4.4", subtheme:"1.3.4", title:"Motivation in theory & practice", business:"Taylor, Mayo, Maslow, Herzberg & methods", status:"soon"},
+{
+  code:"1.3.4.4", subtheme:"1.3.4", title:"Motivation in theory & practice",
+  business:"Case studies: Barclays, Deliveroo & Nissan", status:"live",
+  notes:[
+    {h:"The four motivation theories", html:`
+      <p>Motivation is the drive that makes employees work hard and well. Four classic theories explain it differently:</p>
+      <ul>
+        <li><b>Taylor (Scientific Management)</b> — workers are motivated mainly by <b>money</b>. Break jobs into simple tasks, train workers, and pay by output (<b>piece-rate</b>). Efficient, but treats people like machines and can cause boredom.</li>
+        <li><b>Mayo (Human Relations)</b> — the Hawthorne studies showed workers are motivated by <b>social needs and attention</b>: teamwork, communication and manager involvement, not just pay.</li>
+        <li><b>Maslow (Hierarchy of Needs)</b> — five levels of need; a worker is only motivated by the next level up once the one below is met. Firms offer different incentives to move staff up the hierarchy.</li>
+        <li><b>Herzberg (Two-Factor)</b> — <b>motivators</b> (achievement, recognition, responsibility) come from the job itself and drive effort; <b>hygiene factors</b> (pay, conditions, security) only prevent dissatisfaction. Note: Herzberg saw <b>pay as a hygiene factor</b> — the opposite of Taylor.</li>
+      </ul>
+      <p>Maslow's five levels, from the bottom up:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 360 220" style="min-width:300px;width:100%;max-width:440px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="180,20 152,56 208,56" fill="rgba(245,166,35,.30)" stroke="var(--amber)" stroke-width="1.5"/>
+        <polygon points="152,56 208,56 236,92 124,92" fill="rgba(15,42,74,.14)" stroke="var(--navy)" stroke-width="1.5"/>
+        <polygon points="124,92 236,92 264,128 96,128" fill="rgba(245,166,35,.18)" stroke="var(--amber)" stroke-width="1.5"/>
+        <polygon points="96,128 264,128 292,164 68,164" fill="rgba(15,42,74,.10)" stroke="var(--navy)" stroke-width="1.5"/>
+        <polygon points="68,164 292,164 320,200 40,200" fill="rgba(245,166,35,.12)" stroke="var(--amber)" stroke-width="1.5"/>
+        <g font-family="inherit" text-anchor="middle" fill="var(--ink)">
+          <text x="180" y="50" font-size="7.5" font-weight="700">Self-actualisation</text>
+          <text x="180" y="78" font-size="8.5" font-weight="700">Esteem</text>
+          <text x="180" y="114" font-size="8.5" font-weight="700">Social</text>
+          <text x="180" y="150" font-size="8.5" font-weight="700">Safety</text>
+          <text x="180" y="186" font-size="8.5" font-weight="700">Physiological</text>
+        </g>
+      </svg>
+      </div>`},
+    {h:"Financial methods of motivation", html:`
+      <p><b>Financial methods</b> use money to motivate (linked to Taylor):</p>
+      <ul>
+        <li><b>Piece-rate pay</b> — paid per unit produced; drives output in factories.</li>
+        <li><b>Commission</b> — a % of each sale; common for sales staff (e.g. BMW showrooms).</li>
+        <li><b>Bonus payments</b> — extra sums on top of basic pay (e.g. <b>Lidl</b> paid 25,000 staff a £200 "thank you" bonus during Covid, costing £5.5m).</li>
+        <li><b>Profit share</b> — staff receive a slice of profits, aligning them with the firm.</li>
+        <li><b>Employee share ownership</b> — staff own shares, so they gain when the firm succeeds.</li>
+      </ul>
+      <p>Financial rewards work best for money-motivated staff, but Herzberg warns they may only prevent dissatisfaction rather than drive long-term effort.</p>`},
+    {h:"Non-financial methods of motivation", html:`
+      <p><b>Non-financial methods</b> motivate through the job and workplace (linked to Mayo, Maslow and Herzberg):</p>
+      <ul>
+        <li><b>Delegation &amp; empowerment</b> — giving staff authority and trust to make decisions.</li>
+        <li><b>Consultation</b> — involving staff in decisions (e.g. <b>Nissan</b> quality circles).</li>
+        <li><b>Team working</b> — Nissan builds cars in teams of 25, with socialising, a free gym and family events.</li>
+        <li><b>Job enrichment</b> (more challenging tasks), <b>job rotation</b> (switching tasks — Nissan workers rotate weekly and are multi-skilled) and <b>job enlargement</b> (more varied tasks at the same level).</li>
+        <li><b>Flexible working</b> — flexible hours, home working (e.g. <b>Nestlé</b>'s flexible hours and dog-friendly HQ for work-life balance).</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Motivation", marks:2, body:`The internal drive that makes an employee work hard and well towards the firm's goals <span class="pt">1</span>; higher motivation tends to raise productivity, quality and staff retention <span class="pt">2</span>.`},
+    {term:"Taylor's scientific management", marks:2, body:`The theory that workers are motivated mainly by money, so jobs are simplified and pay linked to output <span class="pt">1</span>; it raises efficiency but can make work boring and ignores social needs <span class="pt">2</span>.`},
+    {term:"Herzberg's two-factor theory", marks:2, body:`The idea that motivators (achievement, recognition, responsibility) drive effort while hygiene factors (pay, conditions) only prevent dissatisfaction <span class="pt">1</span>; so improving pay alone will not motivate staff long term <span class="pt">2</span>.`},
+    {term:"Piece-rate pay", marks:2, body:`Paying a worker a fixed amount for each unit they produce <span class="pt">1</span>; it encourages higher output but can reduce quality if staff rush <span class="pt">2</span>.`},
+    {term:"Job enrichment", marks:2, body:`Giving employees more challenging, meaningful tasks and greater responsibility <span class="pt">1</span>; it can raise motivation through a sense of achievement but needs training and may not suit every worker <span class="pt">2</span>.`},
+    {term:"Empowerment", marks:2, body:`Giving employees the authority and trust to make their own decisions at work <span class="pt">1</span>; it can boost motivation and speed up decisions but requires capable, well-trained staff <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'piece-rate pay'.",
+     model:`Piece-rate pay is paying a worker a fixed amount for each unit they produce <span class="pt">1</span>; it encourages higher output but can reduce quality if staff rush to produce more <span class="pt">2</span>.`,
+     fb:"Pay-per-unit plus the output/quality trade-off — two developed points."},
+    {marks:2, q:"Define the term 'job enrichment'.",
+     model:`Job enrichment means giving employees more challenging tasks and greater responsibility <span class="pt">1</span>; this can raise motivation through a sense of achievement, in line with Herzberg's motivators <span class="pt">2</span>.`,
+     fb:"More responsibility/challenge plus the motivator link."},
+    {marks:4, q:"Explain one non-financial method a business could use to motivate its workers.",
+     model:`A business could use team working to motivate staff <span class="pt">1</span>. This is because, as Mayo found, employees are motivated by social interaction and feeling part of a group <span class="pt">2</span>. As a result, workers like those at Nissan feel more valued and engaged <span class="pt">3</span>, raising morale and productivity while lowering absenteeism <span class="pt">4</span>.`,
+     fb:"Names a non-financial method, links to Mayo and chains to morale/productivity with context."}
+  ],
+  caseStudy:{
+    business:"Barclays, Deliveroo & Nissan",
+    intro:`<p>Businesses used in the motivation questions.</p>
+      <ul>
+        <li><b>Barclays</b> — switched from <b>sales-based bonuses</b> (which drove PPI mis-selling and over £1bn in fines) to <b>customer-service-based bonuses</b>, cutting bonus cost from ~£50m to ~£30m a year.</li>
+        <li><b>Deliveroo</b> — gig-economy riders paid per delivery; a test case for Taylor's piece-rate vs Herzberg's motivators.</li>
+        <li><b>Nissan (Sunderland)</b> — team working, job rotation, multi-skilling, quality circles and a flat salary — low absenteeism and high productivity.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:18, q:"Evaluate the use of Taylor's and Herzberg's theories to improve the motivation of Deliveroo's riders. (18)",
+     model:`<p><span class="tag t-P">POINT</span>One way to improve riders' motivation is <b>Taylor's scientific management</b>. <span class="tag t-C">CHAIN</span>Taylor believed workers are motivated by money and pay should be linked to output through piece-rates. <span class="tag t-A">APPLY</span>Deliveroo could offer a higher fee per delivery or bonuses for completing a set number in a time frame, encouraging riders to work faster and cut late orders — raising productivity, customer satisfaction and repeat use.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, Taylor may not fit this context: riders already face time-pressure and penalties for late deliveries, so extra pressure could cause dissatisfaction and burnout. <span class="tag t-C">CHAIN</span>Motivation might fall, raising turnover and recruitment costs and risking reputational damage if service drops.</p>
+     <p><span class="tag t-P">POINT</span>Alternatively, <b>Herzberg's two-factor theory</b> separates hygiene factors (pay, conditions) from motivators (achievement, responsibility). <span class="tag t-A">APPLY</span>Deliveroo could add job rotation, training and rider recognition so riders feel valued and gain autonomy. <span class="tag t-C">CHAIN</span>They may become more loyal and productive, improving service and brand loyalty. <span class="tag t-J">HOWEVER</span>But riders are gig workers, not permanent staff, so training and progression are hard and costly to provide, meaning motivators may only lift motivation slightly without broader reform.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, Herzberg's theory is more likely to improve rider motivation in the long term because it goes beyond pay to respect, development and the job role itself; Taylor's piece-rate may raise speed but the pressure could harm morale and retention. Success depends on how Deliveroo balances flexibility with fairness. It is recommended Deliveroo adopt Herzberg's ideas — recognition and training — alongside better basic conditions, improving motivation sustainably and ethically.</p>`,
+     fb:"Mr. Akram's exemplar (Deliveroo, 18). Taylor and Herzberg each developed with a benefit and limitation, applied to the gig model, with a reasoned recommendation."},
+    {marks:20, q:"Barclays proposes to move from sales-based bonuses to a customer-service-based bonus system. Evaluate the effectiveness of using financial and non-financial techniques to motivate the employees of Barclays plc. (20)",
+     model:`<p><span class="tag t-P">POINT</span>Barclays' previous <b>financial</b> motivation — sales-based bonuses — encouraged high sales volumes and strong financial incentives for staff who hit targets. <span class="tag t-A">APPLY</span>This boosted revenue and short-term goals. <span class="tag t-C">CHAIN</span>However, tying bonuses to sales drove unethical practice — the mis-selling of PPI — leading to public distrust, regulatory fines over £1bn and a damaged brand. This shows purely sales-based financial motivation can compromise ethics.</p>
+     <p><span class="tag t-P">POINT</span>The shift to a <b>customer-service-based</b> bonus aligns more with non-financial motivation, rewarding satisfaction and loyalty. <span class="tag t-C">CHAIN</span>This encourages a customer-focused culture, improving reputation, long-term loyalty and regulatory safety, and it cuts bonus cost from ~£50m to ~£30m a year. <span class="tag t-J">HOWEVER</span>However, it may lower sales and short-term profit, and staff used to high sales bonuses could feel demotivated, hurting retention.</p>
+     <p><span class="tag t-A">APPLY</span>The service-based system supports ethical behaviour and fits <b>Herzberg's</b> view that intrinsic factors like feeling valued motivate staff. <span class="tag t-J">HOWEVER</span>But moving away from direct financial reward may not appeal to employees who, in <b>Taylor's</b> view, see pay as the main incentive — risking a dip in motivation among sales-focused staff.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, the most effective approach for Barclays is a <b>balanced</b> strategy that meets ethical standards while keeping staff motivated. By keeping some financial incentives alongside customer-service bonuses, Barclays can balance short-term performance with long-term reputation, ensuring sustainable growth and trust with both customers and employees.</p>`,
+     fb:"Mr. Akram's exemplar (Barclays, 20). Financial vs non-financial weighed with PPI/fines context and Herzberg/Taylor, concluding on a balanced strategy."}
+  ],
+  resources:[
+    {label:"Motivation theories — lesson notes (PDF)", file:"resources/1-3-4-4-motivation-theories-notes.pdf"},
+    {label:"Financial &amp; non-financial methods — lesson notes (PDF)", file:"resources/1-3-4-4-motivation-methods-notes.pdf"}
+  ]
+},
 {code:"1.3.4.5", subtheme:"1.3.4", title:"Leadership", business:"Leadership styles & their influence", status:"soon"}
 ];
