@@ -10,9 +10,9 @@
    Then upload this file (and any PDFs) to GitHub — the site rebuilds itself.
 ============================================================================ */
 
-window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","1.3.2":"The market (demand & supply)","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
-window.SUBTHEME_SUB = {"1.3.2":"Unit 1: Marketing and people \u2014 demand, supply and how they interact to set market price, plus price and income elasticity of demand.","1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
-window.ICONS = {"1.3.2.1":"\ud83d\udcc9","1.3.2.2":"\ud83d\udcc8","1.3.2.3":"\u2696\ufe0f","1.3.2.4":"\ud83d\udcb9","1.3.2.5":"\ud83d\udcb0","1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
+window.SUBTHEME_TITLE = {"1.3.1":"Meeting customer needs","1.3.2":"The market (demand & supply)","1.3.3":"Marketing mix and strategy","3.3.1":"Business objectives & strategy","3.3.2":"Business growth","3.3.3":"Decision-making techniques","3.3.4":"Influences on business decisions","3.3.5":"Assessing competitiveness","3.3.6":"Managing change"};
+window.SUBTHEME_SUB = {"1.3.3":"Unit 1: Marketing and people \u2014 marketing objectives and strategy, product and service design, promotion and branding, pricing strategies and distribution.","1.3.2":"Unit 1: Marketing and people \u2014 demand, supply and how they interact to set market price, plus price and income elasticity of demand.","1.3.1":"Unit 1: Marketing and people \u2014 understanding the market, market research and market positioning to meet customer needs.","3.3.2":"Theme 3: Business decisions and strategy \u2014 reasons for growth, economies and diseconomies of scale, organic and inorganic growth, and the types of integration through mergers and takeovers.","3.3.1":"Theme 3: Business decisions and strategy \u2014 corporate objectives and mission, theories of corporate strategy, SWOT and external influences.","3.3.6":"Theme 3: Business decisions and strategy \u2014 the key factors in managing change and how businesses plan for risk through contingency and succession planning.","3.3.5":"Theme 3: Business decisions and strategy \u2014 interpreting financial statements, ratio analysis and human-resource measures to judge competitiveness.","3.3.3":"Theme 3: Business decisions and strategy \u2014 the quantitative tools used to make and justify business decisions.","3.3.4":"Theme 3: Business decisions and strategy \u2014 corporate culture, stakeholders, ethics and CSR, and how they shape business decisions."};
+window.ICONS = {"1.3.3.1":"\ud83e\udded","1.3.3.2":"\ud83c\udfa8","1.3.3.3":"\ud83d\udce3","1.3.3.4":"\ud83c\udff7\ufe0f","1.3.3.5":"\ud83d\ude9a","1.3.2.1":"\ud83d\udcc9","1.3.2.2":"\ud83d\udcc8","1.3.2.3":"\u2696\ufe0f","1.3.2.4":"\ud83d\udcb9","1.3.2.5":"\ud83d\udcb0","1.3.1.1":"\ud83d\uded2","1.3.1.2":"\ud83d\udd0d","1.3.1.3":"\ud83c\udfAF","3.3.2.1":"\ud83c\udf31","3.3.2.2":"\ud83c\udf3f","3.3.2.3":"\ud83d\udd17","3.3.2.4":"\ud83c\udfd7\ufe0f","3.3.2.5":"\u26a0\ufe0f","3.3.3.1":"📈","3.3.3.2":"💷","3.3.3.3":"🌳","3.3.3.4":"🧭","3.3.3.5":"➗","3.3.4.5":"⚖️","3.3.4.6":"♻️","3.3.4.1":"🏢","3.3.4.2":"🗂️","3.3.4.3":"🔄","3.3.4.7":"🤝","3.3.4.4":"👥","3.3.5.1":"📄","3.3.5.2":"📊","3.3.5.3":"👔","3.3.6.1":"🔄","3.3.6.2":"🛡️","3.3.1.1":"🎯","3.3.1.2":"♟️","3.3.1.3":"🧩","3.3.1.4":"🌍"};
 window.PAPERS = [{"year": "2020", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-jan-qu.pdf", "ms": "resources/papers/wbs13-2020-jan-ms.pdf", "er": "resources/papers/wbs13-2020-jan-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2020-oct-qu.pdf", "ms": "resources/papers/wbs13-2020-oct-ms.pdf", "er": "resources/papers/wbs13-2020-oct-er.pdf"}]}, {"year": "2021", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jan-qu.pdf", "ms": "resources/papers/wbs13-2021-jan-ms.pdf", "er": "resources/papers/wbs13-2021-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-jun-qu.pdf", "ms": "resources/papers/wbs13-2021-jun-ms.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2021-oct-qu.pdf", "ms": "resources/papers/wbs13-2021-oct-ms.pdf", "er": "resources/papers/wbs13-2021-oct-er.pdf"}]}, {"year": "2022", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jan-qu.pdf", "ms": "resources/papers/wbs13-2022-jan-ms.pdf", "er": "resources/papers/wbs13-2022-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-jun-qu.pdf", "ms": "resources/papers/wbs13-2022-jun-ms.pdf", "er": "resources/papers/wbs13-2022-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2022-oct-qu.pdf", "ms": "resources/papers/wbs13-2022-oct-ms.pdf", "er": "resources/papers/wbs13-2022-oct-er.pdf"}]}, {"year": "2023", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jan-qu.pdf", "ms": "resources/papers/wbs13-2023-jan-ms.pdf", "er": "resources/papers/wbs13-2023-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-jun-qu.pdf", "ms": "resources/papers/wbs13-2023-jun-ms.pdf", "er": "resources/papers/wbs13-2023-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2023-oct-qu.pdf", "ms": "resources/papers/wbs13-2023-oct-ms.pdf", "er": "resources/papers/wbs13-2023-oct-er.pdf"}]}, {"year": "2024", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jan-qu.pdf", "ms": "resources/papers/wbs13-2024-jan-ms.pdf", "er": "resources/papers/wbs13-2024-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-jun-qu.pdf", "ms": "resources/papers/wbs13-2024-jun-ms.pdf", "er": "resources/papers/wbs13-2024-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2024-oct-qu.pdf", "ms": "resources/papers/wbs13-2024-oct-ms.pdf", "er": "resources/papers/wbs13-2024-oct-er.pdf"}]}, {"year": "2025", "series": [{"label": "January", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jan-qu.pdf", "ms": "resources/papers/wbs13-2025-jan-ms.pdf", "er": "resources/papers/wbs13-2025-jan-er.pdf"}, {"label": "June", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-jun-qu.pdf", "ms": "resources/papers/wbs13-2025-jun-ms.pdf", "er": "resources/papers/wbs13-2025-jun-er.pdf"}, {"label": "October", "paper": "WBS13/01", "qu": "resources/papers/wbs13-2025-oct-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-ms.pdf", "er": "resources/papers/wbs13-2025-oct-er.pdf"}, {"label": "October (Paper A)", "paper": "WBS13/01A", "qu": "resources/papers/wbs13-2025-oct-a-qu.pdf", "ms": "resources/papers/wbs13-2025-oct-a-ms.pdf", "er": "resources/papers/wbs13-2025-oct-a-er.pdf"}]}];
 window.PAPERS_BANK = {"questions": "resources/papers/wbs13-20mark-questions.pdf", "ms": "resources/papers/wbs13-20mark-markscheme.pdf"};
 window.REVISION = {"unit": [{"label": "Theme 3 — full revision notes", "icon": "📘", "file": "resources/revision/rev-unit3-theme3-notes.pdf"}, {"label": "Unit 3 — mind maps", "icon": "🧠", "file": "resources/revision/rev-unit3-mind-maps.pdf"}], "sections": [{"code": "3.3.1", "title": "Business objectives & strategy", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-1-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-1-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-1-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-1-exam-patterns.pdf"}]}, {"code": "3.3.2", "title": "Business growth", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-2-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-2-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-2-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-2-exam-patterns.pdf"}]}, {"code": "3.3.3", "title": "Decision-making techniques", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-3-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-3-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-3-exam-patterns.pdf"}, {"label": "Rapid-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-3-rapid-fire.pdf"}]}, {"code": "3.3.4", "title": "Influences on business decisions", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-4-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-4-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-4-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-4-exam-patterns.pdf"}]}, {"code": "3.3.5", "title": "Assessing competitiveness", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-5-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-5-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-5-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-5-exam-patterns.pdf"}]}, {"code": "3.3.6", "title": "Managing change", "docs": [{"label": "One-page summary", "icon": "📄", "file": "resources/revision/rev-3-3-6-summary.pdf"}, {"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-3-3-6-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-3-3-6-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-3-3-6-exam-patterns.pdf"}]}]};
@@ -3309,5 +3309,135 @@ window.CURRICULUM = [
     {label:"Income elasticity of demand (YED) — lesson notes (PDF)", file:"resources/1-3-2-5-yed-notes.pdf"},
     {label:"PED & YED \u2014 calculation practice (PDF)", file:"resources/1-3-2-ped-yed-calc-practice.pdf"}
   ]
-}
+},
+{
+  code:"1.3.3.1", subtheme:"1.3.3", title:"Marketing objectives & strategy",
+  business:"Case studies: TPC, Skechers, Motiongate & Apple", status:"live",
+  notes:[
+    {h:"Marketing strategy for different markets", html:`
+      <p>A <b>marketing strategy</b> is a long-term plan for how a business will meet its <b>marketing objectives</b> (e.g. growing market share, sales or brand awareness). The strategy — and the marketing mix behind it — changes with the <b>type of market</b>:</p>
+      <ul>
+        <li><b>Mass market</b> (e.g. Coca-Cola) — broad appeal, competitive pricing, wide distribution and mass advertising.</li>
+        <li><b>Niche market</b> (e.g. a left-handed shop) — specialist product, premium pricing, targeted promotion to a specific segment.</li>
+        <li><b>B2B (business-to-business)</b> — selling to other firms (e.g. a stationery supplier to schools); relationship-led selling, negotiated pricing, trade channels.</li>
+        <li><b>B2C (business-to-consumer)</b> — selling direct to the public; emotional branding, retail/online distribution, consumer advertising.</li>
+      </ul>`},
+    {h:"The product life cycle", html:`
+      <p>The <b>product life cycle (PLC)</b> is a model of the stages a product passes through over its life, each needing a different marketing mix:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 400 250" style="min-width:340px;width:100%;max-width:460px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <line x1="40" y1="20" x2="40" y2="205" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="40" y1="205" x2="384" y2="205" stroke="var(--muted)" stroke-width="1.5"/>
+        <text x="22" y="115" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--muted)" transform="rotate(-90 22 115)">Sales</text>
+        <text x="212" y="243" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--muted)">Time</text>
+        <path d="M44,200 L78,198 C104,194 116,182 138,168 C172,126 184,92 214,74 C250,64 276,62 306,66 C338,72 352,120 372,150" fill="none" stroke="var(--amber)" stroke-width="3"/>
+        <g stroke="var(--line)" stroke-width="1" stroke-dasharray="4 3">
+          <line x1="78" y1="40" x2="78" y2="205"/><line x1="138" y1="40" x2="138" y2="205"/><line x1="214" y1="40" x2="214" y2="205"/><line x1="306" y1="40" x2="306" y2="205"/>
+        </g>
+        <g font-size="9" fill="var(--muted)" text-anchor="middle">
+          <text x="59" y="222">Dev.</text><text x="108" y="222">Intro</text><text x="176" y="222">Growth</text><text x="260" y="222">Maturity</text><text x="345" y="222">Decline</text>
+        </g>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Development</b> — the product is designed and tested; costs but no sales yet.</li>
+        <li><b>Introduction</b> — launch; low sales, heavy promotion, often high price (skimming) or low (penetration).</li>
+        <li><b>Growth</b> — sales rise fast; build distribution and brand.</li>
+        <li><b>Maturity</b> — sales peak and level off; competition is intense, focus on differentiation.</li>
+        <li><b>Decline</b> — sales fall; harvest, withdraw, or extend.</li>
+      </ul>
+      <p><b>Extension strategies</b> prolong the maturity stage by tweaking the marketing mix — new features or packaging (product), new promotion, new prices, or new markets/channels (e.g. a theme park like Motiongate adding rides or seasonal events). PLC length varies — a smartphone's is short; Heinz Baked Beans' is very long.</p>`},
+    {h:"The Boston Matrix (portfolio)", html:`
+      <p>The <b>Boston Matrix</b> helps a business manage its <b>product portfolio</b> by plotting each product on market growth vs relative market share:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 440 300" style="min-width:380px;width:100%;max-width:460px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <text x="240" y="16" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)">MARKET SHARE</text>
+        <text x="150" y="34" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--ink)">High</text>
+        <text x="360" y="34" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--ink)">Low</text>
+        <text x="16" y="160" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)" transform="rotate(-90 16 160)">MARKET GROWTH</text>
+        <text x="46" y="105" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--ink)">High</text>
+        <text x="46" y="230" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--ink)">Low</text>
+        <rect x="70" y="44" width="175" height="112" rx="6" fill="rgba(245,166,35,.14)" stroke="var(--amber)" stroke-width="2"/>
+        <rect x="255" y="44" width="175" height="112" rx="6" fill="rgba(27,79,214,.12)" stroke="#1b4fd6" stroke-width="2"/>
+        <rect x="70" y="166" width="175" height="112" rx="6" fill="rgba(15,163,127,.14)" stroke="var(--emerald)" stroke-width="2"/>
+        <rect x="255" y="166" width="175" height="112" rx="6" fill="rgba(201,42,42,.12)" stroke="#c92a2a" stroke-width="2"/>
+        <text x="157" y="96" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">★ Star</text>
+        <text x="157" y="116" text-anchor="middle" font-size="9.5" fill="var(--muted)">high growth, high share</text>
+        <text x="342" y="96" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">? Question mark</text>
+        <text x="342" y="116" text-anchor="middle" font-size="9.5" fill="var(--muted)">high growth, low share</text>
+        <text x="157" y="218" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">🐄 Cash cow</text>
+        <text x="157" y="238" text-anchor="middle" font-size="9.5" fill="var(--muted)">low growth, high share</text>
+        <text x="342" y="218" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">🐕 Dog</text>
+        <text x="342" y="238" text-anchor="middle" font-size="9.5" fill="var(--muted)">low growth, low share</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Stars</b> — high growth, high share; need heavy investment, later become cash cows.</li>
+        <li><b>Cash cows</b> — low growth, high share; mature and profitable, fund the stars.</li>
+        <li><b>Question marks</b> — high growth, low share; decide whether to back or drop.</li>
+        <li><b>Dogs</b> — low growth, low share; usually sold or closed.</li>
+      </ul>
+      <p>The aim is a <b>balanced portfolio</b>. But the matrix ignores profit and links between products, and is only a snapshot — a "dog" may still drive loyalty or support other sales, so use it with financial data and research.</p>`}
+  ],
+  definitions:[
+    {term:"Marketing strategy", marks:2, body:`A long-term plan for how a business will achieve its marketing objectives <span class="pt">1</span>, by targeting the right customers with a suitable marketing mix <span class="pt">2</span>.`},
+    {term:"Mass marketing", marks:2, body:`Aiming a product at a large, broad market with a single marketing mix <span class="pt">1</span>, using competitive pricing, wide distribution and mass advertising to maximise sales <span class="pt">2</span>.`},
+    {term:"Niche marketing", marks:2, body:`Targeting a small, specific segment of a market <span class="pt">1</span> with a specialist product, often premium-priced and promoted directly to that segment <span class="pt">2</span>.`},
+    {term:"B2B (business-to-business)", marks:2, body:`When a business sells its products to other businesses rather than to consumers <span class="pt">1</span>, typically using relationship selling, negotiated prices and trade channels <span class="pt">2</span>.`},
+    {term:"B2C (business-to-consumer)", marks:2, body:`When a business sells directly to final consumers <span class="pt">1</span>, using consumer branding, retail or online distribution and mass promotion <span class="pt">2</span>.`},
+    {term:"Product life cycle", marks:2, body:`A model of the stages a product passes through over its life — development, introduction, growth, maturity and decline <span class="pt">1</span>; each stage needs a different marketing mix <span class="pt">2</span>.`},
+    {term:"Extension strategy", marks:2, body:`A tactic used to prolong the maturity stage of the product life cycle <span class="pt">1</span>, such as new features, packaging, promotion or markets, to keep sales up before decline <span class="pt">2</span>.`},
+    {term:"Boston Matrix", marks:2, body:`A portfolio tool that plots products on market growth versus relative market share <span class="pt">1</span>, classifying them as stars, cash cows, question marks or dogs to guide investment <span class="pt">2</span>.`},
+    {term:"Product portfolio", marks:2, body:`The full range of products a business sells <span class="pt">1</span>; a balanced portfolio spreads risk and uses profitable products to fund growing ones <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'marketing strategy'.",
+     model:`A marketing strategy is a long-term plan for achieving a business's marketing objectives <span class="pt">1</span> by targeting the right customers with a suitable marketing mix <span class="pt">2</span>.`,
+     fb:"Long-term plan + achieving marketing objectives via the mix."},
+    {marks:2, q:"Distinguish between B2B and B2C marketing.",
+     model:`B2B marketing sells to other businesses using relationship selling and negotiated prices <span class="pt">1</span>; B2C marketing sells directly to consumers using branding, retail/online channels and mass promotion <span class="pt">2</span>.`,
+     fb:"Two contrasting points — selling to firms vs to consumers."},
+    {marks:4, q:"Explain one way a theme park such as Motiongate Dubai could use an extension strategy to prolong its product life cycle.",
+     model:`Motiongate could add new rides or seasonal events (a product-based extension) <span class="pt">1</span>. This is because refreshing the attraction gives visitors a reason to return <span class="pt">2</span>. As a result, interest and visitor numbers are revived as the park reaches maturity <span class="pt">3</span>, prolonging the maturity stage and delaying decline in ticket sales <span class="pt">4</span>.`,
+     fb:"Name a specific extension (new rides/events) and link it to prolonged maturity."},
+    {marks:4, q:"A business's product has high market share in a low-growth market. Identify its Boston Matrix category and explain how the business should manage it.",
+     model:`This is a <b>cash cow</b> <span class="pt">1</span>. It is mature and profitable with little need for investment <span class="pt">2</span>, so the business should manage it for steady cash flow <span class="pt">3</span> and use that cash to fund its stars and promising question marks <span class="pt">4</span>.`,
+     fb:"Identify cash cow and link to harvesting cash to fund stars."}
+  ],
+  caseStudy:{
+    business:"TPC, Skechers, Motiongate & Apple",
+    intro:`<p>Businesses used in the marketing-strategy questions.</p>
+      <ul>
+        <li><b>The Trade Publishing Company (TPC)</b> — launching a celebrity-chef cookbook (print only, no ebook) into the competitive consumer market: a Boston Matrix placement question.</li>
+        <li><b>Skechers</b> — uses the product life cycle to manage its shoe-line portfolio and spot decline.</li>
+        <li><b>Motiongate Dubai</b> — a theme park using extension strategies (new rides, events) to prolong its life cycle.</li>
+        <li><b>Apple</b> — a broad portfolio (iPhone, iPad, Watch, Vision Pro) analysed with the Boston Matrix.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Analyse which part of the Boston Matrix 'The Reilly Perfect Way to Cook' is likely to be in as it launches into the cookbook market. (10)",
+     model:`<p><span class="tag t-P">POINT</span>The book is most likely a <b>question mark</b> at launch, because it is a new product entering the competitive consumer cookbook market for the first time. <span class="tag t-C">CHAIN</span>It needs high marketing spend to build awareness and, without an ebook format, may miss digital readers — so it starts with low market share in a growing market, generating little immediate profit and needing heavy investment to grow.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, it could become a <b>star</b> if it leverages Eoghan Reilly's celebrity-chef reputation and strong consumer interest in cookbooks. The established retail market (WH Smith selling popular titles weekly) offers rapid-growth potential, so effective marketing could lift sales fast enough to win a high share of a growing market.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, it most likely starts as a question mark because of high marketing costs, strong competition and no ebook. Success depends on TPC promoting it well, using Reilly's celebrity, and developing an ebook — so it is recommended TPC produces a quality ebook alongside the print version to capture the digital market.</p>`,
+     fb:"Mr. Akram's exemplar (TPC, 10). Question-mark placement with a star counter and an ebook-dependent conclusion."},
+    {marks:10, q:"Assess the usefulness of the product life cycle to a business such as Skechers in developing its product portfolio. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One use is spotting decline early, because Skechers can track each shoe line's sales and see when demand falls. <span class="tag t-C">CHAIN</span>This informs when to withdraw older styles or launch updated versions, so it avoids excess stock and can redirect resources to new designs — keeping the portfolio responsive and competitive.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the model is hard to predict accurately, because the length of each stage varies with fashion trends, competitor launches and the economy. Relying on it too heavily risks withdrawing a product too early or backing a line that quickly dates, wasting development and marketing spend.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the product life cycle is useful for timing portfolio decisions, but its usefulness depends on using it alongside regular market research and customer feedback rather than on its own.</p>`,
+     fb:"Mr. Akram's exemplar (Skechers, 10). Decline-spotting/portfolio use balanced against the model's unpredictability, concluding 'use with research'."},
+    {marks:8, q:"Assess how far a business's marketing strategy should differ between a mass market and a niche market. (8)",
+     model:`<p><span class="tag t-P">POINT</span>The strategy should differ a lot on targeting and the mix, because the markets have different customers. <span class="tag t-C">CHAIN</span>A mass-market firm (e.g. Coca-Cola) uses competitive prices, wide distribution and broad advertising for volume, while a niche firm uses premium pricing and targeted promotion to a specific segment — so the mixes are built for opposite goals.</p>
+     <p><span class="tag t-P">POINT</span>Branding and positioning also differ, because a niche relies on specialism and exclusivity whereas a mass market relies on broad appeal. <span class="tag t-C">CHAIN</span>This shapes very different messages, channels and price points.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the core principles are the same — both must research customers, meet their needs and build a coherent mix — so the strategy differs in execution more than in fundamentals. The extent depends on how distinct the two target segments really are.</p>`,
+     fb:"Mr. Akram's exemplar. Differences in mix/branding balanced against shared marketing principles, judged on how distinct the segments are."}
+  ],
+  resources:[
+    {label:"Marketing strategy, PLC & Boston Matrix — lesson notes (PDF)", file:"resources/1-3-3-1-marketing-strategy-notes.pdf"},
+    {label:"Boston Matrix — activity pack with answer key (PDF)", file:"resources/1-3-3-1-boston-matrix-activity.pdf"}
+  ]
+},
+{code:"1.3.3.2", subtheme:"1.3.3", title:"Product/service design", business:"The design mix & product differentiation", status:"soon"},
+{code:"1.3.3.3", subtheme:"1.3.3", title:"Promotion and branding", business:"Above/below-the-line, branding & brand equity", status:"soon"},
+{code:"1.3.3.4", subtheme:"1.3.3", title:"Pricing strategies", business:"Skimming, penetration, cost-plus & competitive", status:"soon"},
+{code:"1.3.3.5", subtheme:"1.3.3", title:"Distribution", business:"Channels of distribution & place", status:"soon"}
 ];
