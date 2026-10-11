@@ -3436,8 +3436,148 @@ window.CURRICULUM = [
     {label:"Boston Matrix — activity pack with answer key (PDF)", file:"resources/1-3-3-1-boston-matrix-activity.pdf"}
   ]
 },
-{code:"1.3.3.2", subtheme:"1.3.3", title:"Product/service design", business:"The design mix & product differentiation", status:"soon"},
-{code:"1.3.3.3", subtheme:"1.3.3", title:"Promotion and branding", business:"Above/below-the-line, branding & brand equity", status:"soon"},
+{
+  code:"1.3.3.2", subtheme:"1.3.3", title:"Product/service design",
+  business:"Case studies: Lehman's, Aston Martin & IKEA", status:"live",
+  notes:[
+    {h:"The design mix", html:`
+      <p><b>Product</b> is the first element of the marketing mix. When designing a product, a business balances the <b>design mix</b> — three elements that often pull against each other:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 360 230" style="min-width:300px;width:100%;max-width:420px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="180,30 60,195 300,195" fill="rgba(245,166,35,.10)" stroke="var(--amber)" stroke-width="2.5"/>
+        <circle cx="180" cy="30" r="5" fill="var(--navy)"/><circle cx="60" cy="195" r="5" fill="var(--navy)"/><circle cx="300" cy="195" r="5" fill="var(--navy)"/>
+        <text x="180" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Function</text>
+        <text x="180" y="52" text-anchor="middle" font-size="9" fill="var(--muted)">does it work well?</text>
+        <text x="52" y="212" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Aesthetics</text>
+        <text x="52" y="225" text-anchor="middle" font-size="9" fill="var(--muted)">how it looks/feels</text>
+        <text x="308" y="212" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">Cost</text>
+        <text x="308" y="225" text-anchor="middle" font-size="9" fill="var(--muted)">economic manufacture</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Function</b> — how well the product works and meets the customer's practical needs (vital for a kettle or farm tool).</li>
+        <li><b>Aesthetics</b> — how it looks, feels, sounds or smells (vital for an Audi or a Canada Goose coat).</li>
+        <li><b>Cost (economic manufacture)</b> — keeping production cost low enough to sell at a profit at the target price.</li>
+      </ul>
+      <p>The <b>most important element depends on the product and market</b> — a luxury car leans on aesthetics, a budget kettle on cost, a safety tool on function. Trade-offs are unavoidable: more features or better looks usually raise cost.</p>`},
+    {h:"The design mix & social trends", html:`
+      <p>Social trends increasingly shape design. Businesses adapt the design mix for:</p>
+      <ul>
+        <li><b>Sustainability &amp; resource depletion</b> — designing for <b>waste minimisation, re-use and recycling</b> (e.g. clothing made from recycled plastics).</li>
+        <li><b>Ethical sourcing</b> — materials and labour that meet ethical standards, appealing to conscientious consumers.</li>
+        <li><b>Durability &amp; repairability</b> — longer-lasting products that reduce waste.</li>
+      </ul>
+      <p>Designing for these trends can add value, justify a premium and protect brand reputation — but often <b>raises costs</b>, so the firm must judge whether customers will pay for it.</p>`}
+  ],
+  definitions:[
+    {term:"Design mix", marks:2, body:`The balance of three elements in designing a product — function, aesthetics and cost (economic manufacture) <span class="pt">1</span>; a business weights them differently depending on the product and its market <span class="pt">2</span>.`},
+    {term:"Function (design mix)", marks:2, body:`How well a product works and meets the customer's practical needs <span class="pt">1</span>; strong function supports quality, satisfaction and repeat purchases <span class="pt">2</span>.`},
+    {term:"Aesthetics (design mix)", marks:2, body:`How a product appeals to the senses — how it looks, feels, sounds or smells <span class="pt">1</span>; strong aesthetics can differentiate a product and justify a premium price <span class="pt">2</span>.`},
+    {term:"Economic manufacture", marks:2, body:`Designing a product so it can be made at a low enough cost to sell profitably at the target price <span class="pt">1</span>; it trades off against adding more function or better aesthetics <span class="pt">2</span>.`},
+    {term:"Ethical sourcing", marks:2, body:`Obtaining materials and labour in a way that meets ethical and environmental standards <span class="pt">1</span>; it can add value and protect reputation but usually raises costs <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'design mix'.",
+     model:`The design mix is the balance of function, aesthetics and cost (economic manufacture) in designing a product <span class="pt">1</span>; a business weights these differently depending on the product and its target market <span class="pt">2</span>.`,
+     fb:"Names the three elements plus the idea of balancing them by product/market."},
+    {marks:4, q:"Explain how Aston Martin could use the design mix to appeal to a new target market of younger buyers and women. (4)",
+     model:`Aston Martin could prioritise aesthetics, redesigning the interior and exterior with more stylish, modern looks — new colour options and high-tech features <span class="pt">1</span>. This is because younger and female buyers often value appearance and innovation in their decision <span class="pt">2</span>. As a result, the cars feel more relevant and attractive to this audience <span class="pt">3</span>, increasing interest and sales among the new target market <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Aston Martin). Uses aesthetics element, applied to the new target market and linked to sales."},
+    {marks:4, q:"Explain one way a social trend could influence a business's design mix.",
+     model:`Growing concern for sustainability pushes firms to design for recycling <span class="pt">1</span>. This is because consumers increasingly prefer eco-friendly products <span class="pt">2</span>. As a result, a clothing firm might use recycled plastics in its materials <span class="pt">3</span>, adding value and protecting its reputation, though at a higher production cost <span class="pt">4</span>.`,
+     fb:"Links a named social trend (sustainability) to a design change and its cost/value trade-off."}
+  ],
+  caseStudy:{
+    business:"Lehman's, Aston Martin & IKEA",
+    intro:`<p>Businesses used in the design-mix questions.</p>
+      <ul>
+        <li><b>Lehman's</b> — sells simple, non-electrical tools (farm equipment, oil lamps, wood heaters) that must work reliably, so <b>function</b> dominates its design mix.</li>
+        <li><b>Aston Martin</b> — uses <b>aesthetics</b> to appeal to younger buyers and women.</li>
+        <li><b>IKEA</b> — balances function, aesthetics and low cost, and designs for sustainability.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the importance of function to Lehman's when considering the design mix for new products. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Function is especially important to Lehman's because it specialises in simple, non-electrical tools — farm equipment, oil lamps, wood-powered heaters. <span class="tag t-C">CHAIN</span>These must work reliably in everyday use without modern technology, so they need to be durable and effective to uphold the brand's reputation for quality — leading to satisfied customers, repeat purchases and long-term loyalty.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, Lehman's must also consider aesthetics, because some goods are bought as gifts or used as set pieces in historical films. Focusing only on function and ignoring appearance could lose customers who want traditional, beautifully designed items, reducing sales among those who value design as well as practicality.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, function is likely the most important element for Lehman's because its customers rely on durable, practical goods — ignoring it would undermine the brand's identity. But success depends on balancing function with aesthetics and affordable cost, so it is recommended Lehman's keeps function first while ensuring products are attractive and affordable to widen its appeal.</p>`,
+     fb:"Mr. Akram's exemplar (Lehman's, 10). Function as dominant (durability/reputation) balanced against aesthetics, concluding 'function first, but balanced'."}
+  ],
+  resources:[
+    {label:"The design mix — lesson notes (PDF)", file:"resources/1-3-3-2-design-mix-notes.pdf"}
+  ]
+},
+{
+  code:"1.3.3.3", subtheme:"1.3.3", title:"Promotion and branding",
+  business:"Case study: Deliveroo & emotional branding", status:"live",
+  notes:[
+    {h:"What is a brand?", html:`
+      <p>A <b>brand</b> is a unique design, sign, symbol, word, or combination of these, used to create an image that identifies a product and <b>differentiates it from competitors</b>. Branding turns a product into something customers recognise, trust and feel loyal to.</p>
+      <p>There are three main <b>types of branding</b>:</p>
+      <ul>
+        <li><b>Corporate branding</b> — the whole business trades under one brand name (e.g. <b>Netflix</b>, Apple). Every product benefits from the company's reputation, but one scandal can damage everything.</li>
+        <li><b>Product (individual) branding</b> — each product has its own identity (e.g. <b>Mars UK</b> sells Mars, Snickers, Twix, Galaxy as separate brands). A problem with one brand needn't harm the others, but it is expensive to market each one.</li>
+        <li><b>Own-label (own-brand) branding</b> — a retailer sells products under its <i>own</i> name rather than the manufacturer's (e.g. <b>Carrefour</b> or Tesco own-label). Cheaper for the retailer and higher margins, but usually seen as lower quality than big-name brands.</li>
+      </ul>`},
+    {h:"Benefits of a strong brand & how to build one", html:`
+      <p>A strong brand delivers real commercial advantages:</p>
+      <ul>
+        <li><b>Added value</b> — customers will pay more for a trusted brand than an identical unbranded product.</li>
+        <li><b>Premium pricing</b> — the brand justifies a higher price and higher profit margins.</li>
+        <li><b>Reduced price elasticity of demand</b> — loyal customers are less sensitive to price rises, so the firm can raise prices without losing many sales.</li>
+        <li><b>Customer loyalty &amp; repeat purchases</b> — a recognised brand keeps customers coming back and makes it harder for rivals to win them away.</li>
+      </ul>
+      <p>Building a strong brand is a <b>long-term strategy</b> needing sustained effort over years. Firms usually combine several methods at once:</p>
+      <ul>
+        <li><b>Differentiation</b> — a clear USP that sets the brand apart.</li>
+        <li><b>Advertising</b> — repeated, consistent messaging to build awareness.</li>
+        <li><b>Sponsorship</b> — linking the brand to events, teams or causes (e.g. Emirates and football).</li>
+        <li><b>Social media</b> — engaging customers directly and cheaply.</li>
+      </ul>
+      <p><b>Rebranding</b> is changing a brand's image, name or identity — used to refresh a tired image, recover from bad publicity or reach a new market. It is risky: it can alienate existing loyal customers if handled badly.</p>`},
+    {h:"Promotion & branding and social trends", html:`
+      <p>Promotion and branding adapt to changing <b>social trends</b>, especially the rise of social media:</p>
+      <ul>
+        <li><b>Viral marketing</b> — using existing social networks (Instagram, TikTok, YouTube) so consumers share a message with each other, spreading it like a virus. The firm posts the original content; customers do the distribution <b>for free</b> through word of mouth. It can reach a huge audience cheaply, but the firm has little control over how the message spreads.</li>
+        <li><b>Emotional branding</b> — creating a bond by provoking an <b>emotional response</b> (joy, trust, nostalgia) rather than relying on logical factors like price. A long-lasting emotional attachment builds strong brand loyalty — for example Deliveroo's <i>"food happiness"</i> idea.</li>
+      </ul>
+      <p>These trends let smaller or newer firms compete with established brands, but only if the emotional message is backed by a genuinely good product or service.</p>`}
+  ],
+  definitions:[
+    {term:"Brand", marks:2, body:`A unique design, sign, symbol or name that identifies a product and sets it apart from competitors <span class="pt">1</span>; it creates an image customers recognise, trust and stay loyal to <span class="pt">2</span>.`},
+    {term:"Corporate branding", marks:2, body:`When a business markets all of its products under one single company brand name <span class="pt">1</span>; every product shares the firm's reputation, so success — or scandal — affects them all together <span class="pt">2</span>.`},
+    {term:"Own-label branding", marks:2, body:`When a retailer sells products under its own name rather than the manufacturer's <span class="pt">1</span>; it gives the retailer higher margins and control but is often seen as lower quality than big-name brands <span class="pt">2</span>.`},
+    {term:"Viral marketing", marks:2, body:`A strategy that uses existing social networks so consumers share a promotional message with each other <span class="pt">1</span>; the business avoids distribution costs because customers spread the message for free <span class="pt">2</span>.`},
+    {term:"Emotional branding", marks:2, body:`Creating a bond between consumer and product by provoking an emotional response to the promotion <span class="pt">1</span>; a lasting emotional attachment builds strong brand loyalty <span class="pt">2</span>.`},
+    {term:"Rebranding", marks:2, body:`Changing a brand's name, image or identity to refresh it or reach a new market <span class="pt">1</span>; it can modernise a tired brand but risks alienating existing loyal customers <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'brand'.",
+     model:`A brand is a unique design, symbol or name that identifies a product and differentiates it from competitors <span class="pt">1</span>; it builds an image that customers recognise and stay loyal to <span class="pt">2</span>.`,
+     fb:"Identification/differentiation plus the loyalty/image idea — two developed points, no example needed."},
+    {marks:2, q:"Define the term 'viral marketing'.",
+     model:`Viral marketing uses existing social networks so consumers share a promotional message with one another <span class="pt">1</span>; because customers spread it themselves, the business avoids distribution costs <span class="pt">2</span>.`,
+     fb:"Mechanism (sharing via social networks) plus the free-distribution benefit."},
+    {marks:4, q:"Explain one benefit to a business of having a strong brand.",
+     model:`A strong brand reduces the price elasticity of demand for the product <span class="pt">1</span>. This is because loyal customers trust the brand and are less sensitive to price changes <span class="pt">2</span>. As a result, the business can raise its price without losing many sales <span class="pt">3</span>, increasing its profit margin and revenue <span class="pt">4</span>.`,
+     fb:"Names a benefit (reduced PED), explains why, and chains to profit — a clean 4-mark build."}
+  ],
+  caseStudy:{
+    business:"Deliveroo",
+    intro:`<p><b>Deliveroo</b> is a food-delivery app competing in a saturated market against Just Eat and Uber Eats. It ran an <b>emotional branding</b> campaign built around the idea of <i>"food happiness"</i>, linking the brand to positive feelings rather than just price or speed.</p>
+      <p>The campaign lifted Deliveroo's <b>brand awareness from 3.1% to 6.6%</b>. However, the firm still ranked <b>lower than competitors</b> on customer satisfaction and reputation — showing that emotional branding attracts users but cannot keep them loyal on its own.</p>`
+  },
+  exam:[
+    {marks:12, q:"Assess the importance of emotional branding to Deliveroo. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One reason emotional branding is important to Deliveroo is that it helps build a stronger connection with customers. <span class="tag t-C">CHAIN</span>This is because emotional branding appeals to feelings such as joy and trust, which influence loyalty more than logical factors like price. <span class="tag t-A">APPLY</span>Deliveroo linked its campaign to the concept of "food happiness", helping customers associate the brand with positive emotions. <span class="tag t-C">CHAIN</span>This creates a more emotionally engaged customer base, so customers may be more likely to choose Deliveroo over rivals like Just Eat or Uber Eats. As a result, emotional branding could increase brand awareness and sales — as seen in the rise from 3.1% to 6.6% awareness — improving its competitive position in a saturated market.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, emotional branding may not be the most important factor influencing customer choice. <span class="tag t-C">CHAIN</span>This is because some customers prioritise price, delivery speed or app functionality over emotional appeal. <span class="tag t-A">APPLY</span>The extract shows Deliveroo still ranked lower than competitors on satisfaction and reputation. <span class="tag t-C">CHAIN</span>This creates the risk that customers try the service because of the branding but do not stay loyal if the experience disappoints, so Deliveroo could lose them to rivals.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, emotional branding is likely to help Deliveroo stand out and attract new users, especially those switching from other apps. However, success depends on whether the emotional message is supported by an equally strong user experience. It is recommended that Deliveroo focuses not only on emotional messaging but also on improving delivery reliability and customer satisfaction, so that users stay loyal after trying the service.</p>`,
+     fb:"Mr. Akram's exemplar (Deliveroo, 12). One developed argument for, one against — both applied to the extract data — and a supported recommendation."}
+  ],
+  resources:[
+    {label:"Promotion &amp; branding — lesson notes (PDF)", file:"resources/1-3-3-3-branding-notes.pdf"}
+  ]
+},
 {code:"1.3.3.4", subtheme:"1.3.3", title:"Pricing strategies", business:"Skimming, penetration, cost-plus & competitive", status:"soon"},
 {code:"1.3.3.5", subtheme:"1.3.3", title:"Distribution", business:"Channels of distribution & place", status:"soon"}
 ];
