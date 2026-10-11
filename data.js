@@ -3151,6 +3151,146 @@ window.CURRICULUM = [
     {label:"Interaction of demand & supply (equilibrium) — lesson notes (PDF)", file:"resources/1-3-2-3-equilibrium-notes.pdf"}
   ]
 },
-{code:"1.3.2.4", subtheme:"1.3.2", title:"Price elasticity of demand (PED)", business:"Elastic vs inelastic demand & pricing", status:"soon"},
-{code:"1.3.2.5", subtheme:"1.3.2", title:"Income elasticity of demand (YED)", business:"Normal, luxury & inferior goods", status:"soon"}
+{
+  code:"1.3.2.4", subtheme:"1.3.2", title:"Price elasticity of demand (PED)",
+  business:"Case studies: LEGO, M&S & Oppo", status:"live",
+  notes:[
+    {h:"What is PED?", html:`
+      <p><b>Price elasticity of demand (PED)</b> measures how <b>responsive</b> demand is to a change in price. Because price and demand move in opposite directions, PED is normally <b>negative</b> (ignore the minus sign when interpreting).</p>
+      <p style="text-align:center;font-weight:700">PED = % change in quantity demanded ÷ % change in price</p>
+      <ul>
+        <li><b>Inelastic</b> (|PED| &lt; 1) — demand changes <b>less</b> than proportionally; not very sensitive to price.</li>
+        <li><b>Elastic</b> (|PED| &gt; 1) — demand changes <b>more</b> than proportionally; very sensitive to price.</li>
+        <li><b>Unitary</b> (|PED| = 1) — demand changes exactly in proportion to price.</li>
+      </ul>
+      <p><b>Worked example:</b> a newsagent sells 200 cans at £0.50; raising the price to £0.60 cuts demand to 180. %ΔQd = −10%, %ΔP = +20%, so PED = −0.5 — <b>inelastic</b>.</p>`},
+    {h:"Try it — PED calculator", html:`
+      <p>Enter the original and new price and quantity to calculate PED, see whether demand is elastic or inelastic, and what happens to revenue.</p>
+      <div class="ds-interactive">
+        <div class="ped-calc">
+          <label>Original price (£)<input type="number" id="akP1" value="0.50" step="0.01" min="0" oninput="akPED()"></label>
+          <label>Original quantity<input type="number" id="akQ1" value="200" step="1" min="0" oninput="akPED()"></label>
+          <label>New price (£)<input type="number" id="akP2" value="0.60" step="0.01" min="0" oninput="akPED()"></label>
+          <label>New quantity<input type="number" id="akQ2" value="180" step="1" min="0" oninput="akPED()"></label>
+        </div>
+        <div id="akPEDout">Enter all four values.</div>
+      </div>`},
+    {h:"Factors affecting PED", html:`
+      <ul>
+        <li><b>Availability of substitutes</b> — more substitutes → more elastic (customers can switch).</li>
+        <li><b>Necessity vs luxury</b> — necessities are more inelastic; luxuries more elastic.</li>
+        <li><b>Proportion of income</b> — cheap items (a small % of income) are more inelastic.</li>
+        <li><b>Time</b> — demand is often more elastic over the long run as buyers find alternatives.</li>
+        <li><b>Brand loyalty / habit / addiction</b> — strong loyalty makes demand more inelastic.</li>
+      </ul>`},
+    {h:"PED, pricing & total revenue", html:`
+      <p>PED guides pricing because it tells a firm what a price change does to <b>total revenue</b> (price × quantity):</p>
+      <table class="datatable">
+        <tr><th>Demand is…</th><th>Raise price →</th><th>Cut price →</th></tr>
+        <tr><td>Inelastic (|PED|&lt;1)</td><td>Revenue rises</td><td>Revenue falls</td></tr>
+        <tr><td>Elastic (|PED|&gt;1)</td><td>Revenue falls</td><td>Revenue rises</td></tr>
+      </table>
+      <p>So a firm with inelastic demand can raise price to lift revenue, while one with elastic demand may cut price to win enough extra sales. <b>%ΔQd = PED × %ΔP</b> — e.g. PED −2 and a 25% price cut gives +50% quantity demanded.</p>`}
+  ],
+  definitions:[
+    {term:"Price elasticity of demand (PED)", marks:2, body:`A measure of how responsive quantity demanded is to a change in price <span class="pt">1</span>, calculated as % change in quantity demanded ÷ % change in price <span class="pt">2</span>.`},
+    {term:"Price inelastic demand", marks:2, body:`Where demand changes less than proportionally to a price change, so |PED| is less than 1 <span class="pt">1</span>; demand is not very sensitive to price, so a firm can raise price to increase revenue <span class="pt">2</span>.`},
+    {term:"Price elastic demand", marks:2, body:`Where demand changes more than proportionally to a price change, so |PED| is greater than 1 <span class="pt">1</span>; demand is very sensitive to price, so cutting price can increase revenue <span class="pt">2</span>.`},
+    {term:"Total revenue", marks:2, body:`The total income from sales, calculated as price × quantity sold <span class="pt">1</span>; PED predicts whether a price change will raise or lower it <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'price elasticity of demand'.",
+     model:`Price elasticity of demand measures how responsive quantity demanded is to a change in price <span class="pt">1</span>, calculated as the % change in quantity demanded divided by the % change in price <span class="pt">2</span>.`,
+     fb:"Responsiveness of demand to price, plus the formula."},
+    {marks:4, q:"A watch's demand rises from 20 to 25 units when price falls from £8 to £7. Calculate PED and state whether demand is elastic or inelastic.",
+     model:`%ΔQd = (25−20)/20 × 100 = +25% <span class="pt">1</span>; %ΔP = (7−8)/8 × 100 = −12.5% <span class="pt">2</span>. PED = 25 ÷ −12.5 = −2 <span class="pt">3</span>. As |PED| &gt; 1, demand is <b>price elastic</b> <span class="pt">4</span>.`,
+     fb:"Correct %changes, PED = −2, classified elastic."},
+    {marks:4, q:"The PED for LEGO City sets is −2. If LEGO cuts the price by 25%, calculate the effect on quantity demanded and explain it.",
+     model:`%ΔQd = PED × %ΔP = −2 × −25% = <b>+50%</b> <span class="pt">1</span>. So demand rises 50% <span class="pt">2</span>. This is because the sets are price elastic, so a price cut causes a more than proportional rise in sales <span class="pt">3</span>, which could raise LEGO's total revenue if the extra volume outweighs the lower price <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (LEGO). Uses %ΔQd = PED × %ΔP to get +50% and links to revenue."}
+  ],
+  caseStudy:{
+    business:"LEGO, M&S & Oppo",
+    intro:`<p>Businesses used in the PED questions.</p>
+      <ul>
+        <li><b>LEGO</b> — elastic demand (PED −2): a price cut raises quantity demanded more than proportionally.</li>
+        <li><b>M&amp;S</b> — clothing PED shaped by substitutes (Next) and brand loyalty among older customers.</li>
+        <li><b>Oppo</b> — ice-cream PED shaped by substitutes (Häagen-Dazs, Ben &amp; Jerry's) and its luxury/health positioning.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:6, q:"Assess the factors that affect the price elasticity of demand for Oppo's ice cream. (6)",
+     model:`<p><span class="tag t-P">POINT</span>One factor is the number of substitutes, because ice cream has many rivals such as Häagen-Dazs and Ben &amp; Jerry's. <span class="tag t-C">CHAIN</span>If Oppo raises its price, customers can easily switch, so demand is relatively elastic and sensitive to price changes.</p>
+     <p><span class="tag t-P">POINT</span>A second factor is whether it is a necessity or a luxury. <span class="tag t-C">CHAIN</span>As a luxury treat, demand is more elastic because buyers can cut back if prices rise — though Oppo's healthier, lower-calorie recipe may make demand slightly less elastic, as health-conscious customers keep buying even at higher prices.</p>`,
+     fb:"Mr. Akram's exemplar (Oppo, 6). Substitutes and necessity/luxury, each applied, with the health-positioning nuance."},
+    {marks:8, q:"Assess the factors that could influence the PED of M&S clothing, and how useful PED is to M&S. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One factor is the availability of substitutes, because the clothing market is highly competitive with rivals like Next. <span class="tag t-C">CHAIN</span>If M&amp;S raises prices, customers can switch, so demand is more elastic — meaning a small price rise could cause a proportionately larger fall in sales, so M&amp;S must stay competitively priced.</p>
+     <p><span class="tag t-P">POINT</span>A second factor is brand loyalty, because some older customers trust M&amp;S for quality and tradition. <span class="tag t-C">CHAIN</span>They may keep buying even when prices rise, making demand more inelastic for this group, so M&amp;S can charge them slightly higher prices without losing all sales.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, PED may not be the most useful guide, because M&amp;S has struggled to stay iconic — non-price factors like fashion, style and relevance to younger shoppers may matter more. Even if PED suggests cutting prices, success depends on offering products customers actually want.</p>`,
+     fb:"Mr. Akram's exemplar (M&S, 8). Substitutes and loyalty shape PED, balanced by a judgement that non-price factors may matter more."}
+  ],
+  resources:[
+    {label:"Price elasticity of demand (PED) — lesson notes (PDF)", file:"resources/1-3-2-4-ped-notes.pdf"}
+  ]
+},
+{
+  code:"1.3.2.5", subtheme:"1.3.2", title:"Income elasticity of demand (YED)",
+  business:"Case studies: iPads, trainers & bus travel", status:"live",
+  notes:[
+    {h:"What is YED?", html:`
+      <p><b>Income elasticity of demand (YED)</b> measures how responsive demand is to a change in <b>consumer income</b>. Unlike PED, YED can be <b>positive or negative</b> — income and demand can move the same way or opposite ways.</p>
+      <p style="text-align:center;font-weight:700">YED = % change in quantity demanded ÷ % change in income</p>
+      <p><b>Worked example:</b> incomes rise 15% and iPad demand rises 20%, so YED = 20 ÷ 15 = <b>+1.33</b> — a normal, income-elastic good.</p>`},
+    {h:"Normal, luxury & inferior goods", html:`
+      <ul>
+        <li><b>Normal good (YED positive)</b> — demand rises as income rises. If YED &gt; 1 the good is a <b>luxury</b> (income elastic); if 0 &lt; YED &lt; 1 it is a necessity (income inelastic).</li>
+        <li><b>Inferior good (YED negative)</b> — demand <b>falls</b> as income rises, because customers trade up to better alternatives.</li>
+      </ul>
+      <p>YED is strongly <b>positive</b> for fine wines, luxury holidays, consumer durables and gym memberships; <b>low positive</b> for staples like bread and public transport; and <b>negative</b> for cheap own-label brands.</p>`},
+    {h:"Why YED matters to a business", html:`
+      <p>YED helps a business plan production, pricing and which markets to target:</p>
+      <ul>
+        <li><b>Luxury (high YED)</b> firms boom when the economy grows but suffer most in a recession — so they must plan for volatile demand.</li>
+        <li><b>Inferior / staple (low or negative YED)</b> firms are more recession-proof, as demand holds up or even rises when incomes fall.</li>
+        <li>A balanced product range across different YED values helps a business stay stable through the economic cycle.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Income elasticity of demand (YED)", marks:2, body:`A measure of how responsive quantity demanded is to a change in consumer income <span class="pt">1</span>, calculated as % change in quantity demanded ÷ % change in income <span class="pt">2</span>.`},
+    {term:"Normal good (YED)", marks:2, body:`A good with positive YED, so demand rises as income rises <span class="pt">1</span>; if YED is above 1 it is income-elastic (a luxury), if between 0 and 1 it is income-inelastic (a necessity) <span class="pt">2</span>.`},
+    {term:"Inferior good (YED)", marks:2, body:`A good with negative YED, so demand falls as income rises <span class="pt">1</span>, because customers switch to higher-quality alternatives they can now afford (e.g. own-label brands) <span class="pt">2</span>.`},
+    {term:"Luxury good", marks:2, body:`A good with YED greater than 1 <span class="pt">1</span>, so demand rises more than proportionally as income rises — and falls sharply in a downturn <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'income elasticity of demand'.",
+     model:`Income elasticity of demand measures how responsive quantity demanded is to a change in consumer income <span class="pt">1</span>, calculated as the % change in quantity demanded divided by the % change in income <span class="pt">2</span>.`,
+     fb:"Responsiveness of demand to income, plus the formula."},
+    {marks:4, q:"Demand for trainers rises from 20,000 to 25,000 after incomes rise 15%. Calculate YED and classify the good.",
+     model:`%ΔQd = (25,000−20,000)/20,000 × 100 = +25% <span class="pt">1</span>. YED = 25 ÷ 15 = <b>+1.67</b> <span class="pt">2</span>. YED is positive, so trainers are a <b>normal good</b> <span class="pt">3</span>; as it is greater than 1, they are income-elastic (a luxury) <span class="pt">4</span>.`,
+     fb:"Correct %ΔQd, YED = +1.67, classified normal/luxury."},
+    {marks:4, q:"Demand for bus travel falls from 12,000 to 9,000 after incomes rise 10%. Calculate YED and classify the good.",
+     model:`%ΔQd = (9,000−12,000)/12,000 × 100 = −25% <span class="pt">1</span>. YED = −25 ÷ 10 = <b>−2.5</b> <span class="pt">2</span>. YED is negative, so bus travel is an <b>inferior good</b> <span class="pt">3</span> — as incomes rise, people switch to cars or taxis, cutting demand <span class="pt">4</span>.`,
+     fb:"Correct negative %ΔQd, YED = −2.5, classified inferior."}
+  ],
+  caseStudy:{
+    business:"iPads, trainers & bus travel",
+    intro:`<p>Products used in the YED questions, showing the range of income elasticities:</p>
+      <ul>
+        <li><b>iPads</b> — income +15% → demand +20%, YED +1.33 (normal, luxury).</li>
+        <li><b>Trainers</b> — income +15% → demand +25%, YED +1.67 (normal, income-elastic).</li>
+        <li><b>Bus travel</b> — income +10% → demand −25%, YED −2.5 (inferior).</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the usefulness of income elasticity of demand (YED) to a business planning its product range. (10)",
+     model:`<p><span class="tag t-P">POINT</span>YED is useful for forecasting demand over the economic cycle, because it shows how sensitive each product is to income changes. <span class="tag t-C">CHAIN</span>A firm selling luxuries (high positive YED) knows demand will surge in a boom but fall sharply in a recession, so it can plan production, stock and cash flow around that volatility rather than being caught out.</p>
+     <p><span class="tag t-P">POINT</span>YED also guides a balanced product range, because combining high-YED luxuries with low- or negative-YED staples smooths total demand. <span class="tag t-C">CHAIN</span>When incomes fall and luxury sales drop, steady or rising demand for value/inferior lines cushions revenue, making the business more resilient.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, YED has limits: the values are estimates based on past data, other factors (tastes, competition, price) also shift demand, and real income changes are hard to predict. So YED is a useful guide, not a precise forecast.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, YED is useful for planning a resilient product range and anticipating the economic cycle, but its usefulness depends on reliable data and on being used alongside PED and wider market analysis rather than on its own.</p>`,
+     fb:"Mr. Akram's exemplar (YED, 10). Forecasting and balanced-range uses, balanced against the limits of estimated YED values, with a 'use alongside other tools' judgement."}
+  ],
+  resources:[
+    {label:"Income elasticity of demand (YED) — lesson notes (PDF)", file:"resources/1-3-2-5-yed-notes.pdf"}
+  ]
+}
 ];

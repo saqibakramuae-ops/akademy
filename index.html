@@ -227,6 +227,11 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .ds-controls input[type=range]{flex:1;accent-color:var(--amber);height:26px}
 #akDSout{font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 12px;text-align:center}
 .ds-reset{align-self:flex-start;background:var(--chip);border:1px solid var(--line);color:var(--ink);padding:7px 12px;border-radius:8px;font-weight:700;font-size:12.5px}
+.ped-calc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ped-calc label{font-size:12.5px;font-weight:700;color:var(--ink);display:flex;flex-direction:column;gap:4px}
+.ped-calc input{padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-size:15px;outline:none}
+.ped-calc input:focus{border-color:var(--amber)}
+#akPEDout{margin-top:12px;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;line-height:1.7}
 
 /* resources */
 .reslist{display:flex;flex-direction:column;gap:10px}
@@ -466,6 +471,20 @@ function akDS(){
   if(out)out.innerHTML='Equilibrium price ≈ <b>'+Math.round(p)+'</b> &middot; quantity ≈ <b>'+Math.round(q)+'</b>';
 }
 function akDSreset(){var d=document.getElementById('akDS_d'),s=document.getElementById('akDS_s');if(d)d.value=0;if(s)s.value=0;akDS();}
+function akPED(){
+  var o=document.getElementById('akPEDout');if(!o)return;
+  function v(id){var e=document.getElementById(id);return e?parseFloat(e.value):NaN;}
+  var p1=v('akP1'),q1=v('akQ1'),p2=v('akP2'),q2=v('akQ2');
+  if(!(p1>0&&q1>0&&p2>0&&q2>0)){o.innerHTML='Enter all four values (each greater than 0).';return;}
+  var dq=(q2-q1)/q1*100, dp=(p2-p1)/p1*100;
+  if(dp===0){o.innerHTML='Price has not changed — PED cannot be calculated.';return;}
+  var ped=dq/dp, a=Math.abs(ped);
+  var cls=a>1?'price elastic':(a<1?'price inelastic':'unitary elastic');
+  var r1=p1*q1, r2=p2*q2, rd=r2-r1;
+  o.innerHTML='%Δ quantity demanded = <b>'+dq.toFixed(1)+'%</b> &middot; %Δ price = <b>'+dp.toFixed(1)+'%</b><br>'+
+    'PED = <b>'+ped.toFixed(2)+'</b> &rarr; demand is <b>'+cls+'</b><br>'+
+    'Revenue: <b>'+r1.toFixed(2)+'</b> &rarr; <b>'+r2.toFixed(2)+'</b> ('+(rd>=0?'+':'')+rd.toFixed(2)+')';
+}
 
 function ring(p){const r=18,c=2*Math.PI*r,off=c*(1-p/100);
   return `<div class="ring"><svg width="46" height="46"><circle cx="23" cy="23" r="${r}" stroke="var(--line)" stroke-width="5" fill="none"/><circle cx="23" cy="23" r="${r}" stroke="var(--emerald)" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}"/></svg><span class="pct">${p}%</span></div>`;}
@@ -650,7 +669,7 @@ function openTopic(code){
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
   h+=`</div></div>`;
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);window._topic=code;
-  if(window.akDS)akDS();
+  if(window.akDS)akDS();if(window.akPED)akPED();
   try{localStorage.setItem('akademy_last_'+USER,code);}catch(e){}
 }
 
