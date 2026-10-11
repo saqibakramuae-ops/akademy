@@ -3808,6 +3808,17 @@ window.CURRICULUM = [
         <li><b>Part-time, temporary and outsourced</b> labour — cut fixed wage costs and legal obligations.</li>
       </ul>
       <p><b>Dismissal vs redundancy:</b> <b>dismissal</b> is ending employment because of the worker's conduct or performance; <b>redundancy</b> is ending a role because the job itself is no longer needed. <span style="color:var(--muted)"><i>UAE note:</i> end-of-service gratuity and notice rules differ from UK statutory redundancy pay — a useful comparison for students.</span></p>`},
+    {h:"Flexible working practices", html:`
+      <p><b>Flexible working practices</b> are employment options that vary the <b>time, location or pattern</b> of work to balance employee needs with the firm's demand:</p>
+      <ul>
+        <li><b>Part-time &amp; full-time</b> — part-time gives guaranteed but fewer hours; useful for covering peaks.</li>
+        <li><b>Temporary / fixed-term contracts</b> — cover short-term needs (e.g. a restaurant hiring a chef for a season).</li>
+        <li><b>Flexible hours (flexitime)</b> — staff choose start/finish times (e.g. <b>Google</b> lets staff set hours around core meetings to boost well-being and innovation).</li>
+        <li><b>Home / remote working</b> — cuts office costs and commuting, but can weaken collaboration — <b>Yahoo!</b>'s CEO banned it, arguing "speed and quality are often sacrificed when we work from home".</li>
+        <li><b>Multi-skilling</b> — training staff in several roles so managers can move them where needed (e.g. <b>Carrefour</b> trains cashiers to help in the bakery or on the shop floor at busy times).</li>
+        <li><b>Outsourcing</b> — contracting work to other firms (e.g. <b>Nike</b> makes most products in factories in Vietnam, Indonesia and China).</li>
+      </ul>
+      <p>Flexibility cuts fixed labour costs and helps match staffing to demand, but can reduce loyalty, commitment and control over quality if overused.</p>`},
     {h:"Employer/employee relationships", html:`
       <p>Good relationships matter: motivated, fairly-treated staff are more productive and less likely to strike. Pay and conditions can be set two ways:</p>
       <ul>
@@ -3820,6 +3831,8 @@ window.CURRICULUM = [
     {term:"Soft HRM", marks:2, body:`An approach that treats staff as a valuable asset who can help achieve the firm's objectives <span class="pt">1</span>; the firm invests in training, pay and involvement to raise motivation and productivity <span class="pt">2</span>.`},
     {term:"Hard HRM", marks:2, body:`An approach that treats staff as a cost to be controlled like any other resource <span class="pt">1</span>; pay is kept low and job security limited to minimise labour costs <span class="pt">2</span>.`},
     {term:"Zero-hour contract", marks:2, body:`A contract that hires a worker with no guarantee of hours, paying them only when needed <span class="pt">1</span>; it gives the employer flexibility and low fixed costs but leaves the worker with uncertain income <span class="pt">2</span>.`},
+    {term:"Flexible working", marks:2, body:`Employment arrangements that vary the time, location or pattern of work, such as part-time, flexitime or home working <span class="pt">1</span>; they help a firm match staffing to demand and support work-life balance <span class="pt">2</span>.`},
+    {term:"Outsourcing", marks:2, body:`Contracting work out to another business rather than doing it in-house <span class="pt">1</span>; it can cut costs and add flexibility but reduces the firm's control over quality <span class="pt">2</span>.`},
     {term:"Redundancy", marks:2, body:`Ending a worker's employment because their role is no longer needed, not because of their conduct <span class="pt">1</span>; affected staff are usually entitled to a redundancy payment <span class="pt">2</span>.`},
     {term:"Collective bargaining", marks:2, body:`Negotiation of pay and conditions by a trade union on behalf of all its members at once <span class="pt">1</span>; it gives workers greater bargaining power than negotiating individually <span class="pt">2</span>.`},
     {term:"Trade union", marks:2, body:`An organisation that represents workers and negotiates with employers on their behalf <span class="pt">1</span>; it aims to protect members' pay, conditions and job security <span class="pt">2</span>.`}
@@ -3831,6 +3844,9 @@ window.CURRICULUM = [
     {marks:2, q:"Define the term 'redundancy'.",
      model:`Redundancy is ending a worker's employment because their role is no longer needed rather than for misconduct <span class="pt">1</span>; affected staff are normally entitled to a redundancy payment <span class="pt">2</span>.`,
      fb:"Role-no-longer-needed (distinct from dismissal) plus the payment entitlement."},
+    {marks:2, q:"Define the term 'flexible working'.",
+     model:`Flexible working means employment arrangements that vary the time, location or pattern of work, such as part-time, flexitime or home working <span class="pt">1</span>; it helps a firm match staffing to demand while supporting work-life balance <span class="pt">2</span>.`,
+     fb:"Varying time/location/pattern plus the demand-matching and balance point."},
     {marks:4, q:"Explain one benefit to a business of treating its staff as an asset.",
      model:`Treating staff as an asset means investing in them through training and good pay <span class="pt">1</span>. This is because valued employees feel more motivated and loyal <span class="pt">2</span>. As a result, labour turnover falls <span class="pt">3</span>, cutting recruitment and training costs and helping maintain consistent service quality <span class="pt">4</span>.`,
      fb:"Names the approach, links to motivation/loyalty and chains to lower turnover and cost."}
@@ -3842,6 +3858,8 @@ window.CURRICULUM = [
         <li><b>Sports Direct</b> — ~2,000 core staff on share options, ~25,000 on zero-hour contracts (many outsourced) — a clear core/peripheral split.</li>
         <li><b>Nestlé (KitKat factory)</b> — used <b>collective bargaining</b> after 94% of workers rejected earlier pay offers, agreeing a 3.25% rise plus a 1% safety-linked bonus.</li>
         <li><b>Deutsche Bank</b> — used collective bargaining with unions during 2019 restructuring that made 18,000 employees redundant.</li>
+        <li><b>M&amp;S</b> — uses flexible working (part-time, job-share, career breaks) to support wellbeing and widen its talent pool.</li>
+        <li><b>PwC</b> — its <b>Flexible Talent Network</b> lets people apply by skills and preferred hours; 2,000+ registered in the first two weeks, with benefits for those working 20+ hours.</li>
       </ul>`
   },
   exam:[
@@ -3857,10 +3875,27 @@ window.CURRICULUM = [
      model:`<p><span class="tag t-P">POINT</span>One impact is improved employee relations and motivation. <span class="tag t-C">CHAIN</span>By recognising the union and negotiating pay rather than imposing it, Nestlé makes workers feel heard and valued, raising trust and reducing conflict — so morale and productivity rise. <span class="tag t-A">APPLY</span>Nestlé could therefore enjoy a more stable workforce with reduced risk of industrial action and stronger long-term loyalty.</p>
      <p><span class="tag t-P">POINT</span>A second impact is avoiding strike action that would damage production and reputation. <span class="tag t-A">APPLY</span>Nestlé offered a 3.25% pay rise and a 1% safety-linked bonus after 94% of workers rejected earlier offers; without negotiation there could have been major disruption. <span class="tag t-C">CHAIN</span>So although short-term costs rose, Nestlé avoided delays to KitKat production and negative media attention, protecting customer satisfaction and revenue from one of its top products.</p>
      <p><span class="tag t-J">HOWEVER</span>However, agreeing to union demands raises labour costs and creates expectations — the rise and bonus increase the wage bill, and other sites may expect the same, making future negotiations more complex and expensive. <span class="tag t-J">CONCLUSION</span>Overall, collective bargaining likely helped Nestlé avoid strikes and improve satisfaction, protecting output and relations; but rising costs and the risk of setting a precedent could limit financial flexibility. The overall impact depends on whether the improved motivation delivers higher productivity and fewer disputes in future.</p>`,
-     fb:"Mr. Akram's exemplar (Nestlé KitKat, 10 — top band). Two applied positive impacts, a costed drawback and a conditional judgement."}
+     fb:"Mr. Akram's exemplar (Nestlé KitKat, 10 — top band). Two applied positive impacts, a costed drawback and a conditional judgement."},
+    {marks:10, q:"Assess the benefits of using flexible working practices at M&S. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One major benefit of flexible working at M&amp;S is improved employee motivation and wellbeing. <span class="tag t-C">CHAIN</span>Letting staff balance personal and work responsibilities — through part-time roles, job-sharing or career breaks — reduces stress and raises job satisfaction. <span class="tag t-A">APPLY</span>This builds a loyal workforce and can lift productivity and customer service, which is essential in retail.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is stronger recruitment and retention. <span class="tag t-A">APPLY</span>M&amp;S can attract a broader range of applicants — working parents, carers and students — supporting a more diverse workforce and cutting turnover, saving on hiring and training and keeping experienced staff for consistent service.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, flexible contracts make scheduling and communication harder: managers may struggle to cover busy periods if many staff want time off together, and job-shares can cause handover gaps that hurt efficiency. <span class="tag t-J">CONCLUSION</span>Overall, flexible working offers M&amp;S real long-term gains in morale, talent and loyalty — especially valuable in high-turnover retail — but only if it invests in effective scheduling and communication; otherwise the flexibility could create more problems than it solves.</p>`,
+     fb:"Mr. Akram's exemplar (M&S, 10). Two applied benefits (wellbeing, recruitment/retention) balanced by scheduling drawbacks, with a conditional judgement."},
+    {marks:10, q:"Assess the likely impact on PwC of introducing its Flexible Talent Network. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One key benefit is attracting a more diverse, skilled workforce. <span class="tag t-C">CHAIN</span>Candidates apply on their skills and preferred schedules rather than fixed roles, encouraging talented people who can't work full-time — parents, semi-retirees — to join. <span class="tag t-A">APPLY</span>Over 2,000 registered in the first two weeks, widening PwC's talent pool and sharpening its competitive edge in professional services.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is better retention and motivation. <span class="tag t-A">APPLY</span>Flexible hours cut stress and boost satisfaction, and staff working 20+ hours still qualify for benefits like pensions, making part-time roles attractive. <span class="tag t-C">CHAIN</span>In a high-pressure consultancy this reduces burnout and absenteeism and lifts productivity.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, flexible working at scale creates operational complexity: in a project-based consultancy, varied schedules make resource planning harder, risking skill gaps, delays, higher admin and weaker team cohesion if staff rarely overlap. <span class="tag t-J">CONCLUSION</span>Overall, the Flexible Talent Network could significantly strengthen PwC's ability to attract and retain talent and, long term, bring cost savings and a better brand image — but success depends on how well PwC manages project staffing and service quality; with clear communication and workload planning the strategic gains should outweigh the operational drawbacks.</p>`,
+     fb:"Mr. Akram's exemplar (PwC, 10 — top band). Two benefits with figures (2,000 applicants, 20+ hrs) and a developed operational drawback, closing with conditional judgement."},
+    {marks:20, q:"Sports Direct uses both zero-hour and part-time contracts. Evaluate the use of these flexible contracts for a retailer such as Sports Direct. (20)",
+     model:`<p><span class="tag t-P">POINT</span>Zero-hour contracts give Sports Direct the highest flexibility. <span class="tag t-C">CHAIN</span>With no guaranteed hours it can raise or cut labour to match footfall, which varies day to day in retail, running quiet periods with minimal staffing. <span class="tag t-A">APPLY</span>This reduces labour costs — essential for a low-margin model across 670 stores — and creates a pool of casual staff for extended opening hours.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, over-reliance on zero-hours can cause low morale and high turnover. <span class="tag t-C">CHAIN</span>Inconsistent hours and insecurity make it hard for staff to plan finances, harming motivation and customer service and inviting negative media or union pressure — as Sports Direct has faced — while constant recruitment and training add hidden costs.</p>
+     <p><span class="tag t-P">POINT</span>Part-time contracts offer a middle ground. <span class="tag t-A">APPLY</span>Guaranteed hours improve retention and motivation, and experienced part-timers who know the store and stock can be scheduled for weekends and holidays, supporting stability and team culture. <span class="tag t-J">HOWEVER</span>However, they are less flexible — Sports Direct may pay wages in quiet periods and struggle to fill sudden gaps, and part-timers may still expect progression and benefits, raising costs.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, zero-hour contracts are likely more effective for Sports Direct in the short term, fitting its low-margin, fast-response model. But to limit the downsides it should manage them carefully with fair scheduling, clear communication and basic development. In the long term a <b>hybrid</b> approach is best — zero-hours for seasonal peaks and part-time for core roles needing consistency — meeting operational needs while protecting its brand image.</p>`,
+     fb:"Mr. Akram's exemplar (Sports Direct, 20 — top band 19/20). Zero-hour vs part-time each developed with benefit and drawback, context (670 stores, low margins), and a hybrid judgement."}
   ],
   resources:[
     {label:"Approaches to staffing — lesson notes (PDF)", file:"resources/1-3-4-1-staffing-notes.pdf"},
+    {label:"Flexible working practices — lesson notes (PDF)", file:"resources/1-3-4-1-flexible-working-notes.pdf"},
     {label:"Employer/employee relationships — lesson notes (PDF)", file:"resources/1-3-4-1-employer-employee-notes.pdf"}
   ]
 },
