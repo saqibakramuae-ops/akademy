@@ -3129,7 +3129,12 @@ window.CURRICULUM = [
      fb:"Demand shifts right → higher equilibrium price and quantity, clearly chained."},
     {marks:4, q:"Analyse the effect on the market for cars of a fall in the cost of steel.",
      model:`A fall in steel costs lowers production costs, increasing supply and shifting the supply curve right <span class="pt">1</span>. This is because cars become cheaper to make, so firms supply more at each price <span class="pt">2</span>. As a result, there is downward pressure on price <span class="pt">3</span>, so the new equilibrium has a lower price and a higher quantity of cars sold <span class="pt">4</span>.`,
-     fb:"Lower input cost → supply right → lower price, higher quantity."}
+     fb:"Lower input cost → supply right → lower price, higher quantity."}  ,{marks:4, q:"Dubai's population keeps growing as more people move to the city for work. Construct/analyse the effect on the market for rental apartments in Dubai.",
+     model:`Population growth increases demand for rental apartments, shifting the demand curve right <span class="pt">1</span>. This is because more residents need somewhere to live at every price level <span class="pt">2</span>. As a result, at the old rent there is excess demand <span class="pt">3</span>, so the new equilibrium has a higher rent (price) and a higher quantity of apartments rented <span class="pt">4</span>.`,
+     fb:"Demand shifts right \u2192 higher price and quantity. Use the interactive diagram to check."}
+  ,{marks:4, q:"The UAE Government gives solar-panel producers a subsidy per panel. Construct/analyse the effect on the market for solar panels.",
+     model:`A subsidy lowers producers' costs, increasing supply and shifting the supply curve right <span class="pt">1</span>. This is because each panel is cheaper to make, so firms supply more at every price <span class="pt">2</span>. As a result, there is downward pressure on price <span class="pt">3</span>, so the new equilibrium has a lower price and a higher quantity of solar panels <span class="pt">4</span>.`,
+     fb:"Subsidy \u2192 supply right \u2192 lower price, higher quantity. Check it on the interactive diagram."}
   ],
   caseStudy:{
     business:"Sony, the car market & market scenarios",
@@ -3148,7 +3153,8 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (gym surge). Demand-right analysis plus fixed short-run supply, judged on how lasting the surge is."}
   ],
   resources:[
-    {label:"Interaction of demand & supply (equilibrium) — lesson notes (PDF)", file:"resources/1-3-2-3-equilibrium-notes.pdf"}
+    {label:"Interaction of demand & supply (equilibrium) — lesson notes (PDF)", file:"resources/1-3-2-3-equilibrium-notes.pdf"},
+    {label:"Supply & demand shifts \u2014 construct practice (PDF)", file:"resources/1-3-2-3-construct-practice.pdf"}
   ]
 },
 {
@@ -3207,7 +3213,9 @@ window.CURRICULUM = [
      fb:"Correct %changes, PED = −2, classified elastic."},
     {marks:4, q:"The PED for LEGO City sets is −2. If LEGO cuts the price by 25%, calculate the effect on quantity demanded and explain it.",
      model:`%ΔQd = PED × %ΔP = −2 × −25% = <b>+50%</b> <span class="pt">1</span>. So demand rises 50% <span class="pt">2</span>. This is because the sets are price elastic, so a price cut causes a more than proportional rise in sales <span class="pt">3</span>, which could raise LEGO's total revenue if the extra volume outweighs the lower price <span class="pt">4</span>.`,
-     fb:"Mr. Akram's exemplar (LEGO). Uses %ΔQd = PED × %ΔP to get +50% and links to revenue."}
+     fb:"Mr. Akram's exemplar (LEGO). Uses %ΔQd = PED × %ΔP to get +50% and links to revenue."}  ,{marks:4, q:"Superdry cuts the price of a t-shirt by 10% and sales rise from 120,000 to 150,000. Calculate the PED and state whether demand is elastic or inelastic.",
+     model:`%ΔQd = (150,000−120,000)/120,000 × 100 = +25% <span class="pt">1</span>; %ΔP = −10% <span class="pt">2</span>. PED = 25 ÷ −10 = <b>−2.5</b> <span class="pt">3</span>. As |PED| &gt; 1, demand is <b>price elastic</b>, so the price cut raises total revenue <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Superdry). %ΔQd +25%, PED −2.5, elastic — revenue rises on a price cut."}
   ],
   caseStudy:{
     business:"LEGO, M&S & Oppo",
@@ -3230,7 +3238,8 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (M&S, 8). Substitutes and loyalty shape PED, balanced by a judgement that non-price factors may matter more."}
   ],
   resources:[
-    {label:"Price elasticity of demand (PED) — lesson notes (PDF)", file:"resources/1-3-2-4-ped-notes.pdf"}
+    {label:"Price elasticity of demand (PED) — lesson notes (PDF)", file:"resources/1-3-2-4-ped-notes.pdf"},
+    {label:"PED & YED \u2014 calculation practice (PDF)", file:"resources/1-3-2-ped-yed-calc-practice.pdf"}
   ]
 },
 {
@@ -3272,7 +3281,12 @@ window.CURRICULUM = [
      model:`%ΔQd = (9,000−12,000)/12,000 × 100 = −25% <span class="pt">1</span>. YED = −25 ÷ 10 = <b>−2.5</b> <span class="pt">2</span>. YED is negative, so bus travel is an <b>inferior good</b> <span class="pt">3</span> — as incomes rise, people switch to cars or taxis, cutting demand <span class="pt">4</span>.`,
      fb:"Correct negative %ΔQd, YED = −2.5, classified inferior."}  ,{marks:4, q:"Approved Food, a budget discount-food retailer, saw demand rise from 2,000 to 3,500 orders when average incomes fell 2.2%. Calculate the YED and interpret it.",
      model:`%ΔQd = (3,500−2,000)/2,000 × 100 = +75% <span class="pt">1</span>. YED = 75 ÷ −2.2 = <b>−34.09</b> <span class="pt">2</span>. The strongly negative value means it is an <b>inferior good</b> <span class="pt">3</span> whose demand is extremely sensitive to income — a 1% fall in income raises demand by about 34%, so Approved Food is very recession-proof and should plan extra stock and deliveries when incomes fall <span class="pt">4</span>.`,
-     fb:"Mr. Akram's exemplar (Approved Food). %ΔQd +75%, YED −34.09, interpreted as a strongly inferior, recession-proof good."}
+     fb:"Mr. Akram's exemplar (Approved Food). %ΔQd +75%, YED −34.09, interpreted as a strongly inferior, recession-proof good."}  ,{marks:4, q:"European incomes rise 4% and Meqnes' travel-bag sales rise from 1,000 to 1,120 a week. Calculate the YED and classify the good.",
+     model:`%ΔQd = (1,120−1,000)/1,000 × 100 = +12% <span class="pt">1</span>. YED = 12 ÷ 4 = <b>+3</b> <span class="pt">2</span>. The value is positive, so travel bags are a <b>normal good</b> <span class="pt">3</span>; as it is well above 1 they are income-elastic (a luxury) — demand will swing sharply with the economy <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Meqnes). %ΔQd +12%, YED +3, normal/income-elastic luxury."}
+  ,{marks:4, q:"Japanese incomes rise 3.5% and Sony console sales rise from 3.0m to 3.21m. Calculate the YED and classify the good.",
+     model:`%ΔQd = (3.21−3.0)/3.0 × 100 = +7% <span class="pt">1</span>. YED = 7 ÷ 3.5 = <b>+2</b> <span class="pt">2</span>. Positive, so consoles are a <b>normal good</b> <span class="pt">3</span>; above 1 means income-elastic, so demand rises more than proportionally as incomes grow <span class="pt">4</span>.`,
+     fb:"Mr. Akram's exemplar (Sony). %ΔQd +7%, YED +2, normal/income-elastic."}
   ],
   caseStudy:{
     business:"iPads, trainers & bus travel",
@@ -3292,7 +3306,8 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (YED, 10). Forecasting and balanced-range uses, balanced against the limits of estimated YED values, with a 'use alongside other tools' judgement."}
   ],
   resources:[
-    {label:"Income elasticity of demand (YED) — lesson notes (PDF)", file:"resources/1-3-2-5-yed-notes.pdf"}
+    {label:"Income elasticity of demand (YED) — lesson notes (PDF)", file:"resources/1-3-2-5-yed-notes.pdf"},
+    {label:"PED & YED \u2014 calculation practice (PDF)", file:"resources/1-3-2-ped-yed-calc-practice.pdf"}
   ]
 }
 ];
