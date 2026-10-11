@@ -3900,7 +3900,119 @@ window.CURRICULUM = [
   ]
 },
 {code:"1.3.4.2", subtheme:"1.3.4", title:"Recruitment, selection & training", business:"Recruitment, selection and training methods", status:"soon"},
-{code:"1.3.4.3", subtheme:"1.3.4", title:"Organisational design", business:"Structures, spans of control & delegation", status:"soon"},
+{
+  code:"1.3.4.3", subtheme:"1.3.4", title:"Organisational design",
+  business:"Case studies: Waterstones, Morley's, Nintendo & Tata",
+  status:"live",
+  notes:[
+    {h:"Organisational structures: tall vs flat", html:`
+      <p>An <b>organisational structure</b> is the way roles, responsibilities and authority are arranged in a business. Key terms:</p>
+      <ul>
+        <li><b>Hierarchy</b> — the layers of management from top to bottom.</li>
+        <li><b>Chain of command</b> — the line of authority down which instructions pass.</li>
+        <li><b>Span of control</b> — the number of subordinates a manager is directly responsible for.</li>
+      </ul>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 210" style="min-width:460px;width:100%;max-width:600px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="var(--muted)" stroke-width="1.3">
+          <line x1="110" y1="38" x2="75" y2="70"/><line x1="110" y1="38" x2="145" y2="70"/>
+          <line x1="75" y1="88" x2="55" y2="120"/><line x1="75" y1="88" x2="95" y2="120"/>
+          <line x1="145" y1="88" x2="125" y2="120"/><line x1="145" y1="88" x2="165" y2="120"/>
+          <line x1="400" y1="38" x2="320" y2="70"/><line x1="400" y1="38" x2="360" y2="70"/><line x1="400" y1="38" x2="400" y2="70"/><line x1="400" y1="38" x2="440" y2="70"/><line x1="400" y1="38" x2="480" y2="70"/>
+        </g>
+        <g fill="rgba(15,42,74,.10)" stroke="var(--navy)" stroke-width="1.3">
+          <rect x="92" y="20" width="36" height="18" rx="3"/>
+          <rect x="57" y="70" width="36" height="18" rx="3"/><rect x="127" y="70" width="36" height="18" rx="3"/>
+          <rect x="39" y="120" width="32" height="16" rx="3"/><rect x="79" y="120" width="32" height="16" rx="3"/><rect x="109" y="120" width="32" height="16" rx="3"/><rect x="149" y="120" width="32" height="16" rx="3"/>
+        </g>
+        <g fill="rgba(245,166,35,.16)" stroke="var(--amber)" stroke-width="1.3">
+          <rect x="382" y="20" width="36" height="18" rx="3"/>
+          <rect x="302" y="70" width="36" height="16" rx="3"/><rect x="342" y="70" width="36" height="16" rx="3"/><rect x="382" y="70" width="36" height="16" rx="3"/><rect x="422" y="70" width="36" height="16" rx="3"/><rect x="462" y="70" width="36" height="16" rx="3"/>
+        </g>
+        <text x="110" y="162" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)">Tall structure</text>
+        <text x="110" y="177" text-anchor="middle" font-size="8.5" fill="var(--muted)">many layers · narrow span · long chain</text>
+        <text x="400" y="110" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)">Flat structure</text>
+        <text x="400" y="125" text-anchor="middle" font-size="8.5" fill="var(--muted)">few layers · wide span · short chain</text>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Tall (hierarchical)</b> — many layers, narrow spans, a long chain of command. Clear promotion routes and close supervision, but slow communication and higher management costs.</li>
+        <li><b>Flat</b> — few layers, wide spans, a short chain of command. Faster communication and lower costs, but managers stretched and fewer promotion rungs.</li>
+      </ul>
+      <p>Moving from tall to flat means <b>delayering</b> — removing a level of management (e.g. <b>Waitrose</b> removed its Head of Department layer to build a "whole shop" culture).</p>`},
+    {h:"Centralisation vs decentralisation", html:`
+      <p>This is about <b>where decisions are made</b>:</p>
+      <ul>
+        <li><b>Centralised</b> — head office or a few senior managers keep the major decisions. Gives tight control, consistency and economies of scale, but is slow and can demotivate local staff. <b>Fast-food chains like McDonald's</b> centralise to keep quality and the customer experience consistent across thousands of outlets.</li>
+        <li><b>Decentralised</b> — decisions are spread to branches and lower-level managers. Faster, more locally responsive and motivating, but risks inconsistency and loss of brand identity. <b>Tesco</b>, hotel chains like <b>Hilton</b> and <b>Waterstones</b> decentralise so local managers tailor to their market.</li>
+      </ul>
+      <p>Many firms use a <b>hybrid</b> — centralising functions like accounting and purchasing to save cost, while decentralising decisions like recruitment or product range to local units.</p>`},
+    {h:"Matrix structure", html:`
+      <p>A <b>matrix structure</b> combines the usual functional departments with <b>project teams</b>. Staff work across teams as well as within their own function, so a new-product team might include engineers, designers, marketers and finance staff — each reporting to both a <b>functional manager</b> and a <b>project manager</b> (dual reporting).</p>
+      <ul>
+        <li><b>Advantages</b> — better cross-department collaboration, communication and innovation (e.g. <b>Google</b> uses it for AI and YouTube projects; useful for <b>Audi</b> or <b>Nintendo</b> product teams).</li>
+        <li><b>Disadvantages</b> — dual reporting can cause confusion and conflicting priorities, slowing decisions and stressing staff if not managed well.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Organisational structure", marks:2, body:`The way roles, responsibilities and authority are arranged in a business <span class="pt">1</span>; it sets the chain of command and how decisions and communication flow <span class="pt">2</span>.`},
+    {term:"Span of control", marks:2, body:`The number of subordinates a manager is directly responsible for <span class="pt">1</span>; a wide span means fewer managers and lower costs but less close supervision <span class="pt">2</span>.`},
+    {term:"Chain of command", marks:2, body:`The line of authority along which instructions pass from the top of a business to the bottom <span class="pt">1</span>; a shorter chain speeds up communication and decisions <span class="pt">2</span>.`},
+    {term:"Centralisation", marks:2, body:`When major decisions are kept by head office or a few senior managers <span class="pt">1</span>; it gives tight control and consistency but can be slow and demotivating for local staff <span class="pt">2</span>.`},
+    {term:"Decentralisation", marks:2, body:`When decision-making is spread to branches and lower-level managers <span class="pt">1</span>; it speeds local responsiveness and motivation but risks inconsistency across the business <span class="pt">2</span>.`},
+    {term:"Matrix structure", marks:2, body:`A structure combining functional departments with cross-department project teams, so staff report to both a function and a project manager <span class="pt">1</span>; it boosts collaboration but dual reporting can cause confusion <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'span of control'.",
+     model:`Span of control is the number of subordinates a manager is directly responsible for <span class="pt">1</span>; a wider span means fewer managers and lower costs but less close supervision <span class="pt">2</span>.`,
+     fb:"Number-of-subordinates plus the wide-span trade-off — two developed points."},
+    {marks:2, q:"Define the term 'decentralisation'.",
+     model:`Decentralisation is when decision-making is spread to branches and lower-level managers rather than kept at head office <span class="pt">1</span>; it speeds local responsiveness but risks inconsistency across the business <span class="pt">2</span>.`,
+     fb:"Decisions-spread-to-local plus the responsiveness-vs-consistency trade-off."},
+    {marks:4, q:"Explain one advantage to a business of a flat organisational structure.",
+     model:`A flat structure speeds up communication <span class="pt">1</span>. This is because there are fewer layers for information to pass through between senior managers and staff <span class="pt">2</span>. As a result, the business can respond faster to problems <span class="pt">3</span>, and with fewer managers to pay it also lowers costs <span class="pt">4</span>.`,
+     fb:"Names the advantage (faster communication), explains the fewer-layers mechanism and chains to speed and cost."}
+  ],
+  caseStudy:{
+    business:"Waterstones, Morley's, Nintendo & Tata",
+    intro:`<p>Businesses used in the organisational-design questions.</p>
+      <ul>
+        <li><b>Waterstones</b> — <b>decentralised</b> so local managers tailor each shop to its community (different books in Harrogate vs Kensington), scrapping uniforms to compete with online rivals.</li>
+        <li><b>Morley's</b> — a South London chicken chain expanding nationally (Leeds, Newcastle, Brighton), weighing <b>centralised vs decentralised</b> to grow sales revenue.</li>
+        <li><b>Nintendo</b> — uses a <b>matrix structure</b> to bring design and marketing together on products like the Switch.</li>
+        <li><b>Tata Motors</b> — moving to a <b>flatter structure</b> under a turnaround plan to cut average costs and rebuild market share.</li>
+      </ul>`
+  },
+  exam:[
+    {marks:10, q:"Assess the suitability of using decentralisation for a firm such as Waterstones. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of decentralisation for Waterstones is that local managers can make decisions reflecting their local market. <span class="tag t-C">CHAIN</span>Each store can stock books that appeal to the tastes of its community, so customers are more likely to find relevant titles, increasing sales. <span class="tag t-A">APPLY</span>Individual stores can therefore compete with online retailers by offering a personalised experience, raising customer satisfaction and loyalty locally.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, decentralisation may cause inconsistency between stores. <span class="tag t-C">CHAIN</span>Managers may interpret policies differently or offer varying service, so the brand image could become diluted or confusing for customers visiting several branches, and the firm may miss standardisation benefits like bulk buying and national promotions.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, decentralisation is highly suitable for Waterstones given its local customer base and need to compete with standardised online retailers. But to be effective it must keep some central control over training, branding and purchasing — success depends on balancing local flexibility with strategic oversight.</p>`,
+     fb:"Mr. Akram's exemplar (Waterstones, 10). Benefit (local responsiveness) and drawback (inconsistency) applied, with a 'balance local and central' judgement."},
+    {marks:10, q:"Assess the likely impact of a matrix organisational structure for a business such as Nintendo. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of a matrix structure for Nintendo is better collaboration between departments. <span class="tag t-C">CHAIN</span>Staff from areas like design and marketing work together on the same projects, strengthening communication and creativity. <span class="tag t-A">APPLY</span>Products like the Nintendo Switch can draw on combined expertise, so Nintendo reacts faster to market trends — improving innovation and competitiveness in global gaming.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, a matrix can reduce efficiency if poorly managed. <span class="tag t-C">CHAIN</span>Employees may report to both a department head and a project leader, so conflicting instructions cause confusion, stress and unclear responsibilities, delaying projects or lowering quality.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the matrix structure can significantly improve efficiency at Nintendo through innovation and teamwork, but success depends on how well communication and workloads are managed. It is recommended Nintendo clearly defines responsibilities and invests in coordination and leadership training so the structure delivers long-term benefits.</p>`,
+     fb:"Mr. Akram's exemplar (Nintendo, 10). Collaboration benefit vs dual-reporting drawback, applied to the Switch, with a management-dependent judgement."},
+    {marks:20, q:"Morley's is expanding across the UK to increase sales revenue and must choose between keeping its centralised structure or adopting a decentralised one. Evaluate these two options and recommend which would be better. (20)",
+     model:`<p><span class="tag t-P">POINT</span>One benefit of a <b>decentralised</b> structure is meeting local customer needs across different cities. <span class="tag t-A">APPLY</span>Local managers gain autonomy over the menu and marketing, so stores in Brighton can differ from Leeds, improving local engagement. <span class="tag t-C">CHAIN</span>Customers may become more loyal and visit more often, lifting sales revenue as stores target their local market.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, decentralisation risks losing consistency across new branches. <span class="tag t-C">CHAIN</span>Different decisions on pricing, promotions and service create a fragmented brand, so customers in Newcastle may not get the London experience — making it harder to compete with KFC's nationwide consistency and risking lost growth.</p>
+     <p><span class="tag t-P">POINT</span>By contrast, keeping a <b>centralised</b> structure lets Morley's retain full control of its brand. <span class="tag t-A">APPLY</span>Head office sets product range, pricing and marketing, ensuring consistency and a recognisable national brand customers trust. <span class="tag t-J">HOWEVER</span>However, centralised decisions can be slow and less responsive — head office may not understand regional tastes in Brighton or Leeds, missing chances to adapt and causing some stores to underperform.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, a decentralised structure is likely better for Morley's as it expands, because flexibility and local responsiveness drive footfall and loyalty in a competitive sector. I reject pure centralisation because it is too slow to adapt to new regions. Success depends on training local managers well and keeping enough brand control — so it is recommended Morley's decentralise, supported by strong central brand guidelines, to grow revenue without damaging the brand.</p>`,
+     fb:"Mr. Akram's exemplar (Morley's, 20). Decentralised vs centralised each with benefit and drawback, applied to national expansion, with a justified recommendation and rejection."},
+    {marks:20, q:"Tata Motors is moving to a flatter organisational structure as part of a turnaround plan. Evaluate whether this will improve efficiency and lower average costs. (20)",
+     model:`<p><span class="tag t-P">POINT</span>One reason a flat structure may improve efficiency at Tata is faster decisions. <span class="tag t-C">CHAIN</span>Removing layers cuts the time for information to move between the CEO and the production line, so quality problems that had damaged Tata's reputation can be fixed quickly before cars leave the factory. <span class="tag t-A">APPLY</span>Fewer recalls and less reworking reduce waste, lowering average cost per vehicle.</p>
+     <p><span class="tag t-P">POINT</span>Efficiency may also rise through higher motivation. <span class="tag t-A">APPLY</span>A flatter structure gives workers more responsibility, matching the CEO's turnaround plan to drive innovation. <span class="tag t-C">CHAIN</span>Staff feel trusted and contribute ideas, raising labour productivity so Tata spreads the cost of its large factories across more vehicles, lowering average costs and helping rebuild its fallen market share.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, efficiency could fall in the short term if delayering removes experienced managers, pushing responsibilities onto staff without support — slowing production and raising mistakes while output drops but costs stay fixed, so average costs rise temporarily. <span class="tag t-J">HOWEVER</span>There is also a risk of over-wide spans: with a huge workforce, fewer layers mean each manager supervises more people, weakening supervision and communication across international operations so problems take longer to fix.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the flat structure could improve efficiency and lower average costs if it speeds decisions and motivates staff, but success depends on how well the change is managed. With poor training and communication, average costs could rise from mistakes and disruption — so in the short term costs may increase, but if the turnaround plan is handled well, the flatter structure should make Tata more efficient long term.</p>`,
+     fb:"Mr. Akram's exemplar (Tata Motors, 20). Two efficiency gains (speed, motivation) vs two risks (lost expertise, over-wide spans), linked to average costs with a managed-change judgement."}
+  ],
+  resources:[
+    {label:"Organisational structures (tall, flat &amp; delayering) — notes (PDF)", file:"resources/1-3-4-3-structures-notes.pdf"},
+    {label:"Centralisation &amp; decentralisation — notes (PDF)", file:"resources/1-3-4-3-centralisation-notes.pdf"},
+    {label:"Matrix structure — notes (PDF)", file:"resources/1-3-4-3-matrix-notes.pdf"}
+  ]
+},
 {
   code:"1.3.4.4", subtheme:"1.3.4", title:"Motivation in theory & practice",
   business:"Case studies: Barclays, Deliveroo & Nissan", status:"live",
