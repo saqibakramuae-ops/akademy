@@ -3511,6 +3511,24 @@ window.CURRICULUM = [
   code:"1.3.3.3", subtheme:"1.3.3", title:"Promotion and branding",
   business:"Case study: Deliveroo & emotional branding", status:"live",
   notes:[
+    {h:"The promotional mix", html:`
+      <p><b>Promotion</b> is the marketing activity used to communicate with customers to <b>inform and persuade</b> them to buy. Firms blend several methods — the <b>promotional mix</b>:</p>
+      <ul>
+        <li><b>Advertising</b> — paid messages through TV, radio, social media or billboards (e.g. McDonald's global campaigns).</li>
+        <li><b>Sales promotion</b> — short-term incentives: coupons, app-exclusive deals, free samples, product trials (e.g. H&amp;M seasonal discounts).</li>
+        <li><b>Personal selling</b> — staff selling face to face, common for high-value goods (e.g. Rolex boutique staff).</li>
+        <li><b>Public relations (PR)</b> — managing the firm's public image through press releases, events and coverage (e.g. Apple's iPhone launch events generate huge free publicity).</li>
+        <li><b>Direct &amp; digital marketing</b> — tailored emails, app notifications and social media (e.g. Amazon's personalised recommendations, Starbucks campaigns).</li>
+      </ul>
+      <p><b>Above-the-line (ATL)</b> promotion is advertising through <b>mass media</b> to reach a wide audience (e.g. Pepsi's Super Bowl TV ads). <b>Below-the-line (BTL)</b> promotion is communication the firm controls directly and does not use mass media (e.g. personal selling, sales promotions, direct marketing).</p>`},
+    {h:"Technology in promotion", html:`
+      <p>Technology has transformed promotion, especially for reaching targeted audiences cheaply:</p>
+      <ul>
+        <li><b>Targeted online advertising</b> — ads aimed at customers whose online activity shows interest (e.g. Amazon's recommendations based on past purchases).</li>
+        <li><b>Viral advertising</b> — eye-catching, shareable content spread by users themselves (e.g. the ALS Ice Bucket Challenge; Nike's "Dream Crazy").</li>
+        <li><b>E-newsletters</b> — email lists sending offers to people who opted in (e.g. IKEA's personalised recommendations).</li>
+      </ul>
+      <p>These methods are low-cost and highly targeted, but firms have less control over how messages spread and must avoid overwhelming customers.</p>`},
     {h:"What is a brand?", html:`
       <p>A <b>brand</b> is a unique design, sign, symbol, word, or combination of these, used to create an image that identifies a product and <b>differentiates it from competitors</b>. Branding turns a product into something customers recognise, trust and feel loyal to.</p>
       <p>There are three main <b>types of branding</b>:</p>
@@ -3544,6 +3562,8 @@ window.CURRICULUM = [
       <p>These trends let smaller or newer firms compete with established brands, but only if the emotional message is backed by a genuinely good product or service.</p>`}
   ],
   definitions:[
+    {term:"Promotion", marks:2, body:`The marketing activity used to communicate with customers to inform and persuade them to buy a product <span class="pt">1</span>; it combines methods such as advertising, sales promotion, PR and direct marketing <span class="pt">2</span>.`},
+    {term:"Above-the-line promotion", marks:2, body:`Advertising through mass media such as TV, radio and billboards to reach a wide audience <span class="pt">1</span>; it builds awareness quickly but is costly and less targeted than below-the-line methods <span class="pt">2</span>.`},
     {term:"Brand", marks:2, body:`A unique design, sign, symbol or name that identifies a product and sets it apart from competitors <span class="pt">1</span>; it creates an image customers recognise, trust and stay loyal to <span class="pt">2</span>.`},
     {term:"Corporate branding", marks:2, body:`When a business markets all of its products under one single company brand name <span class="pt">1</span>; every product shares the firm's reputation, so success — or scandal — affects them all together <span class="pt">2</span>.`},
     {term:"Own-label branding", marks:2, body:`When a retailer sells products under its own name rather than the manufacturer's <span class="pt">1</span>; it gives the retailer higher margins and control but is often seen as lower quality than big-name brands <span class="pt">2</span>.`},
@@ -3572,12 +3592,114 @@ window.CURRICULUM = [
      model:`<p><span class="tag t-P">POINT</span>One reason emotional branding is important to Deliveroo is that it helps build a stronger connection with customers. <span class="tag t-C">CHAIN</span>This is because emotional branding appeals to feelings such as joy and trust, which influence loyalty more than logical factors like price. <span class="tag t-A">APPLY</span>Deliveroo linked its campaign to the concept of "food happiness", helping customers associate the brand with positive emotions. <span class="tag t-C">CHAIN</span>This creates a more emotionally engaged customer base, so customers may be more likely to choose Deliveroo over rivals like Just Eat or Uber Eats. As a result, emotional branding could increase brand awareness and sales — as seen in the rise from 3.1% to 6.6% awareness — improving its competitive position in a saturated market.</p>
      <p><span class="tag t-J">HOWEVER</span>However, emotional branding may not be the most important factor influencing customer choice. <span class="tag t-C">CHAIN</span>This is because some customers prioritise price, delivery speed or app functionality over emotional appeal. <span class="tag t-A">APPLY</span>The extract shows Deliveroo still ranked lower than competitors on satisfaction and reputation. <span class="tag t-C">CHAIN</span>This creates the risk that customers try the service because of the branding but do not stay loyal if the experience disappoints, so Deliveroo could lose them to rivals.</p>
      <p><span class="tag t-J">CONCLUSION</span>In conclusion, emotional branding is likely to help Deliveroo stand out and attract new users, especially those switching from other apps. However, success depends on whether the emotional message is supported by an equally strong user experience. It is recommended that Deliveroo focuses not only on emotional messaging but also on improving delivery reliability and customer satisfaction, so that users stay loyal after trying the service.</p>`,
-     fb:"Mr. Akram's exemplar (Deliveroo, 12). One developed argument for, one against — both applied to the extract data — and a supported recommendation."}
+     fb:"Mr. Akram's exemplar (Deliveroo, 12). One developed argument for, one against — both applied to the extract data — and a supported recommendation."},
+    {marks:12, q:"Mars is launching a new range of protein bars aimed at health-conscious consumers. Evaluate the methods of promotion Mars could use to launch the new range. (12)",
+     model:`<p><span class="tag t-P">POINT</span>One method Mars could use is <b>celebrity endorsement</b>. <span class="tag t-C">CHAIN</span>Using a well-known athlete or influencer from the health or cycling community would make the protein bars appear credible and desirable, building strong brand recognition among health-conscious consumers. <span class="tag t-A">APPLY</span>The product could therefore gain rapid attention in a competitive market and stand out from other protein snacks. <span class="tag t-J">HOWEVER</span>However, this is expensive and its success depends on the celebrity's reputation — if they are caught in a scandal it could damage the brand's image, reduce consumer trust and harm long-term sales.</p>
+     <p><span class="tag t-P">POINT</span>A second method is <b>in-store sales promotion</b>, such as free samples in supermarkets or gyms. <span class="tag t-C">CHAIN</span>Letting consumers try the bar before buying overcomes concerns about taste or unfamiliar ingredients, driving product trial and impulse purchases. <span class="tag t-A">APPLY</span>This could boost Mars's short-term sales and quickly raise awareness of the new range. <span class="tag t-J">HOWEVER</span>However, sampling is costly and complex to run across many stores, needing enough staff and stock, and those who try the bar may not become repeat buyers — so the return on investment might be limited.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the best approach is likely to combine both — using sampling to drive trial at launch while a credible endorsement builds longer-term brand image — provided Mars monitors the cost against the sales each method generates.</p>`,
+     fb:"Mr. Akram's exemplar (Mars, 12). Two promotion methods, each with a developed benefit and a counter, plus a combined judgement."}
   ],
   resources:[
-    {label:"Promotion &amp; branding — lesson notes (PDF)", file:"resources/1-3-3-3-branding-notes.pdf"}
+    {label:"Promotion — lesson notes (PDF)", file:"resources/1-3-3-3-promotion-notes.pdf"},
+    {label:"Branding — lesson notes (PDF)", file:"resources/1-3-3-3-branding-notes.pdf"}
   ]
 },
 {code:"1.3.3.4", subtheme:"1.3.3", title:"Pricing strategies", business:"Skimming, penetration, cost-plus & competitive", status:"soon"},
-{code:"1.3.3.5", subtheme:"1.3.3", title:"Distribution", business:"Channels of distribution & place", status:"soon"}
+{
+  code:"1.3.3.5", subtheme:"1.3.3", title:"Distribution (place)",
+  business:"Case studies: MAC, Nike & Ocado", status:"live",
+  notes:[
+    {h:"Channels of distribution", html:`
+      <p><b>Place</b> is the element of the marketing mix that gets the product from the producer to the final customer. A <b>distribution channel</b> is the link between production and consumption — it can be short (producer straight to consumer) or long (passing through several <b>intermediaries</b>).</p>
+      <p>Each layer that helps move the product to the final buyer is a <b>channel level</b>. The three classic channels are:</p>
+      <div style="overflow-x:auto">
+      <svg viewBox="0 0 520 220" style="min-width:480px;width:100%;max-width:620px;height:auto;font-family:inherit" xmlns="http://www.w3.org/2000/svg">
+        <!-- row labels -->
+        <text x="6" y="36" font-size="10" font-weight="700" fill="var(--muted)">4-stage</text>
+        <text x="6" y="108" font-size="10" font-weight="700" fill="var(--muted)">3-stage</text>
+        <text x="6" y="180" font-size="10" font-weight="700" fill="var(--muted)">2-stage</text>
+        <!-- helper: boxes -->
+        <!-- 4-stage: Producer Wholesaler Retailer Consumer -->
+        <g font-size="10" font-weight="700" text-anchor="middle">
+          <rect x="70" y="18" width="86" height="30" rx="6" fill="rgba(15,42,74,.08)" stroke="var(--navy)"/><text x="113" y="37" fill="var(--ink)">Producer</text>
+          <rect x="188" y="18" width="92" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="234" y="37" fill="var(--ink)">Wholesaler</text>
+          <rect x="312" y="18" width="80" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="352" y="37" fill="var(--ink)">Retailer</text>
+          <rect x="424" y="18" width="86" height="30" rx="6" fill="rgba(15,157,88,.10)" stroke="var(--emerald)"/><text x="467" y="37" fill="var(--ink)">Consumer</text>
+          <!-- 3-stage -->
+          <rect x="70" y="90" width="86" height="30" rx="6" fill="rgba(15,42,74,.08)" stroke="var(--navy)"/><text x="113" y="109" fill="var(--ink)">Producer</text>
+          <rect x="312" y="90" width="80" height="30" rx="6" fill="rgba(245,166,35,.12)" stroke="var(--amber)"/><text x="352" y="109" fill="var(--ink)">Retailer</text>
+          <rect x="424" y="90" width="86" height="30" rx="6" fill="rgba(15,157,88,.10)" stroke="var(--emerald)"/><text x="467" y="109" fill="var(--ink)">Consumer</text>
+          <!-- 2-stage -->
+          <rect x="70" y="162" width="86" height="30" rx="6" fill="rgba(15,42,74,.08)" stroke="var(--navy)"/><text x="113" y="181" fill="var(--ink)">Producer</text>
+          <rect x="424" y="162" width="86" height="30" rx="6" fill="rgba(15,157,88,.10)" stroke="var(--emerald)"/><text x="467" y="181" fill="var(--ink)">Consumer</text>
+        </g>
+        <g stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ah)">
+          <line x1="156" y1="33" x2="186" y2="33"/><line x1="280" y1="33" x2="310" y2="33"/><line x1="392" y1="33" x2="422" y2="33"/>
+          <line x1="156" y1="105" x2="310" y2="105"/><line x1="392" y1="105" x2="422" y2="105"/>
+          <line x1="156" y1="177" x2="422" y2="177"/>
+        </g>
+        <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"/></marker></defs>
+      </svg>
+      </div>
+      <ul>
+        <li><b>Four-stage (indirect)</b> — producer &rarr; wholesaler &rarr; retailer &rarr; consumer. Suits mass producers like <b>Coca-Cola</b>: wholesalers break bulk and supply thousands of small shops, but each layer takes a margin.</li>
+        <li><b>Three-stage (indirect)</b> — producer &rarr; retailer &rarr; consumer. A big retailer like <b>Carrefour</b> buys in huge quantities, so it can skip the wholesaler and go straight to the producer, cutting cost.</li>
+        <li><b>Two-stage (direct)</b> — producer &rarr; consumer. Firms like <b>ASOS</b> sell straight to the customer, keeping full control and margin but handling all logistics themselves.</li>
+      </ul>`},
+    {h:"E-tailing and changes in distribution", html:`
+      <p>Distribution has shifted sharply towards <b>online retailing</b> and <b>direct-to-consumer (D2C)</b> selling:</p>
+      <ul>
+        <li><b>E-tailers</b> sell entirely online — e.g. <b>Amazon</b> (the largest), ASOS (fashion), eBay (marketplace), Etsy (handmade). No physical stores means lower overheads and a global reach, but heavy reliance on logistics and delivery.</li>
+        <li><b>Direct-to-consumer</b> — producers cut out intermediaries, selling through their own website or app to keep more profit, own the customer relationship and collect data (e.g. Nike's app and NikePlus).</li>
+      </ul>
+      <p>These changes raise <b>customer convenience</b> (shop anytime, home delivery) and can cut costs, but increase competition and make reliable, fast logistics essential to satisfaction.</p>`}
+  ],
+  definitions:[
+    {term:"Distribution channel", marks:2, body:`The route a product takes from producer to final consumer, linking production and consumption <span class="pt">1</span>; it may be direct or pass through intermediaries such as wholesalers and retailers <span class="pt">2</span>.`},
+    {term:"Direct distribution", marks:2, body:`A two-stage channel where the producer sells straight to the consumer with no intermediaries <span class="pt">1</span>; the producer keeps the full margin and controls the customer experience but must handle all logistics itself <span class="pt">2</span>.`},
+    {term:"Wholesaler", marks:2, body:`An intermediary that buys in bulk from producers and breaks it into smaller quantities for retailers <span class="pt">1</span>; this lets small shops stock goods they could not buy direct, but adds a margin to the price <span class="pt">2</span>.`},
+    {term:"E-tailer", marks:2, body:`A retailer that sells goods entirely online through a website or app, such as Amazon or ASOS <span class="pt">1</span>; it avoids the overheads of physical stores and reaches customers globally but depends heavily on delivery logistics <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'distribution channel'.",
+     model:`A distribution channel is the route a product takes from producer to final consumer <span class="pt">1</span>; it may go directly or pass through intermediaries such as wholesalers and retailers <span class="pt">2</span>.`,
+     fb:"Route producer→consumer plus the direct/intermediary distinction — two developed points."},
+    {marks:4, q:"Explain one advantage to a business of using direct (two-stage) distribution.",
+     model:`Direct distribution lets the producer keep the full profit margin <span class="pt">1</span>. This is because there are no wholesalers or retailers taking a cut of the selling price <span class="pt">2</span>. As a result, a firm like ASOS earns more per sale <span class="pt">3</span>, which it can reinvest in logistics or lower prices to stay competitive <span class="pt">4</span>.`,
+     fb:"Names the advantage (full margin), explains why, applies to a real e-tailer and chains to a benefit."},
+    {marks:4, q:"Explain one reason a large retailer such as Carrefour can buy directly from producers.",
+     model:`Carrefour buys in very large quantities <span class="pt">1</span>. This is because it runs hundreds of large stores and needs huge volumes of stock <span class="pt">2</span>. As a result, producers are willing to deal with it directly and skip the wholesaler <span class="pt">3</span>, cutting out a margin so Carrefour can offer lower prices than small corner shops <span class="pt">4</span>.`,
+     fb:"Links bulk-buying power to cutting the wholesaler and a price advantage."}
+  ],
+  caseStudy:{
+    business:"MAC, Nike & Ocado",
+    intro:`<p>Businesses used in the distribution questions.</p>
+      <ul>
+        <li><b>MAC Cosmetics</b> — sells through its own branded stores, department stores (Macy's, Nordstrom), beauty retailers (Sephora, Ulta) and online — a <b>multi-channel</b> strategy.</li>
+        <li><b>Nike</b> — moving to a <b>direct-to-consumer</b> model: fewer, larger retailers (JD Sports, Amazon) plus its own app and NikePlus, cutting over 60% of small retailers.</li>
+        <li><b>Ocado</b> — an online-only grocer whose entire model depends on efficient home delivery (orders rose from 120,000/week in 2012 to 230,000 by 2016).</li>
+      </ul>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the importance of using different distribution channels to MAC Cosmetics. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Using different distribution channels is likely to be very important to MAC because it helps the business reach a wider customer base and increase sales. <span class="tag t-A">APPLY</span>MAC has its own branded stores run by professional makeup artists, which give a high-end, personalised service that enhances its premium image, while also selling through department stores such as Macy's and Nordstrom and beauty retailers like Sephora and Ulta. <span class="tag t-C">CHAIN</span>This lets MAC reach customers who may never visit a standalone store, boosting availability and convenience — especially valuable during launches like the Selena and Aaliyah collections that sold out quickly — and selling online supports global, round-the-clock access in a competitive market.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, a wide range of channels has drawbacks. Selling through third-party retailers like Ulta or Sephora gives MAC less control over how its brand is presented, and they may not match the personalised service of MAC's own stores, which could dilute its premium image. <span class="tag t-C">CHAIN</span>There is also a risk of inconsistent service or stock shortages, and partners take a share of revenue and add logistics costs, reducing MAC's profit margins.</p>`,
+     fb:"Mr. Akram's exemplar (MAC, 8). Two developed sides — wider reach vs loss of control/margin — applied throughout, no conclusion (right for an 8-mark 'Discuss')."},
+    {marks:12, q:"Assess the importance of place to Ocado's marketing mix. (12)",
+     model:`<p><span class="tag t-P">POINT</span>Place refers to how a product is distributed and made available to customers, and for Ocado it is especially important because the business operates entirely online and delivers directly to homes. <span class="tag t-C">CHAIN</span>One reason place matters is that it provides convenience and flexibility: Ocado takes orders through its website or app and delivers from distribution centres using its own fleet, letting customers choose hourly slots and track deliveries. <span class="tag t-A">APPLY</span>This meets the needs of busy customers and encourages repeat purchases — orders per week rose from 120,000 in 2012 to 230,000 by 2016 — showing how its place strategy supports strong demand and growth.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, other elements of the marketing mix also play a crucial role, such as product. <span class="tag t-A">APPLY</span>Ocado offers over 46,000 products — fresh, frozen and non-food — giving customers more choice so they can do all their shopping in one place. <span class="tag t-C">CHAIN</span>Even with excellent delivery, customers would not use Ocado if the product range did not meet their needs, so success depends on more than place alone.</p>
+     <p><span class="tag t-J">CONCLUSION</span>In conclusion, place is a vital part of Ocado's marketing mix because it underpins the online delivery model that defines the business. However, its effectiveness relies on being combined with a wide product range and competitive pricing, so while place is central, long-term success depends on how well all elements of the mix work together to meet customer needs.</p>`,
+     fb:"Mr. Akram's exemplar (Ocado, 12). Place as central (convenience, growth data) balanced against product, with a 'depends on the whole mix' judgement."},
+    {marks:20, q:"Nike is reducing its retail partners by over 60% to focus on fewer, larger retailers and direct-to-consumer sales. Evaluate whether this new distribution strategy is likely to contribute to Nike's future success. (20)",
+     model:`<p><span class="tag t-P">POINT</span>Nike's new distribution strategy is likely to contribute significantly to its future success because it allows greater control over the customer experience. <span class="tag t-C">CHAIN</span>By selling through fewer, larger retailers such as JD Sports and Amazon that offer a premium service — including Nike staff giving product advice — Nike can ensure its quality standards are met wherever customers buy. <span class="tag t-A">APPLY</span>This gives a more consistent, high-quality experience, so customer satisfaction and brand loyalty could rise, lifting repeat purchases, revenue and brand image globally.</p>
+     <p><span class="tag t-P">POINT</span>A second benefit is the focus on digital innovation and direct-to-consumer sales. <span class="tag t-A">APPLY</span>Nike is investing in its own app and the NikePlus loyalty programme, letting it collect customer data and understand shopping habits. <span class="tag t-C">CHAIN</span>It can therefore tailor promotions and launches more effectively while cutting out intermediaries and keeping more profit — strengthening relationships and margins, which funds further innovation and a more efficient model.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, removing over 60% of small retailers — currently the majority of Nike's North American sales — could damage short-term revenue. <span class="tag t-C">CHAIN</span>Loyal customers who buy from local shops may lose easy access, so Nike could lose them to Adidas or Puma if availability falls, and sales might drop in some regions before the new model pays off.</p>
+     <p><span class="tag t-J">HOWEVER</span>A further risk is that the strategy relies on a small number of major partners delivering high service. If even one large retailer underperforms it could damage Nike's brand, and depending on fewer channels increases exposure — if Amazon or JD Sports face disruption, Nike's reach is restricted and it loses control of part of the customer journey.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, Nike's strategy has strong potential to drive success through loyalty, a better online experience and higher margins from D2C selling. Focusing on quality service through larger, trusted retailers gives more control and brand consistency. However, success depends on execution — managing the transition from smaller retailers and ensuring partners uphold Nike's standards. Compared with Adidas, which keeps a broader retail presence, Nike's focused strategy may deliver higher margins but risks losing accessibility — a trade-off it must monitor carefully. It is most likely to succeed if combined with strong logistics, ongoing innovation and marketing that encourages customers to embrace the new model.</p>`,
+     fb:"Mr. Akram's exemplar (Nike, 20 — top band). Two developed benefits and two risks, all applied, with a judged conclusion plus the comparative Adidas point examiners wanted for full marks."}
+  ],
+  resources:[
+    {label:"Place &amp; distribution channels — lesson notes (PDF)", file:"resources/1-3-3-5-distribution-notes.pdf"}
+  ]
+}
 ];
