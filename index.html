@@ -225,6 +225,10 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .improve.show{display:block}
 .improve h5{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#7b2fd6}
 .improve p{margin:7px 0}.improve .tiny{font-size:12px;color:var(--muted)}
+.cs-note{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px;font-size:13px;color:var(--muted);line-height:1.55}
+.cs-note b{color:var(--ink)}
+.cs-link{display:inline-block;margin-top:6px;color:var(--amber-d);font-weight:800;cursor:pointer;white-space:nowrap}
+.cs-link:hover{text-decoration:underline}
 .tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;margin-right:4px;vertical-align:middle;letter-spacing:.3px}
 .t-P{background:#e3edff;color:#1b4fd6}.t-E{background:#e7f6ef;color:#0a7a5c}
 .t-C{background:#fff2d9;color:#b8730a}.t-A{background:#f1e6ff;color:#7b2fd6}.t-J{background:#ffe3e3;color:#c92a2a}
@@ -677,7 +681,7 @@ function openTopic(code){
   h+=`<div class="section" id="sec-defs"><div class="card"><h2>Key definitions — the Edexcel two-point rule</h2><p style="color:var(--muted);font-size:13.5px;margin-top:0">Each answer makes <b>two linked points</b> <span class="pt">1</span><span class="pt">2</span>. An example alone does not earn the second mark.</p></div>`;
   (t.definitions||[]).forEach(d=>{h+=`<details class="def"><summary>${d.term}<span class="mk">${d.marks} marks</span></summary><div class="body">${d.body}</div></details>`;});h+=`</div>`;
   h+=`<div class="section" id="sec-practice">`+questionBlock(t,"practice",tp)+`</div>`;
-  h+=`<div class="section" id="sec-case">`;if(t.caseStudy){h+=`<div class="card"><h2>${t.caseStudy.business}</h2>${t.caseStudy.intro}</div>`;}else{h+=`<div class="card"><p style="color:var(--muted);margin:0">Case study coming soon.</p></div>`;}h+=`</div>`;
+  h+=`<div class="section" id="sec-case">`;if(t.caseStudy){const hasP=((window.PAPERS_BY_UNIT||{})[uid]||[]).length;h+=`<div class="card"><h2>${t.caseStudy.business}</h2>${t.caseStudy.intro}<div class="cs-note"><b>Note:</b> this is a summary of the business contexts used in this topic's questions — not an official exam case study. The full official case studies (source booklets) are included inside each past paper.${hasP?` <a class="cs-link" onclick="openPapers('${uid}')">Open Unit ${uid} exam papers →</a>`:''}</div></div>`;}else{h+=`<div class="card"><p style="color:var(--muted);margin:0">Case study coming soon.</p></div>`;}h+=`</div>`;
   h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p></div>`+questionBlock(t,"exam",tp)+`</div>`;
   h+=`<div class="section" id="sec-res"><div class="card"><h2>Resources &amp; past papers</h2>`;
   if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{h+=`<a class="resitem" href="${r.file}" target="_blank" rel="noopener"><span class="ri">📄</span><span class="rt">${r.label}</span><span class="rd">Open →</span></a>`;});h+=`</div>`;}
