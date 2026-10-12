@@ -2788,11 +2788,11 @@ window.CURRICULUM = [
   caseStudy:{
     business:"McDonald's, Superdry, Nando's (China) & Innocent",
     docs:[
-      {label:"That's Entertainment — market research case study", file:"resources/casestudies/cs-1-3-1-2-market-research-thats-entertainment.pdf"},
-      {label:"Superdry — primary research (Q1)", file:"resources/casestudies/cs-1-3-1-2-superdry-primary-research.pdf"},
-      {label:"Innocent — test marketing (Q2)", file:"resources/casestudies/cs-1-3-1-2-innocent-test-marketing.pdf"},
-      {label:"Sampling — extracts A–D: Nando's & stratified sampling (Q3–Q4)", file:"resources/casestudies/cs-1-3-1-2-sampling-extracts.pdf"},
-      {label:"Yotel — primary research", file:"resources/casestudies/cs-1-3-1-2-yotel-primary-research.pdf"}
+      {label:"Superdry — primary research (Q1)", file:"resources/casestudies/cs-1-3-1-2-superdry-primary-research.png"},
+      {label:"Innocent — test marketing (Q2)", file:"resources/casestudies/cs-1-3-1-2-innocent-test-marketing.png"},
+      {label:"Nando's (China) — extracts A–D: random sampling (Q3)", file:"resources/casestudies/cs-1-3-1-2-nandos-sampling.png"},
+      {label:"That's Entertainment — market research (extra practice)", file:"resources/casestudies/cs-1-3-1-2-thats-entertainment.png"},
+      {label:"Yotel — primary research (extra practice)", file:"resources/casestudies/cs-1-3-1-2-yotel-primary-research.png"}
     ],
     intro:`<p>Businesses used in the market-research questions.</p>
       <ul>
@@ -2803,17 +2803,17 @@ window.CURRICULUM = [
       </ul>`
   },
   exam:[
-    {marks:6, q:"Assess the benefits to Superdry of using primary research to understand its customers. (6)",
+    {marks:6, q:"Assess the benefits to Superdry of using primary research to understand its customers. (6)", caseImg:"resources/casestudies/cs-1-3-1-2-superdry-primary-research.png",
      model:`<p><span class="tag t-P">POINT</span>One benefit is data specific to Superdry's own customers, because primary methods like surveys and focus groups ask its actual target market directly. <span class="tag t-C">CHAIN</span>This gives up-to-date, relevant insight into what Superdry shoppers want (styles, price points), so it can design ranges that fit demand and avoid wasting money on products that won't sell.</p>
      <p><span class="tag t-J">HOWEVER</span>However, primary research is costly and slow, and a small sample may not represent all Superdry customers. So the benefit depends on using a large enough, well-chosen sample — otherwise the findings could mislead rather than guide decisions.</p>`,
      fb:"Mr. Akram's exemplar (Superdry). Specific, up-to-date data benefit balanced by cost/sample-size limitation."},
-    {marks:10, q:"Assess the value to Innocent of using test marketing before a full product launch. (10)",
+    {marks:10, q:"Assess the value to Innocent of using test marketing before a full product launch. (10)", caseImg:"resources/casestudies/cs-1-3-1-2-innocent-test-marketing.png",
      model:`<p><span class="tag t-P">POINT</span>One value is reducing launch risk, because test marketing trials the product with real customers in a limited area first. <span class="tag t-C">CHAIN</span>Innocent gets genuine feedback on taste, price and packaging, so it can refine the drink before a national rollout — avoiding the heavy cost of a full launch that flops.</p>
      <p><span class="tag t-P">POINT</span>A second value is better forecasting, because actual trial sales indicate likely demand. <span class="tag t-C">CHAIN</span>This helps Innocent plan production and distribution more accurately, protecting cash flow and supplier relationships.</p>
      <p><span class="tag t-J">HOWEVER</span>However, test marketing has drawbacks: it is costly and slow, the test area may not represent the whole market, and it warns competitors who can copy the idea before the full launch.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, test marketing is valuable for Innocent because it lowers the risk of an expensive failure, but its worth depends on choosing a representative test area and acting quickly before rivals respond.</p>`,
      fb:"Mr. Akram's exemplar (Innocent). Risk-reduction and forecasting benefits balanced against cost, representativeness and tipping off competitors."},
-    {marks:12, q:"Assess the use of random sampling in Nando's market research when entering China. (12)",
+    {marks:12, q:"Assess the use of random sampling in Nando's market research when entering China. (12)", caseImg:"resources/casestudies/cs-1-3-1-2-nandos-sampling.png",
      model:`<p><span class="tag t-P">POINT</span>One disadvantage is that random sampling may not reflect China's diversity, because even with equal selection chances the sample could miss key groups like rural chefs or specific dietary traditions. <span class="tag t-C">CHAIN</span>This means the results could lack insight into important regional preferences, so Nando's might make menu decisions that don't appeal everywhere, leading to under-performing store launches and weaker brand recognition in some regions.</p>
      <p><span class="tag t-P">POINT</span>A second disadvantage is the high cost and time of random sampling across such a large, diverse country, because Nando's had to survey a wide mix of owners, chefs and managers. <span class="tag t-C">CHAIN</span>This needs a big budget and planning, so delays could slow decisions and rollout — letting competitors enter first.</p>
      <p><span class="tag t-J">HOWEVER</span>However, random sampling did reduce bias and improve reliability, because every chef or manager had an equal chance of inclusion. This gave a fairer, more balanced picture of Chinese food habits, so Nando's could base menu and marketing choices on a wide range of insights.</p>

@@ -233,6 +233,8 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .cs-docs h4{margin:0;font-size:13px;color:var(--navy);text-transform:uppercase;letter-spacing:.5px}
 .cs-doctip{margin:0 0 2px;font-size:13px;color:var(--muted)}
 .cs-examtip{margin:10px 0 0;font-size:13.5px;background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:9px 12px;border-radius:8px}
+.cs-view{display:inline-block;margin:2px 0 10px;background:var(--navy);color:#fff;border:none;padding:9px 14px;border-radius:9px;font-weight:700;font-size:13.5px;text-decoration:none}
+.cs-view:hover{background:var(--amber-d)}
 .tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;margin-right:4px;vertical-align:middle;letter-spacing:.3px}
 .t-P{background:#e3edff;color:#1b4fd6}.t-E{background:#e7f6ef;color:#0a7a5c}
 .t-C{background:#fff2d9;color:#b8730a}.t-A{background:#f1e6ff;color:#7b2fd6}.t-J{background:#ffe3e3;color:#c92a2a}
@@ -705,6 +707,7 @@ function questionBlock(t,type,tp){
   let jump=`<div class="jump">`;arr.forEach((q,i)=>{const id=type+"-"+i,done=tp.done[id]?"done":"";jump+=`<button class="${done}" id="jb-${id}" onclick="document.getElementById('q-${id}').scrollIntoView({behavior:'smooth'})">${i+1}</button>`;});jump+=`</div>`;
   let body="";arr.forEach((q,i)=>{const id=type+"-"+i,done=tp.done[id],saved=(tp.answers[id]||"").replace(/</g,"&lt;");
     body+=`<div class="q ${done?'done':''}" id="q-${id}"><div class="qhead"><div class="num">${i+1}</div><div class="prompt">${q.q}</div><div class="marks">${q.marks} marks</div></div>
+      ${q.caseImg?`<a class="cs-view" href="${q.caseImg}" target="_blank" rel="noopener">📄 View the case study for this question ↗</a>`:""}
       ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
       <div class="qbtns"><button class="btn-ghost" onclick="toggleModel('${id}')">💡 Show model answer</button>
