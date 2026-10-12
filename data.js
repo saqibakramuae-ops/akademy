@@ -2103,7 +2103,7 @@ window.CURRICULUM = [
       <p class="note-ex">A rich local source on external influences — the <b>Emirates</b> source booklet and questions — is in the downloads.</p>`
   },
   exam:[
-    {marks:12, q:"Assess how the external technological environment could support Burberry's growth in China. (12)",
+    {marks:12, q:"Assess how the external technological environment could support Burberry's growth in China. (12)", caseImg:"resources/casestudies/cs-3-3-1-4-burberry-china.png",
      model:`<p><span class="tag t-P">POINT</span>One way technology supports growth is through mobile commerce, because 80% of online purchases in China are made on smartphones or tablets. <span class="tag t-C">CHAIN</span>Burberry's app (already in 33 countries) lets Chinese customers browse and buy directly, raising convenience and potentially sales, helping it grow market presence.</p>
      <p><span class="tag t-P">POINT</span>A second opportunity is integration with WeChat, China's biggest social platform, because customers can book appointments with sales staff through it. <span class="tag t-C">CHAIN</span>This adapts to local habits and offers a personalised digital experience, giving Burberry an edge over luxury rivals that don't.</p>
      <p><span class="tag t-J">HOWEVER</span>However, technology alone may not guarantee growth, because other external factors can matter more. If the Chinese government restricts foreign firms, Burberry's digital options could be limited — so political risk could blunt the benefit of its technology investment.</p>
