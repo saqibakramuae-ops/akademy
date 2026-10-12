@@ -210,6 +210,21 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .model h4{margin:0 0 8px;font-size:13px;color:var(--emerald);text-transform:uppercase;letter-spacing:.5px}
 .model p{margin:9px 0}
 .fb{background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:10px 14px;border-radius:8px;font-size:13.5px;margin-top:12px}
+.qtimer{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:4px 0 10px}
+.qtimer .tclock{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--navy);min-width:52px}
+.qtimer .tnote{font-size:12px;color:var(--muted);flex:1;min-width:120px}
+.qtimer button{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:6px 11px;border-radius:8px;font-weight:700;font-size:12.5px;min-height:34px}
+.qtimer button:hover{border-color:var(--amber)}
+.qtimer.warn{border-color:var(--amber)}.qtimer.warn .tclock{color:var(--amber-d)}
+.qtimer.done{border-color:#c92a2a}.qtimer.done .tclock{color:#c92a2a}
+.ao{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.ao h5{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--navy)}
+.ao ul{margin:0;padding-left:18px}.ao li{margin:5px 0;font-size:13.5px;line-height:1.5}
+.ao li b{color:var(--ink)}
+.improve{display:none;margin-top:12px;background:rgba(123,47,214,.07);border:1px solid var(--line);border-left:3px solid #7b2fd6;border-radius:8px;padding:12px 14px;font-size:13.5px;line-height:1.55}
+.improve.show{display:block}
+.improve h5{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#7b2fd6}
+.improve p{margin:7px 0}.improve .tiny{font-size:12px;color:var(--muted)}
 .tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;margin-right:4px;vertical-align:middle;letter-spacing:.3px}
 .t-P{background:#e3edff;color:#1b4fd6}.t-E{background:#e7f6ef;color:#0a7a5c}
 .t-C{background:#fff2d9;color:#b8730a}.t-A{background:#f1e6ff;color:#7b2fd6}.t-J{background:#ffe3e3;color:#c92a2a}
@@ -678,12 +693,53 @@ function questionBlock(t,type,tp){
   let jump=`<div class="jump">`;arr.forEach((q,i)=>{const id=type+"-"+i,done=tp.done[id]?"done":"";jump+=`<button class="${done}" id="jb-${id}" onclick="document.getElementById('q-${id}').scrollIntoView({behavior:'smooth'})">${i+1}</button>`;});jump+=`</div>`;
   let body="";arr.forEach((q,i)=>{const id=type+"-"+i,done=tp.done[id],saved=(tp.answers[id]||"").replace(/</g,"&lt;");
     body+=`<div class="q ${done?'done':''}" id="q-${id}"><div class="qhead"><div class="num">${i+1}</div><div class="prompt">${q.q}</div><div class="marks">${q.marks} marks</div></div>
+      ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
       <div class="qbtns"><button class="btn-ghost" onclick="toggleModel('${id}')">💡 Show model answer</button>
+      <button class="btn-ghost" onclick="toggleImprove('${id}')">📈 Improve my answer</button>
       <button class="btn-done ${done?'is':''}" id="done-${id}" onclick="toggleDone('${t.code}','${id}')">${done?'✓ Completed':'Mark complete'}</button></div>
-      <div class="model" id="m-${id}"><h4>Model answer</h4>${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div></div></div>`;});
+      ${improvePanel(id)}
+      <div class="model" id="m-${id}"><h4>Model answer</h4>${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div>${aoGuide(q.marks,q.q)}</div></div>`;});
   return jump+body;
 }
+function toggleImprove(id){document.getElementById('imp-'+id).classList.toggle('show');}
+function timerBar(id,marks){if(!marks||marks<4)return "";const mins=Math.round(marks*1.5);
+  return `<div class="qtimer" id="tw-${id}"><span class="tclock" id="tc-${id}">${mins}:00</span>
+    <span class="tnote">Suggested exam time: ${mins} min (1.5 min/mark)</span>
+    <button onclick="tStart('${id}',${mins})">▶ Start</button>
+    <button onclick="tPause('${id}')">Pause</button>
+    <button onclick="tReset('${id}',${mins})">Reset</button></div>`;}
+function _fmt(s){if(s<0)s=0;const m=Math.floor(s/60),x=s%60;return m+":"+(x<10?"0":"")+x;}
+function tStart(id,mins){window._tm=window._tm||{};const w=window._tm[id]=window._tm[id]||{r:mins*60,run:false};if(w.run)return;w.run=true;
+  const el=document.getElementById('tc-'+id),tw=document.getElementById('tw-'+id);
+  w.iv=setInterval(()=>{w.r--;if(el)el.textContent=_fmt(w.r);if(tw)tw.classList.toggle('warn',w.r<=mins*60*0.2&&w.r>0);
+    if(w.r<=0){clearInterval(w.iv);w.run=false;if(tw){tw.classList.remove('warn');tw.classList.add('done');}}},1000);}
+function tPause(id){const w=(window._tm||{})[id];if(w&&w.iv){clearInterval(w.iv);w.run=false;}}
+function tReset(id,mins){window._tm=window._tm||{};const w=window._tm[id]=window._tm[id]||{};if(w.iv)clearInterval(w.iv);w.r=mins*60;w.run=false;
+  const el=document.getElementById('tc-'+id),tw=document.getElementById('tw-'+id);if(el)el.textContent=_fmt(w.r);if(tw)tw.classList.remove('warn','done');}
+function improvePanel(id){return `<div class="improve" id="imp-${id}"><h5>Improve my answer</h5>
+  <p>Re-read your response, then push it up a level before you reveal the model:</p>
+  <p><b>Build the chain</b> — for each point ask: Why would this happen? → How does it affect customers? → What is the consequence for the business? → Why does it matter <i>in this context</i>?</p>
+  <p><b>Strengthen the counter</b> — ① identify a limitation ② explain why it exists ③ analyse its consequence ④ show how it challenges your original point.</p>
+  <p><b>Judge in the conclusion</b> — <i>Which</i> argument is more important? · <i>Because…</i> (why, for this business) · <i>Depends on…</i> (the factor that could change it).</p>
+  <p class="tiny">Edit your answer above, then reveal the model to compare — don't just make it longer, make each link explicit.</p></div>`;}
+function aoGuide(marks,q){var cmd=(q||"").toLowerCase();var li=[];
+  var K='<b>Knowledge:</b> define the key term(s) accurately — Edexcel wants two linked points, not an example.';
+  var App='<b>Application:</b> use at least two specific pieces of case-study evidence (figures, names, context) — not a name-drop.';
+  var An='<b>Analysis:</b> build a logical chain — "this means… → which leads to… → therefore…" — linked to the business objective.';
+  var Ev='<b>Evaluation:</b> develop a genuine counter-argument that directly challenges your point, not just a second idea.';
+  var J='<b>Judgement:</b> reach a supported decision — which argument matters most, why for this business, and what it depends on.';
+  if(marks<=2){li=[K];}
+  else if(marks<=3){li=[K,An];}
+  else if(marks<=6){li=[K,App,An];}
+  else if(marks<=8){li=[K,App,An,'<b>Balance:</b> give two developed sides (point + counter). An 8-mark answer needs no conclusion.'];}
+  else if(marks<=12){li=[K,App,An,Ev,J];}
+  else{li=['<b>Knowledge &amp; Application:</b> accurate concepts applied throughout with specific case evidence.',
+    '<b>Analysis:</b> two developed arguments, each a full cause-and-effect chain.',
+    Ev+' Aim for two counters across the answer.',
+    J+' End on a judged conclusion with a clear "it depends on…".',
+    '<b>Structure (5×5 PECAN):</b> POINT · EXPLAIN · CHAIN · APPLY · NOW JUDGE — every paragraph ends on a mini-judgement.'];}
+  return '<div class="ao"><h5>How to hit the marks ('+marks+')</h5><ul><li>'+li.join('</li><li>')+'</li></ul></div>';}
 function showSec(name,btn){document.querySelectorAll('.section').forEach(s=>s.classList.remove('show'));document.getElementById('sec-'+name).classList.add('show');document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
 function toggleModel(id){document.getElementById('m-'+id).classList.toggle('show');}
 function saveAns(id,val){const c=window._topic,tp=topicProg(c);tp.answers=tp.answers||{};tp.answers[id]=val;setTopicProg(c,tp);}
