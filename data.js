@@ -5386,7 +5386,151 @@ window.CURRICULUM = [
   ],
   resources:[]
 },
-{code:"2.3.5.1", subtheme:"2.3.5", title:"Economic influences", business:"Inflation, exchange & interest rates, the cycle", status:"soon"},
-{code:"2.3.5.2", subtheme:"2.3.5", title:"Legislation", business:"Consumer, employee & environmental protection, IP", status:"soon"},
-{code:"2.3.5.3", subtheme:"2.3.5", title:"The competitive environment", business:"Competitor numbers, size & behaviour", status:"soon"}
+{
+  code:"2.3.5.1", subtheme:"2.3.5", title:"Economic influences",
+  business:"Inflation, exchange & interest rates, the cycle",
+  status:"live",
+  notes:[
+    {h:"Inflation, interest rates, tax & spending", html:`
+      <ul>
+        <li><b>Inflation</b> — a sustained rise in the general price level. It raises costs and prompts wage demands, and can reduce consumers' real spending power. Firms may respond by cutting costs, raising productivity or passing on price rises.</li>
+        <li><b>Interest rates</b> — the cost of borrowing. Higher rates make loans and overdrafts dearer, discourage investment and cut consumer spending (especially on credit); lower rates do the reverse.</li>
+        <li><b>Taxation &amp; government spending</b> — higher taxes reduce consumers' disposable income and firms' profits; government spending can raise demand in the economy. Changes affect sales, costs and investment decisions.</li>
+      </ul>`},
+    {h:"Exchange rates", html:`
+      <p>The <b>exchange rate</b> is the price of one currency in terms of another.</p>
+      <ul>
+        <li><b>Appreciation</b> (currency stronger) — <b>exports dearer, imports cheaper</b>: good for importers, harder for exporters. (SPICED: Strong Pound = Imports Cheaper, Exports Dearer.)</li>
+        <li><b>Depreciation</b> (currency weaker) — exports cheaper, imports dearer: good for exporters, harder for importers of raw materials.</li>
+      </ul>
+      <p>Firms respond by hedging, sourcing locally, or adjusting prices and markets.</p>`},
+    {h:"The business cycle", html:`
+      <p>The <b>business cycle</b> is the pattern of ups and downs in economic activity: <b>boom</b> (high demand, rising prices), <b>recession</b> (falling demand and output), <b>slump</b> (low activity) and <b>recovery</b>. Businesses adjust output, staffing and strategy to the stage of the cycle.</p>`}
+  ],
+  definitions:[
+    {term:"Inflation", marks:2, body:`A sustained rise in the general level of prices in an economy <span class="pt">1</span>; it raises business costs and can reduce consumers' real spending power <span class="pt">2</span>.`},
+    {term:"Exchange rate", marks:2, body:`The price of one currency in terms of another <span class="pt">1</span>; changes in it alter the price of a firm's exports and imports <span class="pt">2</span>.`},
+    {term:"Interest rate", marks:2, body:`The cost of borrowing money, expressed as a percentage <span class="pt">1</span>; a rise makes loans dearer and tends to reduce borrowing, spending and investment <span class="pt">2</span>.`},
+    {term:"Business cycle", marks:2, body:`The pattern of ups and downs in economic activity over time, through boom, recession, slump and recovery <span class="pt">1</span>; demand for most products changes with the stage of the cycle <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'inflation'.",
+     model:`Inflation is a sustained rise in the general level of prices in an economy <span class="pt">1</span>; it raises business costs and can reduce consumers' real spending power <span class="pt">2</span>.`,
+     fb:"Sustained-rise-in-prices plus the costs/spending-power point."},
+    {marks:4, q:"Explain how a rise in interest rates could affect a business that sells on credit.",
+     model:`Higher interest rates make borrowing dearer for customers <span class="pt">1</span>. Buying on credit therefore costs more, so some customers delay or cancel purchases <span class="pt">2</span>. This reduces the business's sales <span class="pt">3</span>, and its own loan repayments also rise, squeezing profit <span class="pt">4</span>.`,
+     fb:"Links higher rates to lower customer demand and higher firm costs."},
+    {marks:4, q:"Explain one effect on a UK exporter of a fall (depreciation) in the pound.",
+     model:`A weaker pound makes the exporter's goods cheaper in foreign currency <span class="pt">1</span>. Overseas customers can buy more for the same money <span class="pt">2</span>. This tends to raise demand for the firm's exports <span class="pt">3</span>, increasing its sales and revenue abroad <span class="pt">4</span>.`,
+     fb:"Depreciation → cheaper exports → higher overseas demand/revenue."}
+  ],
+  caseStudy:{
+    business:"Responding to the economy",
+    intro:`<p>Questions here involve a business judging how a change in inflation, interest rates, exchange rates or the business cycle affects it, and how best to respond.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess how a business that imports its raw materials should respond to a depreciation of the pound. (10)",
+     model:`<p><span class="tag t-P">POINT</span>A depreciation raises the cost of imported raw materials. <span class="tag t-A">APPLY</span>As the pound buys less foreign currency, the business pays more for the same inputs. <span class="tag t-C">CHAIN</span>This increases its costs and squeezes its margins, so one response is to pass the rise on through higher prices to protect profit.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, raising prices risks losing customers, especially if demand is price-elastic. <span class="tag t-A">APPLY</span>An alternative is to switch to domestic suppliers, whose prices are unaffected by the exchange rate. <span class="tag t-C">CHAIN</span>This protects costs but may mean lower quality or higher base prices, and switching takes time.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the best response depends on how price-sensitive the firm's customers are and whether suitable local suppliers exist: passing on costs suits a firm with loyal, inelastic demand, while sourcing locally suits one in a competitive market — and hedging can reduce exposure to future swings.</p>`,
+     fb:"Model answer (indicative content). Passing on costs vs local sourcing, judged on elasticity and supplier options."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.5.2", subtheme:"2.3.5", title:"Legislation",
+  business:"Consumer, employee & environmental law, and IP",
+  status:"live",
+  notes:[
+    {h:"Areas of legislation", html:`
+      <ul>
+        <li><b>Consumer protection</b> — goods must be of satisfactory quality, as described and fit for purpose, with honest advertising. Protects customers but adds compliance cost.</li>
+        <li><b>Employee protection</b> — rules on contracts, minimum wage, working hours, discrimination and unfair dismissal. Protects staff but raises labour costs and paperwork.</li>
+        <li><b>Environmental protection</b> — limits on pollution, waste and emissions. Protects the environment but can raise production costs.</li>
+        <li><b>Health and safety</b> — duty to provide a safe workplace, training and equipment. Reduces accidents but costs time and money.</li>
+      </ul>`},
+    {h:"Competition policy & intellectual property", html:`
+      <p><b>Competition policy</b> stops firms abusing market power (e.g. price-fixing or unfair mergers), protecting consumers and smaller rivals.</p>
+      <p><b>Intellectual property (IP) rights</b> protect a firm's creations:</p>
+      <ul>
+        <li><b>Copyright</b> — protects original works (writing, music, software).</li>
+        <li><b>Patents</b> — protect new inventions, giving a period of exclusive use.</li>
+        <li><b>Trademarks</b> — protect brand names, logos and symbols.</li>
+      </ul>`},
+    {h:"Overall effect on business", html:`
+      <p>Legislation generally <b>raises costs and administration</b> for businesses, but it also builds <b>consumer trust</b>, protects reputation, creates a level playing field and, through IP, rewards innovation. Breaking the law risks fines, legal action and serious damage to reputation.</p>`}
+  ],
+  definitions:[
+    {term:"Consumer protection", marks:2, body:`Laws ensuring goods are of satisfactory quality, as described and fit for purpose, with honest selling <span class="pt">1</span>; they protect customers but add compliance costs for firms <span class="pt">2</span>.`},
+    {term:"Patent", marks:2, body:`A legal right protecting a new invention, giving the holder a period of exclusive use <span class="pt">1</span>; it lets a firm profit from innovation without immediate copying by rivals <span class="pt">2</span>.`},
+    {term:"Trademark", marks:2, body:`A legal protection for a brand name, logo or symbol <span class="pt">1</span>; it stops others using the firm's brand identity and protects its reputation <span class="pt">2</span>.`},
+    {term:"Health and safety legislation", marks:2, body:`Laws requiring businesses to provide a safe working environment, training and equipment <span class="pt">1</span>; it reduces accidents but adds cost and administration <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'patent'.",
+     model:`A patent is a legal right protecting a new invention, giving the holder a period of exclusive use <span class="pt">1</span>; it lets a firm profit from innovation without immediate copying <span class="pt">2</span>.`,
+     fb:"Protects-an-invention plus the exclusive-use/profit point."},
+    {marks:4, q:"Explain one way consumer protection legislation affects a business.",
+     model:`Consumer protection law requires goods to be of satisfactory quality and as described <span class="pt">1</span>. The business must check quality and advertise honestly, which adds cost <span class="pt">2</span>. However, meeting these standards builds customer trust <span class="pt">3</span>, protecting the firm's reputation and encouraging repeat custom <span class="pt">4</span>.`,
+     fb:"Identifies the requirement and chains to both a cost and a trust/reputation benefit."}
+  ],
+  caseStudy:{
+    business:"Operating within the law",
+    intro:`<p>Questions here involve how a law — consumer, employee, environmental, health and safety, competition or IP — affects a business's costs, reputation and competitiveness.</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the impact on a business of tighter employee protection legislation. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Tighter employee protection raises a business's costs. <span class="tag t-A">APPLY</span>Rules on minimum wage, working hours and conditions mean higher pay and more administration. <span class="tag t-C">CHAIN</span>This increases labour costs and reduces flexibility, which can squeeze margins, especially for a labour-intensive firm.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, protecting employees can bring benefits. <span class="tag t-A">APPLY</span>Fair treatment and safe conditions tend to raise motivation and reduce staff turnover. <span class="tag t-C">CHAIN</span>This can improve productivity and quality and protect the firm's reputation as an employer, helping it attract and keep good staff — offsetting some of the extra cost.</p>`,
+     fb:"Model answer (indicative content). Higher labour cost vs motivation/retention and reputation, applied throughout."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.5.3", subtheme:"2.3.5", title:"The competitive environment",
+  business:"Competitor numbers, size & behaviour",
+  status:"live",
+  notes:[
+    {h:"How competition affects a business", html:`
+      <p>The level and nature of competition shapes a firm's pricing, marketing and profit:</p>
+      <ul>
+        <li><b>Number of competitors</b> — many rivals (high competition) limits the price a firm can charge and squeezes margins; few rivals gives more pricing power.</li>
+        <li><b>Size of competitors</b> — large rivals may enjoy economies of scale, lower costs and bigger marketing budgets, making it hard for small firms to compete on price.</li>
+        <li><b>Behaviour of competitors</b> — price wars, aggressive promotion or rapid innovation force a firm to respond or lose customers.</li>
+      </ul>`},
+    {h:"How a small business can compete", html:`
+      <p>A small business cannot usually win on price against large rivals, so it competes through:</p>
+      <ul>
+        <li><b>Excellent customer service</b> and personal relationships.</li>
+        <li><b>Niche focus</b> — serving a specific segment larger firms ignore.</li>
+        <li><b>Differentiation</b> — a unique product, quality or local identity (USP).</li>
+        <li><b>Flexibility</b> — responding quickly to customer needs and market changes.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Competitive environment", marks:2, body:`The nature and level of competition a business faces, including the number, size and behaviour of its rivals <span class="pt">1</span>; it shapes the firm's pricing, marketing and profit <span class="pt">2</span>.`},
+    {term:"Competitive advantage", marks:2, body:`A feature that lets a business outperform its rivals, such as lower costs or a unique product <span class="pt">1</span>; it helps the firm win and keep customers <span class="pt">2</span>.`},
+    {term:"Price war", marks:2, body:`When competing firms repeatedly cut prices to win customers from each other <span class="pt">1</span>; it can boost sales volume but badly damages everyone's margins and profit <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'competitive advantage'.",
+     model:`Competitive advantage is a feature that lets a business outperform its rivals, such as lower costs or a unique product <span class="pt">1</span>; it helps the firm win and keep customers <span class="pt">2</span>.`,
+     fb:"Outperform-rivals plus the win/keep-customers point."},
+    {marks:4, q:"Explain one way a small business could compete against a large rival.",
+     model:`One way is to offer excellent, personal customer service <span class="pt">1</span>. A small firm can build relationships and respond quickly to individual needs in a way a large rival cannot <span class="pt">2</span>. This creates customer loyalty <span class="pt">3</span>, so customers return and recommend the business rather than switching to a bigger competitor on price <span class="pt">4</span>.`,
+     fb:"Names a method (service/niche/differentiation) and chains to loyalty."}
+  ],
+  caseStudy:{
+    business:"Competing in the market",
+    intro:`<p>Questions here involve a business judging how competition (the number, size and behaviour of rivals) affects it, and how a smaller firm can compete.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess how a small business can best compete in a market dominated by large firms. (10)",
+     model:`<p><span class="tag t-P">POINT</span>A small business can compete by focusing on a niche. <span class="tag t-A">APPLY</span>Rather than take on large firms across the whole market, it serves a specific segment they overlook or serve poorly. <span class="tag t-C">CHAIN</span>By tailoring its product and service to that segment, it builds loyalty and can charge a fair price without competing head-on on cost.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, a niche strategy has limits. <span class="tag t-A">APPLY</span>A niche is small, so sales potential is capped, and a large firm could enter the niche if it becomes profitable. <span class="tag t-C">CHAIN</span>The small business may then struggle against the rival's economies of scale and marketing budget, so it must keep differentiating through service and quality.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, a small business competes best by combining a clear niche with strong service and differentiation rather than fighting on price; its success depends on staying flexible and keeping the loyalty of customers the large firms cannot serve as well.</p>`,
+     fb:"Model answer (indicative content). Niche/service/differentiation vs limited scale and entry risk, judged on flexibility and loyalty."}
+  ],
+  resources:[]
+},
 ];
