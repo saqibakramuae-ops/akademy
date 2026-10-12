@@ -2787,6 +2787,13 @@ window.CURRICULUM = [
   ],
   caseStudy:{
     business:"McDonald's, Superdry, Nando's (China) & Innocent",
+    docs:[
+      {label:"That's Entertainment — market research case study", file:"resources/casestudies/cs-1-3-1-2-market-research-thats-entertainment.pdf"},
+      {label:"Superdry — primary research (Q1)", file:"resources/casestudies/cs-1-3-1-2-superdry-primary-research.pdf"},
+      {label:"Innocent — test marketing (Q2)", file:"resources/casestudies/cs-1-3-1-2-innocent-test-marketing.pdf"},
+      {label:"Sampling — extracts A–D: Nando's & stratified sampling (Q3–Q4)", file:"resources/casestudies/cs-1-3-1-2-sampling-extracts.pdf"},
+      {label:"Yotel — primary research", file:"resources/casestudies/cs-1-3-1-2-yotel-primary-research.pdf"}
+    ],
     intro:`<p>Businesses used in the market-research questions.</p>
       <ul>
         <li><b>McDonald's</b> — uses a mix of primary methods (surveys, focus groups) and secondary sources (industry and government reports) to understand its market.</li>

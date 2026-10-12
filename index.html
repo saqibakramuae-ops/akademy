@@ -229,6 +229,10 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .cs-note b{color:var(--ink)}
 .cs-link{display:inline-block;margin-top:6px;color:var(--amber-d);font-weight:800;cursor:pointer;white-space:nowrap}
 .cs-link:hover{text-decoration:underline}
+.cs-docs{margin-top:16px;display:flex;flex-direction:column;gap:9px}
+.cs-docs h4{margin:0;font-size:13px;color:var(--navy);text-transform:uppercase;letter-spacing:.5px}
+.cs-doctip{margin:0 0 2px;font-size:13px;color:var(--muted)}
+.cs-examtip{margin:10px 0 0;font-size:13.5px;background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:9px 12px;border-radius:8px}
 .tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;margin-right:4px;vertical-align:middle;letter-spacing:.3px}
 .t-P{background:#e3edff;color:#1b4fd6}.t-E{background:#e7f6ef;color:#0a7a5c}
 .t-C{background:#fff2d9;color:#b8730a}.t-A{background:#f1e6ff;color:#7b2fd6}.t-J{background:#ffe3e3;color:#c92a2a}
@@ -681,8 +685,12 @@ function openTopic(code){
   h+=`<div class="section" id="sec-defs"><div class="card"><h2>Key definitions — the Edexcel two-point rule</h2><p style="color:var(--muted);font-size:13.5px;margin-top:0">Each answer makes <b>two linked points</b> <span class="pt">1</span><span class="pt">2</span>. An example alone does not earn the second mark.</p></div>`;
   (t.definitions||[]).forEach(d=>{h+=`<details class="def"><summary>${d.term}<span class="mk">${d.marks} marks</span></summary><div class="body">${d.body}</div></details>`;});h+=`</div>`;
   h+=`<div class="section" id="sec-practice">`+questionBlock(t,"practice",tp)+`</div>`;
-  h+=`<div class="section" id="sec-case">`;if(t.caseStudy){const hasP=((window.PAPERS_BY_UNIT||{})[uid]||[]).length;h+=`<div class="card"><h2>${t.caseStudy.business}</h2>${t.caseStudy.intro}<div class="cs-note"><b>Note:</b> this is a summary of the business contexts used in this topic's questions — not an official exam case study. The full official case studies (source booklets) are included inside each past paper.${hasP?` <a class="cs-link" onclick="openPapers('${uid}')">Open Unit ${uid} exam papers →</a>`:''}</div></div>`;}else{h+=`<div class="card"><p style="color:var(--muted);margin:0">Case study coming soon.</p></div>`;}h+=`</div>`;
-  h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p></div>`+questionBlock(t,"exam",tp)+`</div>`;
+  h+=`<div class="section" id="sec-case">`;if(t.caseStudy){const hasP=((window.PAPERS_BY_UNIT||{})[uid]||[]).length;const docs=t.caseStudy.docs||[];
+    let docHtml="";if(docs.length){docHtml=`<div class="cs-docs"><h4>Case study source material</h4><p class="cs-doctip">The extracts the exam questions are based on — open each before you answer.</p>`+docs.map(dd=>`<a class="rev-doc" href="${dd.file}" target="_blank" rel="noopener"><span class="ri">📄</span><span class="rt">${dd.label}</span><span class="rd">Open →</span></a>`).join('')+`</div>`;}
+    const note=docs.length?`<div class="cs-note"><b>Note:</b> the case-study extracts for these exam questions are listed above.${hasP?` The full official case studies also sit inside each <a class="cs-link" onclick="openPapers('${uid}')">Unit ${uid} past paper →</a>`:''}</div>`:`<div class="cs-note"><b>Note:</b> this is a summary of the business contexts used in this topic's questions — not an official exam case study. The full official case studies (source booklets) are included inside each past paper.${hasP?` <a class="cs-link" onclick="openPapers('${uid}')">Open Unit ${uid} exam papers →</a>`:''}</div>`;
+    h+=`<div class="card"><h2>${t.caseStudy.business}</h2>${t.caseStudy.intro}${docHtml}${note}</div>`;}else{h+=`<div class="card"><p style="color:var(--muted);margin:0">Case study coming soon.</p></div>`;}h+=`</div>`;
+  const _csd=(t.caseStudy&&t.caseStudy.docs&&t.caseStudy.docs.length);
+  h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p>${_csd?`<p class="cs-examtip">📄 These questions are based on a case study — <a class="cs-link" onclick="gotoSec('case')">open the source material on the Case study tab</a> first.</p>`:''}</div>`+questionBlock(t,"exam",tp)+`</div>`;
   h+=`<div class="section" id="sec-res"><div class="card"><h2>Resources &amp; past papers</h2>`;
   if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{h+=`<a class="resitem" href="${r.file}" target="_blank" rel="noopener"><span class="ri">📄</span><span class="rt">${r.label}</span><span class="rd">Open →</span></a>`;});h+=`</div>`;}
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
@@ -745,6 +753,7 @@ function aoGuide(marks,q){var cmd=(q||"").toLowerCase();var li=[];
     '<b>Structure (5×5 PECAN):</b> POINT · EXPLAIN · CHAIN · APPLY · NOW JUDGE — every paragraph ends on a mini-judgement.'];}
   return '<div class="ao"><h5>How to hit the marks ('+marks+')</h5><ul><li>'+li.join('</li><li>')+'</li></ul></div>';}
 function showSec(name,btn){document.querySelectorAll('.section').forEach(s=>s.classList.remove('show'));document.getElementById('sec-'+name).classList.add('show');document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function gotoSec(name){let b=null;document.querySelectorAll('.tab').forEach(x=>{const o=x.getAttribute('onclick')||'';if(o.indexOf("'"+name+"'")>-1)b=x;});if(b)showSec(name,b);}
 function toggleModel(id){document.getElementById('m-'+id).classList.toggle('show');}
 function saveAns(id,val){const c=window._topic,tp=topicProg(c);tp.answers=tp.answers||{};tp.answers[id]=val;setTopicProg(c,tp);}
 function toggleDone(code,id){const tp=topicProg(code);tp.done=tp.done||{};tp.done[id]=!tp.done[id];setTopicProg(code,tp);
