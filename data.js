@@ -5055,9 +5055,161 @@ window.CURRICULUM = [
   ],
   resources:[]
 },
-{code:"2.3.3.1", subtheme:"2.3.3", title:"Profit", business:"Gross/operating/net profit & profitability ratios", status:"soon"},
-{code:"2.3.3.2", subtheme:"2.3.3", title:"Liquidity", business:"Current & acid-test ratios, working capital", status:"soon"},
-{code:"2.3.3.3", subtheme:"2.3.3", title:"Business failure", business:"Internal & external causes", status:"soon"},
+{
+  code:"2.3.3.1", subtheme:"2.3.3", title:"Profit",
+  business:"Gross, operating & net profit and profitability",
+  status:"live",
+  notes:[
+    {h:"Types of profit", html:`
+      <p>Profit is measured at three levels on the <b>statement of comprehensive income</b> (profit and loss account):</p>
+      <ul>
+        <li><b>Gross profit = revenue &minus; cost of sales</b> (the direct cost of making the goods).</li>
+        <li><b>Operating profit = gross profit &minus; operating expenses</b> (overheads such as rent, salaries and marketing).</li>
+        <li><b>Profit for the year (net profit) = operating profit &minus; net finance costs</b> (e.g. interest) and tax.</li>
+      </ul>
+      <p><b>Worked example:</b> revenue &pound;100,000, cost of sales &pound;60,000 &rarr; gross profit &pound;40,000. Operating expenses &pound;25,000 &rarr; operating profit &pound;15,000. Interest &pound;3,000 &rarr; profit for the year &pound;12,000.</p>`},
+    {h:"Profitability (margins)", html:`
+      <p><b>Profitability</b> compares profit to revenue as a percentage, so firms of different sizes can be compared:</p>
+      <ul>
+        <li><b>Gross profit margin = (gross profit &divide; revenue) &times; 100</b></li>
+        <li><b>Operating profit margin = (operating profit &divide; revenue) &times; 100</b></li>
+        <li><b>Net profit margin = (profit for the year &divide; revenue) &times; 100</b></li>
+      </ul>
+      <p>In the example, gross margin = 40% and net margin = 12%.</p>`},
+    {h:"Improving profit and profitability", html:`
+      <ul>
+        <li><b>Increase revenue</b> — raise price (if inelastic), sell more, or add higher-value products.</li>
+        <li><b>Reduce costs</b> — cheaper suppliers, less waste, higher productivity — but without harming quality.</li>
+      </ul>
+      <p>A rising margin shows the business is keeping more of each &pound;1 of sales as profit.</p>`}
+  ],
+  definitions:[
+    {term:"Gross profit", marks:2, body:`Revenue minus the cost of sales <span class="pt">1</span>; it shows the profit made before overheads such as rent and salaries are deducted <span class="pt">2</span>.`},
+    {term:"Operating profit", marks:2, body:`Gross profit minus operating expenses (overheads) <span class="pt">1</span>; it shows the profit from the firm's normal trading activities <span class="pt">2</span>.`},
+    {term:"Net profit margin", marks:2, body:`Profit for the year as a percentage of revenue, (profit for the year &divide; revenue) &times; 100 <span class="pt">1</span>; it shows how much of each &pound;1 of sales is kept as profit after all costs <span class="pt">2</span>.`},
+    {term:"Profitability", marks:2, body:`How much profit a business makes relative to its revenue, shown as a margin <span class="pt">1</span>; unlike total profit, it allows firms of different sizes to be compared <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'gross profit'.",
+     model:`Gross profit is revenue minus the cost of sales <span class="pt">1</span>; it is the profit before overheads such as rent and salaries are deducted <span class="pt">2</span>.`,
+     fb:"Revenue-minus-cost-of-sales plus the before-overheads point."},
+    {marks:4, q:"A business has revenue of &pound;80,000 and cost of sales of &pound;50,000. Calculate its gross profit and gross profit margin.",
+     model:`Gross profit = &pound;80,000 &minus; &pound;50,000 = &pound;30,000 <span class="pt">1</span><span class="pt">2</span>. Gross profit margin = (&pound;30,000 &divide; &pound;80,000) &times; 100 = <b>37.5%</b> <span class="pt">3</span><span class="pt">4</span>.`,
+     fb:"Gross profit (£30,000) then margin (37.5%) — both steps shown."},
+    {marks:4, q:"Explain one way a business could improve its net profit margin.",
+     model:`One way is to reduce operating costs <span class="pt">1</span>. For example, negotiating cheaper supplies or cutting waste lowers expenses <span class="pt">2</span>. With revenue unchanged, more of each sale is kept as profit <span class="pt">3</span>, so the net profit margin rises <span class="pt">4</span>.`,
+     fb:"Names a method (cut costs) and chains to a higher margin."}
+  ],
+  caseStudy:{
+    business:"Measuring profit",
+    intro:`<p>Questions here involve calculating levels of profit and margins and judging how a business could raise its profitability.</p>`
+  },
+  exam:[
+    {marks:8, q:"Assess the best way for a business to improve its profitability. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One way to improve profitability is to reduce costs. <span class="tag t-A">APPLY</span>Switching to cheaper suppliers or cutting waste lowers the cost of sales and overheads. <span class="tag t-C">CHAIN</span>With revenue unchanged, the gross and net margins rise, so the business keeps more of each &pound;1 of sales as profit.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, cutting costs can backfire. <span class="tag t-A">APPLY</span>Cheaper materials may lower quality, and cutting marketing may reduce sales. <span class="tag t-C">CHAIN</span>If customers notice and switch away, revenue falls and profitability could drop, so raising revenue through added value or higher prices (where demand is inelastic) may be safer.</p>`,
+     fb:"Model answer (indicative content). Cost reduction vs the risk to quality/sales, judged on which protects the margin."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.3.2", subtheme:"2.3.3", title:"Liquidity",
+  business:"Current & acid-test ratios and working capital",
+  status:"live",
+  notes:[
+    {h:"Profit is not cash", html:`
+      <p><b>Liquidity</b> is a business's ability to pay its short-term debts as they fall due. A business can be <b>profitable but still run out of cash</b> — for example if customers pay late or too much cash is tied up in stock. Managing liquidity is about having enough cash, not just making a profit.</p>`},
+    {h:"Liquidity ratios", html:`
+      <p>Liquidity is measured from the <b>statement of financial position</b> (balance sheet):</p>
+      <ul>
+        <li><b>Current ratio = current assets &divide; current liabilities.</b> Around <b>1.5&ndash;2</b> is usually healthy.</li>
+        <li><b>Acid-test ratio = (current assets &minus; inventory) &divide; current liabilities.</b> A stricter test, since inventory may not sell quickly; around <b>1</b> is comfortable.</li>
+      </ul>
+      <p><b>Worked example:</b> current assets &pound;60,000 (including &pound;20,000 inventory), current liabilities &pound;40,000. Current ratio = 60,000 &divide; 40,000 = <b>1.5</b>. Acid test = (60,000 &minus; 20,000) &divide; 40,000 = <b>1.0</b>.</p>`},
+    {h:"Working capital and improving liquidity", html:`
+      <p><b>Working capital = current assets &minus; current liabilities</b> — the cash available for day-to-day running. Ways to improve liquidity include: selling idle <b>assets</b>, negotiating longer <b>supplier credit terms</b>, <b>factoring</b> (selling unpaid invoices for immediate cash) and using <b>JIT inventory</b> to free up cash tied in stock. Too little liquidity risks failure; too much means cash is sitting idle rather than earning a return.</p>`}
+  ],
+  definitions:[
+    {term:"Liquidity", marks:2, body:`A business's ability to pay its short-term debts as they fall due <span class="pt">1</span>; a profitable business can still fail if it lacks the cash to pay its bills <span class="pt">2</span>.`},
+    {term:"Current ratio", marks:2, body:`A liquidity measure found by dividing current assets by current liabilities <span class="pt">1</span>; a figure of roughly 1.5 to 2 suggests the business can comfortably meet short-term debts <span class="pt">2</span>.`},
+    {term:"Acid-test ratio", marks:2, body:`A stricter liquidity measure: (current assets &minus; inventory) &divide; current liabilities <span class="pt">1</span>; it excludes stock because stock may not be sold quickly for cash <span class="pt">2</span>.`},
+    {term:"Working capital", marks:2, body:`The cash available for day-to-day running, calculated as current assets minus current liabilities <span class="pt">1</span>; too little risks failure while too much means cash sits idle <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'liquidity'.",
+     model:`Liquidity is a business's ability to pay its short-term debts as they fall due <span class="pt">1</span>; a profitable business can still fail if it runs short of cash <span class="pt">2</span>.`,
+     fb:"Ability-to-pay-short-term-debts plus the profit-vs-cash point."},
+    {marks:4, q:"A business has current assets of &pound;50,000 (including &pound;15,000 inventory) and current liabilities of &pound;25,000. Calculate its current ratio and acid-test ratio.",
+     model:`Current ratio = &pound;50,000 &divide; &pound;25,000 = <b>2.0</b> <span class="pt">1</span><span class="pt">2</span>. Acid test = (&pound;50,000 &minus; &pound;15,000) &divide; &pound;25,000 = &pound;35,000 &divide; &pound;25,000 = <b>1.4</b> <span class="pt">3</span><span class="pt">4</span>.`,
+     fb:"Current ratio (2.0) then acid test (1.4) — both steps shown."},
+    {marks:4, q:"Explain one way a business could improve its liquidity.",
+     model:`One way is to negotiate longer credit terms with suppliers <span class="pt">1</span>. Paying suppliers after 60 days instead of 30 keeps cash in the business for longer <span class="pt">2</span>. This increases the cash available to meet other short-term bills <span class="pt">3</span>, improving the current and acid-test ratios <span class="pt">4</span>.`,
+     fb:"Names a method (supplier credit/factoring/JIT) and chains to better ratios."}
+  ],
+  caseStudy:{
+    business:"Managing liquidity",
+    intro:`<p>Questions here involve a business measuring and improving its liquidity, and the distinction between being profitable and having enough cash.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the ways a business could improve its liquidity position. (10)",
+     model:`<p><span class="tag t-P">POINT</span>One effective way is to use factoring. <span class="tag t-A">APPLY</span>The business sells its unpaid invoices to a finance company for most of their value immediately. <span class="tag t-C">CHAIN</span>This brings cash in straight away rather than waiting 30&ndash;60 days, raising current assets and improving the current and acid-test ratios so bills can be paid on time.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, each method has a cost. <span class="tag t-A">APPLY</span>Factoring means accepting less than the full invoice value, and using JIT to cut inventory risks stock-outs if a delivery is late. <span class="tag t-C">CHAIN</span>These reduce profit or increase risk, so improving liquidity can work against other objectives.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the best approach depends on the cause of the problem: factoring and chasing debtors suit a business owed a lot by customers, while longer supplier credit or JIT suit one with cash tied up in stock — and liquidity must be balanced against profitability so cash is not left idle.</p>`,
+     fb:"Model answer (indicative content). Factoring/credit terms/JIT vs their costs, judged on the cause of the shortage."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.3.3", subtheme:"2.3.3", title:"Business failure",
+  business:"Internal & external causes of failure",
+  status:"live",
+  notes:[
+    {h:"Internal causes of failure", html:`
+      <p>Internal causes come from <b>within</b> the business, often from poor management:</p>
+      <ul>
+        <li><b>Poor cash-flow management</b> — running out of cash even while profitable.</li>
+        <li><b>Overestimation of sales</b> — planning and spending for demand that never arrives.</li>
+        <li><b>Overtrading</b> — expanding too fast without enough working capital to support it.</li>
+        <li><b>Poor inventory control</b> — too much cash tied in stock, or stock-outs losing sales.</li>
+        <li><b>Poor marketing</b> and <b>poor quality</b> — failing to attract or keep customers.</li>
+      </ul>`},
+    {h:"External causes of failure", html:`
+      <p>External causes come from <b>outside</b> the business and are harder to control:</p>
+      <ul>
+        <li><b>Market conditions</b> and <b>competition</b> — falling demand or stronger rivals.</li>
+        <li><b>Economic factors</b> — recession, rising <b>interest rates</b> or unfavourable <b>exchange rates</b>.</li>
+        <li><b>Government regulations</b>, <b>supplier problems</b> and <b>natural phenomena</b> (e.g. floods or pandemics).</li>
+      </ul>`},
+    {h:"Why cash flow is central", html:`
+      <p>Many failures come back to <b>cash</b>: a business that cannot pay wages, suppliers or lenders will fail even if it is profitable on paper. Managing cash flow, controlling costs and realistic forecasting are the main defences.</p>`}
+  ],
+  definitions:[
+    {term:"Business failure", marks:2, body:`When a business can no longer continue trading, often because it cannot pay its debts <span class="pt">1</span>; causes can be internal (poor management) or external (the environment) <span class="pt">2</span>.`},
+    {term:"Overtrading", marks:2, body:`When a business expands too quickly without enough working capital to support the growth <span class="pt">1</span>; it can run out of cash even though sales are rising <span class="pt">2</span>.`},
+    {term:"Internal cause of failure", marks:2, body:`A reason for failure coming from within the business, such as poor cash-flow management or poor quality <span class="pt">1</span>; these are usually within the firm's control <span class="pt">2</span>.`},
+    {term:"External cause of failure", marks:2, body:`A reason for failure coming from outside the business, such as recession or new competition <span class="pt">1</span>; these are harder for the firm to control <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'overtrading'.",
+     model:`Overtrading is when a business expands too quickly without enough working capital to support the growth <span class="pt">1</span>; it can run out of cash even though sales are rising <span class="pt">2</span>.`,
+     fb:"Expand-too-fast-without-working-capital plus the run-out-of-cash point."},
+    {marks:4, q:"Explain one internal cause of business failure.",
+     model:`One internal cause is poor cash-flow management <span class="pt">1</span>. If a business lets too much cash get tied up in stock or unpaid invoices, it may not have enough to pay wages and suppliers <span class="pt">2</span>. Even if it is profitable, it cannot meet its bills <span class="pt">3</span>, so it may be forced to stop trading <span class="pt">4</span>.`,
+     fb:"Names an internal cause and chains to inability to pay bills."}
+  ],
+  caseStudy:{
+    business:"Causes of failure",
+    intro:`<p>Questions here involve identifying why a business might fail and judging whether internal or external causes are the greater threat.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess whether internal or external factors are more likely to cause a small business to fail. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Internal factors are often the main cause of failure for a small business. <span class="tag t-A">APPLY</span>Many small firms fail through poor cash-flow management or overtrading, expanding faster than their working capital allows. <span class="tag t-C">CHAIN</span>These are within the owner's control, so better planning, realistic forecasts and cost control could have prevented the failure.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, external factors can be decisive and are harder to control. <span class="tag t-A">APPLY</span>A recession, a rise in interest rates or a powerful new competitor can cut demand sharply whatever the owner does. <span class="tag t-C">CHAIN</span>A small business with limited reserves may not survive such a shock even if it is well run.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, internal factors cause most small-business failures and are more preventable, but external shocks can finish off even a well-managed firm — so the greater threat depends on the strength of the business's finances and the stability of its market.</p>`,
+     fb:"Model answer (indicative content). Internal (controllable) vs external (uncontrollable) causes, judged on finances and market stability."}
+  ],
+  resources:[]
+},
 {code:"2.3.4.1", subtheme:"2.3.4", title:"Production, productivity & efficiency", business:"Job/batch/flow/cell, productivity & efficiency", status:"soon"},
 {code:"2.3.4.2", subtheme:"2.3.4", title:"Capacity utilisation", business:"Under- & over-utilisation of capacity", status:"soon"},
 {code:"2.3.4.3", subtheme:"2.3.4", title:"Inventory control", business:"Buffer stock, JIT & lean production", status:"soon"},
