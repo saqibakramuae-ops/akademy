@@ -4562,11 +4562,259 @@ window.CURRICULUM = [
     {label:"Business choices (opportunity cost &amp; trade-offs) — notes (PDF)", file:"resources/1-3-5-5-business-choices-notes.pdf"}
   ]
 },
-{code:"2.3.1.1", subtheme:"2.3.1", title:"Planning", business:"Content and uses of a business plan", status:"soon"},
-{code:"2.3.1.2", subtheme:"2.3.1", title:"Internal finance", business:"Owner's capital, retained profit & sale of assets", status:"soon"},
-{code:"2.3.1.3", subtheme:"2.3.1", title:"External finance", business:"Sources & methods of external finance", status:"soon"},
-{code:"2.3.1.4", subtheme:"2.3.1", title:"Forms of business", business:"Sole trader, partnership, Ltd, franchise & plc", status:"soon"},
-{code:"2.3.1.5", subtheme:"2.3.1", title:"Liability", business:"Limited vs unlimited liability", status:"soon"},
+{
+  code:"2.3.1.1", subtheme:"2.3.1", title:"Planning",
+  business:"Content and uses of a business plan",
+  status:"live",
+  notes:[
+    {h:"What a business plan contains", html:`
+      <p>A <b>business plan</b> is a written document that sets out a business idea, its objectives and how they will be achieved. A typical plan includes:</p>
+      <ul>
+        <li><b>Executive summary</b> — a short overview of the idea and its aims.</li>
+        <li><b>The business idea &amp; objectives</b> — what the business does and the SMART targets it is working towards.</li>
+        <li><b>Market research &amp; target market</b> — evidence of demand, the customer segment and the competition.</li>
+        <li><b>Marketing plan</b> — the planned marketing mix (product, price, place, promotion).</li>
+        <li><b>Operations / production plan</b> — how the product or service will be made and delivered, premises, suppliers and staff.</li>
+        <li><b>Financial plan</b> — start-up costs, a <b>cash-flow forecast</b>, a <b>break-even</b> calculation, projected profit and the <b>sources of finance</b> required.</li>
+      </ul>`},
+    {h:"Relevance and uses of a plan", html:`
+      <p>A business plan is useful because it:</p>
+      <ul>
+        <li><b>Helps raise finance</b> — banks and investors usually require a plan before lending or investing, as it shows the idea has been thought through.</li>
+        <li><b>Reduces risk</b> — forcing the entrepreneur to research the market and cost the idea helps spot problems before money is committed.</li>
+        <li><b>Sets objectives and targets</b> — giving the owner something concrete to measure actual performance against.</li>
+        <li><b>Acts as a roadmap</b> — guiding decisions and keeping the business focused as it grows.</li>
+      </ul>
+      <p><b>Limitations:</b> a plan is built on <b>forecasts</b> that may turn out wrong; it is time-consuming to produce; it can quickly become <b>out of date</b> in a dynamic market; and completing a plan is no guarantee of success.</p>`}
+  ],
+  definitions:[
+    {term:"Business plan", marks:2, body:`A written document setting out a business idea, its objectives and how they will be achieved <span class="pt">1</span>; it is used to raise finance and to guide and measure the business <span class="pt">2</span>.`},
+    {term:"Executive summary", marks:2, body:`A short overview at the start of a business plan summarising the idea, aims and key figures <span class="pt">1</span>; it lets a lender or investor grasp the proposal quickly <span class="pt">2</span>.`},
+    {term:"Cash-flow forecast", marks:2, body:`A prediction of the money expected to flow into and out of a business over a future period <span class="pt">1</span>; it helps the owner spot when cash might run short <span class="pt">2</span>.`},
+    {term:"Objective", marks:2, body:`A specific, measurable target a business sets itself to achieve <span class="pt">1</span>; objectives guide decisions and let performance be judged against them <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'business plan'.",
+     model:`A business plan is a written document setting out a business idea, its objectives and how they will be achieved <span class="pt">1</span>; it is used to raise finance and to guide the business <span class="pt">2</span>.`,
+     fb:"Written-document-of-idea-and-objectives plus a use (raise finance/guide) — two developed points."},
+    {marks:4, q:"Explain one reason why a bank may want to see a business plan before lending.",
+     model:`A bank wants to reduce the risk of not being repaid <span class="pt">1</span>. A business plan shows the market research, costs and projected cash flow behind the idea <span class="pt">2</span>. This lets the bank judge whether the business is likely to generate enough cash to repay the loan <span class="pt">3</span>, so it can decide whether to lend and on what terms <span class="pt">4</span>.`,
+     fb:"Links the plan to the bank's need to assess repayment risk, with a clear chain."}
+  ],
+  caseStudy:{
+    business:"Start-up business planning",
+    intro:`<p>Questions here use a new start-up seeking finance. The plan brings together its market research, marketing mix, operations and — crucially — its financial forecasts (start-up costs, cash flow, break-even and the finance required).</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the usefulness of a business plan to an entrepreneur setting up a new business. (8)",
+     model:`<p><span class="tag t-P">POINT</span>A business plan is useful because it helps the entrepreneur raise the finance needed to start up. <span class="tag t-A">APPLY</span>A new business usually has no trading record, so a bank or investor relies on the plan's market research and cash-flow forecast to judge the idea. <span class="tag t-C">CHAIN</span>A well-researched plan reassures the lender that the business can repay, making finance more likely and at a lower interest rate, so the entrepreneur can afford the premises and stock needed to launch.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the plan's value depends on how realistic its forecasts are. <span class="tag t-A">APPLY</span>A first-time entrepreneur may overestimate sales or underestimate costs, and in a fast-changing market the assumptions can quickly date. <span class="tag t-C">CHAIN</span>If the plan is over-optimistic it gives false confidence and poor decisions, so a plan is only as useful as the quality of the research behind it — it reduces risk rather than removing it.</p>`,
+     fb:"Model answer (indicative content). Finance/risk-reduction benefit vs reliance on realistic forecasts, applied to a start-up throughout."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.1.2", subtheme:"2.3.1", title:"Internal finance",
+  business:"Owner's capital, retained profit & sale of assets",
+  status:"live",
+  notes:[
+    {h:"Sources of internal finance", html:`
+      <p><b>Internal finance</b> is money raised from <i>within</i> the business or from its owners, rather than from outside lenders or investors.</p>
+      <ul>
+        <li><b>Owner's capital (personal savings)</b> — money the owner puts in themselves. Cheap (no interest) and quick, with no loss of control, but it is limited to what the owner has and puts their own money at risk.</li>
+        <li><b>Retained profit</b> — profit kept in the business from previous years rather than paid out to owners. It is free of interest and keeps control, but is only available to established, profitable firms and reduces the return to owners/shareholders.</li>
+        <li><b>Sale of assets</b> — selling items the business no longer needs (e.g. spare machinery or property). It raises cash from idle resources, but takes time, there may be nothing spare to sell, and selling essential assets can harm operations (unless sold and leased back).</li>
+      </ul>`},
+    {h:"Suitability", html:`
+      <p>Internal finance suits businesses that want to <b>avoid debt and keep control</b>, and is common for <b>small firms and established, profitable businesses</b>. Its main drawback is that the amounts available are usually <b>limited</b>, so large expansions often still need external finance.</p>`}
+  ],
+  definitions:[
+    {term:"Internal finance", marks:2, body:`Finance raised from within the business or from its owners rather than from outside sources <span class="pt">1</span>; examples include owner's capital, retained profit and sale of assets <span class="pt">2</span>.`},
+    {term:"Owner's capital", marks:2, body:`Money the owner invests in the business from their own personal savings <span class="pt">1</span>; it carries no interest and no loss of control but puts the owner's own money at risk <span class="pt">2</span>.`},
+    {term:"Retained profit", marks:2, body:`Profit kept in the business from previous years rather than paid out to owners <span class="pt">1</span>; it is a free source of finance but is only available to profitable firms <span class="pt">2</span>.`},
+    {term:"Sale of assets", marks:2, body:`Raising cash by selling resources the business no longer needs, such as spare equipment or property <span class="pt">1</span>; it turns idle assets into cash but may take time and reduce capacity if essential assets are sold <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'retained profit'.",
+     model:`Retained profit is profit kept in the business from previous years rather than paid out to the owners <span class="pt">1</span>; it is a free internal source of finance <span class="pt">2</span>.`,
+     fb:"Profit-kept-not-distributed plus the free/internal point."},
+    {marks:4, q:"Explain one advantage of using retained profit rather than a bank loan.",
+     model:`One advantage is that retained profit carries no interest <span class="pt">1</span>. Unlike a loan, the business does not have to make repayments with interest added <span class="pt">2</span>. This keeps costs lower and protects cash flow <span class="pt">3</span>, and the business keeps full control as no lender is involved <span class="pt">4</span>.`,
+     fb:"Names the advantage (no interest/control), contrasts with a loan and chains to cash flow/control."}
+  ],
+  caseStudy:{
+    business:"Financing from within",
+    intro:`<p>Questions here involve a business choosing how to fund growth from its own resources — owner's savings, profit kept back from earlier years, or selling assets it no longer needs — weighed against borrowing externally.</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss whether a small, profitable business should use retained profit rather than external finance to fund expansion. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Using retained profit can be a sensible choice because it is a low-cost source of finance. <span class="tag t-A">APPLY</span>As the business is profitable, it has built up profit from earlier years that can be reinvested without interest or repayments. <span class="tag t-C">CHAIN</span>This protects cash flow and keeps the owners in full control, since no bank or investor is involved, so more of the expansion's returns stay in the business.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, retained profit may not be enough on its own. <span class="tag t-A">APPLY</span>A small firm's accumulated profit is limited, and using it all leaves no reserve for emergencies. <span class="tag t-C">CHAIN</span>If the expansion is large, external finance such as a loan may be needed to fund it fully, so the best answer often depends on the size of the expansion and how much profit has actually been retained.</p>`,
+     fb:"Model answer (indicative content). Low-cost/control benefit of retained profit vs its limited size, judged on the scale of expansion."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.1.3", subtheme:"2.3.1", title:"External finance",
+  business:"Sources & methods of external finance",
+  status:"live",
+  notes:[
+    {h:"Sources vs methods", html:`
+      <p><b>External finance</b> comes from outside the business. It is useful to separate <b>sources</b> (who the money comes from) from <b>methods</b> (the form the finance takes).</p>`},
+    {h:"Sources of external finance", html:`
+      <ul>
+        <li><b>Family and friends</b> — often cheap and flexible, but can strain relationships if the business struggles.</li>
+        <li><b>Banks</b> — the main source for most firms, offering loans and overdrafts, but they charge interest and may require security.</li>
+        <li><b>Peer-to-peer (P2P) funding</b> — borrowing from individuals through an online platform, often faster than a bank.</li>
+        <li><b>Business angels</b> — wealthy individuals who invest their own money in return for a share of the business, often bringing expertise.</li>
+        <li><b>Crowdfunding</b> — raising small amounts from many people online; good for publicity but it may fail to reach its target.</li>
+        <li><b>Other businesses</b> — investment from another company, sometimes as part of a partnership or takeover.</li>
+      </ul>`},
+    {h:"Methods of external finance", html:`
+      <ul>
+        <li><b>Loans</b> — a fixed sum repaid with interest over time; predictable but adds a long-term cost.</li>
+        <li><b>Share capital</b> — selling shares to investors; no repayment, but owners give up some control and a share of profits.</li>
+        <li><b>Venture capital</b> — investment in higher-risk, high-growth firms in return for a stake and often a say in the business.</li>
+        <li><b>Overdrafts</b> — a flexible facility to spend more than is in the account; good for short-term cash gaps but expensive if used heavily.</li>
+        <li><b>Leasing</b> — renting an asset rather than buying it; spreads the cost but costs more overall than buying.</li>
+        <li><b>Trade credit</b> — paying suppliers after an agreed period (e.g. 30 days); eases cash flow but missing payment damages relationships.</li>
+      </ul>`},
+    {h:"Suitability", html:`
+      <p>The right choice depends on the <b>amount</b> needed, how <b>long</b> it is needed for, the <b>cost</b>, the business's <b>legal form</b> (only companies can sell shares) and whether the owner is willing to give up <b>control</b>. Short-term cash gaps suit overdrafts or trade credit; long-term investment suits loans or share capital.</p>`}
+  ],
+  definitions:[
+    {term:"External finance", marks:2, body:`Finance raised from outside the business, such as from banks or investors <span class="pt">1</span>; it can provide larger sums than internal finance but usually has a cost or involves giving up some control <span class="pt">2</span>.`},
+    {term:"Share capital", marks:2, body:`Money raised by selling shares in the company to investors <span class="pt">1</span>; it does not have to be repaid, but owners give up a share of profit and some control <span class="pt">2</span>.`},
+    {term:"Venture capital", marks:2, body:`Finance invested in higher-risk, high-growth businesses in return for a share of the business <span class="pt">1</span>; investors often also provide expertise and expect a say in decisions <span class="pt">2</span>.`},
+    {term:"Overdraft", marks:2, body:`An arrangement allowing a business to spend more than is in its bank account up to a limit <span class="pt">1</span>; it is flexible for short-term cash gaps but charges a high rate of interest <span class="pt">2</span>.`},
+    {term:"Leasing", marks:2, body:`Renting an asset over a period instead of buying it outright <span class="pt">1</span>; it avoids a large upfront cost but works out more expensive over time than purchasing <span class="pt">2</span>.`},
+    {term:"Trade credit", marks:2, body:`An agreement to pay a supplier a set period after receiving goods, such as 30 days <span class="pt">1</span>; it eases short-term cash flow but late payment can damage supplier relationships <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'share capital'.",
+     model:`Share capital is money raised by selling shares in the company to investors <span class="pt">1</span>; it does not have to be repaid but means giving up a share of profit and control <span class="pt">2</span>.`,
+     fb:"Money-from-selling-shares plus the no-repayment/loss-of-control point."},
+    {marks:2, q:"Define the term 'trade credit'.",
+     model:`Trade credit is an agreement to pay a supplier a set period after receiving goods, such as 30 days <span class="pt">1</span>; it helps short-term cash flow <span class="pt">2</span>.`,
+     fb:"Pay-supplier-later plus the cash-flow benefit."},
+    {marks:4, q:"Explain one reason why an overdraft may suit a business with a short-term cash shortage.",
+     model:`An overdraft is flexible <span class="pt">1</span>. The business can draw on it only when it needs to and repay it quickly when cash comes in <span class="pt">2</span>. This covers a short gap, such as paying wages before customers pay <span class="pt">3</span>, and interest is only charged on the amount actually used <span class="pt">4</span>.`,
+     fb:"Flexibility/short-term fit, with a cash-gap example and the interest-only-on-use point."}
+  ],
+  caseStudy:{
+    business:"Choosing external finance",
+    intro:`<p>Questions here ask a business to choose a source or method of external finance for a specific situation — a short-term cash gap, buying equipment, or funding a large expansion — weighing cost, time, control and the firm's legal form.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the most appropriate method of finance for a private limited company (Ltd) wanting to fund a large, long-term expansion. (10)",
+     model:`<p><span class="tag t-P">POINT</span>A bank loan could be appropriate for funding the expansion. <span class="tag t-A">APPLY</span>As an established Ltd, the company can offer security and a trading record, so a bank is likely to lend a large sum repayable over several years. <span class="tag t-C">CHAIN</span>This matches long-term finance to a long-term asset, and repayments are predictable, so the owners keep full control of the company while spreading the cost.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, selling more share capital may be better for a very large expansion. <span class="tag t-A">APPLY</span>As a private limited company it can issue shares to new investors without a public flotation. <span class="tag t-C">CHAIN</span>Share capital does not have to be repaid and avoids adding interest costs, which protects cash flow, although existing owners give up a share of profit and some control.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the most appropriate method depends on how much control the owners are willing to give up and the size of the sum: a loan suits a manageable amount where owners want to keep control, while share capital suits a very large expansion where adding debt and interest would strain cash flow.</p>`,
+     fb:"Model answer (indicative content). Loan (control, matched term) vs share capital (no repayment, but dilutes control), judged on size and control preference."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.1.4", subtheme:"2.3.1", title:"Forms of business",
+  business:"Sole trader, partnership, Ltd, franchise & plc",
+  status:"live",
+  notes:[
+    {h:"Unincorporated businesses", html:`
+      <ul>
+        <li><b>Sole trader</b> — one person owns and runs the business. Easy and cheap to set up, full control and keeps all profit, but has <b>unlimited liability</b>, can struggle to raise finance and faces heavy workload and risk.</li>
+        <li><b>Partnership</b> — two or more owners share capital, skills and decisions. More finance and expertise than a sole trader, but profits are shared, decisions can cause disputes, and most partners have <b>unlimited liability</b>.</li>
+      </ul>`},
+    {h:"Incorporated businesses", html:`
+      <ul>
+        <li><b>Private limited company (Ltd)</b> — a separate legal entity owned by shareholders, whose shares cannot be sold to the public. Offers <b>limited liability</b> and easier access to finance, but involves more paperwork, legal duties and some loss of privacy.</li>
+        <li><b>Public limited company (plc)</b> — a large company that can sell shares to the public on the <b>stock market</b> (a <b>flotation</b>). This can raise very large sums, but brings high costs, public scrutiny and the risk of losing control through a takeover.</li>
+      </ul>`},
+    {h:"Other forms", html:`
+      <ul>
+        <li><b>Franchising</b> — a franchisee buys the right to trade under an established brand's name and system. Lower risk and a known brand, but fees and royalties are paid and there is little independence.</li>
+        <li><b>Social enterprise</b> — a business that trades to achieve a social or environmental aim, reinvesting most profit into that cause.</li>
+        <li><b>Lifestyle business</b> — run to suit the owner's chosen way of life rather than to maximise growth or profit.</li>
+        <li><b>Online business</b> — trades mainly over the internet, with low start-up costs and wide reach but intense competition.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Sole trader", marks:2, body:`A business owned and run by one person who keeps all the profit <span class="pt">1</span>; it is simple to set up but the owner has unlimited liability <span class="pt">2</span>.`},
+    {term:"Partnership", marks:2, body:`A business owned by two or more people who share capital, decisions and profit <span class="pt">1</span>; it brings more finance and skills but usually unlimited liability and shared control <span class="pt">2</span>.`},
+    {term:"Private limited company (Ltd)", marks:2, body:`An incorporated business owned by shareholders whose shares cannot be sold to the public <span class="pt">1</span>; it gives owners limited liability as a separate legal entity <span class="pt">2</span>.`},
+    {term:"Public limited company (plc)", marks:2, body:`A company whose shares can be bought and sold by the public on the stock market <span class="pt">1</span>; flotation can raise large sums but brings public scrutiny and takeover risk <span class="pt">2</span>.`},
+    {term:"Franchising", marks:2, body:`Buying the right to trade under an established business's brand name and systems <span class="pt">1</span>; it lowers risk but fees and royalties are paid and independence is limited <span class="pt">2</span>.`},
+    {term:"Social enterprise", marks:2, body:`A business that trades mainly to achieve a social or environmental aim, reinvesting most of its profit into that cause <span class="pt">1</span>; profit is a means to the mission rather than the main goal <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'sole trader'.",
+     model:`A sole trader is a business owned and run by one person who keeps all the profit <span class="pt">1</span>; it is simple to set up but the owner has unlimited liability <span class="pt">2</span>.`,
+     fb:"One-owner-keeps-profit plus the unlimited-liability point."},
+    {marks:2, q:"Define the term 'franchising'.",
+     model:`Franchising is buying the right to trade under an established business's brand name and systems <span class="pt">1</span>; it lowers risk but fees and royalties must be paid <span class="pt">2</span>.`,
+     fb:"Trade-under-established-brand plus the fees/lower-risk point."},
+    {marks:4, q:"Explain one benefit to a growing business of becoming a private limited company (Ltd).",
+     model:`One benefit is limited liability <span class="pt">1</span>. As a separate legal entity, the owners' personal assets are protected if the company cannot pay its debts <span class="pt">2</span>. This reduces the owners' personal risk as the business grows <span class="pt">3</span>, and makes it easier to attract investors and finance <span class="pt">4</span>.`,
+     fb:"Names the benefit (limited liability), explains separate legal entity and chains to reduced risk/finance."}
+  ],
+  caseStudy:{
+    business:"Choosing a form of business",
+    intro:`<p>Questions here involve a business choosing or changing its legal form — for example a sole trader becoming an Ltd, or an Ltd floating as a plc — weighing liability, finance, control and cost.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess whether a successful sole trader should change to a private limited company (Ltd). (10)",
+     model:`<p><span class="tag t-P">POINT</span>Changing to an Ltd would give the owner limited liability. <span class="tag t-A">APPLY</span>As a sole trader they currently risk their personal assets, such as their home, if the business fails. <span class="tag t-C">CHAIN</span>Becoming a separate legal entity protects these assets and makes it easier to raise finance by selling shares, which could fund further growth.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, incorporation has drawbacks. <span class="tag t-A">APPLY</span>An Ltd must publish accounts, file more paperwork and meet legal duties, and the owner may have to share control with other shareholders. <span class="tag t-C">CHAIN</span>This reduces privacy and independence and adds cost, which a small, stable business may not need.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the change is worthwhile if the owner wants to grow, raise finance and protect personal assets; but if the business is small, low-risk and the owner values simplicity and control, remaining a sole trader may be the better choice.</p>`,
+     fb:"Model answer (indicative content). Limited liability/finance benefits vs cost, paperwork and loss of control, judged on growth ambition and risk."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.1.5", subtheme:"2.3.1", title:"Liability",
+  business:"Limited vs unlimited liability",
+  status:"live",
+  notes:[
+    {h:"Limited vs unlimited liability", html:`
+      <p><b>Liability</b> is the legal responsibility for a business's debts.</p>
+      <ul>
+        <li><b>Unlimited liability</b> — the owner and the business are legally the same, so the owner is personally responsible for all debts. If the business cannot pay, the owner's personal assets (home, savings) can be taken. This applies to <b>sole traders</b> and most <b>partnerships</b>.</li>
+        <li><b>Limited liability</b> — the business is a separate legal entity, so owners can only lose the money they invested. Personal assets are protected. This applies to <b>Ltd</b> and <b>plc</b> companies.</li>
+      </ul>`},
+    {h:"Advantages and disadvantages", html:`
+      <p><b>Limited liability</b> reduces the owners' personal risk, encourages investment and makes raising finance easier — but requires incorporation, more paperwork and public accounts.</p>
+      <p><b>Unlimited liability</b> is simpler and keeps affairs private and fully controlled — but exposes the owner's personal wealth, which can deter risk-taking and make lenders cautious.</p>`},
+    {h:"Finance appropriate to each", html:`
+      <p>An <b>unlimited liability</b> business (sole trader/partnership) tends to rely on <b>internal finance</b>, bank loans and overdrafts, as it cannot sell shares. A <b>limited liability</b> business (Ltd/plc) can also raise <b>share capital</b> and venture capital, giving it access to larger sums for growth.</p>`}
+  ],
+  definitions:[
+    {term:"Liability", marks:2, body:`The legal responsibility for a business's debts <span class="pt">1</span>; whether it is limited or unlimited determines how much the owners can personally lose <span class="pt">2</span>.`},
+    {term:"Unlimited liability", marks:2, body:`Where the owner is personally responsible for all the business's debts <span class="pt">1</span>; their personal assets can be taken if the business cannot pay <span class="pt">2</span>.`},
+    {term:"Limited liability", marks:2, body:`Where owners can only lose the money they have invested in the business <span class="pt">1</span>; their personal assets are protected because the company is a separate legal entity <span class="pt">2</span>.`},
+    {term:"Incorporation", marks:2, body:`The process of making a business a separate legal entity from its owners <span class="pt">1</span>; it gives the owners limited liability but brings legal duties such as publishing accounts <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'limited liability'.",
+     model:`Limited liability is where owners can only lose the money they have invested in the business <span class="pt">1</span>; their personal assets are protected as the company is a separate legal entity <span class="pt">2</span>.`,
+     fb:"Lose-only-what-you-invest plus the separate-legal-entity point."},
+    {marks:2, q:"Define the term 'unlimited liability'.",
+     model:`Unlimited liability is where the owner is personally responsible for all the business's debts <span class="pt">1</span>; their personal assets can be taken if the business cannot pay <span class="pt">2</span>.`,
+     fb:"Owner-liable-for-all-debts plus the personal-assets-at-risk point."},
+    {marks:4, q:"Explain one way limited liability may encourage someone to invest in a company.",
+     model:`Limited liability caps the investor's risk <span class="pt">1</span>. They can only lose the amount they put in, not their personal assets <span class="pt">2</span>. This makes investing far less risky <span class="pt">3</span>, so people are more willing to buy shares and provide finance for the company to grow <span class="pt">4</span>.`,
+     fb:"Capped risk → willingness to invest, with a clear chain to finance."}
+  ],
+  caseStudy:{
+    business:"Liability and risk",
+    intro:`<p>Questions here involve how the choice between limited and unlimited liability affects an owner's personal risk and the finance a business can raise.</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the implications of unlimited liability for the owner of a sole trader business. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Unlimited liability exposes the owner to serious personal financial risk. <span class="tag t-A">APPLY</span>As a sole trader is not a separate legal entity, the owner is responsible for all the business's debts. <span class="tag t-C">CHAIN</span>If the business fails owing money, creditors can claim the owner's personal assets such as their home or savings, which could leave them personally bankrupt.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, unlimited liability is not only a drawback. <span class="tag t-A">APPLY</span>Being a sole trader keeps set-up simple, private and fully under the owner's control, and lenders may see the owner's personal commitment positively. <span class="tag t-C">CHAIN</span>For a small, low-risk business the chance of large debts is limited, so the simplicity may outweigh the risk — though as the business grows, the case for incorporating to gain limited liability becomes stronger.</p>`,
+     fb:"Model answer (indicative content). Personal-asset risk of unlimited liability vs the simplicity/control of a sole trader, judged on business size and risk."}
+  ],
+  resources:[]
+},
 {code:"2.3.2.1", subtheme:"2.3.2", title:"Sales, revenue & costs", business:"Sales volume, revenue, fixed/variable/total/average costs", status:"soon"},
 {code:"2.3.2.2", subtheme:"2.3.2", title:"Sales forecasting", business:"Purpose, factors & difficulties", status:"soon"},
 {code:"2.3.2.3", subtheme:"2.3.2", title:"Break-even", business:"Contribution, break-even & margin of safety", status:"soon"},
