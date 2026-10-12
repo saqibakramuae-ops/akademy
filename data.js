@@ -5210,10 +5210,182 @@ window.CURRICULUM = [
   ],
   resources:[]
 },
-{code:"2.3.4.1", subtheme:"2.3.4", title:"Production, productivity & efficiency", business:"Job/batch/flow/cell, productivity & efficiency", status:"soon"},
-{code:"2.3.4.2", subtheme:"2.3.4", title:"Capacity utilisation", business:"Under- & over-utilisation of capacity", status:"soon"},
-{code:"2.3.4.3", subtheme:"2.3.4", title:"Inventory control", business:"Buffer stock, JIT & lean production", status:"soon"},
-{code:"2.3.4.4", subtheme:"2.3.4", title:"Quality management", business:"Quality control/assurance, TQM & Kaizen", status:"soon"},
+{
+  code:"2.3.4.1", subtheme:"2.3.4", title:"Production, productivity & efficiency",
+  business:"Methods of production, productivity & efficiency",
+  status:"live",
+  notes:[
+    {h:"Methods of production", html:`
+      <ul>
+        <li><b>Job</b> — one-off, made to a customer's specification (e.g. a wedding cake, a bespoke building). High quality and flexibility, but slow and costly per unit.</li>
+        <li><b>Batch</b> — groups of identical items made together (e.g. a bakery's bread, then rolls). More efficient than job, but down-time between batches.</li>
+        <li><b>Flow</b> — continuous mass production on a line (e.g. cars, bottled drinks). Low unit cost through economies of scale, but inflexible and high set-up cost.</li>
+        <li><b>Cell</b> — production split into teams (cells) each completing a stage. Can raise motivation and quality through teamwork.</li>
+      </ul>`},
+    {h:"Productivity", html:`
+      <p><b>Productivity</b> is output per unit of input per time period — most often <b>output per worker</b>. Higher productivity spreads fixed costs over more units, lowering average cost and improving <b>competitiveness</b>. It can be improved through training, better technology, motivation and efficient organisation of work.</p>`},
+    {h:"Efficiency & intensity", html:`
+      <p><b>Efficiency</b> means producing at the <b>minimum average cost</b>. It improves by cutting waste, raising productivity and using capacity well.</p>
+      <p>Production can be <b>labour-intensive</b> (relies mainly on people — flexible, suits bespoke work) or <b>capital-intensive</b> (relies mainly on machinery — consistent, suits high-volume work). Short <b>product lead-in times</b> (getting new products to market quickly) can be a source of competitive advantage.</p>`}
+  ],
+  definitions:[
+    {term:"Productivity", marks:2, body:`Output per unit of input per time period, such as output per worker <span class="pt">1</span>; higher productivity lowers average cost and improves competitiveness <span class="pt">2</span>.`},
+    {term:"Efficiency", marks:2, body:`Producing at the minimum average cost per unit <span class="pt">1</span>; it is improved by cutting waste, raising productivity and using capacity fully <span class="pt">2</span>.`},
+    {term:"Flow production", marks:2, body:`Continuous mass production of identical items on a production line <span class="pt">1</span>; it gives a low unit cost through economies of scale but is inflexible <span class="pt">2</span>.`},
+    {term:"Labour-intensive production", marks:2, body:`Production that relies mainly on people rather than machinery <span class="pt">1</span>; it is flexible and suits bespoke work but can be costly and less consistent <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'productivity'.",
+     model:`Productivity is output per unit of input per time period, such as output per worker <span class="pt">1</span>; higher productivity lowers average cost and improves competitiveness <span class="pt">2</span>.`,
+     fb:"Output-per-input plus the lowers-cost/competitiveness point."},
+    {marks:4, q:"Explain one way a business could increase its productivity.",
+     model:`One way is to train its workers <span class="pt">1</span>. Training improves employees' skills so they can work faster and make fewer mistakes <span class="pt">2</span>. This raises output per worker <span class="pt">3</span>, lowering average cost and making the business more competitive <span class="pt">4</span>.`,
+     fb:"Names a method (training/technology/motivation) and chains to output per worker and cost."},
+    {marks:4, q:"Explain one benefit to a business of using flow production.",
+     model:`One benefit is a lower unit cost <span class="pt">1</span>. Flow production makes large quantities continuously, gaining economies of scale <span class="pt">2</span>. This spreads fixed costs over many units <span class="pt">3</span>, so the business can price competitively or earn a higher margin <span class="pt">4</span>.`,
+     fb:"Names the benefit (low unit cost via economies of scale) and chains to price/margin."}
+  ],
+  caseStudy:{
+    business:"Production and productivity",
+    intro:`<p>Questions here involve a business choosing a production method or seeking to raise productivity and efficiency to compete on cost or quality.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess whether a manufacturer should switch from batch to flow production. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Switching to flow production could cut the unit cost. <span class="tag t-A">APPLY</span>Flow production runs continuously and in high volume, gaining economies of scale. <span class="tag t-C">CHAIN</span>This spreads fixed costs over more units and raises productivity, so the manufacturer can lower prices or widen its margin and compete more strongly.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, flow production is costly and inflexible. <span class="tag t-A">APPLY</span>It needs heavy investment in machinery and a reliable, high level of demand to be worthwhile, and it is hard to vary the product. <span class="tag t-C">CHAIN</span>If demand is uncertain or customers want variety, the business could be left with expensive idle capacity.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, flow production suits a firm with high, steady demand for a standardised product, but batch production is safer where demand is lower or variety matters — so the decision rests on the size and stability of demand.</p>`,
+     fb:"Model answer (indicative content). Lower unit cost of flow vs cost/inflexibility, judged on demand level and variety."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.4.2", subtheme:"2.3.4", title:"Capacity utilisation",
+  business:"Under- & over-utilisation of capacity",
+  status:"live",
+  notes:[
+    {h:"Measuring capacity utilisation", html:`
+      <p><b>Capacity utilisation = (current output &divide; maximum possible output) &times; 100.</b> It shows how much of a business's potential is being used.</p>
+      <p><b>Worked example:</b> a factory can make 10,000 units a month but makes 7,000. Utilisation = (7,000 &divide; 10,000) &times; 100 = <b>70%</b>.</p>`},
+    {h:"Under- and over-utilisation", html:`
+      <ul>
+        <li><b>Under-utilisation (low %)</b> — fixed costs are spread over fewer units, so average cost rises; machinery and staff sit idle; but there is spare capacity to take on new orders.</li>
+        <li><b>Over-utilisation (near 100%)</b> — fixed costs spread over many units, so average cost is low; but there is no room for new orders, staff and machines are under strain, quality and maintenance can suffer, and breakdowns cause delays.</li>
+      </ul>`},
+    {h:"Improving capacity utilisation", html:`
+      <p>If <b>under-utilised</b>: increase demand (marketing), take on subcontracting work, or reduce capacity (e.g. lease out space, cut staff). If <b>over-utilised</b>: increase capacity (new machinery, overtime, outsourcing) or manage demand. The aim is a high but sustainable level, often around <b>90%</b>, leaving some room for new orders and maintenance.</p>`}
+  ],
+  definitions:[
+    {term:"Capacity utilisation", marks:2, body:`The proportion of a business's maximum possible output that it is currently producing, (current output &divide; maximum output) &times; 100 <span class="pt">1</span>; higher utilisation spreads fixed costs over more units <span class="pt">2</span>.`},
+    {term:"Under-utilisation", marks:2, body:`When a business is producing well below its maximum capacity <span class="pt">1</span>; fixed costs are spread over fewer units so average cost rises and resources sit idle <span class="pt">2</span>.`},
+    {term:"Over-utilisation", marks:2, body:`When a business is producing at or very near its maximum capacity <span class="pt">1</span>; average cost is low but there is no room for new orders and staff and machinery are under strain <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"A business can produce 8,000 units but currently makes 6,000. Calculate its capacity utilisation.",
+     model:`Capacity utilisation = (6,000 &divide; 8,000) &times; 100 = <b>75%</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"Correct formula: 6,000/8,000 × 100 = 75%."},
+    {marks:4, q:"Explain one problem a business may face from operating at very high capacity utilisation.",
+     model:`One problem is strain on staff and machinery <span class="pt">1</span>. Running near 100% leaves no time for maintenance or rest <span class="pt">2</span>. This raises the risk of breakdowns and mistakes <span class="pt">3</span>, which can delay orders and harm quality and customer satisfaction <span class="pt">4</span>.`,
+     fb:"Names a problem (strain/no room for orders) and chains to breakdowns/quality."}
+  ],
+  caseStudy:{
+    business:"Using capacity well",
+    intro:`<p>Questions here involve a business judging the effects of operating with too much or too little spare capacity, and how to improve its utilisation.</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss whether a business should aim to operate at 100% capacity utilisation. (8)",
+     model:`<p><span class="tag t-P">POINT</span>Operating at 100% capacity can lower average costs. <span class="tag t-A">APPLY</span>Fixed costs are spread over the maximum number of units. <span class="tag t-C">CHAIN</span>This reduces the cost per unit, allowing lower prices or higher margins, and signals the business is using its resources fully.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, 100% leaves no slack. <span class="tag t-A">APPLY</span>There is no room to take on new orders, no time for maintenance, and staff and machines are under constant strain. <span class="tag t-C">CHAIN</span>This risks breakdowns, falling quality and lost customers, so a level around 90% is often better as it keeps costs low while leaving room to cope and grow.</p>`,
+     fb:"Model answer (indicative content). Low unit cost of full utilisation vs the loss of slack, judged towards a sustainable ~90%."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.4.3", subtheme:"2.3.4", title:"Inventory control",
+  business:"Buffer stock, JIT & lean production",
+  status:"live",
+  notes:[
+    {h:"The inventory control diagram", html:`
+      <p>An <b>inventory (stock) control diagram</b> tracks stock over time. Stock is used up until it reaches the <b>re-order level</b>, when new stock is ordered; after the <b>lead time</b> it arrives and stock rises to the <b>maximum</b> again. The <b>buffer inventory</b> is the minimum kept as a safety net against delays or sudden demand.</p>`},
+    {h:"Costs of poor inventory control", html:`
+      <ul>
+        <li><b>Too much stock</b> — ties up cash, costs money to store, and risks waste or obsolescence.</li>
+        <li><b>Too little stock</b> — risks <b>stock-outs</b>, lost sales and disappointed customers, and halted production.</li>
+      </ul>`},
+    {h:"JIT and lean production", html:`
+      <p><b>Just in time (JIT)</b> holds little or no stock, with materials arriving exactly when needed. It frees up cash and cuts storage and waste costs, but depends on <b>reliable suppliers</b> — any delay stops production.</p>
+      <p><b>Lean production</b> and <b>waste minimisation</b> aim to cut all waste (time, materials, movement) from the process. Done well, lean production lowers costs and raises quality, giving a source of <b>competitive advantage</b>.</p>`}
+  ],
+  definitions:[
+    {term:"Buffer inventory", marks:2, body:`A minimum level of stock held as a safety net against delivery delays or sudden rises in demand <span class="pt">1</span>; it helps avoid stock-outs but ties up some cash <span class="pt">2</span>.`},
+    {term:"Just in time (JIT)", marks:2, body:`An inventory system where materials arrive exactly when needed, holding little or no stock <span class="pt">1</span>; it frees up cash and cuts storage costs but relies on very reliable suppliers <span class="pt">2</span>.`},
+    {term:"Lean production", marks:2, body:`An approach that aims to cut all forms of waste from the production process <span class="pt">1</span>; it lowers costs and can raise quality, giving a competitive advantage <span class="pt">2</span>.`},
+    {term:"Stock-out", marks:2, body:`When a business runs out of an item of stock <span class="pt">1</span>; it can halt production and lose sales and customers to rivals <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'just in time (JIT)'.",
+     model:`JIT is an inventory system where materials arrive exactly when they are needed, holding little or no stock <span class="pt">1</span>; it frees up cash but relies on reliable suppliers <span class="pt">2</span>.`,
+     fb:"Materials-arrive-when-needed plus the reliance-on-suppliers point."},
+    {marks:4, q:"Explain one drawback of holding too much inventory.",
+     model:`One drawback is that it ties up cash <span class="pt">1</span>. Money spent on stock sitting in a warehouse cannot be used elsewhere <span class="pt">2</span>. This worsens liquidity and adds storage costs <span class="pt">3</span>, and the stock may become damaged or obsolete before it sells <span class="pt">4</span>.`,
+     fb:"Names a drawback (cash tied up/waste) and chains to liquidity and obsolescence."}
+  ],
+  caseStudy:{
+    business:"Controlling inventory",
+    intro:`<p>Questions here involve a business managing its stock levels — balancing the cost of holding stock against the risk of running out — and whether JIT or lean production would suit it.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess whether a manufacturer should adopt a just-in-time (JIT) inventory system. (10)",
+     model:`<p><span class="tag t-P">POINT</span>JIT could improve the manufacturer's finances. <span class="tag t-A">APPLY</span>By holding little stock and having materials delivered as needed, less cash is tied up in inventory and storage costs fall. <span class="tag t-C">CHAIN</span>This improves liquidity and cuts waste from unsold or obsolete stock, lowering average costs and freeing cash for other uses.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, JIT is risky. <span class="tag t-A">APPLY</span>With no buffer stock, a late delivery or supplier problem halts production immediately. <span class="tag t-C">CHAIN</span>This could stop the firm meeting orders and lose customers, so JIT only works with very reliable suppliers and dependable transport.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, JIT suits a manufacturer with reliable suppliers and steady production, where the cash and cost savings are real; but a business with unreliable supply or volatile demand may be safer holding buffer stock — so supplier reliability is the deciding factor.</p>`,
+     fb:"Model answer (indicative content). Cash/cost savings of JIT vs supply risk, judged on supplier reliability."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.4.4", subtheme:"2.3.4", title:"Quality management",
+  business:"Quality control/assurance, TQM & Kaizen",
+  status:"live",
+  notes:[
+    {h:"Approaches to quality", html:`
+      <ul>
+        <li><b>Quality control</b> — checking/inspecting products at the <b>end</b> of production to remove faulty ones. Simple, but waste is only caught after it is made.</li>
+        <li><b>Quality assurance</b> — building quality in at <b>every stage</b> so faults are prevented, with each worker responsible for their part. Reduces waste but needs training and commitment.</li>
+        <li><b>Quality circles</b> — groups of employees meeting to suggest quality improvements, using staff knowledge and raising motivation.</li>
+      </ul>`},
+    {h:"TQM and Kaizen", html:`
+      <p><b>Total Quality Management (TQM)</b> makes quality the responsibility of <b>everyone</b> in the business, aiming to get things right first time with the customer at the centre.</p>
+      <p><b>Continuous improvement (Kaizen)</b> seeks small, ongoing improvements from all staff over time. Together these can raise quality and cut waste, but require a culture change and training.</p>`},
+    {h:"Quality as competitive advantage", html:`
+      <p>Good quality management reduces waste and reworking costs, builds a strong <b>reputation</b>, encourages repeat custom and can justify a premium price — a source of <b>competitive advantage</b>. Poor quality raises costs and damages the brand.</p>`}
+  ],
+  definitions:[
+    {term:"Quality control", marks:2, body:`Checking products at the end of production to identify and remove faulty ones <span class="pt">1</span>; it catches faults before they reach customers but only after waste has been made <span class="pt">2</span>.`},
+    {term:"Quality assurance", marks:2, body:`Building quality in at every stage of production so faults are prevented rather than just detected <span class="pt">1</span>; each worker takes responsibility for quality, reducing waste <span class="pt">2</span>.`},
+    {term:"Total Quality Management (TQM)", marks:2, body:`An approach making quality the responsibility of everyone in the business <span class="pt">1</span>; it aims to get things right first time with the customer at the centre <span class="pt">2</span>.`},
+    {term:"Kaizen (continuous improvement)", marks:2, body:`Seeking small, ongoing improvements to processes from all staff over time <span class="pt">1</span>; the gains add up to lower costs and higher quality <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'quality assurance'.",
+     model:`Quality assurance is building quality in at every stage of production so faults are prevented rather than just detected <span class="pt">1</span>; each worker takes responsibility for quality <span class="pt">2</span>.`,
+     fb:"Prevent-faults-at-every-stage plus the worker-responsibility point."},
+    {marks:4, q:"Explain one benefit to a business of good quality management.",
+     model:`One benefit is a stronger reputation <span class="pt">1</span>. Consistently high quality means fewer faulty products reach customers <span class="pt">2</span>. This builds customer trust and repeat custom <span class="pt">3</span>, and can let the business charge a premium price and win market share <span class="pt">4</span>.`,
+     fb:"Names a benefit (reputation/lower waste) and chains to repeat custom/price."}
+  ],
+  caseStudy:{
+    business:"Managing quality",
+    intro:`<p>Questions here involve a business choosing how to manage quality — inspection versus prevention, or adopting TQM/Kaizen — and the effect on costs, reputation and competitiveness.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the benefits to a business of adopting Total Quality Management (TQM). (10)",
+     model:`<p><span class="tag t-P">POINT</span>TQM can reduce the cost of poor quality. <span class="tag t-A">APPLY</span>By making every employee responsible for getting things right first time, faults are prevented rather than fixed at the end. <span class="tag t-C">CHAIN</span>This cuts waste, reworking and returns, lowering costs, while consistent quality builds a reputation that wins repeat custom.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, TQM is demanding to introduce. <span class="tag t-A">APPLY</span>It requires a culture change, training for all staff and time before results show, which is costly. <span class="tag t-C">CHAIN</span>If staff are not committed, the system may not deliver, so the investment could be wasted in the short term.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, TQM offers real long-term benefits in cost and reputation where the business invests in training and builds a quality culture; but for a firm that cannot commit the time and money, simpler quality control may be more realistic — so success depends on commitment.</p>`,
+     fb:"Model answer (indicative content). Waste/reputation benefits of TQM vs cost and culture change, judged on commitment."}
+  ],
+  resources:[]
+},
 {code:"2.3.5.1", subtheme:"2.3.5", title:"Economic influences", business:"Inflation, exchange & interest rates, the cycle", status:"soon"},
 {code:"2.3.5.2", subtheme:"2.3.5", title:"Legislation", business:"Consumer, employee & environmental protection, IP", status:"soon"},
 {code:"2.3.5.3", subtheme:"2.3.5", title:"The competitive environment", business:"Competitor numbers, size & behaviour", status:"soon"}
