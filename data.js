@@ -4815,11 +4815,246 @@ window.CURRICULUM = [
   ],
   resources:[]
 },
-{code:"2.3.2.1", subtheme:"2.3.2", title:"Sales, revenue & costs", business:"Sales volume, revenue, fixed/variable/total/average costs", status:"soon"},
-{code:"2.3.2.2", subtheme:"2.3.2", title:"Sales forecasting", business:"Purpose, factors & difficulties", status:"soon"},
-{code:"2.3.2.3", subtheme:"2.3.2", title:"Break-even", business:"Contribution, break-even & margin of safety", status:"soon"},
-{code:"2.3.2.4", subtheme:"2.3.2", title:"Cash flow", business:"Cash-flow forecasts: use & limitations", status:"soon"},
-{code:"2.3.2.5", subtheme:"2.3.2", title:"Budgets", business:"Types of budget & variance analysis", status:"soon"},
+{
+  code:"2.3.2.1", subtheme:"2.3.2", title:"Sales, revenue & costs",
+  business:"Calculating revenue, costs & ways to improve sales",
+  status:"live",
+  notes:[
+    {h:"Revenue and costs", html:`
+      <p><b>Sales volume</b> is the number of units sold; <b>sales revenue</b> is the money they bring in.</p>
+      <ul>
+        <li><b>Sales revenue = selling price &times; quantity sold</b></li>
+        <li><b>Fixed costs</b> — costs that do not change with output (e.g. rent, salaries, insurance).</li>
+        <li><b>Variable costs</b> — costs that rise and fall with output (e.g. raw materials). <b>Total variable cost = variable cost per unit &times; output</b>.</li>
+        <li><b>Total costs = fixed costs + total variable costs</b></li>
+        <li><b>Average cost = total cost &divide; output</b></li>
+      </ul>
+      <p><b>Worked example:</b> price &pound;20, 500 units sold &rarr; revenue = 20 &times; 500 = <b>&pound;10,000</b>. If fixed costs are &pound;3,000 and variable cost is &pound;8/unit, total cost = 3,000 + (8 &times; 500) = &pound;7,000, so average cost = 7,000 &divide; 500 = <b>&pound;14</b>.</p>`},
+    {h:"Improving sales volume and revenue", html:`
+      <ul>
+        <li><b>Volume</b> — better promotion, lower price (if demand is price-elastic), wider distribution, improved product or customer service.</li>
+        <li><b>Revenue</b> — raising price (if demand is price-inelastic), selling more units, encouraging repeat/larger purchases, or adding higher-value products.</li>
+      </ul>
+      <p>The right tactic depends on <b>price elasticity of demand</b>: cutting price raises revenue only if demand is elastic.</p>`}
+  ],
+  definitions:[
+    {term:"Sales revenue", marks:2, body:`The money a business earns from selling its products, calculated as selling price &times; quantity sold <span class="pt">1</span>; it is the starting figure from which costs are deducted to find profit <span class="pt">2</span>.`},
+    {term:"Fixed costs", marks:2, body:`Costs that do not change with the level of output, such as rent and salaries <span class="pt">1</span>; they must be paid even if nothing is produced <span class="pt">2</span>.`},
+    {term:"Variable costs", marks:2, body:`Costs that rise and fall directly with output, such as raw materials <span class="pt">1</span>; total variable cost = variable cost per unit &times; output <span class="pt">2</span>.`},
+    {term:"Total costs", marks:2, body:`The sum of fixed and total variable costs at a given level of output <span class="pt">1</span>; comparing total cost with revenue shows whether a profit is made <span class="pt">2</span>.`},
+    {term:"Average cost", marks:2, body:`The cost of producing one unit, calculated as total cost &divide; output <span class="pt">1</span>; it usually falls as output rises and fixed costs are spread over more units <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'fixed costs'.",
+     model:`Fixed costs are costs that do not change with the level of output, such as rent <span class="pt">1</span>; they must be paid even if nothing is produced <span class="pt">2</span>.`,
+     fb:"Don't-change-with-output plus the paid-even-at-zero point."},
+    {marks:2, q:"A business sells 800 units at &pound;15 each. Calculate its sales revenue.",
+     model:`Sales revenue = selling price &times; quantity = &pound;15 &times; 800 = <b>&pound;12,000</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"Correct formula applied; 15 × 800 = £12,000."},
+    {marks:4, q:"A firm has fixed costs of &pound;4,000, variable costs of &pound;6 per unit and makes 1,000 units. Calculate its total cost and average cost.",
+     model:`Total variable cost = &pound;6 &times; 1,000 = &pound;6,000 <span class="pt">1</span>. Total cost = &pound;4,000 + &pound;6,000 = <b>&pound;10,000</b> <span class="pt">2</span>. Average cost = &pound;10,000 &divide; 1,000 = <b>&pound;10</b> <span class="pt">3</span><span class="pt">4</span>.`,
+     fb:"Variable cost, total cost, then average cost — each step shown."}
+  ],
+  caseStudy:{
+    business:"Revenue and cost calculations",
+    intro:`<p>Questions here test calculating revenue, total and average costs, and judging how a business could raise its sales volume or revenue given its market.</p>`
+  },
+  exam:[
+    {marks:8, q:"Assess the best way for a business to increase its sales revenue. (8)",
+     model:`<p><span class="tag t-P">POINT</span>One way to increase revenue is to lower the price. <span class="tag t-A">APPLY</span>If the product has many substitutes, demand is likely to be price-elastic. <span class="tag t-C">CHAIN</span>A lower price then attracts proportionately more buyers, so the rise in quantity sold outweighs the lower price per unit and total revenue increases.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, cutting price does not always raise revenue. <span class="tag t-A">APPLY</span>If demand is price-inelastic — for example a product with a strong brand and few substitutes — a lower price reduces revenue per unit without winning many extra sales. <span class="tag t-C">CHAIN</span>Here, raising price or adding value through better quality or promotion would lift revenue instead.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, the best method depends on the price elasticity of demand: price cuts suit elastic products, while branding, quality and promotion suit inelastic ones — so the business must know its market before deciding.</p>`,
+     fb:"Model answer (indicative content). Price cut (elastic) vs value/price rise (inelastic), judged on price elasticity of demand."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.2.2", subtheme:"2.3.2", title:"Sales forecasting",
+  business:"Purpose, factors & difficulties of forecasting sales",
+  status:"live",
+  notes:[
+    {h:"Purpose of sales forecasts", html:`
+      <p>A <b>sales forecast</b> estimates future sales volumes and revenue. It helps a business <b>plan</b>: ordering the right stock, scheduling staff and production, preparing cash-flow forecasts and setting budgets and targets.</p>`},
+    {h:"Factors affecting sales forecasts", html:`
+      <ul>
+        <li><b>Consumer trends</b> — changing tastes, fashions and lifestyles (e.g. a shift to healthier or more sustainable products).</li>
+        <li><b>Economic variables</b> — incomes, interest rates, unemployment and the business cycle all affect how much customers will spend.</li>
+        <li><b>Actions of competitors</b> — a rival's new product, price cut or marketing campaign can take sales the forecast assumed.</li>
+      </ul>`},
+    {h:"Difficulties of forecasting", html:`
+      <p>Forecasts are <b>estimates</b> and can be wrong because the future is uncertain: unexpected events, changing trends and competitor moves are hard to predict, and past data may not repeat. The further ahead the forecast, and the more <b>dynamic</b> the market, the less reliable it becomes.</p>`}
+  ],
+  definitions:[
+    {term:"Sales forecast", marks:2, body:`An estimate of a business's future sales volume and revenue over a period <span class="pt">1</span>; it is used to plan stock, staffing, cash flow and budgets <span class="pt">2</span>.`},
+    {term:"Consumer trends", marks:2, body:`Patterns in how customers' tastes and buying habits change over time <span class="pt">1</span>; they affect demand and so must be built into a sales forecast <span class="pt">2</span>.`},
+    {term:"Economic variables", marks:2, body:`Factors such as incomes, interest rates and the business cycle that affect spending <span class="pt">1</span>; changes in them can make a forecast too high or too low <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'sales forecast'.",
+     model:`A sales forecast is an estimate of a business's future sales volume and revenue <span class="pt">1</span>; it is used to plan stock, staffing and cash flow <span class="pt">2</span>.`,
+     fb:"Estimate-of-future-sales plus a planning use."},
+    {marks:4, q:"Explain one factor that could make a sales forecast inaccurate.",
+     model:`One factor is the actions of competitors <span class="pt">1</span>. A rival may launch a new product or cut its prices <span class="pt">2</span>. This can take away sales the forecast had assumed the business would make <span class="pt">3</span>, so actual sales come in below the forecast <span class="pt">4</span>.`,
+     fb:"Names a factor (competitor action) and chains to why actual sales differ."}
+  ],
+  caseStudy:{
+    business:"Forecasting future sales",
+    intro:`<p>Questions here involve a business relying on a sales forecast to plan — and judging how useful that forecast is given consumer trends, the economy and competitors.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the usefulness of sales forecasting to a business operating in a fast-changing market. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Sales forecasting is useful because it supports planning. <span class="tag t-A">APPLY</span>A business in a fast-changing market still needs to order stock, schedule staff and prepare a cash-flow forecast. <span class="tag t-C">CHAIN</span>A forecast gives a basis for these decisions, helping avoid both stock-outs that lose sales and over-ordering that ties up cash.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, in a fast-changing market a forecast can quickly become inaccurate. <span class="tag t-A">APPLY</span>Consumer trends shift, competitors launch new products and economic conditions change, none of which past data reliably predicts. <span class="tag t-C">CHAIN</span>If the business plans around a forecast that proves wrong, it may hold the wrong stock or staffing, so the forecast must be treated with caution and updated often.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, forecasting is still worthwhile as a planning tool, but in a dynamic market its value depends on using up-to-date data, building in flexibility and not relying on it too heavily — it guides decisions rather than guaranteeing outcomes.</p>`,
+     fb:"Model answer (indicative content). Planning benefit vs unreliability in a dynamic market, judged on how the forecast is used."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.2.3", subtheme:"2.3.2", title:"Break-even",
+  business:"Contribution, break-even & margin of safety",
+  status:"live",
+  notes:[
+    {h:"Contribution and break-even", html:`
+      <p><b>Contribution per unit</b> is what each sale contributes towards fixed costs and then profit.</p>
+      <ul>
+        <li><b>Contribution per unit = selling price &minus; variable cost per unit</b></li>
+        <li><b>Break-even output = total fixed costs &divide; contribution per unit</b></li>
+      </ul>
+      <p>At the <b>break-even point</b>, total revenue exactly equals total costs — no profit, no loss.</p>
+      <p><b>Worked example:</b> price &pound;25, variable cost &pound;15, fixed costs &pound;5,000. Contribution = 25 &minus; 15 = &pound;10. Break-even = 5,000 &divide; 10 = <b>500 units</b>.</p>`},
+    {h:"Margin of safety & charts", html:`
+      <p><b>Margin of safety = actual (or budgeted) output &minus; break-even output.</b> It shows how far sales can fall before the business makes a loss. In the example, if the firm sells 800 units the margin of safety is 800 &minus; 500 = <b>300 units</b>.</p>
+      <p>On a <b>break-even chart</b>, the total revenue line crosses the total cost line at the break-even point; the gap between them beyond that point is profit, and before it, loss.</p>`},
+    {h:"Limitations of break-even", html:`
+      <ul>
+        <li>Assumes everything produced is <b>sold</b> and that price and costs stay constant.</li>
+        <li>Ignores that costs and selling price can change at different output levels.</li>
+        <li>It is only as accurate as the <b>data</b> used, which may be estimated.</li>
+      </ul>`}
+  ],
+  definitions:[
+    {term:"Contribution per unit", marks:2, body:`The selling price of a unit minus its variable cost <span class="pt">1</span>; it is the amount each sale contributes towards fixed costs and then profit <span class="pt">2</span>.`},
+    {term:"Break-even point", marks:2, body:`The level of output at which total revenue exactly equals total costs, so there is neither profit nor loss <span class="pt">1</span>; it is found by dividing fixed costs by contribution per unit <span class="pt">2</span>.`},
+    {term:"Margin of safety", marks:2, body:`The difference between actual (or planned) output and the break-even output <span class="pt">1</span>; it shows how far sales can fall before the business starts making a loss <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'contribution per unit'.",
+     model:`Contribution per unit is the selling price of a unit minus its variable cost <span class="pt">1</span>; it is what each sale contributes to fixed costs and then profit <span class="pt">2</span>.`,
+     fb:"Price-minus-variable-cost plus the towards-fixed-costs point."},
+    {marks:4, q:"A product sells for &pound;30 with variable costs of &pound;18 per unit. Fixed costs are &pound;6,000. Calculate the break-even output.",
+     model:`Contribution per unit = &pound;30 &minus; &pound;18 = &pound;12 <span class="pt">1</span><span class="pt">2</span>. Break-even = fixed costs &divide; contribution = &pound;6,000 &divide; &pound;12 = <b>500 units</b> <span class="pt">3</span><span class="pt">4</span>.`,
+     fb:"Contribution (£12) then break-even (500 units) — both steps shown."},
+    {marks:2, q:"A firm breaks even at 400 units and plans to sell 650. Calculate its margin of safety.",
+     model:`Margin of safety = planned output &minus; break-even = 650 &minus; 400 = <b>250 units</b> <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"Correct subtraction: 650 − 400 = 250 units."}
+  ],
+  caseStudy:{
+    business:"Break-even analysis",
+    intro:`<p>Questions here involve calculating and interpreting break-even and margin of safety for a business, and judging how useful break-even analysis is for its decisions.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the usefulness of break-even analysis to a new business planning its finances. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Break-even analysis is useful because it shows the minimum sales needed to avoid a loss. <span class="tag t-A">APPLY</span>A new business can calculate break-even output from its fixed costs and contribution per unit, and see its margin of safety. <span class="tag t-C">CHAIN</span>This helps set realistic sales targets, supports a loan application, and shows the effect of changing price or costs, reducing the risk of running out of cash.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, break-even relies on assumptions that may not hold. <span class="tag t-A">APPLY</span>It assumes all output is sold and that price and costs stay constant, which is unlikely for a new business in a changing market. <span class="tag t-C">CHAIN</span>If sales are lower than assumed or costs rise, the real break-even point is higher, so decisions based on the original figures could be wrong.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, break-even is a valuable planning and decision-making tool for a new business, but because it is only as reliable as its assumptions and data, it should be used alongside realistic forecasts and updated as actual figures come in.</p>`,
+     fb:"Model answer (indicative content). Target-setting/risk benefit vs limiting assumptions, judged on the quality of the data."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.2.4", subtheme:"2.3.2", title:"Cash flow",
+  business:"Constructing & using cash-flow forecasts",
+  status:"live",
+  notes:[
+    {h:"What a cash-flow forecast shows", html:`
+      <p>A <b>cash-flow forecast</b> predicts the money flowing <b>into</b> (inflows) and <b>out of</b> (outflows) a business over a future period, usually month by month.</p>
+      <ul>
+        <li><b>Net cash flow = total inflows &minus; total outflows</b></li>
+        <li><b>Closing balance = opening balance + net cash flow</b></li>
+        <li>The closing balance for one month becomes the <b>opening balance</b> of the next.</li>
+      </ul>
+      <p><b>Worked example:</b> opening balance &pound;2,000; inflows &pound;8,000; outflows &pound;9,000. Net cash flow = 8,000 &minus; 9,000 = &minus;&pound;1,000. Closing balance = 2,000 + (&minus;1,000) = <b>&pound;1,000</b>.</p>`},
+    {h:"Uses and limitations", html:`
+      <p><b>Uses:</b> it identifies in advance when the business might run short of cash, so it can arrange an overdraft or delay spending; it supports loan applications; and it helps manage the timing of payments.</p>
+      <p><b>Limitations:</b> it is based on <b>estimates</b> that may be wrong (e.g. customers paying late or sales being lower than expected); unexpected costs can arise; and it does not by itself solve a cash problem — the business must act on it.</p>`}
+  ],
+  definitions:[
+    {term:"Cash flow", marks:2, body:`The movement of money into and out of a business over time <span class="pt">1</span>; a business can be profitable yet still fail if it runs out of cash <span class="pt">2</span>.`},
+    {term:"Net cash flow", marks:2, body:`The difference between total cash inflows and total cash outflows in a period <span class="pt">1</span>; a negative figure means more cash left the business than came in <span class="pt">2</span>.`},
+    {term:"Closing balance", marks:2, body:`The amount of cash a business has at the end of a period, found as opening balance + net cash flow <span class="pt">1</span>; it becomes the opening balance of the next period <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'cash flow'.",
+     model:`Cash flow is the movement of money into and out of a business over time <span class="pt">1</span>; a profitable business can still fail if it runs out of cash <span class="pt">2</span>.`,
+     fb:"Money-in-and-out plus the profit-vs-cash point."},
+    {marks:4, q:"A business has an opening balance of &pound;3,000, inflows of &pound;10,000 and outflows of &pound;12,500. Calculate its net cash flow and closing balance.",
+     model:`Net cash flow = &pound;10,000 &minus; &pound;12,500 = &minus;&pound;2,500 <span class="pt">1</span><span class="pt">2</span>. Closing balance = &pound;3,000 + (&minus;&pound;2,500) = <b>&pound;500</b> <span class="pt">3</span><span class="pt">4</span>.`,
+     fb:"Net cash flow (−£2,500) then closing balance (£500) — both steps shown."}
+  ],
+  caseStudy:{
+    business:"Managing cash flow",
+    intro:`<p>Questions here involve a business using a cash-flow forecast to spot and manage cash shortages, and judging how far the forecast can be relied on.</p>`
+  },
+  exam:[
+    {marks:8, q:"Discuss the value to a business of producing a cash-flow forecast. (8)",
+     model:`<p><span class="tag t-P">POINT</span>A cash-flow forecast is valuable because it gives early warning of cash shortages. <span class="tag t-A">APPLY</span>By predicting inflows and outflows month by month, the business can see when its closing balance might go negative. <span class="tag t-C">CHAIN</span>This lets it act in advance — arranging an overdraft, chasing customer payments or delaying spending — so it can keep paying wages and suppliers and avoid running out of cash.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, the forecast is only an estimate. <span class="tag t-A">APPLY</span>Customers may pay later than assumed, sales may be lower, or unexpected costs may arise. <span class="tag t-C">CHAIN</span>If the figures are inaccurate, the forecast gives false reassurance, and it does not fix a shortage by itself — the business still has to take action.</p>`,
+     fb:"Model answer (indicative content). Early-warning/planning value vs reliance on estimates, applied throughout."}
+  ],
+  resources:[]
+},
+{
+  code:"2.3.2.5", subtheme:"2.3.2", title:"Budgets",
+  business:"Purposes, types, variances & difficulties",
+  status:"live",
+  notes:[
+    {h:"Purpose and types of budget", html:`
+      <p>A <b>budget</b> is a financial plan setting out expected income and spending for a future period. Budgets help a business <b>plan</b> and <b>control</b> spending, <b>motivate</b> managers through targets, and <b>monitor</b> performance.</p>
+      <ul>
+        <li><b>Historical budgets</b> — based on last period's figures, adjusted for expected change. Quick and easy, but can repeat past mistakes.</li>
+        <li><b>Zero-based budgets</b> — every cost must be justified from zero each period. More accurate and avoids waste, but is time-consuming.</li>
+      </ul>`},
+    {h:"Variance analysis", html:`
+      <p>A <b>variance</b> is the difference between the budgeted figure and the actual figure.</p>
+      <ul>
+        <li><b>Favourable variance</b> — actual result is better than budget (higher revenue or lower cost).</li>
+        <li><b>Adverse variance</b> — actual result is worse than budget (lower revenue or higher cost).</li>
+      </ul>
+      <p>Variance analysis shows managers <b>where</b> and <b>why</b> performance differed from plan so they can take corrective action.</p>`},
+    {h:"Difficulties of budgeting", html:`
+      <p>Budgets rely on <b>forecasts</b> that may be wrong; they can be time-consuming to set; rigid budgets may not suit a changing market; and poorly set budgets can <b>demotivate</b> staff if targets feel unfair or unrealistic.</p>`}
+  ],
+  definitions:[
+    {term:"Budget", marks:2, body:`A financial plan of expected income and spending for a future period <span class="pt">1</span>; it is used to plan, control spending and monitor performance <span class="pt">2</span>.`},
+    {term:"Zero-based budget", marks:2, body:`A budget where every cost must be justified from zero each period rather than based on the past <span class="pt">1</span>; it avoids waste but is time-consuming to prepare <span class="pt">2</span>.`},
+    {term:"Variance", marks:2, body:`The difference between a budgeted figure and the actual figure <span class="pt">1</span>; it is favourable if the result is better than budget and adverse if worse <span class="pt">2</span>.`},
+    {term:"Adverse variance", marks:2, body:`A variance where the actual result is worse than budgeted, such as higher costs or lower revenue <span class="pt">1</span>; it warns managers that corrective action may be needed <span class="pt">2</span>.`}
+  ],
+  practice:[
+    {marks:2, q:"Define the term 'budget'.",
+     model:`A budget is a financial plan of expected income and spending for a future period <span class="pt">1</span>; it is used to plan, control spending and monitor performance <span class="pt">2</span>.`,
+     fb:"Financial-plan-of-income-and-spending plus a use."},
+    {marks:2, q:"A cost was budgeted at &pound;8,000 but the actual cost was &pound;9,200. State the variance and whether it is favourable or adverse.",
+     model:`Variance = &pound;9,200 &minus; &pound;8,000 = &pound;1,200, which is <b>adverse</b> because the actual cost is higher than budgeted <span class="pt">1</span><span class="pt">2</span>.`,
+     fb:"£1,200 adverse — higher cost than planned."},
+    {marks:4, q:"Explain one benefit to a business of using variance analysis.",
+     model:`One benefit is better control of performance <span class="pt">1</span>. Variance analysis shows where actual results differ from the budget <span class="pt">2</span>. This lets managers find the cause, such as rising material costs <span class="pt">3</span>, and take corrective action before the problem grows <span class="pt">4</span>.`,
+     fb:"Names the benefit (control) and chains to finding the cause and acting."}
+  ],
+  caseStudy:{
+    business:"Budgeting and variances",
+    intro:`<p>Questions here involve a business setting budgets and using variance analysis to control costs and monitor performance, and the difficulties this can cause.</p>`
+  },
+  exam:[
+    {marks:10, q:"Assess the usefulness of budgeting to a business trying to control its costs. (10)",
+     model:`<p><span class="tag t-P">POINT</span>Budgeting is useful because it sets clear spending limits. <span class="tag t-A">APPLY</span>Each department is given a budget, and variance analysis compares actual spending against it. <span class="tag t-C">CHAIN</span>This makes managers accountable, helps spot overspending early through adverse variances, and lets the business act before costs get out of control.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, budgeting has drawbacks. <span class="tag t-A">APPLY</span>Budgets are based on forecasts that may be wrong, and a rigid budget may not suit a fast-changing market. <span class="tag t-C">CHAIN</span>Targets that feel unfair can also demotivate staff, and setting zero-based budgets takes significant management time, which has its own cost.</p>
+     <p><span class="tag t-J">CONCLUSION</span>Overall, budgeting is a valuable cost-control tool because it creates accountability and early warning, but it works best when budgets are realistic, reviewed regularly and set with staff involvement, so they motivate rather than demotivate.</p>`,
+     fb:"Model answer (indicative content). Accountability/early-warning benefit vs forecast reliance and motivation risk, judged on how budgets are set."}
+  ],
+  resources:[]
+},
 {code:"2.3.3.1", subtheme:"2.3.3", title:"Profit", business:"Gross/operating/net profit & profitability ratios", status:"soon"},
 {code:"2.3.3.2", subtheme:"2.3.3", title:"Liquidity", business:"Current & acid-test ratios, working capital", status:"soon"},
 {code:"2.3.3.3", subtheme:"2.3.3", title:"Business failure", business:"Internal & external causes", status:"soon"},
