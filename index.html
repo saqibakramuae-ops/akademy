@@ -307,6 +307,9 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .es-badge small{display:block;font-size:10px;font-weight:700;letter-spacing:.5px;opacity:.85;margin-top:3px}
 .es-htext h2{margin:0;font-size:21px;color:var(--ink)}
 .es-htext .ao{font-size:12.5px;font-weight:700;color:#5b4fd6;margin-top:2px}
+.es-note{display:inline-block;background:#eceaff;color:#5b4fd6;border-radius:999px;padding:2px 10px;font-size:11px;font-weight:800;letter-spacing:.3px;margin-left:4px}
+:root:not([data-theme="light"]) .es-note{background:#2a2550}
+:root[data-theme="dark"] .es-note{background:#2a2550}
 .es-intro{font-size:15px;line-height:1.6;color:var(--ink);margin:14px 0}
 .es-bands{font-size:12.5px;color:var(--muted);background:var(--chip);border-radius:10px;padding:9px 13px;margin:10px 0}
 .es-sec{margin:20px 0}
@@ -739,7 +742,7 @@ function openExamSkills(i){
   ES.forEach((x,ix)=>{h+=`<div class="es-tab${ix===i?' active':''}" onclick="openExamSkills(${ix})"><span class="em">${x.marks}</span> mark · ${x.command}</div>`;});
   h+=`</div>`;
   h+=`<div class="es-head"><div class="es-badge">${g.marks}<small>MARK</small></div>
-    <div class="es-htext"><h2>${g.command} &mdash; ${g.tagline}</h2><div class="ao">${g.ao}</div></div></div>`;
+    <div class="es-htext"><h2>${g.command} &mdash; ${g.tagline}</h2><div class="ao">${g.ao}${g.note?` <span class="es-note">${g.note}</span>`:''}</div></div></div>`;
   h+=`<p class="es-intro">${g.intro}</p>`;
   if(g.bands)h+=`<div class="es-bands"><b>Mark bands:</b> ${g.bands}</div>`;
   if(g.pecan){h+=`<div class="es-sec"><h3>The 5&times;5 PECAN structure</h3><div class="es-pecan">`;
@@ -755,17 +758,22 @@ function openExamSkills(i){
       <div class="es-box full"><div class="lbl">Full marks</div><div class="ans">${ex.full}</div>${ex.fullnote?`<div class="note">${ex.fullnote}</div>`:''}</div></div>`;
     }else{h+=`<div class="es-box full"><div class="lbl">Model answer</div><div class="ans">${ex.full}</div>${ex.fullnote?`<div class="note">${ex.fullnote}</div>`:''}</div>`;}
     h+=`</div>`;}
-  if(g.practice){const pr=g.practice;
-    h+=`<div class="es-sec"><h3>Practice</h3>`;
+  if(g.practice){const pr=g.practice;const esd=esLoadAll();const mk=parseInt(g.marks,10)||0;
+    h+=`<div class="es-sec"><h3>Practice — type your answer</h3>`;
     if(pr.intro)h+=`<p class="es-intro" style="margin-top:0">${pr.intro}</p>`;
-    h+=`<ol class="es-pr-q">`;pr.qs.forEach(q=>{h+=`<li>${q}</li>`;});h+=`</ol>`;
-    if(pr.samples&&pr.samples.length){
-      h+=`<details class="es-samples"><summary>Reveal model answers (${pr.samples.length})</summary><div class="sbody">`;
-      pr.samples.forEach(s=>{h+=`<div class="es-samp"><div class="st">${s.t}</div><div class="sa">${s.a}</div></div>`;});
-      h+=`</div></details>`;}
+    pr.qs.forEach((q,qi)=>{const id="es-"+g.marks+"-"+qi,saved=(esd[id]||"").replace(/</g,"&lt;"),s=(pr.samples||[])[qi];
+      h+=`<div class="q" id="q-${id}"><div class="qhead"><div class="num">${qi+1}</div><div class="prompt">${q}</div><div class="marks">${g.marks} marks</div></div>
+        ${timerBar(id,mk)}
+        <textarea placeholder="Plan and type your answer…" oninput="esSave('${id}',this.value)">${saved}</textarea>
+        <div class="qbtns"><button class="btn-ghost" onclick="esToggle('${id}')">💡 Show model answer</button></div>
+        ${s?`<div class="model" id="m-${id}"><h4>Model answer — ${s.t}</h4><div class="sa">${s.a}</div>${aoGuide(mk,q)}</div>`:''}</div>`;});
     h+=`</div>`;}
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
 }
+function espk(){return "akademy_es_"+(USER||"guest");}
+function esLoadAll(){try{return JSON.parse(localStorage.getItem(espk()))||{};}catch(e){return{};}}
+function esSave(id,val){const a=esLoadAll();a[id]=val;try{localStorage.setItem(espk(),JSON.stringify(a));}catch(e){}}
+function esToggle(id){const m=document.getElementById('m-'+id);if(m)m.classList.toggle('show');}
 
 function openTopic(code){
   closeSearch();const t=CURRICULUM.find(x=>x.code===code);if(!t)return;const tp=topicProg(code);
