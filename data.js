@@ -5788,5 +5788,5 @@ window.EXAM_SKILLS = [
 
 // Contact details — fill these in to switch the Contact page live.
 // whatsapp: digits only incl. country code, no + or spaces (e.g. 9715XXXXXXXX). web3key: optional Web3Forms access key for inbox delivery.
-window.CONTACT = { email:"", whatsapp:"", whatsappDisplay:"", web3key:"" };
+window.CONTACT = { email:"mrakademy1@gmail.com", whatsapp:"", whatsappDisplay:"", web3key:"" };
 

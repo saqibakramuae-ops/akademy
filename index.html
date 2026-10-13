@@ -500,7 +500,7 @@ footer img{height:46px;opacity:.9}
 
 <footer class="hidden" id="appFooter">
   <img src="assets/logo-mini.png" alt="Akademy">
-  <div class="foot-links"><a onclick="openAbout()">About Mr Akram</a> <span>·</span> <a onclick="openExamSkills()">Exam skills</a></div>
+  <div class="foot-links"><a onclick="openAbout()">About Mr Akram</a> <span>·</span> <a onclick="openExamSkills()">Exam skills</a> <span>·</span> <a onclick="openContact()">Contact</a></div>
   <div>Akademy &middot; Pearson Edexcel A-Level Business &amp; Economics (9BS0) &middot; &copy; Mr. Akram</div>
 </footer>
 
@@ -823,9 +823,9 @@ function openContact(){
   let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › Contact</div>
   <div class="papers-hero"><div class="eyebrow">Akademy · Business &amp; Economics</div>
     <h1>Get in touch</h1>
-    <p>A question about the site, a topic you'd like added, or interested in one-to-one tutoring with Mr&nbsp;Akram? Send a message below and I'll get back to you.</p></div>
-  <div class="band"><h3>Tutoring with Mr&nbsp;Akram</h3>
-    <p class="sub">I offer a limited number of one-to-one and small-group tutoring places for Pearson Edexcel IGCSE and International A-Level Business &amp; Economics &mdash; focused on exam technique, model answers and targeted practice. Use the form or the buttons below to enquire about availability.</p></div>`;
+    <p>A question about the site, a topic you'd like added, or keen to hear about future tutoring with Mr&nbsp;Akram? Send a message below and I'll get back to you by email.</p></div>
+  <div class="band"><h3>Tutoring &mdash; register your interest</h3>
+    <p class="sub">I'm planning to offer one-to-one and small-group tutoring for Pearson Edexcel IGCSE and International A-Level Business &amp; Economics &mdash; focused on exam technique, model answers and targeted practice. Places aren't open yet, but if you'd like to be first to hear when they are, send a message below and I'll keep you posted.</p></div>`;
   let quick='';
   if(C.email)quick+=`<a class="cc-btn email" href="mailto:${C.email}">&#9993;&nbsp; Email Mr Akram</a>`;
   if(C.whatsapp)quick+=`<a class="cc-btn wa" href="https://wa.me/${C.whatsapp}" target="_blank" rel="noopener">&#128172;&nbsp; Message on WhatsApp</a>`;
@@ -834,7 +834,7 @@ function openContact(){
     <div class="cc-row"><label>Your name<input name="name" required autocomplete="name"></label>
     <label>Your email<input name="email" type="email" required autocomplete="email"></label></div>
     <label>I'm enquiring about
-      <select name="topic"><option>A question about the site</option><option>One-to-one tutoring</option><option>Small-group tutoring</option><option>A topic or resource request</option><option>Something else</option></select></label>
+      <select name="topic"><option>A question about the site</option><option>Register interest in future tutoring</option><option>A topic or resource request</option><option>Feedback</option><option>Something else</option></select></label>
     <label>Message<textarea name="message" rows="5" required placeholder="Tell Mr Akram how he can help…"></textarea></label>
     <button type="submit" class="btn-primary">Send message</button>
     <p class="cc-note" id="ccNote"></p>
