@@ -5534,3 +5534,220 @@ window.CURRICULUM = [
   resources:[]
 },
 ];
+
+window.EXAM_SKILLS = [
+{
+  marks:"2", command:"Define", ao:"Knowledge",
+  tagline:"A complete definition in two parts",
+  intro:`A 2-mark definition earns both marks only when it has <b>two clear elements</b>: first explain the term, then add the detail that completes its meaning. You do <b>not</b> need a business example or a chain of reasoning.`,
+  approach:[
+    "Explain the meaning of the term.",
+    "Add the detail that completes it.",
+    "Check you have <b>explained</b> the term, not just repeated it."
+  ],
+  example:{
+    q:"Define the term 'brand'. (2)",
+    weak:`&ldquo;A brand is a name or symbol.&rdquo;`,
+    weaknote:`Identifies what a brand <i>is</i>, but not what it <i>does</i> — 1 mark at most.`,
+    full:`A name or symbol used to identify a product <span class="mk">1</span> and distinguish it from competitors' products. <span class="mk">1</span>`,
+    fullnote:`Mark 1 — a name/symbol that identifies a product. Mark 2 — it distinguishes the product from competitors.`
+  },
+  practice:{
+    intro:`Give a complete meaning with two clear elements.`,
+    qs:[
+      "Define the term 'demand'. (2)",
+      "Define the term 'supply'. (2)",
+      "Define the term 'market segmentation'. (2)",
+      "Define the term 'secondary market research'. (2)"
+    ],
+    samples:[
+      {t:"Demand", a:`The quantity of a product consumers are willing and able to buy at a given price over a period of time.`},
+      {t:"Supply", a:`The quantity of a product producers are willing and able to offer for sale at a given price over a period of time.`},
+      {t:"Market segmentation", a:`Dividing a market into groups of customers with similar characteristics or needs.`},
+      {t:"Secondary market research", a:`Using existing information previously collected for another purpose.`}
+    ]
+  }
+},
+{
+  marks:"4", command:"Explain", ao:"Knowledge 1 · Application 2 · Analysis 1",
+  tagline:"One point, two case details, one explained consequence",
+  intro:`Build <b>one</b> clear point using a piece of knowledge, <b>two different</b> pieces of case evidence, and an explained consequence. A business name, or a single copied statistic, does <b>not</b> automatically earn application marks.`,
+  approach:[
+    "Identify one relevant point (the knowledge).",
+    "Support it with <b>two different</b> details from the case.",
+    "Explain why they matter: <i>this means… therefore…</i> the business impact.",
+    "Develop the one consequence — no counterargument or conclusion needed."
+  ],
+  routine:`<b>Point or meaning</b> → <b>because</b> + case evidence → <b>this means</b> → <b>therefore</b> the business impact.`,
+  caseName:"FreshSip",
+  caseText:`FreshSip is a fruit-drink business with two shops near schools in Dubai. Its target customers are students aged 13&ndash;18. It sells drinks for AED 12, while nearby caf&eacute;s charge AED 15. It surveyed 80 existing customers and found 60% preferred mango. It did not survey customers of competing caf&eacute;s. It is also considering reusable bottles printed with customers' names, which cost more than its current packaging.`,
+  example:{
+    q:"Explain one benefit to FreshSip of using primary market research before launching its new drink. (4)",
+    weak:`Primary research collects new, first-hand information. It can show which flavour customers prefer, helping the business choose a drink they are more likely to buy and increase sales.`,
+    weaknote:`2/4 — knowledge and an explained consequence, but <b>no FreshSip evidence</b>. It could describe any drinks business.`,
+    full:`Primary market research collects new, first-hand information for a specific purpose <span class="mk">K</span>. FreshSip found that 60% of respondents preferred mango <span class="mk">App</span>. As it targets students aged 13&ndash;18 <span class="mk">App</span>, it can choose a flavour suited to this group, making them more likely to buy the new drink and increasing FreshSip's sales <span class="mk">An</span>.`,
+    fullnote:`4/4 — definition (K), <b>two</b> different case details (60% mango; students 13&ndash;18), and a developed consequence (An).`
+  },
+  practice:{
+    intro:`Use the FreshSip case above. Write one developed paragraph for each.`,
+    qs:[
+      "Explain one limitation to FreshSip of surveying only its existing customers. (4)",
+      "Explain one benefit to FreshSip of market segmentation. (4)",
+      "Explain one benefit to FreshSip of differentiating its products through personalised reusable bottles. (4)",
+      "Explain one reason why demand for FreshSip drinks may increase if nearby caf&eacute;s raise their prices. (4)"
+    ],
+    samples:[
+      {t:"Surveying existing customers only", a:`A sample is a group selected to represent a wider population [K]. FreshSip surveyed 80 existing customers [App] but excluded people who buy from competing caf&eacute;s [App]. Those customers may prefer different flavours, so a drink based only on existing customers' views could fail to attract new buyers and limit the rise in sales [An].`},
+      {t:"Market segmentation", a:`Segmentation divides customers into groups with similar characteristics or needs [K]. FreshSip targets students aged 13&ndash;18 [App] and operates near schools [App]. It can focus its promotion on these students, making advertising more relevant to likely buyers and increasing sales [An].`},
+      {t:"Product differentiation", a:`Differentiation makes a product distinct from competing products [K]. FreshSip would offer reusable bottles [App] printed with customers' names [App]. Customers may value a bottle designed for them, giving a reason to choose FreshSip over competing caf&eacute;s and increasing sales [An].`},
+      {t:"Competitors raising prices", a:`Substitute goods can be used in place of one another [K]. FreshSip sells at AED 12 [App] while nearby caf&eacute;s charge AED 15 [App]. If those caf&eacute;s raise prices, FreshSip becomes relatively cheaper, encouraging some customers to switch and increasing demand [An].`}
+    ]
+  }
+},
+{
+  marks:"6", command:"Analyse (two)", ao:"Knowledge 2 · Application 2 · Analysis 2",
+  tagline:"Two different points, each a full chain",
+  intro:`Write <b>two different</b> points. For each one: a piece of knowledge, case evidence, and an explained consequence. Reporting a finding is <b>not</b> analysis — explain what the business can do with it and why that helps.`,
+  approach:[
+    "Point 1 → case evidence → explained consequence.",
+    "Point 2 (different) → case evidence → explained consequence.",
+    "Keep the two points distinct.",
+    "No counterargument or conclusion is needed."
+  ],
+  routine:`Point → relevant case evidence → explained consequence. Then repeat with a <b>different</b> point. Knowledge is capped at 2 marks, so a definition does not create extra marks.`,
+  caseName:"FreshSip",
+  caseText:`FreshSip sells fruit drinks from two shops near schools in Dubai. It surveyed 80 existing customers: 60% preferred mango, and 70% said they would pay no more than AED 14. It did not question people who buy from competing caf&eacute;s. The research cost AED 5,000 of an AED 8,000 launch budget, leaving less for promotion.`,
+  example:{
+    q:"Analyse two benefits to FreshSip of using primary market research before launching its new drink. (6)",
+    weak:`One benefit is finding out which flavour customers prefer: 60% preferred mango. A second benefit is finding out the price customers will pay: 70% would pay no more than AED 14.`,
+    weaknote:`4/6 — two applied points, but neither is developed. Reporting the findings is not analysis.`,
+    full:`One benefit is finding out which flavour customers prefer <span class="mk">K</span>. FreshSip found 60% preferred mango <span class="mk">App</span>. It can choose a flavour these customers want, making them more likely to buy and increasing sales <span class="mk">An</span>.<br><br>A second benefit is finding the price customers will pay <span class="mk">K</span>. FreshSip found 70% would pay no more than AED 14 <span class="mk">App</span>. Setting a price within this limit prevents customers rejecting the drink as too expensive, helping it sell more <span class="mk">An</span>.`,
+    fullnote:`6/6 — two distinct, applied and developed chains (flavour choice; affordable price), each explaining why purchases could rise.`
+  },
+  practice:{
+    intro:`Questions 1&ndash;2 use FreshSip. Questions 3&ndash;4 use ThreadUp (below) — select evidence from <i>that</i> case. ThreadUp sells casual clothes to students aged 16&ndash;18, with one shop closing at 6 pm, hoodies in school colours printed with names, and plans to sell online with delivery across Dubai (65% of customers would prefer to order online in the evening).`,
+    qs:[
+      "Analyse two benefits to FreshSip of using primary market research before launching its new drink. (6)",
+      "Analyse two limitations to FreshSip of the primary market research it carried out. (6)",
+      "Analyse two benefits to ThreadUp of product differentiation. (6)",
+      "Analyse two benefits to ThreadUp of selling its clothes online. (6)"
+    ],
+    samples:[
+      {t:"1 · FreshSip — benefits of research", a:`One benefit is identifying the preferred flavour [K]. 60% preferred mango [App], so choosing it matches customers' tastes, encouraging purchases and raising sales [An].<br>A second is finding an acceptable price [K]. 70% would pay no more than AED 14 [App], so pricing within this limit reduces rejection and helps increase sales [An].`},
+      {t:"2 · FreshSip — limitations of research", a:`One limitation is an unrepresentative sample [K]. FreshSip did not question competitors' customers [App], whose preferences may differ, so the chosen flavour may fail to attract new buyers and limit sales growth [An].<br>A second is cost [K]. It spent AED 5,000 of its AED 8,000 budget [App], leaving less for promotion, so fewer customers hear about the launch and sales could be lower [An].`},
+      {t:"3 · ThreadUp — differentiation", a:`One benefit is a reason to choose ThreadUp over rivals [K]. It prints customers' names on hoodies [App], so students who value personalisation choose it over a standard hoodie, increasing sales [An].<br>A second is loyalty [K]. It offers hoodies in school colours [App]; students may value matching their school identity and return for similar products, increasing repeat purchases [An].`},
+      {t:"4 · ThreadUp — online selling", a:`One benefit is a wider market [K]. It would deliver across Dubai [App], so customers too far to visit can order from home, increasing potential buyers and sales [An].<br>A second is buying outside shop hours [K]. 65% prefer to order in the evening [App], so a website lets them buy at a convenient time, reducing missed purchases [An].`}
+    ]
+  }
+},
+{
+  marks:"8", command:"Discuss", ao:"Balanced argument · best-fit levels",
+  tagline:"A developed argument and a relevant counterargument",
+  intro:`Develop an applied argument <b>and</b> a relevant counterargument on the <b>same</b> decision. Even when the question asks about benefits, explain why the benefit may be limited; for drawbacks, explain what could reduce the drawback. A one-sided answer cannot reach the top level.`,
+  bands:`Level 1 = 1&ndash;2 · Level 2 = 3&ndash;5 · Level 3 = 6&ndash;8. Marked by <b>best fit</b>, not by adding skill marks.`,
+  approach:[
+    "State one argument and build a chain to a stated objective.",
+    "Use <b>However…</b> to develop a counterargument with <i>different</i> evidence.",
+    "Keep both sides on the same decision.",
+    "End with what the outcome depends on (a conclusion is optional)."
+  ],
+  routine:`One benefit is… → <b>This is because…</b> (case detail) → <b>This means…</b> → <b>Therefore…</b> → <b>As a result…</b> (which objective it supports). Then: <b>However, this may be limited because…</b> (different evidence) → develop the consequence → <b>The extent depends on…</b>`,
+  caseName:"FreshSip",
+  caseText:`FreshSip wants to increase sales by 15% next term by launching a new flavour and attracting customers from competing caf&eacute;s. 60% of 80 surveyed existing customers preferred mango; competitors' customers were not surveyed. Recent student posts favour low-sugar drinks, but the survey asked about flavour, not sugar. Research cost AED 5,000 of an AED 8,000 budget.`,
+  example:{
+    q:"Discuss the benefits to FreshSip of using primary market research before launching its new drink. (8)",
+    weak:`Primary research helps FreshSip choose a flavour customers want — 60% preferred mango, so choosing mango could match their tastes and increase sales. Research also costs money.`,
+    weaknote:`3/8 (Level 2) — one developed side, but the counterpoint (cost) is undeveloped and there is no balance on the same decision.`,
+    full:`Primary research could help FreshSip design a drink its student customers want. Since 60% of those surveyed preferred mango, it has evidence for choosing that flavour rather than guessing. The new drink is then more likely to match the tastes of its 13&ndash;18 target group, so these students may choose it near school, increasing purchases and supporting the 15% sales-growth target. Because the feedback comes from actual FreshSip customers, it is especially useful for encouraging current customers to try the launch.<br><br>However, the 80 respondents were all existing customers, so the findings may not represent students who use competing caf&eacute;s. If these potential new buyers have different preferences, mango may retain current customers without winning enough new purchases for 15% growth. Recent interest in low-sugar drinks also suggests flavour alone may not decide their choice, and the survey did not ask about sugar. This matters because AED 5,000 of the AED 8,000 budget is already spent, leaving only AED 3,000 to promote the launch. The research therefore supports a launch for current customers more than it supports attracting competitors' customers.`,
+    fullnote:`7&ndash;8/8 (Level 3) — both sides applied and developed on the same objective; the balance tests who the sample represents, not a rule that 80 is &lsquo;too few&rsquo;.`
+  },
+  practice:{
+    intro:`Plan a developed argument <b>and</b> counterargument for each.`,
+    qs:[
+      "Discuss the benefits to ThreadUp of selling its clothes online. (8)",
+      "Discuss the drawbacks to ChillCup of using primary market research before opening its kiosk. (8)",
+      "Discuss the benefits for a fast-food business of using emotional branding to promote its products. (8)"
+    ],
+    samples:[
+      {t:"ThreadUp — online selling", a:`Online selling lets ThreadUp take orders after its shop closes at 6 pm. As 65% of its student customers prefer evening online shopping, the website matches their habits, so students buy at a convenient time rather than abandoning the purchase, and delivery across Dubai widens the market beyond those who can visit — supporting sales growth without another shop's rent.<br><br>However, attracting orders is not the same as profit. Delivery costs AED 12 per order: charged on, it may deter students with limited money, especially when a nearby seller offers similar clothes; absorbed, it cuts profit per order, so more orders are needed to recover the AED 18,000 website cost, and returns add cost. The benefit depends on reaching enough new customers who keep their purchases.`},
+      {t:"ChillCup — drawbacks of research", a:`Research uses a large share of the launch money: AED 8,000 of AED 20,000 leaves only AED 12,000 for other needs, so less promotion near the college means fewer students try the kiosk and early sales are weaker. The three-week delay also misses the first week of term, when students form habits with rivals.<br><br>However, opening quickly matters little if the drink does not suit students. An earlier survey found 70% prefer low-sugar drinks; taste tests can identify which low-sugar flavour they enjoy, so ChillCup chooses a product they are more likely to buy again and avoids wasting ingredients. The drawback depends on whether better product choice brings enough repeat purchases to outweigh the cost and lost week.`},
+      {t:"Fast food — emotional branding", a:`Emotional branding connects a brand with customers' feelings. Shared-meal adverts could link the food with friendship, and donations appeal to the 55% who like supporting charities, giving a reason to choose it beyond the meal itself — so customers may return with friends and recommend it, raising repeat purchases.<br><br>However, 65% say price is their main choice factor, and the meal costs AED 18 against a rival's AED 16. Price-sensitive students may keep buying the cheaper option, and the AED 1 donation cost either raises price (more switching) or cuts profit per meal. Emotional branding works best when it actually changes buying behaviour, not just what customers say they support.`}
+    ]
+  }
+},
+{
+  marks:"10", command:"Assess", ao:"Competing arguments + supported judgement",
+  tagline:"Weigh both sides, then judge",
+  intro:`Develop competing arguments using case evidence, then finish with a <b>supported judgement</b>: what you choose, why, its likely effect, and the specific condition success depends on. &ldquo;It depends on demand&rdquo; is too general.`,
+  bands:`Level 1 = 1&ndash;2 · Level 2 = 3&ndash;4 · Level 3 = 5&ndash;7 · Level 4 = 8&ndash;10. Best-fit marking.`,
+  approach:[
+    "Develop argument 1: point → evidence → what changes → why → effect on the objective.",
+    "Develop the opposing argument to a similar depth.",
+    "Judge: <b>choose</b>, give the strongest reason, the likely effect, and the <b>condition</b> for success.",
+    "Pick the condition that actually limits <i>this</i> business and explain its effect."
+  ],
+  routine:`Conclusion = <b>Which?</b> (answer the exact question) · <b>Why?</b> (strongest evidence vs the alternative) · <b>What effect?</b> (on the stated objective) · <b>What does success depend on?</b> (a specific operational condition and how it enables the result).`,
+  caseName:"FreshSip",
+  caseText:`FreshSip wants to increase sales volume 15% next term. Nearby caf&eacute;s charge AED 15; it is considering AED 15 (competitive) or AED 12 (lower introductory). Variable cost is AED 8 per drink. 70% of 80 surveyed customers would pay no more than AED 14. It can make 100 drinks/day and sells 70. Fruit deliveries are sometimes late and queues occur after school. Promotion budget is limited.`,
+  example:{
+    q:"Assess the likely success of using competitive pricing for FreshSip's new drink. (10)",
+    weak:`Competitive pricing means a price near rivals. FreshSip could charge AED 15 like nearby caf&eacute;s, so it is not more expensive, which could help it sell. Ingredients cost AED 8, so it gets AED 7 above cost. Overall, competitive pricing could work because the price is similar to rivals.`,
+    weaknote:`3/10 (Level 2) — knowledge and evidence, but it doesn't weigh the survey against the price or justify a choice.`,
+    full:`Competitive pricing at AED 15 gives AED 7 per drink above the AED 8 variable cost, vs AED 4 at AED 12 — more to cover other costs and fund promotion near the two schools, so more students become aware and try the drink, supporting the sales target; matching caf&eacute;s also avoids looking more expensive.<br><br>However, 70% of the 80 surveyed would pay no more than AED 14. AED 15 could put the drink beyond many students' limit, so fewer try it and 15% growth is harder, even with promotion. A temporary AED 12 price could encourage trial, though each sale then leaves less to cover costs.<br><br>Overall, I would choose the temporary AED 12 price because the survey shows affordability matters to these students; more trial purchases serve the volume objective more than extra contribution from fewer sales. This depends on reliable fruit supplies and quick after-school service so students can actually buy; FreshSip should review contribution before continuing the offer.`,
+    fullnote:`8/10 (Level 4) — both sides developed and judged against the objective, with a clear choice, effect and a specific operational condition.`
+  },
+  practice:{
+    intro:`Each conclusion should choose, justify, explain the effect and name a condition for success.`,
+    qs:[
+      "Assess the likely success of selling online in helping ThreadUp achieve its sales-growth objective. (10)",
+      "Assess whether primary market research is the best way for ChillCup to identify customer needs before opening. (10)",
+      "Assess the benefits to BiteBox of using emotional branding to increase repeat purchases. (10)"
+    ],
+    samples:[
+      {t:"ThreadUp — online selling", a:`Online selling could grow ThreadUp without another branch: 65% prefer evening shopping, so a website captures purchases after 6 pm, and delivery across Dubai widens the market — supporting growth without extra rent.<br><br>However, AED 12 delivery may deter price-sensitive students if charged, or cut contribution if absorbed, so higher sales may give a smaller financial gain; returns and twice-weekly courier collections add cost and delay. Growth depends on reliable fulfilment, not just a website.<br><br>Overall I would support a controlled online launch because evening demand directly serves the objective, prioritising it over another branch. Success depends on accurate stock records (so it doesn't sell unavailable items) and more frequent courier collections; clear sizing would cut returns. Review delivery and return costs before committing beyond AED 18,000.`},
+      {t:"ChillCup — research method", a:`Primary research can close ChillCup's knowledge gap: 70% want low-sugar drinks but the survey gave no flavour, so taste tests reveal the recipe students enjoy, making repeat purchases likely and cutting wasted ingredients — more relevant than a national report.<br><br>However, AED 8,000 is 40% of the budget, leaving less for promotion, and the three-week delay misses the first week of term, letting rivals win habits. The free national report is a quick starting point but can't confirm local tastes.<br><br>Overall I would use the report to narrow options, then run focused local taste tests, rather than secondary research alone. Local evidence best avoids an unpopular launch, but the full AED 8,000 is worth it only if it resolves a real uncertainty. Coordinate testing with the supplier's ten-day lead time so the chosen drink is ready to sell.`},
+      {t:"BiteBox — emotional branding", a:`Emotional branding could give customers a reason to return beyond price: friendship adverts and donations appeal to the 55% who value supporting charities, so they may recommend BiteBox and return with friends, raising repeat purchases and loyalty.<br><br>However, 65% say price is their main factor, and BiteBox charges AED 18 vs a rival's AED 16; many may appreciate the message yet buy cheaper, and the AED 1 donation cost cuts profit or forces a price rise. A positive image doesn't automatically fund the commitment.<br><br>Overall, branding is likely to retain customers who value the charity message, but I would use it alongside good value and service, not alone. Success depends on recording each donation accurately and agreed charity collections; if promised meals aren't delivered, the trust the campaign relies on weakens. Check repeat buying and whether sales cover the donation cost before extending it.`}
+    ]
+  }
+},
+{
+  marks:"20", command:"Evaluate", ao:"PECAN · five paragraphs · supported recommendation",
+  tagline:"The 5×5 PECAN essay",
+  intro:`Use <b>five paragraphs</b>: positive, negative, positive, negative, then a conclusion. Develop <b>different</b> arguments rather than repeating one benefit, and end each main paragraph on a judgement of how significant it is in this case.`,
+  bands:`Level 1 = 1&ndash;4 · Level 2 = 5&ndash;8 · Level 3 = 9&ndash;14 · Level 4 = 15&ndash;20. Best-fit marking — neither length nor connective count guarantees a level.`,
+  pecan:[
+    {k:"P", l:"Point", c:"#1b4fd6", d:"Answer the question with a clear argument."},
+    {k:"E", l:"Explain", c:"#0a7a5c", d:"Explain why, using business knowledge."},
+    {k:"C", l:"Chain", c:"#b8730a", d:"Develop at least two connected consequences."},
+    {k:"A", l:"Application", c:"#7b2fd6", d:"Use specific case evidence throughout."},
+    {k:"N", l:"Now judge", c:"#c92a2a", d:"How significant is the argument — and what does it depend on?"}
+  ],
+  approach:[
+    "Paragraphs 1&ndash;2: option A — a benefit, then a limitation.",
+    "Paragraphs 3&ndash;4: option B — a benefit, then a limitation.",
+    "End each main paragraph with a <b>Now judge</b> sentence on its significance.",
+    "Paragraph 5: choose, justify, reject the alternative, and state what success depends on."
+  ],
+  routine:`Conclusion = the <b>4 Ws</b>: <b>Which</b> option? · <b>Why</b> this one (strongest evidence + objective)? · <b>Why reject</b> the alternative (the trade-off, not just its disadvantage)? · <b>What does success depend on</b> (a specific condition and its consequence)?`,
+  caseName:"FreshSip",
+  caseText:`FreshSip wants 15% sales-volume growth next term while covering operating costs. It could use competitive pricing at AED 15 (matching caf&eacute;s) or penetration pricing at AED 12 for a new mango drink. Variable cost is AED 8. 70% of 80 surveyed existing customers would pay no more than AED 14; rivals' customers were not surveyed. It makes 100 drinks/day and sells 70; queues occur after school and fruit is sometimes late.`,
+  example:{
+    q:"Evaluate whether FreshSip should use competitive pricing or penetration pricing to launch its new drink. (20)",
+    weak:``,
+    weaknote:`Plan: &para;1 competitive — benefit · &para;2 competitive — limitation · &para;3 penetration — benefit · &para;4 penetration — limitation · &para;5 conclusion.`,
+    full:`<b>&para;1 (competitive — benefit):</b> At AED 15, FreshSip gets AED 7 per drink above its AED 8 cost vs AED 4 at AED 12. This extra AED 3 helps cover staffing and promotion when funds are limited, and advertising near the schools could raise trial. <b>Now judge:</b> this financial advantage matters for covering costs, but matching rivals alone gives students no reason to switch — the flavour must justify the price.<br><br><b>&para;2 (competitive — limitation):</b> 70% of 80 existing respondents would pay no more than AED 14, so AED 15 risks discouraging trial among the 13&ndash;18 target; fewer trials mean fewer repeat buyers, weakening 15% growth. <b>Now judge:</b> a strong limit for current customers, though the sample excludes rivals' buyers, so not all potential customers necessarily share this limit.<br><br><b>&para;3 (penetration — benefit):</b> AED 12 fits the surveyed budget and undercuts caf&eacute;s; if students like the flavour they may return and recommend it, raising volume. <b>Now judge:</b> a stronger route to the volume objective because it tackles the price barrier directly, though retention still depends on taste and service.<br><br><b>&para;4 (penetration — limitation):</b> AED 12 leaves only AED 4 contribution, so FreshSip needs 1.75&times; as many sales (7&divide;4) for the same contribution; a 15% rise alone won't offset this, and queues or late fruit could stop students buying. <b>Now judge:</b> the real issue is whether extra completed orders produce enough contribution to cover costs.<br><br><b>&para;5 (conclusion):</b> Overall I would choose a limited AED 12 introductory offer, then review orders, repeat buying and contribution. It serves the student-focused volume objective better than AED 15, but I would not assume 15% growth makes it worthwhile — AED 15 gives more contribution only if enough students accept it. Success depends on agreed fruit delivery times and faster after-school service so interested customers can buy; if the offer mainly discounts sales that would have happened anyway, FreshSip should adjust it.`,
+    fullnote:`~14/20 (top of Level 3). To reach Level 4, sustain comparative judgement and explain which evidence should carry most weight and why the chosen option still wins despite its limitation.`
+  },
+  practice:{
+    intro:`Use PECAN in each main paragraph and end each on a &lsquo;Now judge&rsquo; sentence. Allow about 30 minutes including reading and planning.`,
+    qs:[
+      "Evaluate whether ThreadUp should launch an online shop or open a kiosk to increase sales. (20)",
+      "Evaluate whether ChillCup should use further primary research or rely on secondary research before opening. (20)"
+    ],
+    samples:[
+      {t:"ThreadUp — online shop vs kiosk", a:`<b>&para;1:</b> An online shop reaches more students without another store — 65% prefer evening shopping and delivery across Dubai reaches distant customers, increasing sales beyond the local shop. <b>Now judge:</b> strong for reach, but the survey covers current customers only.<br><br><b>&para;2:</b> AED 12 delivery raises the price if passed on (students may buy nearby) or cuts the money kept per sale if absorbed; handwritten stock could oversell. <b>Now judge:</b> fulfilment accuracy matters more than website traffic.<br><br><b>&para;3:</b> A kiosk lets students try hoodies on, cutting returns, and reaches a new school catchment with no delivery charge. <b>Now judge:</b> good for confidence and service, but less geographic reach than online.<br><br><b>&para;4:</b> The kiosk needs two extra staff and closes at 6 pm, so costs continue and evening shoppers are missed; output can only rise from 45 to 60 hoodies/week. <b>Now judge:</b> either option disappoints buyers if orders exceed supply.<br><br><b>&para;5:</b> I would choose a controlled online launch because evening convenience and wider reach offer the stronger growth route; I would reject the kiosk initially as it misses evening demand and adds staffing cost. Success depends on accurate stock records, realistic delivery promises and enough production to meet confirmed orders — protecting ThreadUp's reliable-service reputation.`},
+      {t:"ChillCup — further primary vs secondary research", a:`<b>&para;1:</b> Primary research can identify the low-sugar flavour local students enjoy — 70% want low sugar but no flavour is known, so taste tests close the gap and cut wasted ingredients. <b>Now judge:</b> directly useful, if the tests resolve the real gap rather than repeat known facts.<br><br><b>&para;2:</b> AED 8,000 is 40% of the budget and the three-week delay misses the first week of term, letting rivals form habits. <b>Now judge:</b> the full programme may cost more than the knowledge gained is worth.<br><br><b>&para;3:</b> Secondary research is free and immediate; the national report preserves the AED 8,000 and allows opening in week one, promoting while students choose where to buy. <b>Now judge:</b> timing is valuable because habits set early.<br><br><b>&para;4:</b> National trends may not match this college, so a widely popular flavour could sell weakly and waste ingredients, and correcting the recipe needs the ten-day supplier lead time. <b>Now judge:</b> fast opening is less useful if a poor product choice undermines repeat purchases.<br><br><b>&para;5:</b> I would use the national report to narrow the choices, then run focused local taste tests, rather than secondary research alone. Primary evidence is stronger for the specific flavour decision, but I would not automatically spend the whole AED 8,000. Success depends on testing representative local students promptly and coordinating the final recipe with the ten-day lead time, turning better knowledge into a drink students can actually buy.`}
+    ]
+  }
+}
+];
