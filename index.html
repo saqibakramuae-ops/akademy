@@ -316,6 +316,19 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 :root:not([data-theme="light"]) .foot-links a{color:#9db6e0}
 :root[data-theme="dark"] .foot-links a{color:#9db6e0}
 .foot-links span{color:var(--muted);margin:0 4px}
+.cc-quick{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+.cc-btn{display:inline-flex;align-items:center;font-weight:700;font-size:15px;text-decoration:none;padding:13px 20px;border-radius:12px;color:#fff}
+.cc-btn.email{background:var(--navy)}
+.cc-btn.wa{background:#25a366}
+.cc-btn:hover{filter:brightness(1.07)}
+.cc-form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);margin-top:6px}
+.cc-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.cc-row{grid-template-columns:1fr}}
+.cc-form label{display:block;font-weight:700;font-size:13.5px;color:var(--ink);margin-bottom:14px}
+.cc-form input,.cc-form select,.cc-form textarea{display:block;width:100%;margin-top:6px;font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 13px;box-sizing:border-box}
+.cc-form textarea{resize:vertical}
+.cc-form .btn-primary{margin-top:4px}
+.cc-note{font-size:13px;color:var(--muted);margin-top:12px}
 .es-intro{font-size:15px;line-height:1.6;color:var(--ink);margin:14px 0}
 .es-bands{font-size:12.5px;color:var(--muted);background:var(--chip);border-radius:10px;padding:9px 13px;margin:10px 0}
 .es-sec{margin:20px 0}
@@ -804,6 +817,43 @@ function openAbout(){
     <div class="cgo">Open →</div></div>`;
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
 }
+
+function openContact(){
+  closeSearch();window._unit=null;const C=window.CONTACT||{};
+  let h=`<div class="crumbs"><span onclick="goHome()">Home</span> › Contact</div>
+  <div class="papers-hero"><div class="eyebrow">Akademy · Business &amp; Economics</div>
+    <h1>Get in touch</h1>
+    <p>A question about the site, a topic you'd like added, or interested in one-to-one tutoring with Mr&nbsp;Akram? Send a message below and I'll get back to you.</p></div>
+  <div class="band"><h3>Tutoring with Mr&nbsp;Akram</h3>
+    <p class="sub">I offer a limited number of one-to-one and small-group tutoring places for Pearson Edexcel IGCSE and International A-Level Business &amp; Economics &mdash; focused on exam technique, model answers and targeted practice. Use the form or the buttons below to enquire about availability.</p></div>`;
+  let quick='';
+  if(C.email)quick+=`<a class="cc-btn email" href="mailto:${C.email}">&#9993;&nbsp; Email Mr Akram</a>`;
+  if(C.whatsapp)quick+=`<a class="cc-btn wa" href="https://wa.me/${C.whatsapp}" target="_blank" rel="noopener">&#128172;&nbsp; Message on WhatsApp</a>`;
+  if(quick)h+=`<div class="cc-quick">${quick}</div>`;
+  h+=`<form class="cc-form" onsubmit="return contactSubmit(event)">
+    <div class="cc-row"><label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Your email<input name="email" type="email" required autocomplete="email"></label></div>
+    <label>I'm enquiring about
+      <select name="topic"><option>A question about the site</option><option>One-to-one tutoring</option><option>Small-group tutoring</option><option>A topic or resource request</option><option>Something else</option></select></label>
+    <label>Message<textarea name="message" rows="5" required placeholder="Tell Mr Akram how he can help…"></textarea></label>
+    <button type="submit" class="btn-primary">Send message</button>
+    <p class="cc-note" id="ccNote"></p>
+  </form>`;
+  if(!C.email&&!C.whatsapp&&!C.web3key)h+=`<p class="cc-note" style="margin-top:14px">Contact details are being set up &mdash; please check back shortly.</p>`;
+  document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
+}
+function contactSubmit(e){e.preventDefault();const C=window.CONTACT||{},f=e.target,note=document.getElementById('ccNote');
+  const name=f.name.value.trim(),email=f.email.value.trim(),topic=f.topic.value,msg=f.message.value.trim();
+  if(C.web3key){note.textContent='Sending…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({access_key:C.web3key,subject:'Akademy enquiry: '+topic,name:name,email:email,message:msg})})
+      .then(r=>r.json()).then(d=>{if(d.success){note.textContent='Thanks — your message has been sent. Mr Akram will reply to '+email+'.';f.reset();}
+        else{note.textContent='Sorry, something went wrong.'+(C.email?' Please email '+C.email+' instead.':'');}})
+      .catch(()=>{note.textContent='Sorry, something went wrong.'+(C.email?' Please email '+C.email+' instead.':'');});
+    return false;}
+  const to=C.email||'';const body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nEnquiry: '+topic+'\n\n'+msg);
+  window.location.href='mailto:'+to+'?subject='+encodeURIComponent('Akademy enquiry: '+topic)+'&body='+body;
+  note.textContent='Your email app should open with the message ready to send.';return false;}
 
 function openTopic(code){
   closeSearch();const t=CURRICULUM.find(x=>x.code===code);if(!t)return;const tp=topicProg(code);
