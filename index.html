@@ -320,7 +320,13 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .cc-btn{display:inline-flex;align-items:center;font-weight:700;font-size:15px;text-decoration:none;padding:13px 20px;border-radius:12px;color:#fff}
 .cc-btn.email{background:var(--navy)}
 .cc-btn.wa{background:#25a366}
+.cc-btn.wa.soon{background:#9fb4ac;cursor:default;color:#eef3f1}
+.cc-btn.wa.soon:hover{filter:none}
 .cc-btn:hover{filter:brightness(1.07)}
+.cc-email{font-size:14px;margin:4px 0 0}
+.cc-email a{color:var(--navy);font-weight:700}
+:root:not([data-theme="light"]) .cc-email a{color:#9db6e0}
+:root[data-theme="dark"] .cc-email a{color:#9db6e0}
 .cc-form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);margin-top:6px}
 .cc-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:560px){.cc-row{grid-template-columns:1fr}}
@@ -470,7 +476,7 @@ footer img{height:46px;opacity:.9}
       <span class="login-feat">&#10003; Works offline</span>
     </div>
   </div>
-  <div class="login-by">Pearson Edexcel A-Level (9BS0) &middot; &copy; Mr. Akram</div>
+  <div class="login-by">Pearson Edexcel International A-Level &middot; &copy; Mr Akram</div>
 </div>
 
 <!-- APP -->
@@ -501,7 +507,7 @@ footer img{height:46px;opacity:.9}
 <footer class="hidden" id="appFooter">
   <img src="assets/logo-mini.png" alt="Akademy">
   <div class="foot-links"><a onclick="openAbout()">About Mr Akram</a> <span>·</span> <a onclick="openExamSkills()">Exam skills</a> <span>·</span> <a onclick="openContact()">Contact</a></div>
-  <div>Akademy &middot; Pearson Edexcel A-Level Business &amp; Economics (9BS0) &middot; &copy; Mr. Akram</div>
+  <div>Akademy &middot; Pearson Edexcel International A-Level Business &amp; Economics &middot; &copy; Mr Akram</div>
 </footer>
 
 <script src="data.js"></script>
@@ -621,7 +627,7 @@ function goHome(){
     <div class="s">Method, worked examples and practice for 2, 4, 6, 8, 10 and 20-mark questions — definitions to full PECAN evaluations.</div></div>
     <div class="cgo">Open →</div></div>`;
   html+=`<div class="section-head"><span class="code">IAL</span><h2>Your courses</h2></div>
-    <p class="sub-sub">Pearson Edexcel International Advanced Level Business (YBS11). Choose a unit to begin.</p><div class="grid">`;
+    <p class="sub-sub">Pearson Edexcel International Advanced Level Business &amp; Economics. Choose a unit to begin.</p><div class="grid">`;
   (window.UNITS||[]).forEach(u=>{const st=unitStats(u.id),live=st.live>0;
     if(live){
       html+=`<div class="tile live" onclick="openUnit('${u.id}')"><div class="thead"><div class="tcode">Unit ${u.id} · ${u.paper}</div><div class="ticon">${u.icon}</div></div>
@@ -829,7 +835,10 @@ function openContact(){
   let quick='';
   if(C.email)quick+=`<a class="cc-btn email" href="mailto:${C.email}">&#9993;&nbsp; Email Mr Akram</a>`;
   if(C.whatsapp)quick+=`<a class="cc-btn wa" href="https://wa.me/${C.whatsapp}" target="_blank" rel="noopener">&#128172;&nbsp; Message on WhatsApp</a>`;
+  else quick+=`<span class="cc-btn wa soon">&#128172;&nbsp; WhatsApp &middot; coming soon</span>`;
   if(quick)h+=`<div class="cc-quick">${quick}</div>`;
+  if(C.email)h+=`<p class="cc-email">Prefer email? Write to <a href="mailto:${C.email}">${C.email}</a></p>`;
+  h+=`<p class="cc-email" style="color:var(--muted)">A WhatsApp line for tutoring enquiries will open here soon.</p>`;
   h+=`<form class="cc-form" onsubmit="return contactSubmit(event)">
     <div class="cc-row"><label>Your name<input name="name" required autocomplete="name"></label>
     <label>Your email<input name="email" type="email" required autocomplete="email"></label></div>
