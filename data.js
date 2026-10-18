@@ -4957,7 +4957,26 @@ window.CURRICULUM = [
      model:`<p><span class="tag t-P">POINT</span>One way to increase revenue is to lower the price. <span class="tag t-A">APPLY</span>If the product has many substitutes, demand is likely to be price-elastic. <span class="tag t-C">CHAIN</span>A lower price then attracts proportionately more buyers, so the rise in quantity sold outweighs the lower price per unit and total revenue increases.</p>
      <p><span class="tag t-J">HOWEVER</span>However, cutting price does not always raise revenue. <span class="tag t-A">APPLY</span>If demand is price-inelastic — for example a product with a strong brand and few substitutes — a lower price reduces revenue per unit without winning many extra sales. <span class="tag t-C">CHAIN</span>Here, raising price or adding value through better quality or promotion would lift revenue instead.</p>
      <p><span class="tag t-J">CONCLUSION</span>Overall, the best method depends on the price elasticity of demand: price cuts suit elastic products, while branding, quality and promotion suit inelastic ones — so the business must know its market before deciding.</p>`,
-     fb:"Model answer (indicative content). Price cut (elastic) vs value/price rise (inelastic), judged on price elasticity of demand."}
+     fb:"Model answer (indicative content). Price cut (elastic) vs value/price rise (inelastic), judged on price elasticity of demand."},
+    {marks:8, q:"Discuss how Lava could increase the sales volume of its Z91 smartphone in Zambia. (8)", caseImg:"resources/casestudies/cs-2-3-2-1-lava.png",
+     model:`<p><span class="tag t-P">POINT</span>One method Lava could use to increase sales volume in Zambia is to offer instalment payment plans through local retailers or mobile network providers. <span class="tag t-A">APPLY</span>The Z91 is priced at $154, which may be too expensive for many consumers to pay all at once in a price-sensitive market like Zambia, leaving many unable to afford the phone upfront. <span class="tag t-C">CHAIN</span>By allowing customers to pay in smaller, more manageable monthly amounts, Lava makes the product accessible to a wider audience, so it could see monthly sales rise above the forecast 2,750 units, strengthening its brand presence and competitiveness.</p>
+     <p><span class="tag t-J">HOWEVER</span>However, one limitation is that instalment plans create financial risk if customers default on payments. <span class="tag t-A">APPLY</span>In a developing economy some customers may have irregular or low income, making it harder to meet instalment deadlines consistently. <span class="tag t-C">CHAIN</span>This leads to potential losses or higher administrative costs for Lava and its retail partners &mdash; even if more units are sold, full payment might not be received, so Lava may face cash-flow problems and have to introduce stricter credit checks, which could reduce the number of eligible customers.</p>`,
+     fb:"Model answer by Mr Akram (Lava, 8). Instalment plans widen access to the $154 Z91 and could lift volume above the forecast 2,750 units, weighed against default and cash-flow risk in a developing economy."},
+    {marks:4, q:"Using the data in Extract A, calculate the percentage change in revenue per trip, following Mario's decision to use social media to promote the scheduled services of the MV Pride. (4)", caseImg:"resources/casestudies/cs-2-3-2-1-mv-pride.png",
+     model:`<p><span class="tag t-P">FORMULA</span>Percentage change = change &divide; original &times; 100.</p>
+     <p><span class="tag t-A">WORKING</span>Revenue per trip before = 8 passengers (80% of 10) &times; $30 = $240.<br>Revenue per trip after = 10 passengers (100%) &times; $30 = $300.</p>
+     <p><span class="tag t-C">ANSWER</span>% change = ($300 &minus; $240) &divide; $240 &times; 100 = <b>+25%</b>.</p>`,
+     fb:"Model answer (MV Pride, 4). Revenue per trip rose from 8&times;$30=$240 (80% full) to 10&times;$30=$300 (100%); % change = 60&divide;240&times;100 = 25%. Quantitative skills QS2/QS5."},
+    {marks:4, q:"In March 2023, Viatour sold 175 bookings for the Belmont Estate tour. Using the data in Extract C, calculate the total fee paid to Viatour for taking these bookings. (4)", caseImg:"resources/casestudies/cs-2-3-2-1-belmont.png",
+     model:`<p><span class="tag t-P">FORMULA</span>Total fee = (tour price &times; Viatour's %) &times; number of bookings.</p>
+     <p><span class="tag t-A">WORKING</span>Fee per booking = $6.00 &times; 17% = $1.02.<br>Total = $1.02 &times; 175 bookings.</p>
+     <p><span class="tag t-C">ANSWER</span>Total fee paid to Viatour = <b>$178.50</b>.</p>`,
+     fb:"Model answer (Belmont Estate, 4). $6.00 &times; 17% = $1.02 per booking; &times; 175 = $178.50 (or $1,050 &times; 17%). Quantitative skills QS2/QS5."},
+    {marks:4, q:"Using the data in Extract C, calculate the monthly sales volume for Sew Sew. (4)", caseImg:"resources/casestudies/cs-2-3-2-1-sew-sew.png",
+     model:`<p><span class="tag t-P">FORMULA</span>Sales volume = sales revenue &divide; price.</p>
+     <p><span class="tag t-A">WORKING</span>Monthly revenue = 480,000 DKK &divide; 12 = 40,000 DKK.<br>Price per bib = 125 DKK.</p>
+     <p><span class="tag t-C">ANSWER</span>Monthly sales volume = 40,000 &divide; 125 = <b>320 bibs</b>.</p>`,
+     fb:"Model answer (Sew Sew, 4). Monthly revenue 480,000&divide;12 = 40,000 DKK; &divide;125 DKK = 320 bibs per month. Quantitative skill QS5."}
   ],
   resources:[]
 },
