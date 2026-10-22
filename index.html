@@ -209,6 +209,10 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .model.show{display:block}
 .model h4{margin:0 0 8px;font-size:13px;color:var(--emerald);text-transform:uppercase;letter-spacing:.5px}
 .model p{margin:9px 0}
+.model.is-sample{border-top-color:var(--emerald);border-left:3px solid var(--emerald);padding-left:14px;background:rgba(16,185,129,.05);border-radius:0 8px 8px 0}
+.model.is-sample h4{color:var(--emerald)}
+.samp-note{margin:0 0 10px!important;font-size:12.5px;font-style:italic;color:var(--muted)}
+.samp-pill{display:inline-block;background:var(--emerald);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;vertical-align:middle;letter-spacing:.3px}
 .fb{background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:10px 14px;border-radius:8px;font-size:13.5px;margin-top:12px}
 .qtimer{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:4px 0 10px}
 .qtimer .tclock{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--navy);min-width:52px}
@@ -908,11 +912,11 @@ function questionBlock(t,type,tp){
       ${q.caseImg?`<a class="cs-view" href="${q.caseImg}" target="_blank" rel="noopener">📄 View the case study for this question ↗</a>`:""}
       ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
-      <div class="qbtns"><button class="btn-ghost" onclick="toggleModel('${id}')">💡 Show model answer</button>
+      <div class="qbtns"><button class="btn-ghost" onclick="toggleModel('${id}')">💡 Show ${q.sample?'sample':'model'} answer</button>${q.sample?`<span class="samp-pill">✍ Sample answer</span>`:``}
       <button class="btn-ghost" onclick="toggleImprove('${id}')">📈 Improve my answer</button>
       <button class="btn-done ${done?'is':''}" id="done-${id}" onclick="toggleDone('${t.code}','${id}')">${done?'✓ Completed':'Mark complete'}</button></div>
       ${improvePanel(id)}
-      <div class="model" id="m-${id}"><h4>Model answer</h4>${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div>${aoGuide(q.marks,q.q)}</div></div>`;});
+      <div class="model${q.sample?' is-sample':''}" id="m-${id}"><h4>${q.sample?'✍ Sample answer':'Model answer'}</h4>${q.sample?`<p class="samp-note">An exam-style sample answer, written to hit the top band.</p>`:``}${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div>${aoGuide(q.marks,q.q)}</div></div>`;});
   return jump+body;
 }
 function toggleImprove(id){document.getElementById('imp-'+id).classList.toggle('show');}
