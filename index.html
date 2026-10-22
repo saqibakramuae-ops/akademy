@@ -268,6 +268,8 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .resitem:hover{border-color:var(--amber)}
 .resitem .ri{font-size:22px}.resitem .rt{flex:1;font-weight:700;font-size:14.5px;color:var(--ink)}
 .resitem .rd{font-size:13px;font-weight:700;color:var(--amber-d)}
+.resitem.is-ppt{border-color:var(--emerald);background:rgba(16,185,129,.06)}
+.resitem.is-ppt .rd{color:var(--emerald)}
 
 /* bands */
 .band{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:24px 0;box-shadow:var(--shadow)}
@@ -896,7 +898,7 @@ function openTopic(code){
   const _csd=(t.caseStudy&&t.caseStudy.docs&&t.caseStudy.docs.length);
   h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p>${_csd?`<p class="cs-examtip">📄 These questions are based on a case study — <a class="cs-link" onclick="gotoSec('case')">open the source material on the Case study tab</a> first.</p>`:''}</div>`+questionBlock(t,"exam",tp)+`</div>`;
   h+=`<div class="section" id="sec-res"><div class="card"><h2>Resources &amp; past papers</h2>`;
-  if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{h+=`<a class="resitem" href="${r.file}" target="_blank" rel="noopener"><span class="ri">📄</span><span class="rt">${r.label}</span><span class="rd">Open →</span></a>`;});h+=`</div>`;}
+  if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{const isppt=/\.pptx?$/i.test(r.file);const ic=isppt?'📊':'📄';const act=isppt?'Download ↓':'Open →';h+=`<a class="resitem${isppt?' is-ppt':''}" href="${r.file}" target="_blank" rel="noopener"><span class="ri">${ic}</span><span class="rt">${r.label}</span><span class="rd">${act}</span></a>`;});h+=`</div>`;}
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
   h+=`</div></div>`;
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);window._topic=code;
