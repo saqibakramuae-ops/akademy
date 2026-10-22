@@ -5841,9 +5841,20 @@ window.CURRICULUM = [
 },
 ];
 
+window.EXAM_SKILLS_GUIDE = {
+  pdf:{label:"Exam structure & answering guide (2026-27)", file:"resources/exam-skills/ial-exam-structure-guide-2026-27.pdf", meta:"Pearson Edexcel IAL Business \u00b7 Units 1\u20134 \u00b7 70-page student booklet"},
+  docx:{label:"Independent skills builder (AO3 & AO4)", file:"resources/exam-skills/independent-skills-builder-2026-27.docx", meta:"6-page practice booklet \u00b7 chains, context & comparative judgement (SCORE, PEAK, 5\u00d75, 4Ws)"},
+  howto:[
+    {k:"Find", d:"Identify the command word and mark tariff, then go straight to the matching guide below."},
+    {k:"Plan", d:"Use the writing framework and recall the structure from memory before reading any model answer."},
+    {k:"Compare", d:"Mark your own context, analytical chains, balance and judgement against the sample answer."},
+    {k:"Improve", d:"Write one precise next action and apply it to a new question within seven days."}
+  ]
+};
 window.EXAM_SKILLS = [
 {
-  marks:"2", command:"Define", ao:"Knowledge",
+  marks:"2", command:"Define",
+  board:{challenge:`Give an accurate, complete definition. No application or analysis is required &mdash; an example may clarify meaning but earns no extra mark by itself.`, mistakes:`A vague or partial meaning; defining a different term from the one named; padding with unnecessary application.`, moveUp:`Underline the key term and give a precise two-part definition (Knowledge, 2 marks) &mdash; then stop.`}, ao:"Knowledge",
   tagline:"A complete definition in two parts",
   intro:`A 2-mark definition earns both marks only when it has <b>two clear elements</b>: first explain the term, then add the detail that completes its meaning. You do <b>not</b> need a business example or a chain of reasoning.`,
   approach:[
@@ -5875,7 +5886,8 @@ window.EXAM_SKILLS = [
   }
 },
 {
-  marks:"4", command:"Explain", ao:"Knowledge 1 · Application 2 · Analysis 1",
+  marks:"4", command:"Explain",
+  board:{challenge:`The same 4-mark tariff can need a completely different method &mdash; recognise whether the examiner wants words (Explain), working (Calculate) or a diagram (Construct) before you begin.`, mistakes:`Defining the term instead of answering an Explain; copying context without using it; hiding calculation working; missing units or rounding; an unlabelled or inaccurate diagram; shifting more than one curve.`, moveUp:`Underline the command word and write a four-step plan in the margin. Explain = reason + two pieces of context + consequence. Calculate = formula, data, working, units. Construct = accurate labels, original position, correct change, new outcome.`}, ao:"Knowledge 1 · Application 2 · Analysis 1",
   tagline:"One point, two case details, one explained consequence",
   intro:`Build <b>one</b> clear point using a piece of knowledge, <b>two different</b> pieces of case evidence, and an explained consequence. A business name, or a single copied statistic, does <b>not</b> automatically earn application marks.`,
   approach:[
@@ -5911,7 +5923,8 @@ window.EXAM_SKILLS = [
   }
 },
 {
-  marks:"6", command:"Analyse (two)", ao:"Knowledge 2 · Application 2 · Analysis 2",
+  marks:"6", command:"Analyse (two)",
+  board:{challenge:`Keeping the two chains distinct while developing each far enough. The second point must add a different line of reasoning, not repeat the first in new words.`, mistakes:`Listing two points; using the same context twice; stopping at 'sales increase' or 'costs fall'; one strong chain and one undeveloped sentence; adding balance when only two analyses are asked for.`, moveUp:`Label Point 1 and Point 2. For each, test: context selected &rarr; cause explained &rarr; consequence reached. If a chain could apply to any business, contextualise it again. (Knowledge 2 &middot; Application 2 &middot; Analysis 2)`}, ao:"Knowledge 2 · Application 2 · Analysis 2",
   tagline:"Two different points, each a full chain",
   intro:`Write <b>two different</b> points. For each one: a piece of knowledge, case evidence, and an explained consequence. Reporting a finding is <b>not</b> analysis — explain what the business can do with it and why that helps.`,
   approach:[
@@ -5947,7 +5960,8 @@ window.EXAM_SKILLS = [
   }
 },
 {
-  marks:"8", command:"Discuss", ao:"Balanced argument · best-fit levels",
+  marks:"8", command:"Discuss",
+  board:{challenge:`Keep both sides similarly developed and applied. The balance point must directly test the original claim and show when, why or to what extent it may not hold.`, mistakes:`Writing only advantages; two benefits with no balance; an unrelated disadvantage; context on one side only; copied evidence; generic impacts; replacing development with an unnecessary conclusion.`, moveUp:`Plan two columns &mdash; claim/benefit, then its limitation or counter-condition. Choose one precise piece of evidence for each and give both chains a clear start and end. A separate conclusion is not required.`}, ao:"Balanced argument · best-fit levels",
   tagline:"A developed argument and a relevant counterargument",
   intro:`Develop an applied argument <b>and</b> a relevant counterargument on the <b>same</b> decision. Even when the question asks about benefits, explain why the benefit may be limited; for drawbacks, explain what could reduce the drawback. A one-sided answer cannot reach the top level.`,
   bands:`Level 1 = 1&ndash;2 · Level 2 = 3&ndash;5 · Level 3 = 6&ndash;8. Marked by <b>best fit</b>, not by adding skill marks.`,
@@ -5982,7 +5996,8 @@ window.EXAM_SKILLS = [
   }
 },
 {
-  marks:"10", command:"Assess", ao:"Competing arguments + supported judgement",
+  marks:"10", command:"Assess",
+  board:{challenge:`Being wide-ranging without becoming shallow. Three or four relevant concepts can help planning, but paragraph count is not the rule &mdash; each argument must still be analysed and weighed.`, mistakes:`An 8-marker followed by 'therefore I agree'; many short points; context on one side only; repeating the question in the conclusion; an absolute judgement with no condition; drifting from the exact issue.`, moveUp:`Circle the decision in the question. Plan the strongest argument, strongest counterargument and likely judgement. Before the conclusion, identify the evidence that makes one side more significant in this situation.`}, ao:"Competing arguments + supported judgement",
   tagline:"Weigh both sides, then judge",
   intro:`Develop competing arguments using case evidence, then finish with a <b>supported judgement</b>: what you choose, why, its likely effect, and the specific condition success depends on. &ldquo;It depends on demand&rdquo; is too general.`,
   bands:`Level 1 = 1&ndash;2 · Level 2 = 3&ndash;4 · Level 3 = 5&ndash;7 · Level 4 = 8&ndash;10. Best-fit marking.`,
@@ -6017,7 +6032,8 @@ window.EXAM_SKILLS = [
   }
 },
 {
-  marks:"12", command:"Assess", ao:"Developed evaluation + supported judgement", note:"Units 3 &amp; 4",
+  marks:"12", command:"Assess",
+  board:{challenge:`Using the case material comparatively, not decorating paragraphs with facts. Evidence should change the judgement by revealing scale, feasibility, risk, timing or another meaningful difference.`, mistakes:`Treating 12 marks as a 10-marker plus a paragraph; copying long extracts; balance without comparison; context on one side only; leaving the strongest evaluation to an unsupported conclusion; a memorised structure that doesn't answer the question.`, moveUp:`Plan competing arguments and attach different evidence to each. Add a comparison sentence before the conclusion &mdash; 'This is more significant than&hellip; because&hellip;' &mdash; and finish with a conditional, evidence-based judgement.`}, ao:"Developed evaluation + supported judgement", note:"Units 3 &amp; 4",
   tagline:"A wider-ranging, balanced assessment",
   intro:`The 12-mark <b>Assess</b> is common in Units 3 and 4. Develop a balanced, wider-ranging assessment: explain different effects, compare their significance, and use the business situation to support a judgement. It is <b>not</b> a 10-marker with two extra sentences &mdash; it gives more scope for a wider range of factors and a stronger comparison. Use PECAN throughout.`,
   bands:`Level 1 = 1&ndash;2 · Level 2 = 3&ndash;4 · Level 3 = 5&ndash;8 · Level 4 = 9&ndash;12. Best-fit marking.`,
@@ -6051,7 +6067,8 @@ window.EXAM_SKILLS = [
 },
 
 {
-  marks:"20", command:"Evaluate", ao:"PECAN · five paragraphs · supported recommendation",
+  marks:"20", command:"Evaluate",
+  board:{challenge:`Sustaining evaluation across the whole essay. Strong answers don't save judgement for the end &mdash; they repeatedly test significance, conditions, objectives, stakeholders and short- versus long-term impact.`, mistakes:`Following a memorised essay regardless of the question; five shallow paragraphs just to complete the 5&times;5; repeating the same context; confusing analysis with evaluation; two isolated options with no comparison; a conclusion that only summarises.`, moveUp:`Write the decision at the top of your plan. For every paragraph check Point &middot; Because &middot; Chain &middot; Application &middot; Judgement, then use the 4Ws conclusion: Which option wins? Why? Why does it outweigh the alternative? What does it depend on?`}, ao:"PECAN · five paragraphs · supported recommendation",
   tagline:"The 5×5 PECAN essay",
   intro:`Use <b>five paragraphs</b>: positive, negative, positive, negative, then a conclusion. Develop <b>different</b> arguments rather than repeating one benefit, and end each main paragraph on a judgement of how significant it is in this case.`,
   bands:`Level 1 = 1&ndash;4 · Level 2 = 5&ndash;8 · Level 3 = 9&ndash;14 · Level 4 = 15&ndash;20. Best-fit marking — neither length nor connective count guarantees a level.`,

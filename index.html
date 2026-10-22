@@ -343,6 +343,27 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .cc-note{font-size:13px;color:var(--muted);margin-top:12px}
 .es-intro{font-size:15px;line-height:1.6;color:var(--ink);margin:14px 0}
 .es-bands{font-size:12.5px;color:var(--muted);background:var(--chip);border-radius:10px;padding:9px 13px;margin:10px 0}
+.es-guide{margin:4px 0 22px}
+.es-dls{display:flex;flex-wrap:wrap;gap:12px}
+.es-dl{flex:1 1 300px;display:flex;align-items:center;gap:13px;border:1px solid var(--line);border-left:3px solid #5b4fd6;border-radius:12px;padding:13px 15px;text-decoration:none;background:var(--card);transition:border-color .14s}
+.es-dl:hover{border-color:#5b4fd6}
+.es-dl .di{font-size:24px;flex:none}
+.es-dl .dt{flex:1;display:flex;flex-direction:column;gap:2px}
+.es-dl .dt b{font-size:14px;color:var(--ink)}
+.es-dl .dt span{font-size:11.5px;color:var(--muted)}
+.es-dl .dd{font-size:12.5px;font-weight:800;color:#5b4fd6;flex:none}
+.es-howto{margin-top:14px;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--chip)}
+.es-howto .hh{font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:#5b4fd6;font-weight:800;margin-bottom:10px}
+.es-howto .hg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 18px}
+.es-howto .hc{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45;color:var(--ink)}
+.es-howto .hn{flex:none;width:21px;height:21px;border-radius:50%;background:#5b4fd6;color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.es-board{border:1px solid var(--line);border-left:4px solid #5b4fd6;border-radius:12px;padding:13px 16px;margin:14px 0;background:rgba(91,79,214,.05)}
+.es-board .ebh{font-size:12px;font-weight:800;letter-spacing:.3px;text-transform:uppercase;color:#5b4fd6;margin-bottom:9px}
+.es-board .ebrow{display:flex;gap:12px;padding:7px 0;border-top:1px dashed var(--line);font-size:13.5px;line-height:1.5}
+.es-board .ebl{flex:none;width:130px;font-weight:800;color:var(--ink)}
+.es-board .ebt{flex:1;color:var(--ink)}
+.es-board .ebsrc{font-size:11px;color:var(--muted);font-style:italic;margin-top:9px}
+@media(max-width:640px){.es-board .ebrow{flex-direction:column;gap:2px}.es-board .ebl{width:auto}}
 .es-sec{margin:20px 0}
 .es-sec h3{font-size:13px;letter-spacing:.4px;text-transform:uppercase;color:#5b4fd6;margin:0 0 10px}
 .es-steps{margin:0;padding-left:22px}
@@ -770,6 +791,14 @@ function openExamSkills(i){
   <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL Business · answer technique</div>
     <h1>Exam skills</h1>
     <p>How to tackle every mark tariff — from a 2-mark definition to a 20-mark evaluation. Each guide shows the method, a worked example built up to full marks, and practice questions with model answers. Based on Mr&nbsp;Akram's teaching worksheets; published exams use their own Pearson mark schemes.</p></div>`;
+  if(window.EXAM_SKILLS_GUIDE){const G=window.EXAM_SKILLS_GUIDE;h+=`<div class="es-guide"><div class="es-dls">`;
+    if(G.pdf)h+=`<a class="es-dl" href="${G.pdf.file}" target="_blank" rel="noopener"><span class="di">📘</span><span class="dt"><b>${G.pdf.label}</b><span>${G.pdf.meta||''}</span></span><span class="dd">Download ↓</span></a>`;
+    if(G.docx)h+=`<a class="es-dl" href="${G.docx.file}" target="_blank" rel="noopener"><span class="di">📝</span><span class="dt"><b>${G.docx.label}</b><span>${G.docx.meta||''}</span></span><span class="dd">Download ↓</span></a>`;
+    h+=`</div>`;
+    if(G.howto&&G.howto.length){h+=`<div class="es-howto"><div class="hh">How to use the guide independently</div><div class="hg">`;
+      G.howto.forEach((x,i)=>{h+=`<div class="hc"><span class="hn">${i+1}</span><div><b>${x.k}.</b> ${x.d}</div></div>`;});
+      h+=`</div></div>`;}
+    h+=`</div>`;}
   h+=`<div class="es-tabs">`;
   ES.forEach((x,ix)=>{h+=`<div class="es-tab${ix===i?' active':''}" onclick="openExamSkills(${ix})"><span class="em">${x.marks}</span> mark · ${x.command}</div>`;});
   h+=`</div>`;
@@ -777,6 +806,11 @@ function openExamSkills(i){
     <div class="es-htext"><h2>${g.command} &mdash; ${g.tagline}</h2><div class="ao">${g.ao}${g.note?` <span class="es-note">${g.note}</span>`:''}</div></div></div>`;
   h+=`<p class="es-intro">${g.intro}</p>`;
   if(g.bands)h+=`<div class="es-bands"><b>Mark bands:</b> ${g.bands}</div>`;
+  if(g.board){const b=g.board;h+=`<div class="es-board"><div class="ebh">📘 Pearson Edexcel 2026-27 · question success guide</div>
+    ${b.challenge?`<div class="ebrow"><span class="ebl">Key challenge</span><span class="ebt">${b.challenge}</span></div>`:''}
+    ${b.mistakes?`<div class="ebrow"><span class="ebl">Common mistakes</span><span class="ebt">${b.mistakes}</span></div>`:''}
+    ${b.moveUp?`<div class="ebrow"><span class="ebl">Move up the marks</span><span class="ebt">${b.moveUp}</span></div>`:''}
+    <div class="ebsrc">From the Exam structure &amp; answering guide (2026-27) — download at the top of this page.</div></div>`;}
   if(g.pecan){h+=`<div class="es-sec"><h3>The 5&times;5 PECAN structure</h3><div class="es-pecan">`;
     g.pecan.forEach(p=>{h+=`<div class="es-pk"><div class="pkl" style="color:${p.c}">${p.k} · ${p.l}</div><p>${p.d}</p></div>`;});
     h+=`</div></div>`;}
