@@ -25,7 +25,7 @@ window.UNITS = [
 window.PAPERS_U1 = [{"year": "2019", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2019-jan-qu.pdf", "ms": "resources/papers/wbs11-2019-jan-ms.pdf", "er": "resources/papers/wbs11-2019-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2019-jun-qu.pdf", "ms": "resources/papers/wbs11-2019-jun-ms.pdf", "er": "resources/papers/wbs11-2019-jun-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2019-oct-qu.pdf", "ms": "resources/papers/wbs11-2019-oct-ms.pdf", "er": "resources/papers/wbs11-2019-oct-er.pdf"}]}, {"year": "2020", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2020-jan-qu.pdf", "ms": "resources/papers/wbs11-2020-jan-ms.pdf", "er": "resources/papers/wbs11-2020-jan-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2020-oct-qu.pdf", "ms": "resources/papers/wbs11-2020-oct-ms.pdf", "er": "resources/papers/wbs11-2020-oct-er.pdf"}]}, {"year": "2021", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2021-jan-qu.pdf", "ms": "resources/papers/wbs11-2021-jan-ms.pdf", "er": "resources/papers/wbs11-2021-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2021-jun-qu.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2021-oct-qu.pdf", "ms": "resources/papers/wbs11-2021-oct-ms.pdf", "er": "resources/papers/wbs11-2021-oct-er.pdf"}]}, {"year": "2022", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2022-jan-qu.pdf", "ms": "resources/papers/wbs11-2022-jan-ms.pdf", "er": "resources/papers/wbs11-2022-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2022-jun-qu.pdf", "ms": "resources/papers/wbs11-2022-jun-ms.pdf", "er": "resources/papers/wbs11-2022-jun-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2022-oct-qu.pdf", "ms": "resources/papers/wbs11-2022-oct-ms.pdf", "er": "resources/papers/wbs11-2022-oct-er.pdf"}]}, {"year": "2023", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2023-jan-qu.pdf", "ms": "resources/papers/wbs11-2023-jan-ms.pdf", "er": "resources/papers/wbs11-2023-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2023-jun-qu.pdf", "ms": "resources/papers/wbs11-2023-jun-ms.pdf", "er": "resources/papers/wbs11-2023-jun-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2023-oct-qu.pdf", "ms": "resources/papers/wbs11-2023-oct-ms.pdf", "er": "resources/papers/wbs11-2023-oct-er.pdf"}]}, {"year": "2024", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2024-jan-qu.pdf", "ms": "resources/papers/wbs11-2024-jan-ms.pdf", "er": "resources/papers/wbs11-2024-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2024-jun-qu.pdf", "ms": "resources/papers/wbs11-2024-jun-ms.pdf", "er": "resources/papers/wbs11-2024-jun-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2024-oct-qu.pdf", "ms": "resources/papers/wbs11-2024-oct-ms.pdf", "er": "resources/papers/wbs11-2024-oct-er.pdf"}]}, {"year": "2025", "series": [{"label": "January", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2025-jan-qu.pdf", "ms": "resources/papers/wbs11-2025-jan-ms.pdf", "er": "resources/papers/wbs11-2025-jan-er.pdf"}, {"label": "June", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2025-jun-qu.pdf", "ms": "resources/papers/wbs11-2025-jun-ms.pdf", "er": "resources/papers/wbs11-2025-jun-er.pdf"}, {"label": "October", "paper": "WBS11/01", "qu": "resources/papers/wbs11-2025-oct-qu.pdf", "ms": "resources/papers/wbs11-2025-oct-ms.pdf", "er": "resources/papers/wbs11-2025-oct-er.pdf"}, {"label": "October (Paper A)", "paper": "WBS11/01A", "qu": "resources/papers/wbs11-2025-oct-a-qu.pdf", "ms": "resources/papers/wbs11-2025-oct-a-ms.pdf", "er": "resources/papers/wbs11-2025-oct-a-er.pdf"}]}];
 window.PAPERS_BY_UNIT = {"1": window.PAPERS_U1, "3": window.PAPERS};
 window.PAPERS_BANK_BY_UNIT = {"3": window.PAPERS_BANK};
-window.REVISION_U1 = {"unit": [{"label": "Theme 1 — full revision notes", "icon": "📘", "file": "resources/revision/rev-unit1-theme1-notes.pdf"}, {"label": "Unit 1 — mind maps", "icon": "🧠", "file": "resources/revision/rev-unit1-mind-maps.pdf"}, {"label": "50 rapid-fire questions", "icon": "⚡", "file": "resources/revision/rev-unit1-50-rapid-fire.pdf"}, {"label": "Rapid-fire Q&A", "icon": "⚡", "file": "resources/revision/rev-unit1-rapid-fire-qa.pdf"}, {"label": "Rapid-fire by section", "icon": "⚡", "file": "resources/revision/rev-unit1-rapid-fire-by-section.pdf"}, {"label": "Quick-revision question bank", "icon": "✏️", "file": "resources/revision/rev-unit1-quick-revision-questions.pdf"}, {"label": "Knowledge check booklet (2–6 marks)", "icon": "📝", "file": "resources/revision/rev-unit1-knowledge-check.pdf"}, {"label": "Exam structure — one page", "icon": "🧭", "file": "resources/revision/rev-unit1-exam-structure.pdf"}, {"label": "20-mark evaluation chain", "icon": "🏅", "file": "resources/revision/rev-unit1-evaluation-chain.pdf"}, {"label": "Unit 1 formula sheet", "icon": "🧮", "file": "resources/revision/rev-unit1-formulas.pdf"}, {"label": "Exam structure & answering guide (2026-27)", "icon": "🧭", "file": "resources/revision/rev-ial-answering-guide.pdf"}, {"label": "Exam structure grid — all papers", "icon": "🗂️", "file": "resources/revision/rev-ial-structure-grid.pdf"}], "sections": [{"code": "1.3.1", "title": "Meeting customer needs", "docs": [{"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-1-3-1-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-1-3-1-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-1-3-1-exam-patterns.pdf"}]}, {"code": "1.3.2", "title": "The market (demand & supply)", "docs": [{"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-1-3-2-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-1-3-2-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-1-3-2-exam-patterns.pdf"}]}, {"code": "1.3.3", "title": "Marketing mix and strategy", "docs": [{"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-1-3-3-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-1-3-3-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-1-3-3-exam-patterns.pdf"}]}, {"code": "1.3.4", "title": "Managing people", "docs": [{"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-1-3-4-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-1-3-4-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-1-3-4-exam-patterns.pdf"}]}, {"code": "1.3.5", "title": "Entrepreneurs and leaders", "docs": [{"label": "Quick-fire questions", "icon": "⚡", "file": "resources/revision/rev-1-3-5-quickfire.pdf"}, {"label": "Mixed-topic practice", "icon": "✏️", "file": "resources/revision/rev-1-3-5-practice.pdf"}, {"label": "Exam patterns & trends", "icon": "📊", "file": "resources/revision/rev-1-3-5-exam-patterns.pdf"}]}]};
+window.REVISION_U1 = {"unit":[{"label":"Theme 1 — full revision notes","icon":"📘","file":"resources/revision/rev-unit1-theme1-notes.pdf"},{"label":"Unit 1 — mind maps","icon":"🧠","file":"resources/revision/rev-unit1-mind-maps.pdf"},{"label":"50 rapid-fire questions","icon":"⚡","file":"resources/revision/rev-unit1-50-rapid-fire.pdf"},{"label":"Rapid-fire Q&A","icon":"⚡","file":"resources/revision/rev-unit1-rapid-fire-qa.pdf"},{"label":"Rapid-fire by section","icon":"⚡","file":"resources/revision/rev-unit1-rapid-fire-by-section.pdf"},{"label":"Quick-revision question bank","icon":"✏️","file":"resources/revision/rev-unit1-quick-revision-questions.pdf"},{"label":"Knowledge check booklet (2–6 marks)","icon":"📝","file":"resources/revision/rev-unit1-knowledge-check.pdf"},{"label":"Exam structure — one page","icon":"🧭","file":"resources/revision/rev-unit1-exam-structure.pdf"},{"label":"20-mark evaluation chain","icon":"🏅","file":"resources/revision/rev-unit1-evaluation-chain.pdf"},{"label":"Unit 1 formula sheet","icon":"🧮","file":"resources/revision/rev-unit1-formulas.pdf"},{"label":"Exam structure & answering guide (2026-27)","icon":"🧭","file":"resources/revision/rev-ial-answering-guide.pdf"},{"label":"Exam structure grid — all papers","icon":"🗂️","file":"resources/revision/rev-ial-structure-grid.pdf"}],"sections":[{"code":"1.3.1","title":"Meeting customer needs","docs":[{"label":"The market — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/the-market.pptx"},{"label":"Market research — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/market-research.pptx"},{"label":"Market positioning — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/market-positioning.pptx"},{"label":"Quick-fire questions","icon":"⚡","file":"resources/revision/rev-1-3-1-quickfire.pdf"},{"label":"Mixed-topic practice","icon":"✏️","file":"resources/revision/rev-1-3-1-practice.pdf"},{"label":"Exam patterns & trends","icon":"📊","file":"resources/revision/rev-1-3-1-exam-patterns.pdf"}]},{"code":"1.3.2","title":"The market (demand & supply)","docs":[{"label":"Demand, supply & market equilibrium — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/demand-supply-equilibrium.pptx"},{"label":"Price & income elasticity (PED & YED) — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/ped-yed.pptx"},{"label":"Quick-fire questions","icon":"⚡","file":"resources/revision/rev-1-3-2-quickfire.pdf"},{"label":"Mixed-topic practice","icon":"✏️","file":"resources/revision/rev-1-3-2-practice.pdf"},{"label":"Exam patterns & trends","icon":"📊","file":"resources/revision/rev-1-3-2-exam-patterns.pdf"}]},{"code":"1.3.3","title":"Marketing mix and strategy","docs":[{"label":"Marketing mix & strategy — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/marketing.pptx"},{"label":"The design mix — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/design-mix.pptx"},{"label":"Promotion & branding — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/promotion-branding.pptx"},{"label":"Pricing strategies — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/pricing-strategies.pptx"},{"label":"Distribution (place) — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/distribution.pptx"},{"label":"Quick-fire questions","icon":"⚡","file":"resources/revision/rev-1-3-3-quickfire.pdf"},{"label":"Mixed-topic practice","icon":"✏️","file":"resources/revision/rev-1-3-3-practice.pdf"},{"label":"Exam patterns & trends","icon":"📊","file":"resources/revision/rev-1-3-3-exam-patterns.pdf"}]},{"code":"1.3.4","title":"Managing people","docs":[{"label":"Approaches to staffing — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/approaches-to-staffing.pptx"},{"label":"Recruitment, selection & training — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/recruitment-selection-training.pptx"},{"label":"Organisational design — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/organisational-design.pptx"},{"label":"Motivation — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/motivation.pptx"},{"label":"Leadership — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/leadership.pptx"},{"label":"Quick-fire questions","icon":"⚡","file":"resources/revision/rev-1-3-4-quickfire.pdf"},{"label":"Mixed-topic practice","icon":"✏️","file":"resources/revision/rev-1-3-4-practice.pdf"},{"label":"Exam patterns & trends","icon":"📊","file":"resources/revision/rev-1-3-4-exam-patterns.pdf"}]},{"code":"1.3.5","title":"Entrepreneurs and leaders","docs":[{"label":"Role of an entrepreneur — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/role-of-entrepreneur.pptx"},{"label":"Entrepreneurial characteristics & motives — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/entrepreneurial-characteristics.pptx"},{"label":"Business objectives — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/business-objectives.pptx"},{"label":"Business choices — summary slides (PowerPoint)","icon":"📊","file":"resources/powerpoints/business-choices.pptx"},{"label":"Quick-fire questions","icon":"⚡","file":"resources/revision/rev-1-3-5-quickfire.pdf"},{"label":"Mixed-topic practice","icon":"✏️","file":"resources/revision/rev-1-3-5-practice.pdf"},{"label":"Exam patterns & trends","icon":"📊","file":"resources/revision/rev-1-3-5-exam-patterns.pdf"}]}]};
 window.REVISION_BY_UNIT = {"1": window.REVISION_U1, "3": window.REVISION};
 
 window.CURRICULUM = [
@@ -2718,7 +2718,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Morrisons, 20). Full evaluation of price-cutting vs customer experience with the Aldi/Lidl share figures, recommending experience with competitive key prices."}
   ],
   resources:[
-    {label:"The market \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/the-market.pptx"},
     {label:"The market (mass/niche, size & share, competition, risk) — lesson notes (PDF)", file:"resources/1-3-1-1-the-market-notes.pdf"},
     {label:"Market size, share & growth — calculation practice (PDF)", file:"resources/1-3-1-1-market-calcs-practice.pdf"}
   ]
@@ -2831,7 +2830,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (BYD UAE, 10). Uses the 25/55/20 age split to justify stratified sampling's representativeness, balanced against its cost/time vs quota, with a conditional judgement."}
   ],
   resources:[
-    {label:"Market research \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/market-research.pptx"},
     {label:"Market research, data types & sampling — lesson notes (PDF)", file:"resources/1-3-1-2-market-research-notes.pdf"},
     {label:"Sampling methods \u2014 quick guide (PDF)", file:"resources/1-3-1-2-sampling-quick-guide.pdf"}
   ]
@@ -2943,7 +2941,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Emirates, 10). Gap-spotting benefit of market mapping balanced against the risk that gaps exist for valid reasons, concluding it needs deeper research."}
   ],
   resources:[
-    {label:"Market positioning & segmentation \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/market-positioning.pptx"},
     {label:"Market positioning, mapping & segmentation — lesson notes (PDF)", file:"resources/1-3-1-3-market-positioning-notes.pdf"}
   ]
 },
@@ -3020,7 +3017,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Ape Snacks, 10). An increasing factor (endorsement) and a decreasing factor (competition), each with a counter, and a tastes/competition judgement."}
   ],
   resources:[
-    {label:"Demand, supply & market equilibrium \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/demand-supply-equilibrium.pptx"},
     {label:"Theory of demand — lesson notes (PDF)", file:"resources/1-3-2-1-demand-notes.pdf"}
   ]
 },
@@ -3088,7 +3084,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Beaverbrooks, 8). Input price (silver) and technology, each developed and balanced with a counter."}
   ],
   resources:[
-    {label:"Demand, supply & market equilibrium \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/demand-supply-equilibrium.pptx"},
     {label:"Theory of supply — lesson notes (PDF)", file:"resources/1-3-2-2-supply-notes.pdf"}
   ]
 },
@@ -3171,7 +3166,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (gym surge). Demand-right analysis plus fixed short-run supply, judged on how lasting the surge is."}
   ],
   resources:[
-    {label:"Demand, supply & market equilibrium \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/demand-supply-equilibrium.pptx"},
     {label:"Interaction of demand & supply (equilibrium) — lesson notes (PDF)", file:"resources/1-3-2-3-equilibrium-notes.pdf"},
     {label:"Supply & demand shifts \u2014 construct practice (PDF)", file:"resources/1-3-2-3-construct-practice.pdf"}
   ]
@@ -3257,7 +3251,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (M&S, 8). Substitutes and loyalty shape PED, balanced by a judgement that non-price factors may matter more."}
   ],
   resources:[
-    {label:"Price & income elasticity of demand (PED & YED) \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/ped-yed.pptx"},
     {label:"Price elasticity of demand (PED) — lesson notes (PDF)", file:"resources/1-3-2-4-ped-notes.pdf"},
     {label:"PED & YED \u2014 calculation practice (PDF)", file:"resources/1-3-2-ped-yed-calc-practice.pdf"}
   ]
@@ -3326,7 +3319,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (YED, 10). Forecasting and balanced-range uses, balanced against the limits of estimated YED values, with a 'use alongside other tools' judgement."}
   ],
   resources:[
-    {label:"Price & income elasticity of demand (PED & YED) \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/ped-yed.pptx"},
     {label:"Income elasticity of demand (YED) — lesson notes (PDF)", file:"resources/1-3-2-5-yed-notes.pdf"},
     {label:"PED & YED \u2014 calculation practice (PDF)", file:"resources/1-3-2-ped-yed-calc-practice.pdf"}
   ]
@@ -3453,7 +3445,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar. Differences in mix/branding balanced against shared marketing principles, judged on how distinct the segments are."}
   ],
   resources:[
-    {label:"Marketing mix & strategy \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/marketing.pptx"},
     {label:"Marketing strategy, PLC & Boston Matrix — lesson notes (PDF)", file:"resources/1-3-3-1-marketing-strategy-notes.pdf"},
     {label:"Boston Matrix — activity pack with answer key (PDF)", file:"resources/1-3-3-1-boston-matrix-activity.pdf"}
   ]
@@ -3526,7 +3517,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Lehman's, 10). Function as dominant (durability/reputation) balanced against aesthetics, concluding 'function first, but balanced'."}
   ],
   resources:[
-    {label:"The design mix \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/design-mix.pptx"},
     {label:"The design mix — lesson notes (PDF)", file:"resources/1-3-3-2-design-mix-notes.pdf"}
   ]
 },
@@ -3624,7 +3614,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Mars, 12). Two promotion methods, each with a developed benefit and a counter, plus a combined judgement."}
   ],
   resources:[
-    {label:"Promotion & branding \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/promotion-branding.pptx"},
     {label:"Promotion — lesson notes (PDF)", file:"resources/1-3-3-3-promotion-notes.pdf"},
     {label:"Branding — lesson notes (PDF)", file:"resources/1-3-3-3-branding-notes.pdf"}
   ]
@@ -3716,7 +3705,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Ryanair, 20). Both strategies developed with a benefit and a drawback, applied to the extract, and a justified combined recommendation."}
   ],
   resources:[
-    {label:"Pricing strategies \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/pricing-strategies.pptx"},
     {label:"Pricing strategies — lesson notes (PDF)", file:"resources/1-3-3-4-pricing-notes.pdf"}
   ]
 },
@@ -3816,7 +3804,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Nike, 20 — top band). Two developed benefits and two risks, all applied, with a judged conclusion plus the comparative Adidas point examiners wanted for full marks."}
   ],
   resources:[
-    {label:"Distribution (place) \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/distribution.pptx"},
     {label:"Place &amp; distribution channels — lesson notes (PDF)", file:"resources/1-3-3-5-distribution-notes.pdf"}
   ]
 },
@@ -3926,7 +3913,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Sports Direct, 20 — top band 19/20). Zero-hour vs part-time each developed with benefit and drawback, context (670 stores, low margins), and a hybrid judgement."}
   ],
   resources:[
-    {label:"Approaches to staffing \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/approaches-to-staffing.pptx"},
     {label:"Approaches to staffing — lesson notes (PDF)", file:"resources/1-3-4-1-staffing-notes.pdf"},
     {label:"Flexible working practices — lesson notes (PDF)", file:"resources/1-3-4-1-flexible-working-notes.pdf"},
     {label:"Employer/employee relationships — lesson notes (PDF)", file:"resources/1-3-4-1-employer-employee-notes.pdf"}
@@ -4015,7 +4001,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Disney, 10). On-the-job strengths (practical, cheap, global) vs reliability limits, with a blended-approach judgement."}
   ],
   resources:[
-    {label:"Recruitment, selection & training \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/recruitment-selection-training.pptx"},
     {label:"Recruitment &amp; selection — lesson notes (PDF)", file:"resources/1-3-4-2-recruitment-notes.pdf"},
     {label:"Training — lesson notes (PDF)", file:"resources/1-3-4-2-training-notes.pdf"}
   ]
@@ -4129,7 +4114,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Tata Motors, 20). Two efficiency gains (speed, motivation) vs two risks (lost expertise, over-wide spans), linked to average costs with a managed-change judgement."}
   ],
   resources:[
-    {label:"Organisational design \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/organisational-design.pptx"},
     {label:"Organisational structures (tall, flat &amp; delayering) — notes (PDF)", file:"resources/1-3-4-3-structures-notes.pdf"},
     {label:"Centralisation &amp; decentralisation — notes (PDF)", file:"resources/1-3-4-3-centralisation-notes.pdf"},
     {label:"Matrix structure — notes (PDF)", file:"resources/1-3-4-3-matrix-notes.pdf"}
@@ -4228,7 +4212,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Barclays, 20). Financial vs non-financial weighed with PPI/fines context and Herzberg/Taylor, concluding on a balanced strategy."}
   ],
   resources:[
-    {label:"Motivation in theory & practice \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/motivation.pptx"},
     {label:"Motivation theories — lesson notes (PDF)", file:"resources/1-3-4-4-motivation-theories-notes.pdf"},
     {label:"Financial &amp; non-financial methods — lesson notes (PDF)", file:"resources/1-3-4-4-motivation-methods-notes.pdf"}
   ]
@@ -4309,7 +4292,6 @@ window.CURRICULUM = [
      fb:"Model answer (Disney, 20). Paternalistic vs democratic each with a benefit and drawback, applied to front-line guest service, with a justified recommendation and rejection."}
   ],
   resources:[
-    {label:"Leadership \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/leadership.pptx"},
     {label:"Leadership styles — lesson notes (PDF)", file:"resources/1-3-4-5-leadership-styles-notes.pdf"},
     {label:"Entrepreneur to leader — lesson notes (PDF)", file:"resources/1-3-4-5-entrepreneur-to-leader-notes.pdf"}
   ]
@@ -4386,7 +4368,6 @@ window.CURRICULUM = [
      fb:"Model answer (Sony, 10). Intrapreneurship benefit (transformative innovation) vs risk ($2.5bn bet, internal conflict), applied to the PlayStation, with a conditional judgement."}
   ],
   resources:[
-    {label:"Role of an entrepreneur \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/role-of-entrepreneur.pptx"},
     {label:"Intrapreneurship &amp; barriers to entrepreneurship — notes (PDF)", file:"resources/1-3-5-1-intrapreneurship-notes.pdf"}
   ]
 },
@@ -4462,7 +4443,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Richard Mille, 10). Risk-taking as the source of innovation/premium pricing, balanced by the need to manage it with experience and strategy."}
   ],
   resources:[
-    {label:"Entrepreneurial characteristics & motives \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/entrepreneurial-characteristics.pptx"},
     {label:"Entrepreneurial motives &amp; characteristics — notes (PDF)", file:"resources/1-3-5-2-motives-characteristics-notes.pdf"}
   ]
 },
@@ -4536,7 +4516,6 @@ window.CURRICULUM = [
      fb:"Mr. Akram's exemplar (Little Dessert Shop, 10). Profit as a focus for growth vs the risk of short-term corner-cutting, with a balanced judgement."}
   ],
   resources:[
-    {label:"Business objectives \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/business-objectives.pptx"},
     {label:"Corporate objectives — lesson notes (PDF)", file:"resources/1-3-5-3-corporate-objectives-notes.pdf"}
   ]
 },
@@ -4599,7 +4578,6 @@ window.CURRICULUM = [
      fb:"Model answer (Farmhopping, 10), built on the exam board's indicative content. Trade-off (higher costs) vs no-trade-off (USP, loyalty, long-term land benefits), judged on whether consumers value ethics over price."}
   ],
   resources:[
-    {label:"Business choices \u2014 revision summary slides (PowerPoint)", file:"resources/powerpoints/business-choices.pptx"},
     {label:"Business choices (opportunity cost &amp; trade-offs) — notes (PDF)", file:"resources/1-3-5-5-business-choices-notes.pdf"}
   ]
 },
