@@ -265,6 +265,7 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .qbtns{display:flex;gap:10px;flex-wrap:wrap}
 .btn-ghost{background:var(--chip);border:1px solid var(--line);color:var(--ink);padding:11px 16px;border-radius:10px;font-weight:700;font-size:14px;min-height:44px}
 .btn-ghost:hover{border-color:var(--amber)}
+.btn-ghost.is-sample-btn{border-color:var(--emerald);box-shadow:inset 3px 0 0 var(--emerald)}
 .btn-done{background:var(--emerald);border:none;color:#fff;padding:11px 16px;border-radius:10px;font-weight:700;font-size:14px;min-height:44px}
 .btn-done.is{background:var(--chip);color:var(--emerald);border:1px solid var(--emerald)}
 .model{display:none;margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;font-size:14.5px}
@@ -1016,7 +1017,7 @@ function questionBlock(t,type,tp){
       ${q.caseImg?`<a class="cs-view" href="${q.caseImg}" target="_blank" rel="noopener">📄 View the case study for this question ↗</a>`:""}
       ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
-      <div class="qbtns"><button class="btn-ghost" onclick="toggleModel('${id}')">💡 Show ${q.sample?'sample':'model'} answer</button>${q.sample?`<span class="samp-pill">✍ Sample answer</span>`:``}
+      <div class="qbtns"><button class="btn-ghost${q.sample?' is-sample-btn':''}" onclick="toggleModel('${id}')">💡 Show ${q.sample?'sample':'model'} answer</button>
       <button class="btn-ghost" onclick="toggleImprove('${id}')">📈 Improve my answer</button>
       <button class="btn-done ${done?'is':''}" id="done-${id}" onclick="toggleDone('${t.code}','${id}')">${done?'✓ Completed':'Mark complete'}</button></div>
       ${improvePanel(id)}
