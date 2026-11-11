@@ -657,18 +657,6 @@ function goHome(){
       <div class="hstat"><div class="n">${ov.dn}</div><div class="l">Completed by you</div></div>
       <div class="hstat"><div class="n">${ov.pct}<span class="u">%</span></div><div class="l">Overall progress</div></div>
     </div></div>`;
-  const ct=continueTopic();
-  if(ct){const p=pct(ct),started=p>0,cu=String(ct.subtheme).split('.')[0];
-    html+=`<div class="continue" onclick="openTopic('${ct.code}')"><div class="ci">${ICONS[ct.code]||'📊'}</div>
-      <div class="ct"><div class="k">${started?'Continue where you left off':'Start here'}</div>
-      <div class="t">${ct.code} · ${ct.title}</div>
-      <div class="s">Unit ${cu} · ${started?(doneCount(ct)+'/'+totalQs(ct)+' complete · '+p+'%'):(totalQs(ct)+' questions · notes, definitions &amp; model answers')}</div></div>
-      <div class="cgo">${started?'Resume →':'Begin →'}</div></div>`;}
-  html+=`<div class="ppr-cta es-cta" onclick="openExamSkills()"><div class="ci">✍️</div>
-    <div class="ct"><div class="k">Exam skills</div>
-    <div class="t">How to answer every mark tariff</div>
-    <div class="s">Method, worked examples and practice for 2, 4, 6, 8, 10 and 20-mark questions — definitions to full PECAN evaluations.</div></div>
-    <div class="cgo">Open →</div></div>`;
   html+=`<div class="section-head"><span class="code">IAL</span><h2>Your courses</h2></div>
     <p class="sub-sub">Pearson Edexcel International Advanced Level Business &amp; Economics. Choose a unit to begin.</p><div class="grid">`;
   (window.UNITS||[]).forEach(u=>{const st=unitStats(u.id),live=st.live>0;
