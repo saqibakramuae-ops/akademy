@@ -302,6 +302,8 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .cs-examtip{margin:10px 0 0;font-size:13.5px;background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:9px 12px;border-radius:8px}
 .cs-view{display:inline-block;margin:2px 0 10px;background:var(--navy);color:#fff;border:none;padding:9px 14px;border-radius:9px;font-weight:700;font-size:13.5px;text-decoration:none}
 .cs-view:hover{background:var(--amber-d)}
+.cs-context{background:#f4f8fd;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:10px;padding:12px 14px;margin:2px 0 12px;font-size:14px;line-height:1.55;color:var(--ink)}
+.cs-ctx-label{display:block;font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--navy);margin-bottom:5px;text-transform:uppercase}
 .tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;margin-right:4px;vertical-align:middle;letter-spacing:.3px}
 .t-P{background:#e3edff;color:#1b4fd6}.t-E{background:#e7f6ef;color:#0a7a5c}
 .t-C{background:#fff2d9;color:#b8730a}.t-A{background:#f1e6ff;color:#7b2fd6}.t-J{background:#ffe3e3;color:#c92a2a}
@@ -1015,6 +1017,7 @@ function questionBlock(t,type,tp){
   let body="";arr.forEach((q,i)=>{const id=type+"-"+i,done=tp.done[id],saved=(tp.answers[id]||"").replace(/</g,"&lt;");
     body+=`<div class="q ${done?'done':''}" id="q-${id}"><div class="qhead"><div class="num">${i+1}</div><div class="prompt">${q.q}</div><div class="marks">${q.marks} marks</div></div>
       ${q.caseImg?`<a class="cs-view" href="${q.caseImg}" target="_blank" rel="noopener">📄 View the case study for this question ↗</a>`:""}
+      ${q.caseText?`<div class="cs-context"><span class="cs-ctx-label">📄 Case context</span>${q.caseText}</div>`:""}
       ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
       <div class="qbtns"><button class="btn-ghost${q.sample?' is-sample-btn':''}" onclick="toggleModel('${id}')">💡 Show ${q.sample?'sample':'model'} answer</button>
