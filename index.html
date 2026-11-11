@@ -163,6 +163,68 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .tab{background:var(--card);border:1px solid var(--line);color:var(--muted);padding:10px 16px;border-radius:999px;
   font-size:14px;font-weight:700;white-space:nowrap;flex:none;min-height:42px}
 .tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tab.tab-quiz{background:linear-gradient(135deg,#F5A623,#f7b944);color:#3b2600;border-color:var(--amber-d);
+  font-size:15px;padding:11px 20px;min-height:46px;box-shadow:0 5px 16px rgba(245,166,35,.38);animation:qzpulse 2.6s ease-in-out infinite}
+.tab.tab-quiz:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.tab.tab-quiz.active{background:linear-gradient(135deg,#e2890f,#f0a51c);color:#fff;animation:none;box-shadow:0 6px 18px rgba(217,139,6,.45)}
+@keyframes qzpulse{0%,100%{box-shadow:0 5px 16px rgba(245,166,35,.30)}50%{box-shadow:0 7px 22px rgba(245,166,35,.55)}}
+@media(prefers-reduced-motion:reduce){.tab.tab-quiz{animation:none}}
+.quiz-intro{text-align:center}
+.qz-badge{display:inline-block;background:var(--amber);color:#3b2600;font-weight:800;font-size:12px;letter-spacing:.08em;padding:4px 12px;border-radius:999px;margin-bottom:6px}
+.quiz-intro h2{margin:.2em 0}
+.qz-meta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:14px 0;color:var(--muted);font-size:13.5px;font-weight:600}
+.qz-meta span{background:var(--chip);padding:6px 12px;border-radius:999px}
+.qz-timedtoggle{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:13.5px;margin:6px 0 14px;cursor:pointer}
+.qz-start{background:var(--navy);color:#fff;border:none;font-weight:800;font-size:16px;padding:13px 26px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
+.qz-start:hover{background:var(--navy-2)}
+.qz-prev{margin-top:12px;color:var(--muted);font-size:13px}
+.qz-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.qz-pill{background:var(--chip);color:var(--navy);font-weight:700;font-size:12.5px;padding:5px 11px;border-radius:999px}
+.qz-pill.alt{background:#eaf5f1;color:#0a7a5c}
+.qz-pill.ghost{background:transparent;color:var(--muted);font-weight:600}
+.qz-clock{margin-left:auto;background:var(--navy);color:#fff;font-weight:800;min-width:40px;text-align:center;padding:5px 10px;border-radius:999px}
+.qz-clock.low{background:#c92a2a}
+.qz-prog{height:7px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:16px}
+.qz-prog i{display:block;height:100%;background:linear-gradient(90deg,var(--navy),var(--emerald));transition:width .3s}
+.qz-q{font-size:19px;line-height:1.4;margin:0 0 16px}
+.qz-opts{display:flex;flex-direction:column;gap:10px}
+.qz-opt{display:flex;align-items:center;gap:12px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px;font-weight:600;color:var(--ink);cursor:pointer;transition:.15s;width:100%}
+.qz-opt:hover{border-color:var(--navy)}
+.qz-opt .qz-let{flex:none;width:28px;height:28px;border-radius:7px;background:var(--chip);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:13px}
+.qz-opt.sel{border-color:var(--navy);background:#f3f7fc}
+.qz-opt.sel .qz-let{background:var(--navy);color:#fff}
+.qz-opt.correct{border-color:var(--emerald);background:#eafaf4}
+.qz-opt.correct .qz-let{background:var(--emerald);color:#fff}
+.qz-opt.wrong{border-color:#c92a2a;background:#fdecec}
+.qz-opt.wrong .qz-let{background:#c92a2a;color:#fff}
+.qz-opt:disabled{cursor:default}
+.qz-fb{margin-top:14px;padding:12px 14px;border-radius:10px;font-weight:700;font-size:14px}
+.qz-fb span{display:block;font-weight:500;color:var(--ink);margin-top:5px;font-size:13.5px}
+.qz-fb.ok{background:#eafaf4;color:#0a7a5c}
+.qz-fb.no{background:#fdecec;color:#c92a2a}
+.qz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.qz-back,.qz-back2{background:var(--chip);color:var(--navy);border:none;font-weight:700;padding:11px 18px;border-radius:10px;cursor:pointer}
+.qz-back:disabled{opacity:.4;cursor:default}
+.qz-next{background:var(--navy);color:#fff;border:none;font-weight:800;padding:11px 22px;border-radius:10px;cursor:pointer}
+.qz-next:disabled{opacity:.45;cursor:default}
+.qz-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px;margin:14px 0}
+.qz-tile{background:var(--chip);border-radius:12px;padding:12px;text-align:center}
+.qz-tile span{display:block;color:var(--muted);font-size:12px;font-weight:600}
+.qz-tile b{font-size:22px}
+.qz-cert{border:2px solid var(--navy);border-radius:16px;padding:22px;text-align:center;margin:16px 0;background:linear-gradient(180deg,#fff,#f4f8fd)}
+.qz-cert-h{color:var(--navy);font-weight:800;font-size:22px;font-family:var(--serif)}
+.qz-cert-t{font-weight:700;margin:6px 0}
+.qz-cert-score{font-size:46px;font-weight:800;margin:6px 0}
+.qz-cert-meta{color:var(--muted);font-size:13px}
+.qz-cert-note{font-size:13.5px;max-width:460px;margin:8px auto 0}
+.qz-actions{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 10px}
+.qz-revh{margin:18px 0 10px}
+.qz-rev{border-left:4px solid var(--line);background:#f7f9fc;border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.qz-rev.ok{border-left-color:var(--emerald)}
+.qz-rev.no{border-left-color:#c92a2a}
+.qz-rq{font-weight:700;margin-bottom:4px}
+.qz-ra,.qz-rc{font-size:14px}
+.qz-re{color:var(--muted);font-size:13px;margin-top:4px}
 
 .section{display:none;animation:fade .25s}
 .section.show{display:block}
@@ -919,6 +981,7 @@ function openTopic(code){
   <div class="bar"><i id="heroBar" style="width:${pct(t)}%"></i></div></div>
   <div class="tabs">
     <button class="tab active" onclick="showSec('notes',this)">📘 Notes</button>
+    <button class="tab tab-quiz" onclick="showSec('quiz',this)">⚡ Quiz</button>
     <button class="tab" onclick="showSec('defs',this)">🔑 Definitions</button>
     <button class="tab" onclick="showSec('practice',this)">✏️ Practice</button>
     <button class="tab" onclick="showSec('case',this)">🏢 Case study</button>
@@ -939,6 +1002,7 @@ function openTopic(code){
   if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{const isppt=/\.pptx?$/i.test(r.file);const ic=isppt?'📊':'📄';const act=isppt?'Download ↓':'Open →';h+=`<a class="resitem${isppt?' is-ppt':''}" href="${r.file}" target="_blank" rel="noopener"><span class="ri">${ic}</span><span class="rt">${r.label}</span><span class="rd">${act}</span></a>`;});h+=`</div>`;}
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
   h+=`</div></div>`;
+  h+=`<div class="section" id="sec-quiz"></div>`;
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);window._topic=code;
   if(window.akDS)akDS();if(window.akPED)akPED();
   try{localStorage.setItem('akademy_last_'+USER,code);}catch(e){}
@@ -997,7 +1061,7 @@ function aoGuide(marks,q){var cmd=(q||"").toLowerCase();var li=[];
     J+' End on a judged conclusion with a clear "it depends on…".',
     '<b>Structure (5×5 PECAN):</b> POINT · EXPLAIN · CHAIN · APPLY · NOW JUDGE — every paragraph ends on a mini-judgement.'];}
   return '<div class="ao"><h5>How to hit the marks ('+marks+')</h5><ul><li>'+li.join('</li><li>')+'</li></ul></div>';}
-function showSec(name,btn){document.querySelectorAll('.section').forEach(s=>s.classList.remove('show'));document.getElementById('sec-'+name).classList.add('show');document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function showSec(name,btn){document.querySelectorAll('.section').forEach(s=>s.classList.remove('show'));document.getElementById('sec-'+name).classList.add('show');document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');if(name==='quiz')quizTab(window._topic);window.scrollTo({top:0,behavior:'smooth'});}
 function gotoSec(name){let b=null;document.querySelectorAll('.tab').forEach(x=>{const o=x.getAttribute('onclick')||'';if(o.indexOf("'"+name+"'")>-1)b=x;});if(b)showSec(name,b);}
 function toggleModel(id){document.getElementById('m-'+id).classList.toggle('show');}
 function saveAns(id,val){const c=window._topic,tp=topicProg(c);tp.answers=tp.answers||{};tp.answers[id]=val;setTopicProg(c,tp);}
@@ -1019,6 +1083,118 @@ function doSearch(q){q=q.trim().toLowerCase();const box=document.getElementById(
   box.innerHTML=hits.length?hits.slice(0,25).map(h=>`<div class="r" onclick="openTopic('${h.code}');closeSearch()"><div class="rc">${h.code} · ${h.title}</div><div class="rs">${h.snip}</div></div>`).join(''):`<div class="empty">No matches for "${q}"</div>`;}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();});
 
+/* ===================== Topic quiz engine ===================== */
+function _esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function _qClean(s){s=String(s||'').replace(/<[^>]+>/g,' ');
+  s=s.replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&rsquo;/g,'’').replace(/&times;/g,'×');
+  return s.replace(/\s+/g,' ').trim();}
+function _qShuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function _qNum(n){return Math.round(n).toLocaleString('en-US');}
+function _R(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
+function _qPick(arr,n,exclude){var out=[],seen={};(exclude||[]).forEach(function(e){seen[e]=1;});var pool=_qShuf(arr);
+  for(var i=0;i<pool.length;i++){var x=pool[i];var key=(x&&x.k!==undefined)?x.k:x;if(seen[key])continue;seen[key]=1;out.push(x);if(out.length>=n)break;}return out;}
+var _QDEFS=null;
+function qDefPool(){if(_QDEFS)return _QDEFS;_QDEFS=[];(window.CURRICULUM||[]).forEach(function(t){if(t.status!=='live')return;
+  (t.definitions||[]).forEach(function(d){var body=_qClean(d.body);if(body.length>2)_QDEFS.push({term:d.term,body:body,unit:String(t.code).split('.')[0]});});});return _QDEFS;}
+function _qTag(t){var sub=String(t.subtheme);return (sub+' '+((window.SUBTHEME_TITLE&&SUBTHEME_TITLE[sub])||'')).trim();}
+function qKnowledge(t){var pool=qDefPool(),tag=_qTag(t),out=[];
+  (t.definitions||[]).forEach(function(d){var body=_qClean(d.body),term=d.term;if(body.length<3)return;
+    var others=pool.filter(function(p){return p.term.toLowerCase()!==term.toLowerCase()&&p.body!==body;});
+    var db=_qPick(others.map(function(p){return {k:p.body,v:p.body};}),3,[body]).map(function(x){return x.v;});
+    if(db.length===3){var o1=_qShuf([body].concat(db));out.push({type:'Knowledge',tag:tag,q:'Which of the following best describes “'+term+'”?',options:o1,answer:o1.indexOf(body),explain:term+' — '+body});}
+    var dt=_qPick(others.map(function(p){return {k:p.term.toLowerCase(),v:p.term};}),3,[term.toLowerCase()]).map(function(x){return x.v;});
+    if(dt.length===3){var o2=_qShuf([term].concat(dt));out.push({type:'Knowledge',tag:tag,q:'Which key term is defined as: “'+body+'”?',options:o2,answer:o2.indexOf(term),explain:term+' — '+body});}
+  });return out;}
+function fMoney(x){return 'AED '+_qNum(x);}
+function fPct1(x){return (Math.round(x*10)/10)+'%';}
+function fNum2(x){return (Math.round(x*100)/100).toString();}
+function fUnits(x){return _qNum(x)+' units';}
+function _nd(a,fmt){var cand=[a*1.1,a*0.9,a*1.05,a*0.95,a*1.2,a*0.8,a*1.15,a*0.85,a*1.25,a*0.75];var correct=fmt(a),out=[];
+  for(var i=0;i<cand.length;i++){var s=fmt(cand[i]);if(s!==correct&&out.indexOf(s)<0)out.push(s);if(out.length>=3)break;}
+  var k=3;while(out.length<3&&k<60){var s2=fmt(a*(1+0.03*k));if(s2!==correct&&out.indexOf(s2)<0)out.push(s2);k++;}return out;}
+function _ci(tag,q,a,fmt,explain){return {type:'Calculation',tag:tag,q:q,correct:fmt(a),distractors:_nd(a,fmt),explain:explain};}
+function g_rev(tag){var p=_R(12,99),q=_R(120,990);return _ci(tag,'A business sells '+_qNum(q)+' products at AED '+p+' each. What is total revenue?',p*q,fMoney,'Total revenue = price × quantity = AED '+p+' × '+_qNum(q)+'.');}
+function g_inc(tag){var n=_R(1500,9000),p=_R(5,35);return _ci(tag,'A figure of AED '+_qNum(n)+' increases by '+p+'%. What is the new amount?',n*(1+p/100),fMoney,'New amount = original × (1 + % increase) = AED '+_qNum(n)+' × '+(1+p/100).toFixed(2)+'.');}
+function g_pctSample(tag){var y=_R(200,950),x=_R(40,y-20);return _ci(tag,_qNum(x)+' out of '+_qNum(y)+' surveyed customers preferred a new product. What percentage preferred it?',x/y*100,fPct1,'Percentage = part ÷ whole × 100 = '+x+' ÷ '+y+' × 100.');}
+function g_share(tag){var a=_R(10,80)*1000,b=a+_R(40,400)*1000;return _ci(tag,'A firm sells '+_qNum(a)+' units in a market of '+_qNum(b)+' units. What is its market share?',a/b*100,fPct1,'Market share = firm sales ÷ total market sales × 100.');}
+function g_ped(tag){var p=_R(4,25),q=_R(2,30);return _ci(tag,'When price rises by '+p+'%, quantity demanded falls by '+q+'%. What is the price elasticity of demand (size)?',q/p,fNum2,'PED = % change in quantity demanded ÷ % change in price (ignore the sign) = '+q+' ÷ '+p+'.');}
+function g_yed(tag){var y=_R(4,25),d=_R(2,30);return _ci(tag,'Consumer income rises by '+y+'% and demand rises by '+d+'%. What is the income elasticity of demand (YED)?',d/y,fNum2,'YED = % change in demand ÷ % change in income = '+d+' ÷ '+y+'.');}
+function g_tc(tag){var fc=_R(5,50)*1000,vc=_R(5,40),q=_R(500,4000);return _ci(tag,'Fixed costs are AED '+_qNum(fc)+', variable cost is AED '+vc+' per unit and output is '+_qNum(q)+' units. What is total cost?',fc+vc*q,fMoney,'Total cost = fixed costs + (variable cost per unit × output).');}
+function g_profit(tag){var p=_R(20,90),vc=_R(5,p-5),q=_R(500,4000),fc=_R(5,40)*1000;return _ci(tag,'Price is AED '+p+', variable cost AED '+vc+' per unit, output '+_qNum(q)+' units and fixed costs AED '+_qNum(fc)+'. What is profit?',p*q-(fc+vc*q),fMoney,'Profit = revenue − total cost = (price × output) − (fixed + variable costs).');}
+function g_contrib(tag){var p=_R(20,120),vc=_R(5,p-5);return _ci(tag,'A product sells for AED '+p+' with a variable cost of AED '+vc+' per unit. What is the contribution per unit?',p-vc,fMoney,'Contribution per unit = selling price − variable cost per unit.');}
+function g_be(tag){var p=_R(20,90),vc=_R(5,p-10),c=p-vc,units=_R(300,3000),fc=c*units;return _ci(tag,'Fixed costs are AED '+_qNum(fc)+', selling price AED '+p+' and variable cost AED '+vc+' per unit. What is the break-even output?',fc/c,fUnits,'Break-even = fixed costs ÷ contribution per unit; contribution = '+p+' − '+vc+' = AED '+c+'.');}
+function g_mos(tag){var be=_R(300,2000),act=be+_R(100,1500);return _ci(tag,'Break-even output is '+_qNum(be)+' units and actual output is '+_qNum(act)+' units. What is the margin of safety?',act-be,fUnits,'Margin of safety = actual output − break-even output.');}
+function g_tcontrib(tag){var p=_R(20,120),vc=_R(5,p-5),q=_R(500,5000);return _ci(tag,'Contribution is AED '+(p-vc)+' per unit on sales of '+_qNum(q)+' units. What is total contribution?',(p-vc)*q,fMoney,'Total contribution = contribution per unit × units sold.');}
+function g_roce(tag){var op=_R(50,900)*1000,ce=op*_R(3,12);return _ci(tag,'Operating profit is AED '+_qNum(op)+' and capital employed is AED '+_qNum(ce)+'. What is ROCE?',op/ce*100,fPct1,'ROCE = operating profit ÷ capital employed × 100.');}
+function g_cratio(tag){var ca=_R(100,900)*1000,cl=_R(80,700)*1000;return _ci(tag,'Current assets are AED '+_qNum(ca)+' and current liabilities are AED '+_qNum(cl)+'. What is the current ratio?',ca/cl,fNum2,'Current ratio = current assets ÷ current liabilities.');}
+function g_arr(tag){var init=_R(50,500)*1000,ann=_R(10,90)*1000;return _ci(tag,'A project costs AED '+_qNum(init)+' and earns an average annual profit of AED '+_qNum(ann)+'. What is the ARR?',ann/init*100,fPct1,'ARR = average annual profit ÷ initial investment × 100.');}
+var QCALC={'1.3.1':[g_pctSample,g_share,g_inc],'1.3.2.4':[g_ped],'1.3.2.5':[g_yed],'1.3.3':[g_rev,g_inc],
+  '2.3.2.1':[g_rev,g_tc,g_profit],'2.3.2.3':[g_contrib,g_be,g_mos],'2.3.3.1':[g_profit],
+  '3.3.3.5':[g_contrib,g_tcontrib],'3.3.3.2':[g_arr],'3.3.5.2':[g_roce,g_cratio]};
+function _qAssemble(it){var ds=[];(it.distractors||[]).forEach(function(d){if(d!==it.correct&&ds.indexOf(d)<0)ds.push(d);});ds=ds.slice(0,3);
+  var opts=_qShuf([it.correct].concat(ds));return {type:it.type||'Calculation',tag:it.tag,q:it.q,options:opts,answer:opts.indexOf(it.correct),explain:it.explain};}
+function buildQuizPool(t){var pool=[];(t.quiz||[]).forEach(function(q){pool.push(q);});pool=pool.concat(qKnowledge(t));
+  var cd=String(t.code),tag=_qTag(t),gens=[];for(var k in QCALC){if(cd===k||cd.indexOf(k+'.')===0)gens=gens.concat(QCALC[k]);}
+  gens.forEach(function(g){for(var i=0;i<2;i++){pool.push(_qAssemble(g(tag)));}});return pool;}
+function _qDedupe(pool){var seen={},u=[];pool.forEach(function(q){if(q&&q.q&&!seen[q.q]){seen[q.q]=1;u.push(q);}});return u;}
+function _quizKey(c){return 'akademy_quiz_'+((typeof USER!=='undefined'&&USER)?USER:'anon')+'_'+c;}
+function quizGet(c){try{return JSON.parse(localStorage.getItem(_quizKey(c)))||{};}catch(e){return {};}}
+function quizSet(c,s){try{localStorage.setItem(_quizKey(c),JSON.stringify(s));}catch(e){}}
+function quizTab(c){var z=window._QZ;if(z&&z.code===c){if(z.done)renderResults();else renderQ();return;}renderQuizIntro(c);}
+function renderQuizIntro(c){window._QZ=null;var t=CURRICULUM.find(function(x){return x.code===c;});var host=document.getElementById('sec-quiz');if(!host||!t)return;
+  var n=Math.min(12,_qDedupe(buildQuizPool(t)).length),s=quizGet(c);
+  if(n<3){host.innerHTML='<div class="card"><p style="color:var(--muted);margin:0">Quiz questions for this topic are being added.</p></div>';return;}
+  host.innerHTML='<div class="quiz-intro card"><div class="qz-badge">QUIZ</div><h2>'+_esc(t.title)+' — knowledge check</h2>'+
+   '<p>'+n+' multiple-choice questions, drawn fresh from this topic each attempt. Instant feedback and an explanation after every question. Your best score saves on this device.</p>'+
+   '<div class="qz-meta"><span>📝 '+n+' questions</span><span>⚡ Instant feedback</span><span>🔁 Fresh each attempt</span>'+(s.attempts?'<span>🏅 Best '+s.best+'/'+s.bestTotal+'</span>':'')+'</div>'+
+   '<label class="qz-timedtoggle"><input type="checkbox" id="qzTimed"> Timed mode (45s per question)</label><br>'+
+   '<button class="qz-start" onclick="startQuizRun(\''+c+'\')">Start quiz →</button>'+
+   (s.attempts?'<div class="qz-prev">Attempts: '+s.attempts+' · Last: '+s.last+'/'+s.lastTotal+' · Average: '+s.avgPct+'%</div>':'')+'</div>';}
+function startQuizRun(c){var t=CURRICULUM.find(function(x){return x.code===c;});var uniq=_qDedupe(buildQuizPool(t));
+  var qs=_qShuf(uniq).slice(0,Math.min(12,uniq.length));
+  var timed=!!(document.getElementById('qzTimed')&&document.getElementById('qzTimed').checked);
+  window._QZ={code:c,qs:qs,i:0,picked:qs.map(function(){return null;}),checked:qs.map(function(){return false;}),timed:timed,t0:Date.now(),done:false};
+  renderQ();}
+function qzStopClock(){var z=window._QZ;if(z&&z._iv){clearInterval(z._iv);z._iv=null;}}
+function qzStartClock(){qzStopClock();var z=window._QZ;z._left=45;z._iv=setInterval(function(){z._left--;var e=document.getElementById('qzClock');if(e){e.textContent=z._left;if(z._left<=10)e.classList.add('low');}if(z._left<=0){qzStopClock();window._QZ.checked[window._QZ.i]=true;renderQ();}},1000);}
+function renderQ(){var z=window._QZ,host=document.getElementById('sec-quiz');if(!z||!host)return;var q=z.qs[z.i],total=z.qs.length,picked=z.picked[z.i],checked=z.checked[z.i];
+  var pb=Math.round(z.i/total*100),opts='';
+  q.options.forEach(function(o,ix){var cls='qz-opt';if(checked){if(ix===q.answer)cls+=' correct';else if(ix===picked)cls+=' wrong';}else if(ix===picked)cls+=' sel';
+    opts+='<button class="'+cls+'" '+(checked?'disabled':'')+' onclick="qzPick('+ix+')"><span class="qz-let">'+String.fromCharCode(65+ix)+'</span><span>'+_esc(o)+'</span></button>';});
+  var fb=checked?('<div class="qz-fb '+(picked===q.answer?'ok':'no')+'">'+(picked===q.answer?'✓ Correct':(picked==null?'⏱ Time up — not answered':'✗ Not quite'))+'<span>'+_esc(q.explain)+'</span></div>'):'';
+  var label=checked?(z.i===total-1?'Finish →':'Next →'):'Check →',dis=(!checked&&picked==null)?'disabled':'';
+  host.innerHTML='<div class="quiz-run card"><div class="qz-top"><span class="qz-pill">Question '+(z.i+1)+'/'+total+'</span><span class="qz-pill alt">'+_esc(q.type)+'</span><span class="qz-pill ghost">'+_esc(q.tag)+'</span>'+(z.timed?'<span class="qz-clock" id="qzClock">45</span>':'')+'</div>'+
+    '<div class="qz-prog"><i style="width:'+pb+'%"></i></div><h3 class="qz-q">'+_esc(q.q)+'</h3><div class="qz-opts">'+opts+'</div>'+fb+
+    '<div class="qz-nav"><button class="qz-back" '+(z.i===0?'disabled':'')+' onclick="qzBack()">← Back</button><button class="qz-next" '+dis+' onclick="qzPrimary()">'+label+'</button></div></div>';
+  if(z.timed&&!checked)qzStartClock();else qzStopClock();}
+function qzPick(ix){var z=window._QZ;if(!z||z.checked[z.i])return;z.picked[z.i]=ix;renderQ();}
+function qzPrimary(){var z=window._QZ;if(!z)return;if(!z.checked[z.i]){if(z.picked[z.i]==null)return;z.checked[z.i]=true;qzStopClock();renderQ();}else{if(z.i===z.qs.length-1)finishQuiz();else{z.i++;renderQ();}}}
+function qzBack(){var z=window._QZ;if(z&&z.i>0){qzStopClock();z.i--;renderQ();}}
+function finishQuiz(){var z=window._QZ;qzStopClock();z.done=true;var correct=0;z.qs.forEach(function(q,ix){if(z.picked[ix]===q.answer)correct++;});
+  var total=z.qs.length,pv=Math.round(correct/total*100),secs=Math.round((Date.now()-z.t0)/1000);
+  var c=z.code,s=quizGet(c);s.attempts=(s.attempts||0)+1;s.last=correct;s.lastTotal=total;s.lastPct=pv;
+  if(s.best==null||(correct/total)>(s.best/(s.bestTotal||total))){s.best=correct;s.bestTotal=total;}
+  s.sumPct=(s.sumPct||0)+pv;s.avgPct=Math.round(s.sumPct/s.attempts);quizSet(c,s);
+  z.result={correct:correct,total:total,pv:pv,secs:secs,attempt:s.attempts,avgPct:s.avgPct,best:s.best,bestTotal:s.bestTotal};renderResults();}
+function renderResults(){var z=window._QZ,host=document.getElementById('sec-quiz'),r=z.result,t=CURRICULUM.find(function(x){return x.code===z.code;});
+  var who=(typeof USER!=='undefined'&&USER)?USER:'Student',date=new Date().toLocaleDateString('en-GB');
+  var col=r.pv>=70?'#0FA37F':(r.pv>=40?'#d98b06':'#c92a2a'),rev='';
+  z.qs.forEach(function(q,ix){var ok=z.picked[ix]===q.answer,your=z.picked[ix]==null?'Not answered':q.options[z.picked[ix]];
+    rev+='<div class="qz-rev '+(ok?'ok':'no')+'"><div class="qz-rq">Q'+(ix+1)+'. '+_esc(q.q)+'</div><div class="qz-ra">Your answer: '+_esc(your)+'</div><div class="qz-rc">Correct answer: '+_esc(q.options[q.answer])+'</div><div class="qz-re">'+_esc(q.explain)+'</div></div>';});
+  var note=r.pv>=70?'Excellent — you know this topic well. Push for full marks next time.':(r.pv>=40?'Good start. Review the gaps below, then retake to build momentum.':'This is your starting point, not your final result. Learn the gaps below, then retake.');
+  host.innerHTML='<div class="quiz-done card"><h2>Quiz complete</h2><div class="qz-tiles">'+
+    '<div class="qz-tile"><span>Score</span><b>'+r.correct+'/'+r.total+'</b></div>'+
+    '<div class="qz-tile"><span>Percentage</span><b style="color:'+col+'">'+r.pv+'%</b></div>'+
+    '<div class="qz-tile"><span>Time</span><b>'+r.secs+'s</b></div>'+
+    '<div class="qz-tile"><span>Attempts</span><b>'+r.attempt+'</b></div>'+
+    '<div class="qz-tile"><span>Best</span><b>'+r.best+'/'+r.bestTotal+'</b></div>'+
+    '<div class="qz-tile"><span>Average</span><b>'+r.avgPct+'%</b></div></div>'+
+    '<div class="qz-cert"><div class="qz-cert-h">Certificate of Completion</div><p>This certifies that <b>'+_esc(who)+'</b> completed the</p>'+
+    '<p class="qz-cert-t">'+_esc(t.code+' · '+t.title)+' knowledge quiz</p><div class="qz-cert-score" style="color:'+col+'">'+r.pv+'%</div>'+
+    '<p class="qz-cert-meta">Score '+r.correct+'/'+r.total+' · '+date+' · Attempt '+r.attempt+'</p><p class="qz-cert-note">'+note+'</p></div>'+
+    '<div class="qz-actions"><button class="qz-start" onclick="startQuizRun(\''+z.code+'\')">↻ Retake quiz</button><button class="qz-back2" onclick="renderQuizIntro(\''+z.code+'\')">Back to quiz home</button></div>'+
+    '<h3 class="qz-revh">Question review</h3>'+rev+'</div>';window.scrollTo({top:0,behavior:'smooth'});}
+/* =================== end quiz engine =================== */
 (function(){try{const u=localStorage.getItem('akademy_user');if(u){USER=u;enterApp();}}catch(e){}})();
 </script>
 </body>
