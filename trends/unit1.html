@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAL Business Paper 1 — Trend Explorer</title>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1a2230; --muted:#5b6678; --line:#e4e8ef;
+  --brand:#8a1538; --brand2:#b11e4a; --accent:#0f766e; --chip:#eef1f6; --flag:#d97706;
+  --m2:#94a3b8; --m4:#38bdf8; --m6:#22c55e; --m8:#f59e0b; --m10:#ef4444; --m20:#111827;
+  --radius:14px; --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+}
+[data-theme="dark"]{--bg:#0e1117;--panel:#161b24;--ink:#e7ecf3;--muted:#9aa6b8;--line:#273040;--chip:#1d2430;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);}
+@media (prefers-color-scheme:dark){:root:not([data-theme]){--bg:#0e1117;--panel:#161b24;--ink:#e7ecf3;--muted:#9aa6b8;--line:#273040;--chip:#1d2430;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);}}
+*{box-sizing:border-box} html,body{margin:0}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:18px 16px 60px}
+header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.badge{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px;box-shadow:var(--shadow)}
+h1{font-size:20px;margin:0;font-weight:800;letter-spacing:-.2px}
+.sub{color:var(--muted);font-size:13px;margin-top:2px}
+.spacer{flex:1}
+.tbtn{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:10px;padding:7px 10px;font-size:13px;cursor:pointer}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 10px;border-bottom:1px solid var(--line)}
+.tab{border:none;background:transparent;color:var(--muted);font-weight:600;font-size:14px;padding:10px 12px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab.active{color:var(--brand2);border-bottom-color:var(--brand2)}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);margin-bottom:16px}
+.fgroup{display:flex;flex-direction:column;gap:6px}
+.flabel{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12.5px;cursor:pointer;font-weight:600;transition:.12s}
+.chip:hover{border-color:var(--brand2)}
+.chip.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.chip[data-k="2"].on{background:var(--m2);border-color:var(--m2)}
+.chip[data-k="4"].on{background:var(--m4);border-color:var(--m4);color:#07202b}
+.chip[data-k="6"].on{background:var(--m6);border-color:var(--m6);color:#06230f}
+.chip[data-k="8"].on{background:var(--m8);border-color:var(--m8);color:#2a1a00}
+.chip[data-k="10"].on{background:var(--m10);border-color:var(--m10);color:#fff}
+.chip[data-k="20"].on{background:var(--m20);border-color:var(--m20);color:#fff}
+.chip.cmd.on{background:var(--accent);border-color:var(--accent);color:#fff}
+input.search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:8px 11px;font-size:13px;min-width:180px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.view{display:none}.view.active{display:block}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+.card{padding:14px 15px}
+.card h3{margin:0 0 2px;font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.sectag{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:999px;color:#fff;white-space:nowrap}
+.sec0{background:#2563eb}.sec1{background:#0f766e}.sec2{background:#b45309}.sec3{background:#7c3aed}
+.freqline{display:flex;align-items:center;gap:8px;margin:8px 0 6px}
+.bar{flex:1;height:8px;border-radius:999px;background:var(--chip);overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--brand2),var(--brand))}
+.fcount{font-size:12px;color:var(--muted);font-weight:700;white-space:nowrap}
+.mtags{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.mtag{font-size:10.5px;font-weight:700;color:#fff;border-radius:6px;padding:1px 6px}
+.m2{background:var(--m2)}.m4{background:var(--m4);color:#07202b}.m6{background:var(--m6);color:#06230f}.m8{background:var(--m8);color:#2a1a00}.m10{background:var(--m10)}.m20{background:var(--m20)}
+.occ{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;display:none}
+.occ.open{display:block}
+.occrow{display:flex;align-items:center;gap:7px;font-size:12.5px;padding:4px 0;color:var(--muted);flex-wrap:wrap}
+.occrow b{color:var(--ink);font-weight:700;min-width:58px}
+.qp{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;color:var(--ink)}
+.cmdpill{font-size:10.5px;font-weight:700;border:1px solid var(--line);border-radius:6px;padding:0 6px;color:var(--accent)}
+.ctx{font-size:11.5px;color:var(--muted);font-style:italic}
+.more{font-size:12px;color:var(--brand2);cursor:pointer;font-weight:700;margin-top:6px;display:inline-block}
+a.pdf{color:var(--accent);text-decoration:none;font-weight:700;font-size:12px}
+a.pdf:hover{text-decoration:underline}
+.rev{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--flag);box-shadow:0 0 0 2px rgba(217,119,6,.28)}
+.yearpick{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.paper{padding:16px 18px}
+.paperhead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.paperhead h2{margin:0;font-size:18px}
+.qtable{width:100%;border-collapse:collapse;font-size:13px}
+.qtable th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--line)}
+.qtable td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.qtable tr:last-child td{border-bottom:none}
+.qcode{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;white-space:nowrap}
+.mk{display:inline-block;min-width:30px;text-align:center;font-weight:700;color:#fff;border-radius:6px;padding:1px 6px;font-size:11.5px}
+.gap{color:var(--m10);font-style:italic}
+.qgroup td{background:var(--chip);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.scrollx{overflow:auto;-webkit-overflow-scrolling:touch;border-radius:var(--radius)}
+table.matrix{border-collapse:collapse;font-size:11.5px;min-width:1050px}
+table.matrix th,table.matrix td{border:1px solid var(--line);padding:4px 5px;text-align:center}
+table.matrix thead th{position:sticky;top:0;background:var(--panel);z-index:2;font-size:10.5px;white-space:nowrap}
+table.matrix td.tname,table.matrix th.tname{position:sticky;left:0;background:var(--panel);text-align:left;font-weight:600;white-space:nowrap;z-index:1;max-width:210px}
+.cellq{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:11px;border-radius:5px;padding:1px 4px;color:#fff;display:inline-block;margin:1px;cursor:default}
+.secrow td{background:var(--chip);font-weight:800;text-transform:uppercase;font-size:10.5px;letter-spacing:.05em;text-align:left;color:var(--muted)}
+.rank{padding:8px 15px 16px}
+.rankrow{display:grid;grid-template-columns:210px 1fr 48px;gap:10px;align-items:center;padding:5px 0}
+.rankname{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rbar{height:16px;border-radius:6px;background:var(--chip);overflow:hidden}
+.rbar>i{display:block;height:100%}
+.rn{font-size:12.5px;font-weight:800;text-align:right;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin:2px 0 0}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:10px 0 0;align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.dot{width:11px;height:11px;border-radius:3px;display:inline-block}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.banner{font-size:12px;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:14px}
+.banner .rev{margin:0 3px}
+footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6}
+</style>
+</head>
+<body>
+<noscript><div style="max-width:1200px;margin:16px auto;padding:14px 16px;border:1px solid #d97706;border-radius:10px;background:#fff7ed;color:#9a3412;font:14px/1.5 -apple-system,system-ui,sans-serif">This revision tool needs JavaScript. Please open it in a web browser — on iPad tap <b>Share &rarr; Open in Safari</b>, or view it on the school website. A file <i>preview</i> in the Files or Mail app won&rsquo;t show the interactive part.</div></noscript>
+<div class="wrap">
+  <header class="top">
+    <div class="badge">A*</div>
+    <div>
+      <h1>IAL Business — Paper 1 (Unit 1) Trend Explorer</h1>
+      <div class="sub">Marketing &amp; People · Pearson Edexcel WBS11/01 · past-paper question map <b>Jan 2019 → Oct 2025</b> · 20 sessions</div>
+    </div>
+    <div class="spacer"></div>
+    <button class="tbtn" id="theme">◐ Theme</button>
+  </header>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-v="topic">By Topic</button>
+    <button class="tab" data-v="year">By Year / Paper</button>
+    <button class="tab" data-v="matrix">Trend Grid</button>
+    <button class="tab" data-v="rank">Most Tested</button>
+  </div>
+
+  <div class="banner">All 20 sessions (Jan 2019 → Oct 2025) are mapped and confirmed, with command word + business context on every question. The <b>2026 papers (Jan, June, Oct) are held back as mocks</b>. Each question links to its full paper.</div>
+
+  <div class="filters" id="filters">
+    <div class="fgroup"><span class="flabel">Section</span><div class="chips" id="secChips"></div></div>
+    <div class="fgroup"><span class="flabel">Marks</span><div class="chips" id="markChips"></div></div>
+    <div class="fgroup"><span class="flabel">Command word</span><div class="chips" id="cmdChips"></div></div>
+    <div class="fgroup"><span class="flabel">Search topic</span><input class="search" id="search" placeholder="e.g. motivation, pricing…" autocomplete="off"></div>
+  </div>
+
+  <div class="view active" id="view-topic"><div class="grid-cards" id="topicCards"></div></div>
+  <div class="view" id="view-year"><div class="yearpick" id="yearPick"></div><div class="panel paper" id="paperBox"></div></div>
+  <div class="view" id="view-matrix"><div class="scrollx panel"><table class="matrix" id="matrix"></table></div><div class="legend" id="matLegend"></div></div>
+  <div class="view" id="view-rank"><div class="panel rank" id="rankBox"></div></div>
+
+  <footer>
+    Interactive revision map · v3 (2019–Oct 2025) · question slots link to the real papers in Drive.<br>
+    Tariffs: a=2 · b=4 · c=6 · d=8 · e=10 · Q3 essay=20. Command words &amp; context auto-read from each paper.
+  </footer>
+</div>
+
+<script id="data" type="application/json">{"sections":["The Market","Marketing Mix & Strategy","Managing People","Entrepreneurs & Objectives"],"topics":[{"name":"The Market","section":"The Market"},{"name":"Market Research","section":"The Market"},{"name":"Market Positioning","section":"The Market"},{"name":"Demand","section":"The Market"},{"name":"Supply","section":"The Market"},{"name":"Market Equilibrium","section":"The Market"},{"name":"PED","section":"The Market"},{"name":"YED","section":"The Market"},{"name":"Marketing Objectives","section":"Marketing Mix & Strategy"},{"name":"Product Lifecycle","section":"Marketing Mix & Strategy"},{"name":"Boston Matrix & Product Portfolio","section":"Marketing Mix & Strategy"},{"name":"Marketing Mix","section":"Marketing Mix & Strategy"},{"name":"Design Mix","section":"Marketing Mix & Strategy"},{"name":"Promotion","section":"Marketing Mix & Strategy"},{"name":"Branding","section":"Marketing Mix & Strategy"},{"name":"Pricing Strategies","section":"Marketing Mix & Strategy"},{"name":"Distribution","section":"Marketing Mix & Strategy"},{"name":"Approaches to staffing","section":"Managing People"},{"name":"Recruitment & Selection","section":"Managing People"},{"name":"Training","section":"Managing People"},{"name":"Organisational Design","section":"Managing People"},{"name":"Theories of Motivation","section":"Managing People"},{"name":"Financial & Non financial Methods","section":"Managing People"},{"name":"Leadership","section":"Managing People"},{"name":"Role of an Entrepreneur","section":"Entrepreneurs & Objectives"},{"name":"Entreprenurial Motives","section":"Entrepreneurs & Objectives"},{"name":"Business Objectives","section":"Entrepreneurs & Objectives"},{"name":"Business Choices","section":"Entrepreneurs & Objectives"}],"sessions":[{"label":"Jan 2019","key":201901,"pdf":"15BS_fxOT8DHnxzBTs_9UNpfLtqzE1o8a","note":""},{"label":"Jun 2019","key":201906,"pdf":"1N-ATlcw-dq4SlRzR5M6O0idCTUbMccPt","note":""},{"label":"Oct 2019","key":201910,"pdf":"10tSsWrFAKAJ_EW3yXsfwna2utEDnJRpx","note":""},{"label":"Jan 2020","key":202001,"pdf":"1QNRanw5s5BdyLtJY_iMaGg36DK-lUF_P","note":""},{"label":"Oct 2020","key":202010,"pdf":"1THg9GsPOqql7v2vomkAkfFQkPmbjEbLd","note":"sat 4 May 2020"},{"label":"Jan 2021","key":202101,"pdf":"1KOt4pnsOzPvI-8kNd-3KrmQL9pZcDXC3","note":""},{"label":"Jun 2021","key":202106,"pdf":"1PWX30lNWjlZ6Jc4eKp-Ey6Xb38o17ueC","note":""},{"label":"Oct 2021","key":202110,"pdf":"1NJvA7wfOfAB89eCoXAYGNiYNyiIL2iYl","note":""},{"label":"Jan 2022","key":202201,"pdf":"1ycxgDtUBurcIRJIHRbKUYf3ldQqalgM2","note":""},{"label":"Jun 2022","key":202206,"pdf":"1k7VAshkyYgsQAuLtvYZmJEEtcCdiRgxx","note":""},{"label":"Oct 2022","key":202210,"pdf":"1CFru4_WSuJPeZ65EXf1x1AFioyT_MYQv","note":""},{"label":"Jan 2023","key":202301,"pdf":"1rlbDjqeP6WBOQFBZNTiDEKy_LMe70RiY","note":""},{"label":"May 2023","key":202305,"pdf":"19n9K65Mn2FDbY_PdvMhPdPFiD5LbWbZi","note":""},{"label":"Oct 2023","key":202310,"pdf":"13Xs6mJHNH0gV6irdlQRcOW8u38qMXMBO","note":""},{"label":"Jan 2024","key":202401,"pdf":"100EG9ZG4O0kUUhn61dS3FmRDZTt3FdJ9","note":""},{"label":"Jun 2024","key":202406,"pdf":"1dupnceiGCzAqXX6GneTNOAy7LBemKiGE","note":""},{"label":"Oct 2024","key":202410,"pdf":"1eshBoEdrPwuSZa9FB7fl-W66YZa5TIsV","note":""},{"label":"Jan 2025","key":202501,"pdf":"1LTCOw4e93hgt8vMaCsFWX-NikQ0GDYBz","note":""},{"label":"Jun 2025","key":202506,"pdf":"170cf6hxuXUUI64hA1usB6-Jiga7DIuME","note":"sat 7 May 2025"},{"label":"Oct 2025","key":202510,"pdf":"1xhoACgVuRa-F4eXr1wq7MM3E1jvEcNo5","note":""}],"records":[{"session":"Jan 2019","topic":"The Market","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Primark","flag":false},{"session":"Jan 2019","topic":"Market Research","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Innocent","flag":false},{"session":"Jan 2019","topic":"Market Positioning","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Innocent","flag":false},{"session":"Jan 2019","topic":"Demand","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Innocent","flag":false},{"session":"Jan 2019","topic":"Market Equilibrium","qpart":"2b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Jan 2019","topic":"YED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Primark","flag":false},{"session":"Jan 2019","topic":"Boston Matrix & Product Portfolio","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2019","topic":"Pricing Strategies","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Primark","flag":false},{"session":"Jan 2019","topic":"Recruitment & Selection","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"IKEA","flag":false},{"session":"Jan 2019","topic":"Role of an Entrepreneur","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2019","topic":"Business Objectives","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Primark","flag":false},{"session":"Jun 2019","topic":"The Market","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2019","topic":"Market Research","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2019","topic":"Market Research","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Superdry","flag":false},{"session":"Jun 2019","topic":"Demand","qpart":"2b","marks":4,"cmd":"Explain","ctx":"Ocado","flag":false},{"session":"Jun 2019","topic":"PED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Superdry","flag":false},{"session":"Jun 2019","topic":"Boston Matrix & Product Portfolio","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Boston Matrix, Superdry","flag":false},{"session":"Jun 2019","topic":"Marketing Mix","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Ocado","flag":false},{"session":"Jun 2019","topic":"Design Mix","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Function","flag":false},{"session":"Jun 2019","topic":"Promotion","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Ocado","flag":false},{"session":"Jun 2019","topic":"Financial & Non financial Methods","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Superdry","flag":false},{"session":"Jun 2019","topic":"Business Objectives","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Ocado","flag":false},{"session":"Oct 2019","topic":"The Market","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Oct 2019","topic":"Market Research","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Coca, Cola","flag":false},{"session":"Oct 2019","topic":"Market Positioning","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Emirates","flag":false},{"session":"Oct 2019","topic":"YED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Coca, Cola","flag":false},{"session":"Oct 2019","topic":"Marketing Mix","qpart":"2b","marks":4,"cmd":"Explain","ctx":"Emirates","flag":false},{"session":"Oct 2019","topic":"Branding","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Coca, Cola","flag":false},{"session":"Oct 2019","topic":"Branding","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Emirates","flag":false},{"session":"Oct 2019","topic":"Pricing Strategies","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2019","topic":"Distribution","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2019","topic":"Organisational Design","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Tata Motors","flag":false},{"session":"Oct 2019","topic":"Financial & Non financial Methods","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Coca, Cola","flag":false},{"session":"Jan 2020","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2020","topic":"The Market","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Bulgaria","flag":false},{"session":"Jan 2020","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"Using Extract, Skechers","flag":false},{"session":"Jan 2020","topic":"Market Research","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2020","topic":"Market Research","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Skechers","flag":false},{"session":"Jan 2020","topic":"Market Equilibrium","qpart":"1b","marks":4,"cmd":"Construct","ctx":"Bulgarian","flag":false},{"session":"Jan 2020","topic":"Product Lifecycle","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Skechers","flag":false},{"session":"Jan 2020","topic":"Approaches to staffing","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"","flag":false},{"session":"Jan 2020","topic":"Organisational Design","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Skechers","flag":false},{"session":"Jan 2020","topic":"Role of an Entrepreneur","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Rossi Mitova","flag":false},{"session":"Jan 2020","topic":"Business Choices","qpart":"1e","marks":10,"cmd":"Assess","ctx":"","flag":false},{"session":"Oct 2020","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2020","topic":"The Market","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Lehman","flag":false},{"session":"Oct 2020","topic":"Market Research","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Samsung","flag":false},{"session":"Oct 2020","topic":"Market Positioning","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2020","topic":"Market Equilibrium","qpart":"2b","marks":4,"cmd":"Construct","ctx":"Lehman","flag":false},{"session":"Oct 2020","topic":"PED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Oct 2020","topic":"Design Mix","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Lehman","flag":false},{"session":"Oct 2020","topic":"Branding","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Samsung","flag":false},{"session":"Oct 2020","topic":"Pricing Strategies","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Samsung","flag":false},{"session":"Oct 2020","topic":"Training","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Shangri, La Hotels","flag":false},{"session":"Oct 2020","topic":"Financial & Non financial Methods","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Lehman","flag":false},{"session":"Jan 2021","topic":"Demand","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Alibaba Group","flag":false},{"session":"Jan 2021","topic":"PED","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"If Nintendo","flag":false},{"session":"Jan 2021","topic":"Boston Matrix & Product Portfolio","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Boston Matrix, Nintendo","flag":false},{"session":"Jan 2021","topic":"Marketing Mix","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2021","topic":"Branding","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2021","topic":"Pricing Strategies","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Nintendo","flag":false},{"session":"Jan 2021","topic":"Organisational Design","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Nintendo","flag":false},{"session":"Jan 2021","topic":"Financial & Non financial Methods","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"HSBC","flag":false},{"session":"Jan 2021","topic":"Leadership","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Alibaba Group","flag":false},{"session":"Jan 2021","topic":"Role of an Entrepreneur","qpart":"1b","marks":4,"cmd":"Explain","ctx":"Jack Ma, Alibaba Group","flag":false},{"session":"Jan 2021","topic":"Business Objectives","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Alibaba Group","flag":false},{"session":"Jun 2021","topic":"The Market","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Jun 2021","topic":"Market Positioning","qpart":"1e","marks":10,"cmd":"Assess","ctx":"","flag":false},{"session":"Jun 2021","topic":"Demand","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2021","topic":"Supply","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Turkey","flag":false},{"session":"Jun 2021","topic":"YED","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Jun 2021","topic":"Marketing Objectives","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2021","topic":"Marketing Mix","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Turkey","flag":false},{"session":"Jun 2021","topic":"Pricing Strategies","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Jun 2021","topic":"Approaches to staffing","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Kapgel","flag":false},{"session":"Jun 2021","topic":"Theories of Motivation","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Ferrero","flag":false},{"session":"Jun 2021","topic":"Business Choices","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"TOMS","flag":false},{"session":"Oct 2021","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2021","topic":"Market Research","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Oppo","flag":false},{"session":"Oct 2021","topic":"Market Positioning","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Oppo","flag":false},{"session":"Oct 2021","topic":"Market Equilibrium","qpart":"1b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Oct 2021","topic":"PED","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Oct 2021","topic":"Promotion","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2021","topic":"Promotion","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Deutsche Bank","flag":false},{"session":"Oct 2021","topic":"Approaches to staffing","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"Deutsche Bank","flag":false},{"session":"Oct 2021","topic":"Approaches to staffing","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Deutsche Bank","flag":false},{"session":"Oct 2021","topic":"Recruitment & Selection","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Japanese, AI","flag":false},{"session":"Oct 2021","topic":"Organisational Design","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Deutsche Bank","flag":false},{"session":"Jan 2022","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"Aldi, January","flag":false},{"session":"Jan 2022","topic":"Market Research","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2022","topic":"Market Research","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Vaibhav Anant","flag":false},{"session":"Jan 2022","topic":"Market Equilibrium","qpart":"1b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Jan 2022","topic":"Design Mix","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2022","topic":"Promotion","qpart":"2d","marks":8,"cmd":"Assess","ctx":"Aldi, UK","flag":false},{"session":"Jan 2022","topic":"Pricing Strategies","qpart":"2e","marks":10,"cmd":"Assess","ctx":"UK","flag":false},{"session":"Jan 2022","topic":"Distribution","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Nike","flag":false},{"session":"Jan 2022","topic":"Role of an Entrepreneur","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Vaibhav Anant, Bambrew","flag":false},{"session":"Jan 2022","topic":"Business Objectives","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Aldi","flag":false},{"session":"Jan 2022","topic":"Business Choices","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Bambrew","flag":false},{"session":"Jun 2022","topic":"The Market","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Vietnam","flag":false},{"session":"Jun 2022","topic":"Market Positioning","qpart":"2e","marks":10,"cmd":"Assess","ctx":"","flag":false},{"session":"Jun 2022","topic":"Demand","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2022","topic":"Demand","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Vietjet Air","flag":false},{"session":"Jun 2022","topic":"YED","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Jun 2022","topic":"Branding","qpart":"2a","marks":2,"cmd":"Define","ctx":"USP","flag":false},{"session":"Jun 2022","topic":"Branding","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Jun 2022","topic":"Financial & Non financial Methods","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Vietjet Air","flag":false},{"session":"Jun 2022","topic":"Leadership","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Virgin Group","flag":false},{"session":"Jun 2022","topic":"Entreprenurial Motives","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Nguyen Thi Phuong Thao, Vietjet Air","flag":false},{"session":"Jun 2022","topic":"Business Objectives","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Oct 2022","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2022","topic":"Market Positioning","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Birkenstock","flag":false},{"session":"Oct 2022","topic":"Demand","qpart":"1b","marks":4,"cmd":"Explain","ctx":"","flag":false},{"session":"Oct 2022","topic":"Demand","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2022","topic":"Market Equilibrium","qpart":"2b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Oct 2022","topic":"Marketing Objectives","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Oct 2022","topic":"Product Lifecycle","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Birkenstock","flag":false},{"session":"Oct 2022","topic":"Design Mix","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Oct 2022","topic":"Organisational Design","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Hilton Hotels, Asia Pacific","flag":false},{"session":"Oct 2022","topic":"Financial & Non financial Methods","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Birkenstock","flag":false},{"session":"Oct 2022","topic":"Role of an Entrepreneur","qpart":"1e","marks":10,"cmd":"Assess","ctx":"UK","flag":false},{"session":"Jan 2023","topic":"The Market","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Jan 2023","topic":"The Market","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Realme","flag":false},{"session":"Jan 2023","topic":"The Market","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Mr Cory, Cookies","flag":false},{"session":"Jan 2023","topic":"Market Research","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Mr Cory, Cookies","flag":false},{"session":"Jan 2023","topic":"Market Positioning","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2023","topic":"PED","qpart":"1b","marks":4,"cmd":"Explain","ctx":"","flag":false},{"session":"Jan 2023","topic":"Marketing Mix","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Jan 2023","topic":"Branding","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Mr Cory, Cookies","flag":false},{"session":"Jan 2023","topic":"Pricing Strategies","qpart":"2b","marks":4,"cmd":"Explain","ctx":"Mr Cory, Cookies","flag":false},{"session":"Jan 2023","topic":"Approaches to staffing","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Toyota","flag":false},{"session":"Jan 2023","topic":"Role of an Entrepreneur","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"May 2023","topic":"The Market","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"May 2023","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"Mindful Chef","flag":false},{"session":"May 2023","topic":"Market Research","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Li, Ning","flag":false},{"session":"May 2023","topic":"Market Research","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Mindful Chef","flag":false},{"session":"May 2023","topic":"Market Positioning","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"May 2023","topic":"Demand","qpart":"1b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"May 2023","topic":"Marketing Objectives","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Li, Ning","flag":false},{"session":"May 2023","topic":"Pricing Strategies","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"UK","flag":false},{"session":"May 2023","topic":"Organisational Design","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Unilever","flag":false},{"session":"May 2023","topic":"Leadership","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Li","flag":false},{"session":"May 2023","topic":"Business Objectives","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Mindful Chef","flag":false},{"session":"Oct 2023","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2023","topic":"Market Research","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Nando","flag":false},{"session":"Oct 2023","topic":"Market Positioning","qpart":"1b","marks":4,"cmd":"Explain","ctx":"Fernando, Robert","flag":false},{"session":"Oct 2023","topic":"Demand","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Pukka","flag":false},{"session":"Oct 2023","topic":"PED","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Oct 2023","topic":"Marketing Objectives","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2023","topic":"Marketing Objectives","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Pukka","flag":false},{"session":"Oct 2023","topic":"Pricing Strategies","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Nando","flag":false},{"session":"Oct 2023","topic":"Approaches to staffing","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Nando","flag":false},{"session":"Oct 2023","topic":"Training","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Walt Disney","flag":false},{"session":"Oct 2023","topic":"Role of an Entrepreneur","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Sebastian","flag":false},{"session":"Jan 2024","topic":"Demand","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2024","topic":"Supply","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Jan 2024","topic":"YED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Meqnes","flag":false},{"session":"Jan 2024","topic":"Boston Matrix & Product Portfolio","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Meqnes, Boston Matrix","flag":false},{"session":"Jan 2024","topic":"Design Mix","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Meqnes","flag":false},{"session":"Jan 2024","topic":"Branding","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Meqnes","flag":false},{"session":"Jan 2024","topic":"Branding","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Jan 2024","topic":"Pricing Strategies","qpart":"2e","marks":10,"cmd":"Assess","ctx":"","flag":false},{"session":"Jan 2024","topic":"Financial & Non financial Methods","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Google","flag":false},{"session":"Jan 2024","topic":"Business Objectives","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2024","topic":"The Market","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Vietnam","flag":false},{"session":"Jun 2024","topic":"Market Research","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"The Coffee House","flag":false},{"session":"Jun 2024","topic":"Market Research","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2024","topic":"Market Positioning","qpart":"1e","marks":10,"cmd":"Assess","ctx":"The Coffee House","flag":false},{"session":"Jun 2024","topic":"Market Positioning","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Market Kurly, Sophie Kim","flag":false},{"session":"Jun 2024","topic":"Market Equilibrium","qpart":"2b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Jun 2024","topic":"Promotion","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Nike, Adidas","flag":false},{"session":"Jun 2024","topic":"Recruitment & Selection","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Market Kurly","flag":false},{"session":"Jun 2024","topic":"Financial & Non financial Methods","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"The Coffee House","flag":false},{"session":"Jun 2024","topic":"Entreprenurial Motives","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Sophie Kim","flag":false},{"session":"Jun 2024","topic":"Business Objectives","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2024","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":true},{"session":"Oct 2024","topic":"The Market","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2024","topic":"Demand","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Oct 2024","topic":"Business Choices","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Tilak Mehta","flag":false},{"session":"Oct 2024","topic":"Business Objectives","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"PNP","flag":false},{"session":"Oct 2024","topic":"Financial & Non financial Methods","qpart":"1e","marks":10,"cmd":"Assess","ctx":"PNP","flag":false},{"session":"Oct 2024","topic":"Boston Matrix & Product Portfolio","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2024","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Oct 2024","topic":"Market Research","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Oct 2024","topic":"Market Positioning","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"","flag":false},{"session":"Oct 2024","topic":"Distribution","qpart":"2e","marks":10,"cmd":"Assess","ctx":"","flag":false},{"session":"Oct 2024","topic":"Leadership","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Elon Musk","flag":false},{"session":"Jan 2025","topic":"Market Positioning","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2025","topic":"Approaches to staffing","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Mars Wrigley","flag":false},{"session":"Jan 2025","topic":"Demand","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Jan 2025","topic":"Marketing Objectives","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Mars Wrigley","flag":false},{"session":"Jan 2025","topic":"Business Objectives","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Tony, Chocolonely","flag":false},{"session":"Jan 2025","topic":"Financial & Non financial Methods","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jan 2025","topic":"Supply","qpart":"2b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Jan 2025","topic":"Entreprenurial Motives","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"Mona Ataya","flag":false},{"session":"Jan 2025","topic":"Distribution","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Mumzworld","flag":false},{"session":"Jan 2025","topic":"Approaches to staffing","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Mumzworld","flag":false},{"session":"Jan 2025","topic":"Marketing Mix","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Dyson","flag":false},{"session":"Jun 2025","topic":"Branding","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2025","topic":"YED","qpart":"1b","marks":4,"cmd":"Calculate","ctx":"Sony","flag":false},{"session":"Jun 2025","topic":"Pricing Strategies","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Sony","flag":false},{"session":"Jun 2025","topic":"Product Lifecycle","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Sony","flag":false},{"session":"Jun 2025","topic":"Marketing Objectives","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Sony","flag":false},{"session":"Jun 2025","topic":"Distribution","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Jun 2025","topic":"Financial & Non financial Methods","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"JLP","flag":false},{"session":"Jun 2025","topic":"Market Research","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"JLP","flag":false},{"session":"Jun 2025","topic":"Approaches to staffing","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"JLP","flag":false},{"session":"Jun 2025","topic":"Financial & Non financial Methods","qpart":"2e","marks":10,"cmd":"Assess","ctx":"JLP","flag":false},{"session":"Jun 2025","topic":"Organisational Design","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"IKEA","flag":false},{"session":"Oct 2025","topic":"Role of an Entrepreneur","qpart":"1a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2025","topic":"Supply","qpart":"1b","marks":4,"cmd":"Construct","ctx":"","flag":false},{"session":"Oct 2025","topic":"Approaches to staffing","qpart":"1c","marks":6,"cmd":"Analyse","ctx":"Sayurbox","flag":false},{"session":"Oct 2025","topic":"Role of an Entrepreneur","qpart":"1d","marks":8,"cmd":"Discuss","ctx":"Sayurbox","flag":false},{"session":"Oct 2025","topic":"Marketing Objectives","qpart":"1e","marks":10,"cmd":"Assess","ctx":"Sayurbox","flag":false},{"session":"Oct 2025","topic":"The Market","qpart":"2a","marks":2,"cmd":"Define","ctx":"","flag":false},{"session":"Oct 2025","topic":"The Market","qpart":"2b","marks":4,"cmd":"Calculate","ctx":"","flag":false},{"session":"Oct 2025","topic":"PED","qpart":"2c","marks":6,"cmd":"Analyse","ctx":"","flag":false},{"session":"Oct 2025","topic":"Pricing Strategies","qpart":"2d","marks":8,"cmd":"Discuss","ctx":"Shein","flag":false},{"session":"Oct 2025","topic":"The Market","qpart":"2e","marks":10,"cmd":"Assess","ctx":"Shein","flag":false},{"session":"Oct 2025","topic":"Business Objectives","qpart":"3","marks":20,"cmd":"Evaluate","ctx":"Chick, UK","flag":false}]}</script>
+<script>
+window.onerror=function(m){try{var e=document.createElement("div");e.style.cssText="max-width:1200px;margin:16px auto;padding:14px 16px;border:1px solid #ef4444;border-radius:10px;background:#fef2f2;color:#b91c1c;font:13px/1.5 -apple-system,system-ui,sans-serif";e.textContent="This page hit a script error on this device: "+m;document.body.insertBefore(e,document.body.firstChild);}catch(_){}};
+const D=JSON.parse(document.getElementById("data").textContent);
+const SECCOL=['#2563eb','#0f766e','#b45309','#7c3aed'];
+const MARKCLASS={2:'m2',4:'m4',6:'m6',8:'m8',10:'m10',20:'m20'};
+const CMDORDER=['Define','Calculate','Construct','Explain','Analyse','Discuss','Assess','Evaluate'];
+const PDFURL=id=>`https://drive.google.com/file/d/${id}/view`;
+const topicSec={}; D.topics.forEach(t=>topicSec[t.name]=D.sections.indexOf(t.section));
+const NSESS=D.sessions.length;
+const sk=lbl=>{const s=D.sessions.find(x=>x.label===lbl);return s?s.key:0;};
+let state={view:'topic',sec:new Set(),marks:new Set(),cmds:new Set(),q:''};
+
+const secChips=document.getElementById('secChips');
+D.sections.forEach((s,i)=>{const b=document.createElement('button');b.className='chip';b.textContent=s;b.dataset.sec=i;b.onclick=()=>{tog(state.sec,i,b,SECCOL[i]);render();};secChips.appendChild(b);});
+const markChips=document.getElementById('markChips');
+[2,4,6,8,10,20].forEach(m=>{const b=document.createElement('button');b.className='chip';b.dataset.k=m;b.textContent=(m===20?'20':m);b.onclick=()=>{tog(state.marks,m,b);render();};markChips.appendChild(b);});
+const cmdChips=document.getElementById('cmdChips');
+CMDORDER.forEach(c=>{if(!D.records.some(r=>r.cmd===c))return;const b=document.createElement('button');b.className='chip cmd';b.textContent=c;b.onclick=()=>{tog(state.cmds,c,b);render();};cmdChips.appendChild(b);});
+document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value.toLowerCase();render();});
+function tog(set,val,btn,col){if(set.has(val)){set.delete(val);btn.classList.remove('on');btn.style.background='';btn.style.borderColor='';btn.style.color='';}else{set.add(val);btn.classList.add('on');if(col){btn.style.background=col;btn.style.borderColor=col;btn.style.color='#fff';}}}
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');state.view=t.dataset.v;
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById('view-'+state.view).classList.add('active');
+  document.getElementById('filters').style.display=state.view==='year'?'none':'flex';render();
+});
+
+function topicPass(name){
+  if(state.sec.size&&!state.sec.has(topicSec[name]))return false;
+  if(state.q&&!name.toLowerCase().includes(state.q))return false;
+  return true;
+}
+const fmtQ=p=>p==='3'?'Q3 (essay)':'Q'+p[0]+p[1];
+function occPill(r){
+  const pdf=D.sessions.find(s=>s.label===r.session);
+  return `<div class="occrow"><b>${r.session}</b><span class="qp">${fmtQ(r.qpart)}</span><span class="mtag ${MARKCLASS[r.marks]}">${r.marks}m</span>`
+    +`<span class="cmdpill">${r.cmd||''}</span>`+(r.ctx?`<span class="ctx">${r.ctx}</span>`:'')
+    +(r.flag?' <span class="rev" title="mapping to confirm"></span>':'')
+    +(pdf&&pdf.pdf?` <a class="pdf" href="${PDFURL(pdf.pdf)}" target="_blank" rel="noopener">open ↗</a>`:'')+`</div>`;
+}
+
+function renderTopic(){
+  const box=document.getElementById('topicCards');box.innerHTML='';let any=false;
+  D.topics.forEach(t=>{
+    if(!topicPass(t.name))return;
+    let occ=D.records.filter(r=>r.topic===t.name&&(!state.marks.size||state.marks.has(r.marks))&&(!state.cmds.size||state.cmds.has(r.cmd)));
+    if((state.marks.size||state.cmds.size)&&occ.length===0)return;
+    any=true;const si=D.sections.indexOf(t.section);
+    const papers=new Set(occ.map(o=>o.session)).size;const pct=Math.round(papers/NSESS*100);
+    const markSet=[...new Set(occ.map(o=>o.marks))].sort((a,b)=>a-b);
+    occ.sort((a,b)=>sk(a.session)-sk(b.session));
+    const card=document.createElement('div');card.className='card panel';
+    card.innerHTML=`<h3><span>${t.name}</span><span class="sectag sec${si}">${t.section}</span></h3>
+      <div class="freqline"><div class="bar"><i style="width:${pct}%"></i></div><span class="fcount">${papers}/${NSESS} papers</span></div>
+      <div class="mtags">${markSet.map(m=>`<span class="mtag ${MARKCLASS[m]}">${m}m</span>`).join('')}</div>
+      <span class="more">Show ${occ.length} question${occ.length>1?'s':''} ▾</span>
+      <div class="occ">${occ.map(occPill).join('')}</div>`;
+    const more=card.querySelector('.more'),oc=card.querySelector('.occ');
+    more.onclick=()=>{oc.classList.toggle('open');more.textContent=oc.classList.contains('open')?'Hide ▴':`Show ${occ.length} question${occ.length>1?'s':''} ▾`;};
+    box.appendChild(card);
+  });
+  if(!any)box.innerHTML='<div class="empty panel" style="grid-column:1/-1">No topics match these filters.</div>';
+}
+
+const SLOTS=['1a','1b','1c','1d','1e','2a','2b','2c','2d','2e','3'];
+const SLOTMARK={'1a':2,'1b':4,'1c':6,'1d':8,'1e':10,'2a':2,'2b':4,'2c':6,'2d':8,'2e':10,'3':20};
+let curSession=null;
+function renderYearPicker(){
+  const yp=document.getElementById('yearPick');yp.innerHTML='';
+  [...D.sessions].sort((a,b)=>b.key-a.key).forEach(s=>{const b=document.createElement('button');b.className='chip'+(s.label===curSession?' on':'');b.textContent=s.label;b.onclick=()=>{curSession=s.label;renderYearPicker();renderPaper();};yp.appendChild(b);});
+}
+function renderPaper(){
+  const box=document.getElementById('paperBox');const sess=D.sessions.find(s=>s.label===curSession);
+  const recs=D.records.filter(r=>r.session===curSession);const bySlot={};recs.forEach(r=>{bySlot[r.qpart]=r;});
+  let rows='';const group={'1':'Question 1 (data response)','2':'Question 2 (data response)','3':'Question 3 (essay)'};let lastG='';
+  SLOTS.forEach(sl=>{const g=sl[0];if(g!==lastG){rows+=`<tr class="qgroup"><td colspan="4">${group[g]}</td></tr>`;lastG=g;}
+    const r=bySlot[sl];const mk=SLOTMARK[sl];const label=sl==='3'?'3':sl[0]+'('+sl[1]+')';
+    rows+=`<tr><td class="qcode">${label} ${r&&r.flag?'<span class="rev" title="mapping to confirm"></span>':''}</td><td><span class="mk ${MARKCLASS[mk]}">${mk}</span></td><td>${r?r.cmd:''}</td><td>${r?r.topic+(r.ctx?` <span class="ctx">· ${r.ctx}</span>`:''):'<span class="gap">— not recorded —</span>'}</td></tr>`;});
+  const total=recs.reduce((a,r)=>a+r.marks,0);
+  box.innerHTML=`<div class="paperhead"><h2>${curSession} ${sess.note?`<span class="note">(${sess.note})</span>`:''}</h2>
+    <div>${sess&&sess.pdf?`<a class="pdf" href="${PDFURL(sess.pdf)}" target="_blank" rel="noopener">Open full paper in Drive ↗</a>`:''} &nbsp;<span class="note">mapped: ${total}/80</span></div></div>
+    <table class="qtable"><thead><tr><th>Part</th><th>Marks</th><th>Command</th><th>Topic &amp; context</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderMatrix(){
+  const tbl=document.getElementById('matrix');const sess=[...D.sessions].sort((a,b)=>a.key-b.key);
+  let head='<thead><tr><th class="tname">Topic ▸ Session</th>'+sess.map(s=>`<th>${s.label.replace(' ','<br>')}</th>`).join('')+'</tr></thead>';
+  let body='<tbody>';
+  D.sections.forEach((secName,si)=>{if(state.sec.size&&!state.sec.has(si))return;
+    body+=`<tr class="secrow"><td class="tname">${secName}</td><td colspan="${sess.length}"></td></tr>`;
+    D.topics.filter(t=>t.section===secName&&topicPass(t.name)).forEach(t=>{
+      body+=`<tr><td class="tname" title="${t.name}">${t.name}</td>`;
+      sess.forEach(s=>{const rs=D.records.filter(r=>r.topic===t.name&&r.session===s.label&&(!state.marks.size||state.marks.has(r.marks))&&(!state.cmds.size||state.cmds.has(r.cmd)));
+        body+='<td>'+rs.map(r=>`<span class="cellq ${MARKCLASS[r.marks]}" title="${r.qpart} · ${r.cmd} · ${r.marks}m${r.ctx?' · '+r.ctx:''}">${r.qpart}</span>`).join('')+'</td>';});
+      body+='</tr>';});});
+  body+='</tbody>';tbl.innerHTML=head+body;
+  document.getElementById('matLegend').innerHTML='Mark tariff: '+[[2,'m2'],[4,'m4'],[6,'m6'],[8,'m8'],[10,'m10'],[20,'m20']].map(([m,c])=>`<span><i class="dot ${c}"></i>${m}</span>`).join('')+' &nbsp;·&nbsp; hover a cell for command word + context';
+}
+
+function renderRank(){
+  const box=document.getElementById('rankBox');
+  let items=D.topics.filter(t=>topicPass(t.name)).map(t=>{const occ=D.records.filter(r=>r.topic===t.name&&(!state.marks.size||state.marks.has(r.marks))&&(!state.cmds.size||state.cmds.has(r.cmd)));return{name:t.name,sec:D.sections.indexOf(t.section),papers:new Set(occ.map(o=>o.session)).size,count:occ.length};}).filter(i=>i.count>0).sort((a,b)=>b.papers-a.papers||b.count-a.count);
+  if(!items.length){box.innerHTML='<div class="empty">No topics match these filters.</div>';return;}
+  const max=Math.max(...items.map(i=>i.papers));
+  box.innerHTML='<p class="note" style="padding:10px 0 2px">Ranked by how many of the '+NSESS+' papers (2019–Oct 2025) tested each topic. Bar colour = section.</p>'+items.map(i=>`<div class="rankrow"><div class="rankname" title="${i.name}">${i.name}</div><div class="rbar"><i style="width:${Math.round(i.papers/max*100)}%;background:${SECCOL[i.sec]}"></i></div><div class="rn">${i.papers}/${NSESS}</div></div>`).join('');
+}
+
+function render(){
+  if(state.view==='topic')renderTopic();
+  else if(state.view==='year'){if(!curSession)curSession=[...D.sessions].sort((a,b)=>b.key-a.key)[0].label;renderYearPicker();renderPaper();}
+  else if(state.view==='matrix')renderMatrix();
+  else renderRank();
+}
+document.getElementById('theme').onclick=()=>{const c=document.documentElement.getAttribute('data-theme');document.documentElement.setAttribute('data-theme',c==='dark'?'light':'dark');};
+render();
+</script>
+</body>
+</html>
