@@ -806,10 +806,9 @@ function openRevision(unit){
   }
   (R.sections||[]).forEach(se=>{
     if(!se.docs||!se.docs.length)return;
-    h+=`<div class="section-head"><span class="code">${se.code}</span><h2>${se.title}</h2></div><div class="ppr-grid">
-      <div class="pcard"><div class="pdl">`;
+    h+=`<div class="section-head"><span class="code">${se.code}</span><h2>${se.title}</h2></div><div class="rev-unit-grid">`;
     se.docs.forEach(d=>{h+=`<a class="rev-doc" href="${d.file}" target="_blank" rel="noopener"><span class="ri">${d.icon||'📄'}</span><span class="rt">${d.label}</span><span class="rd">Open →</span></a>`;});
-    h+=`</div></div></div>`;
+    h+=`</div>`;
   });
   document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);
 }
