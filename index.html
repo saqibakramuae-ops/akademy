@@ -805,8 +805,6 @@ function openRevision(unit){
   <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit ${unit} revision</div>
     <h1>Revision</h1>
     <p>Everything you need to revise Unit ${unit} — ${u.title}: one-page summaries, quick-fire question packs, mixed-topic practice and exam-pattern guides for each section, plus full revision notes and mind maps. Tap any item to open or download it.</p></div>`;
-  const TRENDS={"1":"trends/unit1.html","2":"trends/unit2.html","3":"trends/unit3.html","4":"trends/unit4.html"};
-  if(TRENDS[unit]){h+=`<a class="rev-trend" href="${TRENDS[unit]}" target="_blank" rel="noopener"><span class="rt-ic">📈</span><span class="rt-main"><span class="rt-badge">INTERACTIVE · EXAM TRENDS</span><span class="rt-title">Trend Explorer — every Paper ${unit} exam question</span><span class="rt-sub">Mapped by topic, year, mark tariff and command word. See what comes up most, spot the patterns, and open the real papers. Works offline.</span></span><span class="rt-go">Open ↗</span></a>`;}
   if(!R||((!R.unit||!R.unit.length)&&(!R.sections||!R.sections.some(s=>s.docs&&s.docs.length)))){
     h+=`<div class="card"><p style="color:var(--muted);margin:0">Revision material for this unit will be added here soon.</p></div>`;
     document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);return;
@@ -835,6 +833,8 @@ function openPapers(unit){
   <div class="papers-hero"><div class="eyebrow">Pearson Edexcel IAL · Unit ${unit} (${u.paper})</div>
     <h1>Exam papers</h1>
     <p>Past question papers with their mark schemes and examiner reports, organised by year and series. Tap any item to open or download it. Use these for timed practice, then mark your work against the official scheme.</p></div>`;
+  const TRENDS={"1":"trends/unit1.html","2":"trends/unit2.html","3":"trends/unit3.html","4":"trends/unit4.html"};
+  if(TRENDS[unit]){h+=`<a class="rev-trend" href="${TRENDS[unit]}" target="_blank" rel="noopener"><span class="rt-ic">📈</span><span class="rt-main"><span class="rt-badge">INTERACTIVE · EXAM TRENDS</span><span class="rt-title">Trend Explorer — every Paper ${unit} exam question</span><span class="rt-sub">Mapped by topic, year, mark tariff and command word. See what comes up most, spot the patterns, and plan your revision. Works offline.</span></span><span class="rt-go">Open ↗</span></a>`;}
   if(!P.length && !(B.questions||B.ms)){
     h+=`<div class="card"><p style="color:var(--muted);margin:0">Exam papers for this unit will be added here soon.</p></div>`;
     document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);return;
