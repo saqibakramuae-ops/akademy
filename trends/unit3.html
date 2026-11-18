@@ -95,6 +95,7 @@ table.matrix td.tname,table.matrix th.tname{position:sticky;left:0;background:va
 .banner .rev{margin:0 3px}
 footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6}
 .focusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:13px;box-shadow:var(--shadow)}.focusbar b{font-weight:800}.focusbar button{margin-left:auto;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.15);color:#fff;border-radius:999px;padding:5px 12px;font-weight:700;font-size:12px;cursor:pointer}.focusbar button:hover{background:rgba(255,255,255,.28)}
+.ragtag{display:inline-block;font-size:10px;font-weight:800;color:#fff;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle;letter-spacing:.03em}a.tbtn{text-decoration:none;display:inline-block;background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;border-color:transparent;font-weight:700}a.tbtn:hover{filter:brightness(1.1)}.raghint{font-size:12px;color:var(--muted)}.raghint a{color:var(--brand2);font-weight:700}
 </style>
 </head>
 <body>
@@ -107,6 +108,7 @@ footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;lin
       <div class="sub">Business Decisions &amp; Strategy · Pearson Edexcel WBS13/01 · question map <b>Jan 2020 → Oct 2025</b> · 17 sessions</div>
     </div>
     <div class="spacer"></div>
+    <a class="tbtn" href="../index.html#audit=3" title="Open your Unit 3 RAG audit">🚦 My RAG audit</a>
     <button class="tbtn" id="theme">◐ Theme</button>
   </header>
 
@@ -125,6 +127,7 @@ footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;lin
     <div class="fgroup"><span class="flabel">Section (spec area)</span><div class="chips" id="secChips"></div></div>
     <div class="fgroup"><span class="flabel">Marks</span><div class="chips" id="markChips"></div></div>
     <div class="fgroup"><span class="flabel">Command word</span><div class="chips" id="cmdChips"></div></div>
+    <div class="fgroup" id="ragGroup"><span class="flabel">My RAG audit</span><div class="chips" id="ragChips"></div></div>
     <div class="fgroup"><span class="flabel">Search topic</span><input class="search" id="search" placeholder="e.g. growth, ratio, culture…" autocomplete="off"></div>
   </div>
 
@@ -150,7 +153,13 @@ const PDFURL=id=>`https://drive.google.com/file/d/${id}/view`;
 const topicSec={}; D.topics.forEach(t=>topicSec[t.name]=D.sections.indexOf(t.section));
 const NSESS=D.sessions.length;
 const sk=lbl=>{const s=D.sessions.find(x=>x.label===lbl);return s?s.key:0;};
-let state={view:'topic',sec:new Set(),marks:new Set(),cmds:new Set(),q:'',focus:null};
+let state={view:'topic',sec:new Set(),marks:new Set(),cmds:new Set(),q:'',focus:null,rag:new Set()};
+const UNIT_ID='3';let RAG={};
+const RAGL={r:['Red','#dc2626'],a:['Amber','#d97706'],g:['Green','#16a34a'],n:['Not rated','#64748b']};
+function readRag(){try{const u=localStorage.getItem('akademy_user')||'guest';RAG=JSON.parse(localStorage.getItem('akademy_audit_topics_'+u+'_'+UNIT_ID)||'{}')||{};}catch(e){RAG={};}}
+function ragTag(n){const v=RAG[n];return(!v||v==='n')?'':`<span class="ragtag" style="background:${RAGL[v][1]}" title="Your RAG audit rating for this topic">${RAGL[v][0]}</span>`;}
+function buildRag(){const g=document.getElementById('ragChips');g.innerHTML='';state.rag.clear();if(!Object.keys(RAG).some(k=>RAG[k]!=='n')){g.innerHTML='<span class="raghint"><a href="../index.html#audit=3">Rate this unit in your RAG audit</a> to colour-code topics and filter to your red / amber ones.</span>';return;}
+  [['r','🔴 Red'],['a','🟠 Amber'],['g','🟢 Green'],['n','⚪ Not rated']].forEach(([k,l])=>{const b=document.createElement('button');b.className='chip';b.textContent=l;b.onclick=()=>{tog(state.rag,k,b,RAGL[k][1]);render();};g.appendChild(b);});}
 function readHash(){try{const m=/[#&]t=([^&]*)/.exec(location.hash||'');state.focus=null;if(m&&m[1]){const names=m[1].split('~').map(x=>decodeURIComponent(x)).filter(n=>D.topics.some(t=>t.name===n));if(names.length)state.focus=new Set(names);}}catch(e){state.focus=null;}}
 function renderFocus(){const b=document.getElementById('focusBar');if(!state.focus){b.innerHTML='';return;}b.innerHTML='<div class="focusbar"><span>🎯 Showing only: <b>'+[...state.focus].join(' · ')+'</b></span><button id="focusClear">Show all topics</button></div>';document.getElementById('focusClear').onclick=()=>{state.focus=null;try{history.replaceState(null,'',location.pathname+location.search);}catch(e){location.hash='';}render();};}
 
@@ -170,6 +179,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 function topicPass(name){
+  if(state.rag.size&&!state.rag.has(RAG[name]||'n'))return false;
   if(state.focus&&!state.focus.has(name))return false;
   if(state.sec.size&&!state.sec.has(topicSec[name]))return false;
   if(state.q&&!name.toLowerCase().includes(state.q))return false;
@@ -195,7 +205,7 @@ function renderTopic(){
     const markSet=[...new Set(occ.map(o=>o.marks))].sort((a,b)=>a-b);
     occ.sort((a,b)=>sk(a.session)-sk(b.session));
     const card=document.createElement('div');card.className='card panel';
-    card.innerHTML=`<h3><span>${t.name}</span><span class="sectag" style="background:${SECCOL[si]}">${t.section}</span></h3>
+    card.innerHTML=`<h3><span>${t.name}${ragTag(t.name)}</span><span class="sectag" style="background:${SECCOL[si]}">${t.section}</span></h3>
       <div class="freqline"><div class="bar"><i style="width:${pct}%"></i></div><span class="fcount">${papers}/${NSESS} papers</span></div>
       <div class="mtags">${markSet.map(m=>`<span class="mtag ${MARKCLASS[m]}">${m}m</span>`).join('')}</div>
       <span class="more">Show ${occ.length} question${occ.length>1?'s':''} ▾</span>
@@ -259,6 +269,7 @@ function render(){
   else renderRank();
 }
 document.getElementById('theme').onclick=()=>{const c=document.documentElement.getAttribute('data-theme');document.documentElement.setAttribute('data-theme',c==='dark'?'light':'dark');};
+readRag();buildRag();window.addEventListener('storage',()=>{readRag();buildRag();render();});window.addEventListener('focus',()=>{const o=JSON.stringify(RAG);readRag();if(JSON.stringify(RAG)!==o){buildRag();render();}});
 readHash();window.addEventListener('hashchange',()=>{readHash();render();});
 render();
 </script>
