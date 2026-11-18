@@ -1046,7 +1046,7 @@ window.CURRICULUM = [
   notes:[
     {h:"Why change culture, and why it's hard", html:`
       <p>A business may need to change its culture after a <b>merger or takeover</b>, during <b>growth or market change</b>, or because its current culture is <b>weak</b>.</p>
-      <p>But an established culture is hard to shift because of <b>resistance to change</b>: entrenched behaviours ("the way we've always done it"), fear and job insecurity, loss of autonomy, and weak or inconsistent leadership. Cultural change can hit morale, communication and performance in the short term.</p>`},
+      <p>But an established culture is hard to shift because of <b>resistance to change</b>: workers not accepting the need for change, fear of change (e.g. possible redundancies), not wanting their job roles to change, a <b>lack of trust</b> and misunderstanding of the reasons for change, and <b>organisational inertia</b> — habits embedded over a long period are very hard to shift ("the way we've always done it"). Weak or inconsistent leadership makes all of this worse. Cultural change can hit morale, communication and performance in the short term.</p>`},
     {h:"Kotter & Schlesinger — six approaches to resistance", html:`
       <ol>
         <li><b>Education & communication</b> — explain clearly why change is needed; tackles misconceptions.</li>
@@ -1498,6 +1498,16 @@ window.CURRICULUM = [
   code:"3.3.6.1", subtheme:"3.3.6", title:"Key factors in change",
   business:"Case studies: Tesco & Riverton Retail", status:"live",
   notes:[
+    {h:"Change and its causes", html:`
+      <p><b>Managing change</b> means planning for, implementing, coordinating and monitoring the process of change. Change happens when a business alters its <b>structure, size or strategy</b> in response to internal or external influences. It creates both <b>opportunities and threats</b>, so it must be managed carefully if the business is to keep or improve its competitiveness.</p>
+      <p>Common causes of change:</p>
+      <ul>
+        <li>a change in <b>organisational size</b> (growth or downsizing)</li>
+        <li><b>poor business performance</b></li>
+        <li><b>new ownership</b></li>
+        <li><b>transformational leadership</b> — a new leader with a new vision</li>
+        <li><b>the market and other external factors</b> (use PESTLE)</li>
+      </ul>`},
     {h:"The key internal factors", html:`
       <p>Beyond leadership, four internal factors strongly affect how well a business manages change:</p>
       <ul>
@@ -1506,14 +1516,35 @@ window.CURRICULUM = [
         <li><b>Time / speed of change</b> — <b>incremental</b> (gradual) change lets staff understand and take ownership; <b>step</b> (rapid) change is riskier and causes problems if not well managed.</li>
         <li><b>Managing resistance to change</b> — identifying who will resist and why, then tailoring the change (communication, involvement, support) so the majority accept it (see Kotter & Schlesinger in <b>3.3.4.3</b>).</li>
       </ul>`},
+    {h:"Incremental vs step change", html:`
+      <ul>
+        <li><b>Incremental change</b> — many small changes made regularly as the business develops and responds to subtle shifts in its environment. It usually meets little resistance, is often not even noticed, and suits a culture that accepts continuous improvement (e.g. <b>Dyson</b> constantly adapting).</li>
+        <li><b>Rapid (step) change</b> — dramatic, radical change "in one fell swoop", often needed after <b>strategic drift</b> (e.g. <b>Microsoft</b> moving towards cloud computing). It gets things over with quickly and decisively, but may need some <b>coercion</b> to overcome resistance and causes problems if badly managed.</li>
+      </ul>
+      <p>The slower the change, the more likely most staff will understand and take ownership of it — but if a change must be made quickly, the process has to be managed especially carefully.</p>`},
+    {h:"Why stakeholders resist change", html:`
+      <ul>
+        <li><b>Employees</b> — worry about job security or the work environment, don't understand why change is needed, or are reluctant to learn new skills.</li>
+        <li><b>Owners</b> — fear disruption and lost productivity, are reluctant to meet the costs, prefer the status quo to risk, or don't fully understand the benefits.</li>
+        <li><b>Customers</b> — hesitant about anything unfamiliar; fear losing features they value or are simply used to buying in a certain way.</li>
+        <li><b>Suppliers</b> — worry about quality or extra costs, have invested in current systems, or lack the expertise for new ones.</li>
+      </ul>
+      <p>Resistance is overcome using the Kotter &amp; Schlesinger approaches in <b>3.3.4.3</b>.</p>`},
     {h:"Transformational leadership", html:`
-      <p>A <b>transformational leader</b> inspires and motivates staff with a clear, exciting <b>vision</b> of the future, driving innovation and change. Key characteristics: <b>vision, inspiration, individualised consideration</b> (caring about each person) and <b>intellectual stimulation</b> (encouraging new ideas). They lead by example and win hearts and minds, rather than just managing tasks.</p>
+      <p>A <b>transformational leader</b> fosters significant change by encouraging, inspiring and motivating employees — inspirational, passionate, visionary, creative and energetic, and supporting every team member to reach their potential. They lead by example and win hearts and minds, rather than just managing tasks. Its four components:</p>
+      <ul>
+        <li><b>Intellectual stimulation</b> — challenges the status quo and encourages creativity.</li>
+        <li><b>Individualised consideration</b> — supportive of and encouraging to every team member.</li>
+        <li><b>Inspirational motivation</b> — a shared passion and a clear vision.</li>
+        <li><b>Idealised influence</b> — a role model who earns trust and respect.</li>
+      </ul>
       <ul>
         <li><b>Steve Jobs (Apple)</b> — imparted a clear vision that excited employees, sparking the iPod and iPhone.</li>
         <li><b>Jeff Bezos (Amazon)</b> — a visionary risk-taker behind the Kindle and Amazon's expansion.</li>
         <li><b>Oprah Winfrey</b> — extended her brand across media, leading by example and inspiring loyalty.</li>
       </ul>
-      <p>In a period of change, a transformational leader reduces resistance because staff trust the leader and buy into the goal.</p>`},
+      <p>In a period of change, a transformational leader reduces resistance because staff trust the leader and buy into the goal.</p>
+      <p><b>Possible effects on a business:</b> higher <b>competitiveness</b> (a new vision for how to produce, sell and market), better <b>productivity</b> (effective motivation) and stronger <b>financial performance</b>. For <b>stakeholders</b> the picture is mixed — shareholders may gain, but redundancies upset employees and closing outlets upsets customers. Better performance may also be down to <b>external factors</b>, so always weigh those in an exam answer.</p>`},
     {h:"Case: Riverton Retail", html:`
       <p><b>Riverton Retail Ltd</b> (1,200+ stores) faced falling sales and online competition, so it introduced major change — a new online platform, automated checkouts and cost-cutting. But it struggled because of a <b>weak culture</b>, poor head-office–store communication, inconsistent store management, and its <b>large size</b> and the <b>speed</b> of change, which left staff anxious and unmotivated. It shows how culture, size, speed and communication combine to make change hard.</p>`}
   ],
@@ -4675,6 +4706,16 @@ window.CURRICULUM = [
   business:"Owner's capital, retained profit & sale of assets",
   status:"live",
   notes:[
+    {h:"Why businesses need finance", html:`
+      <p>Cash is needed from the moment someone has a business idea, and again at every stage of growth. A business may need finance to:</p>
+      <ul>
+        <li><b>Start up</b> — buy assets and materials, employ people and cover running costs before sales bring in enough cash.</li>
+        <li><b>Expand capacity</b> — add capacity and new technology to cut unit costs and keep up with competitors (a long-term investment).</li>
+        <li><b>Develop and market new products</b> — in fast-moving markets this means paying for research and test marketing, and the costs are often not covered by sales for some time.</li>
+        <li><b>Enter new markets</b> — new geographical areas (e.g. export markets) or new types of customer, which costs money in research, advertising and setting up outlets.</li>
+        <li><b>Take over or acquire</b> another business.</li>
+        <li><b>Run day to day</b> — pay wages, suppliers and bills while waiting for customers to pay.</li>
+      </ul>`},
     {h:"Sources of internal finance", html:`
       <p><b>Internal finance</b> is money raised from <i>within</i> the business or from its owners, rather than from outside lenders or investors.</p>
       <ul>
@@ -4749,6 +4790,7 @@ window.CURRICULUM = [
         <li><b>Overdrafts</b> — a flexible facility to spend more than is in the account; good for short-term cash gaps but expensive if used heavily.</li>
         <li><b>Leasing</b> — renting an asset rather than buying it; spreads the cost but costs more overall than buying.</li>
         <li><b>Trade credit</b> — paying suppliers after an agreed period (e.g. 30 days); eases cash flow but missing payment damages relationships.</li>
+        <li><b>Grants</b> — money from the government or local authority (e.g. to help unemployed people become self-employed, to encourage firms to locate in an area, or to support a social enterprise). It <i>does not have to be repaid</i> and can bring good publicity, but it is only given for a specific purpose, so it is inflexible, and it can be hard to win because the amounts available are limited.</li>
       </ul>`},
     {h:"Suitability", html:`
       <p>The right choice depends on the <b>amount</b> needed, how <b>long</b> it is needed for, the <b>cost</b>, the business's <b>legal form</b> (only companies can sell shares) and whether the owner is willing to give up <b>control</b>. Short-term cash gaps suit overdrafts or trade credit; long-term investment suits loans or share capital.</p>`}
