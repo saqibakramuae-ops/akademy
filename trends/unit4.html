@@ -94,6 +94,7 @@ table.matrix td.tname,table.matrix th.tname{position:sticky;left:0;background:va
 .banner{font-size:12px;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:14px}
 .banner .rev{margin:0 3px}
 footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6}
+.focusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:13px;box-shadow:var(--shadow)}.focusbar b{font-weight:800}.focusbar button{margin-left:auto;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.15);color:#fff;border-radius:999px;padding:5px 12px;font-weight:700;font-size:12px;cursor:pointer}.focusbar button:hover{background:rgba(255,255,255,.28)}
 </style>
 </head>
 <body>
@@ -117,6 +118,8 @@ footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center;lin
   </div>
 
   <div class="banner">Paper 4 is synoptic: <b>Section A Q1 (a–e) = 4/4/8/12/12</b>, then two 20-mark essays (<b>Q2 Section B, Q3 Section C</b>). Slots marked <span class="rev"></span> are mine to confirm — the 4 latest sessions, your grid gaps, and the cross-theme calcs/diagrams grouped under <b>Themes 1 &amp; 2</b>. Jan 2026 is held back as a mock.</div>
+
+  <div id="focusBar"></div>
 
   <div class="filters" id="filters">
     <div class="fgroup"><span class="flabel">Section (spec area)</span><div class="chips" id="secChips"></div></div>
@@ -147,7 +150,9 @@ const PDFURL=id=>`https://drive.google.com/file/d/${id}/view`;
 const topicSec={}; D.topics.forEach(t=>topicSec[t.name]=D.sections.indexOf(t.section));
 const NSESS=D.sessions.length;
 const sk=lbl=>{const s=D.sessions.find(x=>x.label===lbl);return s?s.key:0;};
-let state={view:'topic',sec:new Set(),marks:new Set(),cmds:new Set(),q:''};
+let state={view:'topic',sec:new Set(),marks:new Set(),cmds:new Set(),q:'',focus:null};
+function readHash(){try{const m=/[#&]t=([^&]*)/.exec(location.hash||'');state.focus=null;if(m&&m[1]){const names=m[1].split('~').map(x=>decodeURIComponent(x)).filter(n=>D.topics.some(t=>t.name===n));if(names.length)state.focus=new Set(names);}}catch(e){state.focus=null;}}
+function renderFocus(){const b=document.getElementById('focusBar');if(!state.focus){b.innerHTML='';return;}b.innerHTML='<div class="focusbar"><span>🎯 Showing only: <b>'+[...state.focus].join(' · ')+'</b></span><button id="focusClear">Show all topics</button></div>';document.getElementById('focusClear').onclick=()=>{state.focus=null;try{history.replaceState(null,'',location.pathname+location.search);}catch(e){location.hash='';}render();};}
 
 const secChips=document.getElementById('secChips');
 D.sections.forEach((s,i)=>{const b=document.createElement('button');b.className='chip';b.textContent=s;b.onclick=()=>{tog(state.sec,i,b,SECCOL[i]);render();};secChips.appendChild(b);});
@@ -165,6 +170,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 function topicPass(name){
+  if(state.focus&&!state.focus.has(name))return false;
   if(state.sec.size&&!state.sec.has(topicSec[name]))return false;
   if(state.q&&!name.toLowerCase().includes(state.q))return false;
   return true;
@@ -195,6 +201,7 @@ function renderTopic(){
       <span class="more">Show ${occ.length} question${occ.length>1?'s':''} ▾</span>
       <div class="occ">${occ.map(occPill).join('')}</div>`;
     const more=card.querySelector('.more'),oc=card.querySelector('.occ');
+    if(state.focus){oc.classList.add('open');more.textContent='Hide ▴';}
     more.onclick=()=>{oc.classList.toggle('open');more.textContent=oc.classList.contains('open')?'Hide ▴':`Show ${occ.length} question${occ.length>1?'s':''} ▾`;};
     box.appendChild(card);
   });
@@ -245,12 +252,14 @@ function renderRank(){
 }
 
 function render(){
+  renderFocus();
   if(state.view==='topic')renderTopic();
   else if(state.view==='year'){if(!curSession)curSession=[...D.sessions].sort((a,b)=>b.key-a.key)[0].label;renderYearPicker();renderPaper();}
   else if(state.view==='matrix')renderMatrix();
   else renderRank();
 }
 document.getElementById('theme').onclick=()=>{const c=document.documentElement.getAttribute('data-theme');document.documentElement.setAttribute('data-theme',c==='dark'?'light':'dark');};
+readHash();window.addEventListener('hashchange',()=>{readHash();render();});
 render();
 </script>
 </body>
