@@ -716,9 +716,9 @@ const SCENE=`<svg viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" xm
 document.getElementById('loginScene').innerHTML=SCENE;
 
 /* Large static files (PDFs, PowerPoints, case-study images) are served from the
-   jsDelivr CDN off the GitHub repo, so the Vercel deployment stays tiny. Every
-   "resources/..." path in the data is rewritten to the CDN at load. */
-const ASSET_BASE="https://cdn.jsdelivr.net/gh/saqibakramuae-ops/akademy@main/";
+   GitHub Pages site of the repo (no size limit, unlike jsDelivr), so the Vercel deployment stays tiny.
+   Every "resources/..." path in the data is rewritten to that address at load. */
+const ASSET_BASE="https://saqibakramuae-ops.github.io/akademy/";
 (function(){
   function reb(o){
     if(!o||typeof o!=="object")return;
