@@ -283,6 +283,42 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .akram-key i{display:inline-block;width:11px;height:11px;border-radius:3px;background:var(--akram)}
 .akram-key i.ai{background:var(--muted)}
 .akram-key b.red{color:var(--akram)}
+/* ---------- Calculations tab ---------- */
+.calc-intro p{margin:.3em 0;font-size:14px;color:var(--muted)}
+.calc-card h2{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.calc-card h3{font-size:15px;margin:18px 0 6px;color:var(--navy)}
+:root[data-theme="dark"] .calc-card h3{color:var(--ink)}
+.calc-spec{font-size:11.5px;font-weight:700;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.calc-src{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 10px}
+.cs-chip{font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;border:1px solid var(--line);background:var(--chip);color:var(--muted)}
+.cs-chip.red{color:var(--akram);border-color:var(--akram)}
+.calc-box{background:var(--chip);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:6px 0}
+.calc-fml{font-family:var(--serif);font-size:16px;font-weight:700;padding:3px 0;color:var(--ink)}
+.calc-fml.red{color:var(--akram)}
+.calc-when{font-size:14px;margin:10px 0 0}
+.calc-steps,.calc-mis,.calc-dp{margin:4px 0 0;padding-left:22px;font-size:14.5px}
+.calc-steps li,.calc-mis li,.calc-dp li{margin:5px 0}
+.calc-scn{font-size:14px;color:var(--muted);margin:4px 0 8px}
+.calc-tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0}
+.calc-t{border-collapse:collapse;font-size:13.5px;min-width:100%}
+.calc-t th{background:var(--navy);color:#fff;text-align:left;padding:7px 10px;font-weight:700;white-space:nowrap}
+.calc-t td{border-bottom:1px solid var(--line);padding:7px 10px;vertical-align:top}
+.calc-t td.res{font-weight:700}
+.calc-post{font-size:14px;margin:6px 0}
+.calc-ans{background:rgba(15,163,127,.1);border-left:3px solid var(--emerald);padding:9px 13px;border-radius:8px;font-size:14.5px;margin:10px 0 0}
+.calc-turn{border:1px dashed var(--line);border-radius:12px;padding:12px 14px}
+.calc-q{font-size:14.5px;margin:0 0 8px}
+.calc-in{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.calc-in input{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:150px;min-height:44px}
+.calc-unit{font-size:13px;color:var(--muted)}
+.calc-fb{font-size:14px;margin-top:8px;min-height:1px}
+.calc-fb.ok{color:var(--emerald);font-weight:700}
+.calc-fb.bad{color:#c0392b;font-weight:700}
+.calc-dp-note{font-size:13.5px;color:var(--muted);margin:2px 0 6px}
+.calc-hintbtn{margin-top:6px;min-height:36px!important;padding:6px 12px!important;font-size:13px!important}
+.calc-hint{display:none;margin-top:6px;background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:9px 13px;border-radius:8px;font-size:13.5px}
+.calc-srcnote{font-size:12.5px;color:var(--muted);margin:14px 0 0;border-top:1px solid var(--line);padding-top:8px}
+
 .samp-note{margin:0 0 10px!important;font-size:12.5px;font-style:italic;color:var(--muted)}
 .samp-pill{display:inline-block;background:var(--emerald);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;vertical-align:middle;letter-spacing:.3px}
 .fb{background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:10px 14px;border-radius:8px;font-size:13.5px;margin-top:12px}
@@ -719,6 +755,7 @@ footer img{height:46px;opacity:.9}
 <script src="data.js"></script>
 <script src="audit-data.js"></script>
 <script src="notes-data.js"></script>
+<script src="calc-data.js"></script>
 <script>
 /* ===================== engine ===================== */
 const SCENE=`<svg viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="akSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c2548"/><stop offset="0.55" stop-color="#0e2f55"/><stop offset="1" stop-color="#091a30"/></linearGradient><radialGradient id="akGold" cx="82%" cy="16%" r="55%"><stop offset="0" stop-color="#f5a623" stop-opacity="0.30"/><stop offset="1" stop-color="#f5a623" stop-opacity="0"/></radialGradient><radialGradient id="akTeal" cx="8%" cy="94%" r="60%"><stop offset="0" stop-color="#0fa37f" stop-opacity="0.26"/><stop offset="1" stop-color="#0fa37f" stop-opacity="0"/></radialGradient><pattern id="akDots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#ffffff" opacity="0.05"/></pattern></defs><rect width="1440" height="620" fill="url(#akSky)"/><rect width="1440" height="620" fill="url(#akDots)"/><rect width="1440" height="620" fill="url(#akGold)"/><rect width="1440" height="620" fill="url(#akTeal)"/><g fill="#0a2038" opacity="0.92"><rect x="60" y="430" width="70" height="190"/><rect x="140" y="470" width="54" height="150"/><rect x="205" y="400" width="62" height="220"/><rect x="278" y="462" width="48" height="158"/><rect x="1120" y="440" width="64" height="180"/><rect x="1196" y="398" width="58" height="222"/><rect x="1266" y="470" width="50" height="150"/><rect x="1326" y="430" width="66" height="190"/></g><g fill="#f5a623" opacity="0.5"><rect x="78" y="450" width="8" height="8"/><rect x="98" y="450" width="8" height="8"/><rect x="78" y="475" width="8" height="8"/><rect x="222" y="420" width="8" height="8"/><rect x="242" y="420" width="8" height="8"/><rect x="222" y="445" width="8" height="8"/><rect x="1212" y="418" width="8" height="8"/><rect x="1232" y="418" width="8" height="8"/><rect x="1342" y="450" width="8" height="8"/></g><g><rect x="548" y="470" width="46" height="150" rx="4" fill="#12506e"/><rect x="612" y="420" width="46" height="200" rx="4" fill="#157a7a"/><rect x="676" y="358" width="46" height="262" rx="4" fill="#0fa37f"/><rect x="740" y="298" width="46" height="322" rx="4" fill="#f5a623"/><rect x="804" y="238" width="46" height="382" rx="4" fill="#f5c267"/></g><polyline points="534,500 628,430 693,470 778,330 892,250" fill="none" stroke="#f5a623" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/><polygon points="892,250 866,258 876,230" fill="#f5a623"/><g fill="#ffffff"><circle cx="534" cy="500" r="6"/><circle cx="628" cy="430" r="6"/><circle cx="693" cy="470" r="6"/><circle cx="778" cy="330" r="6"/></g></svg>`;
@@ -1142,6 +1179,7 @@ function openTopic(code){
   <div class="bar"><i id="heroBar" style="width:${pct(t)}%"></i></div></div>
   <div class="tabs">
     <button class="tab active" onclick="showSec('notes',this)">📘 Notes</button>
+    ${(window.CALCS&&window.CALCS[t.code])?`<button class="tab" onclick="showSec('calc',this)">🧮 Calculations</button>`:''}
     <button class="tab tab-quiz" onclick="showSec('quiz',this)">⚡ Quiz</button>
     <button class="tab" onclick="showSec('defs',this)">🔑 Definitions</button>
     <button class="tab" onclick="showSec('practice',this)">✏️ Practice</button>
@@ -1150,6 +1188,7 @@ function openTopic(code){
     <button class="tab" onclick="showSec('res',this)">📄 Resources</button>
   </div>`;
   h+=`<div class="section show" id="sec-notes">`+dnCard(t.code)+``;(t.notes||[]).forEach(n=>{h+=`<div class="card"><h2>${n.h}</h2>${n.html}</div>`;});h+=`</div>`;
+  if(window.CALCS&&window.CALCS[t.code]&&window.calcRender)h+=`<div class="section" id="sec-calc">`+calcRender(t.code)+`</div>`;
   h+=`<div class="section" id="sec-defs"><div class="card"><h2>Key definitions — the Edexcel two-point rule</h2><p style="color:var(--muted);font-size:13.5px;margin-top:0">Each answer makes <b>two linked points</b> <span class="pt">1</span><span class="pt">2</span>. An example alone does not earn the second mark.</p></div>`;
   (t.definitions||[]).forEach(d=>{h+=`<details class="def"><summary>${d.term}<span class="mk">${d.marks} marks</span></summary><div class="body">${d.body}</div></details>`;});h+=`</div>`;
   h+=`<div class="section" id="sec-practice">`+questionBlock(t,"practice",tp)+`</div>`;
