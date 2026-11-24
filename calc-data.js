@@ -366,6 +366,106 @@ C['3.3.5.3']=[
  src:{formula:'akram',example:'ai',note:'Formula: your Unit 3 formulas sheet. Example written by Claude.'}}
 ];
 
+/* ===== UNIT 1 (batch 2) ===== */
+function pc(o,n){return (n-o)/o*100;}
+function sg(x,d){return (x>0?'+':'')+f(x,d);}
+function tag(x){var a=Math.abs(x);return a<1?'price inelastic':(a>1?'price elastic':'unit elastic');}
+
+/* ===== 1.3.1.1 The market ===== */
+C['1.3.1.1']=[
+{id:'mshare',title:'Market share',spec:'1.3.1.1 a',
+ formula:[{s:'Market share = Total share held by individual company / Total market share available x 100   OR   Sales by individual company / total sales in the market x 100',red:1}],
+ when:'You are asked what percentage of a market a business holds, or how many customers or sales a share represents.',
+ steps:['Find the firm’s sales (or customers) and the total sales (or customers) in the whole market. Use the same measure and the same period for both.','Market share = firm’s sales ÷ total market sales × 100.','Going the other way: firm’s sales = market share × total market sales.','Compare with rivals and with the previous year to see whether the business is gaining or losing ground.'],
+ vals:{mk:2500,b:[['Google Chrome',34.7],['Internet Explorer',12.5],['Safari',15.2]]},
+ rand:function(){var mk=R(40,400,10)*1000,s=Math.round(mk*R(8,45)/100/100)*100;return {mk:mk,s:s,b:null};},
+ build:function(v){if(v.b){var rows=v.b.map(function(x){var u=x[1]/100*v.mk;return [x[0],f(x[1],1)+'% × '+f(v.mk)+'m',f(u,1)+'m',f(u,1)+' ÷ '+f(v.mk)+' × 100 = '+f(u/v.mk*100,1)+'%'];});
+   return {scn:'There are about 2.5bn (2,500m) internet users worldwide. Chrome has a 34.7% market share, Internet Explorer 12.5% and Safari 15.2%. How many people use each?',head:['Browser','Share × market','Users','Check: users ÷ market × 100'],rows:rows,post:['Going from share to users: users = share × market size. Going back: share = users ÷ market size × 100.'],
+   answer:'Chrome 867.5m, Safari 380.0m, Internet Explorer 312.5m users.',ask:'',key:0,tol:1,unit:'',interp:'Chrome holds just over a third of the market, more than Safari and Internet Explorer combined (27.7%). A share that large gives it strong bargaining power and brand recognition, but it also makes it the target for rivals.'};}
+  var sh=v.s/v.mk*100;
+  return {scn:'',head:['Step','Working','Result'],rows:[['Market share',f(v.s)+' ÷ '+f(v.mk)+' × 100',f(sh,1)+'%']],post:[],answer:'Market share = '+f(sh,1)+'%',
+   ask:'A firm sells '+f(v.s)+' units in a market where total sales are '+f(v.mk)+' units. What is its market share? Give a % to 1 decimal place.',key:sh,tol:0.051,unit:'%',interp:''};},
+ mistakes:['Dividing by the competitors’ sales instead of the <b>total</b> market (which includes the firm itself).','Mixing measures, for example the firm’s sales in £ with market size in units.','Forgetting × 100, so the answer is a decimal instead of a percentage.'],
+ decide:[{q:'A firm has a 12% share in a market that is growing quickly. Should it aim to win share from rivals or to grow along with the market? Justify your choice.',hint:'Winning share needs marketing spend and may trigger a price war; riding market growth is cheaper but share stays flat. Link to the firm’s strengths and to how rivals might react. Make a clear recommendation.'},
+        {q:'Chrome has the biggest share of its market. Is a large market share always an advantage? Evaluate.',hint:'Advantages: economies of scale, brand power, bargaining power. Limits: attracts competition and regulators, depends on one product, share may not mean profit. Reach a judgement.'}],
+ src:{formula:'akram',example:'akram',note:'Formula: your Unit 1 formulas sheet. Browser example: your OneNote “(1) The market”. Random “Your turn” questions and working by Claude.'}},
+
+{id:'mgrowth',title:'Market growth',spec:'1.3.1.1 b',
+ formula:[{s:'Percentage change over a period of time = (New figure – original figure) / original x 100',red:1},{s:'Market Growth = New - Old / Old x 100',red:1}],
+ when:'You are asked how fast a market has grown or shrunk over a period.',
+ steps:['Take the market size at the end (new) and at the start (old). Use the same measure for both.','Subtract old from new.','Divide by the old figure and multiply by 100.','A negative answer means the market has shrunk.'],
+ vals:{o:1.2,n:2.9,y1:2010,y2:2020},
+ rand:function(){var o=R(5,50)/10,n=Math.round(o*(1+R(-30,150)/100)*10)/10;if(n===o)n=o+0.5;return {o:o,n:n,y1:R(2005,2015),y2:0};},
+ build:function(v){var g=pc(v.o,v.n);
+  return {scn:v.y2?'In '+v.y1+' the total value of sales in a market was £'+f(v.o,1)+'bn. By '+v.y2+' it had risen to £'+f(v.n,1)+'bn.':'',head:['Step','Working','Result'],rows:[['Change in market size',f(v.n,1)+' − '+f(v.o,1),'£'+f(v.n-v.o,1)+'bn'],['Market growth','('+f(v.n-v.o,1)+' ÷ '+f(v.o,1)+') × 100',sg(g,1)+'%']],post:[],
+   answer:'Market growth = '+sg(g,1)+'% over the period.',
+   ask:'A market was worth £'+f(v.o,1)+'bn and is now worth £'+f(v.n,1)+'bn. What is the market growth? Give a % to 1 decimal place (use a minus sign if it has shrunk).',key:g,tol:0.051,unit:'%',
+   interp:'The market is '+f(Math.abs(g),1)+'% '+(g>=0?'larger':'smaller')+' than at the start. Over ten years that averages about '+f(Math.abs(g)/10,1)+' percentage points a year, but growth rarely runs evenly, so look at each year before forecasting.'};},
+ mistakes:['Dividing by the new figure instead of the original.','Giving the change in £ when the question asks for a percentage.','Forgetting that a fall gives a negative growth rate.'],
+ decide:[{q:'A market has grown 141.7% in ten years. Should a new business enter it? What would you want to check first?',hint:'Fast growth attracts entrants and can mean price competition later. Check whether growth is continuing, the size of the leaders, barriers to entry and the firm’s own resources. Make a recommendation.'},
+        {q:'Market growth is slowing from 20% a year to 3%. How should an existing firm change its strategy?',hint:'Slower growth means more competition for share: consider cost control, differentiation, new markets or new products. Link each option to the firm’s position and risk.'}],
+ src:{formula:'akram',example:'akram',note:'Formulas and the £1.2bn to £2.9bn (2010 to 2020) example: your Unit 1 formulas sheet and OneNote “(1) The market”. Random questions and working by Claude.'}}
+];
+
+/* ===== 1.3.2.4 PED ===== */
+C['1.3.2.4']=[
+{id:'ped',title:'Price elasticity of demand (PED)',spec:'1.3.2.4 a',
+ formula:[{s:'PED = % change in Quantity demand/ % Change in Price',red:1},{s:'Percentage change over a period of time = (New figure – original figure) / original x 100',red:1}],
+ when:'You are given a change in price and the quantity demanded before and after, and asked how responsive demand is.',
+ steps:['% change in quantity demanded = (new − old) ÷ old × 100.','% change in price = (new − old) ÷ old × 100.','PED = % change in quantity ÷ % change in price. It is normally negative.','Remove the minus sign to interpret: below 1 is inelastic, above 1 is elastic, exactly 1 is unit elastic.'],
+ vals:{q1:200,q2:180,p1:0.5,p2:0.6},
+ rand:function(){var p1=R(10,100)/10,pp=R(5,25),q1=R(20,100)*10,qq=R(2,40),sg_=Math.random()<0.5?1:-1;return {p1:p1,p2:Math.round(p1*(1+sg_*pp/100)*100)/100,q1:q1,q2:Math.round(q1*(1-sg_*qq/100))};},
+ build:function(v){var cq=pc(v.q1,v.q2),cp=pc(v.p1,v.p2),pe=cq/cp;
+  return {scn:'A newsagent sells '+f(v.q1)+' cans a week at a price of £'+f(v.p1,2)+'. The price changes to £'+f(v.p2,2)+' and demand changes to '+f(v.q2)+' cans.',
+   head:['Step','Working','Result'],rows:[['% change in quantity demanded','('+f(v.q2)+' − '+f(v.q1)+') ÷ '+f(v.q1)+' × 100',sg(cq,1)+'%'],['% change in price','('+f(v.p2,2)+' − '+f(v.p1,2)+') ÷ '+f(v.p1,2)+' × 100',sg(cp,1)+'%'],['PED',sg(cq,1)+' ÷ '+sg(cp,1),f(pe,2)]],
+   post:['Ignoring the minus sign, '+f(Math.abs(pe),2)+' is '+(Math.abs(pe)<1?'less than 1':(Math.abs(pe)>1?'more than 1':'exactly 1'))+', so demand is <b>'+tag(pe)+'</b>.'],
+   answer:'PED = '+f(pe,2)+' ('+tag(pe)+').',
+   ask:'Demand changes from '+f(v.q1)+' to '+f(v.q2)+' units when the price goes from £'+f(v.p1,2)+' to £'+f(v.p2,2)+'. What is the size of the PED (ignore the minus sign)? Give your answer to 2 decimal places.',key:Math.abs(pe),tol:0.0151,abs:1,unit:'',
+   interp:'A '+f(Math.abs(cp),0)+'% price '+(cp>0?'rise':'cut')+' changes quantity demanded by '+f(Math.abs(cq),0)+'%, '+(Math.abs(pe)<1?'a less than proportional change. Customers are not very sensitive to price.':'a more than proportional change. Customers are sensitive to price.')};},
+ mistakes:['Dividing the change in price by the change in quantity. Quantity is on top.','Using the absolute change (20 cans) instead of the percentage change.','Forgetting to ignore the minus sign when saying whether demand is elastic or inelastic.'],
+ decide:[{q:'The newsagent’s PED for Coca-Cola is −0.5. Should he raise the price again? What else should he consider?',hint:'Inelastic, so a price rise raises revenue. But the numbers come from one change: check substitutes (other shops, other drinks), whether customers buy other things in the shop, and the long-run effect on loyalty. Make a recommendation.'},
+        {q:'The average PED for health and fitness clubs is −2. Outline the likely impact of media health campaigns on the price elasticity of demand for these clubs.',hint:'Campaigns make exercise feel more of a necessity, which makes demand less elastic. Link to what that allows clubs to do with price. This is a prompt from your OneNote lesson.'}],
+ src:{formula:'akram',example:'akram',note:'Formula and the 200 cans at £0.50 to £0.60 (demand 180) example: your OneNote “(4) Price elasticity of demand (PED)” and Unit 1 formulas sheet. Working and random questions by Claude.'}},
+
+{id:'pedrev',title:'PED and total revenue',spec:'1.3.2.4 e',
+ formula:[{s:'Change in Quantity = PED x Change in Price',red:1},{s:'Revenue = Price per item sold x quantity of items sold',red:1}],
+ when:'You are given a PED and a planned price change and asked what happens to demand and to total revenue.',
+ steps:['Work out the % change in price.','% change in quantity = PED × % change in price.','Work out the new quantity and the new price.','Revenue = price × quantity, before and after. Compare. Inelastic: revenue moves with price. Elastic: revenue moves against price.'],
+ vals:{q:2000,p:1.5,pct:20,s:1,pe:-0.2},
+ rand:function(){return {q:R(10,40)*100,p:R(2,8)/2,pct:Math.random()<0.5?10:20,s:Math.random()<0.5?1:-1,pe:-R(1,30)/10};},
+ build:function(v){var cp=v.s*v.pct,cq=v.pe*cp,q2=Math.round(v.q*(1+cq/100)),p2=Math.round(v.p*(1+cp/100)*100)/100,r1=v.q*v.p,r2=q2*p2,d=r2-r1;
+  return {scn:'A business sells '+f(v.q)+' products a week at £'+f(v.p,2)+'. It plans to '+(cp>0?'raise':'cut')+' the price to £'+f(p2,2)+'. The PED is '+f(v.pe,1)+'.',
+   head:['Step','Working','Result'],rows:[['% change in price','('+f(p2,2)+' − '+f(v.p,2)+') ÷ '+f(v.p,2)+' × 100',sg(cp,0)+'%'],['% change in quantity',f(v.pe,1)+' × '+sg(cp,0),sg(cq,1)+'%'],['New quantity',f(v.q)+' × '+f(1+cq/100,3),f(q2)+' units'],['Revenue before',f(v.q)+' × £'+f(v.p,2),'£'+f(r1,2)],['Revenue after',f(q2)+' × £'+f(p2,2),'£'+f(r2,2)],['Change in revenue','£'+f(r2,2)+' − £'+f(r1,2),(d>=0?'+':'−')+'£'+f(Math.abs(d),2)]],post:[],
+   answer:'Revenue '+(d>=0?'rises':'falls')+' by £'+f(Math.abs(d),2)+'.',
+   ask:'A business sells '+f(v.q)+' products a week at £'+f(v.p,2)+'. It '+(cp>0?'raises':'cuts')+' the price by '+v.pct+'% and the PED is '+f(v.pe,1)+'. By how much does weekly revenue change? Give £ to the nearest pound (use a minus sign for a fall).',key:d,tol:1.01,unit:'£',
+   interp:'Demand is '+tag(v.pe)+', so quantity changes '+(Math.abs(v.pe)<1?'less':'more')+' than the price does. Because of this, revenue '+(d>=0?'rises':'falls')+'. '+(Math.abs(v.pe)<1?'With inelastic demand, a price rise increases revenue and a price cut reduces it.':'With elastic demand, a price cut increases revenue and a price rise reduces it.')+' Revenue is not profit, so costs must also be checked.'};},
+ mistakes:['Applying the PED to the new price instead of the percentage change in price.','Forgetting that PED is negative, so a price rise means a fall in quantity.','Treating higher revenue as higher profit. Costs also change with quantity.'],
+ decide:[{q:'With a PED of −0.2, raising the price from £1.50 to £1.80 increases weekly revenue by £456. Should the business raise the price? What else would you consider?',hint:'Revenue rises, and fewer units also means lower variable costs, so profit rises too. But a short-run result: check new competitors, customer loyalty and whether PED stays low over time. Recommend and state what would change your mind.'},
+        {q:'A business with elastic demand wants to raise revenue. What pricing action would you advise and what is the risk?',hint:'A price cut increases quantity more than proportionally, so revenue rises. Risks: margins fall, rivals may follow, extra capacity may be needed. Make a judgement.'}],
+ src:{formula:'akram',example:'akram',note:'Formulas and the 2,000 products at £1.50 to £1.80, PED −0.2 example: your OneNote “(4) Price elasticity of demand (PED)” and Unit 1 formulas sheet. Working by Claude.'}}
+];
+
+/* ===== 1.3.2.5 YED ===== */
+C['1.3.2.5']=[
+{id:'yed',title:'Income elasticity of demand (YED)',spec:'1.3.2.5 a',
+ formula:[{s:'YED = % change in Quantity demand/ % Change in income',red:1},{s:'Change in Quantity = YED X Change in income',red:1}],
+ when:'You are given a change in income and in quantity demanded and asked how responsive demand is to income, or what type of good it is.',
+ steps:['% change in quantity demanded = (new − old) ÷ old × 100.','YED = % change in quantity ÷ % change in income. Keep the sign.','Positive: normal good (above 1 is a luxury, between 0 and 1 a necessity). Negative: inferior good.','Say what it means for the business as incomes rise or fall.'],
+ vals:{g:[['Trainers',20000,25000,15],['Bus travel',12000,9000,10]]},
+ rand:function(){var q1=R(10,60)*1000,i=R(5,20),e=R(-30,30)/10;if(Math.abs(e)<0.3)e=1.5;return {g:null,q1:q1,i:i,q2:Math.round(q1*(1+e*i/100)/100)*100};},
+ build:function(v){if(v.g){var rows=v.g.map(function(x){var cq=pc(x[1],x[2]),y=cq/x[3];return [x[0],'('+f(x[2])+' − '+f(x[1])+') ÷ '+f(x[1])+' × 100 = '+sg(cq,1)+'%',sg(x[3],0)+'%',f(y,2),y<0?'Inferior good':(y>1?'Normal (luxury)':'Normal (necessity)')];});
+   return {scn:'Trainers: demand rises from 20,000 to 25,000 after average incomes rise 15%. Bus travel: demand falls from 12,000 to 9,000 after incomes rise 10%.',head:['Good','% change in quantity','% change in income','YED','Type of good'],rows:rows,post:[],
+   answer:'Trainers YED = 1.67 (normal, luxury). Bus travel YED = −2.50 (inferior).',ask:'',key:0,tol:1,unit:'',
+   interp:'For trainers, demand rises faster than income, so as incomes grow a trainer brand should expect strong sales growth. For bus travel the negative sign means people switch away as they get richer, so a bus operator should expect lower demand in a growing economy.'};}
+  var cq=pc(v.q1,v.q2),y=cq/v.i;
+  return {scn:'',head:['Step','Working','Result'],rows:[['% change in quantity','('+f(v.q2)+' − '+f(v.q1)+') ÷ '+f(v.q1)+' × 100',sg(cq,1)+'%'],['YED',sg(cq,1)+' ÷ '+v.i,f(y,2)]],post:[],answer:'YED = '+f(y,2),
+   ask:'Incomes rise by '+v.i+'% and demand for a product changes from '+f(v.q1)+' to '+f(v.q2)+' units. What is the YED? Give your answer to 2 decimal places (use a minus sign if negative).',key:y,tol:0.0151,unit:'',interp:''};},
+ mistakes:['Dropping the minus sign. For YED the sign tells you whether the good is normal or inferior.','Using the % change in price instead of the % change in income.','Calling any positive YED “luxury”. Luxury goods have a YED above 1.'],
+ decide:[{q:'Incomes are forecast to rise 10% next year. A bus operator’s YED is −2.5. What strategy would you recommend?',hint:'Demand is expected to fall about 25% on this figure. Options: reduce capacity, target customers without cars, improve quality to change the product’s image, diversify. Weigh cost and risk and make a recommendation.'},
+        {q:'iPads have a YED of 1.33. How should Apple prepare for a recession? Justify your answer.',hint:'Income falls hit luxury goods harder than incomes alone suggest. Options: cheaper models, financing offers, trade-in deals, push services. Link to brand image and what each option risks.'}],
+ src:{formula:'akram',example:'akram',note:'Formulas and the trainers and bus travel examples: your Unit 1 formulas sheet and OneNote “(5) Income elasticity of demand (YED)”. Working and random questions by Claude.'}}
+];
+
 window.CALCS=C;
 
 /* ---------- rendering ---------- */
@@ -401,7 +501,7 @@ window.calcNew=function(code,id){var c=find(code,id);STATE[code+'/'+id]={b:c.bui
 function parse(s){var t=String(s).replace(/[£%,\s]|AED|units|months|m$/gi,'').replace(/−/g,'-');var n=parseFloat(t);return isNaN(n)?null:n;}
 window.calcCheck=function(code,id){var st=STATE[code+'/'+id].b,el=document.getElementById('ci-'+id),fb=document.getElementById('cf-'+id),n=parse(el.value);
   if(n===null){fb.className='calc-fb';fb.textContent='Type a number first.';return;}
-  if(Math.abs(n-st.key)<=st.tol){fb.className='calc-fb ok';fb.innerHTML='Correct. Now ask yourself what this number means for the business.';}
+  if(Math.abs((st.abs?Math.abs(n):n)-st.key)<=st.tol){fb.className='calc-fb ok';fb.innerHTML='Correct. Now ask yourself what this number means for the business.';}
   else{fb.className='calc-fb bad';fb.textContent='Not quite. Check each step, or press Show working.';}};
 window.calcShow=function(code,id){var st=STATE[code+'/'+id].b,w=document.getElementById('cw-'+id);
   w.innerHTML=table(st.head,st.rows)+st.post.map(function(p){return '<p class="calc-post">'+p+'</p>';}).join('')+'<p class="calc-ans"><b>Answer:</b> '+st.answer+'</p>';};
