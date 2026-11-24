@@ -4194,26 +4194,82 @@ window.CURRICULUM = [
           <text x="180" y="186" font-size="8.5" font-weight="700">Physiological</text>
         </g>
       </svg>
-      </div>`},
+      </div>
+      <h4 style="margin:18px 0 6px">Herzberg's two factors: hygiene factors and motivators</h4>
+      <p>Herzberg found that two <b>separate</b> sets of factors affect staff. Fixing one set does not do the job of the other.</p>
+      <div style="overflow-x:auto">
+      <table style="border-collapse:collapse;width:100%;min-width:300px;font-size:14px">
+        <thead><tr>
+          <th style="text-align:left;padding:8px 10px;background:var(--navy);color:#fff;width:50%">Hygiene factors<br><span style="font-weight:400;font-size:12.5px">stop dissatisfaction</span></th>
+          <th style="text-align:left;padding:8px 10px;background:var(--amber);color:#1b1b1b;width:50%">Motivators<br><span style="font-weight:400;font-size:12.5px">create satisfaction and drive effort</span></th>
+        </tr></thead>
+        <tbody><tr>
+          <td style="vertical-align:top;padding:8px 10px;border:1px solid var(--line)"><ul style="margin:0;padding-left:18px">
+            <li><b>Pay</b> (salary and wages)</li>
+            <li><b>Job security</b></li>
+            <li><b>Working conditions</b> (safe, clean, equipment)</li>
+            <li><b>Company policies and administration</b></li>
+            <li><b>Supervision</b> (quality of management)</li>
+            <li><b>Relationships</b> with managers and colleagues</li>
+            <li><b>Status</b> (job title, perks)</li>
+          </ul></td>
+          <td style="vertical-align:top;padding:8px 10px;border:1px solid var(--line)"><ul style="margin:0;padding-left:18px">
+            <li><b>Achievement</b> (a sense of doing a job well)</li>
+            <li><b>Recognition</b> (praise and credit)</li>
+            <li><b>The work itself</b> (interesting, challenging)</li>
+            <li><b>Responsibility</b> (control over own work)</li>
+            <li><b>Advancement</b> (promotion)</li>
+            <li><b>Personal growth</b> (new skills and development)</li>
+          </ul></td>
+        </tr></tbody>
+      </table>
+      </div>
+      <ul>
+        <li>If hygiene factors are <b>poor</b>, staff become <b>dissatisfied</b>. If they are good, staff are only <b>not dissatisfied</b>. They do not make people work harder.</li>
+        <li>Only <b>motivators</b> create real satisfaction and extra effort. Without them staff are simply neutral.</li>
+        <li><b>Pay is a hygiene factor</b> for Herzberg. This is the opposite of Taylor, who saw money as the main motivator.</li>
+        <li><b>Using it in business:</b> fix the hygiene factors first (fair pay, safe conditions, job security), then add motivators through methods such as <b>job enrichment</b>, <b>empowerment</b> and <b>delegation</b>.</li>
+      </ul>`},
     {h:"Financial methods of motivation", html:`
       <p><b>Financial methods</b> use money to motivate (linked to Taylor):</p>
       <ul>
-        <li><b>Piece-rate pay</b> — paid per unit produced; drives output in factories.</li>
+        <li><b>Piece-rate pay (piecework)</b> — paid per unit produced; drives output in factories.</li>
         <li><b>Commission</b> — a % of each sale; common for sales staff (e.g. BMW showrooms).</li>
         <li><b>Bonus payments</b> — extra sums on top of basic pay (e.g. <b>Lidl</b> paid 25,000 staff a £200 "thank you" bonus during Covid, costing £5.5m).</li>
         <li><b>Profit share</b> — staff receive a slice of profits, aligning them with the firm.</li>
+        <li><b>Performance-related pay (PRP)</b> — extra pay for meeting agreed targets, usually checked in an appraisal. It rewards individual effort, but targets must be fair and measurable, and it can cause pressure and rivalry between staff.</li>
         <li><b>Employee share ownership</b> — staff own shares, so they gain when the firm succeeds.</li>
       </ul>
       <p>Financial rewards work best for money-motivated staff, but Herzberg warns they may only prevent dissatisfaction rather than drive long-term effort.</p>`},
     {h:"Non-financial methods of motivation", html:`
       <p><b>Non-financial methods</b> motivate through the job and workplace (linked to Mayo, Maslow and Herzberg):</p>
       <ul>
-        <li><b>Delegation &amp; empowerment</b> — giving staff authority and trust to make decisions.</li>
-        <li><b>Consultation</b> — involving staff in decisions (e.g. <b>Nissan</b> quality circles).</li>
-        <li><b>Team working</b> — Nissan builds cars in teams of 25, with socialising, a free gym and family events.</li>
-        <li><b>Job enrichment</b> (more challenging tasks), <b>job rotation</b> (switching tasks — Nissan workers rotate weekly and are multi-skilled) and <b>job enlargement</b> (more varied tasks at the same level).</li>
-        <li><b>Flexible working</b> — flexible hours, home working (e.g. <b>Nestlé</b>'s flexible hours and dog-friendly HQ for work-life balance).</li>
-      </ul>`}
+        <li><b>Delegation</b> — a manager passes specific tasks, and the authority to complete them, to a member of staff, but stays accountable for the result. It motivates through trust and responsibility (Herzberg's responsibility, Maslow's esteem). Watch out: staff need the skills and a clear brief, or the task goes wrong.</li>
+        <li><b>Consultation</b> — asking staff for their views before a decision is made (e.g. <b>Nissan</b> quality circles). It meets social and esteem needs (Mayo, Maslow). Watch out: it slows decisions, and staff become demotivated if their ideas are ignored.</li>
+        <li><b>Empowerment</b> — giving staff real authority to make decisions about their own work without asking permission. It is wider than delegation: it is an ongoing way of working, not a single task. It motivates through trust and a sense of achievement (Herzberg, Maslow). Watch out: it needs training and support, and mistakes can be costly.</li>
+        <li><b>Team working</b> — staff work in groups and share responsibility for results. Nissan builds cars in teams of 25, with socialising, a free gym and family events. It meets social needs (Mayo, Maslow). Watch out: conflict, or some members relying on others.</li>
+        <li><b>Flexible working</b> — flexible hours or home working (e.g. <b>Nestlé</b>'s flexible hours and dog-friendly HQ for work-life balance). It shows trust and helps staff balance work and life. Watch out: harder to coordinate and supervise.</li>
+        <li><b>Job enrichment</b> — redesigning a job to give <b>more challenge, responsibility and control</b>, for example planning their own work and making decisions. This is a Herzberg motivator and meets esteem and self-actualisation needs. Watch out: it needs training, staff may expect higher pay, and not everyone wants more responsibility.</li>
+        <li><b>Job rotation</b> — staff move between <b>different jobs at the same level</b> for set periods. Nissan workers rotate weekly and are multi-skilled. It reduces boredom and makes staff flexible. Watch out: training costs, and it adds variety but no extra responsibility.</li>
+        <li><b>Job enlargement</b> — adding <b>more tasks of a similar level</b> to a job, so it is less repetitive. It adds variety. Watch out: if it is just more of the same work with no extra reward, staff feel overloaded rather than motivated.</li>
+      </ul>
+      <p>These three are easy to mix up:</p>
+      <div style="overflow-x:auto">
+      <table style="border-collapse:collapse;width:100%;min-width:320px;font-size:14px">
+        <thead><tr>
+          <th style="text-align:left;padding:8px 10px;background:var(--navy);color:#fff">Method</th>
+          <th style="text-align:left;padding:8px 10px;background:var(--navy);color:#fff">What changes</th>
+          <th style="text-align:left;padding:8px 10px;background:var(--navy);color:#fff">More responsibility?</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="padding:8px 10px;border:1px solid var(--line)"><b>Job enlargement</b></td><td style="padding:8px 10px;border:1px solid var(--line)">More tasks of the same level added to the job</td><td style="padding:8px 10px;border:1px solid var(--line)">No</td></tr>
+          <tr><td style="padding:8px 10px;border:1px solid var(--line)"><b>Job rotation</b></td><td style="padding:8px 10px;border:1px solid var(--line)">Moving between different jobs at the same level</td><td style="padding:8px 10px;border:1px solid var(--line)">No</td></tr>
+          <tr><td style="padding:8px 10px;border:1px solid var(--line)"><b>Job enrichment</b></td><td style="padding:8px 10px;border:1px solid var(--line)">More challenge, decisions and control over the work</td><td style="padding:8px 10px;border:1px solid var(--line)"><b>Yes</b></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><b>Delegation or empowerment?</b> Delegation hands over a specific task and the manager stays accountable. Empowerment gives staff continuing freedom to decide how they work.</p>
+    `}
   ],
   definitions:[
     {term:"Motivation", marks:2, body:`The internal drive that makes an employee work hard and well towards the firm's goals <span class="pt">1</span>; higher motivation tends to raise productivity, quality and staff retention <span class="pt">2</span>.`},
@@ -4221,7 +4277,13 @@ window.CURRICULUM = [
     {term:"Herzberg's two-factor theory", marks:2, body:`The idea that motivators (achievement, recognition, responsibility) drive effort while hygiene factors (pay, conditions) only prevent dissatisfaction <span class="pt">1</span>; so improving pay alone will not motivate staff long term <span class="pt">2</span>.`},
     {term:"Piece-rate pay", marks:2, body:`Paying a worker a fixed amount for each unit they produce <span class="pt">1</span>; it encourages higher output but can reduce quality if staff rush <span class="pt">2</span>.`},
     {term:"Job enrichment", marks:2, body:`Giving employees more challenging, meaningful tasks and greater responsibility <span class="pt">1</span>; it can raise motivation through a sense of achievement but needs training and may not suit every worker <span class="pt">2</span>.`},
-    {term:"Empowerment", marks:2, body:`Giving employees the authority and trust to make their own decisions at work <span class="pt">1</span>; it can boost motivation and speed up decisions but requires capable, well-trained staff <span class="pt">2</span>.`}
+    {term:"Empowerment", marks:2, body:`Giving employees the authority and trust to make their own decisions at work <span class="pt">1</span>; it can boost motivation and speed up decisions but requires capable, well-trained staff <span class="pt">2</span>.`},
+    {term:"Hygiene factors", marks:2, body:`Aspects of a job, such as pay, job security and working conditions, that prevent dissatisfaction if they are good <span class="pt">1</span>; they do not motivate staff to work harder, so improving them alone will not raise effort <span class="pt">2</span>.`},
+    {term:"Motivators (Herzberg)", marks:2, body:`Factors in the job itself, such as achievement, recognition, responsibility and growth, that create satisfaction and drive extra effort <span class="pt">1</span>; businesses can build them in through job enrichment and empowerment <span class="pt">2</span>.`},
+    {term:"Delegation", marks:2, body:`A manager passing a task, and the authority to complete it, to a subordinate while remaining accountable for the result <span class="pt">1</span>; it can motivate through trust and free up manager time but needs capable, well-briefed staff <span class="pt">2</span>.`},
+    {term:"Job enlargement", marks:2, body:`Adding more tasks of a similar level to a job to make it less repetitive <span class="pt">1</span>; it adds variety but gives no extra responsibility, so staff may feel overloaded rather than motivated <span class="pt">2</span>.`},
+    {term:"Job rotation", marks:2, body:`Moving employees between different jobs at the same level for set periods <span class="pt">1</span>; it reduces boredom and creates a flexible, multi-skilled workforce but adds training costs <span class="pt">2</span>.`},
+    {term:"Performance-related pay (PRP)", marks:2, body:`Extra pay awarded for meeting agreed targets, usually checked through an appraisal <span class="pt">1</span>; it rewards effort but can cause pressure and unfairness if targets are not clear or fair <span class="pt">2</span>.`}
   ],
   practice:[
     {marks:2, q:"Define the term 'piece-rate pay'.",
@@ -4244,13 +4306,13 @@ window.CURRICULUM = [
       </ul>`
   },
   exam:[
-    {marks:18, q:"Evaluate the use of Taylor's and Herzberg's theories to improve the motivation of Deliveroo's riders. (18)", caseImg:"resources/casestudies/cs-1-3-4-4-deliveroo-riders.png",
+    {marks:20, q:"Evaluate the use of Taylor's and Herzberg's theories to improve the motivation of Deliveroo's riders. (20)", caseImg:"resources/casestudies/cs-1-3-4-4-deliveroo-riders.png",
      sample:true, model:`<p><span class="tag t-P">POINT</span>One way to improve the motivation of Deliveroo riders is by using FW Taylor’s scientific management theory. <span class="tag t-A">APPLY</span>This is because Taylor believed workers are only motivated by money and that pay should be linked to output through piece- rate systems. This means that Deliveroo could offer riders a higher fee per delivery, or bonuses based on the number of deliveries completed in a certain time frame. <span class="tag t-C">CHAIN</span>Therefore, riders might be encouraged to work faster and complete more orders to maximise earnings. As a result, productivity may rise and Deliveroo could reduce the number of late orders, improving efficiency. Which leads to potentially higher customer satisfaction and repeat usage of the platform.</p>
      <p><span class="tag t-J">HOWEVER</span>However, Taylor’s approach may not be effective in this context. <span class="tag t-A">APPLY</span>This is because riders already operate under pressure with time-based pay and face deductions for late deliveries. This means extra pressure may cause job dissatisfaction and burnout, especially if they feel control is taken away from them. <span class="tag t-C">CHAIN</span>Therefore, motivation could fall rather than rise. As a result, rider retention may decline, leading to recruitment costs. Which leads to higher staff turnover and reputational damage if service levels drop.</p>
      <p><span class="tag t-P">POINT</span>Another option would be to apply Herzberg’s two-factor theory, which separates hygiene factors (e.g. pay, working conditions) from motivators (e.g. achievement, responsibility). <span class="tag t-A">APPLY</span>This is because Herzberg believed that pay alone cannot motivate employees in the long term. This means Deliveroo could improve conditions by offering job rotation, training, and performance recognition to make riders feel valued. <span class="tag t-C">CHAIN</span>Therefore, riders may gain a greater sense of autonomy and purpose, especially if given feedback and development opportunities. As a result, they may be more loyal and productive in the long term. Which leads to improved service and stronger brand loyalty.</p>
      <p><span class="tag t-J">HOWEVER</span>However, there are challenges with Herzberg’s approach. <span class="tag t-A">APPLY</span>This is because improving motivators such as recognition and development could be difficult in a gig economy where riders are not full-time employees. This means opportunities for progression or training may be limited or expensive for Deliveroo to provide. <span class="tag t-C">CHAIN</span>Therefore, some of Herzberg’s motivators may not be realistic unless major structural changes are made. As a result, motivation may only improve slightly. Which leads to limited impact unless broader employment reforms are introduced.</p>
      <p><span class="tag t-J">CONCLUSION</span>In conclusion, while both theories could be applied, Herzberg’s is more likely to improve rider motivation in the long term. <span class="tag t-A">APPLY</span>This is because it goes beyond financial incentives and focuses on treating workers with respect, offering development and improving the job role itself. Taylor’s piece-rate ideas may increase speed, but the pressure could damage morale and retention. The success of either approach depends on how Deliveroo balances flexibility with fairness. It is recommended that Deliveroo adopt aspects of Herzberg’s theory, such as recognition schemes and training, alongside improving basic conditions. This would allow Deliveroo to improve rider motivation in a sustainable and ethical way.</p>`,
-     fb:"Mr. Akram's exemplar (Deliveroo, 18). Taylor and Herzberg each developed with a benefit and limitation, applied to the gig model, with a reasoned recommendation."},
+     fb:"Mr. Akram's exemplar (Deliveroo, 20). Taylor and Herzberg each developed with a benefit and limitation, applied to the gig model, with a reasoned recommendation."},
     {marks:20, q:"Barclays proposes to move from sales-based bonuses to a customer-service-based bonus system. Evaluate the effectiveness of using financial and non-financial techniques to motivate the employees of Barclays plc. (20)", caseImg:"resources/casestudies/cs-1-3-4-4-barclays.png",
      sample:true, model:`<p><span class="tag t-P">POINT</span>Barclays’ use of financial motivation through its previous sales-based bonus system encouraged high sales volumes, providing a substantial financial incentive to employees who met sales targets. This approach increased revenue and met short-term financial goals. However, tying bonuses to sales led to unethical practices, including the mis-selling of PPI. The high-pressure sales environment eventually led to public distrust, regulatory fines, and a damaged brand reputation. These drawbacks highlight that financial motivation focused purely on sales can compromise ethical standards.</p>
      <p><span class="tag t-J">HOWEVER</span>In contrast, Barclays’ shift to a customer-service-based bonus aligns more closely with non-financial motivation, rewarding employees based on customer satisfaction and loyalty metrics. This approach encourages a customer-focused culture, improving brand reputation, fostering long-term customer loyalty, and reducing regulatory risk. However, it may lead to lower sales, impacting short-term profitability. Some employees, especially those accustomed to higher sales bonuses, may feel demotivated by lower financial rewards, potentially affecting staff retention and reducing the appeal of this motivation method.</p>
