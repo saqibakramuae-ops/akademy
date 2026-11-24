@@ -18,14 +18,14 @@
    ============================================================ */
 :root{
   --navy:#0F2A4A; --navy-2:#163a63; --amber:#F5A623; --amber-d:#d98b06;
-  --emerald:#0FA37F; --bg:#F8F9FB; --card:#ffffff; --ink:#1A2433;
+  --emerald:#0FA37F; --akram:#C0262D; --bg:#F8F9FB; --card:#ffffff; --ink:#1A2433;
   --muted:#5a6a7e; --line:#e4e9f0; --chip:#eef3f9; --shadow:0 8px 28px rgba(15,42,74,.10);
   --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
   --sab:env(safe-area-inset-bottom,0px);
 }
 :root[data-theme="dark"]{
   --navy:#0B1A2E; --navy-2:#13263f; --bg:#0a1626; --card:#13263f; --ink:#e8edf4;
-  --muted:#9fb0c4; --line:#223851; --chip:#17304c; --shadow:0 8px 28px rgba(0,0,0,.4);
+  --muted:#9fb0c4; --akram:#FF7B7B; --line:#223851; --chip:#17304c; --shadow:0 8px 28px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -265,15 +265,24 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .qbtns{display:flex;gap:10px;flex-wrap:wrap}
 .btn-ghost{background:var(--chip);border:1px solid var(--line);color:var(--ink);padding:11px 16px;border-radius:10px;font-weight:700;font-size:14px;min-height:44px}
 .btn-ghost:hover{border-color:var(--amber)}
-.btn-ghost.is-sample-btn{border-color:var(--emerald);box-shadow:inset 3px 0 0 var(--emerald)}
+.btn-ghost.is-sample-btn{border-color:var(--akram);box-shadow:inset 3px 0 0 var(--akram);color:var(--akram)}
 .btn-done{background:var(--emerald);border:none;color:#fff;padding:11px 16px;border-radius:10px;font-weight:700;font-size:14px;min-height:44px}
 .btn-done.is{background:var(--chip);color:var(--emerald);border:1px solid var(--emerald)}
 .model{display:none;margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;font-size:14.5px}
 .model.show{display:block}
 .model h4{margin:0 0 8px;font-size:13px;color:var(--emerald);text-transform:uppercase;letter-spacing:.5px}
 .model p{margin:9px 0}
-.model.is-sample{border-top-color:var(--emerald);border-left:3px solid var(--emerald);padding-left:14px;background:rgba(16,185,129,.05);border-radius:0 8px 8px 0}
-.model.is-sample h4{color:var(--emerald)}
+.model.is-sample{border-top-color:var(--akram);border-left:3px solid var(--akram);padding-left:14px;background:rgba(192,38,45,.05);border-radius:0 8px 8px 0}
+.model.is-sample h4{color:var(--akram)}
+/* Mr. Akram's own words are shown in red; everything else is AI-written */
+.model.is-sample>p:not(.samp-note){color:var(--akram)}
+.model.is-sample .fb{color:var(--ink)}
+.samp-note.ai{font-style:normal}
+.akram-key{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:10px 0 0!important;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--chip);font-size:13px;color:var(--ink)}
+.akram-key .k{display:inline-flex;align-items:center;gap:7px}
+.akram-key i{display:inline-block;width:11px;height:11px;border-radius:3px;background:var(--akram)}
+.akram-key i.ai{background:var(--muted)}
+.akram-key b.red{color:var(--akram)}
 .samp-note{margin:0 0 10px!important;font-size:12.5px;font-style:italic;color:var(--muted)}
 .samp-pill{display:inline-block;background:var(--emerald);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;vertical-align:middle;letter-spacing:.3px}
 .fb{background:rgba(245,166,35,.1);border-left:3px solid var(--amber);padding:10px 14px;border-radius:8px;font-size:13.5px;margin-top:12px}
@@ -1149,7 +1158,7 @@ function openTopic(code){
     const note=docs.length?`<div class="cs-note"><b>Note:</b> the case-study extracts for these exam questions are listed above.${hasP?` The full official case studies also sit inside each <a class="cs-link" onclick="openPapers('${uid}')">Unit ${uid} past paper →</a>`:''}</div>`:`<div class="cs-note"><b>Note:</b> this is a summary of the business contexts used in this topic's questions — not an official exam case study. The full official case studies (source booklets) are included inside each past paper.${hasP?` <a class="cs-link" onclick="openPapers('${uid}')">Open Unit ${uid} exam papers →</a>`:''}</div>`;
     h+=`<div class="card"><h2>${t.caseStudy.business}</h2>${t.caseStudy.intro}${docHtml}${note}</div>`;}else{h+=`<div class="card"><p style="color:var(--muted);margin:0">Case study coming soon.</p></div>`;}h+=`</div>`;
   const _csd=(t.caseStudy&&t.caseStudy.docs&&t.caseStudy.docs.length);
-  h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p>${_csd?`<p class="cs-examtip">📄 These questions are based on a case study — <a class="cs-link" onclick="gotoSec('case')">open the source material on the Case study tab</a> first.</p>`:''}</div>`+questionBlock(t,"exam",tp)+`</div>`;
+  h+=`<div class="section" id="sec-exam"><div class="card"><h2>Exam questions${t.caseStudy?(' on '+t.caseStudy.business):''}</h2><p style="color:var(--muted);font-size:13.5px;margin:0">4 · 8 · 12 · 20 mark. Model answers use the <b>5×5 PECAN</b> structure.</p><p class="akram-key"><span class="k"><i></i><b class="red">Red = Mr. Akram's own answer</b> (word for word)</span><span class="k"><i class="ai"></i>Plain = written by Claude (AI)</span></p>${_csd?`<p class="cs-examtip">📄 These questions are based on a case study — <a class="cs-link" onclick="gotoSec('case')">open the source material on the Case study tab</a> first.</p>`:''}</div>`+questionBlock(t,"exam",tp)+`</div>`;
   h+=`<div class="section" id="sec-res"><div class="card"><h2>Resources &amp; past papers</h2>`;
   if(t.resources&&t.resources.length){h+=`<div class="reslist">`;t.resources.forEach(r=>{const isppt=/\.pptx?$/i.test(r.file);const ic=isppt?'📊':'📄';const act=isppt?'Download ↓':'Open →';h+=`<a class="resitem${isppt?' is-ppt':''}" href="${r.file}" target="_blank" rel="noopener"><span class="ri">${ic}</span><span class="rt">${r.label}</span><span class="rd">${act}</span></a>`;});h+=`</div>`;}
   else{h+=`<p style="color:var(--muted);margin:0">More past papers and resources will be added here soon.</p>`;}
@@ -1169,11 +1178,11 @@ function questionBlock(t,type,tp){
       ${q.caseText?`<div class="cs-context"><span class="cs-ctx-label">📄 Case context</span>${q.caseText}</div>`:""}
       ${timerBar(id,q.marks)}
       <textarea placeholder="Type your answer…" oninput="saveAns('${id}',this.value)">${saved}</textarea>
-      <div class="qbtns"><button class="btn-ghost${q.sample?' is-sample-btn':''}" onclick="toggleModel('${id}')">💡 Show ${q.sample?'sample':'model'} answer</button>
+      <div class="qbtns"><button class="btn-ghost${q.sample?' is-sample-btn':''}" onclick="toggleModel('${id}')">💡 Show ${q.sample?"Mr. Akram's answer":'model answer'}</button>
       <button class="btn-ghost" onclick="toggleImprove('${id}')">📈 Improve my answer</button>
       <button class="btn-done ${done?'is':''}" id="done-${id}" onclick="toggleDone('${t.code}','${id}')">${done?'✓ Completed':'Mark complete'}</button></div>
       ${improvePanel(id)}
-      <div class="model${q.sample?' is-sample':''}" id="m-${id}"><h4>${q.sample?'✍ Sample answer':'Model answer'}</h4>${q.sample?`<p class="samp-note">An exam-style sample answer, written to hit the top band.</p>`:``}${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div>${aoGuide(q.marks,q.q)}</div></div>`;});
+      <div class="model${q.sample?' is-sample':''}" id="m-${id}"><h4>${q.sample?"✍ Mr. Akram's own answer":'Model answer · AI-written'}</h4>${q.sample?`<p class="samp-note">Word for word from Mr. Akram's own model answer, shown in red. The coloured tags and the examiner note below are added by Claude.</p>`:`<p class="samp-note ai">Written by Claude to the same exam standard. This is <b>not</b> Mr. Akram's own answer.</p>`}${q.model}<div class="fb"><b>Examiner note:</b> ${q.fb}</div>${aoGuide(q.marks,q.q)}</div></div>`;});
   return jump+body;
 }
 function toggleImprove(id){document.getElementById('imp-'+id).classList.toggle('show');}
