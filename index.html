@@ -536,6 +536,8 @@ main{max-width:1060px;margin:0 auto;padding:22px 18px 80px}
 .rev-trend .rt-go{flex:none;font-weight:800;font-size:14px;background:rgba(255,255,255,.18);padding:9px 15px;border-radius:10px;white-space:nowrap}
 @keyframes trendpulse{0%,100%{box-shadow:0 8px 24px rgba(16,24,40,.18)}50%{box-shadow:0 10px 32px rgba(15,118,110,.5)}}
 .rev-trend.rev-audit{background:linear-gradient(135deg,#3b1d6e,#7c3aed 55%,#db2777);animation:none}
+.rev-trend.rev-dl{background:linear-gradient(135deg,#0f2a4a,#1d4f8c 60%,#b7791f);animation:none}
+@media(max-width:560px){.rev-trend.rev-dl .rt-main{flex:1 1 calc(100% - 50px)}.rev-trend.rev-dl .rt-go{width:100%;text-align:center;margin-left:0}}
 @media(prefers-reduced-motion:reduce){.rev-trend{animation:none}}
 @media(max-width:560px){.rev-trend{flex-wrap:wrap}.rev-trend .rt-go{margin-left:auto}}
 .rev-doc{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;background:var(--card);transition:border-color .14s,background .14s}
@@ -990,6 +992,7 @@ function openRevision(unit){
     h+=`<div class="card"><p style="color:var(--muted);margin:0">Revision material for this unit will be added here soon.</p></div>`;
     document.getElementById("appView").innerHTML=h;window.scrollTo(0,0);return;
   }
+  (R.featured||[]).forEach(f=>{h+=`<a class="rev-trend rev-dl" href="${f.file}"${f.name?` download="${f.name}"`:''}><span class="rt-ic">${f.icon||'📥'}</span><span class="rt-main"><span class="rt-badge">${f.badge||'DOWNLOAD'}</span><span class="rt-title">${f.label}</span><span class="rt-sub">${f.sub||''}</span></span><span class="rt-go">${f.cta||'Download ↓'}</span></a>`;});
   if(R.unit&&R.unit.length){
     h+=`<div class="section-head"><span class="code">U${unit}</span><h2>Whole-unit revision</h2></div>
     <p class="sub-sub">Big-picture notes and mind maps covering the whole unit.</p><div class="rev-unit-grid">`;
